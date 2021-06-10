@@ -1,0 +1,45 @@
+<head>
+  <title>{{ if .Title }}{{ .Title }}{{ else if eq .Section "journal" }}Journal: {{ .Date.Format "Monday 2 January 2006" }}{{ else }}{{ .Summary }}{{ end }} | {{ .Site.Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ if or (eq .Section "note") (eq .Section "post") }}
+  <meta name="description" content="{{ .Content | truncate 200 }}">
+  {{ else }}
+    {{ if .IsHome }}
+      <meta name="description" content="I'm a software engineer working at BuzzFeed in London. I also do a little bit of photography, a lot of reading, and a bit of writing.">
+    {{ else }}
+      <meta name="description" content="{{ .Content | truncate 200 }}">
+    {{ end }}
+  {{ end }}
+  {{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+  <link rel="icon" type="image/png" href="{{ "favicon.png" | absURL }}" />
+  <link rel="apple-touch-icon" href="{{ "favicon.png" | absURL }}" type="image/png"/>
+  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+  <link rel="me" href="mailto:hello@jackreid.xyz"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="author" content="Jack Reid"/>
+  <meta name="robots" content="index,follow"/>
+  <meta name="supported-color-schemes" content="light dark"/>
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:site" content="@jackreid" />
+  <meta name="twitter:creator" content="@jackreid" />
+  {{ if eq .Section "photo" }}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="{{ .Params.image | absURL }}">
+  <meta name="twitter:image" content="{{ .Params.image | absURL }}">
+  {{ else }}
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="{{ "/open-graph.png" | absURL }}">
+  <meta name="twitter:image" content="{{ "/open-graph.png" | absURL }}">
+  {{ end }}
+
+  {{ if or (eq .Section "note") (eq .Section "post") }}
+    <meta name="twitter:description" content="{{ .Content | truncate 100 }}">
+  {{ end }}
+</head>

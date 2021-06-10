@@ -1,0 +1,7 @@
+{{ if (.GetTerms "tags") }}
+<span class="single-tags">
+  {{ range (.GetTerms "tags") }}
+  <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+  {{ end }}
+</span>
+{{ end }}
