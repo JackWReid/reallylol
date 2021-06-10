@@ -1,0 +1,16 @@
+baseURL = "https://jackreid.xyz"
+languageCode = "en-gb"
+title = "Jack Reid"
+theme = "jackreid"
+paginate = 10
+buildFuture = true
+timeout = 999999
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    unsafe = true
+[related]
+  [[related.indices]]
+    name = "tags"
+    weight = 100

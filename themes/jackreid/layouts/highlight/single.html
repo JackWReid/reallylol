@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="highlight-main">
+  <h1 class="single-main-title">{{ .Title }}</h1>
+    <p class="single-main__date">
+      {{ partial "icons/calendar.html" . }}
+      {{ .Date.Format "2006-01-02" }}
+    </p>
+
+    {{ if (.GetTerms "tags") }}
+    <p class="single-main__tags">
+    {{ range (.GetTerms "tags") }}
+    <a href="{{ .Permalink }}">{{ partial "icons/tag.html" . }}{{ .LinkTitle }}</a>
+    {{ end }}
+    </p>
+    {{ end }}
+  <div class="highlight-main__content">
+    {{ .Content }}
+  </div>
+  {{- partial "see-also.html" . -}}
+</main>
+{{ end }}
