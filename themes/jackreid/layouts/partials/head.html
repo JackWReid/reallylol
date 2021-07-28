@@ -35,8 +35,6 @@
   <meta name="twitter:image" content="{{ .Params.image | absURL }}">
   {{ else }}
   <meta name="twitter:card" content="summary" />
-  <meta property="og:image" content="{{ "/open-graph.png" | absURL }}">
-  <meta name="twitter:image" content="{{ "/open-graph.png" | absURL }}">
   {{ end }}
 
   {{ if or (eq .Section "note") (eq .Section "post") }}
