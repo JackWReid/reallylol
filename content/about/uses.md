@@ -9,18 +9,18 @@ draft: false
 ## Day Job
 At my day job at BuzzFeed I’m a software engineer, building stuff for the web.
 
-I use my company-issued **MacBook Pro “15, 2016** (2.7GHz, 16GB RAM, 500GB SSD) but it’s basically always closed on its laptop stand next to my screen: **DELL 27” U2717D**. The screen is piled on top of a couple of thick hardbacks that were lying around the office. That way I can sit up straight-ish at my desk without having to try and buy a fancy desk riser. I have an **Apple Magic Mouse** and the standard wireless **Apple Keyboard**.
+I use my company-issued **MacBook Pro “16, 2020** (2.3GHz, 16GB RAM, 1TB SSD). It's on a Griffin laptop stand, which isn't quite tall enough to bring the screen up to my eyeline, so the stand is piled on top of a couple of thick hardbacks that were lying around. I have an **Apple Magic Mouse** and the standard wireless **Apple Keyboard**.
 
-I write my quick notes on the back of scraps from a reporter notepad from the stationary cupboard. The messiness of this means I’m incentivised to type up stuff that’s important and ~~throw away~~ recycle the physical notes. That way I get a clear desk and text-searchable meeting notes and stuff. Right now there’s a note sitting on my desk with some Vim commands I’m trying to commit to memory. That brings me onto software.
+I write my quick notes on an A4 pad from MUJI made of recycled paper. The messiness of this means I’m incentivised to type up stuff that’s important and ~~throw away~~ recycle the physical notes. That way I get a clear desk and text-searchable meeting notes and stuff.
 
-I’m on MacOS Mojave. The apps I have open all day every day are **Firefox**, **Mail**, **Slack**, **Spotify**, **iTerm2**, **Ulysses**, and **Calendar**. My passwords are all managed through **1Password** and some work logins are managed by IT through **Okta**.
+I’m on MacOS Big Sur. The apps I have open all day every day are **Safari**, **Chrome**, **Mail**, **Slack**, **Spotify**, **Terminal**, **Notes**, **Reminders**, and **Calendar**. My passwords are all managed through **1Password** and some work logins are managed by IT through **Okta**.
 
-I use **Ulysses** to keep all my work notes in Markdown files, including a daily agenda that I write at the end of the previous day. It’s just headings of the projects I’m working on with a bullet pointed list of stuff to work through. Writing it at the end of the workday helps me empty my mind of work when I go home, and reading it in the morning feels like loading a condensed version of yesterday’s work brain again.
+I used to use **Ulysses** to keep all my work notes in Markdown files. At the moment I'm trying out going all in on the Apple walled garden, so everything is in **Notes**. One type of note I keep is a daily agenda that I write at the end of the previous day.It’s just headings of the projects I’m working on with a bullet pointed list of stuff to work through. Writing it at the end of the workday helps me empty my mind of work when I go home, and reading it in the morning feels like loading a condensed version of yesterday’s work brain again.
 
-I used to use Bash to keep things simple but since MacOS started defaulting to **Zsh** I switched over to it, keeping my dotfiles almost exactly the same. I use **Vim** with **NERDtree** for all of my development (a mixture of frontend and backend web work).
+I used to use Bash to keep things simple but since MacOS started defaulting to **Zsh** I switched over to it, keeping my dotfiles almost exactly the same. I use **Vim** with **NERDtree** for all of my development (a mixture of frontend and backend web work). Towards the end of 2020 I moved into a more management heavy role, which means less time in Terminal and more time in **Notes** and then **Google Docs**.
 
 ## Daily Carry
-I carry a tattered old canvas rucksack with my personal notebook (a hardback, dotted **Moleskine**), a **Uni-ball Eye Micro**, **Bose QC35** headphones, and whatever I’m reading at the time. I’ve got an **iPhone XR** in black, a leather card slip, and a fairly svelte set of keys on a keyring in my pockets. I almost never carry cash.
+In the time of COVID-19, the notion of a daily carry has shifted a lot. My lifestype has change dramatically since the beginning of the pandemic. I don't commute; I work from home. I try and go for a run or for a workout at the gym most days, and sometimes that's the only time I leave the house. I cycle everywhere; London's gotten a lot friendlier for that. My bike is a **Hackney Cycles Single-speed**, which I hope is adbundant and low value enough that it isn't attractive to thieves.
 
 ## Personal Tech
-I've got a more detailed post about about this but in short: it's a Hugo site on Netlify. In long: [you'll have to read here](https://jackreid.xyz/post/how-this-site-works/).
+I've got a more detailed post about about this but in short: it's a Hugo site that I keep changing the hosting for. In long: [you'll have to read here](https://jackreid.xyz/post/how-this-site-works/).
