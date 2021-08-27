@@ -5,10 +5,14 @@
   {{ .Title }}
 </h1>
 {{ .Content }}
+
+<div class="multi-preview-list">
 {{ $paginator := .Paginate .Pages }}
 {{ range  $paginator.Pages }}
 {{- partial "multi-preview.html" . -}}
 {{ end }}
+</div>
+
 {{- partial "pagination.html" . -}}
 </main>
 {{ end }}

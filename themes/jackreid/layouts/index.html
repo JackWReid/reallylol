@@ -4,8 +4,10 @@
   {{ .Content }}
   </div>
   <h2 class="recent-posts">Recent posts</h2>
+  <div class="multi-preview-list">
   {{ range sort .Site.RegularPages | first 20 }}
   {{- partial "multi-preview.html" . -}}
   {{ end }}
+  <div class="multi-preview-list">
 </div>
 {{ end }}
