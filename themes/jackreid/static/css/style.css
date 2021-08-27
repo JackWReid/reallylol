@@ -277,7 +277,7 @@ figcaption {
   transform: translateY(2px);
 }
 
-.image-item,
+.image-item:not(:first-child),
 .blog-item,
 .highlight-item,
 .note-item {
@@ -429,6 +429,10 @@ figcaption {
 
 .single-main__content {
   margin-top: 2rem;
+}
+
+.single-main__content img {
+  margin-bottom: 2rem;
 }
 
 .section-item {
