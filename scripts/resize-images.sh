@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euxo pipefail
+set -euo pipefail
 
 echo "[Photo Post] img:$1 filename:$2 title:$3 loc:$4"
 date=$(date +"%Y-%m-%d")
@@ -8,6 +8,7 @@ mdpath="./content/photo/$date.md"
 absimgpath="/img/photo/$2.jpg"
 
 # Move and transform the image file
+# brew install imagemagick if mogrify is missing
 cp $1 $imgpath
 mogrify -verbose -format jpg -layers Dispose -resize 1000\>x1000\> -quality 80% $imgpath
 
