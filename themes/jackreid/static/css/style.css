@@ -278,9 +278,9 @@ figcaption {
 }
 
 .image-item:not(:first-child),
-.blog-item,
-.highlight-item,
-.note-item {
+.blog-item:not(:first-child),
+.highlight-item:not(:first-child),
+.note-item:not(:first-child) {
   margin-top: 3rem;
 }
 
