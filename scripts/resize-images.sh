@@ -12,13 +12,13 @@ cp $1 $imgpath
 mogrify -verbose -format jpg -layers Dispose -resize 1000\>x1000\> -quality 80% $imgpath
 
 # Create photo .md file for Hugo
-hugo new photo/$date.md
 touch $mdpath
 echo "---" >> $mdpath
 echo "title: \"$3\"" >> $mdpath
 echo "date: $date" >> $mdpath
 echo "location: $4" >> $mdpath
 echo "image: \"$absimgpath\"" >> $mdpath
-echo "---\n" >> $mdpath
-echo "![]($absimgpath)\n" >> $mdpath
+echo "---" >> $mdpath
+echo "" >> $mdpath
+echo "![]($absimgpath)" >> $mdpath
 vim $mdpath
