@@ -10,7 +10,7 @@ absimgpath="/img/photo/$2.jpg"
 # Move and transform the image file
 # brew install imagemagick if mogrify is missing
 cp $1 $imgpath
-mogrify -verbose -format jpg -layers Dispose -resize 1000\>x1000\> -quality 80% $imgpath
+mogrify -quiet -format jpg -layers Dispose -resize 1000\>x1000\> -quality 80% $imgpath
 
 # Create photo .md file for Hugo
 touch $mdpath
