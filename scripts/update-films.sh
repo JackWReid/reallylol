@@ -11,5 +11,5 @@ cp $1/diary.csv ./tmp/diary.csv
 /usr/local/opt/sqlite/bin/sqlite3 < ./scripts/update-films.sql
 
 mv ./tmp/watched.json ./data/films/watched.json
-mv ./tmp/towatch.json ./data/books/towatch.json
+mv ./tmp/towatch.json ./data/films/towatch.json
 rm -r ./tmp
