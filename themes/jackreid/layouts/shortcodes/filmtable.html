@@ -25,7 +25,7 @@
   <tbody>
     {{ range $data }}
     <tr>
-      <td class="media-table__title">{{ .name }}</td>
+      <td class="media-table__title">{{ .title }}</td>
       {{ if eq $key "watched" }}
       <td class="media-table__date">{{ dateFormat "2006-01-02" .date_updated }}</td>
       {{ else }}
