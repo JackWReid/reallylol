@@ -9,4 +9,4 @@ tags:
 
 > Nowadays when everyone is on lockdown and there are days with nothing but spaces of time to pass, nights too, and you can make a hot tea or a coffee and sit down but when you look there's nothing to read. You can't access those unique voices writing about the things they care about, that are happening to them.
 
-&mdash; [If I could bring one thing back to the internet it would be blogs](http://tttthis.com/edit/blog/if-i-could-bring-one-thing-back-to-the-internet-it-would-be-blogs), TTTThis
+&mdash; [If I could bring one thing back to the internet it would be blogs](https://tttthis.com/edit/blog/if-i-could-bring-one-thing-back-to-the-internet-it-would-be-blogs), TTTThis

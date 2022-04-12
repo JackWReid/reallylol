@@ -15,9 +15,9 @@ Here's where I keep track of interesting links that I might come back to much, m
 - [Ian's Shoelace Website](https://www.fieggen.com/shoelace/)
 - [Tree Talk](https://www.treetalk.co.uk/) - London Tree Explorer
 - [Diamond Geezer](https://diamondgeezer.blogspot.com) - Incredibly detailed London blog
-- [Dan's Motorcycle Repair Page](http://www.dansmc.com)
-- [Jim Machalak's Boat Designs](http://www.jimsboats.com)
-- [The Mother of all Maritime Links](http://www.boat-links.com/boatlink.html)
+- [Dan's Motorcycle Repair Page](https://www.dansmc.com)
+- [Jim Machalak's Boat Designs](https://www.jimsboats.com)
+- [The Mother of all Maritime Links](https://www.boat-links.com/boatlink.html)
 
 ## Indie Web
 - [Tilde Town](https://tilde.town)
@@ -50,7 +50,7 @@ Here's where I keep track of interesting links that I might come back to much, m
 - [Responsive Image Syntax in HTML](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/)
 - [Scraping Recipe Websites](https://www.benawad.com/scraping-recipe-websites)
 - [Web History](https://css-tricks.com/chapter-1-birth/)
-- [Redis Inventor on Code Comments](http://antirez.com/news/124)
+- [Redis Inventor on Code Comments](https://antirez.com/news/124)
 - [Goodreads to SQLite](https://rixx.de/blog/goodreads-sqlite/)
 - [Postgres Configuration for Humans](https://postgresqlco.nf/en/doc/param/)
 - [Linux Command Library](https://linuxcommandlibrary.com/basic/oneliners.html) - Handy Linux one-liners
@@ -72,7 +72,7 @@ Here's where I keep track of interesting links that I might come back to much, m
 
 ## Science
 - [Emergent Tool Use from Multi-Agent Interaction](https://openai.com/blog/emergent-tool-use/) - Great AI demonstration showing human-like behaviour adaptation
-- [Proceedings of the IRCS Workshop on Prosody in Natural Speech](http://languagelog.ldc.upenn.edu/myl/IRCS_Prosody1992/TableOfContents.html) - One summer in the 90s
+- [Proceedings of the IRCS Workshop on Prosody in Natural Speech](https://languagelog.ldc.upenn.edu/myl/IRCS_Prosody1992/TableOfContents.html) - One summer in the 90s
 - [So you want to learn physics](https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics)
 
 ## Film

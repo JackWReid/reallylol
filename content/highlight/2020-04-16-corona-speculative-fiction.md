@@ -2,14 +2,14 @@
 title: Didn't I Write This Story Already?
 slug: corona-speculative-fiction
 date: 2020-04-16T08:48:20.172Z
-link: http://clarkesworldmagazine.com/kritzer_11_15/
+link: https://clarkesworldmagazine.com/kritzer_11_15/
 url: /note/corona-speculative-fiction
 tags:
   - fiction
   - covid-19
 ---
 
-In November 2015, Naomi Kritzer wrote a short sci-fi story called [_So Much Cooking_](http://clarkesworldmagazine.com/kritzer_11_15/). It was published in _Clarkesworld_, a science fiction and fantasy magazine. The story is told in the form of a cooking blog written by a woman living through a global pandemic of a flu-like virus. This week, Kritzer [posted on another sci-fi blog](https://www.tor.com/2020/04/14/didnt-i-write-this-story-already-when-your-fictional-pandemic-becomes-reality/) to acknowledge how prescient she'd been in some aspects of her story. Of course being the author she mostly focused on where she got it wrong.
+In November 2015, Naomi Kritzer wrote a short sci-fi story called [_So Much Cooking_](https://clarkesworldmagazine.com/kritzer_11_15/). It was published in _Clarkesworld_, a science fiction and fantasy magazine. The story is told in the form of a cooking blog written by a woman living through a global pandemic of a flu-like virus. This week, Kritzer [posted on another sci-fi blog](https://www.tor.com/2020/04/14/didnt-i-write-this-story-already-when-your-fictional-pandemic-becomes-reality/) to acknowledge how prescient she'd been in some aspects of her story. Of course being the author she mostly focused on where she got it wrong.
 
 > Another thing I didn’t think through back in 2015: the fact that if the death rate is 34% when people have access to treatment, you’ll see a much higher death rate if you start running out of hospital beds. The narrator doesn’t once mention the concept of “flattening the curve,” because the articles I found didn’t talk about it.
 

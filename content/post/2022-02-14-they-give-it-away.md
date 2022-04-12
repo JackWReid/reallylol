@@ -12,4 +12,4 @@ These teens (and they were mostly teens) were using the tools we give them to ma
 
 The insidious part of all of it is that they are spending sometimes incredible quantities of time creating content for free, and we were serving ads next to it and making money off of it. Our team’s goals were to increase engagement in that core group, to reward them with points and trophies, and to grow the group. We were directly incentivising that behaviour with performance metrics like boosting the number of community posts written and so on. Meanwhile, we still employ full-time writers who create quizzes and lists and so on for a salary (and not a very good one), while a sub-group of the tech team is working to undercut their labour with free labour from volunteers. You can frame it how you like, and a lot of these users really loved the stuff we were giving them, but that’s the economic reality.
 
- [1]: http://buzzfeed.com
+ [1]: https://buzzfeed.com

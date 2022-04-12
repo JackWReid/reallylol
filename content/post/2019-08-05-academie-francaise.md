@@ -10,7 +10,7 @@ tags:
   - language
 ---
 
-I was vaguely aware that the French language is basically policed by the Académie Française, but I'd never seen this statistic that really shows how small the base French vocabulary is. Aptly enough I saw it in [this article](http://www.bbc.com/travel/story/20190804-why-the-french-love-to-say-no) about the French propensity to say... no.
+I was vaguely aware that the French language is basically policed by the Académie Française, but I'd never seen this statistic that really shows how small the base French vocabulary is. Aptly enough I saw it in [this article](https://www.bbc.com/travel/story/20190804-why-the-french-love-to-say-no) about the French propensity to say... no.
 
 > there are 500,000 words in the English language, but only 70,000 in French
 
