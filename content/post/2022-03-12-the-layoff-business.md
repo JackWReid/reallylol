@@ -28,19 +28,15 @@ I began to worry about what business we were really in. We came here to spend in
 
 BuzzFeed has lately shifted to a strategy of mergers and acquisitions. They acquired HuffPost and then Complex. This seemed to be an acceptance of the fact that their existing audience was not going to grow and they didn’t have any ideas to fix that. Instead, they can buy other peoples’ audiences. So they bought HuffPost’s audience. They also bought their staff but had even fewer compunctions about [stripping it down][5]. Another of the great new UK newsrooms was scattered to the wind before they even got everybody on the same Google Drive account. Nevertheless, the audience had been bought and hopefully the remaining staff can keep up the output to keep them.
 
-I&#8217;m out of the business now. I never had any bold ideas about how to fund media companies, my <a href="https://jackreid.xyz/post/a-year-in-ads/" data-type="post" data-id="5863">year on ads</a> saw to it that I was left with no grand illusions about Another Way. So once again I can&#8217;t blame anybody in particular for the crap conditions that exist for the people who actually write the stuff that we read. Once again the enemy is capital. There&#8217;s a new wave cresting where writers have to [cultivate their personal brand][6] independent of their current employer so that they can fire up a successfully monetised Substack newsletter when they get laid off. I&#8217;ll probably soak up some opinions on all of this while the remnants of Media Twitter still populate my feed, but hopefully in time that&#8217;ll be replaced with thoughts about renewable energy and grid balancing. Or even better, with nothing.
+I&#8217;m out of the business now. I never had any bold ideas about how to fund media companies, my [year on ads][8] saw to it that I was left with no grand illusions about Another Way. So once again I can&#8217;t blame anybody in particular for the crap conditions that exist for the people who actually write the stuff that we read. Once again the enemy is capital. There&#8217;s a new wave cresting where writers have to [cultivate their personal brand][6] independent of their current employer so that they can fire up a successfully monetised Substack newsletter when they get laid off. I&#8217;ll probably soak up some opinions on all of this while the remnants of Media Twitter still populate my feed, but hopefully in time that&#8217;ll be replaced with thoughts about renewable energy and grid balancing. Or even better, with nothing.
 
-<hr class="wp-block-separator" />
+---
 
-<sup>1</sup> The Max Read newsletter has an interesting take on why media organisations with big stable staffs used to be viable:
+1) The Max Read newsletter has an interesting take on why media organisations with big stable staffs used to be viable:
 
-<blockquote class="wp-block-quote">
-  <p>
-    But by the 1990s, faced with mounting costs and declining budgets, the CIA stopped covering journalists&#8217; bar tabs, and instead began investing most of its money and talent behind important new agency projects like Google and Mark Burnett Productions. This is called neoliberalism, and it&#8217;s why it&#8217;s much harder to maintain steady employment in newsmedia in the 21st century than it was in the 20th.
-  </p>
-  
-  <cite><a href="https://maxread.substack.com/p/how-to-have-a-career-as-a-journalist">Max Read, March 9th 2022</a></cite>
-</blockquote>
+> But by the 1990s, faced with mounting costs and declining budgets, the CIA stopped covering journalists&#8217; bar tabs, and instead began investing most of its money and talent behind important new agency projects like Google and Mark Burnett Productions. This is called neoliberalism, and it&#8217;s why it&#8217;s much harder to maintain steady employment in newsmedia in the 21st century than it was in the 20th.
+
+— [Max Read][7], 9th March 2022
 
  [1]: https://www.theguardian.com/media/2019/jan/24/buzzfeed-to-lay-off-200-staff-in-latest-round-of-cuts
  [2]: https://www.theguardian.com/media/2019/feb/02/what-2000-job-cuts-tell-us-the-free-market-kills-digital-journalism
@@ -48,3 +44,5 @@ I&#8217;m out of the business now. I never had any bold ideas about how to fund 
  [4]: https://splinternews.com/jonah-peretti-cautions-against-leaks-in-leaked-buzzfeed-1832205748
  [5]: https://www.theguardian.com/media/2021/mar/09/huffpost-layoffs-buzzfeed-jonah-peretti
  [6]: https://nymag.com/intelligencer/2022/03/taylor-lorenz-now-at-washington-post-fights-maggie-haberman.html
+ [7]: https://maxread.substack.com/p/how-to-have-a-career-as-a-journalist
+ [8]: https://jackreid.xyz/post/a-year-in-ads/

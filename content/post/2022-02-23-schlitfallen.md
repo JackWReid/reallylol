@@ -2,6 +2,7 @@
 title: Schlitfallen
 date: 2022-02-23T20:52:00+00:00
 url: /schlitfallen/
+draft: true
 featured_image: /wp-content/uploads/2022/03/IMG_7827.jpeg
 tags:
   - nature
