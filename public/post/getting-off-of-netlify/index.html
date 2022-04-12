@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head>
+  <title>Getting off of Netlify | Jack Reid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://jackreid.xyz/post/getting-off-of-netlify/">
+  
+  <meta name="description" content="I wanted to quickly follow up to my recent post about personal infrastructure with some updates I made this week.
+Why the change
+I got a warning last week that I was almost at the limit for my …">
+  
+  <link rel="icon" type="image/png" href="https://jackreid.xyz/favicon.png" />
+  <link rel="apple-touch-icon" href="https://jackreid.xyz/favicon.png" type="image/png"/>
+  <link rel="stylesheet" href="https://jackreid.xyz/css/style.css">
+  <link rel="me" href="mailto:hello@jackreid.xyz"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="author" content="Jack Reid"/>
+  <meta name="robots" content="index,follow"/>
+  <meta name="theme-color" content="#2C471F" />
+  <meta name="supported-color-schemes" content="light dark"/>
+  <meta property="og:site_name" content="Jack Reid" />
+  <meta property="og:locale" content="en-gb" />
+  <meta property="og:url" content="https://jackreid.xyz/post/getting-off-of-netlify/" />
+  <meta property="og:title" content="Getting off of Netlify" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:site" content="@jackreid" />
+  <meta name="twitter:creator" content="@jackreid" />
+  
+  <meta name="twitter:card" content="summary" />
+  
+
+  
+    <meta name="twitter:description" content="I wanted to quickly follow up to my recent post about personal infrastructure with some updates I …">
+  
+</head>
+<body>
+
+
+<div class="box-card-row">
+  <header class="site-header box-card">
+    <h1><a href="https://jackreid.xyz/">Jack Reid</a></h1>
+    <nav>
+      <ul>
+        <li><a href="https://jackreid.xyz/post">Blog</a></li>
+        <li><a href="https://jackreid.xyz/photo">Photos</a></li>
+        <li><a href="https://jackreid.xyz/books/reading">Books</a></li>
+        <li><a href="https://jackreid.xyz/films/watched">Films</a></li>
+        <li><a href="https://jackreid.xyz/links">Links</a></li>
+        <li><a href="https://jackreid.xyz/work">Work</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="box-card photo-box">
+    
+      <a class="photo-box__link" href="https://jackreid.xyz/photo/e78c10492f43459f08a1d4c27f16e6fc/">
+        <img class="photo-box__image" src="/img/photo/e78c10492f43459f08a1d4c27f16e6fc.jpg" alt="">
+      </a>
+    
+  </section>
+</div>
+<div class="site-wrapper">
+<main class="single-main">
+
+  <h1 class="single-main__title">Getting off of Netlify</h1>
+
+  <p class="single-main__date">
+    <svg height="12" width="12" viewBox="0 0 21 21" style="color: inherit;" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><path d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v12c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-12c0-1.1045695.8954305-2 2-2z" stroke="#2a2e3b" stroke-linecap="round" stroke-linejoin="round"/><path d="m.5 4.5h16" stroke="#2a2e3b" stroke-linecap="round" stroke-linejoin="round"/><g fill="#2a2e3b"><g><circle cx="8.5" cy="8.5" r="1"/><circle cx="4.5" cy="8.5" r="1"/><circle cx="12.5" cy="8.5" r="1"/></g><g><circle cx="8.5" cy="12.5" r="1"/><circle cx="4.5" cy="12.5" r="1"/><circle cx="12.5" cy="12.5" r="1"/></g></g></g></svg>
+
+    2020-05-14
+  </p>
+
+  
+  <p class="single-main__tags">
+  
+  <a href="https://jackreid.xyz/tags/dev/"><svg height="12" width="12" viewBox="0 0 21 21" style="color: inherit;" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(2 3)"><path d="m9.45405845.95405845h3.58578645c1.1045695 0 2 .8954305 2 2v3.58578644c0 .26521649-.1053568.5195704-.2928932.70710678l-7.29289325 7.29289323c-.78104858.7810486-2.04737854.7810486-2.82842712 0l-3.17157288-3.1715729c-.78104858-.7810486-.78104858-2.04737852 0-2.82842711l7.29289322-7.29289322c.18753638-.18753638.44189029-.29289322.70710678-.29289322z" stroke="#2a2e3b" stroke-linecap="round" stroke-linejoin="round"/><rect fill="#2a2e3b" height="2" rx="1" width="2" x="11.54" y="2.454"/></g></svg>
+dev</a>
+  
+  <a href="https://jackreid.xyz/tags/tech/"><svg height="12" width="12" viewBox="0 0 21 21" style="color: inherit;" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(2 3)"><path d="m9.45405845.95405845h3.58578645c1.1045695 0 2 .8954305 2 2v3.58578644c0 .26521649-.1053568.5195704-.2928932.70710678l-7.29289325 7.29289323c-.78104858.7810486-2.04737854.7810486-2.82842712 0l-3.17157288-3.1715729c-.78104858-.7810486-.78104858-2.04737852 0-2.82842711l7.29289322-7.29289322c.18753638-.18753638.44189029-.29289322.70710678-.29289322z" stroke="#2a2e3b" stroke-linecap="round" stroke-linejoin="round"/><rect fill="#2a2e3b" height="2" rx="1" width="2" x="11.54" y="2.454"/></g></svg>
+tech</a>
+  
+  <a href="https://jackreid.xyz/tags/web/"><svg height="12" width="12" viewBox="0 0 21 21" style="color: inherit;" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(2 3)"><path d="m9.45405845.95405845h3.58578645c1.1045695 0 2 .8954305 2 2v3.58578644c0 .26521649-.1053568.5195704-.2928932.70710678l-7.29289325 7.29289323c-.78104858.7810486-2.04737854.7810486-2.82842712 0l-3.17157288-3.1715729c-.78104858-.7810486-.78104858-2.04737852 0-2.82842711l7.29289322-7.29289322c.18753638-.18753638.44189029-.29289322.70710678-.29289322z" stroke="#2a2e3b" stroke-linecap="round" stroke-linejoin="round"/><rect fill="#2a2e3b" height="2" rx="1" width="2" x="11.54" y="2.454"/></g></svg>
+web</a>
+  
+  <a href="https://jackreid.xyz/tags/indieweb/"><svg height="12" width="12" viewBox="0 0 21 21" style="color: inherit;" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(2 3)"><path d="m9.45405845.95405845h3.58578645c1.1045695 0 2 .8954305 2 2v3.58578644c0 .26521649-.1053568.5195704-.2928932.70710678l-7.29289325 7.29289323c-.78104858.7810486-2.04737854.7810486-2.82842712 0l-3.17157288-3.1715729c-.78104858-.7810486-.78104858-2.04737852 0-2.82842711l7.29289322-7.29289322c.18753638-.18753638.44189029-.29289322.70710678-.29289322z" stroke="#2a2e3b" stroke-linecap="round" stroke-linejoin="round"/><rect fill="#2a2e3b" height="2" rx="1" width="2" x="11.54" y="2.454"/></g></svg>
+indieweb</a>
+  
+  </p>
+  
+
+  
+
+  <div class="single-main__content">
+    <p>I wanted to quickly follow up to <a href="/post/how-this-site-works/">my recent post</a> about personal infrastructure with some updates I made this week.</p>
+<h2 id="why-the-change">Why the change</h2>
+<p>I got a warning last week that I was almost at the limit for my allocation of &ldquo;build minutes&rdquo; on Netlify. Upon investigation, I found that my personal website had been building too often and for too long on Netlify, and that soon they would start charging me for the overages. Looking at the logs and running the build locally I saw that the vast majority of the build time was down to preprocessing the many images in the &ldquo;Photo&rdquo; part of my site to compress and resize them. So, in the short term those have been removed; I wasn&rsquo;t really presenting them very well anyway.</p>
+<p>Either way, this warning along with a vague irritation that I&rsquo;m paying $9 a month made me want to look into how I could get off the freemium service. Netlify is great, don&rsquo;t get me wrong, but this was also a chance for me to try out some new problems for myself. After all, I&rsquo;m paying $10 a month for a DigitalOcean VPS and the same again for a Postgres instance.</p>
+<h2 id="requirements">Requirements</h2>
+<p>My site needed to come off of Netlify and still have the following features:</p>
+<h3 id="analytics">Analytics</h3>
+<p>I needed analytics at least telling me how many hits the site is getting and what the top pages are. Also, knowing what the top 404s are helps me realise when I’ve broken a link. Netlify gave me all of this for $9 a month and I was confident I could do it for no additional cost.</p>
+<h3 id="recency">Recency</h3>
+<p>The Netlify site rebuilt every time I committed to the repository using a Git hook, so that would keep it up to date with new notes and posts etc. It also rebuilt every half an hour when the cron job I have to scrape my media tracking sources (Goodreads et al) ran and dumped new data into the site repo. I needed to match or improve on that to make sure new posts and readings/watchings appeared just as fast.</p>
+<h3 id="cms">CMS</h3>
+<p>If all else fails I can open up a text editor and commit a new post file to the repository to add content to the site. However, Netlify CMS was giving me a nice quick way to upload new notes and highlights without getting involved with Git. I needed some replacement for that.</p>
+<h3 id="speed">Speed</h3>
+<p>Netlify was obviously fast and globally distributed, but I have a sneaky feeling that serving a static site from the humble VPS I’m running will do just fine. I just need to be able to render any given page in under 500ms to call it done. The site doesn’t get any traffic really so haven’t had to worry about load yet.</p>
+<h2 id="solutions">Solutions</h2>
+<p>I moved the Hugo site to the existing repository I use for my personal API and scraper scripts. I added it to the Compose file and made an application that uses a Dockerised Hugo image to build the site to a volume.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff79c6">site</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">image</span>: jojomi/hugo:latest
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">volumes</span>:
+</span></span><span style="display:flex;"><span>    - ./site/:/src
+</span></span><span style="display:flex;"><span>    - ./site_output/:/output
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">ports</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f1fa8c">&#34;1313:1313&#34;</span></span></span></code></pre></div>
+<h3 id="recency-1">Recency</h3>
+<p>Now that the site was containerised like the rest of the infrastructure it could easily be controlled and wired up to the other services. The reverse proxy (Caddy) could use the same Docker volume that the site build app wrote to and serve the site as static files.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>jackreid.xyz {
+</span></span><span style="display:flex;"><span>  encode gzip
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  file_server * {
+</span></span><span style="display:flex;"><span>    root /usr/share/caddy/site
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>The same script that kicks off the scrapers can now kick off a build of the website. That solves the requirement to have the site rebuild frequently to stay recent. I can run that as frequently as I like on my own infrastructure without risking running out of “build minutes”.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># Download latest data from API</span>
+</span></span><span style="display:flex;"><span>curl -Lk https://api.jackreid.xyz/books/reading?limit<span style="color:#ff79c6">=</span><span style="color:#bd93f9">5000</span> | jq . &gt; <span style="color:#8be9fd;font-style:italic">$PWD</span>/site/data/books/reading.json;
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>curl -Lk https://api.jackreid.xyz/analytics | jq . &gt; <span style="color:#8be9fd;font-style:italic">$PWD</span>/site/data/analytics.json
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Update git</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> <span style="color:#ff79c6">[</span> -z <span style="color:#f1fa8c">&#34;</span><span style="color:#ff79c6">$(</span>git status --porcelain<span style="color:#ff79c6">)</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">]</span>; <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;[</span><span style="color:#ff79c6">$(</span>date<span style="color:#ff79c6">)</span><span style="color:#f1fa8c">] No changes found&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">else</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;[</span><span style="color:#ff79c6">$(</span>date<span style="color:#ff79c6">)</span><span style="color:#f1fa8c">] Changes found&#34;</span>
+</span></span><span style="display:flex;"><span>  git add . <span style="color:#ff79c6">&amp;&amp;</span> git commit -m <span style="color:#f1fa8c">&#34;[</span><span style="color:#ff79c6">$(</span>date<span style="color:#ff79c6">)</span><span style="color:#f1fa8c">] Updated media data files&#34;</span> <span style="color:#ff79c6">&amp;&amp;</span> git push origin master;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Rebuild the site</span>
+</span></span><span style="display:flex;"><span>/usr/local/bin/docker-compose up -d --build site</span></span></code></pre></div>
+<p>So now I had a cron job pulling my site from GitHub every five minutes, <code>curl</code>ing my API to get the latest in my media consumption, building with Hugo, and being statically served by the Caddy reverse proxy.</p>
+<h3 id="analytics-1">Analytics</h3>
+<p>Caddy has great log support, and spews out structured and details access logs to the <code>stdout</code> by default. You can also configure them to go to a file or to a network socket. I configured Caddy to write access logs to a directory in another Docker volume.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>log {
+</span></span><span style="display:flex;"><span>  output file /etc/caddy/logs/server_log
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Then another job in the Docker Compose file can read those logs from Caddy, loop through them and <code>POST</code> the log lines one-by-one to a logs endpoint in the API. This is definitely an inefficient part of the workflow (I could insert all the lines from a loaded file at once, for example) but to be honest I wanted to put both the VPS and the database to some good use.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff79c6">log_upload</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">build</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">context</span>: ./
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">dockerfile</span>: ./scripts/logs/Dockerfile
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">volumes</span>:
+</span></span><span style="display:flex;"><span>    - ./caddy/logs:/logs</span></span></code></pre></div>
+<p>This means I have all of my server logs in their original form in a table in Postgres. I could query the database to my heart’s content to get insights about the traffic on the site, but I wanted to be able to glance at the top level statistics. I created an <code>/analytics</code> endpoint in the API that returned some basic information like the most requested pages, the total hits, the total misses — over the last hour, day, week, month, and year.</p>
+<p>I added that endpoint to the list of data loaded into the site directory before Hugo runs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -Lk https://api.jackreid.xyz/analytics | jq . &gt; <span style="color:#8be9fd;font-style:italic">$PWD</span>/site/data/analytics.json</span></span></code></pre></div>
+<p>I now have <a href="https://jackreid.xyz/analytics/day">a statically generated analytics page</a> giving me the latest stats that is updated every five minutes. Analytics sorted, and greatly improved from before.</p>
+<h3 id="cms-1">CMS</h3>
+<p>With access to Netlify’s CMS gone, I had to put some more effort into my homebrew posting workflow. I made some quality-of-life improvements. The “Share” pages I’ve created are simple forms that have fields for things like title, slug, and body. The final field is for a personal GitHub token that allows me to wrap up the form inputs and put them in a <code>PUT</code> request to the GitHub API, adding them as files in the <code>/content</code> directory of the Hugo site (to be scooped up, built, and deployed within five minutes by the cron job).</p>
+<p>Previously the token was pasted in by my password manager. Now, it is placed in <code>localStorage</code> the first time it is successfully used, and prefills on that device ever after. That saves a lot of time. I’ve also added some more string sanitisation methods to the inputs; a stray emoji or non-ASCII character often threw a spanner in the works in a way I didn’t want to debug as I quickly posted from my phone.</p>
+<p>Now I can post notes very easily, and I still have a browser extension for posting  web highlights (excerpts from good articles) that I stole from <a href="https://mxb.dev/blog/indieweb-link-sharing/" title="Max Böck">Max Böck</a>. For everything else, there’s still Markdown and GitHub.</p>
+<h3 id="speed-1">Speed</h3>
+<p>The site still gets a 99 on Lighthouse’s speed audit, and the VPS doesn’t seem to be under almost any load from serving the website (it’s all from my behind-the-scenes silliness), so we’ll just have to see how we go.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In the end, this is all idle tinkering borne of idle hands in lockdown. Ethan Marcotte said “<a href="https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/">let a website be a worry stone</a>” and that’s exactly what I’m doing. If you’re interested in learning more, email me at <a href="mailto:hello@jackreid.xyz">hello@jackreid.xyz</a>, or just <a href="https://github.com/JackWReid/jackreidapi">check out the repo</a>.</p>
+<p>Next up, getting those photos back online in a form I can be happy with.</p>
+
+  </div>
+
+<div class="see-also">
+  <h2>See also</h2>
+  <ul>
+    
+    <li><a href="/post/how-this-site-works/">How this site works</a></li>
+    
+    <li><a href="/note/2020-01-28-tools-i-wish-existed/">Digital Tools I Wish Existed</a></li>
+    
+    <li><a href="/highlight/spa-fatigue/">Second-guessing the modern web</a></li>
+    
+    <li><a href="/note/2020-02-10-files-going-extinct/">Computer Files Are Going Extinct</a></li>
+    
+    <li><a href="/highlight/low-tech-election-iowa/">The Only Safe Election Is a Low-Tech Election</a></li>
+    
+  </ul>
+</div>
+
+</main>
+
+    </div><footer class="site-footer">
+  <p><a href="mailto:hello@jackreid.xyz">hello@jackreid.xyz</a> <a href="https://jackreid.xyz/rss">RSS</a></p>
+  <p>9 Apr &#39;22, 11:24</p>
+</footer>
+</body>
+</html>
