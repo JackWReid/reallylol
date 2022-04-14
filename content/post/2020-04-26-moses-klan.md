@@ -8,13 +8,10 @@ tags:
   - nyc
   - race
 ---
+
 I'm reading the epic biography of Robert Moses, *The Power Broker*, at the moment. At the moment it's the 1920s and Moses is trying to wrestle swathes of land off the robber barons who've built their manor houses on Long Island, so that he can build extensive park systems and a parkway to connect them to the city.
 
-
-
 It's a mammoth book but I'm really enjoying it. The 1920s is an interesting era in American history not just because of my teenage obsession with *The Great Gatsby* and the associated milieu, but because it's also a period when the Klan were incredibly active in white, Protestant communities all over the country, and because it's when the robber barons of the Gilded Age were really trying to hand onto their wealth.
-
-
 
 I particularly enjoyed an excerpt from an exchange in the state legislature, where a Democratic representative struck a diagonal blow at a Republican who was making the case for the property rights of the robber barons.
 
@@ -22,10 +19,6 @@ I particularly enjoyed an excerpt from an exchange in the state legislature, whe
 
 — p201, *The Power Broker* by Robert Caro
 
-
-
 It's pretty amazing how the issue of these land seizures for public parks and parkways struck to the core of the issues tearing the country apart: entrenched and open racism, economic inequality, the power of the state versus the individual, retribution for a class that exploited America's people and resources for a generation.
-
-
 
 Anyway, the book's great.

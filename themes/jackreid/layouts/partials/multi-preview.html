@@ -51,6 +51,7 @@
     {{ partial "icons/calendar.html" . }}
     {{ .Date.Format "2006-01-02" }}
   </p>
+  {{ .Summary }}
   </article>
   {{ else if eq "note" .Type }}
   <article class="note-item">

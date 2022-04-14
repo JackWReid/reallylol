@@ -16,4 +16,4 @@ tags:
 > 
 > This impact has become significant.  As the Internet increasingly mediates essential functions in societies, it has unavoidably become profoundly political; it has helped people overthrow governments, revolutionize social orders, swing elections, control populations, collect data about individuals, and reveal secrets.  It has created wealth for some individuals and companies while destroying that of others.
 
-mdash; [The Internet Is For End Users](https://www.rfc-editor.org/rfc/rfc8890.txt), Mark Nottingham in _Internet Architecture Board RFCs_
+— [The Internet Is For End Users](https://www.rfc-editor.org/rfc/rfc8890.txt), Mark Nottingham in _Internet Architecture Board RFCs_
