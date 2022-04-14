@@ -435,6 +435,14 @@ figcaption {
   margin-bottom: 2rem;
 }
 
+.single-main__content figure img {
+  margin-bottom: .5rem;
+}
+
+.single-main__content figure figcaption {
+  text-align: center;
+}
+
 .section-item {
   margin-bottom: 2rem;
 }

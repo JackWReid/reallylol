@@ -13,7 +13,6 @@ tags:
 
 {{<photo src="/img/vignes-1.jpg" alt="A cooking pot with pasta, kale, and tomato sauce" caption="Spare chateau" >}}
 
-
 <figure class="wp-block-image alignwide size-full"><img loading="lazy" width="1000" height="750" src="http://jack-reid.local/wp-content/uploads/2022/03/IMG_7130-1.jpeg" alt="A french chateau" class="wp-image-5904" srcset="http://jack-reid.local/wp-content/uploads/2022/03/IMG_7130-1.jpeg 1000w, http://jack-reid.local/wp-content/uploads/2022/03/IMG_7130-1-300x225.jpeg 300w, http://jack-reid.local/wp-content/uploads/2022/03/IMG_7130-1-768x576.jpeg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /><figcaption>Spare chateau</figcaption></figure>
 
 <figure class="wp-block-image alignwide size-full"><img loading="lazy" width="1000" height="750" src="http://jack-reid.local/wp-content/uploads/2022/03/IMG_7137-1.jpeg" alt="Aerial view of a forest in autumn with a road running down the middle" class="wp-image-5905" srcset="http://jack-reid.local/wp-content/uploads/2022/03/IMG_7137-1.jpeg 1000w, http://jack-reid.local/wp-content/uploads/2022/03/IMG_7137-1-300x225.jpeg 300w, http://jack-reid.local/wp-content/uploads/2022/03/IMG_7137-1-768x576.jpeg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /><figcaption>Forêt d&#8217;Orléans</figcaption></figure>
