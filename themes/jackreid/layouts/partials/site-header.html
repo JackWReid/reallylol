@@ -1,8 +1,5 @@
-{{ $reading := $.Site.Data.books.reading | first 1 }}
-{{ $watched := $.Site.Data.films.watched | first 1 }}
-
-<div class="box-card-row">
-  <header class="site-header box-card">
+<div class="site-header-wrapper">
+  <header class="site-header">
     <h1><a href="{{ "/" | absURL }}">Jack Reid</a></h1>
     <nav>
       <ul>
@@ -15,11 +12,4 @@
       </ul>
     </nav>
   </header>
-  <section class="box-card photo-box">
-    {{ range where .Site.RegularPages "Section" "photo" | shuffle | first 1 }}
-      <a class="photo-box__link" href="{{ .Permalink }}">
-        <img class="photo-box__image" src="{{ .Params.image }}" alt="">
-      </a>
-    {{ end }}
-  </section>
 </div>

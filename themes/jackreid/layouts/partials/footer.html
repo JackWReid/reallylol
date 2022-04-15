@@ -1,4 +1,31 @@
-<footer class="site-footer">
-  <p><a href="mailto:hello@jackreid.xyz">hello@jackreid.xyz</a> <a href="{{ "rss" | absURL }}">RSS</a></p>
-  <p>{{ dateFormat "2 Jan '06, 15:04" now }}</p>
-</footer>
+<div class="site-footer-wrapper">
+  <footer class="site-footer">
+    <section class="photo-box">
+      {{ range where .Site.RegularPages "Section" "photo" | shuffle | first 1 }}
+        <a class="photo-box__link" href="{{ .Permalink }}">
+          <img class="photo-box__image" src="{{ .Params.image }}" alt="">
+        </a>
+        <div class="photo-box__details">
+          <p class="image-item__label">Random photo</p>
+          <p class="image-item__title">
+            <a href="{{ .Permalink }}"> {{ .Title }}</a>
+          </p>
+          {{ if .Params.location }}
+          <p class="image-item__location">
+            {{ partial "icons/location.html" . }}
+            <span>{{ .Params.location }}</span>
+          </p>
+          {{ end }}
+          <p class="image-item__date">
+            {{ partial "icons/calendar.html" . }}
+            {{ .Date.Format "2006-01-02" }}
+          </p>
+        </div>
+      {{ end }}
+    </section>
+    <section class="site-footer__details">
+      <p><a href="mailto:hello@jackreid.xyz">hello@jackreid.xyz</a> <a href="{{ "rss" | absURL }}">RSS</a></p>
+      <p>Fresh as of {{ dateFormat "15:04, 2 January 2006" now }}</p>  
+    </section>
+  </footer>
+</div>
