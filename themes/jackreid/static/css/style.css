@@ -13,8 +13,6 @@
   :root {
     --c-bg: #020826;
     --c-body: #fffffe;
-    --c-panel-bg: #de2919;
-    --c-panel-body: #020826;
   }
 
   a {
@@ -110,7 +108,7 @@ figcaption {
 
 .site-header-wrapper {
   margin-bottom: 2rem;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   border-bottom: 1px solid var(--colour-line);
 }
 
@@ -145,52 +143,22 @@ figcaption {
   margin-right: 1rem;
 }
 
-.media-nav {
-  font-size: 1rem;
-  margin-top: 1rem;
-  flex-shrink: 0;
-  max-width: 23rem; 
+.media-header {
+  padding: .5rem;
+  background-color: var(--colour-line);
+  color: var(--colour-background)
 }
 
-.media-nav ul {
-  margin: 0;
+.media-header ul {
+  max-width: var(--width-inner);
+  margin: 0 auto;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-gap: .5rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
 }
 
-.media-nav__articles {
-  grid-row: 1;
-}
-
-.media-nav__books,
-.media-nav__read,
-.media-nav__reading,
-.media-nav__toread {
-  grid-row: 2;
-}
-
-.media-nav__films,
-.media-nav__watched,
-.media-nav__towatch {
-  grid-row: 3;
-}
-
-.media-nav__section {
-  font-family: var(--font-title);
-  font-weight: bold;  
-}
-
-@media screen and (max-width: 800px) {
-  .media-nav ul {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .media-nav__section {
-    display: none;
-  }
+.media-header ul li {
+  margin-right: 1rem;
 }
 
 .photo-box {
