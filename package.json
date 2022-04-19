@@ -1,0 +1,22 @@
+{
+  "name": "jackreid.xyz",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackWReid/jackreid.xyz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackWReid/jackreid.xyz/issues"
+  },
+  "homepage": "https://github.com/JackWReid/jackreid.xyz#readme",
+  "dependencies": {
+    "xml2js-es6-promise": "^1.1.1"
+  }
+}
