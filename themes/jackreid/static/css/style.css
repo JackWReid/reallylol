@@ -573,6 +573,16 @@ td {
   padding: .5rem 1rem .5rem 0;
 }
 
+[data-status="ready"],
+[data-status="loading"] {
+  opacity: 0;
+}
+
+[data-status="done"] {
+  opacity: 1;
+  color: red;
+}
+
 .media-table {
   display: block;
 }

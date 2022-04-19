@@ -1,3 +1,0 @@
-function loadBooks(status, tableNode) {
-    
-}

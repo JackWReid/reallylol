@@ -21,7 +21,6 @@ const handler = async (event) => {
     const res = await fetch(feedUrl[status]);
     const text = await res.text();
     const data = await xml2js(text);
-    console.log(data.rss.channel);
     const lastBuilt = data.rss.channel[0].lastBuildDate[0];
 
     return {
