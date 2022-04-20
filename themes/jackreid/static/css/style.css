@@ -42,7 +42,7 @@ body {
 
 body {
   margin: 0;
-  padding: .3rem 1rem 1rem;
+  padding: 1rem;
   font-family: var(--font-base);
   color: var(--colour-text);
   background-color: var(--colour-background);
@@ -117,6 +117,8 @@ figcaption {
 .site-header {
   max-width: var(--width-inner);
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .site-header a {
@@ -132,11 +134,14 @@ figcaption {
 
 .site-header nav {
   display: inline-block;
+  max-width: 100%;
+  flex-shrink: 0;
+  overflow-x: scroll;
 }
 
 .site-header ul {
   display: flex;
-  margin: .5rem 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
