@@ -7,7 +7,7 @@ draft: false
 tags:
   - justice
   - race
-  - us
+  - usa
   - mirror
 ---
 

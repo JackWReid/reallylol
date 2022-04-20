@@ -8,7 +8,6 @@ tags:
   - france
   - paris
   - travel
-
 ---
 
 {{<photo src="/img/paris-1.jpg" alt="A cabbage on a gravestone" caption="Gainsburg" >}}
