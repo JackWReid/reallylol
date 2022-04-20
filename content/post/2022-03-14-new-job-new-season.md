@@ -4,6 +4,7 @@ date: 2022-03-14T09:52:27+00:00
 url: /new-job-new-season/
 tags:
   - journal
+  - work
 
 ---
 I left BuzzFeed two weeks ago and started at Kaluza the following Monday. The full implications of that are yet to be seen but for now they include: exciting new problems, lots of new people, nice new office, new cycle to the office through lots of parks, being a bit tired.
