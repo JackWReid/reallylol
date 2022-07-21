@@ -10,7 +10,9 @@ This is a brief overview of my work history in tech, covering the major projects
 
 ## Kaluza (2022-)
 
-I just started working on the Flex product at Kaluza, which aims to help the energy transition to renewable sources by adding flexibility to the electricity grid using connected devices and software.
+I recently started working at Kaluza. I work specifically as an Engineering Manager across two teams on Flex product. The idea behind the Flex product is to respond to the problem that incrasingly faces power grids transitioning to renewable energy sources: the mismatch of supply and demand. Kaluza aims to solve this by enrolling energy customers to recieve cheaper energy in exchange for giving us the power to control when their power intensive devices like electric vehicles are charged.
+
+My role involes a lot of roadmap setting and delivery, managing my direct reports, and working across the organisation on best practices for engineering.
 
 ## BuzzFeed (2017-2022)
 
