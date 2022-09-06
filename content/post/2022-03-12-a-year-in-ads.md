@@ -20,7 +20,7 @@ Every single one of those revenue models poses problems from a business perspect
 
 Let’s start with the problems an ad supported publisher faces.
 
-## No bullshit ads primer {#no-bullshit-ads-primer}
+## No bullshit ads primer
 
 <pre class="wp-block-preformatted">revenue = impressions × price
 
@@ -36,13 +36,13 @@ Factor two of the ad revenue equation is CPM (cost per mille, as in thousand imp
 
 Publishers improve the quality of their ad audience by targeting ads and making advertiser’s ads are going to the right people. Right people in this context often means the right age group and the right income bracket. Knowing those aspects of your audience and being able to produce _segments_ that represent specific people the advertiser wants to reach, that’s the desire that drove the worst of the worst when it comes to web advertising.
 
-## Play the game {#play-the-game}
+## Play the game
 
 I worked in the ad tech space for one year, and I have absolutely no idea how the data privacy angle actually works. There are thousands of companies and products with impenetrable names who do something related to “audience insights” or “activation”. All of them want information about your audience. In exchange they offer you the ability to do things like target ads to racketball players in Utah over the age of forty.
 
 Quite how those companies figure out who lives where and what they’re into isn’t clear to me, nor is whether the classifications are even accurate. What is obvious is that they rely on a collective effect. The more websites sign up and hand over user data, the more data points they have to join up from that user’s behaviour across multiple destinations on the web. Your profile of a user could start with matching their IP address with up with that of somebody who also has a plan with Verizon. Now you have a home address because Verizon has that. Your data connectivity platform is also used by Amazon, The New York Times, and CNN, so you also know what category of products they buy at what price points and what their key news topics are.
 
-Tthere is no mastermind behind it all. Each company plays it part and provides a service to a partner who makes up a different piece of the puzzle. The publishers share their data because they can increase their CPMs by offering better targeting to advertisers, the data platforms sign up as many sites as they can so they can offer a product with better targeting capabilities, the advertisers pay to place ads to market their stuff to an audience who might be interested and hey, even support digital media with some big ad buys.
+There is no mastermind behind it all. Each company plays it part and provides a service to a partner who makes up a different piece of the puzzle. The publishers share their data because they can increase their CPMs by offering better targeting to advertisers, the data platforms sign up as many sites as they can so they can offer a product with better targeting capabilities, the advertisers pay to place ads to market their stuff to an audience who might be interested and hey, even support digital media with some big ad buys.
 
 Ironically, at the scales of traffic that a lot of publishers get, the kind of specificity I’ve described would yield an audience that’s too small to even make money from. Nevertheless, we want to be offer that ability to advertisers and put it in the slide decks we present to the Chief Marketing Officer of Coca Cola. A lesson I learned, and the reason why I doubted&nbsp; some of the targeting capabilities offered by third parties, is that there need not be much of a relationship between the level of sophisticated targeting actually being done and the claims being made in marketing materials to other companies.
 
@@ -54,8 +54,7 @@ Consent management platforms break, they can be implemented incorrectly. In one 
 
 I don’t think I’m shocking anybody describing the situation in online advertising. You would even be forgiven for thinking things will soon get better, for users’ data privacy at least. Browsers are increasingly sparring with this ecosystem, locking down third-party cookies, blocking requests to trackers and ad networks like good little bodyguards. The ecosystem responds. Reports of the death of the cookie are greatly exaggerated. Universal ID is a system that circumvents third-party cookie blocking by laundering user data through first-party cookies instead. The incentives for publishers to integrate with these trackers are the same as in the old scheme: if you have this tracker in the page, x giant advertiser will pay more per impression because they think they know who they’re getting with more accuracy.
 
-## People are doing their local best {#people-are-doing-their-local-best}
-
+## People are doing their local best
 Now you’ve had my very editorialised primer on how an ad-supported online publisher works. The thing I want to emphasise is that the ecosystem doesn&#8217;t require any malicious actors to produce terrible outcomes. It’s just about how the incentives are arranged.
 
 Start with the user, so the books say. Users want to be informed, entertained, or even mollified by some content. They don’t think they should have to pay for that content really, there’s so much free stuff around and besides, there’s ads. The journalist wants to write about what they think is interesting or important for their audience. Maybe they’re not writing what they think will be their career-defining work right now but it’s not bad and they trust their editors’ instincts and the job market for reporters right now is such that they should be happy to not be freelancing. Besides, they work hard on their stories and the analytics tools the publisher provides tell them hundreds of thousands of people read their words every day.
