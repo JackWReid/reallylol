@@ -1,5 +1,5 @@
 ---
-title: "Links, Septmeber 2022"
+title: "Links, September 2022"
 date: 2022-10-07
 tags:
  - links
