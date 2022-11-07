@@ -7,6 +7,8 @@ instagram: true
 draft: false
 tags:
  - boston
+ - usa
+ - travel
 ---
 
 ![People of Boston](/img/photo/c9f2a57d42a6bdab047a975afda5fccf.jpg)

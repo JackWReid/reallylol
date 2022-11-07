@@ -8,17 +8,19 @@ draft: false
 
 This is a brief overview of my work history in tech, covering the major projects at the companies I've worked at. The general outline of my work history is available on [LinkedIn](https://www.linkedin.com/in/jackwreid/) too, if that's more your thing. If you're more interested in what stuff I use while I'm at work, I have a [/uses](/uses) page. You can download my <a href="/docs/cv.pdf" download="cv.pdf">CV here</a>.
 
-## Kaluza (2022-)
+## Kaluza (2022)
 
-I recently started working at Kaluza. I work specifically as an Engineering Manager across two teams on Flex product. The idea behind the Flex product is to respond to the problem that incrasingly faces power grids transitioning to renewable energy sources: the mismatch of supply and demand. Kaluza aims to solve this by enrolling energy customers to recieve cheaper energy in exchange for giving us the power to control when their power intensive devices like electric vehicles are charged.
+I worked as an Engineering Manager across two teams on Flex product. The idea behind the Flex product is to respond to the problem that increasingly faces power grids transitioning to renewable energy sources: the mismatch of supply and demand. Kaluza aims to solve this by enrolling energy customers to receive cheaper energy in exchange for giving us the power to control when their power intensive devices like electric vehicles are charged.
 
-My role involes a lot of roadmap setting and delivery, managing my direct reports, and working across the organisation on best practices for engineering.
+My first team was the Platform team, which was responsible for providing a stable and reliable platform to the other teams, and one that was packaged up in easy-to-use workflows that made it easy to ship new products (very) quickly. The second was the Trading & Dispatch team, who owned a couple of tools that give an overview of all the devices connected to the platform and visualised their capacity, consumption, and flexibility.
+
+My role involved a lot of roadmap setting and delivery, managing my direct reports, and working across the organisation on best practices for engineering.
 
 ## BuzzFeed (2017-2022)
 
-I worked at BuzzFeed as an Engineering Manager. I was on loads of different projects while I’ve been there so I’ll just pick out a couple of interesting ones.
+I worked at BuzzFeed as an Engineering Manager. I was there a long time and worked on loads of different projects so I’ll just pick out a couple of interesting ones.
 
-### Engineering Manager
+### Engineering Management
 
 Stepping into a management role and changing domains at the same time was interesting. I led a team of five and manage people across multiple teams and levels and levels of seniority. Time management was a balancing act. Inside my team I planned sprints, worked on line management tasks like hiring and staffing and career development, as well as sprint planning, project leadership. Outside of my team I still led accessibility for a growing number of domains (we kept acquiring people), and briefly led the tech internship program.
 
@@ -48,11 +50,11 @@ One challenge particular to the news site is the highly configurable splash on t
 
 ## Depop (2016-2017)
 
-Depop was my first “real” job in tech! They took a chance on an a young guy with no Computer Science degree, and who’d been working as a freelance web developer for a couple of years. Depop is a marketplace for selling second-hand and vintage clothes and other style items. When I arrived, it was an iOS app with just a marketing website.
+Depop was my first _real_ job in tech. They took a chance on an a young guy with no Computer Science degree, and who’d been working as a freelance web developer for a couple of years. Depop is a marketplace for selling second-hand and vintage clothes and other style items. When I arrived, it was an iOS app with just a marketing website.
 
 ### The New depop.com
 
-My major project during my time at Depop was turning a static marketing site into a dynamiccatalog of the inventory of Depop’s users.
+My major project during my time at Depop was turning a static marketing site into a dynamic catalog of the inventory of Depop’s users.
 
 In a front-end team of two, we built the new site from ground up as an isomorphic React application, backed by a GraphQL layer that connected to our preexisting service infrastructure. Up to that time the only consumers of those services had been the iOS app, so a lot of adaption had to take place in the GraphQL layer.
 

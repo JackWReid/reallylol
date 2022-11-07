@@ -7,6 +7,8 @@ instagram: true
 draft: false
 tags:
  - chicago
+ - usa
+ - travel
 ---
 
 ![Happy Mother's Day, word to your mother. Pictured: not me and mum](/img/photo/ca90ffe7fba908e1d67918fa7ac96abd.jpg)

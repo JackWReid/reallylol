@@ -5,6 +5,9 @@ image: "/img/photo/cffecbd2e255b4a6cc8d6d04fabfc587.jpg"
 location: "The Argyll Arms"
 instagram: true
 draft: false
+tags:
+  - london
+  - uk
 ---
 
 ![guld](/img/photo/cffecbd2e255b4a6cc8d6d04fabfc587.jpg)

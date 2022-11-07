@@ -1,17 +1,20 @@
 ---
 title: Uses
-date: 2020-01-28T14:13:58
+date: 2022-11-02
 url: /uses
 layout: plain
 draft: false
+tags:
+ - uses
+ - tech
 ---
 
 ## Day Job
-At my day job at BuzzFeed I’m a software engineer, building stuff for the web.
+At my day job at Kaluza I’m a engineering manager. I work from home four days a week on average.
 
-I use my company-issued **MacBook Pro “16, 2020** (2.3GHz, 16GB RAM, 1TB SSD). It's on a Griffin laptop stand, which isn't quite tall enough to bring the screen up to my eyeline, so the stand is piled on top of a couple of thick hardbacks that were lying around. I have an **Apple Magic Mouse** and the standard wireless **Apple Keyboard**.
+I use my company-issued **MacBook Pro “13, 2021** (M1). I have an **Apple Magic Trackpad** and the standard wireless **Apple Keyboard** both issued by my company, but honestly I only use them when I go into the office and have an external monitor. Most of the time it's just my laptop on my desk at home.
 
-I write my quick notes on an A4 pad from MUJI made of recycled paper. The messiness of this means I’m incentivised to type up stuff that’s important and ~~throw away~~ recycle the physical notes. That way I get a clear desk and text-searchable meeting notes and stuff.f
+I write my quick notes on an A4 pad from MUJI made of recycled paper. The messiness of this means I’m incentivised to type up stuff that’s important and ~~throw away~~ recycle the physical notes. That way I get a clear desk and text-searchable meeting notes and stuff.
 
 I’m on MacOS Big Sur. The apps I have open all day every day are **Safari**, **Chrome**, **Mail**, **Slack**, **Spotify**, **Terminal**, **Notes**, **Reminders**, and **Calendar**. My passwords are all managed through **1Password** and some work logins are managed by IT through **Okta**.
 

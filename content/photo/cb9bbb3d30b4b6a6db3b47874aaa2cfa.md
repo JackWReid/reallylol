@@ -7,6 +7,7 @@ instagram: true
 draft: false
 tags:
  - london
+ - uk
 ---
 
 ![warm whites 🚐](/img/photo/cb9bbb3d30b4b6a6db3b47874aaa2cfa.jpg)

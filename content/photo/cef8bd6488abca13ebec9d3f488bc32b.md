@@ -5,6 +5,10 @@ image: "/img/photo/cef8bd6488abca13ebec9d3f488bc32b.jpg"
 location: "Brockwell Park"
 instagram: true
 draft: false
+tags:
+  - london
+  - uk
+  - nature
 ---
 
 ![268.0 - leg it](/img/photo/cef8bd6488abca13ebec9d3f488bc32b.jpg)

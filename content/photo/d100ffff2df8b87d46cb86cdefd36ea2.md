@@ -5,6 +5,9 @@ image: "/img/photo/d100ffff2df8b87d46cb86cdefd36ea2.jpg"
 location: "Regent Street"
 instagram: true
 draft: false
+tags:
+  - london
+  - uk
 ---
 
 ![fragrance of Christ](/img/photo/d100ffff2df8b87d46cb86cdefd36ea2.jpg)
