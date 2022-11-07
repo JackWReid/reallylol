@@ -33,9 +33,9 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>
-        {{ if eq .Type "photo" }}<img src="{{ .Params.image }}" />{{end}}
+        {{ if eq .Type "photo" }}<![CDATA[<img src="{{ .Params.image | absURL }}">]>{{ end }}
         {{ .Summary | html }}
-        </description>
+      </description>
     </item>
     {{ end }}
   </channel>
