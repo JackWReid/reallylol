@@ -7,6 +7,8 @@ draft: false
 tags:
   - scotland
   - nature
+  - uk
+  - travel
 ---
 
 ![machair](/img/photo/cd0ab3d3037c7fcda2e863efee5e732c.jpg)

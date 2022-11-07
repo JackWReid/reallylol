@@ -8,6 +8,7 @@ draft: false
 tags:
  - boston
  - travel
+ - usa
 ---
 
 ![The Qwaahd at Hahvahd Yahdd](/img/photo/c341eba79eeb54a4845bfbf24ec4dbdf.jpg)

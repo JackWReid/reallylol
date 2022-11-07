@@ -7,6 +7,9 @@ instagram: true
 draft: false
 tags:
  - architecture
+ - travel
+ - canada
+ - toronto
 ---
 
 ![🏙🇨🇦](/img/photo/cad4cd3a6a9f5b67f6f3baae70ce7900.jpg)

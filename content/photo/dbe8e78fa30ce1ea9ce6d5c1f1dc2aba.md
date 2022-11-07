@@ -8,6 +8,7 @@ draft: false
 tags:
  - architecture
  - london
+ - cities
 ---
 
 ![late. grrdrrs. 🏭](/img/photo/dbe8e78fa30ce1ea9ce6d5c1f1dc2aba.jpg)

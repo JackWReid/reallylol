@@ -5,6 +5,9 @@ image: "/img/photo/c77cdefd38a850987abeff7aac9cc468.jpg"
 location: "The London Palladium"
 instagram: true
 draft: false
+tags:
+  - london
+  - uk
 ---
 
 ![278.0 - lunnin](/img/photo/c77cdefd38a850987abeff7aac9cc468.jpg)
