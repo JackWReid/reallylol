@@ -7,7 +7,7 @@
 {{ range  $paginator.Pages }}
 <article class="photo-section-item">
   <a href="{{ .Permalink }}">
-    <img src="{{ .Params.image }}" alt="">
+    <img src="{{ .Params.image | absURL }}" alt="">
   </a>
 
   <h3 class="photo-section-item__title">
