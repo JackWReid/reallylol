@@ -1,9 +1,12 @@
 ---
 title: They give it away
 date: -001-11-30T00:00:00+00:00
-draft: true
-
+tags:
+  - work
+  - capitalism
+  - media
 ---
+
 I think the time I spent on the Community team was interesting. Firstly it was the closest knit team I’ve ever been on, socially speaking. Partly there was a good social chemistry between team members and a sense that we had a fun part of the product to work on and we knew about it more than anybody else in the organisation. The pandemic baked in those personal relationships strongly, to the point that we became a sort of insufferable clique.
 
 The product problem was interesting because it was one of the few places working at a publisher where you can actually get to know your users, where they actually have a specific understanding and engagement with BuzzFeed versus somewhere else. The downside was the fear we always had about the community content model being immoral.

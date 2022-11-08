@@ -1,7 +1,6 @@
 ---
 title: "Interview cycle"
 date: 2022-09-06
-draft: true
 tags:
  - work
  - tech

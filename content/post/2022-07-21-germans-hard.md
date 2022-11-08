@@ -3,7 +3,7 @@ title: "German is hard"
 date: 2022-07-20
 tags:
  - journal
- - language
+ - linguistics
  - languages
 ---
 
