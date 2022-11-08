@@ -6,15 +6,16 @@
 </h1>
 {{ .Content }}
 
-{{ $paginator := .Paginate .Pages 2000 }}
+
 <ul class="tag-page-list">
-  {{ range  $paginator.Pages }}
+{{ range $.Site.Taxonomies.tags.ByCount }}
+{{ if gt .Count 1 }}
   <li>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <a href="/tags/{{ .Name }}"> {{ .Name }} <small>({{ .Count }})</small></a>
   </li>
-  {{ end }}
+{{ end }}
+{{end}}
 </ul>
 
-{{- partial "pagination.html" . -}}
 </main>
 {{ end }}
