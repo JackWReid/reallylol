@@ -2,7 +2,6 @@
 title: 'Adam Driver On Marriage Story'
 slug: adam-driver-on-marriage-story
 date: 2020-01-01T19:40:37
-draft: false
 link: https://www.nytimes.com/2020/01/01/movies/adam-driver-marriage-story.html
 url: /note/adam-driver-on-marriage-story
 tags:

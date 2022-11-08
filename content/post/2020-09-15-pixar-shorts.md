@@ -2,7 +2,6 @@
 title: "Rewatching Pixar short films"
 slug: pixar-shorts
 date: 2020-09-15T21:45:23+01:00
-draft: false
 tags:
   - media
   - movies

@@ -5,7 +5,6 @@ slug: noname-book-club
 tags:
 - justice
 - books
-draft: false
 ---
 
 > The Black book club has, over time, served as a space of critical study, leisure and fellowship. In the 19th century, free Black Americans in the North saw literary societies and the organized literary activities that they sponsored as one way to arrest the attention of the public, assert their racial and American identities, and give voice to their belief in the promises of democracy, Elizabeth McHenry wrote in Forgotten Readers Recovering the Lost History of African American Literary Societies.

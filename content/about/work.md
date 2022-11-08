@@ -3,7 +3,6 @@ title: Work History
 date: 2019-07-23T15:51:00+01:00
 url: /work
 layout: plain
-draft: false
 ---
 
 This is a brief overview of my work history in tech, covering the major projects at the companies I've worked at. The general outline of my work history is available on [LinkedIn](https://www.linkedin.com/in/jackwreid/) too, if that's more your thing. If you're more interested in what stuff I use while I'm at work, I have a [/uses](/uses) page. You can download my <a href="/docs/cv.pdf" download="cv.pdf">CV here</a>.

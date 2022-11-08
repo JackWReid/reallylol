@@ -1,7 +1,6 @@
 ---
 title: "Scraps from the Isle of Mull"
 date: 2020-08-12T17:08:05+01:00
-draft: false
 tags:
   - scotland
   - scraps

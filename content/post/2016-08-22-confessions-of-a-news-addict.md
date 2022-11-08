@@ -2,7 +2,6 @@
 title: "Confessions Of A News Addict"
 subtitle: "A Thank You"
 date: 2016-08-22T15:03:42+01:00
-draft: false
 tags:
   - tech
   - news

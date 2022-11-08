@@ -2,7 +2,6 @@
 title: "Pubs in London with outdoor heaters"
 date: 2020-10-28T20:12:03Z
 slug: 2020-10-28-booze-with-heaters
-draft: false
 tags:
   - covid-19
   - london

@@ -2,7 +2,6 @@
 title: "Pellatt Road"
 date: 2020-11-22T11:01:26Z
 slug: pellatt-road
-draft: false
 tags:
   - london
   - history

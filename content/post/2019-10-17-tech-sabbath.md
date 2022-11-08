@@ -2,7 +2,6 @@
 title: "Tech Sabbath"
 slug: tech-sabbath
 date: 2019-10-17T10:05:00+01:00
-draft: false
 link: https://www.wired.com/story/everything-you-need-to-enjoy-one-tech-free-day-a-week/
 url: /note/2019-10-17-tech-sabbath
 tags:

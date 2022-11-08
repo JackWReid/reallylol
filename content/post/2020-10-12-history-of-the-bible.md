@@ -2,7 +2,6 @@
 title: "History of the Bible"
 slug: history-of-the-bible
 date: 2020-10-12T09:36:23+01:00
-draft: false
 tags:
   - history
   - theology

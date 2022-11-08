@@ -2,7 +2,6 @@
 title: "Jacob Rees-Mogg Profile"
 slug: jacob-rees-mogg
 date: 2019-07-31T16:02:00+01:00
-draft: false
 link: https://www.lrb.co.uk/v41/n15/james-meek/the-two-jacobs
 url: /note/2019-07-31-jacob-rees-mogg
 tags:

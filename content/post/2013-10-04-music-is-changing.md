@@ -3,7 +3,6 @@ title: "Music Is Changing"
 subtitle: "The ways that we get our music has been shaped by hidden individuals for decades. This is era of the people."
 slug: music-is-changing
 date: 2013-10-04T11:22:00+01:00
-draft: false
 tags:
   - music
 ---

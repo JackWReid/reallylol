@@ -2,7 +2,6 @@
 title: "My top films of 2020"
 date: 2020-12-15
 slug: best-films-2020
-draft: false
 tags:
   - media
   - best of 2020

@@ -2,7 +2,6 @@
 title: "My top miscellanea of 2020"
 date: 2020-12-04
 slug: best-misc-media-2020
-draft: false
 tags:
   - best of 2020
   - best of year

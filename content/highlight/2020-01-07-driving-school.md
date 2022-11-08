@@ -2,7 +2,6 @@
 title: 'Work Ethic'
 slug: driving-school
 date: 2020-01-07T09:06:59
-draft: false
 link: https://www.theatlantic.com/business/archive/2011/11/learning-about-work-ethic-from-my-high-school-driving-instructor/248339/
 url: /note/2020-01-07-driving-school
 ---

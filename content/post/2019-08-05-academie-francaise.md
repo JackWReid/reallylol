@@ -2,7 +2,6 @@
 title: "The Académie Française"
 slug: academie-francaise
 date: 2019-08-05T11:34:00+01:00
-draft: false
 link: http://www.bbc.com/travel/story/20190804-why-the-french-love-to-say-no
 url: /note/2019-08-05-academie-francaise
 tags:

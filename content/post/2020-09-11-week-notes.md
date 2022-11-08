@@ -1,7 +1,6 @@
 ---
 title: "Week Notes - 7th September 2020"
 date: 2020-09-11T10:15:28+01:00
-draft: false
 tags:
   - media
 ---

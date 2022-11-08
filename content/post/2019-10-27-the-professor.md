@@ -2,7 +2,6 @@
 title: The Professor
 subtitle: A short story about an egotistical man and his wife
 date: 2018-10-27T15:03:42+01:00
-draft: false
 tags:
   - short story
 ---
@@ -56,7 +55,6 @@ Another ripple of laughter, a little louder this time. A thought clattered into 
 
 He returned to the study with a towel, more relaxed now. He barely registered himself crossing through the door frame on the way back into the room. Standing in the middle of the study, between the desk and the armchairs, he rubbed the sweat from his shoulders and back. Hannah rounded the desk once more to retrieve her dressing gown. She laughed at him as he wiped the desk top with the towel and readjusted the banker's lamp to its original position. Then she settled back in the desk chair and pulled open the top drawer.
 
-"You know he's working on another book? There's a printed draft of it in here somewhere."
 
 He had frozen on the other size of the desk. His hazy confidence melted away and he felt the room drop a little colder. Hannah flicked a look up at him and then carried on with the drawer, pulling out a stack of paper held together with a bulldog clip.
 

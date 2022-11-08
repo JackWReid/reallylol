@@ -2,7 +2,6 @@
 title: "Cooking Terms"
 date: 2020-11-28T22:55:05Z
 slug: cooking-terms
-draft: false
 tags:
   - cooking
   - food
