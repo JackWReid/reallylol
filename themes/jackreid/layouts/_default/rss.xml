@@ -34,7 +34,7 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{chomp "<![CDATA[\n"}}{{ .Description | safeHTML }}{{chomp "]]>\n"}}</description>
       <content:encoded>{{chomp "<![CDATA[\n"}}
-        {{ if eq .Type "photo" }}<img src="{{ Params.image | absURL }}" alt="" width="700" height="500" />{{ end }}
+        {{ if eq .Type "photo" }}<img src="{{ .Params.image | absURL }}" alt="" width="700" height="500" />{{ end }}
         {{ .Content | safeHTML }}
       {{chomp "]]>\n"}}</content:encoded>
     </item>
