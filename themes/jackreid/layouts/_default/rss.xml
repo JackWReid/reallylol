@@ -11,7 +11,7 @@
 {{- $pages = $pages | first $limit -}}
 {{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1" xmlns:content="http://purl.org/rss/1.0/modules/content" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
@@ -32,10 +32,9 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
-      <description>
-        {{ if eq .Type "photo" }}<![CDATA[<img src="{{ .Params.image | absURL }}">]>{{ end }}
-        {{ .Summary | html }}
-      </description>
+      {{ if eq .Type "photo" }}<media:content type="image/jpeg" medium="image" width="900" height="600" url="{{ .Params.image | absURL }}" />{{ end }}
+      <description>{{chomp "<![CDATA[\n"}}{{ .Description | safeHTML }}{{chomp "]]>\n"}}</description>
+      <content:encoded>{{chomp "<![CDATA[\n"}}{{ .Content | safeHTML }}{{chomp "]]>\n"}}</content:encoded>
     </item>
     {{ end }}
   </channel>
