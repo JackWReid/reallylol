@@ -2,7 +2,6 @@
 title: Is The Internet A Rhizome?
 subtitle: An academic paper about the power structures inherent in the construction of the internet
 date: 2015-03-02T15:03:42+01:00
-draft: false
 tags:
   - technology
   - litcrit

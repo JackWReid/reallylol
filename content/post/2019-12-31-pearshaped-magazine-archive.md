@@ -2,7 +2,6 @@
 title: 'PearShaped Magazine Archive'
 slug: pearshaped-magazine-archive
 date: 2019-12-31T14:50:57
-draft: false
 link: https://pearshapedarchive.com
 url: /note/2019-12-31-pearshaped-magazine-archive
 tags:

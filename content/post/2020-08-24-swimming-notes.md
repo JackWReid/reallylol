@@ -1,7 +1,6 @@
 ---
 title: "Swimming Notes"
 date: 2020-08-24T09:26:03+01:00
-draft: false
 tags:
   - swimming
   - notes

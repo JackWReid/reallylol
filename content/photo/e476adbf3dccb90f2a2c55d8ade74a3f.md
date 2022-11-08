@@ -4,7 +4,6 @@ date: 2016-02-17
 image: "/img/photo/e476adbf3dccb90f2a2c55d8ade74a3f.jpg"
 location: "Excalibur Hotel Casino"
 instagram: true
-draft: false
 tags:
  - travel
 ---

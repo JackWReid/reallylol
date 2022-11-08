@@ -1,7 +1,6 @@
 ---
 title: "Accessible Buzzfeed"
 date: 2020-08-27T16:38:35+01:00
-draft: false
 slug: accessible-buzzfeed
 tags:
   - web

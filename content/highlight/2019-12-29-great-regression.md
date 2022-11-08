@@ -2,7 +2,6 @@
 title: "The Great Regression"
 slug: the-great-regression
 date: 2019-12-29T22:13:00
-draft: false
 link: https://www.tastecooking.com/the-great-regression-tak-room-thomas-keller-new-nostalgia/
 url: /note/2019-12-29-the-great-regression
 ---

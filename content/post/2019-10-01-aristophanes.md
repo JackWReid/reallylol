@@ -2,7 +2,6 @@
 title: "Wasps"
 slug: aristophanes-wasps
 date: 2019-10-01T11:23:00+01:00
-draft: false
 url: /note/2019-10-01-aristophanes-wasps
 tags:
   - book

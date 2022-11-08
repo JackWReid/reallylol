@@ -3,7 +3,6 @@ title: George Floyd Protester Relief Resources
 subtitle: Static place for links to bail relief funds etc.
 slug: activist-relief-resources
 date: 2020-05-31T09:00:00
-draft: false
 tags:
   - justice
   - race

@@ -2,7 +2,6 @@
 title: "Candlesticks"
 subtitle: "A short story fragment for autumn"
 date: 2017-03-22T15:03:42+01:00
-draft: false
 tags:
   - short story
 ---

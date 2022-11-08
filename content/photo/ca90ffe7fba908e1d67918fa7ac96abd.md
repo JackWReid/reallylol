@@ -4,7 +4,6 @@ date: 2016-03-06
 image: "/img/photo/ca90ffe7fba908e1d67918fa7ac96abd.jpg"
 location: "The Art Institute of Chicago"
 instagram: true
-draft: false
 tags:
  - chicago
  - usa

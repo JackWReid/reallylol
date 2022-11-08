@@ -2,7 +2,6 @@
 title: "Madame Tussaud's Tall Tale"
 slug: madame-tussaud
 date: 2019-07-31T11:32:00+01:00
-draft: false
 url: /note/2019-07-31-madame-tussaud
 tags:
   - book

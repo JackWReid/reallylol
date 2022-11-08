@@ -3,7 +3,6 @@ title: The Sinking of the USS Fitzgerald
 slug: uss-fitzgerald
 date: 2019-07-24T21:23:00+01:00
 url: /note/2019-07-24-uss-fitzgerald
-draft: false
 link: https://features.propublica.org/navy-accidents/uss-fitzgerald-destroyer-crash-crystal
 tags:
   - news

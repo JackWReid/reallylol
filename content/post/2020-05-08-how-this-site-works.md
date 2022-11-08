@@ -3,7 +3,6 @@ title: How this site works
 subtitle: A quick tour of my personal infrastructure
 slug: how-this-site-works
 date: 2020-05-08T16:11:43.634Z
-draft: false
 tags:
   - dev
   - tech

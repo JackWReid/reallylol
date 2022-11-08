@@ -2,7 +2,6 @@
 title: "@fat - Internet Historian"
 subtitle: "We should be doing more to write our history"
 date: 2016-05-05T15:03:42+01:00
-draft: false
 tags:
   - tech
   - internet

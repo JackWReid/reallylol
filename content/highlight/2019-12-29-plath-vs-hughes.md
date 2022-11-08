@@ -2,7 +2,6 @@
 title: "What We Don't Know About Sylvia Plath"
 slug: plath-vs-hughes
 date: 2019-12-29T22:18:00
-draft: false
 link: https://lithub.com/what-we-dont-know-about-sylvia-plath/
 url: /note/2019-12-29-plath-vs-hughes
 ---

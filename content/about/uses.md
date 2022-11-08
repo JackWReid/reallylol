@@ -3,7 +3,6 @@ title: Uses
 date: 2022-11-02
 url: /uses
 layout: plain
-draft: false
 tags:
  - uses
  - tech

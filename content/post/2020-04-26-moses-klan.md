@@ -2,7 +2,6 @@
 title: The bedsheets may be in use elsewhere?
 slug: moses-long-island-klan
 date: 2020-04-26T09:08:30.204Z
-draft: false
 tags:
   - book
   - nyc

@@ -2,7 +2,6 @@
 title: "Finland's Media Literacy"
 slug: finland-media-literate
 date: 2019-12-18T10:16:00
-draft: false
 link: https://edition.cnn.com/interactive/2019/05/europe/finland-fake-news-intl/
 ---
 

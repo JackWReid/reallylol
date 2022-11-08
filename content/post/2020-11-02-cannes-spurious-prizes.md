@@ -2,7 +2,6 @@
 title: "Men in evening wear slapping one another on the back"
 date: 2020-11-02T09:48:26Z
 slug: cannes-spurious-prizes
-draft: false
 tags:
   - media
   - cinema
