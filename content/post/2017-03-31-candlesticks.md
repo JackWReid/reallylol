@@ -4,6 +4,7 @@ subtitle: "A short story fragment for autumn"
 date: 2017-03-22T15:03:42+01:00
 tags:
   - short story
+  - written by me
 ---
 
 ## 1

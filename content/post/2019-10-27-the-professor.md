@@ -4,6 +4,7 @@ subtitle: A short story about an egotistical man and his wife
 date: 2018-10-27T15:03:42+01:00
 tags:
   - short story
+  - written by me
 ---
 
 The emcee stood off to the side of the stage in darkness and in a rented tux. Standing in amongst the clutter of the backstage area he swallowed a choke as he tried to clear his throat quietly. Reaching into his jacket pocket he felt the thick stack of note cards there and shut his eyes for a moment, allowing the cool calm of their presence to wash through him. He turned to his side and gestured to the drama student stooped over the lighting board. He removed the note cards from his pocket, gripped them lightly in his hand, and climbed the steps at the side of the stage as the heat and glare of the lights rose all around him.
@@ -12,7 +13,7 @@ The auditorium had been prepared with more care than usual for the night's event
 
 "Good evening ladies and gentlemen. On behalf of the whole faculty I would like to you welcome you all to our campus and thank you all for coming to what is sure to be a thrilling evening. Before I move onto introducing our very special guest, I must say you all look wonderful this evening!"
 
-*
+⁂
 
 She lay leaning against his side, her hand resting on his bare chest. After a few moment's quiet contemplation she shuffled under the sheets and propped herself up to kiss him. Her lover lay with his head against the headboard, looking fretfully down at the top of her head throughout. When she saw his pathetic expression a jolt of disdain coursed through her and cooled whatever passion had been rising in her. He's pretty, she thought, but pathetic. In her mind he was only just young enough to be this pathetic: twenty-two, undergraduate, a plaything.
 
@@ -25,13 +26,13 @@ She flicked the light switch and a miniature chandelier overhead illuminated the
 
 The integrated bookshelves were a glorious work of restorative carpentry that housed an armoury of books that were bulk bought and never read. On the shelf behind the desk sat a few copies of her husband's published works. Were they placed there so that he could perhaps pluck one off to reference in conversation, or even if one was extremely honoured, sign one of them and make it a gift. Hannah shuddered at the thought. She ran her hand along the desk's top and circled around to the leather chair behind it. She sat; the leather stuck and then warmed under her bare legs. She wondered what he had been frittering around doing to avoid coming in the study.
 
-*
+⁂
 
 "Now then, to our guest. It bears beginning at the outset of this stunning career. Emerging as a stunningly talented undergraduate at the University of Durham not too many years ago, he was quickly recognised as both ambitious and exacting in his early essays and thesis. Then with his best-in-year First in tow, he went on to postgraduate studies at Downing College, Cambridge and graduated with merits. In his first year of postgraduate study, he somehow managed to write his first world bestselling book. At Downing College, work on his doctorate thesis, which we all now know as his second bestselling book, began. Upon completing his doctorate, he founded his eponymous School of Sciences at The University of Birmingham. In his two years nurturing that fledging school, which now stands apart from other such institutions as a world leader, he also co-produced with the BBC the most successful documentary series of all time..."
 
 He moved the notecard from the front of the stack to the back, revealing the next card: more about the Professor's television work, then another book, then onto the build-up. The emcee had a little sheen of sweat over his whole body by this point in the introduction, mostly from the heat of the lights — though not entirely. He hadn't wanted to be the "talent" for this evening.  Very few of these people knew who he was, the dean of the College of Sciences at the university. He had cringed when he saw the posters for the talk go up around the campus: "An Evening with the Professor, with an introduction from  the Dean of the College of Sciences". Who cared about his introduction? It had made him feel very exposed in the light of this shooting star, this public genius that was to come out on stage after him. Only a few more cards to go now. He could see through the lights to the front tables, he had them all listening for now. He couldn't imagine the shame of boring a crowd that was waiting for the Professor. A bead of sweat finally breached his retreating hairline as he began his next line.
 
-*
+⁂
 
 She called out for her lover from the desk chair. A pause, in which she could hear some distant scuffling. She called him again, louder. She wriggled on the chair for a moment and inspected the sparse items on the desk. A lamp — one of those green glass things that belong in an old bank, an expensive pen. No computer, the laptop lived in the drawer; it wasn't a part of the desired picture.
 
@@ -41,7 +42,7 @@ He was hovering in the hallway. He had caught himself making the bed, just as so
 
 "Let's do it over the desk." It wasn't really a suggestion, nor a question. She was already standing up and beginning to circle.
 
-*
+⁂
 
 "By the time he was working on the second series of his documentary, the first was beginning to achieve the global success that I'm sure brought our friends from overseas to be with us here with us this evening. Already he was a household name... and to more than would like to admit it, a bit of a heartthrob."
 
@@ -51,7 +52,7 @@ A ripple of polite female laughs, with a few mens' tones thrown in.
 
 Another ripple of laughter, a little louder this time. A thought clattered into the emcee's mind: the professor would be at the side of the stage by now, waiting for his cue. He'd be listening to this last part of his introduction in detail. The thought of that single pair of eyes he daren't check for at the side of the stage boosted his heart-rate far more than the audience in front of him. Just the final introduction now.
 
-*
+⁂
 
 He returned to the study with a towel, more relaxed now. He barely registered himself crossing through the door frame on the way back into the room. Standing in the middle of the study, between the desk and the armchairs, he rubbed the sweat from his shoulders and back. Hannah rounded the desk once more to retrieve her dressing gown. She laughed at him as he wiped the desk top with the towel and readjusted the banker's lamp to its original position. Then she settled back in the desk chair and pulled open the top drawer.
 
@@ -66,11 +67,11 @@ She flapped the manuscript in the air at the end of her assessment and he tried 
 
 She threw the glasses back in the top drawer and slammed it shut. She yanked open the middle drawer with more force. He heard the contents skid and clatter against the front. He came around the desk. Looking over her shoulder he was curious to see if she'd broken anything valuable, something that may have some day been committed to a museum of the life and times of the Professor.
 
-*
+⁂
 
 "It is for all these reasons and more that we are incredibly honoured to welcome this man to our stage this evening. Ladies and gentlemen, please welcome our very special guest... Professor —"
 
-*
+⁂
 
 Hannah hadn't broken anything, just thrown around some more expensive pens, a pocket thesaurus, a few opened envelopes, bills. She pushed the drawer back in. It jammed, and had to be wiggled to slide fully shut.
 
@@ -86,24 +87,24 @@ Hannah had been watching this with increasing disdain. "Oh well that's the cherr
 
 Hannah word's slipped past him like acrid smoke on the wind. He dove in with his arm and ran his hand to back of the drawer, where there was a notch cut out of the false bottom. He hooked it with his index finger and lifted the panel away.
 
-*
+⁂
 
 The dean extended his arm to beckon the Professor, who was already making his way out of the curtains. When he hit the rays of the first stage light the room's applause swelled and was joined with cheers and whistles. Tangibly balding as he did so, he looked at the Professor turn into the light and smile a broad, beautiful smile. He waved and beamed self-assurance, confidence. His suit fit him better. He even had a pocket square, a little purple thing that twinkled in the light. As he turned to watch his step while he climbed the stairs, the emcee couldn't help but notice the robustness of his hairline. He had thick black hair styled over to the side with wax, how youthful. And yet, a dusting of grey hairs around his temples telegraphed his wisdom. The Professor was almost upon him now, and the emcee turned to shake his hand. In the back tables, phones that had been idly scrolled through were now up in the air, flashing photos of the stage. In the front tables, even the coolest figures broke out into wide applause as the emcee disappeared off side stage and the Professor mounted the lectern.
 
-*
+⁂
 
 Hannah wrapped the dressing gown around herself; the last wisps of sex had left the room. Her lover, naked, still rapt by his drive to understand, pulled the panel of the drawer and laid it on the floorboards to his side.
 
 In the hidden section of the drawer was a single brown A4 envelope that was bulging with its contents. It was placed in the centre of the drawer so that it left a dark brown border of wood around its edge. It had no writing, no markings on its front. In his compulsive state, he picked it up.
 
-*
+⁂
 
 The Professor smiled and looked down with a sort of display of humility as the round of applause grew into a standing ovation for much of the room.
 
-*
+⁂
 
 Hannah bubbled up from the most viscous depths of her daze and plucked the envelope from his hand. She turned it over, blank all over. The strangeness of this object, of its place, had drained the spleen from her. It felt as if it could be full of  photographs. What about that made her feel sick? What about that made the blood withdraw from her extremities, roar past her ear drums? Her lover's figure became indistinct beside her. The room around her dimmed. Can a man's being insufferable hide his being something worse?
 
-*
+⁂
 
 The Professor smiled and raised his hand to marshal the end of the ovation. He gripped the top of the lectern, cleared his throat, and began his speech.
