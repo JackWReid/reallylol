@@ -7,8 +7,10 @@ layout: plain
 
 This is a brief overview of my work history in tech, covering the major projects at the companies I've worked at. The general outline of my work history is available on [LinkedIn](https://www.linkedin.com/in/jackwreid/) too, if that's more your thing. If you're more interested in what stuff I use while I'm at work, I have a [/uses](/uses) page. You can download my <a href="/docs/cv.pdf" download="cv.pdf">CV here</a>.
 
-## Kaluza (2022)
+## Miro (2022-)
+I just started as an Engineering Manager for the Layout team at Miro, in Berlin. Not much to report yet beyond excitement and possibility.
 
+## Kaluza (2022)
 I worked as an Engineering Manager across two teams on Flex product. The idea behind the Flex product is to respond to the problem that increasingly faces power grids transitioning to renewable energy sources: the mismatch of supply and demand. Kaluza aims to solve this by enrolling energy customers to receive cheaper energy in exchange for giving us the power to control when their power intensive devices like electric vehicles are charged.
 
 My first team was the Platform team, which was responsible for providing a stable and reliable platform to the other teams, and one that was packaged up in easy-to-use workflows that made it easy to ship new products (very) quickly. The second was the Trading & Dispatch team, who owned a couple of tools that give an overview of all the devices connected to the platform and visualised their capacity, consumption, and flexibility.
