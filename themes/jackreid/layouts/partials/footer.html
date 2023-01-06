@@ -24,7 +24,10 @@
       {{ end }}
     </section>
     <section class="site-footer__details">
-      <p><a href="mailto:hello@jackreid.xyz">hello@jackreid.xyz</a> <a href="{{ "/index.xml" | absURL }}">RSS</a></p>
+      <p>
+				<a href="mailto:hello@jackreid.xyz">hello@jackreid.xyz</a>
+				<a rel="me" href="https://social.lol/@nice">@nice</a>
+				<a href="{{ "/index.xml" | absURL }}">RSS</a></p>
       <p>Fresh as of {{ dateFormat "15:04, 2 January 2006" now }}</p>  
     </section>
   </footer>
