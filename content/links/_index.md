@@ -4,7 +4,7 @@ date: 2020-08-17T12:00:00
 url: "/links"
 ---
 
-Here's where I keep track of interesting links that I might come back to much, much later. For things that I'm just reading day to day and saving for later, I have my [Pocket](/articles/saved) and [Feedbin](/articles/liked) mirrored here.
+Here's where I keep track of interesting links that I might come back to much, much later.
 
 ## Outside
 - [Postcrossing](https://postcrossing.com) - Postcard exchange
@@ -19,9 +19,9 @@ Here's where I keep track of interesting links that I might come back to much, m
 - [The Mother of all Maritime Links](https://www.boat-links.com/boatlink.html)
 
 ## Indie Web
+- [omg.lol](https://omg.lol) - $20/yr for a domain, Mastodon account, email forwarding and more indie stuff
 - [Tilde Town](https://tilde.town)
 - [Low Tech Magazine](https://solar.lowtechmagazine.com)
-- [138 Internet Videos That Blew My Mind](https://docs.google.com/presentation/d/1ub46LTP8NLu306oMk7J0t3Yk7QHiTg_QcirzaS5EZhs/edit#slide=id.g63d1a2360e_0_589)
 
 ## Link Directories
 - [Marijn Florence's Linkroll](https://marijnflorence.neocities.org/linkroll/)
@@ -39,7 +39,6 @@ Here's where I keep track of interesting links that I might come back to much, m
 - [ScreenplaySubs](https://screenplaysubs.com/) - Read screenplays alongside Netflix
 - [Percollate](https://github.com/danburzo/percollate) - Convert web pages to nice e-reader renders
 - [All the DIY Links You Never Knew You Needed](https://boardgamegeek.com/thread/848512/all-diy-links-you-never-knew-you-needed) - Links and pointers for DIY tabletop games
-- [Doable lists](https://websitesite.kr/doablelist/index.html) - Lists of ideas for doable goals
 - [Chest of Books](https://chestofbooks.com) - A collection of non-fiction books painstakingly converted to HTML
 - [Death Generator](https://deathgenerator.com) - Generate the death screens from classic games with whatever text you want
 
