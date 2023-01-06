@@ -228,12 +228,12 @@ figcaption {
 }
 
 .site-footer__details {
-  margin-top: 1rem;
+  margin: 0 0 .5rem;
 }
 
 .site-footer__details p a {
   display: inline-block;
-  margin: 0 1rem 0 0;
+  margin: 0 .5rem 0 0;
 }
 
 .site-footer__details p:first-child {
@@ -268,7 +268,7 @@ figcaption {
   }
 
   .site-footer__details p a {
-    margin: 0 0 0 1rem;    
+    margin: 0 0 0 .5rem;
   }
 }
 
