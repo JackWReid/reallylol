@@ -1,5 +1,5 @@
 ---
-title: "London"
+title: "Leaving London"
 date: 2023-01-13
 tags:
  - london
