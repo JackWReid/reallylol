@@ -1,5 +1,5 @@
 ---
-title: "The Return"
+title: "The return"
 date: 2022-12-14
 tags:
   - short story
