@@ -14,8 +14,8 @@ for mdfile in $mddir/*.md; do
 	newimgbase=$filedate-$imgbase
 	before=${imgbase::${#imgbase}-4}
 	after=${newimgbase::${#newimgbase}-4}
-	sed -i "s|$before|$after|g" $mdfile
-	mv "./static/$imgbase" "./static/img/photo/$newimgbase"
+	#sed -i '' "s|$before|$after|g" $mdfile
+	mv "./static/img/photo/$imgbase" "./static/img/photo/$newimgbase"
 
 #	if [[ "$mdfilebase" =~ ^$filedate.* ]];
 #	then
@@ -25,11 +25,4 @@ for mdfile in $mddir/*.md; do
 #		mv $mdfile "$mddir/$filedate-$mdfilebase"
 #	fi
 
-	# TODO Correct image file names based on .md file names
-	# Cut guide
-	# 12-12-12-
-	# 123456789
-	#
-	
-		
 done
