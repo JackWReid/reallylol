@@ -16,10 +16,6 @@ for mdfile in $mddir/*.md; do
 		echo "[MISS] $mdfilebase : $filedate"
 		mv $mdfile "$mddir/$filedate-$mdfilebase"
 	fi
-done
 
-#for mdfile in $mddir/2022-07-27*; do
-#	mdfilebase=$(basename $mdfile)
-#	nodatename=$(echo $mdfilebase | cut -c 12-)
-#	mv $mdfile $mddir/2022-07-22-$nodatename
-#done
+	# TODO Correct image file names based on .md file names
+done
