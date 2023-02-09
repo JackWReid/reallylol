@@ -2,7 +2,7 @@
 title: "The hoof"
 date: 2022-07-22
 location: Pembrokeshire, Wales
-image: "/img/photo/ben-cline-hike.jpg"
+image: "/img/photo/2022-07-22-ben-cline-hike.jpg"
 tags:
   - wales
   - people
@@ -10,4 +10,4 @@ tags:
   - landscape
 ---
 
-![Two people walking between high ferns](/img/photo/ben-cline-hike.jpg)
+![Two people walking between high ferns](/img/photo/2022-07-22-ben-cline-hike.jpg)

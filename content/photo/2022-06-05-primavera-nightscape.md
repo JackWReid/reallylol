@@ -2,7 +2,7 @@
 title: "Seventh circle"
 date: 2022-06-05
 location: Barclona, Spain
-image: "/img/photo/primavera-nightscape.jpg"
+image: "/img/photo/2022-06-05-primavera-nightscape.jpg"
 tags:
     - travel
     - spain
@@ -11,4 +11,4 @@ tags:
     - primavera
 ---
 
-![A big musical festival with lights at night](/img/photo/primavera-nightscape.jpg)
+![A big musical festival with lights at night](/img/photo/2022-06-05-primavera-nightscape.jpg)

@@ -2,7 +2,7 @@
 title: "Cliff yellow"
 date: 2022-07-22
 location: Pembrokeshire, Wales
-image: "/img/photo/cliff-flowers.jpg"
+image: "/img/photo/2022-07-22-cliff-flowers.jpg"
 tags:
   - flowers
   - wales
@@ -11,4 +11,4 @@ tags:
   - coast
 ---
 
-![Yellow wild flowers on a cliff by the sea](/img/photo/cliff-flowers.jpg)
+![Yellow wild flowers on a cliff by the sea](/img/photo/2022-07-22-cliff-flowers.jpg)

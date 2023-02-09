@@ -2,7 +2,7 @@
 title: "Triangles of Primavera"
 date: 2022-06-05
 location: Barclona, Spain
-image: "/img/photo/primavera-triangles.jpg"
+image: "/img/photo/2022-06-05-primavera-triangles.jpg"
 tags:
     - travel
     - spain
@@ -11,4 +11,4 @@ tags:
     - primavera
 ---
 
-![Two modern triangular buildings](/img/photo/primavera-triangles.jpg)
+![Two modern triangular buildings](/img/photo/2022-06-05-primavera-triangles.jpg)

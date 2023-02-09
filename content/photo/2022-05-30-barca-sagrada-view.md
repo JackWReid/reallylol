@@ -2,7 +2,7 @@
 title: "The sacred family"
 date: 2022-05-30
 location: Barcelona, Spain
-image: "/img/photo/barca-sagrada-view.jpg"
+image: "/img/photo/2022-05-30-barca-sagrada-view.jpg"
 tags:
     - travel
     - spain
@@ -10,5 +10,5 @@ tags:
     - barcelona
 ---
 
-![Barclona skyline from above](/img/photo/barca-sagrada-view.jpg)
+![Barclona skyline from above](/img/photo/2022-05-30-barca-sagrada-view.jpg)
 

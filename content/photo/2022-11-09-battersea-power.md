@@ -2,7 +2,7 @@
 title: "Battersea posterised"
 date: 2022-11-09
 location: Battersea, England
-image: "/img/photo/battersea-power.jpg"
+image: "/img/photo/2022-11-09-battersea-power.jpg"
 tags:
  - london
  - city
@@ -10,4 +10,4 @@ tags:
  - architecture
 ---
 
-![Battersea Power Station lit up at dusk](/img/photo/battersea-power.jpg)
+![Battersea Power Station lit up at dusk](/img/photo/2022-11-09-battersea-power.jpg)

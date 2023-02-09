@@ -2,7 +2,7 @@
 title: "Basel Boys"
 date: 2022-05-26
 location: Basel, Switzerland
-image: "/img/photo/basel-boys.jpg"
+image: "/img/photo/2022-05-26-basel-boys.jpg"
 tags:
     - travel
     - switzerland
