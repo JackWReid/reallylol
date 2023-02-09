@@ -1,6 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
+# TODO Step by step readline to generate instead of trying
+# to remember the sequence of args
+
 echo "[PHOTO] img:$1 filename:$2 title:$3 loc:$4 date:$5"
 nowdate=$(date +"%Y-%m-%d")
 date="${5:-$nowdate}"
