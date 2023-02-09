@@ -2,7 +2,7 @@
 title: "Cherry season"
 date: 2022-05-25
 location: St. Loup des Vignes, France
-image: "/img/photo/loup-cherry-bounty.jpg"
+image: "/img/photo/2022-05-25-loup-cherry-bounty.jpg"
 tags:
     - travel
     - france
@@ -10,5 +10,5 @@ tags:
     - nature
 ---
 
-![A tree full of cherries](/img/photo/loup-cherry-bounty.jpg)
+![A tree full of cherries](/img/photo/2022-05-25-loup-cherry-bounty.jpg)
 

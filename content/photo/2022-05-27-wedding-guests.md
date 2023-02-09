@@ -2,7 +2,7 @@
 title: "Wedding guests"
 date: 2022-05-27
 location: Büron, Switzerland
-image: "/img/photo/wedding-sarah-jack.jpg"
+image: "/img/photo/2022-05-27-wedding-sarah-jack.jpg"
 tags:
     - travel
     - switzerland
@@ -13,5 +13,5 @@ tags:
     - bike
 ---
 
-![A couple's selfie at a wedding](/img/photo/wedding-sarah-jack.jpg)
+![A couple's selfie at a wedding](/img/photo/2022-05-27-wedding-sarah-jack.jpg)
 
