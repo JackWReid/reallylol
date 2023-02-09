@@ -6,7 +6,8 @@ imgdir="./static/img/photo"
 imgbase=$(basename $1)
 imgcode=${imgbase::${#imgbase}-4}
 
-mdfile=$(find $mddir -name "*$imgcode*")
+#mdfile=$(find $mddir -name "*$imgcode*")
+mdfile=$(grep -Rl $imgcode $mddir)
 if [ -z "${mdfile}" ]; then
 	echo [MISS] $imgbase $imgcode $mdfile
 	exit 0
