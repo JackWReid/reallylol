@@ -2,7 +2,7 @@
 title: "Henry & Atlas"
 date: 2022-07-22
 location: Pembrokeshire, Wales
-image: "/img/photo/henry-atlas-pem.jpg"
+image: "/img/photo/2022-07-22-henry-atlas-pem.jpg"
 tags:
   - dog
   - dogs
@@ -16,4 +16,4 @@ tags:
   - beach
 ---
 
-![A man holding a spoodle in his arms on a beach](/img/photo/henry-atlas-pem.jpg)
+![A man holding a spoodle in his arms on a beach](/img/photo/2022-07-22-henry-atlas-pem.jpg)

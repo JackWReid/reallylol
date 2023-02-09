@@ -2,7 +2,7 @@
 title: "Snow day"
 date: 2022-12-12
 location: London, England
-image: "/img/photo/regent-snow-day.jpg"
+image: "/img/photo/2022-12-12-regent-snow-day.jpg"
 tags:
  - london
  - city
@@ -11,4 +11,4 @@ tags:
  - uk
 ---
 
-![Regents Canal in the early morning with snow covering every surface](/img/photo/regent-snow-day.jpg)
+![Regents Canal in the early morning with snow covering every surface](/img/photo/2022-12-12-regent-snow-day.jpg)

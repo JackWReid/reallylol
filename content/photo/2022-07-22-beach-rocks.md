@@ -2,7 +2,7 @@
 title: "Mushroom colour"
 date: 2022-07-22
 location: Pembrokeshire, Wales
-image: "/img/photo/beach-rocks.jpg"
+image: "/img/photo/2022-07-22-beach-rocks.jpg"
 tags:
   - wales
   - nature
@@ -10,4 +10,4 @@ tags:
   - landscape
 ---
 
-![Colourful rocks in a cliffside](/img/photo/beach-rocks.jpg)
+![Colourful rocks in a cliffside](/img/photo/2022-07-22-beach-rocks.jpg)

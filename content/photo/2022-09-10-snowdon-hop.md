@@ -2,7 +2,7 @@
 title: "Navigators extraordinary"
 date: 2022-09-10
 location: Snowdonia, Wales
-image: "/img/photo/snowdon-hop.jpg"
+image: "/img/photo/2022-09-10-snowdon-hop.jpg"
 tags:
   - wales
   - landscape
@@ -11,4 +11,4 @@ tags:
   - countryside
 ---
 
-![Two figures picking through a bog with a valley in the background](/img/photo/snowdon-hop.jpg)
+![Two figures picking through a bog with a valley in the background](/img/photo/2022-09-10-snowdon-hop.jpg)
