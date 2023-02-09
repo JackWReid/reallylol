@@ -1,7 +1,7 @@
 ---
 title: Paris Autumn
 date: 2021-11-10T20:05:00+00:00
-image: /img/photo/paris-canal.jpg
+image: /img/photo/2021-11-10-paris-canal.jpg
 location: Paris, France
 tags:
   - cities
