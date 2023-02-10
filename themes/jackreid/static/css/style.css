@@ -502,7 +502,7 @@ figcaption {
 }
 
 .photo-section-item__title {
-  margin-bottom: 0;
+  margin: .5rem 0 0;
 }
 
 .photo-section-item__date {
