@@ -35,7 +35,7 @@
   		{{ if eq "photo" .Type }}
 			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
 			{{ else }}
-      <description>{{ .Summary | html }}</description>
+      <description>{{ .Content | html }}</description>
 			{{ end }}
     </item>
     {{ end }}
