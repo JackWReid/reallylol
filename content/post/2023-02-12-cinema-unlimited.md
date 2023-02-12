@@ -1,0 +1,17 @@
+---
+title: "Rixdorf"
+date: 2023-02-12
+tags:
+ - journal
+ - germany
+ - berlin
+ - sarah
+---
+
+We've been living here together for a couple of weeks. It's a quiet Sunday in our place in the city, the first of its kind. We found our long-term apartment and we'll be there soon. We're engaged; everybody knows. We made sure of that. We're going to get married. Did you hear, we're going to get married.
+
+Roots are going down. We have our grocery shops, our first couple of bars and cafes that might one day be considered our places. Most of them are going down in Rixdorf, a village in Berlin, they say. On Sunday the church bell tolls in the square and children in all-in-one snow suits toddle along the pavements. People bundle out of bakeries.
+
+Our new place isn't far away in Treptower Park, which is still arguably Neukölln. Though it is promised to us, we are yet to sign a piece of paper over it. Still, we're filling it with an imagined life. Once we're in there and re-registered, we can kick off a series of bureaucracy that will conclude with us getting married. We're getting married, you see.
+
+I've been travelling to the work in the office every weekday to get into the swing of it, and to get my hands on as much free food and coffee as possible. Sarah has been studying for her masters and generally getting ready to start working for the Charité next week. She is a very in demand clinical professional, and she is reading about endangered bird habitats. Many weeknights, we are having dinners with friends or going to the cinema. We are getting married. We are getting married!
