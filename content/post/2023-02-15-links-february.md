@@ -7,6 +7,9 @@ tags:
  - japan
  - history
  - language
+ - web
+ - money
+ - science
 ---
 
 Well, [we moved to Germany](/post/2023-02-12-rixdorf/) (we know!), so I've been correcting some of my gaps in recent German history by reading the lengthy Wikipedia page on [German reunification][1]. In terms of online life, that's the only real giveaway that I've moved in the real world. The rest of the anglophone media roar rolls along as before with two notable edits. I've completely cut out the very high volume Westminster insider newsletter I used to read first thing every morning (why?) and I've generally reduced my intake of UK news to a minimum.
