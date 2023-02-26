@@ -7,9 +7,9 @@ set -euo pipefail
 echo "[PHOTO] img:$1 filename:$2 title:$3 loc:$4 date:$5"
 nowdate=$(date +"%Y-%m-%d")
 date="${5:-$nowdate}"
-imgpath="./static/img/photo/$2.jpg"
+imgpath="./static/img/photo/$date-$2.jpg"
 mdpath="./content/photo/$date-$2.md"
-absimgpath="/img/photo/$2.jpg"
+absimgpath="/img/photo/$date-$2.jpg"
 
 # Move and transform the image file
 # brew install imagemagick if mogrify is missing
