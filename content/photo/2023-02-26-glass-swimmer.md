@@ -2,7 +2,7 @@
 title: "Glass Swimmer"
 date: 2023-02-26
 location: Neukölln, Berlin
-image: "/img/photo/glass-swimmer.jpg"
+image: "/img/photo/2023-02-26-glass-swimmer.jpg"
 tags:
  - berlin
  - cities
@@ -10,4 +10,4 @@ tags:
  - architecture
 ---
 
-![A swimmer sculpture in front of a large glass building](/img/photo/glass-swimmer.jpg)
+![A swimmer sculpture in front of a large glass building](/img/photo/2023-02-26-glass-swimmer.jpg)
