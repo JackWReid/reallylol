@@ -5,9 +5,13 @@ url: "/links"
 type: links
 ---
 
-Here's where I keep track of interesting links that I might come back to much, much later.
+I collect interesting things from the web as I go. That collection takes a few forms. Firstly, there's this fixed directory of links that I try to update and prune and organise into sections that feel right. Secondly, I sometimes make posts that round up interesting things I've found in the month or so prior. Finally I have "highlights", where I cut out interesting snippets from longer articles and paste them here.
 
-## Outside
+Scroll down a little for the directory. Scroll down a little further for a paginated list of highlights and link posts.
+
+## Directory
+
+### Outside
 - [Postcrossing](https://postcrossing.com) - Postcard exchange
 - [Highland Walks](https://www.walkhighlands.co.uk/) - Personally vetted walks in the Highlands
 - [London Walks](https://www.london-footprints.co.uk/walkslist.htm)
@@ -19,20 +23,21 @@ Here's where I keep track of interesting links that I might come back to much, m
 - [Jim Machalak's Boat Designs](https://www.jimsboats.com)
 - [The Mother of all Maritime Links](https://www.boat-links.com/boatlink.html)
 
-## Indie Web
+### Indie Web
 - [omg.lol](https://omg.lol) - $20/yr for a domain, Mastodon account, email forwarding and more indie stuff
 - [Tilde Town](https://tilde.town)
 - [Low Tech Magazine](https://solar.lowtechmagazine.com)
 
-## Link Directories
+### Link Directories
 - [Marijn Florence's Linkroll](https://marijnflorence.neocities.org/linkroll/)
 - [Jacob Hall's Linkroll](https://www.jacobhall.net/links.html)
 - [Electric Trash](https://www.electrictrash.com)
 - [Terra](https://terra.finzdani.net)
 - [href.cool](https://href.cool)
 - [Gossip's Web](https://gossipsweb.net)
+- [Garden of Blogs](https://bloggy.garden/)
 
-## Tools
+### Tools
 - [Barbra](https:/barbra.io) - Flash cards
 - [Old Fashioned](https://oldfashioned.tech/) - Cocktail recipes
 - [ZLibrary](https://b-ok.cc) - Free e-books
@@ -43,7 +48,7 @@ Here's where I keep track of interesting links that I might come back to much, m
 - [Chest of Books](https://chestofbooks.com) - A collection of non-fiction books painstakingly converted to HTML
 - [Death Generator](https://deathgenerator.com) - Generate the death screens from classic games with whatever text you want
 
-## Coding
+### Coding
 - [Learn X in Y minutes](https://learnxinyminutes.com) - The fatest reference I've found for checking language syntaxes
 - [`window.location` Cheatsheet](https://www.samanthaming.com/tidbits/86-window-location-cheatsheet/)
 - [Responsive Image Syntax in HTML](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/)
@@ -54,25 +59,24 @@ Here's where I keep track of interesting links that I might come back to much, m
 - [Postgres Configuration for Humans](https://postgresqlco.nf/en/doc/param/)
 - [Linux Command Library](https://linuxcommandlibrary.com/basic/oneliners.html) - Handy Linux one-liners
 
-## Personal Websites
-- [OMGLORD](https://omglord.com)
-- [Devin Argenta](https://devinargenta.com)
-- [Marijn Florence](https://marijnflorence.neocities.org)
-- [Monokai](https://monokai.nl) - The creator of the Monokai font creates gorgeous web experiments too
+### Personal Websites
+- [OMGLORD](https://omglord.com) - A designer that has a good link directory
+- [Devin Argenta](https://devinargenta.com) - I know him I like him
+- [Monokai](https://monokai.nl) - The creator of the Monokai font creates nice web experiments too
 
-## Language
+### Language
 - [Marijn van Hoorn, Esq.'s Compendium of Good Words](https://marijnflorence.neocities.org/words/)
 - [My Knipe List](https://cs.stanford.edu/~kach/words.txt)
 
-## History
+### History
 - [Pamphlets About Police Violence](https://policeviolence.wordpress.com/historical-moments/)
 - [How Your History Gets Made](https://acoup.blog/2020/07/09/collections-how-your-history-gets-made/)
 - [Cookbooks and Home Economics](https://archive.org/details/cbk) - Internet Archive of historical cookbooks
 
-## Science
+### Science
 - [Emergent Tool Use from Multi-Agent Interaction](https://openai.com/blog/emergent-tool-use/) - Great AI demonstration showing human-like behaviour adaptation
 - [Proceedings of the IRCS Workshop on Prosody in Natural Speech](https://languagelog.ldc.upenn.edu/myl/IRCS_Prosody1992/TableOfContents.html) - One summer in the 90s
 - [So you want to learn physics](https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics)
 
-## Film
+### Film
 - [Phantom Thread camera tests](https://www.youtube.com/watch?v=Uu5jVmIZBhE)

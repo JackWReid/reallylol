@@ -457,6 +457,19 @@ figcaption {
   text-align: center;
 }
 
+.single-main--links .single-main__content {
+	margin-top: 1rem;
+}
+
+.single-main--links h2 {
+	margin-top: 2rem;
+}
+
+.single-main--links .single-main__content {
+	padding-bottom: 1rem;
+	border-bottom: 1px solid black;
+}
+
 .section-item {
   margin-bottom: 2rem;
 }
