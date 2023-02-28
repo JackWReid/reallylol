@@ -1,29 +1,47 @@
 #!/bin/bash
 set -euo pipefail
 
-# TODO Step by step readline to generate instead of trying
-# to remember the sequence of args
+if [ -z "$1" ]; then
+	echo "Usage: ./scripts/new-photo.sh path/to/photo.jpg"
+	exit 1
+fi
 
-echo "[PHOTO] img:$1 filename:$2 title:$3 loc:$4 date:$5"
-nowdate=$(date +"%Y-%m-%d")
-date="${5:-$nowdate}"
-imgpath="./static/img/photo/$date-$2.jpg"
-mdpath="./content/photo/$date-$2.md"
-absimgpath="/img/photo/$date-$2.jpg"
+creation_datetime=$(exiftool -d "%Y-%m-%dT%H:%M:%S" -DateTimeOriginal -s3 "$1")
+creation_date=$(exiftool -d "%Y-%m-%d" -DateTimeOriginal -s3 "$1")
+
+if [ -z "$creation_date" ]; then
+  echo "Failed to extract the creation date from the exif data."
+  exit 1
+fi
+
+read -p "Slug: " slug
+read -p "Title: " title
+read -p "Location: " location
+read -p "Tags [comma separated]: " tags
+read -p "Alt text: " alt_text
+
+img_path="./static/img/photo/$creation_date-$slug.jpg"
+md_path="./content/photo/$creation_date-$slug.md"
+abs_img_path="/img/photo/$creation_date-$slug.jpg"
 
 # Move and transform the image file
 # brew install imagemagick if mogrify is missing
-cp $1 $imgpath
-mogrify -quiet -format jpg -layers Dispose -resize 1400\>x1400\> -quality 100% $imgpath
+cp $1 $img_path
+mogrify -quiet -format jpg -layers Dispose -resize 1400\>x1400\> -quality 100% $img_path
 
-# Create photo .md file for Hugo
-touch $mdpath
-echo "---" >> $mdpath
-echo "title: \"$3\"" >> $mdpath
-echo "date: $date" >> $mdpath
-echo "location: $4" >> $mdpath
-echo "image: \"$absimgpath\"" >> $mdpath
-echo "---" >> $mdpath
-echo "" >> $mdpath
-echo "![]($absimgpath)" >> $mdpath
-vim $mdpath
+md_template=$(cat <<EOF
+---
+title: "$title"
+date: $creation_datetime
+image: "$abs_img_path"
+location: $location
+tags: [ $tags ]
+---
+
+![$alt_text]($abs_img_path)
+EOF
+)
+
+echo "$md_template"
+echo $md_path
+echo "$md_template" > $md_path
