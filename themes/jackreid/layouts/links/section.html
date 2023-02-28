@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main class="single-main single-main--{{.Params.format}}">
+  <h1 class="single-main__title">{{ .Title }}</h1>
+  <div class="single-main__content">
+    {{ .Content }}
+  </div>
+	<hr>
+  <h2 class="recent-posts">Recent posts</h2>
+  <div class="multi-preview-list">
+	{{ $p := slice "links" }}
+	{{ $linkposts := where .Site.Pages "Params.tags" "intersect" $p }}
+	{{ $highlights := where .Site.Pages "Section" "==" "highlight" }}
+	{{ $posts := sort ($linkposts | union $highlights) "Date" "desc" }}
+	{{ $paginator := .Paginate $posts }}
+
+	{{ range $paginator.Pages }}
+  {{- partial "multi-preview.html" . -}}
+	{{ end }}
+
+	{{- partial "pagination.html" . -}}
+</main>
+{{ end }}

@@ -33,7 +33,9 @@
     {{ partial "icons/calendar.html" . }}
     {{ .Date.Format "2006-01-02" }}
   </p>
-  {{ .Summary }}
+  <div class="highlight-item__content">
+  {{ .Content }}
+	</div>
   </article>
   {{ else if eq "post" .Type }}
   <article class="blog-item">

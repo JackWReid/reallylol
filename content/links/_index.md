@@ -1,7 +1,8 @@
 ---
 title: Links
-date: 2020-08-17T12:00:00
+date: 2020-08-17
 url: "/links"
+type: links
 ---
 
 Here's where I keep track of interesting links that I might come back to much, much later.
