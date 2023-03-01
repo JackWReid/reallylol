@@ -1,17 +1,22 @@
 #!/bin/bash
 set -euo pipefail
 
-echo "[POST] slug:$1 title:$2"
-date=$(date +"%Y-%m-%d")
-mdpath="./content/post/$date-$1.md"
+read -p "Slug: " slug
+read -p "Title: " title
+
+date=$(date +"%Y-%m-%dT%H:%M:%S")
+md_path="./content/post/$date-$slug.md"
 
 # Create post .md file for Hugo
-touch $mdpath
-echo "---" >> $mdpath
-echo "title: \"$2\"" >> $mdpath
-echo "date: $date" >> $mdpath
-echo "tags:" >> $mdpath
-echo " - journal" >> $mdpath
-echo "---" >> $mdpath
-echo "" >> $mdpath
+
+md_template=$(cat <<EOF
+---
+title: "$title"
+date: $date
+---
+
+EOF
+)
+
+echo "$md_template" > $md_path
 vim $mdpath

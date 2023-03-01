@@ -346,8 +346,7 @@ figcaption {
 }
 
 .highlight-item__title,
-.blog-item__title,
-.note-item__title {
+.blog-item__title {
   margin: 0 0 .2rem;
   font-size: 1.2em;
   font-family: var(--font-title);
@@ -357,6 +356,11 @@ figcaption {
 .blog-item__title a,
 .note-item__title a {
   color: inherit;
+}
+
+.note-item__title a {
+	text-decoration: none;
+	font-size: 1.5rem;
 }
 
 .highlight-item__date,
