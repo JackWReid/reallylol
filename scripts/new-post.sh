@@ -7,12 +7,11 @@ read -p "Title: " title
 date=$(date +"%Y-%m-%dT%H:%M:%S")
 md_path="./content/post/$date-$slug.md"
 
-# Create post .md file for Hugo
-
 md_template=$(cat <<EOF
 ---
 title: "$title"
 date: $date
+tags: []
 ---
 
 EOF
