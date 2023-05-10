@@ -1,10 +1,11 @@
 ---
 title: They give it away
-date: -001-11-30T00:00:00+00:00
+date: 2022-02-14
 tags:
   - work
   - capitalism
   - media
+  - buzzfeed
 ---
 
 I think the time I spent on the Community team was interesting. Firstly it was the closest knit team I’ve ever been on, socially speaking. Partly there was a good social chemistry between team members and a sense that we had a fun part of the product to work on and we knew about it more than anybody else in the organisation. The pandemic baked in those personal relationships strongly, to the point that we became a sort of insufferable clique.
