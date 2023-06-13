@@ -18,6 +18,12 @@ Roland Barthes [is down bad][2].
 
 Mary Gaitskill has the [only interesting conversation][3] with a Chat AI that I've seen so far.
 
+Nuclear [might not have a place][4] in the renewable energy future.
+
+An [idealistic way][5] of organising absolutely everything.
+
 [1]: https://researchbriefings.files.parliament.uk/documents/SN06395/SN06395.pdf
 [2]: https://hedgehogreview.com/issues/by-theory-possessed/articles/i-love-you-in-theory
 [3]: https://unherd.com/2023/06/mary-gaitskill-how-a-chatbot-charmed-me/
+[4]: https://jeromeaparis.substack.com/p/the-duck-in-the-room-the-end-of-baseload
+[5]: https://johnnydecimal.com
