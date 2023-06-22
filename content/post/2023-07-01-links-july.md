@@ -12,7 +12,10 @@ draft: true
 
 Welsh and Albanian: [almost Romance languages][4].
 
+It's time for a [vibe shift][5].
+
 [1]: https://dwheeler.com/essays/filenames-in-shell.html
 [2]: https://dilettantearmy.com/articles/merchandizing-the-void
 [3]: https://www.theguardian.com/commentisfree/2023/jun/20/the-guardian-view-on-danger-at-sea-looking-out-for-all-those-in-peril
 [4]: https://dannybate.com/2022/11/21/the-almost-romance-languages/
+[5]: http://fjord.style/vibe-shift
