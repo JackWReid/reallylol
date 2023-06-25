@@ -18,4 +18,4 @@ EOF
 )
 
 echo "$md_template" > $md_path
-vim $mdpath
+vim $md_path
