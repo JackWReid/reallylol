@@ -18,6 +18,8 @@ Common [writing bugs][6].
 
 Memes are [a love language][7].
 
+The definitive guide to [vaporwave text encoding][8].
+
 [1]: https://dwheeler.com/essays/filenames-in-shell.html
 [2]: https://dilettantearmy.com/articles/merchandizing-the-void
 [3]: https://www.theguardian.com/commentisfree/2023/jun/20/the-guardian-view-on-danger-at-sea-looking-out-for-all-those-in-peril
@@ -25,3 +27,4 @@ Memes are [a love language][7].
 [5]: http://fjord.style/vibe-shift
 [6]: https://www.cs.columbia.edu/~hgs/etc/writing-bugs.html
 [7]: https://theface.com/life/memes-love-language-hinge-sex-relationships-dating-apps-social-media
+[8]: https://yaytext.com/blog/vaporwave-unicode-analysis/
