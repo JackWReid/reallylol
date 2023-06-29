@@ -16,9 +16,12 @@ It's time for a [vibe shift][5].
 
 Common [writing bugs][6].
 
+Memes are [a love language][7].
+
 [1]: https://dwheeler.com/essays/filenames-in-shell.html
 [2]: https://dilettantearmy.com/articles/merchandizing-the-void
 [3]: https://www.theguardian.com/commentisfree/2023/jun/20/the-guardian-view-on-danger-at-sea-looking-out-for-all-those-in-peril
 [4]: https://dannybate.com/2022/11/21/the-almost-romance-languages/
 [5]: http://fjord.style/vibe-shift
 [6]: https://www.cs.columbia.edu/~hgs/etc/writing-bugs.html
+[7]: https://theface.com/life/memes-love-language-hinge-sex-relationships-dating-apps-social-media
