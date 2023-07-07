@@ -1,7 +1,7 @@
-baseURL = "https://jackreid.xyz"
+baseURL = "https://really.lol"
 languageCode = "en-gb"
-title = "Jack Reid"
-theme = "jackreid"
+title = "really lol"
+theme = "reallylol"
 paginate = 10
 buildFuture = true
 timeout = 999999
