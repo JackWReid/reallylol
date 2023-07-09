@@ -2,19 +2,19 @@
   --width-inner: 700px;
   --width-outer: 1000px;
   --font-title: -apple-system, blinkmacsystemfont, 'segoe ui', roboto, oxygen-sans, ubuntu, cantarell, 'helvetica neue', sans-serif;
+
   --font-base: Charter, Georgia, Times New Roman, times, serif;
   --colour-background: rgb(253,251,244);
   --colour-line: rgb(44,71,31);
   --colour-text: rgb(44,71,31);
-  --colour-accent: rgb(87,143,61);
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --c-bg: #020826;
-    --c-body: #fffffe;
-    --c-panel-bg: #de2919;
-    --c-panel-body: #020826;
+    --colour-background: #19282f;
+    --colour-line: #f0ede4;
+    --colour-text: #f0ede4;
   }
 
   a {
@@ -30,14 +30,6 @@ html,
 body {
   min-height: 100vh;
   line-height: 1.4;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --colour-background: rgb(27,44,19);
-    --colour-line: rgb(253,251,244);
-    --colour-text: rgb(253,251,244);
-  }
 }
 
 body {
