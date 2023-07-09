@@ -1,6 +1,6 @@
 baseURL = "https://really.lol"
 languageCode = "en-gb"
-title = "really lol"
+title = "really.lol"
 theme = "reallylol"
 paginate = 10
 buildFuture = true
