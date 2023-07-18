@@ -22,6 +22,8 @@ The definitive guide to [vaporwave text encoding][8].
 
 [People screaming][9] and [falling from a great height][10].
 
+The police are here and they say that you've won the [tiny awards][11].
+
 [1]: https://dwheeler.com/essays/filenames-in-shell.html
 [2]: https://dilettantearmy.com/articles/merchandizing-the-void
 [3]: https://www.theguardian.com/commentisfree/2023/jun/20/the-guardian-view-on-danger-at-sea-looking-out-for-all-those-in-peril
@@ -32,3 +34,4 @@ The definitive guide to [vaporwave text encoding][8].
 [8]: https://yaytext.com/blog/vaporwave-unicode-analysis/
 [9]: https://www.youtube.com/watch?v=9iR84HE2XEU
 [10]: https://www.youtube.com/watch?v=5QMlIjSnt_E
+[11]: https://waxy.org/2023/07/vote-on-the-tiny-awards/
