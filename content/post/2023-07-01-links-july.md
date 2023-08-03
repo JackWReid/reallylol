@@ -1,6 +1,15 @@
 ---
 title: "Links, July 2023"
 date: 2023-07-30
+tags:
+  - links
+  - film
+  - movies
+  - dev
+  - ai
+  - capitalism
+  - love
+  - web
 ---
 
 I increasingly hate computers and the world inside them that my brain is trapped inside of. That said, here are some things about computers. Let's be practical, with [another resource][1] to get you to stop screwing up shell scripting. Once you've figured that out, why don't you train an AI homunculus to reflect your own neuroses back at you, and start a conversation? It's time for a [vibe shift][5].
