@@ -18,8 +18,11 @@ The women of early analytic philosophy [have been overlooked][3].
 
 The abandoned mansion town in China [is farm land now][5].
 
+[An interview][6] with Peter Alexander, a trans man living in Australia in 1937.
+
 [1]: https://vienna.earth/plate/russell/kafka-insurance-career
 [2]: https://www.thedial.world/issue-7/jorge-luis-borges-legacy-maria-kodama
 [3]: https://aeon.co/essays/the-lost-women-of-early-analytic-philosophy
 [4]: https://bloodknife.com/everyone-beautiful-no-one-horny/
 [5]: https://www.architecturaldigest.com/story/see-inside-a-ghost-town-of-abandoned-mansions-in-china
+[6]: https://www.britishpathe.com/asset/90667/
