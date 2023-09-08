@@ -18,7 +18,7 @@ The unfortunate truth is that the digital world is the real world is the digital
 
 The rich people dying in the submarine already feels like it was years ago now, but here's [this about the][3] totally unsurprising iniquity in the response and attention they got while a ship sank in the Med, killing hundreds of helpless people who could have been easily saved. Continuing the downward spiral is [Khloe Kardashian's pantry][2] as a wormhole into the trend of consumer capitalism bringing the drive for merchandising into the home.
 
-In something a lot more life affirming, here are two short films about [people screaming][9] and [falling from a great height][10] (the tells less and shows more, and is better).
+In something a lot more life affirming, here are two short films about [people screaming][9] and [falling from a great height][10] (the latter tells less and shows more, and is better).
 
 I am not a good writer. Whatever chops I had when I left university (the last time getting smarter was my full time job) have been eroded by the torrent of bullshit at the intersection of technology and capitalism and me-getting-a-salary. Maybe what will save me now is one of these guides for STEM types to get better at communicating: common [writing bugs][6].
 
