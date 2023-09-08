@@ -5,11 +5,13 @@ tags:
  - links
  - books
  - literature
+ - sex
+ - media
 ---
 
 While I claim that the reason I haven't emerged as the foremost British emigré writer of our times because I simply don't have time between watching movies and drinking beer: Franz Kafka wrote stories on the side, at night, when he was tired. Enjoy this profile not of his literature, but his day job: ["I am more interested in his insurance affairs."][1]
 
-[A dragon guarded][2] the literary estate of Borges and made anybody who wanted a part of it suffer. I think I love hr.
+[A dragon guarded][2] the literary estate of Borges and made anybody who wanted a part of it suffer. I think I love her.
 
 In shocking news that nobody could have predicted, it turns out that the women of early analytic philosophy [have been overlooked][3].
 
