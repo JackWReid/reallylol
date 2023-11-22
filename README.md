@@ -1,3 +1,2 @@
-# jackreid.xyz
-Personal website
+# really.lol
 

@@ -24,5 +24,5 @@ Last weekend we went to the Ashmolean and Pitt Rivers museums in Oxford. I&#8217
 
 {{<photo src="/img/oxford-old-keys.jpg" alt="A display cabinet full of old keys" caption="Keys across time" >}}
 
- [1]: https://jackreid.xyz/journal/journal-30th-october-2021/
- [2]: https://jackreid.xyz/tag/swimming/
+ [1]: https://really.lol/journal/journal-30th-october-2021/
+ [2]: https://really.lol/tag/swimming/

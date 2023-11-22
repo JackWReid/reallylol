@@ -23,4 +23,4 @@ I used to use Bash to keep things simple but since MacOS started defaulting to *
 My backpack is a black Patagonia Black Hole 32L, which I adore. My bike is a **Hackney Cycles single-speed in black**, which I hope is abundant and low value enough that it isn't attractive to thieves.
 
 ## Personal Tech
-I've got a more detailed post about about this but in short: it's a Hugo site that I keep changing the hosting for. In long: [you'll have to read here](https://jackreid.xyz/post/how-this-site-works/).
+I've got a more detailed post about about this but in short: it's a Hugo site that I keep changing the hosting for. In long: [you'll have to read here](https://really.lol/post/how-this-site-works/).
