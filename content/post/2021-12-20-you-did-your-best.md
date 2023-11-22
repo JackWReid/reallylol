@@ -61,5 +61,5 @@ So just like last time and the time before, I&#8217;ve been a little slow, we&#8
 
 Let&#8217;s see how long I can stay so objective about my predicament.
 
- [1]: https://jackreid.xyz/photo/meadow/
- [2]: https://jackreid.xyz/journal/anchor-aweigh/
+ [1]: https://really.lol/photo/meadow/
+ [2]: https://really.lol/journal/anchor-aweigh/

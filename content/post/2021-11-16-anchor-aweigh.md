@@ -26,4 +26,4 @@ I&#8217;m working remotely this week but last week I was completely out-of-offic
 
 I suppose that&#8217;s seven books, not four. That&#8217;s what you get when you travel by train a lot, from London to Paris, around the Paris Metro and then down to the Loiret from Paris. Also it helps that I loaded all of these books onto my Kindle so I could slip them all into my coat and carry them around all day. I might be a convert, for travel purposes anyway.
 
- [1]: https://jackreid.xyz/watching-and-reading/
+ [1]: https://really.lol/books

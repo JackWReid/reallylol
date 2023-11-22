@@ -48,4 +48,4 @@ I&#8217;m out of the business now. I never had any bold ideas about how to fund 
  [5]: https://www.theguardian.com/media/2021/mar/09/huffpost-layoffs-buzzfeed-jonah-peretti
  [6]: https://nymag.com/intelligencer/2022/03/taylor-lorenz-now-at-washington-post-fights-maggie-haberman.html
  [7]: https://maxread.substack.com/p/how-to-have-a-career-as-a-journalist
- [8]: https://jackreid.xyz/post/a-year-in-ads/
+ [8]: https://really.lol/post/a-year-in-ads/
