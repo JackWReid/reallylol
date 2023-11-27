@@ -12,7 +12,6 @@ tags:
   - books
   - ai
 ---
-
 Right now I am in England. It's the first time I've been back since we moved away to Germany and being here has immersed me back in some old themes... like the British class obsession. A little while ago I read *Bright Young People*, about a certain set of upper class enfants terribles who were the first of a kind of person that is now splashed all over *Hello* magazine. One of that set was Evelyn Waugh, who wrote a send up of the whole gang that I've just finished reading: *Vile Bodies*. The book is full of social climbers, aristocrats, nobility and the dreary functionaries of government too. All of this to say, did you know you can read what all the royals are up to on any given day in the [Court Circular][7]?
 
 This catty profile of a [dominant British literary agent][8] is also of that milieu. He's an incredibly crass man who can get anybody on the phone and takes all his meetings in a grand hotel bar. It's a compelling portrait of someone outrageous from a bygone era. Another outrageous upper crust guy on my mind is [Lord Aspinall][19]. There were [a couple of recent episodes][18] of Behind The Bastards about him. He basically scammed his way into the aristocratic set, got weirdly into exotic animals, and probably helped his friend [Lord Lucan][20] get away with [murder][21]. He was also friends with a bunch of fascists. By the way, remember: fascists [don't always sound like fascists][15].
