@@ -128,7 +128,7 @@ figcaption {
   display: inline-block;
   max-width: 100%;
   flex-shrink: 0;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
 }
 
 .site-header ul {
