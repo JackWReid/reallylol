@@ -128,7 +128,13 @@ figcaption {
   display: inline-block;
   max-width: 100%;
   flex-shrink: 0;
-  /* overflow-x: scroll; */
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.site-header nav::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
 .site-header ul {
