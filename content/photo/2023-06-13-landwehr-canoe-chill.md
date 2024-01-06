@@ -1,5 +1,5 @@
 ---
-title: "Landerwehrkanalschlafen"
+title: "Landswehrkanalschlafen"
 date: 2023-06-13T18:49:01
 image: "/img/photo/2023-06-13-landwehr-canoe-chill.jpg"
 location: Kreuzberg, Berlin
