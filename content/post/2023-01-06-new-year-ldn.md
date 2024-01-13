@@ -7,7 +7,7 @@ tags:
  - journal
 ---
 
-I'm leaving London after living here for half a dozen years. I've been too busy with the leaving to feel sentimental about it but I’m making myself reflect. I tried very hard to get here. I built a life around keeping hold of my perch here, so I have passion for the place. When I first moved here I wasn't alone, but I left the quiet county I grew up in for the opposite end of the country.
+I'm leaving London after living here for half a dozen years. I've been too busy with the leaving to feel sentimental about it but I’m making myself reflect. I used to find myself arguing London's case all the time. Now I'm ready to leave it and barely look over my shoulder. I tried very hard to get here. I built a life around keeping hold of my perch here, so I have passion for the place. When I first moved here I wasn't alone, but I left the quiet county I grew up in for the opposite end of the country.
 
 We arrived in Brixton, in our own place. In fact in a place very much much not our own. In fact in an apartment owned by somebody else and rented to us. It was an apartment bought in the nineties; it was a speculative property investment made by a rapidly socially mobile young professional in an Afro-Caribbean neighbourhood being recolonised by many such speculators. It was bought by a kind of boom time mobility that no longer exists in a kind of neighbourhood that, though it hangs on, is rapidly being boxed in. At the time, none of this occupied us. We had an address in London. It was our own place.
 
