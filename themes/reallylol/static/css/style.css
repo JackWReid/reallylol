@@ -28,13 +28,8 @@
 
 html,
 body {
-<<<<<<< HEAD
-  min-height: 100vh;
-  line-height: 1.6;
-=======
     min-height: 100vh;
     line-height: 1.4;
->>>>>>> 23456e8c (format css)
 }
 
 body {
@@ -129,23 +124,18 @@ figcaption {
 }
 
 .site-header nav {
-<<<<<<< HEAD
-  display: inline-block;
-  max-width: 100%;
-  flex-shrink: 0;
-  overflow-x: scroll;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
-}
-
-.site-header nav::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
-=======
     display: inline-block;
     max-width: 100%;
     flex-shrink: 0;
     overflow-x: scroll;
->>>>>>> 23456e8c (format css)
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.site-header nav::-webkit-scrollbar {
+    display: none;
 }
 
 .site-header ul {
@@ -202,6 +192,7 @@ figcaption {
     .media-nav ul {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .media-nav__section {
         display: none;
     }
