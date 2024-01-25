@@ -1,28 +1,28 @@
-{{ define "main" }}
+{{ define "main" }} {{ $p := slice "links" }} {{ $linkposts := where .Site.Pages
+"Params.tags" "intersect" $p }} {{ $highlights := where .Site.Pages "Section"
+"==" "highlight" }} {{ $posts := sort ($linkposts | union $highlights) "Date"
+"desc" }} {{ $paginator := .Paginate $posts }}
 
-{{ $p := slice "links" }}
-{{ $linkposts := where .Site.Pages "Params.tags" "intersect" $p }}
-{{ $highlights := where .Site.Pages "Section" "==" "highlight" }}
-{{ $posts := sort ($linkposts | union $highlights) "Date" "desc" }}
-{{ $paginator := .Paginate $posts }}
+<main
+    class="single-main single-main--{{.Params.format}} single-main--{{.Params.type}}"
+>
+    <h1 class="single-main__title">{{ .Title }}</h1>
+    <div class="single-main__content">
+        {{ if $paginator.HasPrev }}
+        <p>
+            This is a list of highlights and monthly posts of interesting links.
+            Go back to the main <a href="/links">Links</a> page for the static
+            directory of links by section.
+        </p>
+        {{ else }} {{ .Content }} {{ end }}
+    </div>
 
-<main class="single-main single-main--{{.Params.format}} single-main--{{.Params.type}}">
-  <h1 class="single-main__title">{{ .Title }}</h1>
-  <div class="single-main__content">
-		{{ if $paginator.HasPrev }}
-		<p>This is a list of highlights and monthly posts of interesting links. Go back to the main <a href="/links">Links</a> page for the static directory of links by section.</p>
-		{{ else }}
-			{{ .Content }}
-		{{ end }}
-  </div>
+    <h2>Highlights and roundups</h2>
+    <div class="multi-preview-list">
+        {{ range $paginator.Pages }} {{- partial "multi-preview.html" . -}} {{
+        end }}
+    </div>
 
-	<h2>Highlights and roundups</h2>
-  <div class="multi-preview-list">
-	{{ range $paginator.Pages }}
-  {{- partial "multi-preview.html" . -}}
-	{{ end }}
-	</div>
-
-	{{- partial "pagination.html" . -}}
+    {{- partial "pagination.html" . -}}
 </main>
 {{ end }}
