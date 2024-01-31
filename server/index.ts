@@ -1,16 +1,20 @@
 import { Database } from "bun:sqlite";
+import { pullOku } from "./oku";
+
+let db;
 
 async function initDB() {
-  const db = new Database("mydb.sqlite", { create: true });
+  db = new Database("mydb.sqlite", { create: true });
 
   const migrationFile = Bun.file("./migrations/001-init.sql");
   const migrationText = await migrationFile.text();
-
   const schemaQ = db.query(migrationText);
   schemaQ.run();
 }
 
 initDB();
+
+pullOku(db);
 
 Bun.serve({
   port: 8000,
