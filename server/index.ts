@@ -1,5 +1,6 @@
 import { Database } from "bun:sqlite";
 import { pullOku } from "./oku";
+import { pullLetterboxd } from "./letterboxd";
 
 let db;
 
@@ -14,7 +15,8 @@ async function initDB() {
 
 initDB();
 
-pullOku(db);
+// pullOku(db);
+pullLetterboxd(db);
 
 Bun.serve({
   port: 8000,

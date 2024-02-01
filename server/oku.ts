@@ -20,6 +20,7 @@ const oku_read_feed: OkuFeed = {
   feedUrl: "https://oku.club/rss/collection/zQtTo",
   listId: 1,
 };
+
 const oku_toread_feed: OkuFeed = {
   name: "To Read",
   feedUrl: "https://oku.club/rss/collection/JSKHS",
