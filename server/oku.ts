@@ -1,7 +1,7 @@
 const RSSParser = require("rss-parser");
 const parser = new RSSParser();
 
-type OkuFeed = {
+type OkuList = {
   name: string;
   feedUrl: string;
   listId: number;
@@ -15,18 +15,19 @@ type Book = {
   date: string;
 };
 
-const oku_read_feed: OkuFeed = {
+export const okuReadList: OkuList = {
   name: "Read",
   feedUrl: "https://oku.club/rss/collection/zQtTo",
   listId: 1,
 };
 
-const oku_toread_feed: OkuFeed = {
+export const okuToReadList: OkuList = {
   name: "To Read",
   feedUrl: "https://oku.club/rss/collection/JSKHS",
   listId: 2,
 };
-const oku_reading_feed: OkuFeed = {
+
+export const okuReadingList: OkuList = {
   name: "Reading",
   feedUrl: "https://oku.club/rss/collection/2f67M",
   listId: 3,
@@ -42,7 +43,7 @@ async function insertBooks(db, books: Book[]) {
   }
 }
 
-async function insertBookListEntries(db, books: Book[], feed: OkuFeed) {
+async function insertBookListEntries(db, books: Book[], feed: OkuList) {
   for (const book of books) {
     const bookIdQuery = db.query(
       "SELECT id FROM books WHERE oku_guid = $oku_guid",
@@ -57,7 +58,7 @@ async function insertBookListEntries(db, books: Book[], feed: OkuFeed) {
   }
 }
 
-async function pullOkuFeed(feed: OkuFeed, db) {
+async function syncOkuList(feed: OkuList, db) {
   const feedData = await parser.parseURL(feed.feedUrl);
 
   const books = feedData.items.map((item: any) => ({
@@ -70,11 +71,20 @@ async function pullOkuFeed(feed: OkuFeed, db) {
 
   await insertBooks(db, books);
   await insertBookListEntries(db, books, feed);
-  console.log(`Pulled ${feed.name}`);
+  console.log(`Synced ${feed.name}`);
 }
 
-export async function pullOku(db) {
-  await pullOkuFeed(oku_read_feed, db);
-  await pullOkuFeed(oku_toread_feed, db);
-  await pullOkuFeed(oku_reading_feed, db);
+export async function syncOku(db) {
+  await syncOkuList(okuReadList, db);
+  await syncOkuList(okuToReadList, db);
+  await syncOkuList(okuReadingList, db);
+}
+
+export async function getBookList(db, list: OkuList) {
+  const listQuery = db.query(
+    "SELECT books.title, books.author, list_books.date FROM list_books JOIN books ON list_books.book_id = books.id WHERE list_books.list_id = $listId",
+  );
+
+  const books = listQuery.all({ $listId: list.listId });
+  return books;
 }
