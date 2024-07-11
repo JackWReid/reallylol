@@ -1,5 +1,85 @@
 [
   {
+    "date_updated": "2024-07-08",
+    "title": "The Glutton",
+    "author": "A.K. Blakemore"
+  },
+  {
+    "date_updated": "2024-07-06",
+    "title": "Burmese Days",
+    "author": "George Orwell"
+  },
+  {
+    "date_updated": "2024-06-30",
+    "title": "The Midnight Library",
+    "author": "Matt Haig"
+  },
+  {
+    "date_updated": "2024-06-30",
+    "title": "The Enemy (Jack Reacher, #8)",
+    "author": "Lee Child"
+  },
+  {
+    "date_updated": "2024-06-17",
+    "title": "August Blue",
+    "author": "Deborah Levy"
+  },
+  {
+    "date_updated": "2024-06-15",
+    "title": "Ripe",
+    "author": "Sarah Rose Etter"
+  },
+  {
+    "date_updated": "2024-06-12",
+    "title": "Nostromo",
+    "author": "Joseph Conrad"
+  },
+  {
+    "date_updated": "2024-05-22",
+    "title": "Decline and Fall",
+    "author": "Evelyn Waugh"
+  },
+  {
+    "date_updated": "2024-05-13",
+    "title": "American Gods",
+    "author": "Neil Gaiman"
+  },
+  {
+    "date_updated": "2024-05-09",
+    "title": "Martyr!",
+    "author": "Kaveh Akbar"
+  },
+  {
+    "date_updated": "2024-05-07",
+    "title": "The Guest",
+    "author": "Emma Cline"
+  },
+  {
+    "date_updated": "2024-05-03",
+    "title": "Happy Hour",
+    "author": "Marlowe Granados"
+  },
+  {
+    "date_updated": "2024-04-30",
+    "title": "A Sort of Life",
+    "author": "Graham Greene"
+  },
+  {
+    "date_updated": "2024-04-25",
+    "title": "The French Lieutenant's Woman",
+    "author": "John Fowles"
+  },
+  {
+    "date_updated": "2024-04-20",
+    "title": "The Buried Giant",
+    "author": "Kazuo Ishiguro"
+  },
+  {
+    "date_updated": "2024-04-18",
+    "title": "Persuasion",
+    "author": "Jane Austen"
+  },
+  {
     "date_updated": "2024-04-08",
     "title": "The Magus",
     "author": "John Fowles"
@@ -236,13 +316,13 @@
   },
   {
     "date_updated": "2023-08-30",
-    "title": "Story of the Eye",
-    "author": "Georges Bataille"
+    "title": "Madame Bovary",
+    "author": "Gustave Flaubert"
   },
   {
     "date_updated": "2023-08-30",
-    "title": "Madame Bovary",
-    "author": "Gustave Flaubert"
+    "title": "Story of the Eye",
+    "author": "Georges Bataille"
   },
   {
     "date_updated": "2023-08-23",
@@ -586,13 +666,13 @@
   },
   {
     "date_updated": "2022-07-06",
-    "title": "The Quiet American",
-    "author": "Graham Greene"
+    "title": "Heart of Europe: A History of the Holy Roman Empire",
+    "author": "Peter H. Wilson"
   },
   {
     "date_updated": "2022-07-06",
-    "title": "Heart of Europe: A History of the Holy Roman Empire",
-    "author": "Peter H. Wilson"
+    "title": "The Quiet American",
+    "author": "Graham Greene"
   },
   {
     "date_updated": "2022-06-15",
@@ -661,18 +741,23 @@
   },
   {
     "date_updated": "2022-03-21",
+    "title": "The Interrogators",
+    "author": "Allan Prior"
+  },
+  {
+    "date_updated": "2022-03-21",
     "title": "A Spy in the House of Love (Cities of the Interior #4)",
     "author": "Anaïs Nin"
   },
   {
     "date_updated": "2022-03-21",
-    "title": "The Fire & the Sun",
-    "author": "Iris Murdoch"
+    "title": "Berlin Alexanderplatz",
+    "author": "A. Doblin"
   },
   {
     "date_updated": "2022-03-21",
-    "title": "Berlin Alexanderplatz",
-    "author": "A. Doblin"
+    "title": "The Fire & the Sun",
+    "author": "Iris Murdoch"
   },
   {
     "date_updated": "2022-03-02",
@@ -2626,12 +2711,12 @@
   },
   {
     "date_updated": "2016-03-19",
-    "title": "V for Vendetta",
+    "title": "Watchmen",
     "author": "Alan Moore"
   },
   {
     "date_updated": "2016-03-19",
-    "title": "Watchmen",
+    "title": "V for Vendetta",
     "author": "Alan Moore"
   },
   {
