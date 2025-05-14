@@ -6,3 +6,4 @@
 - [ ] Script to create new image post and upload asset
 - [ ] Create Impressum page
 - [ ] Add new decorative images to repo
+- [ ] Adapt v2 stylesheet to v1
