@@ -2,15 +2,16 @@ baseURL = "https://old.really.lol"
 languageCode = "en-gb"
 title = "really.lol"
 theme = "reallylol"
-paginate = 10
 buildFuture = true
 timeout = 999999
+[pagination]
+pagerSize = 10
 [markup]
-  [markup.highlight]
-    style = "dracula"
-  [markup.goldmark.renderer]
-    unsafe = true
+[markup.highlight]
+style = "dracula"
+[markup.goldmark.renderer]
+unsafe = true
 [related]
-  [[related.indices]]
-    name = "tags"
-    weight = 100
+[[related.indices]]
+name = "tags"
+weight = 100
