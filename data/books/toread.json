@@ -1,5 +1,30 @@
 [
   {
+    "date_updated": "2025-05-15",
+    "title": "Dombey and Son",
+    "author": "Charles Dickens"
+  },
+  {
+    "date_updated": "2025-04-29",
+    "title": "Year of the Rat",
+    "author": "Harry Shukman"
+  },
+  {
+    "date_updated": "2025-03-17",
+    "title": "Everything Must Go",
+    "author": "Dorian Lynskey"
+  },
+  {
+    "date_updated": "2025-03-16",
+    "title": "The Frozen River",
+    "author": "Ariel Lawhon"
+  },
+  {
+    "date_updated": "2025-01-14",
+    "title": "Satantango",
+    "author": "László Krasznahorkai"
+  },
+  {
     "date_updated": "2024-10-23",
     "title": "Eurotrash",
     "author": "Christian Kracht"
@@ -18,11 +43,6 @@
     "date_updated": "2024-10-20",
     "title": "The Stepdaughter",
     "author": "Caroline Blackwood"
-  },
-  {
-    "date_updated": "2024-10-20",
-    "title": "Badenheim 1939",
-    "author": "Aharon Appelfeld"
   },
   {
     "date_updated": "2024-10-20",
@@ -68,11 +88,6 @@
     "date_updated": "2024-10-18",
     "title": "The Anatomy of Melancholy",
     "author": "Robert  Burton"
-  },
-  {
-    "date_updated": "2024-10-18",
-    "title": "The Quest for Corvo: An Experiment in Biography",
-    "author": "A.J.A. Symons"
   },
   {
     "date_updated": "2024-10-01",
@@ -348,11 +363,6 @@
     "date_updated": "2024-04-02",
     "title": "Headshot",
     "author": "Rita Bullwinkel"
-  },
-  {
-    "date_updated": "2024-04-02",
-    "title": "You Dreamed of Empires",
-    "author": "Álvaro Enrigue"
   },
   {
     "date_updated": "2024-04-02",
@@ -713,11 +723,6 @@
     "date_updated": "2023-06-27",
     "title": "The Years of Rice and Salt",
     "author": "Kim Stanley Robinson"
-  },
-  {
-    "date_updated": "2023-05-22",
-    "title": "While We Were Dreaming",
-    "author": "Clemens Meyer"
   },
   {
     "date_updated": "2023-05-02",
@@ -1345,11 +1350,6 @@
     "author": "Benjamin Carter Hett"
   },
   {
-    "date_updated": "2021-06-22",
-    "title": "Austerlitz",
-    "author": "W.G. Sebald"
-  },
-  {
     "date_updated": "2021-06-10",
     "title": "Summa Contra Gentiles",
     "author": "Thomas Aquinas"
@@ -1398,11 +1398,6 @@
     "date_updated": "2021-05-09",
     "title": "The Trouble with Testosterone and Other Essays on the Biology of the Human Predicament",
     "author": "Robert M. Sapolsky"
-  },
-  {
-    "date_updated": "2021-05-09",
-    "title": "Putin's People: How the KGB Took Back Russia and Then Took On the West",
-    "author": "Catherine Belton"
   },
   {
     "date_updated": "2021-05-08",
@@ -2771,13 +2766,13 @@
   },
   {
     "date_updated": "2019-03-12",
-    "title": "The Sense of an Ending: Studies in the Theory of Fiction",
-    "author": "Frank Kermode"
+    "title": "Ernest Hemingway on Writing",
+    "author": "Ernest Hemingway"
   },
   {
     "date_updated": "2019-03-12",
-    "title": "Ernest Hemingway on Writing",
-    "author": "Ernest Hemingway"
+    "title": "The Sense of an Ending: Studies in the Theory of Fiction",
+    "author": "Frank Kermode"
   },
   {
     "date_updated": "2019-03-12",
