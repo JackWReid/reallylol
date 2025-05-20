@@ -1,12 +1,17 @@
 {{ define "main" }}
+{{ $data := first 1 $.Site.Data.books.reading }}
 <div class="home-main">
   <div class="home-intro">
   {{ .Content }}
+  <div class="home-component">
+    <div class="home-component__reading">
+      <dt>Reading</dt>
+      {{ range $data }}
+      <dd><span>{{ .title }}</span> by {{ .author }}</dd>
+      {{ end }}
+    </div>
+    <img alt="A line drawing of the solar system" class="home-hero-image" src="/img/layout/solar-system.jpg">
   </div>
-  <h2 class="recent-posts">Recent posts</h2>
-  <div class="multi-preview-list">
-  {{ range sort .Site.RegularPages | first 20 }}
-  {{- partial "multi-preview.html" . -}}
-  {{ end }}
+  </div>
 </div>
 {{ end }}

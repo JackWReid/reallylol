@@ -120,7 +120,7 @@ figcaption {
 }
 
 .site-header {
-  max-width: var(--width-inner);
+  max-width: var(--width-outer);
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -132,9 +132,9 @@ figcaption {
 
 .site-header h1 {
   display: inline-block;
-  font-family: var(--font-title);
   font-size: 1rem;
   margin: 0 1rem 0 0;
+  text-decoration: none;
 }
 
 .site-header nav {
@@ -287,12 +287,56 @@ figcaption {
 }
 
 .home-main {
-  max-width: var(--width-inner);
+  max-width: var(--width-outer);
   margin: 0 auto;
 }
 
 .home-intro {
   margin: 0 auto 4rem;
+}
+
+.home-component {
+    margin: 100px 0 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .home-component {
+        margin: 50px 0;
+        flex-direction: column;
+    }
+
+    .home-component__reading {
+        margin-bottom: 2rem;
+    }
+}
+
+.home-hero-image {
+    display: block;
+    max-width: 500px;
+}
+
+.home-component__reading {
+    flex: 1;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.home-component__reading dt {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+}
+
+.home-component__reading dd {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.home-component__reading dd span {
+    font-style: italic;
 }
 
 .multi-preview-list svg {
@@ -416,7 +460,7 @@ figcaption {
 .note-main,
 .note-section-main {
   margin: 0 auto;
-  max-width: var(--width-inner);
+  max-width: var(--width-outer);
 }
 
 .pagination {
