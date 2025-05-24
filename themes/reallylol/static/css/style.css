@@ -482,6 +482,12 @@ figcaption {
   z-index: 0;
 }
 
+@media screen and (max-width: 1070px) {
+  .section-hero-image--post {
+    display: none;
+  }
+}
+
 body.note {
   color: var(--link-hover-text);
   background-color: var(--footer-bg-color);
@@ -495,6 +501,7 @@ body.note {
   margin: 5rem auto;
   position: relative;
   width: 500px;
+  max-width: 100%;
 }
 
 .section-hero-image--note {
@@ -614,6 +621,14 @@ body.photo .single-main__content {
 
 .section-item__date svg {
   transform: translateY(2px);
+}
+
+.section-item__summary {
+  padding-top: 1rem;
+}
+
+.section-item__summary p:first-child {
+  margin-top: 0;
 }
 
 .highlight-main__content blockquote {

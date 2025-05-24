@@ -1,6 +1,7 @@
 ---
 title: Notes from Granta 165 (Deutschland)
 date: 2023-12-27
+summary: "Notes from a really damn good issue of Granta about Germany. Featuring non-fiction by Alexander Kluge, Peter Handke, Fredric Jameson, Lauren Oyler, Michael Hofmann, Peter Kuras, Adrian Daub, Peter Richter, Lutz Seiler, Ryan Ruby, Jan Wilm and Jürgen Habermas. As well as a conversation between George Prochnik, Emily Dische-Becker and Eyal Weizman."
 tags:
   - berlin
   - cities
