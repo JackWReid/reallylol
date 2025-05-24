@@ -1,6 +1,13 @@
-{{ define "main" }} 
+{{ define "main" }}
 <main class="note-section-main">
-<h1 class="note-list-title">{{ .Title }}</h1>
+<header class="note-section-header">
+  <img
+    alt="A statue of an angel"
+    class="section-hero-image--note"
+    src="/img/layout/angel.png"
+  />
+  <h1 class="note-list-title">{{ .Title }}</h1>
+</header>
 {{ .Content }}
 {{ $paginator := .Paginate .Pages }}
 {{ range  $paginator.Pages }}
@@ -17,4 +24,3 @@
 {{- partial "pagination.html" . -}}
 </main>
 {{ end }}
-
