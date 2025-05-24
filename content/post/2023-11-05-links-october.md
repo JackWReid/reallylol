@@ -10,6 +10,8 @@ tags:
 
 First here's [Sequel][1], which is one of those apps for tracking the stuff you watch and read and listen to, and the stuff you want to watch and read and listen to. I do a lot of that, and this app looks slick, but I probably won't switch to it because it's iOS only. For you, maybe that's perfect.
 
+<!--more-->
+
 I always wondered at how many tunnels snake their way through the soil in central London. I always thought: there's so many that the earth must be practically a sponge. This [write up of a single development near Victoria][2] train station proves me right. The foundations of the tower are carefully around a dozen sewers, deep cut and shallow light rail tunnels, underground station concourses, you name it.
 
 I've always been interested in how different people use physical metaphors in language. Is the past behind you because you're walking away from it? Or is it front of you, where you can see it, as opposed to the unknowable future? Where does blue stop and green begin? Somebody asked, [what shape is the year?][3]

@@ -11,6 +11,8 @@ tags:
 ---
 It feels like there's a lot of war going on. Whenever that happens I really feel my ignorance; it seems like if thousands of people are dying about something, I should understand what that something is. So here's what I've been reading lately about war.
 
+<!--more-->
+
 I didn't start reading *Kaputt* by Curzio Malaparte because of the present wars but because it was recommended to me by a friend. However, it's been instructive. Malaparte was a fascist, which gave him access to all kinds of people during WW2 who I haven't really seen close up before. *Kaputt* is a brilliant book by [a narcissistic, self-aggrandising, lying piece of shit][1]. It's about war, its perpetrators, its victims, and the people who are callously advantaged by it. Reading the article, I was also reminded of this quotation from [a profile of Graham Greene][6], who spent a lot of time in the halls of power watching politicians fail to avert disaster.
 
 >“I shall always associate balconies and politicians—plump men with blue chins wearing soft hats and guns on their hips. They look down from the official balcony in every city all day long with nothing to do but stare, with the expression of men keeping an eye on a good thing.
