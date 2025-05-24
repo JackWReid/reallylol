@@ -7,7 +7,9 @@
     src="/img/layout/mushrooms.png"
   />
   {{ end }}
-  <h1 class="section-title">{{ .Title }}</h1>
+  <h1 class="section-title">
+    {{ if eq .Section "post" }}Posts{{ else }}{{ .Title }}{{ end }}
+  </h1>
   {{ .Content }} {{ if ne .Section "media" }} {{ $paginator := .Paginate .Pages
   }} {{ range $paginator.Pages }}
   <article class="section-item">
@@ -15,9 +17,15 @@
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h3>
     <p class="section-item__date">
-      {{ partial "icons/calendar.html" . }}
-      <span>{{ .Date.Format "2006-01-02" }}</span>
+      📅 <span>{{ .Date.Format "2006-01-02" }}</span>
     </p>
+    <ul class="section-item__tags">
+      {{ range .GetTerms "tags" }}
+      <li class="section-item__tags-item">
+        <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+      </li>
+      {{ end }}
+    </ul>
     {{ .Summary }}
   </article>
   {{ end }} {{- partial "pagination.html" . -}} {{ end }}
