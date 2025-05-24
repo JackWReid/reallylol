@@ -430,12 +430,22 @@ figcaption {
   font-size: 0.8rem;
 }
 
+.section-item__tags,
 .highlight-item__tags,
 .blog-item__tags {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
   font-size: 0.8rem;
-  margin: 0 0 0.2rem;
+  text-transform: lowercase;
 }
 
+.section-item__tags li {
+  margin-left: 0;
+}
+
+.section-item__tags a,
 .highlight-item__tags a,
 .blog-item__tags a {
   margin-right: 0.3rem;
@@ -561,6 +571,10 @@ body.note {
   text-align: center;
 }
 
+body.photo .single-main__content {
+  max-width: var(--width-outer);
+}
+
 .single-main--links .single-main__content {
   margin-top: 1rem;
 }
@@ -592,6 +606,9 @@ body.note {
 .section-item__date {
   margin: 0 0 0.5rem;
   font-size: 0.8rem;
+}
+
+.section-item__date span {
   font-style: italic;
 }
 
@@ -734,7 +751,19 @@ td {
 }
 
 .media-table {
-  display: block;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.media-table th,
+.media-table td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.media-table th {
+  border-bottom: 1px solid var(--color-line);
 }
 
 .media-table__date {

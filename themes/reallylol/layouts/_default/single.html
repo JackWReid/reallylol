@@ -1,31 +1,25 @@
 {{ define "main" }}
 <main class="single-main">
-
   <h1 class="single-main__title">{{ .Title }}</h1>
 
   <p class="single-main__date">
-    {{ partial "icons/calendar.html" . }}
-    {{ .Date.Format "2006-01-02" }}
+    {{ partial "icons/calendar.html" . }} {{ .Date.Format "2006-01-02" }}
   </p>
 
   {{ if (.GetTerms "tags") }}
   <p class="single-main__tags">
-  {{ range (.GetTerms "tags") }}
-  <a href="{{ .Permalink }}">{{ partial "icons/tag.html" . }}{{ .LinkTitle }}</a>
-  {{ end }}
+    {{ range (.GetTerms "tags") }}
+    <a href="{{ .Permalink }}"><span>#{{ .LinkTitle }}</span></a>
+    {{ end }}
   </p>
-  {{ end }}
-
-  {{ if .Params.Location }}
+  {{ end }} {{ if .Params.Location }}
   <p class="single-main__location">
-  {{ partial "icons/location.html" . }}
-  <span>{{ .Params.location }}</span>
+    {{ partial "icons/location.html" . }}
+    <span>{{ .Params.location }}</span>
   </p>
   {{ end }}
 
-  <div class="single-main__content">
-    {{ .Content }}
-  </div>
+  <div class="single-main__content">{{ .Content }}</div>
 
   {{- partial "see-also.html" . -}}
 </main>
