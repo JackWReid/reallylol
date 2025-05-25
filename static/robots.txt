@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://old.really.lol/sitemap.xml
+Sitemap: https://really.lol/sitemap.xml
