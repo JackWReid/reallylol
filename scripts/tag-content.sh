@@ -2,22 +2,6 @@
 set -o pipefail
 export LC_ALL=C
 
-# SCRIPT PLAN
-# Read the tags.json file
-# Use `jq` to read the tags.json file and set the system prompt for the LLM to prefer existing tags
-# Use the `charmbracelet/gum` bash helpers to prompt the user
-# Go one-by-one through the posts, previewing the post and suggesting tags
-# Allow the user to edit or add their own tags
-# In the case of image posts, provide a localhost URL to the image page
-# In the case of image posts, find the image in the `public/images` directory and provide the path to the image to the LLM vision tool
-# Use `simonw/llm` tool to call gemini on text posts
-# Use `simonw/llm` tool to call gemini vision on image posts
-# Write the tags to the frontmatter of the post, appending or creating the tags key
-
-# BUGS
-# - The script replaces the note only the tag line of the frontmatter but also the date
-# - Tag parsing fails when tags have spaces in them
-
 # Get the directory where the script is located
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 # Get the project root directory (one level up from scripts)
@@ -45,16 +29,7 @@ get_post_content() {
     fi
 }
 
-# Function to get post frontmatter
-get_post_frontmatter() {
-    local post_file="$1"
-    if [[ -f "$post_file" ]]; then
-        # Extract frontmatter
-        awk '/^---$/{p=!p;next}p' "$post_file" | head -n 1
-    fi
-}
-
-# Function to get all frontmatter fields
+# Function to get all frontmatter
 get_all_frontmatter() {
     local post_file="$1"
     if [[ -f "$post_file" ]]; then
@@ -180,39 +155,10 @@ process_text_post() {
     
     # Show preview and get user input
     gum style --border normal --margin "1" --padding "1" --border-foreground 212 "Content preview:"
-    echo "$(get_short_preview "$content")" | gum pager --height 10 --width 100
+    echo "$(get_short_preview "$content")" | head -n 10
     gum style --border normal --margin "1" --padding "1" --border-foreground 212 "Suggested tags: $processed_tags"
     
     local user_tags=$(gum write --value "$processed_tags" --placeholder "Enter tags (comma-separated)")
-    
-    if [ -n "$user_tags" ]; then
-        update_post_tags "$post_file" "$user_tags"
-    fi
-}
-
-# Function to process an image post
-process_image_post() {
-    local post_file="$1"
-    local image_path="$2"
-    local frontmatter="$3"
-    
-    # Get existing tags
-    local existing_tags=$(get_existing_tags "$frontmatter")
-    
-    # Get image content
-    local image_url="http://localhost:3000$(echo "$image_path" | sed 's|^public||')"
-    
-    # Use llm with vision model to analyze image
-    local suggested_tags=$(llm -m gemini-1.5-flash-8b-latest "suggest tags for this image" -a "$image_path" -s "$system_prompt" --no-stream)
-    
-    # Process and format the tags
-    local processed_tags=$(process_tags "$suggested_tags" "$existing_tags")
-    
-    # Show preview and get user input
-    gum style --border normal --margin "1" --padding "1" --border-foreground 212 "Image URL: $image_url"
-    gum style --border normal --margin "1" --padding "1" --border-foreground 212 "Suggested tags: $processed_tags"
-    
-    local user_tags=$(gum input --value "$processed_tags" --placeholder "Enter tags (comma-separated)")
     
     if [ -n "$user_tags" ]; then
         update_post_tags "$post_file" "$user_tags"
@@ -230,19 +176,18 @@ main() {
             continue
         fi
         
+        # Skip image posts
+        if grep -q "^image:" "$post"; then
+            continue
+        fi
+        
         gum style --border normal --margin "1" --padding "1" --border-foreground 212 "Processing: $post"
         
         # Get post content and frontmatter
         local content=$(get_post_content "$post")
-        local frontmatter=$(get_post_frontmatter "$post")
+        local frontmatter=$(get_all_frontmatter "$post")
         
-        # Check if it's an image post
-        if [[ "$frontmatter" == *"image:"* ]]; then
-            local image_path=$(echo "$frontmatter" | grep -o 'image:.*' | cut -d' ' -f2)
-            process_image_post "$post" "$PROJECT_ROOT/$image_path" "$frontmatter"
-        else
-            process_text_post "$post" "$content" "$frontmatter"
-        fi
+        process_text_post "$post" "$content" "$frontmatter"
         
         # Ask if user wants to continue
         if ! gum confirm "Continue to next post?"; then
@@ -252,5 +197,4 @@ main() {
 }
 
 # Run the main function
-main
-
+main 
