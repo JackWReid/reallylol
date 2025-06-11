@@ -24,8 +24,8 @@ system_prompt+="\nPlease suggest relevant tags from this list, or suggest new ta
 get_post_content() {
     local post_file="$1"
     if [[ -f "$post_file" ]]; then
-        # Extract content after frontmatter
-        awk '/^---$/{p=!p;next}p' "$post_file" | tail -n +2
+        # Extract content after frontmatter (skip the frontmatter section)
+        awk '/^---$/{p=!p;next}!p' "$post_file"
     fi
 }
 
@@ -97,9 +97,13 @@ process_tags() {
     IFS=',' read -ra existing_array <<< "$existing_tags"
     
     # Create a set of existing tags for quick lookup
-    declare -A existing_set
+    existing_set=""
     for tag in "${existing_array[@]}"; do
-        existing_set["$tag"]=1
+        if [[ -n "$existing_set" ]]; then
+            existing_set="$existing_set|$tag"
+        else
+            existing_set="$tag"
+        fi
     done
     
     # Separate existing and new tags
@@ -109,7 +113,7 @@ process_tags() {
     for tag in "${suggested_array[@]}"; do
         tag=$(echo "$tag" | xargs) # Trim whitespace
         if [[ -n "$tag" ]]; then
-            if [[ -n "${existing_set[$tag]}" ]]; then
+            if [[ "$existing_set" == *"$tag"* ]]; then
                 existing_found+=("$tag")
             else
                 new_tags+=("$tag")
@@ -148,15 +152,19 @@ process_text_post() {
     local existing_tags=$(get_existing_tags "$frontmatter")
     
     # Use llm to suggest tags based on the actual content
+    echo "Debug: Sending to model:"
+    echo "$content" | head -n 5
     local suggested_tags=$(echo "$content" | llm -m gemini-1.5-flash-8b-latest -s "$system_prompt" --no-stream)
     
     # Process and format the tags
     local processed_tags=$(process_tags "$suggested_tags" "$existing_tags")
     
     # Show preview and get user input
-    gum style --border normal --margin "1" --padding "1" --border-foreground 212 "Content preview:"
-    echo "$(get_short_preview "$content")" | head -n 10
-    gum style --border normal --margin "1" --padding "1" --border-foreground 212 "Suggested tags: $processed_tags"
+    echo "👁️ Content preview:"
+    echo "Debug: Content length: ${#content}"
+    echo "Debug: Content first few characters: ${content:0:50}"
+    echo "$content" | head -n 20
+    echo "🔍 Suggested tags: $processed_tags"
     
     local user_tags=$(gum write --value "$processed_tags" --placeholder "Enter tags (comma-separated)")
     
@@ -181,11 +189,13 @@ main() {
             continue
         fi
         
-        gum style --border normal --margin "1" --padding "1" --border-foreground 212 "Processing: $post"
-        
+
         # Get post content and frontmatter
         local content=$(get_post_content "$post")
         local frontmatter=$(get_all_frontmatter "$post")
+
+        echo "🔄 Processing: $post"
+        echo $content
         
         process_text_post "$post" "$content" "$frontmatter"
         
