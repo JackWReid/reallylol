@@ -206,7 +206,7 @@ process_text_post() {
     echo "$(get_short_preview "$content")" | gum pager --height 10 --width 100
     gum style --border normal --margin "1" --padding "1" --border-foreground 212 "Suggested tags: $processed_tags"
     
-    local user_tags=$(gum input --value "$processed_tags" --placeholder "Enter tags (comma-separated)")
+    local user_tags=$(gum write --value "$processed_tags" --placeholder "Enter tags (comma-separated)")
     
     if [ -n "$user_tags" ]; then
         update_post_tags "$post_file" "$user_tags"
