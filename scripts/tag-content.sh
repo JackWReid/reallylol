@@ -14,32 +14,9 @@ export LC_ALL=C
 # Use `simonw/llm` tool to call gemini vision on image posts
 # Write the tags to the frontmatter of the post, appending or creating the tags key
 
-
-# `llm` usage`
-# Use the template function to define the system prompt. Templates are created like so:
-# llm -s 'write pytest tests for this code' --save pytest # save a template
-# cat llm/utils.py | llm -t pytest # use a template
-# llm -m gemini-1.5-flash-8b-latest "suggest tags for this image" -a ~/Developer/reallylol/static/img/photo/2012-06-21-e963f2ebd671787d7d997f8971cb7114.jpg
-
-# `gum` usage
-# choose: Choose an option from a list of choices
-# confirm: Ask a user to confirm an action
-# file: Pick a file from a folder
-# filter: Filter items from a list
-# format: Format a string using a template
-# input: Prompt for some input
-# join: Join text vertically or horizontally
-# pager: Scroll through a file
-# spin: Display spinner while running a command
-# style: Apply coloring, borders, spacing to text
-# table: Render a table of data
-# write: Prompt for long-form text
-# log: Log messages to output
-
 # BUGS
-# - The pager only previews the frontmatter of the post, never anything more
-# - The script replaces the entire contents of the frontmatter with a line for tags, removing the title, date, and any other fields
-# - The tags returned from the llm seemed to only be based on the tags in the frontmatter rather than text post content
+# - The script replaces the note only the tag line of the frontmatter but also the date
+# - Tag parsing fails when tags have spaces in them
 
 # Get the directory where the script is located
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
