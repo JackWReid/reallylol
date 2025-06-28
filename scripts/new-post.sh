@@ -12,7 +12,8 @@ md_template=$(
 ---
 title: "$title"
 date: $date
-tags: []
+tags:
+  - journal
 ---
 
 EOF
