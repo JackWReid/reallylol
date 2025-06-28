@@ -1,0 +1,13 @@
+{{ $permalink := .Permalink }}
+<nav class="media-nav" aria-label="Media Sub Navigation">
+  <ul>
+    {{ if in $permalink "/books/" }}
+      <li><a href="/books/toread/">To Read</a></li>
+      <li><a href="/books/reading/">Reading</a></li>
+      <li><a href="/books/read/">Read</a></li>
+    {{ else if in $permalink "/films/" }}
+      <li><a href="/films/towatch/">To Watch</a></li>
+      <li><a href="/films/watched/">Watched</a></li>
+    {{ end }}
+  </ul>
+</nav>
