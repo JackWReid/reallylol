@@ -162,9 +162,20 @@ def update_post_tags(file_path: str, new_tags: List[str]) -> None:
         # Update the post
         post.metadata["tags"] = all_tags
         
-        # Save back to file
-        with open(file_path, 'w') as f:
-            frontmatter.dump(post, f)
+        # Save back to file - handle potential bytes issue
+        try:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                frontmatter.dump(post, f)
+        except TypeError as e:
+            if "write() argument must be str, not bytes" in str(e):
+                # Handle the bytes issue by converting to string first
+                content = frontmatter.dumps(post)
+                if isinstance(content, bytes):
+                    content = content.decode('utf-8')
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+            else:
+                raise
         
         console.print(f"[green]✓ Updated tags for {file_path}[/green]")
         

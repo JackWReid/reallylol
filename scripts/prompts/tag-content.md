@@ -15,6 +15,7 @@ You will be provided with either a text article or an image, including any tags 
 6. "existing" contains tags from the Existing Taxonomy that are already present in the content.
 7. "new" contains tags from the Existing Taxonomy that you're suggesting to add.
 8. "novel" contains completely new tags you're inventing (max 2).
+9. If the content is empty or only whitespace, return an empty array for all keys and do not suggest any tags or descriptions.
 
 # Existing Taxonomy
 london (554)
