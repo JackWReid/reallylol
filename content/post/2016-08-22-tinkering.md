@@ -1,9 +1,11 @@
 ---
-title: "Tinkering"
-subtitle: "A Thank You"
-date: 2016-08-22T15:03:42+01:00
+date: 2016-08-22 15:03:42+01:00
+subtitle: A Thank You
 tags:
-  - tech
+- dev
+- journal
+- tech
+title: Tinkering
 ---
 
 I spend a lot of my time picking apart how things work, and a lot of time sticking things together to see if they work in the way that I hope. That’s tinkering. I’ve been thinking about how I first started working this way.

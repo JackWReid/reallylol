@@ -1,9 +1,12 @@
 ---
-title: "Build a box"
 date: 2023-06-19
 draft: true
 tags:
- - tech
+- dev
+- home
+- london
+- tech
+title: Build a box
 ---
 
 Despite being a dictionary-reading, computer geek, gap-tooth **nerd** as a child... and mostly into adulthood, I never did do any PC gaming or building. I think by the time I would have gotten into that I harboured illusions about myself as a creative, artistic person, who probably ought to use a Mac. Thus, I used a MacBook from a relatively early age and never messed around with building the things.

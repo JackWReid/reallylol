@@ -1,11 +1,13 @@
 ---
-title: That Accessibility Thing
+date: 2016-08-22 15:03:42+01:00
 subtitle: About when the web accessibility issue clicked for me
-date: 2016-08-22T15:03:42+01:00
 tags:
-  - technology
-  - web
-  - accessibility
+- accessibility
+- ageing
+- design
+- technology
+- web
+title: That Accessibility Thing
 ---
 
 Last year, surgeons removed my grandad’s left leg below the knee. He has had the daily symptoms of diabetes for as long as I can remember. A visit to my grandparents’ house as a child meant being fascinated and unnerved in equal measure by insulin needles on the kitchen table, insulin needles piercing his belly.
