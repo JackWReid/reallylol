@@ -491,10 +491,7 @@ def interactive(
         else:
             console.print("[yellow]No tags suggested[/yellow]")
         
-        # Ask if user wants to continue
-        if i < len(posts_to_review):
-            if not Confirm.ask("Continue to next post?"):
-                break
+        # Automatically continue to next post (removed confirmation prompt)
 
 @app.callback(invoke_without_command=True)
 @app.command()
