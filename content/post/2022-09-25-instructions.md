@@ -1,9 +1,11 @@
 ---
-title: "Instructions"
 date: 2022-09-25
 tags:
-  - poetry
-  - written by me
+- journal
+- literature
+- poetry
+- written by me
+title: Instructions
 ---
 
 Take these for the pain\

@@ -1,11 +1,12 @@
 ---
-title: "Cooking Terms"
-date: 2020-11-28T22:55:05Z
+date: 2020-11-28 22:55:05+00:00
 slug: cooking-terms
 tags:
-  - cooking
-  - food
-  - reference
+- cooking
+- food
+- journal
+- reference
+title: Cooking Terms
 ---
 
 I love cooking but the terminology seems very fluid to me until I hear chefs talking to each other about how they prepare an ingredient in a way that sounds so specific. It turns out these words do have distinct meanings that I struggle to hold in my head.
@@ -36,4 +37,3 @@ Heating food in water that’s about 70-80 degrees celsius.
 
 ## Simmering
 Heating food in liquids that are above poaching but below boiling temperature, 70-100 degrees celsius.
-

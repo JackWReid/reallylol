@@ -1,10 +1,11 @@
 ---
-title: "@fat - Internet Historian"
-subtitle: "We should be doing more to write our history"
-date: 2016-05-05T15:03:42+01:00
+date: 2016-05-05 15:03:42+01:00
+subtitle: We should be doing more to write our history
 tags:
-  - tech
-  - internet
+- internet
+- media
+- tech
+title: '@fat - Internet Historian'
 ---
 
 [Rives TED Talk](https://www.youtube.com/watch?v=gu_PQBmk-6c)

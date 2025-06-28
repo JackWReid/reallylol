@@ -1,12 +1,15 @@
 ---
-title: "Links, August 2023"
 date: 2023-08-29
 tags:
- - links
- - books
- - literature
- - sex
- - media
+- books
+- history
+- journal
+- links
+- literature
+- media
+- politics
+- sex
+title: Links, August 2023
 ---
 
 While I claim that the reason I haven't emerged as the foremost British emigré writer of our times because I simply don't have time between watching movies and drinking beer: Franz Kafka wrote stories on the side, at night, when he was tired. Enjoy this profile not of his literature, but his day job: ["I am more interested in his insurance affairs."][1]

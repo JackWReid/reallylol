@@ -1,9 +1,12 @@
 ---
-title: "Overwhelming good"
 date: 2023-03-23
 tags:
- - journal
- - berlin
+- berlin
+- city
+- home
+- journal
+- travel
+title: Overwhelming good
 ---
 
 This morning I was sitting at my desk with my eyes half closed. I started to yawn and I stretched my arms out and back. Something in my chest, around my sternum, made a dull pop. I didn't realise I had anything to pop in there.

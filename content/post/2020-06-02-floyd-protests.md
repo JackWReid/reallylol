@@ -1,12 +1,14 @@
 ---
-title: Floyd protests from afar
 date: 2020-06-02
 tags:
-  - journal
-  - covid-19
-  - london
-  - usa
-  - race
+- covid-19
+- home
+- journal
+- london
+- politics
+- race
+- usa
+title: Floyd protests from afar
 ---
 
 We’ve picked a new house. It’s going to be a house! It’ll have a garden and stairs and space for the cat, space for us to work and relax. We’re leaving in three weeks unless some recalcitrant property manager or landlord gets in the way.

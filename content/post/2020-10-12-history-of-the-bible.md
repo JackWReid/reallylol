@@ -1,13 +1,15 @@
 ---
-title: "History of the Bible"
+date: 2020-10-12 09:36:23+01:00
 slug: history-of-the-bible
-date: 2020-10-12T09:36:23+01:00
 tags:
-  - history
-  - theology
-  - religion
-  - literature
-  - book
+- book
+- books
+- history
+- journal
+- literature
+- religion
+- theology
+title: History of the Bible
 ---
 
 I read _The History of the Bible_ this weekend and enjoyed it a lot. I have a little collection of books about theology now, not because of any interest in faith but because I think it's an interesting vein of history and culture. The bible is so often quoted, wittingly or unwittingly, in popular culture and everyday speech. Here are some good excerpts from the book.
