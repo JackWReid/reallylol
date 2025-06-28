@@ -114,14 +114,13 @@ figcaption {
 }
 
 .site-header-wrapper {
-  margin-bottom: 2rem;
-  /* padding-bottom: 1rem; */
+  margin-bottom: 0.5rem;
 }
 
 .site-header {
   max-width: var(--width-outer);
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid var(--color-line);
@@ -165,52 +164,41 @@ figcaption {
 }
 
 .media-nav {
+  max-width: var(--width-outer);
+  margin: 0 auto 1.2rem auto;
+  padding: 0 0 0.2rem 0;
+  border-bottom: 1px dashed var(--color-line);
+  background: none;
+  display: block;
   font-size: 1rem;
-  margin-top: 1rem;
-  flex-shrink: 0;
-  max-width: 23rem;
 }
 
 .media-nav ul {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
   list-style: none;
-  display: grid;
-  grid-gap: 0.5rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0 0 0.1rem 0;
 }
 
-.media-nav__articles {
-  grid-row: 1;
+.media-nav li {
+  margin: 0;
 }
 
-.media-nav__books,
-.media-nav__read,
-.media-nav__reading,
-.media-nav__toread {
-  grid-row: 2;
+.media-nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0;
+  border: none;
+  background: none;
+  transition: color 0.2s;
 }
 
-.media-nav__films,
-.media-nav__watched,
-.media-nav__towatch {
-  grid-row: 3;
-}
-
-.media-nav__section {
-  font-family: var(--font-title);
-  font-weight: bold;
-}
-
-@media screen and (max-width: 800px) {
-  .media-nav ul {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .media-nav__section {
-    display: none;
-  }
+.media-nav a:hover, .media-nav a:focus {
+  color: var(--color-line);
 }
 
 .photo-box {

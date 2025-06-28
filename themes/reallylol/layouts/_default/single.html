@@ -1,5 +1,8 @@
 {{ define "main" }}
 <main class="single-main">
+  {{ if or (eq .Section "books") (eq .Section "films") (eq .Section "media") }}
+    {{ partial "media-nav.html" . }}
+  {{ end }}
   <h1 class="single-main__title">{{ .Title }}</h1>
 
   <p class="single-main__date">
