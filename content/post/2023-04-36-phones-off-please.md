@@ -1,10 +1,12 @@
 ---
-title: "Good screen, bad screen"
 date: 2023-04-25
 tags:
- - media
- - books
- - music
+- books
+- culture
+- literature
+- media
+- music
+title: Good screen, bad screen
 ---
 
 We are about to share a media experience together. Please switch off and put your phone away. Please switch off your smart watch and annihilate any other illuminated sources of time. Please strive to be entirely within the world created by the shared experience rather than in your own life or even your own body, whose use should be constrained to the sense organs need to consume the experience and the parts required for breathing, crying, and perhaps laughing. Limit then, itching, fidgeting, coughing, sneezing, farting, and throat clearing. I, of course, might start scrolling through my phone if I get bored.

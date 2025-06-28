@@ -1,10 +1,13 @@
 ---
-title: "Confessions Of A News Addict"
-subtitle: "A Thank You"
-date: 2016-08-22T15:03:42+01:00
+date: 2016-08-22 15:03:42+01:00
+subtitle: A Thank You
 tags:
-  - tech
-  - news
+- journal
+- media
+- news
+- tech
+- web
+title: Confessions Of A News Addict
 ---
 
 Hello. My name is Jack…

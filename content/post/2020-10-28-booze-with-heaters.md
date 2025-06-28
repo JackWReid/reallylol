@@ -1,13 +1,16 @@
 ---
-title: "Pubs in London with outdoor heaters"
-date: 2020-10-28T20:12:03Z
+date: 2020-10-28 20:12:03+00:00
 slug: 2020-10-28-booze-with-heaters
 tags:
-  - covid-19
-  - london
-  - cities
-  - mirror
-  - reference
+- cities
+- city
+- covid-19
+- food
+- london
+- mirror
+- reference
+- travel
+title: Pubs in London with outdoor heaters
 ---
 
 I was forwarded a PDF that began life as a Google Doc, before it was overwhelmed by demand. Crowd-sourced, guerrilla resources often spring up like this in times of difficulty. Perhaps I should be less surprised at how quickly Londoners have acted to work out where to get a pint without exposing yourself to the virus or the freezing cold.

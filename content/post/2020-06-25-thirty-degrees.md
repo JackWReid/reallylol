@@ -1,10 +1,13 @@
 ---
-title: Thirty degrees
 date: 2020-06-25
 tags:
-  - journal
-  - uk
-  - covid-19
+- covid-19
+- friends
+- home
+- journal
+- london
+- uk
+title: Thirty degrees
 ---
 
 It’s thirty degrees outside and we’re all, including the cat, feeling languid. The internet is down for much of South London, which adds to the general sense of stolid malaise.

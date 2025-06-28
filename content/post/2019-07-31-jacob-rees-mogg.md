@@ -1,13 +1,15 @@
 ---
-title: "Jacob Rees-Mogg Profile"
-slug: jacob-rees-mogg
-date: 2019-07-31T16:02:00+01:00
+date: 2019-07-31 16:02:00+01:00
 link: https://www.lrb.co.uk/v41/n15/james-meek/the-two-jacobs
-url: /note/2019-07-31-jacob-rees-mogg
+slug: jacob-rees-mogg
 tags:
-  - news
-  - magazine
-  - politics
+- london
+- magazine
+- news
+- politics
+- uk
+title: Jacob Rees-Mogg Profile
+url: /note/2019-07-31-jacob-rees-mogg
 ---
 
 James Meek (author of _Private Island: Why Britain Now Belongs To Someone Else_) did [a great profile of new Leader of the Commons, Jacob Rees-Mog](https://www.lrb.co.uk/v41/n15/james-meek/the-two-jacobs). It sums up the argument incredibly well that the stuffy all-English persona he affects in Parliament is at odds with his source of income in a transnational investment firm. Meek goes deep on the problematic network of offshore financial instruments used to shroud Mogg's investment firm in secrecy, which makes sense given his work on _Private Island_.

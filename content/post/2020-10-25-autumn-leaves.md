@@ -1,12 +1,15 @@
 ---
-title: Autumn leaves
-date: 2020-10-25T17:51:00
+date: 2020-10-25 17:51:00
 tags:
-  - journal
-  - covid-19
-  - outdoors
-  - london
-  - film
+- autumn
+- covid-19
+- film
+- home
+- journal
+- london
+- nature
+- outdoors
+title: Autumn leaves
 ---
 
 I was locked down for two weeks, so when I got out I wanted to make the most of the autumn leaves.

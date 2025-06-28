@@ -1,13 +1,14 @@
 ---
-title: Getting off of Netlify
-subtitle: Self-hosting the website, logs, and analytics
+date: 2020-05-14 13:00:00+00:00
 slug: getting-off-of-netlify
-date: 2020-05-14T13:00:00.000Z
+subtitle: Self-hosting the website, logs, and analytics
 tags:
-  - dev
-  - tech
-  - web
-  - indieweb
+- blog
+- dev
+- indieweb
+- tech
+- web
+title: Getting off of Netlify
 ---
 
 I wanted to quickly follow up to [my recent post](/post/how-this-site-works/) about personal infrastructure with some updates I made this week.

@@ -1,10 +1,13 @@
 ---
-title: "Pellatt Road"
-date: 2020-11-22T11:01:26Z
+date: 2020-11-22 11:01:26+00:00
 slug: pellatt-road
 tags:
-  - london
-  - history
+- architecture
+- art
+- history
+- london
+- politics
+title: Pellatt Road
 ---
 
 In East Dulwich there is a Pellatt Road. I still don’t know how to pronounce it; a simple “pellet” seems most statesmanly. I’ve wondered where that name came from. It struck me as a person’s name, probably.

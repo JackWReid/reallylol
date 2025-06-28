@@ -1,11 +1,15 @@
 ---
-title: "My top miscellanea of 2020"
 date: 2020-12-04
 slug: best-misc-media-2020
 tags:
-  - best of 2020
-  - best of year
-  - media
+- best of 2020
+- best of year
+- books
+- journal
+- media
+- tech
+- travel
+title: My top miscellanea of 2020
 ---
 
 I’ve spent a lot of this year living in the worlds other people have made for us. The world of our senses is either too boring (the insides of our homes, dinner arriving in cardboard at the front door) or too awful (bodies in refrigerated trucks, forests burning, and police brutality) to enjoy, so I’ve been turning to media more than ever. It’s been mediating my perception of the world, organising the information so I can take it in, or turning it into stories so I can connect with it on some emotional level with my burned out stump of a brain.

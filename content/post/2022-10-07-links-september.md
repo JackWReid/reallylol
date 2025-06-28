@@ -1,12 +1,14 @@
 ---
-title: "Links, September 2022"
 date: 2022-10-07
 tags:
- - links
- - geography
- - history
- - tech
- - photography
+- geography
+- history
+- links
+- literature
+- media
+- photography
+- tech
+title: Links, September 2022
 ---
 
 First I have a whole collection of maps. There's a map to show [where in the world Wikipedia edits][1] are coming from. There's a map that shows all the different kinds of [planning boundaries][2] that overlap the in Britain. There's an incredibly [detailed weather map][3]. Finally, here's a whole series of maps that examine how much [various governments fudged][4] their COVID-19 infection, hospitalisation, and mortality rates.
