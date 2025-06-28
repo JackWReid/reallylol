@@ -1,13 +1,11 @@
 ---
-date: 2016-05-05 15:03:42+01:00
-subtitle: We should be doing more to write our history
-tags:
-- internet
-- media
-- tech
 title: '@fat - Internet Historian'
----
+date: 2016-05-05 15:03:42+01:00
+tags:
+    - internet
+image: ""
 
+---
 [Rives TED Talk](https://www.youtube.com/watch?v=gu_PQBmk-6c)
 
 If you take a listen to Rives’ great TED talk from 2006 today, it’s pretty easy to see it as a little time capsule. Here he is talking (eloquently and entertainingly) about Napster and Friendster. What was, at the time, a piece of pop culture criticism and entertainment, is just as easily viewed as artefact of an era in the internet history. The internet moves fast, look at how quickly we moved from the bullshit-ly labelled Internet 1.0, to Internet 2.0, to deciding that numbering eras of the internet like that is stupid. That’s how a talk from 2006 can refer to long defunct technologies and come off sounding like archive footage explaining the social norms of telegraph communication.
