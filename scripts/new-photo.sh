@@ -29,14 +29,27 @@ abs_img_path="/img/photo/$creation_date-$slug.jpg"
 cp $1 $img_path
 mogrify -quiet -format jpg -layers Dispose -resize 1400\>x1400\> -quality 100% $img_path
 
+# Split tags and format as YAML list
+formatted_tags=""
+if [ -n "$tags" ]; then
+  IFS=',' read -ra tag_array <<< "$tags"
+  for tag in "${tag_array[@]}"; do
+    # Trim whitespace from each tag
+    trimmed_tag=$(echo "$tag" | xargs)
+    if [ -n "$trimmed_tag" ]; then
+      formatted_tags="$formatted_tags  - $trimmed_tag"$'\n'
+    fi
+  done
+fi
+
 md_template=$(cat <<EOF
 ---
 title: "$title"
 date: $creation_datetime
 image: "$abs_img_path"
 location: $location
-tags: [ $tags ]
----
+tags:
+$formatted_tags---
 
 ![$alt_text]($abs_img_path)
 EOF
