@@ -1,10 +1,15 @@
 ---
-title: "Music Is Changing"
-subtitle: "The ways that we get our music has been shaped by hidden individuals for decades. This is era of the people."
+date: 2013-10-04 11:22:00+01:00
 slug: music-is-changing
-date: 2013-10-04T11:22:00+01:00
+subtitle: The ways that we get our music has been shaped by hidden individuals for
+  decades. This is era of the people.
 tags:
-  - music
+- culture
+- history
+- media
+- music
+- tech
+title: Music Is Changing
 ---
 
 At its most basic level, music is simply a series of amplitudes and frequencies that make human beings move and vocalise in diverse and strange ways. However, like all other forms of human expression and entertainment, it is now a commodity. This commodity is now packaged to be sold, streamed, licensed and advertised to us. The people who distribute the music define our experience with this basic human commodity. These days there’s very little you can do to hear music without interacting with a third party of some kind, short of listening to a friend play guitar in your living room (as long as he’s lot playing from sheet music, royalties abound). The distributors are gatekeepers, and we’re going to explore how drastically their power is waning in the modern age.

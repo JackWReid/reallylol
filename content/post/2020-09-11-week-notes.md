@@ -1,8 +1,12 @@
 ---
-title: "Week Notes - 7th September 2020"
-date: 2020-09-11T10:15:28+01:00
+date: 2020-09-11 10:15:28+01:00
 tags:
-  - media
+- dev
+- journal
+- media
+- tech
+- web
+title: Week Notes - 7th September 2020
 ---
 
 Ideally all the books in the API should stay in the store even if they haven’t been included on any of the named shelves in the last Goodreads scrape. When a new scrape is run it would add any books that don’t appear, shift any books that are in the store but don’t appear in the latest scrape to a no-shelf status (representing books I know about but have no relation with, I guess). All of that is much easier if Goodreads has a persisting book ID. If the data persists I can add my own columns to the data too, like whether I own the books.

@@ -1,10 +1,14 @@
 ---
-title: Looking at Stoke Newington
 date: 2020-05-25
 tags:
-  - journal
-  - covid-19
-  - london
+- city
+- covid-19
+- cycling
+- home
+- journal
+- london
+- travel
+title: Looking at Stoke Newington
 ---
 
 {{<audio src="/audio/journal/abney-park.m4a" caption="The quiet of Abney Park in Stoke Newington">}}

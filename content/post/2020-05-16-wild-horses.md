@@ -1,11 +1,16 @@
 ---
-title: Wild horses
 date: 2020-05-16
 tags:
-  - journal
-  - covid-19
-  - uk
-  - outdoors
+- coast
+- countryside
+- covid-19
+- journal
+- nature
+- outdoors
+- sussex
+- travel
+- uk
+title: Wild horses
 ---
 
 {{<audio src="/audio/journal/cliff-birds.m4a" caption="The sound of the birds near the sea">}}
@@ -21,4 +26,3 @@ We saw sheep and their lambs too, some of them still suckling. We looked over a 
 On the way back up a lane, we saw children had scrawled notes and hearts for the NHS workers on the frontline onto the road with chalk. Chalk here is free; I thought of the huge white cliffs. Later we looked back at them as we lay on our backs in the bracing sea, having picked our way over a populated and pebbled beach. We were among only four people I saw in the cold, shallow water.
 
 We awkwardly dried off and peeled ourselves out of our swimwear and slid sandily into our clothes. We said to each other that to know this was possible would help, as we drove back towards the city. Impossibly quickly we were weaving through the 70s highrises of Croydon on a flyover. Quicker still I was on my way to Brixton market to pick up supplies for dinner, mask over my face.
-
