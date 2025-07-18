@@ -30,10 +30,51 @@ go build -o cover
 ./scripts/update-books.sh
 ```
 
-## Todo
-- [ ] Move content images to Cloudflare R2
-- [ ] AJAX in reading and watching
-- [ ] Script to create new image post and upload asset
-- [ ] Create Impressum page
-- [ ] Add new decorative images to repo
-- [ ] Adapt v2 stylesheet to v1
+## Development
+
+### Building the Site
+```bash
+# Start development server
+hugo server
+
+# Build for production
+hugo build
+```
+
+### Creating Content
+```bash
+# Create new note
+./scripts/new-note.sh
+
+# Create new photo post
+./scripts/new-photo.sh
+
+# Create new blog post
+./scripts/new-post.sh
+
+# Tag existing content
+./scripts/tag-content.sh
+```
+
+### Updating Media
+```bash
+# Update film data
+./scripts/update-films.sh
+
+# Update book data (requires cover CLI and API key)
+./scripts/update-books.sh
+```
+
+## Content Types
+The site uses custom Hugo archetypes for different content types:
+- **highlight** - Article highlights and commentary
+- **note** - Quick personal notes and thoughts
+- **photo** - Photo posts with metadata
+- **post** - Standard blog posts
+
+## Configuration
+- Theme: `reallylol` (custom theme)
+- Language: English (GB)
+- Syntax highlighting: Dracula theme
+- Pagination: 10 items per page
+- Build future posts: enabled
