@@ -18,6 +18,19 @@ fi
 mkdir -p ./data/books
 
 # Update books using cover CLI with --blog format (matches existing data structure)
-cover list toread --blog > ./data/books/toread.json
-cover list reading --blog > ./data/books/reading.json
-cover list read --blog > ./data/books/read.json
+# Handle case where cover CLI returns "No books found" message instead of empty JSON array
+cover list toread --blog > ./data/books/toread.json.tmp
+cover list reading --blog > ./data/books/reading.json.tmp
+cover list read --blog > ./data/books/read.json.tmp
+
+# Convert "No books found" messages to empty JSON arrays
+for file in toread reading read; do
+    if grep -q "No books found" "./data/books/${file}.json.tmp"; then
+        echo "[]" > "./data/books/${file}.json"
+    else
+        mv "./data/books/${file}.json.tmp" "./data/books/${file}.json"
+    fi
+done
+
+# Clean up temporary files
+rm -f ./data/books/*.json.tmp
