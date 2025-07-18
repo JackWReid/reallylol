@@ -533,10 +533,28 @@ body.note {
 .single-main__tags {
   font-size: 0.8rem;
   margin: 0.2rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .single-main__tags a {
-  margin-right: 0.3rem;
+  text-decoration: none;
+}
+
+.tag-pill {
+  display: inline-block;
+  background-color: #e8e8e8;
+  color: #333;
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.tag-pill:hover {
+  background-color: #d0d0d0;
   text-decoration: none;
 }
 
@@ -568,6 +586,51 @@ body.note {
 
 body.photo .single-main__content {
   max-width: var(--width-outer);
+}
+
+.single-main__photo {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.single-main__photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.photo-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.photo-nav-prev,
+.photo-nav-next {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+  border: 1px solid var(--color-line);
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.photo-nav-prev:hover,
+.photo-nav-next:hover {
+  background-color: var(--color-line);
+  color: var(--color-background);
+}
+
+.photo-nav-prev {
+  margin-right: auto;
+}
+
+.photo-nav-next {
+  margin-left: auto;
 }
 
 .single-main--links .single-main__content {

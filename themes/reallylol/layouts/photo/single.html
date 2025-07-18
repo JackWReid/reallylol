@@ -1,0 +1,68 @@
+{{ define "main" }}
+<main class="single-main">
+  <h1 class="single-main__title">{{ .Title }}</h1>
+
+  <p class="single-main__date">
+    {{ partial "icons/calendar.html" . }} {{ .Date.Format "2006-01-02" }}
+  </p>
+
+  {{ if .Params.Location }}
+  <p class="single-main__location">
+    {{ partial "icons/location.html" . }}
+    <span>{{ .Params.location }}</span>
+  </p>
+  {{ end }}
+
+  {{ if (.GetTerms "tags") }}
+  <div class="single-main__tags">
+    {{ range (.GetTerms "tags") }}
+    <a href="{{ .Permalink }}" class="tag-pill">#{{ .LinkTitle | lower }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- Main photo display -->
+  {{ if .Params.image }}
+  <div class="single-main__photo">
+    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" />
+  </div>
+  {{ end }}
+
+  <!-- Photo content/caption (excluding images) -->
+  <div class="single-main__content">
+    {{ $content := .Content }}
+    {{ $content := replaceRE `<p><img[^>]*></p>` "" $content }}
+    {{ $content := replaceRE `<img[^>]*>` "" $content }}
+    {{ $content | safeHTML }}
+  </div>
+
+  <!-- Photo navigation -->
+  {{ $photos := where .Site.RegularPages "Section" "photo" }}
+  {{ $currentIndex := 0 }}
+  {{ range $index, $page := $photos }}
+    {{ if eq $page.RelPermalink $.RelPermalink }}
+      {{ $currentIndex = $index }}
+    {{ end }}
+  {{ end }}
+  
+  {{ $prevPhoto := index $photos (add $currentIndex 1) }}
+  {{ $nextPhoto := index $photos (sub $currentIndex 1) }}
+  
+  {{ if or $prevPhoto $nextPhoto }}
+  <nav class="photo-navigation">
+    {{ if $prevPhoto }}
+    <a href="{{ $prevPhoto.RelPermalink }}" class="photo-nav-prev">
+      ← {{ $prevPhoto.Title }}
+    </a>
+    {{ end }}
+    {{ if $nextPhoto }}
+    <a href="{{ $nextPhoto.RelPermalink }}" class="photo-nav-next">
+      {{ $nextPhoto.Title }} →
+    </a>
+    {{ end }}
+  </nav>
+  {{ end }}
+
+  {{- partial "see-also.html" . -}}
+</main>
+{{ end }}
