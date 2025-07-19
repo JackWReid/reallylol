@@ -39,8 +39,8 @@ This is a Hugo-based personal blog and book tracking website hosted at https://r
 - `scripts/tag-content.sh` - Manages content tagging
 
 ### Media Scripts
-- `scripts/update-films.sh` - Updates film data
-- `scripts/update-films.sql` - SQL queries for film updates
+- `scripts/update-film.sh` - Updates film data
+- `scripts/update-film.sql` - SQL queries for film updates
 
 ## Common Commands
 

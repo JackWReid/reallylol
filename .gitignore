@@ -1,6 +1,66 @@
-public
-node_modules
-**/.DS_Store
-content/.obsidian
-resources/_gen
+# Hugo build artifacts
+public/
+resources/
+resources/_gen/
+.hugo_build.lock
+
+# Dependencies
+node_modules/
+vendor/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vim/
+.sublime-*
+*.code-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.directory
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.cache
+*.pid
+*.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Backup files
+*.bak
+*.backup
+*~
 .tag_backups/
+
+# Content-specific
+content/.obsidian/
+
+# Build and deployment
+dist/
+build/
+deploy/
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Local configuration
+config.local.*
+params.local.*
