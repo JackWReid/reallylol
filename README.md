@@ -59,7 +59,7 @@ hugo build
 ### Updating Media
 ```bash
 # Update film data
-./scripts/update-films.sh
+./scripts/update-film.sh
 
 # Update book data (requires cover CLI and API key)
 ./scripts/update-books.sh

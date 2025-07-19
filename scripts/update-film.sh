@@ -8,7 +8,7 @@ mkdir ./tmp
 cp $1/watchlist.csv ./tmp/watchlist.csv
 cp $1/diary.csv ./tmp/diary.csv
 
-/usr/bin/sqlite3 < ./scripts/update-films.sql
+/usr/bin/sqlite3 < ./scripts/update-film.sql
 
 mv ./tmp/watched.json ./data/films/watched.json
 mv ./tmp/towatch.json ./data/films/towatch.json

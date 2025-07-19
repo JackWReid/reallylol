@@ -13,7 +13,7 @@ This document outlines a comprehensive plan to address inconsistencies that have
 
 ## 1. Template System Issues
 
-### P1 - Critical Template Problems
+### P1 - Critical Template Problems **✅ RESOLVED**
 
 #### 1.1 Missing Photo Single Template
 **Issue**: No dedicated single page template for photos (`/layouts/photo/single.html`)
@@ -54,11 +54,6 @@ This document outlines a comprehensive plan to address inconsistencies that have
 
 ### P1 - Critical CSS Problems
 
-#### 2.1 File Duplication
-**Issue**: `public/css/style.css` duplicates `themes/reallylol/static/css/style.css`
-**Impact**: Maintenance overhead, potential conflicts
-**Action**: Remove duplicate file, ensure proper build process
-
 #### 2.2 CSS Variable Conflicts
 **Issue**: Inconsistent variable names and duplicate definitions
 - `style.css`: `--color-background` vs `--color-background` (redefined)
@@ -90,15 +85,6 @@ This document outlines a comprehensive plan to address inconsistencies that have
 ## 3. Content Organization and Naming
 
 ### P2 - High Priority Content Issues
-
-#### 3.1 Note Filename Inconsistencies ✅ **RESOLVED**
-**Issue**: Multiple timestamp formats across note files
-- Human-readable: `2020-04-26-first-note.md`
-- ISO with hyphens: `2020-04-27T21-23-08.md`
-- ISO with milliseconds: `2020-04-28T14:45:26.936Z.md`
-- ISO with colons: `2020-07-10T10:07:06.md`
-**Action**: ~~Standardize to single format (recommend ISO-8601 or date-slug)~~
-**Resolution**: All 102 note files standardized to `YYYY-MM-DD-descriptive-slug.md` format. Updated `new-note.sh` script to use new format for future notes. Completed 2025-07-18.
 
 #### 3.2 Photo Filename Evolution
 **Issue**: Three distinct naming eras
@@ -157,32 +143,6 @@ This document outlines a comprehensive plan to address inconsistencies that have
 
 ---
 
-## 5. Configuration and Build System
-
-### P2 - High Priority Configuration Issues
-
-#### 5.1 Domain Inconsistencies
-**Issue**: Mismatched domains between configurations
-- `config.toml`: `baseURL = "https://really.lol"`
-- `theme.toml`: References `jackreid.xyz` and HTTP protocol
-**Action**: Update theme.toml to use consistent domain and HTTPS
-
-#### 5.2 Duplicate Manifest Files
-**Issue**: Identical manifest files in `/static/` and `/public/`
-**Action**: Keep only static version, ensure proper build process
-
-### P3 - Medium Priority Configuration Issues
-
-#### 5.3 Theme Configuration Issues
-**Issue**: Empty description and inconsistent naming in theme.toml
-**Action**: Complete theme configuration with proper metadata
-
-#### 5.4 Missing Build Documentation
-**Issue**: No deployment or build process documentation
-**Action**: Add configuration examples and build documentation
-
----
-
 ## 6. Script and Tool Organization
 
 ### P3 - Medium Priority Script Issues
@@ -203,30 +163,6 @@ This document outlines a comprehensive plan to address inconsistencies that have
 #### 6.3 Script Documentation
 **Issue**: Limited documentation for script usage
 **Action**: Add comprehensive README for script usage
-
----
-
-## 7. Repository Maintenance
-
-### P2 - High Priority Repository Issues
-
-#### 7.1 Generated Content in Repository
-**Issue**: `/public/` directory committed with build output
-**Action**: Add to .gitignore, clean from repository
-
-#### 7.2 System Files in Repository
-**Issue**: `.DS_Store` files throughout repository
-**Action**: Remove system files, update .gitignore
-
-### P3 - Medium Priority Repository Issues
-
-#### 7.3 Obsidian Integration
-**Issue**: `.obsidian/` directory suggests mixed note-taking workflow
-**Action**: Decide on integration approach or remove Obsidian files
-
-#### 7.4 Comprehensive .gitignore
-**Issue**: Limited .gitignore coverage
-**Action**: Add comprehensive patterns for editors, OS files, build artifacts
 
 ---
 
