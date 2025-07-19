@@ -1,16 +1,16 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "Jackreid.Xyz"
+name = "reallylol"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://jackreid.xyz/"
-tags = []
-features = []
+licenselink = "https://github.com/jackreid/reallylol/blob/main/LICENSE"
+description = "A personal blog theme for really.lol featuring book tracking, photo galleries, and note-taking with a clean, minimalist design"
+homepage = "https://really.lol/"
+tags = ["blog", "personal", "book-tracking", "gallery", "notes", "minimalist"]
+features = ["responsive", "syntax-highlighting", "photo-galleries", "book-tracking", "note-system", "pagination"]
 min_version = "0.41"
 
 [author]
   name = "Jack Reid"
-  homepage = "https://jackreid.xyz"
+  homepage = "https://really.lol"
 

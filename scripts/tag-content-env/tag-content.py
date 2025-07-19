@@ -27,7 +27,7 @@ ROOT_DIR = Path(__file__).resolve()
 while not (ROOT_DIR / "config.toml").exists() and ROOT_DIR != ROOT_DIR.parent:
     ROOT_DIR = ROOT_DIR.parent
 CONTENT_DIR = ROOT_DIR / "content"
-PROMPT_FILE = ROOT_DIR / "scripts" / "prompts" / "tag-content.md"
+PROMPT_FILE = Path(__file__).parent / "tag-content.md"
 
 def get_all_existing_tags() -> List[str]:
     """Scan all posts in content/ and return a sorted, unique list of all tags currently in use."""
