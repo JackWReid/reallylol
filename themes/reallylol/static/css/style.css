@@ -5,8 +5,9 @@
   --color-text: #19282f;
   --width-inner: 700px;
   --width-outer: 1000px;
-  --font-title: -apple-system, BlinkMacSystemFont, "segoe ui", roboto,
-    oxygen-sans, ubuntu, cantarell, "helvetica neue", sans-serif;
+  --font-title:
+    -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen-sans, ubuntu,
+    cantarell, "helvetica neue", sans-serif;
   --font-base: Charter, Georgia, Times New Roman, times, serif;
 
   --text-color: black;
@@ -197,7 +198,8 @@ figcaption {
   transition: color 0.2s;
 }
 
-.media-nav a:hover, .media-nav a:focus {
+.media-nav a:hover,
+.media-nav a:focus {
   color: var(--color-line);
 }
 
@@ -967,8 +969,4 @@ td {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.single-main__content--wide.single-main__content {
-  /* removed incomplete line */
 }
