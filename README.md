@@ -75,3 +75,6 @@ The site uses custom Hugo archetypes for different content types:
 - Syntax highlighting: Dracula theme
 - Pagination: 10 items per page
 - Build future posts: enabled
+
+## Todo
+- Update `/uses`

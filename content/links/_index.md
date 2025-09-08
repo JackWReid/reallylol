@@ -1,6 +1,6 @@
 ---
 title: Links
-date: 2020-08-17
+date: 2025-09-08
 url: "/links"
 type: links
 ---
@@ -12,21 +12,23 @@ Scroll down a little for the directory. Scroll down a little further for a pagin
 ## Directory
 
 ### Outside
-- [Postcrossing](https://postcrossing.com) - Postcard exchange
+- [Postcrossing](https://postcrossing.com) - Postcard exchange, this was huge during lockdown
 - [Highland Walks](https://www.walkhighlands.co.uk/) - Personally vetted walks in the Highlands
-- [London Walks](https://www.london-footprints.co.uk/walkslist.htm)
+- [London Walks](https://www.london-footprints.co.uk/walkslist.htm) - The same but for those trapped in London
 - [FATMAP](https://fatmap.com/guidebooks) - Curated and well-mapped walks in Britain
-- [Ian's Shoelace Website](https://www.fieggen.com/shoelace/)
+- [Ian's Shoelace Website](https://www.fieggen.com/shoelace/) - When I was a teenager I got into shoelaces
 - [Tree Talk](https://www.treetalk.co.uk/) - London Tree Explorer
-- [Diamond Geezer](https://diamondgeezer.blogspot.com) - Incredibly detailed London blog
-- [Dan's Motorcycle Repair Page](https://www.dansmc.com)
-- [Jim Machalak's Boat Designs](https://www.jimsboats.com)
-- [The Mother of all Maritime Links](https://www.boat-links.com/boatlink.html)
+- [Diamond Geezer](https://diamondgeezer.blogspot.com) - Incredibly detailed London blog focused on trivia and transport
+- [Dan's Motorcycle Repair Page](https://www.dansmc.com) - I don't own a motorcycle but I love the *craft*
+- [Jim Machalak's Boat Designs](https://www.jimsboats.com) - This is like the online version of an old book I found called _Know Your Own Ship_
+- [The Mother of all Maritime Links](https://www.boat-links.com/boatlink.html) - Again, not a seafarer but just a fan of the sailnet
+- [Hand-Counted Ballots](https://verifiedvoting.org/election-system/hand-counted-paper-ballots/) - How to do democracy
 
 ### Indie Web
 - [omg.lol](https://omg.lol) - $20/yr for a domain, Mastodon account, email forwarding and more indie stuff
-- [Tilde Town](https://tilde.town)
-- [Low Tech Magazine](https://solar.lowtechmagazine.com)
+- [Tilde Town](https://tilde.town) - Get a user on a Linux box of nerds
+- [Low Tech Magazine](https://solar.lowtechmagazine.com) - The original solar-powered website
+- [compost-party](https://compost.party/maintenance/) - A Berlin solar-powered website running on an old Android phone
 
 ### Link Directories
 - [Marijn Florence's Linkroll](https://marijnflorence.neocities.org/linkroll/)
@@ -36,6 +38,7 @@ Scroll down a little for the directory. Scroll down a little further for a pagin
 - [href.cool](https://href.cool)
 - [Gossip's Web](https://gossipsweb.net)
 - [Garden of Blogs](https://bloggy.garden/)
+- [Molly White's Blogroll](https://www.mollywhite.net/blogroll/)
 
 ### Tools
 - [Barbra](https:/barbra.io) - Flash cards
@@ -63,10 +66,15 @@ Scroll down a little for the directory. Scroll down a little further for a pagin
 - [OMGLORD](https://omglord.com) - A designer that has a good link directory
 - [Devin Argenta](https://devinargenta.com) - I know him I like him
 - [Monokai](https://monokai.nl) - The creator of the Monokai font creates nice web experiments too
+- [100 Rabbits](https://100r.co/site/home.html) - Permacomputing couple on a sailboat
+- [Melanie Musings](https://buttondown.com/melaniemusings/) - A personal blog
+- [Printing a book at home](https://huijzer.xyz/posts/98) - If the publishers say no
+- [No Days Off](https://nodaysoff.run/) - A running freak is also a data visualisation freak
 
 ### Language
-- [Marijn van Hoorn, Esq.'s Compendium of Good Words](https://marijnflorence.neocities.org/words/)
-- [My Knipe List](https://cs.stanford.edu/~kach/words.txt)
+- 💀 [Marijn van Hoorn, Esq.'s Compendium of Good Words](https://marijnflorence.neocities.org/words/)
+- [My Knipe List](https://cs.stanford.edu/~kach/words.txt) - I think this is rot-n encoded and I don't remember what it is
+- [Etymonline](https://www.etymonline.com/) - Etymology resource for people who can't afford OED
 
 ### History
 - [Pamphlets About Police Violence](https://policeviolence.wordpress.com/historical-moments/)
@@ -77,6 +85,7 @@ Scroll down a little for the directory. Scroll down a little further for a pagin
 - [Emergent Tool Use from Multi-Agent Interaction](https://openai.com/blog/emergent-tool-use/) - Great AI demonstration showing human-like behaviour adaptation
 - [Proceedings of the IRCS Workshop on Prosody in Natural Speech](https://languagelog.ldc.upenn.edu/myl/IRCS_Prosody1992/TableOfContents.html) - One summer in the 90s
 - [So you want to learn physics](https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics)
+- [The Pudding](https://pudding.cool/) - The absolute best in using web technologies when publishing explainers
 
 ### Film
 - [Phantom Thread camera tests](https://www.youtube.com/watch?v=Uu5jVmIZBhE)
