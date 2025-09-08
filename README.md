@@ -51,9 +51,6 @@ hugo build
 
 # Create new blog post
 ./scripts/new-post.sh
-
-# Tag existing content
-./scripts/tag-content.sh
 ```
 
 ### Updating Media
