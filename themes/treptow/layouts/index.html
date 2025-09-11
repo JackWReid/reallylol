@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main class="index-main">
+  {{ .Content }}
+  <h2>Posts</h2>
+  {{ range .Pages }}
+    <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+  {{ end }}
+  <h2>Notes</h2>
+  {{ range .Site.Pages }}
+    <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+  {{ end }}
+</main>
+{{ end }}
