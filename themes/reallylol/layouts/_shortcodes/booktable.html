@@ -19,7 +19,7 @@
     {{ if .image_url }}
       <img src="{{ .image_url }}" alt="Cover of {{ .title }}" loading="lazy" class="book-card__cover" />
     {{ else }}
-      <div class="book-card__cover book-card__cover--empty" aria-hidden="true"></div>
+      <div class="book-card__cover book-card__cover--empty " aria-hidden="true"></div>
     {{ end }}
     <div class="book-card__meta">
       <h3 class="book-card__title">{{ .title }}</h3>
