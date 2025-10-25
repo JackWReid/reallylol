@@ -1,6 +1,7 @@
 ---
 title: "Commonplace Book: Housing Policy"
 date: 2025-10-24
+summary: "Housing has two economic functions. It is a consumption good – it provides shelter – but also an investment. In relation to the latter, it can be a financial asset providing realised and unrealised capital gains and rental returns; a source of collateral to support borrowing; and an efficient store of wealth. The demand for housing as an investment can impinge on its function as a consumption good given an inherently limited supply of housing and land in desirable areas."
 tags:
   - commonplace
   - housing
