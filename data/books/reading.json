@@ -1,9 +1,22 @@
 [
   {
+    "date_updated": "2025-11-02",
+    "title": "Granta 173: India",
+    "author": "Thomas Meaney",
+    "hardcover_url": "https://hardcover.app/books/granta-173"
+  },
+  {
     "date_updated": "2025-10-25",
     "title": "Our Ancestors: Cloven Viscount; Baron in the Trees; Non-Existent Knight",
     "author": "Italo Calvino",
     "image_url": "https://assets.hardcover.app/edition/17177505/f952ca6bd68b712617482b5862d4b9f2d2252956.jpeg",
     "hardcover_url": "https://hardcover.app/books/our-ancestors"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "Gingerbread",
+    "author": "Helen Oyeyemi",
+    "image_url": "https://assets.hardcover.app/external_data/59387595/c23acc666591ce2da46bdd067da7e1c230fbae63.jpeg",
+    "hardcover_url": "https://hardcover.app/books/gingerbread"
   }
 ]
