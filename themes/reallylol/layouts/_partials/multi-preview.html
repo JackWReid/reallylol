@@ -33,7 +33,7 @@
   <p class="highlight-item__date">
     {{ partial "icons/calendar.html" . }} {{ .Date.Format "2006-01-02" }}
   </p>
-  <div class="highlight-item__content">{{ .Content }}</div>
+  <div class="highlight-item__content">{{ partial "filter-preview-content.html" (dict "content" .Content "type" "highlight") }}</div>
 </article>
 {{ else if eq "post" .Type }}
 <article class="blog-item">
@@ -53,7 +53,7 @@
   <p class="blog-item__date">
     {{ partial "icons/calendar.html" . }} {{ .Date.Format "2006-01-02" }}
   </p>
-  {{ .Summary }}
+  {{ partial "filter-preview-content.html" (dict "content" .Summary "type" "post") }}
 </article>
 {{ else if eq "note" .Type }}
 <article class="note-item">

@@ -1,0 +1,28 @@
+{{- $content := .content -}}
+{{- $type := .type -}}
+
+{{- /* Remove images */ -}}
+{{- $content = replaceRE `<img[^>]*>` "" $content -}}
+
+{{- /* Remove horizontal rules */ -}}
+{{- $content = replaceRE `<hr[^>]*>` "" $content -}}
+
+{{- /* Remove unordered lists */ -}}
+{{- $content = replaceRE `<ul>[\s\S]*?</ul>` "" $content -}}
+
+{{- /* Remove ordered lists */ -}}
+{{- $content = replaceRE `<ol>[\s\S]*?</ol>` "" $content -}}
+
+{{- /* Remove headers (h1-h6) and their content */ -}}
+{{- $content = replaceRE `<h[1-6][^>]*>[\s\S]*?</h[1-6]>` "" $content -}}
+
+{{- /* Remove blockquotes for post type only */ -}}
+{{- if eq $type "post" -}}
+  {{- $content = replaceRE `<blockquote>[\s\S]*?</blockquote>` "" $content -}}
+{{- end -}}
+
+{{- /* Clean up extra whitespace */ -}}
+{{- $content = replaceRE `\n\s*\n` "\n" $content -}}
+
+{{- $content | safeHTML -}}
+
