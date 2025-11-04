@@ -334,6 +334,16 @@ figcaption {
   transform: translateY(2px);
 }
 
+.section-main--post .multi-preview-list {
+  max-width: 600px;
+}
+
+@media screen and (max-width: 1070px) {
+  .section-main--post .multi-preview-list {
+    max-width: none;
+  }
+}
+
 .image-item:not(:first-child),
 .blog-item:not(:first-child),
 .highlight-item:not(:first-child),

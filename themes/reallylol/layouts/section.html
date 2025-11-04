@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="section-main">
+<main class="section-main{{ if eq .Section "post" }} section-main--post{{ end }}">
   {{ if or (eq .Section "books") (eq .Section "films") (eq .Section "media") }}
     {{ partial "media-nav.html" . }}
   {{ end }}
@@ -14,23 +14,12 @@
     {{ if eq .Section "post" }}Posts{{ else }}{{ .Title }}{{ end }}
   </h1>
   {{ .Content }} {{ if ne .Section "media" }} {{ $paginator := .Paginate .Pages
-  }} {{ range $paginator.Pages }}
-  <article class="section-item">
-    <h3 class="section-item__title">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </h3>
-    <p class="section-item__date">
-      📅 <span>{{ .Date.Format "2006-01-02" }}</span>
-    </p>
-    <ul class="section-item__tags">
-      {{ range .GetTerms "tags" }}
-      <li class="section-item__tags-item">
-        <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
-      </li>
-      {{ end }}
-    </ul>
-    <div class="section-item__summary">{{ .Summary }}</div>
-  </article>
-  {{ end }} {{- partial "pagination.html" . -}} {{ end }}
+  }}
+  <div class="multi-preview-list">
+    {{ range $paginator.Pages }}
+      {{- partial "multi-preview.html" . -}}
+    {{ end }}
+  </div>
+  {{- partial "pagination.html" . -}} {{ end }}
 </main>
 {{ end }}
