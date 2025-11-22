@@ -872,8 +872,8 @@ td {
 
 .book-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 2rem;
   list-style: none;
   margin: 2rem 0;
   padding: 0;
@@ -891,13 +891,10 @@ td {
 }
 
 .book-card {
-  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
   transition: border-color 0.2s;
-  border: 1px solid #eee;
   min-height: 340px;
   max-width: 220px;
   width: 100%;
