@@ -56,10 +56,27 @@
       return;
     }
 
-    // Find pagination controls (should be next sibling)
-    let controls = container.nextElementSibling;
-    while (controls && !controls.hasAttribute('data-pagination-controls')) {
-      controls = controls.nextElementSibling;
+    // Find pagination controls
+    // For tables, controls are sibling of table, not tbody
+    // For lists, controls are sibling of list
+    let controls = null;
+    if (container.tagName === 'TBODY') {
+      // For tables, go up to table element, then find next sibling
+      const table = container.closest('table');
+      if (table) {
+        let sibling = table.nextElementSibling;
+        while (sibling && !sibling.hasAttribute('data-pagination-controls')) {
+          sibling = sibling.nextElementSibling;
+        }
+        controls = sibling;
+      }
+    } else {
+      // For lists, controls are next sibling
+      let sibling = container.nextElementSibling;
+      while (sibling && !sibling.hasAttribute('data-pagination-controls')) {
+        sibling = sibling.nextElementSibling;
+      }
+      controls = sibling;
     }
 
     if (!controls) {
@@ -187,6 +204,7 @@
           loadLazyImages(containerElement);
 
           // Update controls
+          // Controls are always sibling of the main container (table or ul)
           let controls = container.nextElementSibling;
           while (controls && !controls.hasAttribute('data-pagination-controls')) {
             controls = controls.nextElementSibling;
