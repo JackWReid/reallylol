@@ -459,10 +459,6 @@ figcaption {
   text-decoration: none;
 }
 
-.blog-item__tags svg {
-  margin-right: -2px;
-}
-
 .highlight-item__content blockquote {
   margin: 0;
   padding: 0 0 0 1rem;
@@ -561,21 +557,6 @@ body.note {
   text-decoration: none;
 }
 
-.tag-pill {
-  display: inline-block;
-  background-color: #e8e8e8;
-  color: #333;
-  padding: 0.2rem 0.6rem;
-  border-radius: 1rem;
-  font-size: 0.75rem;
-  font-weight: 500;
-  transition: background-color 0.2s ease;
-}
-
-.tag-pill:hover {
-  background-color: #d0d0d0;
-  text-decoration: none;
-}
 
 .single-main__location {
   margin: 0.2rem 0 0;

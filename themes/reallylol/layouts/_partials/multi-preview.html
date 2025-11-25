@@ -24,9 +24,7 @@
   {{ if (.GetTerms "tags") }}
   <p class="highlight-item__tags">
     {{ range (.GetTerms "tags") }}
-    <a href="{{ .Permalink }}"
-      >{{ partial "icons/tag.html" . }}{{ .LinkTitle }}</a
-    >
+    <a href="{{ .Permalink }}">#{{ .LinkTitle | lower }}</a>
     {{ end }}
   </p>
   {{ end }}
@@ -45,7 +43,7 @@
   <ul class="section-item__tags">
     {{ range (.GetTerms "tags") }}
     <li class="section-item__tags-item">
-      <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+      <a href="{{ .Permalink }}">#{{ .LinkTitle | lower }}</a>
     </li>
     {{ end }}
   </ul>
