@@ -16,7 +16,7 @@
   {{ if (.GetTerms "tags") }}
   <div class="single-main__tags">
     {{ range (.GetTerms "tags") }}
-    <a href="{{ .Permalink }}" class="tag-pill">#{{ .LinkTitle | lower }}</a>
+    <a href="{{ .Permalink }}">#{{ .LinkTitle | lower }}</a>
     {{ end }}
   </div>
   {{ end }}
