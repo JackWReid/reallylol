@@ -217,6 +217,9 @@ figcaption {
   margin: 4rem auto 0;
   padding-top: 1rem;
   border-top: 1px solid var(--color-line);
+  background-color: var(--color-background);
+  position: relative;
+  z-index: 1;
 }
 
 .site-footer {
@@ -471,7 +474,7 @@ figcaption {
 .section-hero-image--post {
   position: fixed;
   right: 50px;
-  bottom: -20px;
+  bottom: 6px; /* Keeps it clear of the footer bottom padding */
   width: 300px;
   z-index: 0;
 }
