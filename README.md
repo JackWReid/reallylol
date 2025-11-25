@@ -42,24 +42,88 @@ hugo build
 ```
 
 ### Creating Content
+
+#### `new-note.sh`
+Creates a new note post. Prompts for note text and generates a slug automatically.
+
+**Dependencies:** None
+
+**Usage:**
 ```bash
-# Create new note
 ./scripts/new-note.sh
+```
 
-# Create new photo post
-./scripts/new-photo.sh
+#### `new-photo.sh`
+Creates a new photo post from an image file. Extracts creation date from EXIF data and prompts for metadata (slug, title, location, tags, alt text). Automatically resizes and optimizes the image.
 
-# Create new blog post
+**Dependencies:** 
+- `exiftool` (for EXIF data extraction)
+- `imagemagick` (for image processing via `mogrify`)
+
+**Usage:**
+```bash
+./scripts/new-photo.sh path/to/photo.jpg
+```
+
+#### `new-post.sh`
+Creates a new blog post. Prompts for slug and title, then opens the file in vim for editing.
+
+**Dependencies:** `vim` (or your default editor)
+
+**Usage:**
+```bash
 ./scripts/new-post.sh
 ```
 
-### Updating Media
-```bash
-# Update film data
-./scripts/update-film.sh
+#### `new-media.sh`
+Interactive script to create medialog posts for books or movies. Uses `fzf` to browse and select from your read books and watched movies. Shows checkmarks for items that already have posts. Automatically handles duplicate slugs by appending numbers.
 
-# Update book data (requires cover CLI and API key)
+**Dependencies:**
+- `jq` (for JSON parsing)
+- `fzf` (for interactive selection)
+- `vim` (for editing the created post)
+
+**Usage:**
+```bash
+./scripts/new-media.sh
+```
+
+### Updating Media
+
+#### `update-books.sh`
+Updates book data from Hardcover using the cover CLI. Fetches books in three categories: to-read, reading, and read.
+
+**Dependencies:**
+- `cover` CLI (see Dependencies section above)
+- `HARDCOVER_API_KEY` environment variable
+
+**Usage:**
+```bash
 ./scripts/update-books.sh
+```
+
+#### `update-films.sh`
+Updates film data from Letterboxd export. Supports two modes:
+- **Automatic mode**: Downloads the export automatically using cookies
+- **Manual mode**: Processes a pre-downloaded and extracted export directory
+
+**Dependencies:**
+- `sqlite3` (for processing CSV data)
+- `unzip` (for automatic mode)
+- `curl` (for automatic mode)
+
+**Setup for automatic mode:**
+1. Export your Letterboxd cookies using a browser extension (e.g., "cookies.txt" or "Get cookies.txt LOCALLY")
+2. Save cookies to `./creds/letterboxd-cookies.txt` or set `LETTERBOXD_COOKIE_FILE` environment variable
+3. Or set `LETTERBOXD_COOKIES` environment variable with cookie string
+
+**Usage:**
+```bash
+# Automatic mode (requires cookies)
+./scripts/update-films.sh
+
+# Manual mode (if you've already downloaded and extracted the export)
+./scripts/update-films.sh /path/to/extracted/export/
 ```
 
 ## Content Types
