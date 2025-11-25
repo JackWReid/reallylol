@@ -2,8 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 slug: {{ .Name }}
-tags:
-  - tag
+tags: []
 ---
 
 > Body of the highlight
