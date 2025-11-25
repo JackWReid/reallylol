@@ -10,9 +10,11 @@ Comprehensive cleanup of unused templates, shortcodes, partials, and CSS styles 
 
 ### Unused Shortcodes
 1. `themes/reallylol/layouts/_shortcodes/articletable.html` - Not used in any content files
-2. `themes/reallylol/layouts/_shortcodes/audio.html` - Not used in any content files
-3. `themes/reallylol/layouts/_shortcodes/image.html` - Not used in any content files
-4. `themes/reallylol/layouts/_shortcodes/photo.html` - **RESTORED** - Actually used in content files (e.g., content/photo/2021-11-10-paris-autumn.md)
+2. `themes/reallylol/layouts/_shortcodes/image.html` - Not used in any content files
+
+### Restored Shortcodes (Initially Removed But Actually Used)
+1. `themes/reallylol/layouts/_shortcodes/audio.html` - **RESTORED** - Used in post files (e.g., content/post/2020-04-23-bubbles-in-the-street.md)
+2. `themes/reallylol/layouts/_shortcodes/photo.html` - **RESTORED** - Used in photo and post files (e.g., content/photo/2021-11-10-paris-autumn.md, content/post/2022-03-12-the-layoff-business.md)
 
 ### Unused Partials
 1. `themes/reallylol/layouts/_partials/photo.html` - Not referenced in any templates
@@ -33,7 +35,8 @@ Comprehensive cleanup of unused templates, shortcodes, partials, and CSS styles 
 ### Shortcodes in Use
 - `booktable.html` - Used in content/media/_reading.md, _toread.md, _read.md
 - `filmtable.html` - Used in content/media/_watched.md, _towatch.md
-- `photo.html` - Used in photo content files (e.g., content/photo/2021-11-10-paris-autumn.md)
+- `photo.html` - Used in photo and post content files (e.g., content/photo/2021-11-10-paris-autumn.md, content/post/2022-03-12-the-layoff-business.md)
+- `audio.html` - Used in post files (e.g., content/post/2020-04-23-bubbles-in-the-street.md)
 
 ### All Templates
 All layout templates are part of Hugo's standard template hierarchy and are actively used:
@@ -62,7 +65,7 @@ All remaining partials are actively used:
 - Icon partials (calendar, capture, location, paperclip, pen, speech, tag)
 
 ## Impact
-- Reduced theme size by removing 4 unused template files (photo shortcode was restored)
+- Reduced theme size by removing 2 unused template files (audio and photo shortcodes were restored)
 - Cleaned up CSS by removing ~50 lines of unused styles
 - Fixed CSS variable issues in `pre` styles
-- Note: `photo.html` shortcode was initially removed but restored after discovering it's used in photo content files
+- Note: `audio.html` and `photo.html` shortcodes were initially removed but restored after discovering they're used in content files
