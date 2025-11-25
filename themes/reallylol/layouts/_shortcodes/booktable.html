@@ -13,11 +13,15 @@
   {{ $data = first ($scratch.Get "limit") $.Site.Data.books.toread }}
 {{ end }}
 
-<ul class="book-grid book-grid--fullwidth">
-  {{ range $data }}
-  <li class="book-card">
+<ul class="book-grid book-grid--fullwidth" data-paginate="true">
+  {{ range $index, $item := $data }}
+  <li class="book-card" data-item>
     {{ if .image_url }}
-      <img src="{{ .image_url }}" alt="Cover of {{ .title }}" loading="lazy" class="book-card__cover" />
+      {{ if lt $index 24 }}
+        <img src="{{ .image_url }}" alt="Cover of {{ .title }}" loading="lazy" class="book-card__cover" />
+      {{ else }}
+        <img data-src="{{ .image_url }}" alt="Cover of {{ .title }}" loading="lazy" class="book-card__cover" data-lazy-image />
+      {{ end }}
     {{ else }}
       <div class="book-card__cover book-card__cover--empty " aria-hidden="true"></div>
     {{ end }}
@@ -29,3 +33,8 @@
   </li>
   {{ end }}
 </ul>
+<div class="pagination-controls" data-pagination-controls style="display: none;">
+  <button type="button" class="pagination-controls__button pagination-controls__button--prev" data-pagination-prev aria-label="Previous page">Previous</button>
+  <span class="pagination-controls__info" data-pagination-info></span>
+  <button type="button" class="pagination-controls__button pagination-controls__button--next" data-pagination-next aria-label="Next page">Next</button>
+</div>
