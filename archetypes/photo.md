@@ -1,8 +1,9 @@
 ---
-title: Photo name
-location: Location
+title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-image: "/img/photo/what.jpg"
+image: "/img/photo/{{ .Name }}.jpg"
+location: ""
+tags: []
 ---
 
-![Alt text](/img/photo/url.jpg)
+![Alt text](/img/photo/{{ .Name }}.jpg)
