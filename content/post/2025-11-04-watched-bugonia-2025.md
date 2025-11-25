@@ -1,10 +1,15 @@
 ---
-title: "Bugonia is a flower"
+title: "A bugonia is a flower"
+slug: watched-bugonia-2025
 date: 2025-11-04
 tags:
+  - medialog
+  - watchedmovie
   - journal
   - movies
   - film
+movie_released: 2025
+rating: 3
 ---
 
 We watched _Bugonia_. Spoilers to follow.
