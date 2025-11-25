@@ -1,0 +1,101 @@
+{{ define "main" }}
+<main class="section-main">
+  {{ partial "media-nav.html" . }}
+  <h1 class="section-title">{{ .Title }}</h1>
+  <div class="single-main__content single-main__content--wide">
+    {{ .Content }}
+  </div>
+
+  {{/* Determine which data file to use based on the section's URL */}}
+  {{ $data := slice }}
+  {{ $dataKey := "" }}
+  {{ $permalink := .RelPermalink }}
+  
+  {{ if or (hasPrefix $permalink "/films/watched") (hasPrefix $permalink "/films/watched/") }}
+    {{ $data = $.Site.Data.films.watched }}
+    {{ $dataKey = "watched" }}
+  {{ else if or (hasPrefix $permalink "/films/towatch") (hasPrefix $permalink "/films/towatch/") }}
+    {{ $data = $.Site.Data.films.towatch }}
+    {{ $dataKey = "towatch" }}
+  {{ end }}
+
+  {{/* Pagination logic */}}
+  {{ $perPage := 20 }}
+  {{ $currentPage := 1 }}
+  {{ $pagePath := "" }}
+  
+  {{/* Parse page number from URL - handle /films/watched/page/2 or /films/watched/page/2/ */}}
+  {{ if findRE "/page/\\d+" $permalink }}
+    {{ $pageMatch := index (findRE "/page/(\\d+)" $permalink) 0 }}
+    {{ $currentPage = int (index (findRE "\\d+" $pageMatch) 0) }}
+    {{/* Get base path without /page/X */}}
+    {{ $pagePath = replaceRE "/page/\\d+/?$" "" $permalink }}
+  {{ else }}
+    {{ $pagePath = $permalink }}
+  {{ end }}
+
+  {{/* Ensure page path doesn't have trailing slash for consistency */}}
+  {{ $pagePath = strings.TrimSuffix "/" $pagePath }}
+  
+  {{ $totalItems := len $data }}
+  {{ $totalPages := div (add $totalItems (sub $perPage 1)) $perPage }}
+  {{ $startIndex := mul (sub $currentPage 1) $perPage }}
+  {{ $paginatedData := slice }}
+  
+  {{ if gt $totalItems 0 }}
+    {{ if eq $currentPage 1 }}
+      {{ $paginatedData = $data | first $perPage }}
+    {{ else }}
+      {{/* after N returns items starting from index N+1, so we use startIndex-1 */}}
+      {{ $paginatedData = $data | after (sub $startIndex 1) | first $perPage }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Render film table */}}
+  {{ if gt (len $paginatedData) 0 }}
+    <table class="media-table media-table--film">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range $paginatedData }}
+        <tr>
+          <td class="media-table__date">{{ dateFormat "2006-01-02" .date_updated }}</td>
+          <td class="media-table__title">{{ .name }} ({{ .year }})</td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  {{ end }}
+
+  {{/* Pagination navigation */}}
+  {{ if gt $totalPages 1 }}
+    <nav class="pagination">
+      <div class="prev-wrapper">
+        {{ if gt $currentPage 1 }}
+          {{ if eq $currentPage 2 }}
+            <a href="{{ $pagePath }}">Back</a>
+          {{ else }}
+            <a href="{{ $pagePath }}/page/{{ sub $currentPage 1 }}">Back</a>
+          {{ end }}
+        {{ else }}
+          <span>Back</span>
+        {{ end }}
+      </div>
+
+      <span class="page-count">{{ $currentPage }} of {{ $totalPages }}</span>
+      
+      <div class="next-wrapper">
+        {{ if lt $currentPage $totalPages }}
+          <a href="{{ $pagePath }}/page/{{ add $currentPage 1 }}">Next</a>
+        {{ else }}
+          <span>Next</span>
+        {{ end }}
+      </div>
+    </nav>
+  {{ end }}
+</main>
+{{ end }}

@@ -1,0 +1,104 @@
+{{ define "main" }}
+<main class="section-main">
+  {{ partial "media-nav.html" . }}
+  <h1 class="section-title">{{ .Title }}</h1>
+  <div class="single-main__content single-main__content--wide">
+    {{ .Content }}
+  </div>
+
+  {{/* Determine which data file to use based on the section's URL */}}
+  {{ $data := slice }}
+  {{ $dataKey := "" }}
+  {{ $permalink := .RelPermalink }}
+  
+  {{ if or (hasPrefix $permalink "/books/read") (hasPrefix $permalink "/books/read/") }}
+    {{ $data = $.Site.Data.books.read }}
+    {{ $dataKey = "read" }}
+  {{ else if or (hasPrefix $permalink "/books/toread") (hasPrefix $permalink "/books/toread/") }}
+    {{ $data = $.Site.Data.books.toread }}
+    {{ $dataKey = "toread" }}
+  {{ else if or (hasPrefix $permalink "/books/reading") (hasPrefix $permalink "/books/reading/") }}
+    {{ $data = $.Site.Data.books.reading }}
+    {{ $dataKey = "reading" }}
+  {{ end }}
+
+  {{/* Pagination logic */}}
+  {{ $perPage := 20 }}
+  {{ $currentPage := 1 }}
+  {{ $pagePath := "" }}
+  
+  {{/* Parse page number from URL - handle /books/read/page/2 or /books/read/page/2/ */}}
+  {{ if findRE "/page/\\d+" $permalink }}
+    {{ $pageMatch := index (findRE "/page/(\\d+)" $permalink) 0 }}
+    {{ $currentPage = int (index (findRE "\\d+" $pageMatch) 0) }}
+    {{/* Get base path without /page/X */}}
+    {{ $pagePath = replaceRE "/page/\\d+/?$" "" $permalink }}
+  {{ else }}
+    {{ $pagePath = $permalink }}
+  {{ end }}
+
+  {{/* Ensure page path doesn't have trailing slash for consistency */}}
+  {{ $pagePath = strings.TrimSuffix "/" $pagePath }}
+  
+  {{ $totalItems := len $data }}
+  {{ $totalPages := div (add $totalItems (sub $perPage 1)) $perPage }}
+  {{ $startIndex := mul (sub $currentPage 1) $perPage }}
+  {{ $paginatedData := slice }}
+  
+  {{ if gt $totalItems 0 }}
+    {{ if eq $currentPage 1 }}
+      {{ $paginatedData = $data | first $perPage }}
+    {{ else }}
+      {{/* after N returns items starting from index N+1, so we use startIndex-1 */}}
+      {{ $paginatedData = $data | after (sub $startIndex 1) | first $perPage }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Render book grid */}}
+  {{ if gt (len $paginatedData) 0 }}
+    <ul class="book-grid book-grid--fullwidth">
+      {{ range $paginatedData }}
+      <li class="book-card">
+        {{ if .image_url }}
+          <img src="{{ .image_url }}" alt="Cover of {{ .title }}" loading="lazy" class="book-card__cover" />
+        {{ else }}
+          <div class="book-card__cover book-card__cover--empty" aria-hidden="true"></div>
+        {{ end }}
+        <div class="book-card__meta">
+          <h3 class="book-card__title">{{ .title }}</h3>
+          <div class="book-card__author">{{ .author }}</div>
+          <div class="book-card__date">{{ dateFormat "Jan 2, 2006" .date_updated }}</div>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+  {{/* Pagination navigation */}}
+  {{ if gt $totalPages 1 }}
+    <nav class="pagination">
+      <div class="prev-wrapper">
+        {{ if gt $currentPage 1 }}
+          {{ if eq $currentPage 2 }}
+            <a href="{{ $pagePath }}">Back</a>
+          {{ else }}
+            <a href="{{ $pagePath }}/page/{{ sub $currentPage 1 }}">Back</a>
+          {{ end }}
+        {{ else }}
+          <span>Back</span>
+        {{ end }}
+      </div>
+
+      <span class="page-count">{{ $currentPage }} of {{ $totalPages }}</span>
+      
+      <div class="next-wrapper">
+        {{ if lt $currentPage $totalPages }}
+          <a href="{{ $pagePath }}/page/{{ add $currentPage 1 }}">Next</a>
+        {{ else }}
+          <span>Next</span>
+        {{ end }}
+      </div>
+    </nav>
+  {{ end }}
+</main>
+{{ end }}
