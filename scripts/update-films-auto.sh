@@ -67,129 +67,132 @@ download_with_cookies() {
     # Create tmp directory
     mkdir -p "${TMP_DIR}"
     
-    # First, try to get the data export page to see if we're authenticated
-    echo "Checking authentication..."
-    local auth_check=$(eval curl -s -L ${cookie_arg} -w "%{http_code}" -o /dev/null "${LETTERBOXD_DATA_URL}")
-    
-    if [ "${auth_check}" != "200" ]; then
-        echo -e "${YELLOW}Warning: Authentication check returned ${auth_check}. Cookies may be invalid.${NC}"
-        echo -e "${YELLOW}Attempting download anyway...${NC}"
-    fi
-    
     # Try to download the data export
     # Letterboxd may require triggering a download, so we'll try a few approaches
     echo "Attempting to download data export..."
     
-    # Approach 1: Try direct download URL (if Letterboxd provides one)
-    # This might not work if Letterboxd requires a button click to generate
     local zip_file="${TMP_DIR}/letterboxd-data.zip"
     
-    # Try to find and download the export
-    # We'll check the page for download links
-    local page_content=$(eval curl -s -L ${cookie_arg} "${LETTERBOXD_DATA_URL}")
+    # Approach 1: Try direct export endpoints first (most reliable)
+    echo "Trying direct export endpoints..."
+    local export_endpoints=(
+        "https://letterboxd.com/data/export/"
+        "https://letterboxd.com/settings/data/export/"
+        "https://letterboxd.com/settings/data/download/"
+    )
     
-    # Look for download links in the page
-    local download_url=$(echo "${page_content}" | grep -oE 'href="[^"]*\.zip[^"]*"' | head -1 | sed 's/href="//;s/"$//')
-    
-    if [ -n "${download_url}" ]; then
-        # Make URL absolute if relative
-        if [[ ! "${download_url}" =~ ^https?:// ]]; then
-            download_url="https://letterboxd.com${download_url}"
+    local downloaded=false
+    for endpoint in "${export_endpoints[@]}"; do
+        local status=$(eval curl -s -L ${cookie_arg} -w "%{http_code}" -o "${zip_file}" '"'"${endpoint}"'"')
+        if [ "${status}" = "200" ] && [ -f "${zip_file}" ] && [ -s "${zip_file}" ]; then
+            # Check if it's actually a ZIP file
+            if file "${zip_file}" | grep -q "Zip archive"; then
+                echo -e "${GREEN}Successfully downloaded export from ${endpoint}${NC}"
+                downloaded=true
+                break
+            fi
         fi
-        echo "Found download URL: ${download_url}"
-        eval curl -s -L ${cookie_arg} -o "${zip_file}" "${download_url}"
-    else
-        # Approach 2: Try to find and submit a form (if Letterboxd requires button click)
-        echo "No direct download link found. Checking for export forms..."
+    done
+    
+    # Approach 2: If direct endpoints failed, try parsing the settings page
+    if [ "${downloaded}" = "false" ]; then
+        echo "Direct endpoints failed. Checking settings page for download options..."
         
-        # Look for form actions that might trigger export
-        local form_action=$(echo "${page_content}" | grep -oE '<form[^>]*action="[^"]*"[^>]*>' | grep -i "data\|export" | head -1 | grep -oE 'action="[^"]*"' | sed 's/action="//;s/"$//')
+        # Get the settings page content
+        local page_content=$(eval curl -s -L ${cookie_arg} '"'"${LETTERBOXD_DATA_URL}"'"')
         
-        if [ -n "${form_action}" ]; then
+        # Check if we got redirected to signin
+        if echo "${page_content}" | grep -qiE '(sign in|log in|signin|login)'; then
+            echo -e "${YELLOW}Warning: Appears to be redirected to signin page. Cookies may be invalid.${NC}"
+        fi
+        
+        # Look for download links in the page
+        local download_url=$(echo "${page_content}" | grep -oE 'href="[^"]*\.zip[^"]*"' | head -1 | sed 's/href="//;s/"$//')
+        
+        if [ -n "${download_url}" ]; then
             # Make URL absolute if relative
-            if [[ ! "${form_action}" =~ ^https?:// ]]; then
-                form_action="https://letterboxd.com${form_action}"
+            if [[ ! "${download_url}" =~ ^https?:// ]]; then
+                download_url="https://letterboxd.com${download_url}"
             fi
+            echo "Found download URL on page: ${download_url}"
+            eval curl -s -L ${cookie_arg} -o "${zip_file}" '"'"${download_url}"'"'
             
-            # Try to extract CSRF token if present
-            local csrf_token=$(echo "${page_content}" | grep -oE 'name="csrf[^"]*"[[:space:]]+value="[^"]*"' | grep -oE 'value="[^"]*"' | sed 's/value="//;s/"$//' | head -1)
-            
-            echo "Found form action: ${form_action}"
-            
-            # Submit the form
-            local form_data=""
-            if [ -n "${csrf_token}" ]; then
-                form_data="csrf=${csrf_token}"
+            if [ -f "${zip_file}" ] && [ -s "${zip_file}" ] && file "${zip_file}" | grep -q "Zip archive"; then
+                echo -e "${GREEN}Successfully downloaded export from page link${NC}"
+                downloaded=true
             fi
+        fi
+        
+        # Approach 3: Try to find and submit a form (if Letterboxd requires button click)
+        if [ "${downloaded}" = "false" ]; then
+            # Only look for export-related forms, skip signin forms
+            local form_action=$(echo "${page_content}" | grep -oE '<form[^>]*action="[^"]*"[^>]*>' | grep -iE '(data|export)' | grep -viE '(signin|login|sign-in|log-in)' | head -1 | grep -oE 'action="[^"]*"' | sed 's/action="//;s/"$//')
             
-            if [ -n "${form_data}" ]; then
-                eval curl -s -L ${cookie_arg} -X POST -d "${form_data}" -o "${zip_file}" "${form_action}"
-            else
-                eval curl -s -L ${cookie_arg} -X POST -o "${zip_file}" "${form_action}"
-            fi
-            
-            # Check if we got a redirect or the file
-            if [ -f "${zip_file}" ] && [ -s "${zip_file}" ]; then
-                if file "${zip_file}" | grep -q "Zip archive"; then
-                    echo -e "${GREEN}Successfully downloaded export via form submission${NC}"
+            if [ -n "${form_action}" ]; then
+                # Make URL absolute if relative
+                if [[ ! "${form_action}" =~ ^https?:// ]]; then
+                    form_action="https://letterboxd.com${form_action}"
+                fi
+                
+                echo "Found export form, submitting..."
+                
+                # Try to extract CSRF token if present
+                local csrf_token=$(echo "${page_content}" | grep -oE 'name="csrf[^"]*"[[:space:]]+value="[^"]*"' | grep -oE 'value="[^"]*"' | sed 's/value="//;s/"$//' | head -1)
+                
+                # Submit the form
+                local form_data=""
+                if [ -n "${csrf_token}" ]; then
+                    form_data="csrf=${csrf_token}"
+                fi
+                
+                if [ -n "${form_data}" ]; then
+                    eval curl -s -L ${cookie_arg} -X POST -d "${form_data}" -o "${zip_file}" '"'"${form_action}"'"'
                 else
-                    # Might be a redirect or HTML response
-                    local content_type=$(file "${zip_file}")
-                    if echo "${content_type}" | grep -q "HTML\|text"; then
-                        echo "Form submission returned HTML, checking for download link..."
-                        # Try to extract download URL from response
-                        download_url=$(cat "${zip_file}" | grep -oE 'href="[^"]*\.zip[^"]*"' | head -1 | sed 's/href="//;s/"$//')
-                        if [ -n "${download_url}" ]; then
-                            if [[ ! "${download_url}" =~ ^https?:// ]]; then
-                                download_url="https://letterboxd.com${download_url}"
+                    eval curl -s -L ${cookie_arg} -X POST -o "${zip_file}" '"'"${form_action}"'"'
+                fi
+                
+                # Check if we got a redirect or the file
+                if [ -f "${zip_file}" ] && [ -s "${zip_file}" ]; then
+                    if file "${zip_file}" | grep -q "Zip archive"; then
+                        echo -e "${GREEN}Successfully downloaded export via form submission${NC}"
+                        downloaded=true
+                    else
+                        # Might be a redirect or HTML response
+                        local content_type=$(file "${zip_file}")
+                        if echo "${content_type}" | grep -q "HTML\|text"; then
+                            echo "Form submission returned HTML, checking for download link..."
+                            # Try to extract download URL from response
+                            download_url=$(cat "${zip_file}" | grep -oE 'href="[^"]*\.zip[^"]*"' | head -1 | sed 's/href="//;s/"$//')
+                            if [ -n "${download_url}" ]; then
+                                if [[ ! "${download_url}" =~ ^https?:// ]]; then
+                                    download_url="https://letterboxd.com${download_url}"
+                                fi
+                                echo "Found download URL in response: ${download_url}"
+                                eval curl -s -L ${cookie_arg} -o "${zip_file}" '"'"${download_url}"'"'
+                                if [ -f "${zip_file}" ] && [ -s "${zip_file}" ] && file "${zip_file}" | grep -q "Zip archive"; then
+                                    downloaded=true
+                                fi
                             fi
-                            echo "Found download URL in response: ${download_url}"
-                            eval curl -s -L ${cookie_arg} -o "${zip_file}" "${download_url}"
                         fi
                     fi
                 fi
             fi
         fi
         
-        # Approach 3: Try common export URL patterns
-        if [ ! -f "${zip_file}" ] || [ ! -s "${zip_file}" ] || ! file "${zip_file}" | grep -q "Zip archive"; then
-            echo "Trying direct export endpoints..."
-            
-            local export_endpoints=(
-                "https://letterboxd.com/settings/data/export/"
-                "https://letterboxd.com/settings/data/download/"
-                "https://letterboxd.com/data/export/"
-            )
-            
-            local downloaded=false
-            for endpoint in "${export_endpoints[@]}"; do
-                echo "Trying: ${endpoint}"
-                local status=$(eval curl -s -L ${cookie_arg} -w "%{http_code}" -o "${zip_file}" "${endpoint}")
-                if [ "${status}" = "200" ] && [ -f "${zip_file}" ] && [ -s "${zip_file}" ]; then
-                    # Check if it's actually a ZIP file
-                    if file "${zip_file}" | grep -q "Zip archive"; then
-                        echo -e "${GREEN}Successfully downloaded export from ${endpoint}${NC}"
-                        downloaded=true
-                        break
-                    fi
-                fi
-            done
-            
-            if [ "${downloaded}" = "false" ]; then
-                echo -e "${RED}Error: Could not automatically download the export.${NC}"
-                echo -e "${YELLOW}Letterboxd may require manual interaction to generate the export.${NC}"
-                echo ""
-                echo "Please try one of these options:"
-                echo "1. Manually download from https://letterboxd.com/settings/data/"
-                echo "   Then run: ./scripts/update-films-auto.sh /path/to/extracted/export/"
-                echo ""
-                echo "2. Export your browser cookies and try again:"
-                echo "   - Install browser extension 'cookies.txt' or 'Get cookies.txt LOCALLY'"
-                echo "   - Export cookies for letterboxd.com"
-                echo "   - Set LETTERBOXD_COOKIE_FILE=/path/to/cookies.txt"
-                echo "   - Or set LETTERBOXD_COOKIES='cookie1=value1; cookie2=value2'"
-                return 1
-            fi
+        if [ "${downloaded}" = "false" ]; then
+            echo -e "${RED}Error: Could not automatically download the export.${NC}"
+            echo -e "${YELLOW}Letterboxd may require manual interaction to generate the export.${NC}"
+            echo ""
+            echo "Please try one of these options:"
+            echo "1. Manually download from https://letterboxd.com/settings/data/"
+            echo "   Then run: ./scripts/update-films-auto.sh /path/to/extracted/export/"
+            echo ""
+            echo "2. Export your browser cookies and try again:"
+            echo "   - Install browser extension 'cookies.txt' or 'Get cookies.txt LOCALLY'"
+            echo "   - Export cookies for letterboxd.com"
+            echo "   - Set LETTERBOXD_COOKIE_FILE=/path/to/cookies.txt"
+            echo "   - Or set LETTERBOXD_COOKIES='cookie1=value1; cookie2=value2'"
+            return 1
         fi
     fi
     
