@@ -2,9 +2,27 @@
 set -euo pipefail
 
 # Script to update Letterboxd film data
-# Usage:
-#   Automatic mode: ./scripts/update-films.sh (requires cookies)
-#   Manual mode:    ./scripts/update-films.sh /path/to/extracted/export/
+# 
+# This script processes Letterboxd export data and generates JSON files for watched
+# and to-watch films. It supports two modes:
+#
+# Automatic mode: Downloads the export from Letterboxd using cookies
+#   Usage: ./scripts/update-films.sh
+#   Requires: LETTERBOXD_COOKIE_FILE or LETTERBOXD_COOKIES environment variable,
+#             or cookies file at ./creds/letterboxd-cookies.txt
+#
+# Manual mode: Processes a pre-downloaded export directory
+#   Usage: ./scripts/update-films.sh /path/to/extracted/export/
+#   Requires: Export directory containing watchlist.csv and diary.csv
+#
+# Dependencies:
+#   - sqlite3 (for processing CSV data)
+#   - unzip (for automatic mode)
+#   - curl (for automatic mode)
+#
+# Output:
+#   - ./data/films/watched.json
+#   - ./data/films/towatch.json
 
 # Configuration
 LETTERBOXD_DATA_URL="https://letterboxd.com/settings/data/"
@@ -43,21 +61,23 @@ fi
 
 # Function to download using cookies
 download_with_cookies() {
-    local cookie_arg=""
+    # Determine cookie source and set up curl arguments
+    # Using an array to safely pass arguments to curl (avoids eval security issues)
+    local cookie_args=()
     
     if [ -n "${COOKIE_FILE}" ]; then
         if [ -f "${COOKIE_FILE}" ]; then
-            cookie_arg="-b ${COOKIE_FILE}"
+            cookie_args=(-b "${COOKIE_FILE}")
             echo "Using cookie file: ${COOKIE_FILE}"
         else
             echo -e "${RED}Error: Specified cookie file not found: ${COOKIE_FILE}${NC}"
             return 1
         fi
     elif [ -f "${DEFAULT_COOKIE_FILE}" ]; then
-        cookie_arg="-b ${DEFAULT_COOKIE_FILE}"
+        cookie_args=(-b "${DEFAULT_COOKIE_FILE}")
         echo "Using default cookie file: ${DEFAULT_COOKIE_FILE}"
     elif [ -n "${COOKIES}" ]; then
-        cookie_arg="-H 'Cookie: ${COOKIES}'"
+        cookie_args=(-H "Cookie: ${COOKIES}")
         echo "Using cookies from environment variable"
     else
         echo -e "${RED}Error: No cookie file specified and default (${DEFAULT_COOKIE_FILE}) not found.${NC}"
@@ -84,7 +104,8 @@ download_with_cookies() {
     
     local downloaded=false
     for endpoint in "${export_endpoints[@]}"; do
-        local status=$(eval curl -s -L ${cookie_arg} -w "%{http_code}" -o "${zip_file}" '"'"${endpoint}"'"')
+        local status
+        status=$(curl -s -L "${cookie_args[@]}" -w "%{http_code}" -o "${zip_file}" "${endpoint}")
         if [ "${status}" = "200" ] && [ -f "${zip_file}" ] && [ -s "${zip_file}" ]; then
             # Check if it's actually a ZIP file
             if file "${zip_file}" | grep -q "Zip archive"; then
@@ -100,7 +121,8 @@ download_with_cookies() {
         echo "Direct endpoints failed. Checking settings page for download options..."
         
         # Get the settings page content
-        local page_content=$(eval curl -s -L ${cookie_arg} '"'"${LETTERBOXD_DATA_URL}"'"')
+        local page_content
+        page_content=$(curl -s -L "${cookie_args[@]}" "${LETTERBOXD_DATA_URL}")
         
         # Check if we got redirected to signin
         if echo "${page_content}" | grep -qiE '(sign in|log in|signin|login)'; then
@@ -116,7 +138,7 @@ download_with_cookies() {
                 download_url="https://letterboxd.com${download_url}"
             fi
             echo "Found download URL on page: ${download_url}"
-            eval curl -s -L ${cookie_arg} -o "${zip_file}" '"'"${download_url}"'"'
+            curl -s -L "${cookie_args[@]}" -o "${zip_file}" "${download_url}"
             
             if [ -f "${zip_file}" ] && [ -s "${zip_file}" ] && file "${zip_file}" | grep -q "Zip archive"; then
                 echo -e "${GREEN}Successfully downloaded export from page link${NC}"
@@ -147,9 +169,9 @@ download_with_cookies() {
                 fi
                 
                 if [ -n "${form_data}" ]; then
-                    eval curl -s -L ${cookie_arg} -X POST -d "${form_data}" -o "${zip_file}" '"'"${form_action}"'"'
+                    curl -s -L "${cookie_args[@]}" -X POST -d "${form_data}" -o "${zip_file}" "${form_action}"
                 else
-                    eval curl -s -L ${cookie_arg} -X POST -o "${zip_file}" '"'"${form_action}"'"'
+                    curl -s -L "${cookie_args[@]}" -X POST -o "${zip_file}" "${form_action}"
                 fi
                 
                 # Check if we got a redirect or the file
@@ -169,7 +191,7 @@ download_with_cookies() {
                                     download_url="https://letterboxd.com${download_url}"
                                 fi
                                 echo "Found download URL in response: ${download_url}"
-                                eval curl -s -L ${cookie_arg} -o "${zip_file}" '"'"${download_url}"'"'
+                                curl -s -L "${cookie_args[@]}" -o "${zip_file}" "${download_url}"
                                 if [ -f "${zip_file}" ] && [ -s "${zip_file}" ] && file "${zip_file}" | grep -q "Zip archive"; then
                                     downloaded=true
                                 fi
