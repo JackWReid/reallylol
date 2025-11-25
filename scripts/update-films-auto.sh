@@ -89,7 +89,7 @@ download_with_cookies() {
     local page_content=$(eval curl -s -L ${cookie_arg} "${LETTERBOXD_DATA_URL}")
     
     # Look for download links in the page
-    local download_url=$(echo "${page_content}" | grep -oP 'href="[^"]*\.zip[^"]*"' | head -1 | sed 's/href="//;s/"$//')
+    local download_url=$(echo "${page_content}" | grep -oE 'href="[^"]*\.zip[^"]*"' | head -1 | sed 's/href="//;s/"$//')
     
     if [ -n "${download_url}" ]; then
         # Make URL absolute if relative
@@ -103,7 +103,7 @@ download_with_cookies() {
         echo "No direct download link found. Checking for export forms..."
         
         # Look for form actions that might trigger export
-        local form_action=$(echo "${page_content}" | grep -oP '<form[^>]*action="[^"]*"[^>]*>' | grep -i "data\|export" | head -1 | grep -oP 'action="[^"]*"' | sed 's/action="//;s/"$//')
+        local form_action=$(echo "${page_content}" | grep -oE '<form[^>]*action="[^"]*"[^>]*>' | grep -i "data\|export" | head -1 | grep -oE 'action="[^"]*"' | sed 's/action="//;s/"$//')
         
         if [ -n "${form_action}" ]; then
             # Make URL absolute if relative
@@ -112,7 +112,7 @@ download_with_cookies() {
             fi
             
             # Try to extract CSRF token if present
-            local csrf_token=$(echo "${page_content}" | grep -oP 'name="csrf[^"]*"\s+value="[^"]*"' | grep -oP 'value="[^"]*"' | sed 's/value="//;s/"$//' | head -1)
+            local csrf_token=$(echo "${page_content}" | grep -oE 'name="csrf[^"]*"[[:space:]]+value="[^"]*"' | grep -oE 'value="[^"]*"' | sed 's/value="//;s/"$//' | head -1)
             
             echo "Found form action: ${form_action}"
             
@@ -138,7 +138,7 @@ download_with_cookies() {
                     if echo "${content_type}" | grep -q "HTML\|text"; then
                         echo "Form submission returned HTML, checking for download link..."
                         # Try to extract download URL from response
-                        download_url=$(cat "${zip_file}" | grep -oP 'href="[^"]*\.zip[^"]*"' | head -1 | sed 's/href="//;s/"$//')
+                        download_url=$(cat "${zip_file}" | grep -oE 'href="[^"]*\.zip[^"]*"' | head -1 | sed 's/href="//;s/"$//')
                         if [ -n "${download_url}" ]; then
                             if [[ ! "${download_url}" =~ ^https?:// ]]; then
                                 download_url="https://letterboxd.com${download_url}"
