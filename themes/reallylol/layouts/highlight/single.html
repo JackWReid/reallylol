@@ -9,7 +9,7 @@
     {{ if (.GetTerms "tags") }}
     <p class="single-main__tags">
     {{ range (.GetTerms "tags") }}
-    <a href="{{ .Permalink }}">{{ partial "icons/tag.html" . }}{{ .LinkTitle }}</a>
+    <a href="{{ .Permalink }}">#{{ .LinkTitle | lower }}</a>
     {{ end }}
     </p>
     {{ end }}

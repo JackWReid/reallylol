@@ -12,7 +12,7 @@
   {{ if (.GetTerms "tags") }}
   <p class="single-main__tags">
     {{ range (.GetTerms "tags") }}
-    <a href="{{ .Permalink }}"><span>#{{ .LinkTitle }}</span></a>
+    <a href="{{ .Permalink }}">#{{ .LinkTitle | lower }}</a>
     {{ end }}
   </p>
   {{ end }} {{ if .Params.Location }}
