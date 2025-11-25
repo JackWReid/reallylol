@@ -1,5 +1,5 @@
 {{ $tagName := .tagName | lower }}
-{{ $tagNames := .Site.Data.tag-names }}
+{{ $tagNames := .Site.Data.tagnames }}
 {{ if $tagNames }}
   {{ $prettyName := index $tagNames $tagName }}
   {{ if $prettyName }}
