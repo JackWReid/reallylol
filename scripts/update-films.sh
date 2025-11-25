@@ -1,9 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-# Script to automatically download and update Letterboxd film data
-# This script attempts to download the data export from Letterboxd using cookies
-# and then processes it automatically.
+# Script to update Letterboxd film data
+# Usage:
+#   Automatic mode: ./scripts/update-films.sh (requires cookies)
+#   Manual mode:    ./scripts/update-films.sh /path/to/extracted/export/
 
 # Configuration
 LETTERBOXD_DATA_URL="https://letterboxd.com/settings/data/"
@@ -34,7 +35,7 @@ if ! command -v sqlite3 &> /dev/null; then
     exit 1
 fi
 
-# Check if unzip is available
+# Check if unzip is available (only needed for automatic mode)
 if ! command -v unzip &> /dev/null; then
     echo -e "${RED}Error: unzip not found. Please install unzip.${NC}"
     exit 1
@@ -185,7 +186,7 @@ download_with_cookies() {
             echo ""
             echo "Please try one of these options:"
             echo "1. Manually download from https://letterboxd.com/settings/data/"
-            echo "   Then run: ./scripts/update-films-auto.sh /path/to/extracted/export/"
+            echo "   Then run: ./scripts/update-films.sh /path/to/extracted/export/"
             echo ""
             echo "2. Export your browser cookies and try again:"
             echo "   - Install browser extension 'cookies.txt' or 'Get cookies.txt LOCALLY'"
@@ -297,10 +298,10 @@ main() {
         echo "   # OR"
         echo "   export LETTERBOXD_COOKIES='cookie1=value1; cookie2=value2'"
         echo "   # OR place cookies at ${DEFAULT_COOKIE_FILE}"
-        echo "   ./scripts/update-films-auto.sh"
+        echo "   ./scripts/update-films.sh"
         echo ""
         echo "2. Manual processing (if you already have the export):"
-        echo "   ./scripts/update-films-auto.sh /path/to/extracted/export/"
+        echo "   ./scripts/update-films.sh /path/to/extracted/export/"
         echo ""
         echo "To get cookies:"
         echo "  - Install browser extension 'cookies.txt' or 'Get cookies.txt LOCALLY'"
@@ -311,3 +312,4 @@ main() {
 }
 
 main "$@"
+
