@@ -254,7 +254,7 @@ process_export() {
     
     # Run SQLite processing
     echo "Running SQLite processing..."
-    sqlite3 < ./scripts/update-film.sql || {
+    sqlite3 < ./scripts/letterboxd-parse.sql || {
         echo -e "${RED}Error: SQLite processing failed.${NC}"
         return 1
     }
