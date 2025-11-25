@@ -7,6 +7,7 @@ set -euo pipefail
 
 # Configuration
 LETTERBOXD_DATA_URL="https://letterboxd.com/settings/data/"
+DEFAULT_COOKIE_FILE="./creds/letterboxd-cookies.txt"
 COOKIE_FILE="${LETTERBOXD_COOKIE_FILE:-}"
 COOKIES="${LETTERBOXD_COOKIES:-}"
 TMP_DIR="./tmp"
@@ -43,13 +44,23 @@ fi
 download_with_cookies() {
     local cookie_arg=""
     
-    if [ -n "${COOKIE_FILE}" ] && [ -f "${COOKIE_FILE}" ]; then
-        cookie_arg="-b ${COOKIE_FILE}"
-        echo "Using cookie file: ${COOKIE_FILE}"
+    if [ -n "${COOKIE_FILE}" ]; then
+        if [ -f "${COOKIE_FILE}" ]; then
+            cookie_arg="-b ${COOKIE_FILE}"
+            echo "Using cookie file: ${COOKIE_FILE}"
+        else
+            echo -e "${RED}Error: Specified cookie file not found: ${COOKIE_FILE}${NC}"
+            return 1
+        fi
+    elif [ -f "${DEFAULT_COOKIE_FILE}" ]; then
+        cookie_arg="-b ${DEFAULT_COOKIE_FILE}"
+        echo "Using default cookie file: ${DEFAULT_COOKIE_FILE}"
     elif [ -n "${COOKIES}" ]; then
         cookie_arg="-H 'Cookie: ${COOKIES}'"
         echo "Using cookies from environment variable"
     else
+        echo -e "${RED}Error: No cookie file specified and default (${DEFAULT_COOKIE_FILE}) not found.${NC}"
+        echo "Set LETTERBOXD_COOKIE_FILE or place cookies at ${DEFAULT_COOKIE_FILE}."
         return 1
     fi
     
@@ -282,6 +293,7 @@ main() {
         echo "   # OR"
         echo "   export LETTERBOXD_COOKIES='cookie1=value1; cookie2=value2'"
         echo "   ./scripts/update-films-auto.sh"
+        echo "   (defaults to ${DEFAULT_COOKIE_FILE} if present)"
         echo ""
         echo "2. Manual processing (if you already have the export):"
         echo "   ./scripts/update-films-auto.sh /path/to/extracted/export/"
