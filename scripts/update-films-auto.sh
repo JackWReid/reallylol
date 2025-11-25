@@ -279,7 +279,8 @@ main() {
     fi
     
     # Try automatic download
-    if [ -n "${COOKIE_FILE}" ] || [ -n "${COOKIES}" ]; then
+    # Check if we have cookies via env var, default file, or explicit file
+    if [ -n "${COOKIE_FILE}" ] || [ -n "${COOKIES}" ] || [ -f "${DEFAULT_COOKIE_FILE}" ]; then
         echo "Automatic mode: Attempting to download export using cookies"
         download_with_cookies
         return $?
@@ -292,8 +293,8 @@ main() {
         echo "   export LETTERBOXD_COOKIE_FILE=/path/to/cookies.txt"
         echo "   # OR"
         echo "   export LETTERBOXD_COOKIES='cookie1=value1; cookie2=value2'"
+        echo "   # OR place cookies at ${DEFAULT_COOKIE_FILE}"
         echo "   ./scripts/update-films-auto.sh"
-        echo "   (defaults to ${DEFAULT_COOKIE_FILE} if present)"
         echo ""
         echo "2. Manual processing (if you already have the export):"
         echo "   ./scripts/update-films-auto.sh /path/to/extracted/export/"
@@ -301,7 +302,7 @@ main() {
         echo "To get cookies:"
         echo "  - Install browser extension 'cookies.txt' or 'Get cookies.txt LOCALLY'"
         echo "  - Export cookies for letterboxd.com"
-        echo "  - Save to a file or copy the cookie string"
+        echo "  - Save to ${DEFAULT_COOKIE_FILE} or set LETTERBOXD_COOKIE_FILE"
         exit 1
     fi
 }
