@@ -9,11 +9,9 @@
 
 <ul class="tag-page-list">
 {{ range $.Site.Taxonomies.tags.ByCount }}
-{{ if gt .Count 1 }}
   <li>
     <a href="/tags/{{ .Name }}">{{ partial "tag-pretty-name.html" (dict "tagName" .Name "Site" $.Site) }} <small>({{ .Count }})</small></a>
   </li>
-{{ end }}
 {{end}}
 </ul>
 
