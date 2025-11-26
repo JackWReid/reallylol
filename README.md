@@ -2,6 +2,9 @@
 
 A Hugo-based personal blog and book tracking website.
 
+## Dashboards
+- [Cloudflare Pages Deployment](https://dash.cloudflare.com/f163765cc814ca4c341357f282e5d166/pages/view/reallylol)
+
 ## Dependencies
 
 ### Cover CLI
