@@ -165,7 +165,7 @@ figcaption {
 .media-nav {
   max-width: var(--width-outer);
   margin: 0 auto 1.2rem auto;
-  padding: 0 0 0.2rem 0;
+  padding: 0 0 0.5rem 0;
   border-bottom: 1px dashed var(--color-line);
   background: none;
   display: block;
