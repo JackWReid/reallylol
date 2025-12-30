@@ -10,7 +10,7 @@ At school I luxuriated in not trying very hard and doing alright anyway. Teacher
 
 Now I'm thirty going on thirty-one, almost a decade into a career with which I have a fraught relationship. I want change, and to get it I need to grow. Materially, I need to learn things: languages, skills. This year has been about discovering how much learning potential I've lost since those school days. What would have snapped into place effortlessly as a kid now refuses to take hold. My work ethic has improved a hundredfold, but my ability to learn and think has degraded even more.
 
-So what – blame a decade of the internet, short-form video, AI? Maybe. But I suppose I'm finally accepting there's a reason we go to school as children. If I were exercising more, I might find I couldn't build muscle like a twenty-year-old. This happens to everyone. I just thought the mental decline started later.
+So what – blame a decade of the internet, short-form video, AI? Maybe. But I suppose I'm realising again that there's a reason we go to school as *children*. If I were exercising more, I might find I couldn't build muscle like a twenty-year-old. This happens to everyone. I just thought the mental decline started later.
 
 Perhaps things will change once I ditch this career that has, as I keep saying, damaged my head somehow. My brain has grown in the wrong directions, like those watermelons forced into cube shapes.
 
