@@ -23,7 +23,7 @@
         <img data-src="{{ .image_url }}" alt="Cover of {{ .title }}" loading="lazy" class="book-card__cover" data-lazy-image />
       {{ end }}
     {{ else }}
-      <div class="book-card__cover book-card__cover--empty " aria-hidden="true"></div>
+      <img src="/img/layout/no-book-cover.jpg" alt="Cover of {{ .title }}" loading="lazy" class="book-card__cover" />
     {{ end }}
     <div class="book-card__meta">
       <h3 class="book-card__title">{{ .title }}</h3>
