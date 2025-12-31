@@ -577,6 +577,25 @@
     }
   }
 
+  /* Standalone selectors for blog-item classes (handles both single and double underscore) */
+  .blog-item__title,
+  .blog-item_title {
+    margin: 0 0 var(--spacing-xs);
+    font-size: var(--font-size-lg);
+    font-family: var(--font-title);
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .blog-item__date,
+  .blog-item_date {
+    margin: 0;
+    font-style: italic;
+    font-size: var(--font-size-xs);
+  }
+
   .note-item {
     &__title {
       a {
@@ -625,6 +644,7 @@
     &__tags {
       margin: 0;
       padding: 0;
+      padding-left: 0;
       display: flex;
       list-style: none;
       font-size: var(--font-size-xs);
@@ -632,12 +652,54 @@
 
       li {
         margin-left: 0;
+        padding-left: 0;
+        list-style: none;
+
+        &::marker {
+          display: none;
+        }
       }
 
       a {
         margin-right: var(--spacing-sm);
         text-decoration: none;
       }
+    }
+  }
+
+  /* Standalone selector for section-item__tags when used outside .section-item */
+  ul.section-item__tags,
+  .section-item__tags {
+    margin: 0;
+    padding: 0;
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    font-size: var(--font-size-xs);
+    text-transform: lowercase;
+
+    li,
+    > li {
+      margin: 0;
+      margin-left: 0;
+      padding: 0;
+      padding-left: 0;
+      list-style: none;
+      list-style-type: none;
+
+      &::marker {
+        display: none;
+        content: "";
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+    a {
+      margin-right: var(--spacing-sm);
+      text-decoration: none;
     }
   }
 
