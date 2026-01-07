@@ -1,7 +1,18 @@
 <div class="site-footer-wrapper">
   <footer class="site-footer">
     <section class="photo-box">
-      {{ range where .Site.RegularPages "Section" "photo" | shuffle | first 1 }}
+      {{- $photofilters := site.Data.photofilters -}}
+      {{- $photos := where .Site.RegularPages "Section" "photo" -}}
+      {{- $scratch := newScratch -}}
+      {{- $scratch.Set "candidates" (slice) -}}
+      {{- range $photos -}}
+        {{- $tags := .Params.tags | default (slice) -}}
+        {{- if not (gt (len (intersect $tags $photofilters)) 0) -}}
+          {{- $scratch.Add "candidates" (slice .) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $candidates := $scratch.Get "candidates" -}}
+      {{- range first 1 (shuffle $candidates) }}
         <a class="photo-box__link" href="{{ .Permalink }}">
           <img class="photo-box__image" src="{{ .Params.image }}" alt="">
         </a>
