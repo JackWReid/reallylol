@@ -129,6 +129,28 @@ Updates film data from Letterboxd export. Supports two modes:
 ./scripts/update-films.sh /path/to/extracted/export/
 ```
 
+#### `update-random-photos.sh`
+Precomputes a list of eligible photos for random selection in the footer. This reduces build-time computation by filtering photos before Hugo builds, which is especially important for builds running on resource-constrained servers.
+
+The script scans all photos in `content/photo/`, filters out photos with tags listed in `data/content_config.json`'s `exclude_tags`, and writes eligible photo paths to `data/random_photos.json`.
+
+**Dependencies:**
+- `jq` (for JSON parsing and generation)
+
+**Usage:**
+```bash
+# Update the random photo pool (run before committing changes)
+./scripts/update-random-photos.sh
+```
+
+**When to run:**
+- After adding new photos
+- After modifying photo tags
+- After updating `exclude_tags` in `data/content_config.json`
+- Before pushing to production (to ensure fast builds)
+
+The footer template uses this precomputed list to select a random photo, avoiding the need to scan and filter all photos during each Hugo build.
+
 ## Content Types
 The site uses custom Hugo archetypes for different content types:
 - **highlight** - Article highlights and commentary
