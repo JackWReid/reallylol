@@ -1,38 +1,32 @@
 <div class="site-footer-wrapper">
   <footer class="site-footer">
     <section class="photo-box">
-      {{- $photofilters := site.Data.content_config.exclude_tags -}}
-      {{- $photos := where .Site.RegularPages "Section" "photo" -}}
-      {{- $scratch := newScratch -}}
-      {{- $scratch.Set "candidates" (slice) -}}
-      {{- range $photos -}}
-        {{- $tags := .Params.tags | default (slice) -}}
-        {{- if not (gt (len (intersect $tags $photofilters)) 0) -}}
-          {{- $scratch.Add "candidates" (slice .) -}}
+      {{- $randomPhotos := site.Data.random_photos | default (slice) -}}
+      {{- if gt (len $randomPhotos) 0 -}}
+        {{- $randomEntry := index (shuffle $randomPhotos) 0 -}}
+        {{- $photoPage := site.GetPage $randomEntry.path -}}
+        {{- if $photoPage -}}
+          <a class="photo-box__link" href="{{ $photoPage.Permalink }}">
+            <img class="photo-box__image" src="{{ $photoPage.Params.image }}" alt="">
+          </a>
+          <div class="photo-box__details">
+            <p class="image-item__label">Random photo</p>
+            <p class="image-item__title">
+              <a href="{{ $photoPage.Permalink }}"> {{ $photoPage.Title }}</a>
+            </p>
+            {{ if $photoPage.Params.location }}
+            <p class="image-item__location">
+              {{ partial "icons/location.html" $photoPage }}
+              <span>{{ $photoPage.Params.location }}</span>
+            </p>
+            {{ end }}
+            <p class="image-item__date">
+              {{ partial "icons/calendar.html" $photoPage }}
+              {{ $photoPage.Date.Format "2006-01-02" }}
+            </p>
+          </div>
         {{- end -}}
       {{- end -}}
-      {{- $candidates := $scratch.Get "candidates" -}}
-      {{- range first 1 (shuffle $candidates) }}
-        <a class="photo-box__link" href="{{ .Permalink }}">
-          <img class="photo-box__image" src="{{ .Params.image }}" alt="">
-        </a>
-        <div class="photo-box__details">
-          <p class="image-item__label">Random photo</p>
-          <p class="image-item__title">
-            <a href="{{ .Permalink }}"> {{ .Title }}</a>
-          </p>
-          {{ if .Params.location }}
-          <p class="image-item__location">
-            {{ partial "icons/location.html" . }}
-            <span>{{ .Params.location }}</span>
-          </p>
-          {{ end }}
-          <p class="image-item__date">
-            {{ partial "icons/calendar.html" . }}
-            {{ .Date.Format "2006-01-02" }}
-          </p>
-        </div>
-      {{ end }}
     </section>
     <section class="site-footer__details">
       <p>
