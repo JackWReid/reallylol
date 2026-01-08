@@ -4,13 +4,16 @@ title = "really.lol"
 theme = "reallylol"
 buildFuture = true
 timeout = 999999
+
 [pagination]
 pagerSize = 10
+
 [markup]
 [markup.highlight]
 style = "dracula"
 [markup.goldmark.renderer]
 unsafe = true
+
 [related]
 [[related.indices]]
 name = "tags"
