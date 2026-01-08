@@ -1,0 +1,25 @@
+{
+  "exclude_tags": [
+    "lizzie",
+    "emma"
+  ],
+  "map_tag_names": {
+    "watchedmovie": "Watched Movies",
+    "medialog": "Media Log",
+    "toread": "To Read",
+    "reading": "Reading",
+    "read": "Read",
+    "towatch": "To Watch",
+    "watched": "Watched",
+    "sf": "San Francisco",
+    "nyc": "New York City",
+    "bw": "Black & White",
+    "dev": "Development",
+    "uk": "United Kingdom",
+    "us": "United States",
+    "ai": "AI",
+    "middleeast": "Middle East",
+    "written by me": "Written by Me",
+    "best of year": "Best of the Year"
+  }
+}

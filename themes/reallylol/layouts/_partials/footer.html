@@ -1,7 +1,7 @@
 <div class="site-footer-wrapper">
   <footer class="site-footer">
     <section class="photo-box">
-      {{- $photofilters := site.Data.photofilters -}}
+      {{- $photofilters := site.Data.content_config.exclude_tags -}}
       {{- $photos := where .Site.RegularPages "Section" "photo" -}}
       {{- $scratch := newScratch -}}
       {{- $scratch.Set "candidates" (slice) -}}
