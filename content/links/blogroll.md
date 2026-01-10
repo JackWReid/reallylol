@@ -89,6 +89,7 @@ Here's this fixed directory of links that I try to update and prune and organise
 - [Publishers Marketplace](https://www.publishersmarketplace.com/)
 - [Simply Scripts](https://www.simplyscripts.com/)
 - [Berlin Writers' Workshop](https://berlinwritersworkshop.com/)
+- [QUISBN](https://whoisbn.net/fr/) - Who gets the money for this book?
 
 ### Science
 - [Emergent Tool Use from Multi-Agent Interaction](https://openai.com/blog/emergent-tool-use/) - Great AI demonstration showing human-like behaviour adaptation
