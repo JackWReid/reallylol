@@ -412,7 +412,7 @@
     border-radius: var(--radius-small);
   }
 
-  .media-nav {
+  .sub-nav {
     max-width: var(--width-outer);
     margin: 0 auto var(--spacing-md) auto;
     padding: 0 0 var(--spacing-base) 0;
@@ -448,6 +448,38 @@
       &:focus {
         color: var(--color-line);
       }
+    }
+  }
+
+  .saved-links-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+
+  .saved-link {
+    margin: var(--spacing-lg) 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    header {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: var(--font-size-lg);
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: var(--font-size-base);
     }
   }
 
