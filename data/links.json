@@ -1,159 +1,128 @@
 [
   {
-    "title": "Internet Phone Book",
-    "url": "https://internetphonebook.net/dial/",
-    "date": "2026-01-10",
-    "excerpt": "An annual publication for exploring the vast poetic web, featuring essays, musings and a directory with the personal websites of hundreds of designers, developers, writers, curators, and educators. Published since 2025.",
+    "title": "9 Classic Crime Stories That Have Just Entered the Public Domain in 2026",
+    "url": "https://crimereads.com/nine-classic-crime-stories-public-domain-2026/",
+    "date": "2026-01-08",
+    "excerpt": "As of January 1st in this year 2025, many copyrighted works produced in the year 1926 have entered the public domain in the United States, which means they are totally free and legal for anyone to …",
     "tags": [
-      "IndieWeb",
-      "Web",
-      "Internet Culture",
+      "Book List",
       "toblog"
     ],
-    "cover": "https://internetphonebook.net/images/social-image.png"
+    "cover": "https://s26162.pcdn.co/wp-content/uploads/sites/3/2026/01/Public-domain.jpg?w=640"
   },
   {
-    "title": "QUISBN?",
-    "url": "https://whoisbn.net/fr/",
-    "date": "2026-01-10",
-    "excerpt": "QU'ISBN? POUR UN CHOIX ECLAIRÉ ET CONSCIENT DE VOS PROCHAINES LECTURES",
+    "title": "Bookbinder",
+    "url": "https://momijizukamori.github.io/bookbinder-js/",
+    "date": "2026-01-01",
+    "excerpt": "",
     "tags": [
       "Tools",
       "Books",
-      "Capitalism",
+      "Art & Crafts",
       "toblog"
     ],
-    "cover": "https://whoisbn.net/imgs/whoisbn-03.jpg"
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fmomijizukamori.github.io%2Fbookbinder-js%2F"
   },
   {
-    "title": "Dicing an Onion, the Mathematically Optimal Way",
-    "url": "https://pudding.cool/2025/08/onions/",
-    "date": "2026-01-10",
-    "excerpt": "There is more than one way to dice an onion…",
+    "title": "Mudita Store | Mudita Kompakt - a minimalist phone with E Ink® screen.",
+    "url": "https://store.mudita.com/store/mudita-kompakt-global",
+    "date": "2025-12-30",
+    "excerpt": "Mudita Kompakt is a minimalist phone. Helps you stay focused, reduce screen time, support mindful use for digital detox.",
     "tags": [
-      "Food",
-      "toblog"
-    ],
-    "cover": "https://pudding.cool/2025/08/onions/assets/letters/O.png"
-  },
-  {
-    "title": "Stations and transfers",
-    "url": "http://stations.albertguillaumes.cat/",
-    "date": "2026-01-10",
-    "excerpt": "A gallery of drawings depicting the topology of metro stations from different European cities.",
-    "tags": [
-      "map",
-      "transport",
-      "Cities",
-      "infrastructure",
-      "Design",
-      "Architecture",
-      "toblog"
-    ],
-    "cover": "http://estacions.albertguillaumes.cat/img/barcelona/collblanc.png"
-  },
-  {
-    "title": "A Clock: An Online Remake of Christian Marclay’s The Clock",
-    "url": "https://kottke.org/25/09/a-clock-an-online-remake-of-christian-marclays-the-clock",
-    "date": "2026-01-10",
-    "excerpt": "Christian Marclay debuted his 24-hour film The Clock 15 years ago. The film is made up of thousands of clips from movies and TV sh",
-    "tags": [
-      "Art",
-      "Clocks",
-      "Film",
-      "Media",
-      "video",
-      "toblog"
-    ],
-    "cover": "https://rdl.ink/render/https%3A%2F%2Fkottke.org%2F25%2F09%2Fa-clock-an-online-remake-of-christian-marclays-the-clock"
-  },
-  {
-    "title": "Clay PCB Tutorial — feministhackerspaces",
-    "url": "https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial",
-    "date": "2026-01-10",
-    "excerpt": "Clay PCB Tutorial MaKING Printed Circuit Boards with Wild Clay It is an open secret that the hardware in our...",
-    "tags": [
-      "Tutorial",
+      "Products",
       "Tech",
-      "hardware",
       "toblog"
     ],
-    "cover": "https://freight.cargo.site/w/1024/i/023df547c98cc900f7a565ef2c87d8f1442ce22e304533fd0abc0c50f5608d65/7E014D23-1433-4DFB-A66F-2BBE15BB1905_1_105_c.jpeg"
+    "cover": "https://store.mudita.com/media/catalog/product/cache/2656a5b5b1db43ccf945c56fe72c0c6f/m/u/mudita-kompakt-black_01_2.png"
   },
   {
-    "title": "how to use the internet again: a curriculum",
-    "url": "https://substack.com/home/post/p-176883733",
-    "date": "2026-01-10",
-    "excerpt": "a five-unit crash course in wandering, breaking, and building online",
+    "title": "I Was Kidnapped by Deutsche Bahn and All I Got Was 1.50 EUR",
+    "url": "https://www.theocharis.dev/blog/kidnapped-by-deutsche-bahn/",
+    "date": "2025-12-29",
+    "excerpt": "A Christmas Eve journey. Deutsche Bahn. 35 kilometers.",
     "tags": [
-      "IndieWeb",
-      "Internet Culture",
-      "Tutorial",
+      "Germany",
+      "travel",
+      "trains",
+      "transport",
+      "toblog"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fwww.theocharis.dev%2Fblog%2Fkidnapped-by-deutsche-bahn%2F"
+  },
+  {
+    "title": "I sell onions on the Internet - Deep South Ventures",
+    "url": "https://www.deepsouthventures.com/i-sell-onions-on-the-internet/",
+    "date": "2025-12-25",
+    "excerpt": "I sell onions on the Internet",
+    "tags": [
       "Web",
-      "Culture",
+      "Business",
+      "Blog",
+      "Personal Websites",
+      "agriculture",
       "toblog"
     ],
-    "cover": "https://substackcdn.com/image/fetch/$s_!tde8!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fofflinecrush.substack.com%2Fapi%2Fv1%2Fpost_preview%2F176883733%2Ftwitter.jpg%3Fversion%3D4"
+    "cover": "https://www.deepsouthventures.com/wp-content/uploads/vidalia-onions-in-field-300x225.jpg"
   },
   {
-    "title": "An official atlas of North Korea",
-    "url": "https://www.cartographerstale.com/p/an-official-atlas-of-north-korea",
-    "date": "2026-01-10",
-    "excerpt": "A North Korean atlas that shows the world from the perspective of one of the most isolated countries on the planet.",
+    "title": "Sharon Kivland, UNABLE TO ACHIEVE BROAD RECOGNITION IN MY LIFETIME, I LABOURED IN OBSCURITY UNTIL MY DEATH LAST YEAR, 2019 — MA BIBLIOTHÈQUE",
+    "url": "https://mabibliotheque.cargo.site/Sharon-Kivland-UNABLE-TO-ACHIEVE-BROAD-RECOGNITION-IN-MY-LIFETIME-I",
+    "date": "2025-12-23",
+    "excerpt": "Sharon Kivland UNABLE TO ACHIEVE BROAD RECOGNITION IN MY LIFETIME, I LABOURED IN OBSCURITY UNTIL MY DEATH LAST YEAR, 2019 For nearly two...",
     "tags": [
-      "Geography",
-      "cartography",
-      "korea",
-      "reference",
-      "History",
+      "Books",
+      "Cultural Criticism",
+      "Art",
       "toblog"
     ],
-    "cover": "https://substackcdn.com/image/fetch/$s_!oTh-!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fcartographerstale.substack.com%2Fapi%2Fv1%2Fpost_preview%2F179074631%2Ftwitter.jpg%3Fversion%3D4"
+    "cover": "https://freight.cargo.site/w/1200/i/d8aa5dc50102815cfd1a3b27e6f96b029a55989a6a9b48b0f6bbc44dc75ef51e/Cover-web.jpg"
   },
   {
-    "title": "The Ephemera Society",
-    "url": "https://ephemera-society.org.uk/",
-    "date": "2026-01-10",
-    "excerpt": "The Ephemera Society is dedicated to the collection, conservation, study and educational use of ephemera, the society’s fairs, journal, blogs and website provide opportunities for collectors and researchers to share their expertise and enthusiasm.",
+    "title": "A SEXUAL HISTORY OF THE INTERNET",
+    "url": "https://darkforest.metalabel.com/asexualhistoryoftheinternet?variantId=1",
+    "date": "2025-12-23",
+    "excerpt": "How has technology shaped and been shaped by sexuality? This 700+ page artist book gathers anecdotes, artworks, and historical artifacts that reveal the pervasive and perverted origins of our digital tools. UPDATE: Due to shipping delays, USA-orders will ship by early-Dec; international-orders are shipping now.",
     "tags": [
+      "sex",
+      "Tech",
+      "Internet Culture",
+      "Books",
+      "toblog"
+    ],
+    "cover": "https://metalabel.imgix.net/QmQXM2BNetz6XoyXt1pVXZ4dEFXnyprrAayGUkJyqBdPRP"
+  },
+  {
+    "title": "Backing up Spotify",
+    "url": "https://annas-archive.li/blog/backing-up-spotify.html",
+    "date": "2025-12-21",
+    "excerpt": "We backed up Spotify (metadata and music files). It’s distributed in bulk torrents (~300TB). It’s the world’s first “preservation archive” for music which is fully open (meaning it can easily be mirrored by anyone with enough disk space), with 86 million music files, representing around 99.6% of listens.",
+    "tags": [
+      "Music",
       "Archives",
       "Web",
-      "Culture",
       "toblog"
     ],
-    "cover": "https://ephemera-society.org.uk/wp-content/uploads/2025/04/cropped-Ephemera-Favicon-.png"
+    "cover": "https://annas-archive.li/blog/spotify/sel_01_overview.png"
   },
   {
-    "title": "Twenty Ways to Minoritise a National Language",
-    "url": "https://hjosephinegiles.substack.com/p/twenty-ways-to-minoritise-a-national",
-    "date": "2026-01-10",
-    "excerpt": "We want our languages to exist but we don't want to learn them",
+    "title": "Humanist Plumbing",
+    "url": "https://www.tbray.org/ongoing/When/202x/2025/12/18/Humanist-Plumbing",
+    "date": "2025-12-21",
+    "excerpt": "",
     "tags": [
-      "Language",
       "Culture",
-      "Linguistics",
-      "Politics",
-      "scotland",
+      "Capitalism",
+      "Money",
+      "housing",
+      "Blog",
       "toblog"
     ],
-    "cover": "https://substackcdn.com/image/fetch/$s_!kB8P!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fhjosephinegiles.substack.com%2Fapi%2Fv1%2Fpost_preview%2F180386969%2Ftwitter.jpg%3Fversion%3D4"
-  },
-  {
-    "title": "The strange fate of Flight 2069",
-    "url": "https://www.newstatesman.com/long-reads/2025/12/the-strange-fate-of-flight-2069?src=longreads",
-    "date": "2026-01-10",
-    "excerpt": "Bill Hagan felt his head push beyond the pillow and into the headboard. As he came to consciousness, he realised it was not a headboard but the reinforced plastic bulkhead of a plane. At the moment he",
-    "tags": [
-      "Aviation",
-      "Magazine Story",
-      "toblog"
-    ],
-    "cover": "https://dl6pgk4f88hky.cloudfront.net/2025/12/11/202550kateplane-708x418.jpg?1765908228"
+    "cover": "https://www.tbray.org/ongoing/misc/podcast-default.jpg"
   },
   {
     "title": "In the Garden of the Feuilleton – the Diasporist",
     "url": "https://thediasporist.de/in-the-garden-of-the-feuilleton/",
-    "date": "2026-01-10",
+    "date": "2025-12-20",
     "excerpt": "The guardrails of high-mindedness in Germany's new political matrix",
     "tags": [
       "Germany",
@@ -167,7 +136,7 @@
   {
     "title": "Stickers Against Germany – the Diasporist",
     "url": "https://thediasporist.de/stickers-against-germany/",
-    "date": "2026-01-10",
+    "date": "2025-12-20",
     "excerpt": "The antideutsch youth papering cities in pro-Israel stickers",
     "tags": [
       "Israel-Palestine",
@@ -179,219 +148,668 @@
     "cover": "https://thediasporist.de/wp-content/uploads/2025/08/thediasporist-stickers-against-germany-diasporist-collage.jpg"
   },
   {
-    "title": "Backing up Spotify",
-    "url": "https://annas-archive.li/blog/backing-up-spotify.html",
-    "date": "2026-01-10",
-    "excerpt": "We backed up Spotify (metadata and music files). It’s distributed in bulk torrents (~300TB). It’s the world’s first “preservation archive” for music which is fully open (meaning it can easily be mirrored by anyone with enough disk space), with 86 million music files, representing around 99.6% of listens.",
+    "title": "The strange fate of Flight 2069",
+    "url": "https://www.newstatesman.com/long-reads/2025/12/the-strange-fate-of-flight-2069?src=longreads",
+    "date": "2025-12-16",
+    "excerpt": "Bill Hagan felt his head push beyond the pillow and into the headboard. As he came to consciousness, he realised it was not a headboard but the reinforced plastic bulkhead of a plane. At the moment he",
     "tags": [
-      "Music",
+      "Aviation",
+      "Magazine Story",
+      "toblog"
+    ],
+    "cover": "https://dl6pgk4f88hky.cloudfront.net/2025/12/11/202550kateplane-708x418.jpg?1765908228"
+  },
+  {
+    "title": "Twenty Ways to Minoritise a National Language",
+    "url": "https://hjosephinegiles.substack.com/p/twenty-ways-to-minoritise-a-national",
+    "date": "2025-12-05",
+    "excerpt": "We want our languages to exist but we don't want to learn them",
+    "tags": [
+      "Language",
+      "Culture",
+      "Linguistics",
+      "Politics",
+      "scotland",
+      "toblog"
+    ],
+    "cover": "https://substackcdn.com/image/fetch/$s_!kB8P!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fhjosephinegiles.substack.com%2Fapi%2Fv1%2Fpost_preview%2F180386969%2Ftwitter.jpg%3Fversion%3D4"
+  },
+  {
+    "title": "The Ephemera Society",
+    "url": "https://ephemera-society.org.uk/",
+    "date": "2025-11-23",
+    "excerpt": "The Ephemera Society is dedicated to the collection, conservation, study and educational use of ephemera, the society’s fairs, journal, blogs and website provide opportunities for collectors and researchers to share their expertise and enthusiasm.",
+    "tags": [
       "Archives",
       "Web",
-      "toblog"
-    ],
-    "cover": "https://annas-archive.li/blog/spotify/sel_01_overview.png"
-  },
-  {
-    "title": "Humanist Plumbing",
-    "url": "https://www.tbray.org/ongoing/When/202x/2025/12/18/Humanist-Plumbing",
-    "date": "2026-01-10",
-    "excerpt": "",
-    "tags": [
       "Culture",
-      "Capitalism",
-      "Money",
-      "housing",
-      "Blog",
       "toblog"
     ],
-    "cover": "https://www.tbray.org/ongoing/misc/podcast-default.jpg"
+    "cover": "https://ephemera-society.org.uk/wp-content/uploads/2025/04/cropped-Ephemera-Favicon-.png"
   },
   {
-    "title": "Sharon Kivland, UNABLE TO ACHIEVE BROAD RECOGNITION IN MY LIFETIME, I LABOURED IN OBSCURITY UNTIL MY DEATH LAST YEAR, 2019 — MA BIBLIOTHÈQUE",
-    "url": "https://mabibliotheque.cargo.site/Sharon-Kivland-UNABLE-TO-ACHIEVE-BROAD-RECOGNITION-IN-MY-LIFETIME-I",
-    "date": "2026-01-10",
-    "excerpt": "Sharon Kivland UNABLE TO ACHIEVE BROAD RECOGNITION IN MY LIFETIME, I LABOURED IN OBSCURITY UNTIL MY DEATH LAST YEAR, 2019 For nearly two...",
+    "title": "An official atlas of North Korea",
+    "url": "https://www.cartographerstale.com/p/an-official-atlas-of-north-korea",
+    "date": "2025-11-17",
+    "excerpt": "A North Korean atlas that shows the world from the perspective of one of the most isolated countries on the planet.",
     "tags": [
-      "Books",
-      "Cultural Criticism",
-      "Art",
+      "Geography",
+      "cartography",
+      "korea",
+      "reference",
+      "History",
       "toblog"
     ],
-    "cover": "https://freight.cargo.site/w/1200/i/d8aa5dc50102815cfd1a3b27e6f96b029a55989a6a9b48b0f6bbc44dc75ef51e/Cover-web.jpg"
+    "cover": "https://substackcdn.com/image/fetch/$s_!oTh-!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fcartographerstale.substack.com%2Fapi%2Fv1%2Fpost_preview%2F179074631%2Ftwitter.jpg%3Fversion%3D4"
   },
   {
-    "title": "A SEXUAL HISTORY OF THE INTERNET",
-    "url": "https://darkforest.metalabel.com/asexualhistoryoftheinternet?variantId=1",
-    "date": "2026-01-10",
-    "excerpt": "How has technology shaped and been shaped by sexuality? This 700+ page artist book gathers anecdotes, artworks, and historical artifacts that reveal the pervasive and perverted origins of our digital tools. UPDATE: Due to shipping delays, USA-orders will ship by early-Dec; international-orders are shipping now.",
+    "title": "how to use the internet again: a curriculum",
+    "url": "https://substack.com/home/post/p-176883733",
+    "date": "2025-11-03",
+    "excerpt": "a five-unit crash course in wandering, breaking, and building online",
     "tags": [
-      "sex",
-      "Tech",
+      "IndieWeb",
       "Internet Culture",
-      "Books",
-      "toblog"
-    ],
-    "cover": "https://metalabel.imgix.net/QmQXM2BNetz6XoyXt1pVXZ4dEFXnyprrAayGUkJyqBdPRP"
-  },
-  {
-    "title": "I sell onions on the Internet - Deep South Ventures",
-    "url": "https://www.deepsouthventures.com/i-sell-onions-on-the-internet/",
-    "date": "2026-01-10",
-    "excerpt": "I sell onions on the Internet",
-    "tags": [
+      "Tutorial",
       "Web",
-      "Business",
-      "Blog",
-      "Personal Websites",
-      "agriculture",
+      "Culture",
       "toblog"
     ],
-    "cover": "https://www.deepsouthventures.com/wp-content/uploads/vidalia-onions-in-field-300x225.jpg"
+    "cover": "https://substackcdn.com/image/fetch/$s_!tde8!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fofflinecrush.substack.com%2Fapi%2Fv1%2Fpost_preview%2F176883733%2Ftwitter.jpg%3Fversion%3D4"
   },
   {
-    "title": "I Was Kidnapped by Deutsche Bahn and All I Got Was 1.50 EUR",
-    "url": "https://www.theocharis.dev/blog/kidnapped-by-deutsche-bahn/",
-    "date": "2026-01-10",
-    "excerpt": "A Christmas Eve journey. Deutsche Bahn. 35 kilometers.",
+    "title": "Clay PCB Tutorial — feministhackerspaces",
+    "url": "https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial",
+    "date": "2025-09-18",
+    "excerpt": "Clay PCB Tutorial MaKING Printed Circuit Boards with Wild Clay It is an open secret that the hardware in our...",
     "tags": [
-      "Germany",
-      "travel",
-      "trains",
-      "transport",
-      "toblog"
-    ],
-    "cover": "https://rdl.ink/render/https%3A%2F%2Fwww.theocharis.dev%2Fblog%2Fkidnapped-by-deutsche-bahn%2F"
-  },
-  {
-    "title": "Mudita Store | Mudita Kompakt - a minimalist phone with E Ink® screen.",
-    "url": "https://store.mudita.com/store/mudita-kompakt-global",
-    "date": "2026-01-10",
-    "excerpt": "Mudita Kompakt is a minimalist phone. Helps you stay focused, reduce screen time, support mindful use for digital detox.",
-    "tags": [
-      "Products",
+      "Tutorial",
       "Tech",
+      "hardware",
       "toblog"
     ],
-    "cover": "https://store.mudita.com/media/catalog/product/cache/2656a5b5b1db43ccf945c56fe72c0c6f/m/u/mudita-kompakt-black_01_2.png"
+    "cover": "https://freight.cargo.site/w/1024/i/023df547c98cc900f7a565ef2c87d8f1442ce22e304533fd0abc0c50f5608d65/7E014D23-1433-4DFB-A66F-2BBE15BB1905_1_105_c.jpeg"
   },
   {
-    "title": "Bookbinder",
-    "url": "https://momijizukamori.github.io/bookbinder-js/",
-    "date": "2026-01-10",
-    "excerpt": "",
+    "title": "A Clock: An Online Remake of Christian Marclay’s The Clock",
+    "url": "https://kottke.org/25/09/a-clock-an-online-remake-of-christian-marclays-the-clock",
+    "date": "2025-09-17",
+    "excerpt": "Christian Marclay debuted his 24-hour film The Clock 15 years ago. The film is made up of thousands of clips from movies and TV sh",
+    "tags": [
+      "Art",
+      "Clocks",
+      "Film",
+      "Media",
+      "video",
+      "toblog"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fkottke.org%2F25%2F09%2Fa-clock-an-online-remake-of-christian-marclays-the-clock"
+  },
+  {
+    "title": "Stations and transfers",
+    "url": "http://stations.albertguillaumes.cat/",
+    "date": "2025-09-14",
+    "excerpt": "A gallery of drawings depicting the topology of metro stations from different European cities.",
+    "tags": [
+      "map",
+      "transport",
+      "Cities",
+      "infrastructure",
+      "Design",
+      "Architecture",
+      "toblog"
+    ],
+    "cover": "http://estacions.albertguillaumes.cat/img/barcelona/collblanc.png"
+  },
+  {
+    "title": "Dicing an Onion, the Mathematically Optimal Way",
+    "url": "https://pudding.cool/2025/08/onions/",
+    "date": "2025-08-14",
+    "excerpt": "There is more than one way to dice an onion…",
+    "tags": [
+      "Food",
+      "toblog"
+    ],
+    "cover": "https://pudding.cool/2025/08/onions/assets/letters/O.png"
+  },
+  {
+    "title": "Internet Phone Book",
+    "url": "https://internetphonebook.net/dial/",
+    "date": "2025-05-23",
+    "excerpt": "An annual publication for exploring the vast poetic web, featuring essays, musings and a directory with the personal websites of hundreds of designers, developers, writers, curators, and educators. Published since 2025.",
+    "tags": [
+      "IndieWeb",
+      "Web",
+      "Internet Culture",
+      "toblog"
+    ],
+    "cover": "https://internetphonebook.net/images/social-image.png"
+  },
+  {
+    "title": "QUISBN?",
+    "url": "https://whoisbn.net/fr/",
+    "date": "2025-05-23",
+    "excerpt": "QU'ISBN? POUR UN CHOIX ECLAIRÉ ET CONSCIENT DE VOS PROCHAINES LECTURES",
     "tags": [
       "Tools",
       "Books",
-      "Art & Crafts",
+      "Capitalism",
       "toblog"
     ],
-    "cover": "https://rdl.ink/render/https%3A%2F%2Fmomijizukamori.github.io%2Fbookbinder-js%2F"
+    "cover": "https://whoisbn.net/imgs/whoisbn-03.jpg"
   },
   {
-    "title": "9 Classic Crime Stories That Have Just Entered the Public Domain in 2026",
-    "url": "https://crimereads.com/nine-classic-crime-stories-public-domain-2026/",
-    "date": "2026-01-10",
-    "excerpt": "As of January 1st in this year 2025, many copyrighted works produced in the year 1926 have entered the public domain in the United States, which means they are totally free and legal for anyone to …",
-    "tags": [
-      "Book List",
-      "toblog"
-    ],
-    "cover": "https://s26162.pcdn.co/wp-content/uploads/sites/3/2026/01/Public-domain.jpg?w=640"
-  },
-  {
-    "title": "Meet the people fighting to keep a language alive online - Rest of World",
-    "url": "https://restofworld.org/2021/bringing-urdu-into-the-digital-age",
-    "date": "2025-05-13",
-    "excerpt": "",
+    "title": "Star Struck",
+    "url": "https://www.bookforum.com/print/3004/lauren-oyler-s-meditations-on-goodreads-anxiety-and-gossip-25333",
+    "date": "2024-04-10",
+    "excerpt": "Lauren Oyler’s meditations on Goodreads, anxiety, and gossip – Ann Manov",
     "tags": [
       "toblog",
-      "Language",
-      "Tech"
+      "review",
+      "profile",
+      "Books",
+      "Culture"
     ],
-    "cover": "https://149346090.v2.pressablecdn.com/wp-content/uploads/2021/02/header-051-1600x900.jpg"
+    "cover": "https://www.bookforum.com/uploads/upload.000/id25333/featured00_landscape.jpg"
   },
   {
-    "title": "Non-essential retail in nineteenth-century London - Untold lives blog",
-    "url": "https://blogs.bl.uk/untoldlives/2021/04/non-essential-retail-in-nineteenth-century-london.html?_ga=2.208601554.1324316335.1618118861-1810079885.1612580217",
-    "date": "2025-05-13",
+    "title": "Rosemary Hill · Des briques, des briques: On British and Irish Architecture",
+    "url": "https://www.lrb.co.uk/the-paper/v46/n06/rosemary-hill/des-briques-des-briques",
+    "date": "2024-03-14",
+    "excerpt": "The most important question to ask about a building is not how ‘advanced’ it is for its time or whether it can be...",
+    "tags": [
+      "toblog",
+      "Architecture",
+      "History",
+      "UK"
+    ],
+    "cover": "https://www.lrb.co.uk/storage/social_image/images/9/0/1/5/30075109-1-eng-GB/349746897944-hillwebsite.jpg"
+  },
+  {
+    "title": "Behind F1's Velvet Curtain",
+    "url": "https://web.archive.org/web/20240301170542/https://www.roadandtrack.com/car-culture/a46975496/behind-f1-velvet-curtain/",
+    "date": "2024-03-09",
+    "excerpt": "If you wanted to turn someone into a socialist you could do it in about an hour by taking them for a spin around the paddock of a Formula 1 race. The kind of money I saw will haunt me forever.",
+    "tags": [
+      "sports",
+      "toblog",
+      "Capitalism",
+      "Money"
+    ],
+    "cover": "https://web.archive.org/web/20240301170542im_/https://hips.hearstapps.com/hmg-prod/images/roadtrack-f1highroller-webarticleart-so2023-65dce7b0335bc.png?crop=1xw:1xh;center,top&resize=1200:*"
+  },
+  {
+    "title": "Financial systems take a holiday",
+    "url": "https://www.bitsaboutmoney.com/archive/financial-systems-take-a-holiday/",
+    "date": "2024-03-03",
+    "excerpt": "Ever wondered about what happens when banks are closed or why some apps have operating hours? It's fascinating.",
+    "tags": [
+      "toblog",
+      "finance",
+      "Business"
+    ],
+    "cover": "https://www.bitsaboutmoney.com/content/images/2024/02/DALL-E-2024-02-29-11.41.04---Wall-Street-s-Charging-Bull-sculpture-wearing-a-more-clearly-defined-Santa-hat--set-against-a-wintry-New-York-City-backdrop.-The-scene-should-maintain.webp"
+  },
+  {
+    "title": "Pankaj Mishra · The Shoah after Gaza",
+    "url": "https://www.lrb.co.uk/the-paper/v46/n05/pankaj-mishra/the-shoah-after-gaza",
+    "date": "2024-03-03",
+    "excerpt": "Memories of Jewish suffering at the hands of Nazis are the foundation on which most descriptions of extreme ideology and...",
+    "tags": [
+      "holocaust",
+      "toblog",
+      "Fascism",
+      "Germany",
+      "History",
+      "Israel-Palestine",
+      "USA"
+    ],
+    "cover": "https://www.lrb.co.uk/storage/social_image/images/6/9/9/3/30053996-1-eng-GB/d0d790f8ded9-mishrahp-web.jpg"
+  },
+  {
+    "title": "How I Taught The Iliad to Chinese Teenagers",
+    "url": "https://scholars-stage.org/how-i-taught-the-iliad-to-chinese-teenagers/",
+    "date": "2024-02-19",
+    "excerpt": "Several years ago I had the chance to lead two seminars with a group of high-performing Chinese high school seniors. Each seminar had between 20-35 kids; each of these students was a graduating sen…",
+    "tags": [
+      "teaching",
+      "greece",
+      "mythology",
+      "toblog",
+      "Classics",
+      "History",
+      "Literature"
+    ],
+    "cover": "https://i0.wp.com/scholars-stage.org/wp-content/uploads/2021/05/iliad-e1623027833666.jpg?fit=200%2C319&ssl=1"
+  },
+  {
+    "title": "He Polarized Readers by Writing About His Late Wife’s Affairs. Now He’s Ready to Move On.",
+    "url": "https://www.vanityfair.com/style/blake-butler-wife-memoir",
+    "date": "2024-02-18",
+    "excerpt": "‘Molly,’ Blake Butler’s memoir about his late wife, has ignited intense online debates around authorial responsibility, but as his book tour draws to a close, Butler has found himself exhausted. “I’m trying to both take care of myself and take care of the book. I want this to be the end,” he tells Vanity Fair.",
+    "tags": [
+      "toblog",
+      "review",
+      "profile",
+      "Books",
+      "Literature"
+    ],
+    "cover": "https://media.vanityfair.com/photos/65cd348a4bb5a06616c27993/16:9/w_1280,c_limit/blake-butler-molly.jpg"
+  },
+  {
+    "title": "Why Is No One Talking about Muteness Envy? — Parapraxis",
+    "url": "https://www.parapraxismagazine.com/articles/muteness-envy",
+    "date": "2024-02-09",
+    "excerpt": "A Retrospective on Barbara Johnson &nbsp;   KATIE KADUE",
+    "tags": [
+      "toblog",
+      "Classics",
+      "Gender",
+      "Philosophy"
+    ],
+    "cover": "http://static1.squarespace.com/static/6345b5cd7fd9663af3ed4b99/6345b98a8c51184ed8a7239b/65ac9b720b6b077bc1e33826/1705946970635/katue.jpg?format=1500w"
+  },
+  {
+    "title": "How to Replace Your CPAP In Only 666 Days",
+    "url": "https://aphyr.com/posts/368-how-to-replace-your-cpap-in-only-666-days",
+    "date": "2024-02-05",
     "excerpt": "",
     "tags": [
       "toblog",
       "Capitalism",
-      "Cities",
-      "History",
-      "London"
+      "Health",
+      "USA"
     ],
-    "cover": "https://blogs.bl.uk/.a/6a00d8341c464853ef026bdec9d0f6200c-pi"
+    "cover": "https://rdl.ink/render/https%3A%2F%2Faphyr.com%2Fposts%2F368-how-to-replace-your-cpap-in-only-666-days"
   },
   {
-    "title": "Seeing like a Bank",
-    "url": "https://www.bitsaboutmoney.com/archive/seeing-like-a-bank",
-    "date": "2025-05-13",
-    "excerpt": "",
+    "title": "Owen Hatherley · In Surrey Quays",
+    "url": "https://www.lrb.co.uk/the-paper/v46/n03/owen-hatherley/in-surrey-quays",
+    "date": "2024-02-01",
+    "excerpt": "By the 1950s Scandinavian design principles dominated British architecture schools, and were taken to be the natural...",
     "tags": [
       "toblog",
-      "Money",
-      "Tech"
+      "scandinavia",
+      "finland",
+      "norway",
+      "Architecture",
+      "Cities",
+      "London"
     ],
-    "cover": "https://www.bitsaboutmoney.com/content/images/2023/11/DALL-E-2023-11-07-11.09.57---Illustrate-an-American-political-cartoon-style-image--vividly-colored--depicting-the-theme--Seeing-Like-A-Bank-.-The-image-should-feature-an-anthropom.png"
+    "cover": "https://www.lrb.co.uk/storage/social_image/images/5/5/1/2/30012155-1-eng-GB/45dc988651fc-hatherley-web.jpg"
   },
   {
-    "title": "How Can Determinists Believe in Free Will? | The New Yorker",
-    "url": "https://www.newyorker.com/magazine/2023/11/13/determined-a-science-of-life-without-free-will-robert-sapolsky-book-review",
-    "date": "2025-05-13",
-    "excerpt": "",
+    "title": "The Unique History of Japanese Plastic Food Samples",
+    "url": "https://www.tokyoweekender.com/art_and_culture/the-unique-history-of-japanese-plastic-food-samples/",
+    "date": "2024-01-30",
+    "excerpt": "Tokyo Weekender went to Yamato Samples in Toshima city to find out the ins and outs of Japan’s fascinating food sample culture.",
     "tags": [
+      "toblog",
+      "Art",
+      "Food",
+      "Japan"
+    ],
+    "cover": "https://www.tokyoweekender.com/wp-content/uploads/2024/01/Food-Samples-Tokyo-Weekender.jpg"
+  },
+  {
+    "title": "From-To",
+    "url": "https://from-to.app/",
+    "date": "2024-01-24",
+    "excerpt": "Compare the city you know with the city you don't",
+    "tags": [
+      "toblog",
+      "Cities",
+      "Tools"
+    ],
+    "cover": "https://hvjcomhrvlkbclbcwlot.supabase.co/storage/v1/object/public/hoodswap-web/og-from-to.gif?t=2023-12-22T03%3A14%3A07.423Z"
+  },
+  {
+    "title": "The Failed Saint: On George Orwell’s India | Los Angeles Review of Books",
+    "url": "https://lareviewofbooks.org/article/the-failed-saint-on-george-orwells-india/",
+    "date": "2024-01-23",
+    "excerpt": "Jason Christian visits George Orwell’s birthplace in India....",
+    "tags": [
+      "india",
+      "profile",
+      "toblog",
+      "Books",
+      "Empire",
+      "History",
+      "UK"
+    ],
+    "cover": "https://lareviewofbooks-media.azureedge.net/unsafe/2000x0/filters:format(jpeg):quality(75)/https%3A%2F%2Fdev.lareviewofbooks.org%2Fwp-content%2Fuploads%2F2024%2F01%2FMA_I120489_TePapa_Ruins_full.jpg"
+  },
+  {
+    "title": "Using SQL to find my best photo of a pelican according to Apple Photos",
+    "url": "https://simonwillison.net/2020/May/21/dogsheep-photos/",
+    "date": "2024-01-22",
+    "excerpt": "According to the Apple Photos internal SQLite database, this is the most aesthetically pleasing photograph I have ever taken of a pelican: Here’s the SQL query that found me my …",
+    "tags": [
+      "indie",
+      "toblog",
+      "icloudphotos",
+      "Coding",
+      "Coding Resources",
+      "Tutorial"
+    ],
+    "cover": "https://photos.simonwillison.net/i/a444857c4ac71ceae6af5192c8acc5ac35934ed589259136df0ed11295dbb085.jpeg?w=800"
+  },
+  {
+    "title": "The 1944 CIA guide to sabotaging meetings — Authentic Comms Strategic Consultancy",
+    "url": "https://www.authenticcomms.co.uk/blog/the-1944-cia-guide-to-sabotaging-meetings",
+    "date": "2024-01-18",
+    "excerpt": "A handbook aiming to cause disruption from within during World War II has resurfaced after becoming declassified by the Central Intelligence Agency (CIA). How to sabotage and disturb meetings specifically resonated as relevant now as it was c.80 years ago.",
+    "tags": [
+      "toblog",
+      "Business",
+      "Culture",
+      "History",
+      "USA"
+    ],
+    "cover": "http://static1.squarespace.com/static/5cb7aa95b7c92cfd0c9b95f1/5cb8a7260d9297bfd232ddc5/60edf8c58e89d93564d7c389/1644876472085/Screenshot+2021-07-13+at+22.01.28.png?format=1500w"
+  },
+  {
+    "title": "Bread on Earth",
+    "url": "https://bread-on.earth/",
+    "date": "2024-01-14",
+    "excerpt": "A collection of visual and text-based research on the past, present and future of grain and bread.",
+    "tags": [
+      "toblog",
+      "Art",
+      "Food",
+      "Personal Websites"
+    ],
+    "cover": "https://freight.cargo.site/i/bf03fb1e4ab582da279f1253c242014a51a697e907746da8de9e57acbfd09da1/Double-Myth-copy.jpg"
+  },
+  {
+    "title": "Deborah Friedell · I behave like a fiend: Katherine Mansfield’s Lies",
+    "url": "https://www.lrb.co.uk/the-paper/v46/n01/deborah-friedell/i-behave-like-a-fiend",
+    "date": "2024-01-09",
+    "excerpt": "Teachers, classmates, relatives would remember Mansfield as ‘completely self-centred’, ‘careless’, ‘lazy...",
+    "tags": [
+      "review",
+      "profile",
+      "toblog",
+      "Cultural Criticism",
+      "History",
+      "Literature",
+      "New Zealand",
+      "UK"
+    ],
+    "cover": "https://www.lrb.co.uk/storage/social_image/images/5/3/2/5/29925235-2-eng-GB/2ff58bb3c129-friedell-image-2.jpg"
+  },
+  {
+    "title": "Fake Views - The Contrast Between Renderings and Reality - The Architectural Uprising",
+    "url": "https://www.architecturaluprising.com/debate/fake-views-the-painful-contrast-between-renderings-and-reality/",
+    "date": "2024-01-09",
+    "excerpt": "A shining sun, playful children, overwhelming greenery and new neighborhoods with a richer wildlife than a Zoo. We have all seen them, the vision images that promise an idyll but result in a visual nightmare. Here‘s a few examples. Renderings are a visual representation of a future scene or product. These images are used as...",
+    "tags": [
+      "toblog",
+      "Architecture",
+      "Business"
+    ],
+    "cover": "https://www.architecturaluprising.com/wp-content/uploads/2024/01/E86DAC51-CF17-4945-B288-57D6950153B0.jpg"
+  },
+  {
+    "title": "Tom Scocca: Unraveling My Medical Mystery",
+    "url": "https://nymag.com/intelligencer/article/tom-scocca-medical-mystery-essay.html?src=longreads",
+    "date": "2024-01-05",
+    "excerpt": "The strangest things happen to other people’s bodies. Then they began happening to my own.",
+    "tags": [
+      "toblog",
+      "Essay",
+      "Health",
+      "Medicine",
+      "USA"
+    ],
+    "cover": "https://pyxis.nymag.com/v1/imgs/56d/4e7/03f308466eabbf3deb1725ffe4808f67f6-2023-1208-Tom-Scocca-Portrait34126.2x.rsocial.w600.jpg"
+  },
+  {
+    "title": "How Modi’s party took over one of India’s most prestigious private clubs",
+    "url": "https://www.ft.com/content/3e65dde3-b7db-4c9a-bfb8-a90a5f6cc116",
+    "date": "2023-12-27",
+    "excerpt": "The Delhi Gymkhana is a who’s who of the country’s old money elite — and they’re not happy",
+    "tags": [
+      "india",
+      "toblog",
+      "Empire",
+      "History",
+      "Money",
+      "UK"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fwww.ft.com%2Fcontent%2F3e65dde3-b7db-4c9a-bfb8-a90a5f6cc116"
+  },
+  {
+    "title": "How Camille Pissarro Went from Mediocrity to Magnificence",
+    "url": "https://www.newyorker.com/magazine/2024/01/01/camille-pissarro-the-audacity-of-impressionism-anka-muhlstein-book-review",
+    "date": "2023-12-26",
+    "excerpt": "He began as more of a tutor than a talent. But in his final decade he lent a keen eye-in-the-sky view to the Paris streets, rendering miracles of kinetic characterization.",
+    "tags": [
+      "toblog",
+      "Art",
+      "France",
+      "History"
+    ],
+    "cover": "https://media.newyorker.com/photos/6583218e5a85fc805ae54a8c/16:9/w_1280,c_limit/240101_r43572.jpg"
+  },
+  {
+    "title": "Corky Lee and the Work of Seeing | Ken Chen",
+    "url": "https://www.nplusonemag.com/online-only/online-only/corky-lee-and-the-work-of-seeing/?src=longreads",
+    "date": "2023-12-26",
+    "excerpt": "There is a symmetry between Corky Lee’s passing and the rise of Stop Anti-Asian Hate: the departure of Asian America’s greatest documentarian and its most visible recent efflorescence. Years earlier, the brief window of postwar Asian American radicalism seemed to have already swung shut. Today, our most notable figures are corporate CEOs and conservative politicians, the eponymous Asians rich and crazy, so the artists, revolutionaries, and workers preserved in Lee’s prints can feel as elusive as their author. No matter how distant an Asian American poor people’s movement may seem, his prints still vibrate with radical temporality and potential.",
+    "tags": [
+      "photography",
+      "profile",
+      "toblog",
+      "Justice",
+      "Race",
+      "USA"
+    ],
+    "cover": "https://www.nplusonemag.com/wp-content/uploads/2023/01/statue-of-liberty-1280x1280.jpg"
+  },
+  {
+    "title": "Circling the Planet, Looking for God",
+    "url": "https://www.newyorker.com/magazine/2023/12/25/orbital-samantha-harvey-book-review",
+    "date": "2023-12-22",
+    "excerpt": "Set on the International Space Station, Samantha Harvey’s “Orbital” reveals how small and how large our world really is.",
+    "tags": [
+      "space",
       "review",
       "toblog",
       "Books",
-      "Philosophy"
+      "Religion",
+      "Science"
     ],
-    "cover": "https://media.newyorker.com/photos/6542de8305eb91fba6e6b197/16:9/w_1280,c_limit/231113_r43347.jpg"
+    "cover": "https://media.newyorker.com/photos/657a086d7923bd09fcb69698/16:9/w_1280,c_limit/231225_r43052.jpg"
   },
   {
-    "title": "Survivors of Concert Violence Speak Out | Pitchfork",
-    "url": "https://pitchfork.com/features/article/survivors-of-concert-violence-speak-out?src=longreads",
-    "date": "2025-05-13",
-    "excerpt": "",
+    "title": "John F. Kennedy’s Last Movie: From Russia with Love",
+    "url": "https://lithub.com/john-f-kennedys-last-movie-from-russia-with-love/",
+    "date": "2023-12-19",
+    "excerpt": "John F. Kennedy’s voracious appetite for books was borne of long hospital stays in his youth (Colitis, Addison’s). By 1963, he’d been read the Last Rites many times (Catholic, Irish). He was 46; on…",
     "tags": [
       "toblog",
-      "Magazine Story",
-      "Music",
+      "Film",
+      "History",
+      "Politics",
       "USA"
     ],
-    "cover": "https://media.pitchfork.com/photos/5ab9141e80b2380b10d2da8e/16:9/w_1280,c_limit/concertviolence.jpg"
+    "cover": "https://s26162.pcdn.co/wp-content/uploads/2023/12/from-russia-with-love.jpg"
   },
   {
-    "title": "fisking - Wiktionary, the free dictionary",
-    "url": "https://en.wiktionary.org/wiki/fisking",
-    "date": "2025-05-13",
+    "title": "How Africans Are Changing French — One Joke, Rap and Book at a Time",
+    "url": "https://www.nytimes.com/2023/12/12/world/africa/africa-french-language.html",
+    "date": "2023-12-18",
+    "excerpt": "More than 60 percent of French speakers now live in Africa. Despite growing resentment at France, Africans are contributing to the evolution and spread of the French language.",
+    "tags": [
+      "toblog",
+      "Africa",
+      "France",
+      "Language"
+    ],
+    "cover": "https://static01.nyt.com/images/2023/12/01/multimedia/00africa19-language-promo/00africa19-language-1-wbfl-facebookJumbo.jpg"
+  },
+  {
+    "title": "Let’s Take a Journey Through the Secret Queer History of Studio Ghibli Films",
+    "url": "https://www.indiewire.com/features/commentary/studio-movies-queer-1234934356/",
+    "date": "2023-12-16",
+    "excerpt": "There’s something about the animation powerhouse specifically that resonates with queer people, despite there being little obvious representation to speak of across the studio’s 40-year…",
+    "tags": [
+      "toblog",
+      "Film",
+      "Japan",
+      "LGBTQ"
+    ],
+    "cover": "https://www.indiewire.com/wp-content/uploads/2023/03/22Princess-Mononoke22.png"
+  },
+  {
+    "title": "on misunderstanding critical theory – The Homebound Symphony",
+    "url": "https://blog.ayjay.org/on-misunderstanding-critical-theory/",
+    "date": "2023-12-16",
     "excerpt": "",
     "tags": [
       "toblog",
-      "Language",
-      "Web"
+      "Literature",
+      "Philosophy"
     ],
-    "cover": "https://rdl.ink/render/https%3A%2F%2Fen.wiktionary.org%2Fwiki%2Ffisking"
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fblog.ayjay.org%2Fon-misunderstanding-critical-theory%2F"
   },
   {
-    "title": "Jonah Goodman · A National Evil",
-    "url": "https://www.lrb.co.uk/the-paper/v45/n23/jonah-goodman/a-national-evil",
-    "date": "2025-05-13",
-    "excerpt": "At the turn of the 20th century, the Swiss were plagued by strange, interlinked medical conditions, which existed...",
+    "title": "How to crash a Chanel party",
+    "url": "https://manchestermill.co.uk/p/how-to-crash-a-chanel-party",
+    "date": "2023-12-16",
+    "excerpt": "No invite? No problem.",
     "tags": [
-      "switzerland",
+      "toblog",
+      "Celebrities",
+      "Fashion",
+      "UK"
+    ],
+    "cover": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8199dfbe-a8a7-4969-a26c-0e3e402b3c77_7238x4825.jpeg"
+  },
+  {
+    "title": "Local Minima",
+    "url": "https://localminima.studio/",
+    "date": "2023-12-01",
+    "excerpt": "Local Minima is a design studio based in New York City, founded by Brian Clifton. The functional objects from Local Minima are not quite design and not quite art, but somewhere in between.",
+    "tags": [
+      "toblog",
+      "Art",
+      "Design"
+    ],
+    "cover": "https://localminima.studio/_app/immutable/assets/localminima.e452743a.jpg"
+  },
+  {
+    "title": "Doctor does actually mean someone with a PhD, sorry",
+    "url": "https://going-medieval.com/2023/11/29/doctor-does-actually-mean-someone-with-a-phd-sorry/",
+    "date": "2023-11-29",
+    "excerpt": "You know those little jokes that centre around a person with a PhD being on a plane, and someone asks for a doctor, and they say they aren’t that kind of doctor but the emergency involves their fie…",
+    "tags": [
       "toblog",
       "History",
-      "Health",
+      "Language",
       "Medicine"
     ],
-    "cover": "https://www.lrb.co.uk/storage/social_image/images/9/9/7/8/29888799-1-eng-GB/4a151d3f6696-goodman-website.jpg"
+    "cover": "https://goingmedievalblog.files.wordpress.com/2023/11/1280px-hortus_deliciarum_die_philosophie_mit_den_sieben_freien_kunsten.jpeg?w=965"
+  },
+  {
+    "title": "The camel, the rope, and the needle's eye",
+    "url": "http://kiwihellenist.blogspot.com/2023/11/camel.html",
+    "date": "2023-11-29",
+    "excerpt": "Many popular beliefs about ancient Greece and Rome are misconceptions. This blog digs into the evidence and looks for the reality behind the myth.",
+    "tags": [
+      "toblog",
+      "rome",
+      "History",
+      "Language",
+      "Religion"
+    ],
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-qRg5ieUeSWdSmYAu1me5nqfwsGrff-8-zVIEDobldAHgqISkZN_iJ0lCSIjjQ4g8fLfaHxygMOFP0MZhDXnZYWL-fcP-U4oOh10ijDnyMj_NL8wAKbMA6s29TxhOpefZhYLEKh3L91vv2J0OV8gXMBvyGBqhEImI01Eq8KHzc826P_7TvH9_qpcWjQ4/w1200-h630-p-k-no-nu/Camel%20and%20needle.jpg"
+  },
+  {
+    "title": "It is as if you were making love",
+    "url": "https://pippinbarr.com/itisasifyouweremakinglove/?utm_source=substack&utm_medium=email",
+    "date": "2023-11-28",
+    "excerpt": "",
+    "tags": [
+      "sex",
+      "toblog",
+      "Art",
+      "IndieWeb"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fpippinbarr.com%2Fitisasifyouweremakinglove%2F%3Futm_source%3Dsubstack%26utm_medium%3Demail"
+  },
+  {
+    "title": "Dioramas",
+    "url": "https://dioramas.space/?utm_source=substack&utm_medium=email",
+    "date": "2023-11-28",
+    "excerpt": "--",
+    "tags": [
+      "indie",
+      "toblog",
+      "Art"
+    ],
+    "cover": "https://dioramas.space/images/twitter-card-default.png"
+  },
+  {
+    "title": "garden garden garden — library for the web",
+    "url": "https://gardengarden.garden/?utm_source=substack&utm_medium=email",
+    "date": "2023-11-28",
+    "excerpt": "gardengardengarden (like www) is a curated library and a collection of essays that\n                            explore the current state of networked technologies, and aims to inspire a new\n                            perspective on reimagining a softer digital future that is rooted in intention and expression.",
+    "tags": [
+      "toblog",
+      "Art",
+      "Blog",
+      "IndieWeb",
+      "Internet Culture",
+      "Personal Websites"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fgardengarden.garden%2F%3Futm_source%3Dsubstack%26utm_medium%3Demail"
+  },
+  {
+    "title": "My website as a home",
+    "url": "https://nicochilla.com/my-website-as-a-home/?utm_source=substack&utm_medium=email#footnote-4",
+    "date": "2023-11-28",
+    "excerpt": "",
+    "tags": [
+      "toblog",
+      "Blog",
+      "IndieWeb"
+    ],
+    "cover": "https://nicochilla.com/assets/images/jw-letter.png"
+  },
+  {
+    "title": "Making God · EmilyGorcenski.com",
+    "url": "https://emilygorcenski.com/post/making-god/?utm_source=substack&utm_medium=email",
+    "date": "2023-11-28",
+    "excerpt": "The millenarianism and manifest destiny of AI and techno-futurism.",
+    "tags": [
+      "toblog",
+      "AI",
+      "Blog",
+      "Tech Ethics",
+      "Tech"
+    ],
+    "cover": "https://emilygorcenski.com/photo-gallery/writing/amos-eaton.jpeg?cab2dcd858cf4ca6fc1be8ec4cd4df54"
+  },
+  {
+    "title": "Orkney: St Magnus’ Cathedral, Kirkwall",
+    "url": "https://thehazeltree.co.uk/2023/11/27/orkney-st-magnus-cathedral-kirkwall/",
+    "date": "2023-11-28",
+    "excerpt": "Founded in 1137, this magnificent building preserves the bones of a saint who was originally a Norse earl of Orkney",
+    "tags": [
+      "scotland",
+      "toblog",
+      "Architecture",
+      "History",
+      "Religion"
+    ],
+    "cover": "https://thehazeltree.co.uk/wp-content/uploads/2023/11/St-Magnus-1-13-1024x597.jpg"
   },
   {
     "title": "Reassessing Georg Lukacs means expurgating Bolshevik themes and some long-outdated Marxist concepts. That's asking a lot",
     "url": "https://lareviewofbooks.org/article/georg-lukacss-two-natures-the-centenary-of-history-and-class-consciousness",
-    "date": "2025-05-13",
+    "date": "2023-11-27",
     "excerpt": "Mitchell Cohen explores the problematic afterlife of a foundational text of Western Marxism, .“History and Class Consciousness” by Georg Lukács....",
     "tags": [
       "profile",
@@ -407,7 +825,7 @@
   {
     "title": "creative retail experiences, and warmth in tokyo",
     "url": "https://winnielim.org/journal/creative-retail-experiences-and-warmth-in-tokyo/",
-    "date": "2025-05-13",
+    "date": "2023-11-27",
     "excerpt": "A long while ago I saw somewhere online that tokyo has a 3-storey art supply store. It became a bucket list item for me. We have art supply stores in singapore, but we would be lucky to find something that is a thousand square feet. It felt like a dream to me, all those months...",
     "tags": [
       "toblog",
@@ -420,455 +838,9 @@
     "cover": "https://winnielim.org/wp-content/uploads/2023/11/20231127-DSCF3976.jpg"
   },
   {
-    "title": "It is as if you were making love",
-    "url": "https://pippinbarr.com/itisasifyouweremakinglove/?utm_source=substack&utm_medium=email",
-    "date": "2025-05-13",
-    "excerpt": "",
-    "tags": [
-      "sex",
-      "toblog",
-      "Art",
-      "IndieWeb"
-    ],
-    "cover": "https://rdl.ink/render/https%3A%2F%2Fpippinbarr.com%2Fitisasifyouweremakinglove%2F%3Futm_source%3Dsubstack%26utm_medium%3Demail"
-  },
-  {
-    "title": "garden garden garden — library for the web",
-    "url": "https://gardengarden.garden/?utm_source=substack&utm_medium=email",
-    "date": "2025-05-13",
-    "excerpt": "gardengardengarden (like www) is a curated library and a collection of essays that\n                            explore the current state of networked technologies, and aims to inspire a new\n                            perspective on reimagining a softer digital future that is rooted in intention and expression.",
-    "tags": [
-      "toblog",
-      "Art",
-      "Blog",
-      "IndieWeb",
-      "Internet Culture",
-      "Personal Websites"
-    ],
-    "cover": "https://rdl.ink/render/https%3A%2F%2Fgardengarden.garden%2F%3Futm_source%3Dsubstack%26utm_medium%3Demail"
-  },
-  {
-    "title": "My website as a home",
-    "url": "https://nicochilla.com/my-website-as-a-home/?utm_source=substack&utm_medium=email#footnote-4",
-    "date": "2025-05-13",
-    "excerpt": "",
-    "tags": [
-      "toblog",
-      "Blog",
-      "IndieWeb"
-    ],
-    "cover": "https://nicochilla.com/assets/images/jw-letter.png"
-  },
-  {
-    "title": "Making God · EmilyGorcenski.com",
-    "url": "https://emilygorcenski.com/post/making-god/?utm_source=substack&utm_medium=email",
-    "date": "2025-05-13",
-    "excerpt": "The millenarianism and manifest destiny of AI and techno-futurism.",
-    "tags": [
-      "toblog",
-      "AI",
-      "Blog",
-      "Tech Ethics",
-      "Tech"
-    ],
-    "cover": "https://emilygorcenski.com/photo-gallery/writing/amos-eaton.jpeg?cab2dcd858cf4ca6fc1be8ec4cd4df54"
-  },
-  {
-    "title": "Orkney: St Magnus’ Cathedral, Kirkwall",
-    "url": "https://thehazeltree.co.uk/2023/11/27/orkney-st-magnus-cathedral-kirkwall/",
-    "date": "2025-05-13",
-    "excerpt": "Founded in 1137, this magnificent building preserves the bones of a saint who was originally a Norse earl of Orkney",
-    "tags": [
-      "scotland",
-      "toblog",
-      "Architecture",
-      "History",
-      "Religion"
-    ],
-    "cover": "https://thehazeltree.co.uk/wp-content/uploads/2023/11/St-Magnus-1-13-1024x597.jpg"
-  },
-  {
-    "title": "Doctor does actually mean someone with a PhD, sorry",
-    "url": "https://going-medieval.com/2023/11/29/doctor-does-actually-mean-someone-with-a-phd-sorry/",
-    "date": "2025-05-13",
-    "excerpt": "You know those little jokes that centre around a person with a PhD being on a plane, and someone asks for a doctor, and they say they aren’t that kind of doctor but the emergency involves their fie…",
-    "tags": [
-      "toblog",
-      "History",
-      "Language",
-      "Medicine"
-    ],
-    "cover": "https://goingmedievalblog.files.wordpress.com/2023/11/1280px-hortus_deliciarum_die_philosophie_mit_den_sieben_freien_kunsten.jpeg?w=965"
-  },
-  {
-    "title": "The camel, the rope, and the needle's eye",
-    "url": "http://kiwihellenist.blogspot.com/2023/11/camel.html",
-    "date": "2025-05-13",
-    "excerpt": "Many popular beliefs about ancient Greece and Rome are misconceptions. This blog digs into the evidence and looks for the reality behind the myth.",
-    "tags": [
-      "toblog",
-      "rome",
-      "History",
-      "Language",
-      "Religion"
-    ],
-    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-qRg5ieUeSWdSmYAu1me5nqfwsGrff-8-zVIEDobldAHgqISkZN_iJ0lCSIjjQ4g8fLfaHxygMOFP0MZhDXnZYWL-fcP-U4oOh10ijDnyMj_NL8wAKbMA6s29TxhOpefZhYLEKh3L91vv2J0OV8gXMBvyGBqhEImI01Eq8KHzc826P_7TvH9_qpcWjQ4/w1200-h630-p-k-no-nu/Camel%20and%20needle.jpg"
-  },
-  {
-    "title": "Let’s Take a Journey Through the Secret Queer History of Studio Ghibli Films",
-    "url": "https://www.indiewire.com/features/commentary/studio-movies-queer-1234934356/",
-    "date": "2025-05-13",
-    "excerpt": "There’s something about the animation powerhouse specifically that resonates with queer people, despite there being little obvious representation to speak of across the studio’s 40-year…",
-    "tags": [
-      "toblog",
-      "Film",
-      "Japan",
-      "LGBTQ"
-    ],
-    "cover": "https://www.indiewire.com/wp-content/uploads/2023/03/22Princess-Mononoke22.png"
-  },
-  {
-    "title": "on misunderstanding critical theory – The Homebound Symphony",
-    "url": "https://blog.ayjay.org/on-misunderstanding-critical-theory/",
-    "date": "2025-05-13",
-    "excerpt": "",
-    "tags": [
-      "toblog",
-      "Literature",
-      "Philosophy"
-    ],
-    "cover": "https://rdl.ink/render/https%3A%2F%2Fblog.ayjay.org%2Fon-misunderstanding-critical-theory%2F"
-  },
-  {
-    "title": "How to crash a Chanel party",
-    "url": "https://manchestermill.co.uk/p/how-to-crash-a-chanel-party",
-    "date": "2025-05-13",
-    "excerpt": "No invite? No problem.",
-    "tags": [
-      "toblog",
-      "Celebrities",
-      "Fashion",
-      "UK"
-    ],
-    "cover": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8199dfbe-a8a7-4969-a26c-0e3e402b3c77_7238x4825.jpeg"
-  },
-  {
-    "title": "How Africans Are Changing French — One Joke, Rap and Book at a Time",
-    "url": "https://www.nytimes.com/2023/12/12/world/africa/africa-french-language.html",
-    "date": "2025-05-13",
-    "excerpt": "More than 60 percent of French speakers now live in Africa. Despite growing resentment at France, Africans are contributing to the evolution and spread of the French language.",
-    "tags": [
-      "toblog",
-      "Africa",
-      "France",
-      "Language"
-    ],
-    "cover": "https://static01.nyt.com/images/2023/12/01/multimedia/00africa19-language-promo/00africa19-language-1-wbfl-facebookJumbo.jpg"
-  },
-  {
-    "title": "John F. Kennedy’s Last Movie: From Russia with Love",
-    "url": "https://lithub.com/john-f-kennedys-last-movie-from-russia-with-love/",
-    "date": "2025-05-13",
-    "excerpt": "John F. Kennedy’s voracious appetite for books was borne of long hospital stays in his youth (Colitis, Addison’s). By 1963, he’d been read the Last Rites many times (Catholic, Irish). He was 46; on…",
-    "tags": [
-      "toblog",
-      "Film",
-      "History",
-      "Politics",
-      "USA"
-    ],
-    "cover": "https://s26162.pcdn.co/wp-content/uploads/2023/12/from-russia-with-love.jpg"
-  },
-  {
-    "title": "Circling the Planet, Looking for God",
-    "url": "https://www.newyorker.com/magazine/2023/12/25/orbital-samantha-harvey-book-review",
-    "date": "2025-05-13",
-    "excerpt": "Set on the International Space Station, Samantha Harvey’s “Orbital” reveals how small and how large our world really is.",
-    "tags": [
-      "space",
-      "review",
-      "toblog",
-      "Books",
-      "Religion",
-      "Science"
-    ],
-    "cover": "https://media.newyorker.com/photos/657a086d7923bd09fcb69698/16:9/w_1280,c_limit/231225_r43052.jpg"
-  },
-  {
-    "title": "How Camille Pissarro Went from Mediocrity to Magnificence",
-    "url": "https://www.newyorker.com/magazine/2024/01/01/camille-pissarro-the-audacity-of-impressionism-anka-muhlstein-book-review",
-    "date": "2025-05-13",
-    "excerpt": "He began as more of a tutor than a talent. But in his final decade he lent a keen eye-in-the-sky view to the Paris streets, rendering miracles of kinetic characterization.",
-    "tags": [
-      "toblog",
-      "Art",
-      "France",
-      "History"
-    ],
-    "cover": "https://media.newyorker.com/photos/6583218e5a85fc805ae54a8c/16:9/w_1280,c_limit/240101_r43572.jpg"
-  },
-  {
-    "title": "Corky Lee and the Work of Seeing | Ken Chen",
-    "url": "https://www.nplusonemag.com/online-only/online-only/corky-lee-and-the-work-of-seeing/?src=longreads",
-    "date": "2025-05-13",
-    "excerpt": "There is a symmetry between Corky Lee’s passing and the rise of Stop Anti-Asian Hate: the departure of Asian America’s greatest documentarian and its most visible recent efflorescence. Years earlier, the brief window of postwar Asian American radicalism seemed to have already swung shut. Today, our most notable figures are corporate CEOs and conservative politicians, the eponymous Asians rich and crazy, so the artists, revolutionaries, and workers preserved in Lee’s prints can feel as elusive as their author. No matter how distant an Asian American poor people’s movement may seem, his prints still vibrate with radical temporality and potential.",
-    "tags": [
-      "photography",
-      "profile",
-      "toblog",
-      "Justice",
-      "Race",
-      "USA"
-    ],
-    "cover": "https://www.nplusonemag.com/wp-content/uploads/2023/01/statue-of-liberty-1280x1280.jpg"
-  },
-  {
-    "title": "How Modi’s party took over one of India’s most prestigious private clubs",
-    "url": "https://www.ft.com/content/3e65dde3-b7db-4c9a-bfb8-a90a5f6cc116",
-    "date": "2025-05-13",
-    "excerpt": "The Delhi Gymkhana is a who’s who of the country’s old money elite — and they’re not happy",
-    "tags": [
-      "india",
-      "toblog",
-      "Empire",
-      "History",
-      "Money",
-      "UK"
-    ],
-    "cover": "https://rdl.ink/render/https%3A%2F%2Fwww.ft.com%2Fcontent%2F3e65dde3-b7db-4c9a-bfb8-a90a5f6cc116"
-  },
-  {
-    "title": "Tom Scocca: Unraveling My Medical Mystery",
-    "url": "https://nymag.com/intelligencer/article/tom-scocca-medical-mystery-essay.html?src=longreads",
-    "date": "2025-05-13",
-    "excerpt": "The strangest things happen to other people’s bodies. Then they began happening to my own.",
-    "tags": [
-      "toblog",
-      "Essay",
-      "Health",
-      "Medicine",
-      "USA"
-    ],
-    "cover": "https://pyxis.nymag.com/v1/imgs/56d/4e7/03f308466eabbf3deb1725ffe4808f67f6-2023-1208-Tom-Scocca-Portrait34126.2x.rsocial.w600.jpg"
-  },
-  {
-    "title": "Deborah Friedell · I behave like a fiend: Katherine Mansfield’s Lies",
-    "url": "https://www.lrb.co.uk/the-paper/v46/n01/deborah-friedell/i-behave-like-a-fiend",
-    "date": "2025-05-13",
-    "excerpt": "Teachers, classmates, relatives would remember Mansfield as ‘completely self-centred’, ‘careless’, ‘lazy...",
-    "tags": [
-      "review",
-      "profile",
-      "toblog",
-      "Cultural Criticism",
-      "History",
-      "Literature",
-      "New Zealand",
-      "UK"
-    ],
-    "cover": "https://www.lrb.co.uk/storage/social_image/images/5/3/2/5/29925235-2-eng-GB/2ff58bb3c129-friedell-image-2.jpg"
-  },
-  {
-    "title": "Bread on Earth",
-    "url": "https://bread-on.earth/",
-    "date": "2025-05-13",
-    "excerpt": "A collection of visual and text-based research on the past, present and future of grain and bread.",
-    "tags": [
-      "toblog",
-      "Art",
-      "Food",
-      "Personal Websites"
-    ],
-    "cover": "https://freight.cargo.site/i/bf03fb1e4ab582da279f1253c242014a51a697e907746da8de9e57acbfd09da1/Double-Myth-copy.jpg"
-  },
-  {
-    "title": "The 1944 CIA guide to sabotaging meetings — Authentic Comms Strategic Consultancy",
-    "url": "https://www.authenticcomms.co.uk/blog/the-1944-cia-guide-to-sabotaging-meetings",
-    "date": "2025-05-13",
-    "excerpt": "A handbook aiming to cause disruption from within during World War II has resurfaced after becoming declassified by the Central Intelligence Agency (CIA). How to sabotage and disturb meetings specifically resonated as relevant now as it was c.80 years ago.",
-    "tags": [
-      "toblog",
-      "Business",
-      "Culture",
-      "History",
-      "USA"
-    ],
-    "cover": "http://static1.squarespace.com/static/5cb7aa95b7c92cfd0c9b95f1/5cb8a7260d9297bfd232ddc5/60edf8c58e89d93564d7c389/1644876472085/Screenshot+2021-07-13+at+22.01.28.png?format=1500w"
-  },
-  {
-    "title": "Using SQL to find my best photo of a pelican according to Apple Photos",
-    "url": "https://simonwillison.net/2020/May/21/dogsheep-photos/",
-    "date": "2025-05-13",
-    "excerpt": "According to the Apple Photos internal SQLite database, this is the most aesthetically pleasing photograph I have ever taken of a pelican: Here’s the SQL query that found me my …",
-    "tags": [
-      "indie",
-      "toblog",
-      "icloudphotos",
-      "Coding",
-      "Coding Resources",
-      "Tutorial"
-    ],
-    "cover": "https://photos.simonwillison.net/i/a444857c4ac71ceae6af5192c8acc5ac35934ed589259136df0ed11295dbb085.jpeg?w=800"
-  },
-  {
-    "title": "The Failed Saint: On George Orwell’s India | Los Angeles Review of Books",
-    "url": "https://lareviewofbooks.org/article/the-failed-saint-on-george-orwells-india/",
-    "date": "2025-05-13",
-    "excerpt": "Jason Christian visits George Orwell’s birthplace in India....",
-    "tags": [
-      "india",
-      "profile",
-      "toblog",
-      "Books",
-      "Empire",
-      "History",
-      "UK"
-    ],
-    "cover": "https://lareviewofbooks-media.azureedge.net/unsafe/2000x0/filters:format(jpeg):quality(75)/https%3A%2F%2Fdev.lareviewofbooks.org%2Fwp-content%2Fuploads%2F2024%2F01%2FMA_I120489_TePapa_Ruins_full.jpg"
-  },
-  {
-    "title": "From-To",
-    "url": "https://from-to.app/",
-    "date": "2025-05-13",
-    "excerpt": "Compare the city you know with the city you don't",
-    "tags": [
-      "toblog",
-      "Cities",
-      "Tools"
-    ],
-    "cover": "https://hvjcomhrvlkbclbcwlot.supabase.co/storage/v1/object/public/hoodswap-web/og-from-to.gif?t=2023-12-22T03%3A14%3A07.423Z"
-  },
-  {
-    "title": "The Unique History of Japanese Plastic Food Samples",
-    "url": "https://www.tokyoweekender.com/art_and_culture/the-unique-history-of-japanese-plastic-food-samples/",
-    "date": "2025-05-13",
-    "excerpt": "Tokyo Weekender went to Yamato Samples in Toshima city to find out the ins and outs of Japan’s fascinating food sample culture.",
-    "tags": [
-      "toblog",
-      "Art",
-      "Food",
-      "Japan"
-    ],
-    "cover": "https://www.tokyoweekender.com/wp-content/uploads/2024/01/Food-Samples-Tokyo-Weekender.jpg"
-  },
-  {
-    "title": "Owen Hatherley · In Surrey Quays",
-    "url": "https://www.lrb.co.uk/the-paper/v46/n03/owen-hatherley/in-surrey-quays",
-    "date": "2025-05-13",
-    "excerpt": "By the 1950s Scandinavian design principles dominated British architecture schools, and were taken to be the natural...",
-    "tags": [
-      "toblog",
-      "scandinavia",
-      "finland",
-      "norway",
-      "Architecture",
-      "Cities",
-      "London"
-    ],
-    "cover": "https://www.lrb.co.uk/storage/social_image/images/5/5/1/2/30012155-1-eng-GB/45dc988651fc-hatherley-web.jpg"
-  },
-  {
-    "title": "How to Replace Your CPAP In Only 666 Days",
-    "url": "https://aphyr.com/posts/368-how-to-replace-your-cpap-in-only-666-days",
-    "date": "2025-05-13",
-    "excerpt": "",
-    "tags": [
-      "toblog",
-      "Capitalism",
-      "Health",
-      "USA"
-    ],
-    "cover": "https://rdl.ink/render/https%3A%2F%2Faphyr.com%2Fposts%2F368-how-to-replace-your-cpap-in-only-666-days"
-  },
-  {
-    "title": "Why Is No One Talking about Muteness Envy? — Parapraxis",
-    "url": "https://www.parapraxismagazine.com/articles/muteness-envy",
-    "date": "2025-05-13",
-    "excerpt": "A Retrospective on Barbara Johnson &nbsp;   KATIE KADUE",
-    "tags": [
-      "toblog",
-      "Classics",
-      "Gender",
-      "Philosophy"
-    ],
-    "cover": "http://static1.squarespace.com/static/6345b5cd7fd9663af3ed4b99/6345b98a8c51184ed8a7239b/65ac9b720b6b077bc1e33826/1705946970635/katue.jpg?format=1500w"
-  },
-  {
-    "title": "He Polarized Readers by Writing About His Late Wife’s Affairs. Now He’s Ready to Move On.",
-    "url": "https://www.vanityfair.com/style/blake-butler-wife-memoir",
-    "date": "2025-05-13",
-    "excerpt": "‘Molly,’ Blake Butler’s memoir about his late wife, has ignited intense online debates around authorial responsibility, but as his book tour draws to a close, Butler has found himself exhausted. “I’m trying to both take care of myself and take care of the book. I want this to be the end,” he tells Vanity Fair.",
-    "tags": [
-      "toblog",
-      "review",
-      "profile",
-      "Books",
-      "Literature"
-    ],
-    "cover": "https://media.vanityfair.com/photos/65cd348a4bb5a06616c27993/16:9/w_1280,c_limit/blake-butler-molly.jpg"
-  },
-  {
-    "title": "How I Taught The Iliad to Chinese Teenagers",
-    "url": "https://scholars-stage.org/how-i-taught-the-iliad-to-chinese-teenagers/",
-    "date": "2025-05-13",
-    "excerpt": "Several years ago I had the chance to lead two seminars with a group of high-performing Chinese high school seniors. Each seminar had between 20-35 kids; each of these students was a graduating sen…",
-    "tags": [
-      "teaching",
-      "greece",
-      "mythology",
-      "toblog",
-      "Classics",
-      "History",
-      "Literature"
-    ],
-    "cover": "https://i0.wp.com/scholars-stage.org/wp-content/uploads/2021/05/iliad-e1623027833666.jpg?fit=200%2C319&ssl=1"
-  },
-  {
-    "title": "Pankaj Mishra · The Shoah after Gaza",
-    "url": "https://www.lrb.co.uk/the-paper/v46/n05/pankaj-mishra/the-shoah-after-gaza",
-    "date": "2025-05-13",
-    "excerpt": "Memories of Jewish suffering at the hands of Nazis are the foundation on which most descriptions of extreme ideology and...",
-    "tags": [
-      "holocaust",
-      "toblog",
-      "Fascism",
-      "Germany",
-      "History",
-      "Israel-Palestine",
-      "USA"
-    ],
-    "cover": "https://www.lrb.co.uk/storage/social_image/images/6/9/9/3/30053996-1-eng-GB/d0d790f8ded9-mishrahp-web.jpg"
-  },
-  {
-    "title": "Behind F1's Velvet Curtain",
-    "url": "https://web.archive.org/web/20240301170542/https://www.roadandtrack.com/car-culture/a46975496/behind-f1-velvet-curtain/",
-    "date": "2025-05-13",
-    "excerpt": "If you wanted to turn someone into a socialist you could do it in about an hour by taking them for a spin around the paddock of a Formula 1 race. The kind of money I saw will haunt me forever.",
-    "tags": [
-      "sports",
-      "toblog",
-      "Capitalism",
-      "Money"
-    ],
-    "cover": "https://web.archive.org/web/20240301170542im_/https://hips.hearstapps.com/hmg-prod/images/roadtrack-f1highroller-webarticleart-so2023-65dce7b0335bc.png?crop=1xw:1xh;center,top&resize=1200:*"
-  },
-  {
-    "title": "Rosemary Hill · Des briques, des briques: On British and Irish Architecture",
-    "url": "https://www.lrb.co.uk/the-paper/v46/n06/rosemary-hill/des-briques-des-briques",
-    "date": "2025-05-13",
-    "excerpt": "The most important question to ask about a building is not how ‘advanced’ it is for its time or whether it can be...",
-    "tags": [
-      "toblog",
-      "Architecture",
-      "History",
-      "UK"
-    ],
-    "cover": "https://www.lrb.co.uk/storage/social_image/images/9/0/1/5/30075109-1-eng-GB/349746897944-hillwebsite.jpg"
-  },
-  {
     "title": "Hallucinating with art models – Monica Dinculescu",
     "url": "https://meowni.ca/posts/hallucinations",
-    "date": "2025-04-25",
+    "date": "2023-11-23",
     "excerpt": "Monica Dinculescu's blog",
     "tags": [
       "toblog",
@@ -879,65 +851,93 @@
     "cover": "https://meowni.ca/posts/hallucinations/icons/icon-192x192.png"
   },
   {
-    "title": "Dioramas",
-    "url": "https://dioramas.space/?utm_source=substack&utm_medium=email",
-    "date": "2025-04-25",
-    "excerpt": "--",
+    "title": "fisking - Wiktionary, the free dictionary",
+    "url": "https://en.wiktionary.org/wiki/fisking",
+    "date": "2023-11-22",
+    "excerpt": "",
     "tags": [
-      "indie",
       "toblog",
-      "Art"
+      "Language",
+      "Web"
     ],
-    "cover": "https://dioramas.space/images/twitter-card-default.png"
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fen.wiktionary.org%2Fwiki%2Ffisking"
   },
   {
-    "title": "Local Minima",
-    "url": "https://localminima.studio/",
-    "date": "2025-04-25",
-    "excerpt": "Local Minima is a design studio based in New York City, founded by Brian Clifton. The functional objects from Local Minima are not quite design and not quite art, but somewhere in between.",
+    "title": "Jonah Goodman · A National Evil",
+    "url": "https://www.lrb.co.uk/the-paper/v45/n23/jonah-goodman/a-national-evil",
+    "date": "2023-11-22",
+    "excerpt": "At the turn of the 20th century, the Swiss were plagued by strange, interlinked medical conditions, which existed...",
     "tags": [
+      "switzerland",
       "toblog",
-      "Art",
-      "Design"
+      "History",
+      "Health",
+      "Medicine"
     ],
-    "cover": "https://localminima.studio/_app/immutable/assets/localminima.e452743a.jpg"
+    "cover": "https://www.lrb.co.uk/storage/social_image/images/9/9/7/8/29888799-1-eng-GB/4a151d3f6696-goodman-website.jpg"
   },
   {
-    "title": "Fake Views - The Contrast Between Renderings and Reality - The Architectural Uprising",
-    "url": "https://www.architecturaluprising.com/debate/fake-views-the-painful-contrast-between-renderings-and-reality/",
-    "date": "2025-04-25",
-    "excerpt": "A shining sun, playful children, overwhelming greenery and new neighborhoods with a richer wildlife than a Zoo. We have all seen them, the vision images that promise an idyll but result in a visual nightmare. Here‘s a few examples. Renderings are a visual representation of a future scene or product. These images are used as...",
+    "title": "Survivors of Concert Violence Speak Out | Pitchfork",
+    "url": "https://pitchfork.com/features/article/survivors-of-concert-violence-speak-out?src=longreads",
+    "date": "2023-11-15",
+    "excerpt": "",
     "tags": [
       "toblog",
-      "Architecture",
-      "Business"
+      "Magazine Story",
+      "Music",
+      "USA"
     ],
-    "cover": "https://www.architecturaluprising.com/wp-content/uploads/2024/01/E86DAC51-CF17-4945-B288-57D6950153B0.jpg"
+    "cover": "https://media.pitchfork.com/photos/5ab9141e80b2380b10d2da8e/16:9/w_1280,c_limit/concertviolence.jpg"
   },
   {
-    "title": "Financial systems take a holiday",
-    "url": "https://www.bitsaboutmoney.com/archive/financial-systems-take-a-holiday/",
-    "date": "2025-04-25",
-    "excerpt": "Ever wondered about what happens when banks are closed or why some apps have operating hours? It's fascinating.",
+    "title": "How Can Determinists Believe in Free Will? | The New Yorker",
+    "url": "https://www.newyorker.com/magazine/2023/11/13/determined-a-science-of-life-without-free-will-robert-sapolsky-book-review",
+    "date": "2023-11-10",
+    "excerpt": "",
     "tags": [
-      "toblog",
-      "finance",
-      "Business"
-    ],
-    "cover": "https://www.bitsaboutmoney.com/content/images/2024/02/DALL-E-2024-02-29-11.41.04---Wall-Street-s-Charging-Bull-sculpture-wearing-a-more-clearly-defined-Santa-hat--set-against-a-wintry-New-York-City-backdrop.-The-scene-should-maintain.webp"
-  },
-  {
-    "title": "Star Struck",
-    "url": "https://www.bookforum.com/print/3004/lauren-oyler-s-meditations-on-goodreads-anxiety-and-gossip-25333",
-    "date": "2025-04-25",
-    "excerpt": "Lauren Oyler’s meditations on Goodreads, anxiety, and gossip – Ann Manov",
-    "tags": [
-      "toblog",
       "review",
-      "profile",
+      "toblog",
       "Books",
-      "Culture"
+      "Philosophy"
     ],
-    "cover": "https://www.bookforum.com/uploads/upload.000/id25333/featured00_landscape.jpg"
+    "cover": "https://media.newyorker.com/photos/6542de8305eb91fba6e6b197/16:9/w_1280,c_limit/231113_r43347.jpg"
+  },
+  {
+    "title": "Seeing like a Bank",
+    "url": "https://www.bitsaboutmoney.com/archive/seeing-like-a-bank",
+    "date": "2023-11-07",
+    "excerpt": "",
+    "tags": [
+      "toblog",
+      "Money",
+      "Tech"
+    ],
+    "cover": "https://www.bitsaboutmoney.com/content/images/2023/11/DALL-E-2023-11-07-11.09.57---Illustrate-an-American-political-cartoon-style-image--vividly-colored--depicting-the-theme--Seeing-Like-A-Bank-.-The-image-should-feature-an-anthropom.png"
+  },
+  {
+    "title": "Non-essential retail in nineteenth-century London - Untold lives blog",
+    "url": "https://blogs.bl.uk/untoldlives/2021/04/non-essential-retail-in-nineteenth-century-london.html?_ga=2.208601554.1324316335.1618118861-1810079885.1612580217",
+    "date": "2021-04-13",
+    "excerpt": "",
+    "tags": [
+      "toblog",
+      "Capitalism",
+      "Cities",
+      "History",
+      "London"
+    ],
+    "cover": "https://blogs.bl.uk/.a/6a00d8341c464853ef026bdec9d0f6200c-pi"
+  },
+  {
+    "title": "Meet the people fighting to keep a language alive online - Rest of World",
+    "url": "https://restofworld.org/2021/bringing-urdu-into-the-digital-age",
+    "date": "2021-02-09",
+    "excerpt": "",
+    "tags": [
+      "toblog",
+      "Language",
+      "Tech"
+    ],
+    "cover": "https://149346090.v2.pressablecdn.com/wp-content/uploads/2021/02/header-051-1600x900.jpg"
   }
 ]
