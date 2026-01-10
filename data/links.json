@@ -1,5 +1,304 @@
 [
   {
+    "title": "Internet Phone Book",
+    "url": "https://internetphonebook.net/dial/",
+    "date": "2026-01-10",
+    "excerpt": "An annual publication for exploring the vast poetic web, featuring essays, musings and a directory with the personal websites of hundreds of designers, developers, writers, curators, and educators. Published since 2025.",
+    "tags": [
+      "IndieWeb",
+      "Web",
+      "Internet Culture",
+      "toblog"
+    ],
+    "cover": "https://internetphonebook.net/images/social-image.png"
+  },
+  {
+    "title": "QUISBN?",
+    "url": "https://whoisbn.net/fr/",
+    "date": "2026-01-10",
+    "excerpt": "QU'ISBN? POUR UN CHOIX ECLAIRÉ ET CONSCIENT DE VOS PROCHAINES LECTURES",
+    "tags": [
+      "Tools",
+      "Books",
+      "Capitalism",
+      "toblog"
+    ],
+    "cover": "https://whoisbn.net/imgs/whoisbn-03.jpg"
+  },
+  {
+    "title": "Dicing an Onion, the Mathematically Optimal Way",
+    "url": "https://pudding.cool/2025/08/onions/",
+    "date": "2026-01-10",
+    "excerpt": "There is more than one way to dice an onion…",
+    "tags": [
+      "Food",
+      "toblog"
+    ],
+    "cover": "https://pudding.cool/2025/08/onions/assets/letters/O.png"
+  },
+  {
+    "title": "Stations and transfers",
+    "url": "http://stations.albertguillaumes.cat/",
+    "date": "2026-01-10",
+    "excerpt": "A gallery of drawings depicting the topology of metro stations from different European cities.",
+    "tags": [
+      "map",
+      "transport",
+      "Cities",
+      "infrastructure",
+      "Design",
+      "Architecture",
+      "toblog"
+    ],
+    "cover": "http://estacions.albertguillaumes.cat/img/barcelona/collblanc.png"
+  },
+  {
+    "title": "A Clock: An Online Remake of Christian Marclay’s The Clock",
+    "url": "https://kottke.org/25/09/a-clock-an-online-remake-of-christian-marclays-the-clock",
+    "date": "2026-01-10",
+    "excerpt": "Christian Marclay debuted his 24-hour film The Clock 15 years ago. The film is made up of thousands of clips from movies and TV sh",
+    "tags": [
+      "Art",
+      "Clocks",
+      "Film",
+      "Media",
+      "video",
+      "toblog"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fkottke.org%2F25%2F09%2Fa-clock-an-online-remake-of-christian-marclays-the-clock"
+  },
+  {
+    "title": "Clay PCB Tutorial — feministhackerspaces",
+    "url": "https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial",
+    "date": "2026-01-10",
+    "excerpt": "Clay PCB Tutorial MaKING Printed Circuit Boards with Wild Clay It is an open secret that the hardware in our...",
+    "tags": [
+      "Tutorial",
+      "Tech",
+      "hardware",
+      "toblog"
+    ],
+    "cover": "https://freight.cargo.site/w/1024/i/023df547c98cc900f7a565ef2c87d8f1442ce22e304533fd0abc0c50f5608d65/7E014D23-1433-4DFB-A66F-2BBE15BB1905_1_105_c.jpeg"
+  },
+  {
+    "title": "how to use the internet again: a curriculum",
+    "url": "https://substack.com/home/post/p-176883733",
+    "date": "2026-01-10",
+    "excerpt": "a five-unit crash course in wandering, breaking, and building online",
+    "tags": [
+      "IndieWeb",
+      "Internet Culture",
+      "Tutorial",
+      "Web",
+      "Culture",
+      "toblog"
+    ],
+    "cover": "https://substackcdn.com/image/fetch/$s_!tde8!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fofflinecrush.substack.com%2Fapi%2Fv1%2Fpost_preview%2F176883733%2Ftwitter.jpg%3Fversion%3D4"
+  },
+  {
+    "title": "An official atlas of North Korea",
+    "url": "https://www.cartographerstale.com/p/an-official-atlas-of-north-korea",
+    "date": "2026-01-10",
+    "excerpt": "A North Korean atlas that shows the world from the perspective of one of the most isolated countries on the planet.",
+    "tags": [
+      "Geography",
+      "cartography",
+      "korea",
+      "reference",
+      "History",
+      "toblog"
+    ],
+    "cover": "https://substackcdn.com/image/fetch/$s_!oTh-!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fcartographerstale.substack.com%2Fapi%2Fv1%2Fpost_preview%2F179074631%2Ftwitter.jpg%3Fversion%3D4"
+  },
+  {
+    "title": "The Ephemera Society",
+    "url": "https://ephemera-society.org.uk/",
+    "date": "2026-01-10",
+    "excerpt": "The Ephemera Society is dedicated to the collection, conservation, study and educational use of ephemera, the society’s fairs, journal, blogs and website provide opportunities for collectors and researchers to share their expertise and enthusiasm.",
+    "tags": [
+      "Archives",
+      "Web",
+      "Culture",
+      "toblog"
+    ],
+    "cover": "https://ephemera-society.org.uk/wp-content/uploads/2025/04/cropped-Ephemera-Favicon-.png"
+  },
+  {
+    "title": "Twenty Ways to Minoritise a National Language",
+    "url": "https://hjosephinegiles.substack.com/p/twenty-ways-to-minoritise-a-national",
+    "date": "2026-01-10",
+    "excerpt": "We want our languages to exist but we don't want to learn them",
+    "tags": [
+      "Language",
+      "Culture",
+      "Linguistics",
+      "Politics",
+      "scotland",
+      "toblog"
+    ],
+    "cover": "https://substackcdn.com/image/fetch/$s_!kB8P!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fhjosephinegiles.substack.com%2Fapi%2Fv1%2Fpost_preview%2F180386969%2Ftwitter.jpg%3Fversion%3D4"
+  },
+  {
+    "title": "The strange fate of Flight 2069",
+    "url": "https://www.newstatesman.com/long-reads/2025/12/the-strange-fate-of-flight-2069?src=longreads",
+    "date": "2026-01-10",
+    "excerpt": "Bill Hagan felt his head push beyond the pillow and into the headboard. As he came to consciousness, he realised it was not a headboard but the reinforced plastic bulkhead of a plane. At the moment he",
+    "tags": [
+      "Aviation",
+      "Magazine Story",
+      "toblog"
+    ],
+    "cover": "https://dl6pgk4f88hky.cloudfront.net/2025/12/11/202550kateplane-708x418.jpg?1765908228"
+  },
+  {
+    "title": "In the Garden of the Feuilleton – the Diasporist",
+    "url": "https://thediasporist.de/in-the-garden-of-the-feuilleton/",
+    "date": "2026-01-10",
+    "excerpt": "The guardrails of high-mindedness in Germany's new political matrix",
+    "tags": [
+      "Germany",
+      "Cultural Criticism",
+      "Media Studies",
+      "Media",
+      "toblog"
+    ],
+    "cover": "https://thediasporist.de/wp-content/uploads/2025/12/thediasporist-im-garten-feuilleton-td-brd-article-web-1.jpg"
+  },
+  {
+    "title": "Stickers Against Germany – the Diasporist",
+    "url": "https://thediasporist.de/stickers-against-germany/",
+    "date": "2026-01-10",
+    "excerpt": "The antideutsch youth papering cities in pro-Israel stickers",
+    "tags": [
+      "Israel-Palestine",
+      "Fascism",
+      "Germany",
+      "Politics",
+      "toblog"
+    ],
+    "cover": "https://thediasporist.de/wp-content/uploads/2025/08/thediasporist-stickers-against-germany-diasporist-collage.jpg"
+  },
+  {
+    "title": "Backing up Spotify",
+    "url": "https://annas-archive.li/blog/backing-up-spotify.html",
+    "date": "2026-01-10",
+    "excerpt": "We backed up Spotify (metadata and music files). It’s distributed in bulk torrents (~300TB). It’s the world’s first “preservation archive” for music which is fully open (meaning it can easily be mirrored by anyone with enough disk space), with 86 million music files, representing around 99.6% of listens.",
+    "tags": [
+      "Music",
+      "Archives",
+      "Web",
+      "toblog"
+    ],
+    "cover": "https://annas-archive.li/blog/spotify/sel_01_overview.png"
+  },
+  {
+    "title": "Humanist Plumbing",
+    "url": "https://www.tbray.org/ongoing/When/202x/2025/12/18/Humanist-Plumbing",
+    "date": "2026-01-10",
+    "excerpt": "",
+    "tags": [
+      "Culture",
+      "Capitalism",
+      "Money",
+      "housing",
+      "Blog",
+      "toblog"
+    ],
+    "cover": "https://www.tbray.org/ongoing/misc/podcast-default.jpg"
+  },
+  {
+    "title": "Sharon Kivland, UNABLE TO ACHIEVE BROAD RECOGNITION IN MY LIFETIME, I LABOURED IN OBSCURITY UNTIL MY DEATH LAST YEAR, 2019 — MA BIBLIOTHÈQUE",
+    "url": "https://mabibliotheque.cargo.site/Sharon-Kivland-UNABLE-TO-ACHIEVE-BROAD-RECOGNITION-IN-MY-LIFETIME-I",
+    "date": "2026-01-10",
+    "excerpt": "Sharon Kivland UNABLE TO ACHIEVE BROAD RECOGNITION IN MY LIFETIME, I LABOURED IN OBSCURITY UNTIL MY DEATH LAST YEAR, 2019 For nearly two...",
+    "tags": [
+      "Books",
+      "Cultural Criticism",
+      "Art",
+      "toblog"
+    ],
+    "cover": "https://freight.cargo.site/w/1200/i/d8aa5dc50102815cfd1a3b27e6f96b029a55989a6a9b48b0f6bbc44dc75ef51e/Cover-web.jpg"
+  },
+  {
+    "title": "A SEXUAL HISTORY OF THE INTERNET",
+    "url": "https://darkforest.metalabel.com/asexualhistoryoftheinternet?variantId=1",
+    "date": "2026-01-10",
+    "excerpt": "How has technology shaped and been shaped by sexuality? This 700+ page artist book gathers anecdotes, artworks, and historical artifacts that reveal the pervasive and perverted origins of our digital tools. UPDATE: Due to shipping delays, USA-orders will ship by early-Dec; international-orders are shipping now.",
+    "tags": [
+      "sex",
+      "Tech",
+      "Internet Culture",
+      "Books",
+      "toblog"
+    ],
+    "cover": "https://metalabel.imgix.net/QmQXM2BNetz6XoyXt1pVXZ4dEFXnyprrAayGUkJyqBdPRP"
+  },
+  {
+    "title": "I sell onions on the Internet - Deep South Ventures",
+    "url": "https://www.deepsouthventures.com/i-sell-onions-on-the-internet/",
+    "date": "2026-01-10",
+    "excerpt": "I sell onions on the Internet",
+    "tags": [
+      "Web",
+      "Business",
+      "Blog",
+      "Personal Websites",
+      "agriculture",
+      "toblog"
+    ],
+    "cover": "https://www.deepsouthventures.com/wp-content/uploads/vidalia-onions-in-field-300x225.jpg"
+  },
+  {
+    "title": "I Was Kidnapped by Deutsche Bahn and All I Got Was 1.50 EUR",
+    "url": "https://www.theocharis.dev/blog/kidnapped-by-deutsche-bahn/",
+    "date": "2026-01-10",
+    "excerpt": "A Christmas Eve journey. Deutsche Bahn. 35 kilometers.",
+    "tags": [
+      "Germany",
+      "travel",
+      "trains",
+      "transport",
+      "toblog"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fwww.theocharis.dev%2Fblog%2Fkidnapped-by-deutsche-bahn%2F"
+  },
+  {
+    "title": "Mudita Store | Mudita Kompakt - a minimalist phone with E Ink® screen.",
+    "url": "https://store.mudita.com/store/mudita-kompakt-global",
+    "date": "2026-01-10",
+    "excerpt": "Mudita Kompakt is a minimalist phone. Helps you stay focused, reduce screen time, support mindful use for digital detox.",
+    "tags": [
+      "Products",
+      "Tech",
+      "toblog"
+    ],
+    "cover": "https://store.mudita.com/media/catalog/product/cache/2656a5b5b1db43ccf945c56fe72c0c6f/m/u/mudita-kompakt-black_01_2.png"
+  },
+  {
+    "title": "Bookbinder",
+    "url": "https://momijizukamori.github.io/bookbinder-js/",
+    "date": "2026-01-10",
+    "excerpt": "",
+    "tags": [
+      "Tools",
+      "Books",
+      "Art & Crafts",
+      "toblog"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fmomijizukamori.github.io%2Fbookbinder-js%2F"
+  },
+  {
+    "title": "9 Classic Crime Stories That Have Just Entered the Public Domain in 2026",
+    "url": "https://crimereads.com/nine-classic-crime-stories-public-domain-2026/",
+    "date": "2026-01-10",
+    "excerpt": "As of January 1st in this year 2025, many copyrighted works produced in the year 1926 have entered the public domain in the United States, which means they are totally free and legal for anyone to …",
+    "tags": [
+      "Book List",
+      "toblog"
+    ],
+    "cover": "https://s26162.pcdn.co/wp-content/uploads/sites/3/2026/01/Public-domain.jpg?w=640"
+  },
+  {
     "title": "Meet the people fighting to keep a language alive online - Rest of World",
     "url": "https://restofworld.org/2021/bringing-urdu-into-the-digital-age",
     "date": "2025-05-13",
