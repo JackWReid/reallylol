@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main class="section-main{{ if eq .Section "post" }} section-main--post{{ end }}">
   {{ if or (eq .Section "books") (eq .Section "films") (eq .Section "media") }}
-    {{ partial "media-nav.html" . }}
+    {{ partial "sub-nav.html" . }}
   {{ end }}
   {{ if eq .Section "post" }}
   <img

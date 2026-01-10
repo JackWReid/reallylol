@@ -1,0 +1,37 @@
+{{ define "main" }}
+<main
+    class="single-main single-main--{{.Params.format}} single-main--{{.Params.type}}"
+>
+    {{ partial "sub-nav.html" . }}
+    <h1 class="single-main__title">{{ .Title }}</h1>
+    <div class="single-main__content">
+        {{ if in .RelPermalink "/links/saved" }}
+          {{ $section := .Site.GetPage "section" "links" }}
+          {{ if $section }}
+            {{ $section.Content }}
+          {{ end }}
+          
+          <ul class="saved-links-list">
+          {{ $links := .Site.Data.links }}
+          {{ range $links }}
+              <li>
+                <article class="saved-link">
+                  <header>
+                    <a href="{{ .url }}" target="_blank" rel="noopener" class="saved-link__title">{{ .title }}</a>
+                  </header>
+                  <p class="saved-link__date">
+                    <time datetime="{{ .date }}">{{ .date }}</time>
+                  </p>
+                  {{- with .excerpt }}
+                    <p class="saved-link__excerpt">{{ . }}</p>
+                  {{ end }}
+                </article>
+              </li>
+          {{ end }}
+          </ul>
+        {{ else }}
+          {{ .Content }}
+        {{ end }}
+    </div>
+</main>
+{{ end }}
