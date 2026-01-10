@@ -1,5 +1,17 @@
 <head>
-  <title>{{ if eq .Kind "term" }}{{ partial "tag-pretty-name.html" (dict "tagName" .Title "Site" .Site) }}{{ else if .Title }}{{ .Title }}{{ else if eq .Section "journal" }}Journal: {{ .Date.Format "Monday 2 January 2006" }}{{ else }}{{ .Summary }}{{ end }} | {{ .Site.Title }}</title>
+  <title>
+    {{- if .IsHome -}}
+      {{ .Site.Title }}
+    {{- else if eq .Kind "term" -}}
+      {{ partial "tag-pretty-name.html" (dict "tagName" .Title "Site" .Site) }} | {{ .Site.Title }}
+    {{- else if .Title -}}
+      {{ .Title }} | {{ .Site.Title }}
+    {{- else if eq .Section "journal" -}}
+      Journal: {{ .Date.Format "Monday 2 January 2006" }} | {{ .Site.Title }}
+    {{- else -}}
+      {{ .Summary }} | {{ .Site.Title }}
+    {{- end -}}
+  </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="{{ .Permalink }}">
   {{ if or (eq .Section "note") (eq .Section "post") }}
@@ -25,7 +37,7 @@
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
-  <meta property="og:title" content="{{ if eq .Kind "term" }}{{ partial "tag-pretty-name.html" (dict "tagName" .Title "Site" .Site) }}{{ else }}{{ .Title }}{{ end }}" />
+  <meta property="og:title" content="{{ if eq .Kind "term" }}{{ partial "tag-pretty-name.html" (dict "tagName" .Title "Site" .Site) }}{{ else if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
   <meta property="og:type" content="article" />
   {{ if .Params.image }}
   <meta name="twitter:card" content="summary_large_image" />
