@@ -227,21 +227,24 @@
     margin: var(--spacing-2xl) auto 0;
     padding-top: var(--spacing-md);
     border-top: 1px solid var(--color-line);
-    background-color: var(--color-background);
     position: relative;
     z-index: 1;
+
+    /* 800px is breakpoint-md */
+    @media screen and (min-width: 800px) {
+      margin-bottom: var(--spacing-md);
+    }
   }
 
   .site-footer {
     max-width: var(--width-outer);
     margin: 0 auto;
+    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    container-name: site-footer;
     container-type: inline-size;
-
-    .photo-box {
-      display: none;
-    }
 
     a {
       color: inherit;
@@ -252,22 +255,24 @@
       flex-shrink: 0;
     }
 
-    @container (min-width: var(--breakpoint-md)) {
-      display: flex;
-
-      .photo-box {
-        display: flex;
-      }
+    /* 800px is breakpoint-md */
+    @media screen and (min-width: 800px) {
+      flex-direction: row;
     }
   }
 
   .site-footer__details {
     margin: 0 0 var(--spacing-base);
+    text-align: right;
 
     p {
       a {
         display: inline-block;
-        margin: 0 var(--spacing-base) 0 0;
+        margin: 0 0 0 0;
+
+        &:not(:last-child) {
+          margin-right: var(--spacing-base);
+        }
       }
 
       &:first-child {
@@ -280,13 +285,14 @@
     }
   }
 
-  @container (min-width: var(--breakpoint-md)) {
+  /* 800px is breakpoint-md */
+  @container site-footer (width > 800px) {
     .site-footer__details {
-      margin: 0;
       text-align: right;
+      margin: 0;
 
-      p a {
-        margin: 0 0 0 var(--spacing-base);
+      p {
+        margin-bottom: 0;
       }
     }
   }
@@ -301,33 +307,32 @@
   }
 
   .home-component {
-    margin: 100px 0 50px;
+    display: block;
+    margin: 50px 0;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     container-type: inline-size;
 
-    @container (max-width: var(--breakpoint-lg)) {
-      margin: 50px 0;
-      flex-direction: column;
-    }
-  }
-
-  @container (max-width: var(--breakpoint-lg)) {
-    .home-component__reading {
-      margin-bottom: var(--spacing-lg);
+    /* 800px is breakpoint-md */
+    @media screen and (min-width: 800px) {
+      display: flex;
+      margin: 100px 0 50px;
     }
   }
 
   .home-hero-image {
-    display: block;
+    display: none;
     max-width: var(--width-hero-image);
+
+    /* 800px is breakpoint-md */
+    @media screen and (min-width: 800px) {
+      display: block;
+    }
   }
 
   .home-component__reading {
     flex: 1;
-    border-bottom: 1px solid var(--color-text);
 
     dt {
       font-weight: bold;
@@ -337,12 +342,28 @@
 
     dd {
       margin: 0;
-      font-size: var(--font-size-xl);
+      font-size: var(--font-size-2xl);
 
       span {
         font-style: italic;
       }
     }
+
+    /* 800px is breakpoint-md */
+    @media screen and (min-width: 800px) {
+      & {
+        border-bottom: 1px solid var(--color-line);
+      }
+
+      dd {
+        font-size: var(--font-size-xl);
+      }
+    }
+
+    /* 800px is breakpoint-md */
+    /* @media screen and (max-width: 800px) {
+      margin-bottom: var(--spacing-lg);
+    } */
   }
 
   .single-main,
@@ -431,7 +452,7 @@
   }
 
   .photo-box {
-    display: flex;
+    display: none;
   }
 
   .photo-box img {
@@ -440,6 +461,13 @@
 
   .photo-box__details {
     padding: 0 0 0 var(--spacing-base);
+  }
+
+  /* 800px is breakpoint-md */
+  @container site-footer (width > 800px) {
+    .photo-box {
+      display: flex;
+    }
   }
 
   .image-item {
@@ -1065,7 +1093,7 @@
         height: auto;
       }
 
-      .book-card__cover--empty {
+      &.book-card__cover--empty {
         width: 100%;
         height: 100%;
         aspect-ratio: 2/3;
@@ -1112,15 +1140,6 @@
     transform: translateY(2px);
   }
 
-  body.note {
-    color: var(--color-link-hover-text);
-    background-color: var(--color-footer-bg);
-
-    .site-header {
-      border-bottom: 1px solid var(--color-link-hover-text);
-    }
-  }
-
   .note-section-header {
     margin: var(--spacing-3xl) auto;
     position: relative;
@@ -1140,6 +1159,17 @@
     writing-mode: vertical-rl;
     text-transform: uppercase;
     text-orientation: upright;
+  }
+}
+
+@layer specials {
+  body.note {
+    color: var(--color-link-hover-text);
+    background-color: var(--color-footer-bg);
+
+    .site-header {
+      border-bottom: 1px solid var(--color-link-hover-text);
+    }
   }
 }
 
@@ -1189,3 +1219,4 @@
     text-align: center;
   }
 }
+
