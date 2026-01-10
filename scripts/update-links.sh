@@ -142,7 +142,7 @@ while true; do
 	jq -c '.items[] | {
 		title: (if .title and .title != "" then .title else .domain // "Untitled" end),
 		url: .link,
-		date: (if .lastUpdate then (.lastUpdate | split("T")[0]) else (.created | split("T")[0]) end),
+		date: (.created | split("T")[0]),
 		excerpt: (if .excerpt then .excerpt else "" end),
 		tags: (if .tags then .tags else [] end),
 		cover: (if .cover then .cover else "" end)
