@@ -466,6 +466,8 @@
   .saved-link {
     margin: var(--spacing-lg) 0 0 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
     list-style: none;
 
     header {
@@ -473,6 +475,7 @@
       padding: 0;
       list-style: none;
       font-size: var(--font-size-lg);
+      max-width: 60ch;
     }
 
     p {
@@ -480,6 +483,20 @@
       padding: 0;
       list-style: none;
       font-size: var(--font-size-base);
+      max-width: 60ch;
+    }
+
+    .saved-link__date {
+      order: 1;
+      font-size: var(--font-size-xs);
+    }
+
+    .saved-link__header {
+      order: 2;
+    }
+
+    .saved-link__excerpt {
+      order: 3;
     }
   }
 

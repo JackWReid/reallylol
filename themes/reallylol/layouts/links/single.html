@@ -13,11 +13,11 @@
           {{ range $links }}
               <li>
                 <article class="saved-link">
-                  <header>
+                  <header class="saved-link__header">
                     <a href="{{ .url }}" target="_blank" rel="noopener" class="saved-link__title">{{ .title }}</a>
                   </header>
                   <p class="saved-link__date">
-                    <time datetime="{{ .date }}">{{ .date }}</time>
+                    <time datetime="{{ .date }}">{{ (time .date).Format "2 January 2006" }}</time>
                   </p>
                   {{- with .excerpt }}
                     <p class="saved-link__excerpt">{{ . }}</p>
