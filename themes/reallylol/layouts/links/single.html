@@ -6,10 +6,7 @@
     <h1 class="single-main__title">{{ .Title }}</h1>
     <div class="single-main__content">
         {{ if in .RelPermalink "/links/saved" }}
-          {{ $section := .Site.GetPage "section" "links" }}
-          {{ if $section }}
-            {{ $section.Content }}
-          {{ end }}
+          {{ .Content }}
           
           <ul class="saved-links-list">
           {{ $links := .Site.Data.links }}
