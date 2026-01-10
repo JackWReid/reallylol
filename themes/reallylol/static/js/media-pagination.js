@@ -131,19 +131,23 @@
 
     /**
      * Go to previous page
+     * Always jump instantly to top on navigation
      */
     function goToPrev() {
       if (currentPage > 1) {
         showPage(currentPage - 1);
+        window.scrollTo(0, 0);
       }
     }
 
     /**
      * Go to next page
+     * Always jump instantly to top on navigation
      */
     function goToNext() {
       if (currentPage < totalPages) {
         showPage(currentPage + 1);
+        window.scrollTo(0, 0);
       }
     }
 
