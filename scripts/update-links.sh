@@ -66,15 +66,8 @@ if [[ -z "${RAINDROP_ACCESS_TOKEN}" ]]; then
 	exit 1
 fi
 
-# Get tag name from argument or environment variable
-TAG="${1:-${RAINDROP_TAG:-}}"
-
-if [[ -z "${TAG}" ]]; then
-	echo "Error: Tag name not provided"
-	echo "Usage: ./scripts/update-links.sh <tag>"
-	echo "   OR: export RAINDROP_TAG='<tag>' && ./scripts/update-links.sh"
-	exit 1
-fi
+# Get tag name from argument, environment variable, or default to "toblog"
+TAG="${1:-${RAINDROP_TAG:-toblog}}"
 
 # Create data directory if it doesn't exist
 mkdir -p ./data
