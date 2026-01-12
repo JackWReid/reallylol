@@ -42,6 +42,7 @@ Here's this fixed directory of links that I try to update and prune and organise
 
 ### Link Directories
 - [Electric Trash](https://www.electrictrash.com)
+- [Mx Tynehorne's Cabinet of Hypertext Curiosities](https://satyrs.eu/linkroll)
 - [Terra](https://terra.finzdani.net)
 - [href.cool](https://href.cool)
 - [Gossip's Web](https://gossipsweb.net)
@@ -62,8 +63,9 @@ Here's this fixed directory of links that I try to update and prune and organise
 - [Death Generator](https://deathgenerator.com) - Generate the death screens from classic games with whatever text you want
 
 ### Language
-- [My Knipe List](https://cs.stanford.edu/~kach/words.txt) - I think this is rot-n encoded and I don't remember what it is
+- [The Phrontistery](https://phrontistery.info/) - A website dedicated to rare words
 - [Etymonline](https://www.etymonline.com/) - Etymology resource for people who can't afford OED
+- [My Knipe List](https://cs.stanford.edu/~kach/words.txt) - I think this is rot-n encoded and I don't remember what it is
 
 ### Coding
 - [Simon Willison](https://simonwillison.net/) - Best writer about AI
