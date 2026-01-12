@@ -19,3 +19,15 @@ unsafe = true
 [[related.indices]]
 name = "tags"
 weight = 100
+
+[mediaTypes."application/xml"]
+suffixes = ["xml"]
+
+[outputFormats.SITEMAP]
+mediaType = "application/xml"
+baseName = "sitemap"
+isPlainText = true
+notAlternative = true
+
+[outputs]
+home = ["HTML", "SITEMAP"]
