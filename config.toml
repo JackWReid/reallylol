@@ -4,6 +4,7 @@ title = "really.lol"
 theme = "reallylol"
 buildFuture = true
 timeout = 999999
+disableKinds = ["sitemap.xml"]
 
 [pagination]
 pagerSize = 10
