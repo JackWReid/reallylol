@@ -1,5 +1,136 @@
 [
   {
+    "title": "Mx Tynehorne’s Cabinet of Hypertext Curiosities",
+    "url": "https://satyrs.eu/linkroll",
+    "date": "2026-01-12",
+    "excerpt": "",
+    "tags": [
+      "Link Directory",
+      "IndieWeb",
+      "Web",
+      "Personal Websites",
+      "toblog"
+    ],
+    "cover": "https://satyrs.eu/linkroll/shots/artybollocks.webp"
+  },
+  {
+    "title": "The Neglected Books Page – www.NeglectedBooks.com: Where forgotten books are remembered",
+    "url": "https://neglectedbooks.com/",
+    "date": "2026-01-12",
+    "excerpt": "",
+    "tags": [
+      "Books",
+      "Literature",
+      "Link Directory",
+      "Blog",
+      "toblog"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fneglectedbooks.com%2F"
+  },
+  {
+    "title": "radicalcartography",
+    "url": "http://www.radicalcartography.net/",
+    "date": "2026-01-12",
+    "excerpt": "All manner of funny maps collected and considered.",
+    "tags": [
+      "cartography",
+      "map",
+      "Data Visualisation",
+      "Geography",
+      "toblog"
+    ],
+    "cover": "https://rdl.ink/render/http%3A%2F%2Fwww.radicalcartography.net%2F"
+  },
+  {
+    "title": "Homeromanteion",
+    "url": "http://www.homeromanteion.com/",
+    "date": "2026-01-12",
+    "excerpt": "One of the more obscure methods of divination, found in the Greek Magical Papyri, is the Ho­mer­o­man­teion, where the diviner rolls a six-sided dice three times, and uses the result to pick a random verse from the works of Homer. Does it work? Only one way to find out!",
+    "tags": [
+      "Personal Websites",
+      "History",
+      "Art",
+      "greece",
+      "toblog"
+    ],
+    "cover": "http://homeromanteion.com/shareScreenshot.png"
+  },
+  {
+    "title": "ORBIS: The Stanford Geospatial Network Model of the Roman World",
+    "url": "https://orbis.stanford.edu/",
+    "date": "2026-01-12",
+    "excerpt": "Google Maps for Roman legions.",
+    "tags": [
+      "toblog",
+      "History",
+      "Geography",
+      "italy",
+      "rome",
+      "cartography",
+      "Europe",
+      "Archeology"
+    ],
+    "cover": ""
+  },
+  {
+    "title": "THEOI GREEK MYTHOLOGY - Exploring Mythology in Classical Literature & Art",
+    "url": "https://www.theoi.com/",
+    "date": "2026-01-12",
+    "excerpt": "Welcome to the Theoi Project, a site exploring Greek mythology and the gods in classical literature and art. The aim of the project is to provide a comprehensive, free reference guide to the gods (theoi), spirits (daimones), fabulous creatures (theres) and heroes of ancient Greek mythology and religion.",
+    "tags": [
+      "Greece",
+      "Classics",
+      "Art",
+      "History",
+      "Religion",
+      "toblog"
+    ],
+    "cover": "https://www.theoi.com/image/mythology-gods.jpg"
+  },
+  {
+    "title": "Bridges On The Tyne",
+    "url": "https://www.bridgesonthetyne.co.uk/",
+    "date": "2026-01-12",
+    "excerpt": "All Bridges On The River Tyne,including, Newcastle/Gateshead, North Tyne, South Tyne, ferries, tunnels, footbridges, defunct bridges, facts, etc.",
+    "tags": [
+      "UK",
+      "Geography",
+      "Personal Websites",
+      "Cities",
+      "toblog"
+    ],
+    "cover": "https://www.bridgesonthetyne.co.uk/images/tyneprint.jpg"
+  },
+  {
+    "title": "a portrait of Tenochtitlan",
+    "url": "https://tenochtitlan.thomaskole.nl/",
+    "date": "2026-01-12",
+    "excerpt": "a 3D reconstruction of the capital of the Aztec Empire",
+    "tags": [
+      "History",
+      "Archeology",
+      "Architecture",
+      "Geography",
+      "south america",
+      "toblog"
+    ],
+    "cover": "https://tenochtitlan.thomaskole.nl/resources/opengraph.jpg"
+  },
+  {
+    "title": "Pentagon Pizza Index - Real-Time OSINT Dashboard",
+    "url": "https://www.pizzint.watch/",
+    "date": "2026-01-12",
+    "excerpt": "Track pizza shop activity around the Pentagon. The unconventional intelligence tool monitoring geopolitical tensions.",
+    "tags": [
+      "Conflict",
+      "USA",
+      "Politics",
+      "Food",
+      "toblog"
+    ],
+    "cover": "https://pizzint.watch/OpenGraphPizzint.jpg?v=4"
+  },
+  {
     "title": "9 Classic Crime Stories That Have Just Entered the Public Domain in 2026",
     "url": "https://crimereads.com/nine-classic-crime-stories-public-domain-2026/",
     "date": "2026-01-08",
@@ -945,6 +1076,18 @@
       "Shopping Items"
     ],
     "cover": "https://winnielim.org/wp-content/uploads/2023/11/20231127-DSCF3976.jpg"
+  },
+  {
+    "title": "The Phrontistery: Obscure Words",
+    "url": "https://phrontistery.info/index.html",
+    "date": "2023-11-23",
+    "excerpt": "English obscure words and etymology resources: online dictionary of weird and unusual words, word lists, technical vocabulary aids, lipograms, and word related essays",
+    "tags": [
+      "History",
+      "Language",
+      "toblog"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fphrontistery.info%2Findex.html"
   },
   {
     "title": "Hallucinating with art models – Monica Dinculescu",
