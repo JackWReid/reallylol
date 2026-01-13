@@ -83,11 +83,11 @@
       return;
     }
 
-    const prevButton = controls.querySelector('[data-pagination-prev]');
-    const nextButton = controls.querySelector('[data-pagination-next]');
+    const prevWrapper = controls.querySelector('.prev-wrapper');
+    const nextWrapper = controls.querySelector('.next-wrapper');
     const infoSpan = controls.querySelector('[data-pagination-info]');
 
-    if (!prevButton || !nextButton || !infoSpan) {
+    if (!prevWrapper || !nextWrapper || !infoSpan) {
       return;
     }
 
@@ -116,12 +116,27 @@
       // Load images for visible items (books)
       loadLazyImages(container);
 
-      // Update button states
-      prevButton.disabled = page === 1;
-      nextButton.disabled = page === totalPages;
+      // Update controls to match server-side pagination markup (links or spans)
+      // Prev control
+      if (page === 1) {
+        prevWrapper.innerHTML = '<span data-pagination-prev>Back</span>';
+      } else {
+        prevWrapper.innerHTML = '<a href="#" data-pagination-prev>Back</a>';
+        const prevLink = prevWrapper.querySelector('[data-pagination-prev]');
+        prevLink.addEventListener('click', function(e) { e.preventDefault(); goToPrev(); });
+      }
 
-      // Update info text
-      infoSpan.textContent = `Page ${page} of ${totalPages}`;
+      // Next control
+      if (page === totalPages) {
+        nextWrapper.innerHTML = '<span data-pagination-next>Next</span>';
+      } else {
+        nextWrapper.innerHTML = '<a href="#" data-pagination-next>Next</a>';
+        const nextLink = nextWrapper.querySelector('[data-pagination-next]');
+        nextLink.addEventListener('click', function(e) { e.preventDefault(); goToNext(); });
+      }
+
+      // Update info text (e.g., "1 of 5")
+      infoSpan.textContent = `${page} of ${totalPages}`;
 
       // Update URL
       updateUrlParam('page', page);
@@ -151,9 +166,7 @@
       }
     }
 
-    // Set up event listeners
-    prevButton.addEventListener('click', goToPrev);
-    nextButton.addEventListener('click', goToNext);
+    // Initial listeners added in showPage when links are enabled
 
     // Show pagination controls
     controls.style.display = '';
@@ -215,14 +228,37 @@
           }
           
           if (controls) {
-            const prevButton = controls.querySelector('[data-pagination-prev]');
-            const nextButton = controls.querySelector('[data-pagination-next]');
+            const prevWrapper = controls.querySelector('.prev-wrapper');
+            const nextWrapper = controls.querySelector('.next-wrapper');
             const infoSpan = controls.querySelector('[data-pagination-info]');
-            
-            if (prevButton && nextButton && infoSpan) {
-              prevButton.disabled = targetPage === 1;
-              nextButton.disabled = targetPage === totalPages;
-              infoSpan.textContent = `Page ${targetPage} of ${totalPages}`;
+
+            if (prevWrapper && nextWrapper && infoSpan) {
+              if (targetPage === 1) {
+                prevWrapper.innerHTML = '<span data-pagination-prev>Back</span>';
+              } else {
+                prevWrapper.innerHTML = '<a href="#" data-pagination-prev>Back</a>';
+                const prevLink = prevWrapper.querySelector('[data-pagination-prev]');
+                prevLink.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  window.scrollTo(0, 0);
+                  const urlPage = Math.max(1, targetPage - 1);
+                  updateUrlParam('page', urlPage);
+                });
+              }
+
+              if (targetPage === totalPages) {
+                nextWrapper.innerHTML = '<span data-pagination-next>Next</span>';
+              } else {
+                nextWrapper.innerHTML = '<a href="#" data-pagination-next>Next</a>';
+                const nextLink = nextWrapper.querySelector('[data-pagination-next]');
+                nextLink.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  const urlPage = Math.min(totalPages, targetPage + 1);
+                  updateUrlParam('page', urlPage);
+                });
+              }
+
+              infoSpan.textContent = `${targetPage} of ${totalPages}`;
             }
           }
         }
