@@ -107,7 +107,7 @@ The site uses custom Hugo archetypes for different content types:
    - Template: `archetypes/photo.md`
    - Location: `content/photo/`
    - Filename format: `YYYY-MM-DD-slug.md`
-   - Image location: `static/img/photo/YYYY-MM-DD-slug.jpg`
+   - Image location: `assets/img/photo/YYYY-MM-DD-slug.jpg` (served via symlink in `static/img/photo/`)
    - Fields: title, date, image, location, tags
    - Images are resized to max 1400x1400px, converted to JPG
 
@@ -175,7 +175,7 @@ Creates a new photo post from an image file with EXIF extraction and image proce
 - Requires image path as argument
 - Extracts creation date from EXIF data (DateTimeOriginal)
 - Prompts for: slug, title, location, tags (comma-separated), alt text
-- Copies image to `static/img/photo/YYYY-MM-DD-slug.jpg`
+- Copies image to `assets/img/photo/YYYY-MM-DD-slug.jpg` (symlinked into `static/img/photo/` for legacy references)
 - Resizes to max 1400x1400px (maintains aspect ratio)
 - Converts to JPG format, quality 100%
 - Creates file: `content/photo/YYYY-MM-DD-slug.md`
