@@ -16,6 +16,8 @@
 
 {{ if $caption }}
 <figure>
+{{ else }}
+<div class="shortcode-image">
 {{ end }}
 
 {{ $relative := strings.TrimPrefix "/" $srcParam }}
@@ -53,4 +55,7 @@
 {{ if $caption }}
 <figcaption>{{ $caption }}</figcaption>
 </figure>
+{{ end }}
+{{ if not $caption }}
+</div>
 {{ end }}
