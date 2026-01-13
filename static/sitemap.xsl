@@ -4,10 +4,20 @@
 
   <!-- Generic styling for both sitemapindex and urlset -->
   <xsl:template match="/">
+    <xsl:variable name="pageTitle">
+      <xsl:choose>
+        <xsl:when test="/s:sitemapindex">really.lol Sitemap Index</xsl:when>
+        <xsl:when test="contains(/s:urlset/s:url[1]/s:loc, '/post/')">really.lol Posts Sitemap</xsl:when>
+        <xsl:when test="contains(/s:urlset/s:url[1]/s:loc, '/note/')">really.lol Notes Sitemap</xsl:when>
+        <xsl:when test="contains(/s:urlset/s:url[1]/s:loc, '/photo/')">really.lol Photos Sitemap</xsl:when>
+        <xsl:when test="contains(/s:urlset/s:url[1]/s:loc, '/highlight/')">really.lol Highlights Sitemap</xsl:when>
+        <xsl:otherwise>really.lol Pages Sitemap</xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
     <html>
       <head>
         <meta charset="utf-8" />
-        <title>really.lol Sitemap</title>
+        <title><xsl:value-of select="$pageTitle"/></title>
         <style>
           body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif; padding: 1.5rem; color: #19282f; background: #f5efd3; }
           h1 { margin: 0 0 1rem 0; }
@@ -21,7 +31,7 @@
       <body>
         <xsl:choose>
           <xsl:when test="/s:sitemapindex">
-            <h1>Sitemap Index</h1>
+            <h1><xsl:value-of select="$pageTitle"/></h1>
             <p class="muted">This index links to the sectioned sitemaps.</p>
             <table>
               <tr><th>Location</th></tr>
@@ -33,7 +43,7 @@
             </table>
           </xsl:when>
           <xsl:otherwise>
-            <h1>Sitemap</h1>
+            <h1><xsl:value-of select="$pageTitle"/></h1>
             <table>
               <tr>
                 <th>URL</th>
@@ -55,4 +65,3 @@
   </xsl:template>
 
 </xsl:stylesheet>
-
