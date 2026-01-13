@@ -143,15 +143,18 @@
 
   figure {
     margin: var(--spacing-lg) 0;
+    text-align: center;
 
     img {
-      display: block;
-      width: 100%;
+      display: inline-block;
+      max-width: min(100%, var(--width-inner));
+      height: auto;
     }
   }
 
   figcaption {
     font-style: italic;
+    margin-top: var(--spacing-sm);
   }
 
   table {
@@ -1267,4 +1270,3 @@
     text-align: center;
   }
 }
-
