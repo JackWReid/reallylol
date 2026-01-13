@@ -86,7 +86,7 @@ fi
 
 # Escape alt text for HTML attribute context
 alt_text_escaped=${alt_text//&/&amp;}
-alt_text_escaped=${alt_text_escaped//"/&quot;}
+alt_text_escaped=${alt_text_escaped//\"/&quot;}
 alt_text_escaped=${alt_text_escaped//</&lt;}
 alt_text_escaped=${alt_text_escaped//>/&gt;}
 
@@ -96,9 +96,10 @@ md_template=$(cat <<EOF
 title: "$title"
 date: $creation_datetime
 image: "$rel_img_path"
-location: $location
+location: "$location"
 tags:
-$formatted_tags---
+$formatted_tags
+---
 
 {{< image src="$rel_img_path" alt="$alt_text_escaped" >}}
 EOF
