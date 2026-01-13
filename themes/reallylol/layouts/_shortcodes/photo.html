@@ -1,27 +1,31 @@
-{{ $src := resources.GetMatch (.Get "src") }}
+{{ $srcParam := .Get "src" }}
 {{ $caption := .Get "caption" }}
+{{ $alt := .Get "alt" | default "" }}
 
 {{ if $caption }}
 <figure>
 {{ end }}
 
-{{ if in (.Get "src") "http" }}
-<img src="{{$src}}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+{{ $rendered := "" }}
+{{ if hasPrefix $srcParam "http" }}
+  {{ $rendered = printf "<img src=\"%s\" alt=\"%s\">" $srcParam $alt }}
 {{ else }}
-{{ if in (.Get "src") ".gif" }}
-<img src="{{$src.RelPermalink}}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
-{{ else }}
+  {{ $relative := strings.TrimPrefix "/" $srcParam }}
+  {{ with resources.Get $relative }}
+    {{ if in $relative ".gif" }}
+      {{ $rendered = printf "<img src=\"%s\" alt=\"%s\">" .RelPermalink $alt }}
+    {{ else }}
+      {{ $resized := .Resize "1000x" }}
+      {{ $rendered = printf "<img src=\"%s\" alt=\"%s\">" $resized.RelPermalink $alt }}
+    {{ end }}
+  {{ else }}
+    {{ $rendered = printf "<img src=\"%s\" alt=\"%s\">" $srcParam $alt }}
+  {{ end }}
+{{ end }}
 
-{{ .Scratch.Set "resized" ($src.Resize "1000x") }}
-{{ $resized := .Scratch.Get "resized" }}
-
-<img src="{{ $resized.RelPermalink }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+{{ $rendered | safeHTML }}
 
 {{ if $caption }}
 <figcaption>{{ $caption }}</figcaption>
 </figure>
 {{ end }}
-
-{{ end }}
-{{ end }}
-

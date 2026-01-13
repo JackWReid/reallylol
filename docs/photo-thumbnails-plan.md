@@ -1,7 +1,7 @@
 # Photo thumbnail plan
 
 ## Observations
-- There are ~2.6k photo posts (`content/photo` files) and ~2.6k images under `static/img/photo` totaling ~513 MB.
+- There are ~2.6k photo posts (`content/photo` files) and ~2.6k images under `assets/img/photo` totaling ~513 MB.
 - Section template (`themes/reallylol/layouts/photo/section.html`) links directly to the original files. The browser downloads full-resolution (>1400px) photos for every thumbnail in the grid, which is heavy for paginated views.
 
 ## Hugo image pipeline approach
@@ -26,7 +26,7 @@
 The dynamic Hugo pipeline with cached `resources/_gen` gives the best balance: we only pay the resize cost when adding new photos, repo size stays stable, and we still get lightweight 500 px thumbnails in the grid.
 
 ## Implementation notes (assets-based)
-- Moved `static/img/photo/` into `assets/img/photo/` and added a symlink back to preserve legacy `/img/photo/...` references while enabling Hugo's image pipeline.
-- Updated photo listing, single view, multi-preview, and footer random photo templates to call `resources.Get` and render `.Fit`ted derivatives (500 px for thumbnails, 1400 px for the hero image).
-- Adjusted `scripts/new-photo.sh` + documentation so new uploads land in `assets/img/photo/`.
+- Moved `static/img/photo/` into `assets/img/photo/`, updated every photo’s front matter + Markdown to reference that asset path (via the `photo` shortcode), and removed the need for a compatibility symlink.
+- Updated photo listing, single view, multi-preview, footer random photo templates, and head metadata to call `resources.Get` and render `.Fit`ted derivatives (500 px for thumbnails, 1400 px for the hero image).
+- Adjusted `scripts/new-photo.sh` + documentation so new uploads land in `assets/img/photo/` and use the shortcode automatically.
 - A full `hugo` build now processes ~5.3k images the first time (~90 s locally) and caches them under `resources/_gen/` for subsequent runs.

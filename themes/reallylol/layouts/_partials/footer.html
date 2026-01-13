@@ -9,14 +9,18 @@
           {{ $imagePath := $photoPage.Params.image }}
           {{ $thumbSrc := "" }}
           {{ if $imagePath }}
-            {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
-            {{ with resources.Get $relativePath }}
-              {{ $thumb := .Fit "500x500" }}
-              {{ $thumbSrc = $thumb.RelPermalink }}
+            {{ if hasPrefix $imagePath "http" }}
+              {{ $thumbSrc = $imagePath }}
+            {{ else }}
+              {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
+              {{ with resources.Get $relativePath }}
+                {{ $thumb := .Fit "500x500" }}
+                {{ $thumbSrc = $thumb.RelPermalink }}
+              {{ end }}
             {{ end }}
           {{ end }}
           <a class="photo-box__link" href="{{ $photoPage.Permalink }}">
-            <img class="photo-box__image" src="{{ if $thumbSrc }}{{ $thumbSrc }}{{ else }}{{ $imagePath | absURL }}{{ end }}" alt="">
+            <img class="photo-box__image" src="{{ if $thumbSrc }}{{ $thumbSrc }}{{ else }}{{ $imagePath }}{{ end }}" alt="">
           </a>
           <div class="photo-box__details">
             <p class="image-item__label">Random photo</p>

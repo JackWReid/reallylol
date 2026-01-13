@@ -40,9 +40,20 @@
   <meta property="og:title" content="{{ if eq .Kind "term" }}{{ partial "tag-pretty-name.html" (dict "tagName" .Title "Site" .Site) }}{{ else if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
   <meta property="og:type" content="article" />
   {{ if .Params.image }}
+  {{ $imagePath := .Params.image }}
+  {{ $ogSrc := "" }}
+  {{ if hasPrefix $imagePath "http" }}
+    {{ $ogSrc = $imagePath }}
+  {{ else }}
+    {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
+    {{ with resources.Get $relativePath }}
+      {{ $ogImage := .Fit "1200x1200" }}
+      {{ $ogSrc = $ogImage.RelPermalink | absURL }}
+    {{ end }}
+  {{ end }}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="{{ .Params.image | absURL }}">
-  <meta name="twitter:image" content="{{ .Params.image | absURL }}">
+  <meta property="og:image" content="{{ if $ogSrc }}{{ $ogSrc }}{{ else }}{{ $imagePath }}{{ end }}">
+  <meta name="twitter:image" content="{{ if $ogSrc }}{{ $ogSrc }}{{ else }}{{ $imagePath }}{{ end }}">
   {{ else }}
   <meta name="twitter:card" content="summary" />
   {{ end }}

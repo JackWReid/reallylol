@@ -2,11 +2,12 @@
 title: "Clifton vertical"
 date: 2022-07-15
 location: Bristol, UK
-image: "/img/photo/2022-07-15-clifton-plunge.jpg"
+image: "img/photo/2022-07-15-clifton-plunge.jpg"
 tags:
   - uk
   - architecture
   - nature
 ---
 
-![The drop underneath a bridge, with a river far below](/img/photo/2022-07-15-clifton-plunge.jpg)
+
+{{< photo src="img/photo/2022-07-15-clifton-plunge.jpg" alt="The drop underneath a bridge, with a river far below" >}}

@@ -2,7 +2,7 @@
 title: "Sea graves"
 date: 2022-07-15
 location: Clevedon, Somerset
-image: "/img/photo/sea-graves.jpg"
+image: "img/photo/sea-graves.jpg"
 tags:
   - uk
   - landscape
@@ -12,4 +12,5 @@ tags:
   - sea
 ---
 
-![A graveyard right next to the sea](/img/photo/sea-graves.jpg)
+
+{{< photo src="img/photo/sea-graves.jpg" alt="A graveyard right next to the sea" >}}

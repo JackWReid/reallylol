@@ -2,7 +2,7 @@
 title: "Canonbury"
 date: 2022-07-02
 location: Canonbury, UK
-image: "/img/photo/2022-07-15-canonbury.jpg"
+image: "img/photo/2022-07-15-canonbury.jpg"
 tags:
   - london
   - cities
@@ -10,4 +10,5 @@ tags:
   - transport
 ---
 
-![The Overground station platform at Canonbury](/img/photo/2022-07-15-canonbury.jpg)
+
+{{< photo src="img/photo/2022-07-15-canonbury.jpg" alt="The Overground station platform at Canonbury" >}}

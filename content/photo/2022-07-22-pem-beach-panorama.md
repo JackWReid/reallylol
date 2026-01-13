@@ -2,7 +2,7 @@
 title: "Down there"
 date: 2022-07-22
 location: Pembrokeshire, Wales
-image: "/img/photo/2022-07-22-pem-beach-panorama.jpg"
+image: "img/photo/2022-07-22-pem-beach-panorama.jpg"
 tags:
   - wales
   - coast
@@ -10,4 +10,5 @@ tags:
   - landscape
 ---
 
-![A beach under cliffs, from above](/img/photo/2022-07-22-pem-beach-panorama.jpg)
+
+{{< photo src="img/photo/2022-07-22-pem-beach-panorama.jpg" alt="A beach under cliffs, from above" >}}

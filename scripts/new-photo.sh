@@ -60,7 +60,7 @@ fi
 # Set up file paths
 img_path="./assets/img/photo/$creation_date-$slug.jpg"
 md_path="./content/photo/$creation_date-$slug.md"
-abs_img_path="/img/photo/$creation_date-$slug.jpg"
+rel_img_path="img/photo/$creation_date-$slug.jpg"
 
 # Ensure directories exist
 mkdir -p "./assets/img/photo"
@@ -84,17 +84,23 @@ if [ -n "$tags" ]; then
 	done
 fi
 
+# Escape alt text for HTML attribute context
+alt_text_escaped=${alt_text//&/&amp;}
+alt_text_escaped=${alt_text_escaped//"/&quot;}
+alt_text_escaped=${alt_text_escaped//</&lt;}
+alt_text_escaped=${alt_text_escaped//>/&gt;}
+
 # Create frontmatter template
 md_template=$(cat <<EOF
 ---
 title: "$title"
 date: $creation_datetime
-image: "$abs_img_path"
+image: "$rel_img_path"
 location: $location
 tags:
 $formatted_tags---
 
-![$alt_text]($abs_img_path)
+{{< photo src="$rel_img_path" alt="$alt_text_escaped" >}}
 EOF
 )
 

@@ -2,7 +2,7 @@
 title: "The grey run"
 date: 2022-02-24
 location: Hasliberg, Switzerand
-image: "/img/photo/2022-02-24-the-grey-run.jpg"
+image: "img/photo/2022-02-24-the-grey-run.jpg"
 tags:
     - travel
     - switzerland
@@ -10,4 +10,5 @@ tags:
     - mountains
 ---
 
-![A cloudy mountain landscape](/img/photo/2022-02-24-the-grey-run.jpg)
+
+{{< photo src="img/photo/2022-02-24-the-grey-run.jpg" alt="A cloudy mountain landscape" >}}

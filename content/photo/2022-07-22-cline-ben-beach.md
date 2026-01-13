@@ -2,7 +2,7 @@
 title: "Daze"
 date: 2022-07-22
 location: Pembrokeshire, Wales
-image: "/img/photo/2022-07-22-cline-ben-beach.jpg"
+image: "img/photo/2022-07-22-cline-ben-beach.jpg"
 tags:
   - beach
   - coast
@@ -11,4 +11,5 @@ tags:
   - wales
 ---
 
-![Two people dozing on a sunny beach](/img/photo/2022-07-22-cline-ben-beach.jpg)
+
+{{< photo src="img/photo/2022-07-22-cline-ben-beach.jpg" alt="Two people dozing on a sunny beach" >}}

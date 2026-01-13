@@ -2,7 +2,7 @@
 title: "Panorama lineup"
 date: 2023-01-23
 location: Hasliberg, Switzerland
-image: "/img/photo/2023-01-23-alptower-lineup.jpg"
+image: "img/photo/2023-01-23-alptower-lineup.jpg"
 tags:
  - skiing
  - mountains
@@ -12,4 +12,5 @@ tags:
  - people
 ---
 
-![Three skiers lined up in front of an Alpine panorama](/img/photo/2023-01-23-alptower-lineup.jpg)
+
+{{< photo src="img/photo/2023-01-23-alptower-lineup.jpg" alt="Three skiers lined up in front of an Alpine panorama" >}}
