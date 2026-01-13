@@ -25,9 +25,7 @@
   {{ if .Params.image }}
   {{ $imagePath := .Params.image }}
   {{ $heroSrc := "" }}
-  {{ if hasPrefix $imagePath "http" }}
-    {{ $heroSrc = $imagePath }}
-  {{ else }}
+  {{ if $imagePath }}
     {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
     {{ with resources.Get $relativePath }}
       {{ $heroImg := .Fit "1400x1400" }}

@@ -42,9 +42,7 @@
   {{ if .Params.image }}
   {{ $imagePath := .Params.image }}
   {{ $ogSrc := "" }}
-  {{ if hasPrefix $imagePath "http" }}
-    {{ $ogSrc = $imagePath }}
-  {{ else }}
+  {{ if $imagePath }}
     {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
     {{ with resources.Get $relativePath }}
       {{ $ogImage := .Fit "1200x1200" }}
