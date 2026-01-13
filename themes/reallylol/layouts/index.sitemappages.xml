@@ -4,7 +4,7 @@
   <!-- Home: last change across the site -->
   <url>
     <loc>{{ "/" | absURL }}</loc>
-    {{ with .Site.LastChange }}<lastmod>{{ .Format "2006-01-02" }}</lastmod>{{ end }}
+    {{ with .Site.Lastmod }}<lastmod>{{ .Format "2006-01-02" }}</lastmod>{{ end }}
     <changefreq>daily</changefreq><priority>1.0</priority>
   </url>
 

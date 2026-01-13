@@ -19,7 +19,7 @@ Files
 - `themes/reallylol/layouts/sitemap-pages.xml`: Added XSL reference.
 - `themes/reallylol/layouts/sitemap-posts.xml`: Fixed Section filter, added XSL reference.
 - `themes/reallylol/layouts/sitemap-notes.xml`: Fixed Section filter, added XSL reference.
-- `static/sitemap.xsl`: Simple table-based view that handles both `<sitemapindex>` and `<urlset>`.
+- `static/sitemap.xsl`: Simple table-based view that handles both `<sitemapindex>` and `<urlset>`, with section-aware titles.
 
 Usage
 - Build or serve the site and visit:
@@ -32,4 +32,3 @@ Usage
 Notes
 - If you want different sections in posts/notes sitemaps, adjust the `where .Site.RegularPages "Section" "..."` filters.
 - If you later want a single sitemap only, remove the custom output formats and keep `SITEMAP`.
-
