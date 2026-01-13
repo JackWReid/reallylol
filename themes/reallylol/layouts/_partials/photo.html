@@ -1,15 +1,12 @@
-{{ $src := resources.GetMatch (.Get "src") }}
-
-{{ if in (.Get "src") "http" }}
-<img src="{{$src}}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+{{ $srcParam := .Get "src" }}
+{{ $relative := strings.TrimPrefix "/" $srcParam }}
+{{ with resources.Get $relative }}
+  {{ if in $relative ".gif" }}
+    <img src="{{ .RelPermalink }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+  {{ else }}
+    {{ $resized := .Resize "1000x" }}
+    <img src="{{ $resized.RelPermalink }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+  {{ end }}
 {{ else }}
-{{ if in (.Get "src") ".gif" }}
-<img src="{{$src.RelPermalink}}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
-{{ else }}
-
-{{ .Scratch.Set "resized" ($src.Resize "1000x") }}
-{{ $resized := .Scratch.Get "resized" }}
-
-<img src="{{ $resized.RelPermalink }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
-{{ end }}
+  <img src="{{ $srcParam }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
 {{ end }}

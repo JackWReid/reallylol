@@ -7,20 +7,16 @@
 {{ end }}
 
 {{ $rendered := "" }}
-{{ if hasPrefix $srcParam "http" }}
-  {{ $rendered = printf "<img src=\"%s\" alt=\"%s\">" $srcParam $alt }}
-{{ else }}
-  {{ $relative := strings.TrimPrefix "/" $srcParam }}
-  {{ with resources.Get $relative }}
-    {{ if in $relative ".gif" }}
-      {{ $rendered = printf "<img src=\"%s\" alt=\"%s\">" .RelPermalink $alt }}
-    {{ else }}
-      {{ $resized := .Resize "1000x" }}
-      {{ $rendered = printf "<img src=\"%s\" alt=\"%s\">" $resized.RelPermalink $alt }}
-    {{ end }}
+{{ $relative := strings.TrimPrefix "/" $srcParam }}
+{{ with resources.Get $relative }}
+  {{ if in $relative ".gif" }}
+    {{ $rendered = printf "<img src=\"%s\" alt=\"%s\">" .RelPermalink $alt }}
   {{ else }}
-    {{ $rendered = printf "<img src=\"%s\" alt=\"%s\">" $srcParam $alt }}
+    {{ $resized := .Resize "1000x" }}
+    {{ $rendered = printf "<img src=\"%s\" alt=\"%s\">" $resized.RelPermalink $alt }}
   {{ end }}
+{{ else }}
+  {{ $rendered = printf "<img src=\"%s\" alt=\"%s\">" $srcParam $alt }}
 {{ end }}
 
 {{ $rendered | safeHTML }}
