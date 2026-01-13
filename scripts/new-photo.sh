@@ -58,12 +58,12 @@ if [ -z "$title" ]; then
 fi
 
 # Set up file paths
-img_path="./static/img/photo/$creation_date-$slug.jpg"
+img_path="./assets/img/photo/$creation_date-$slug.jpg"
 md_path="./content/photo/$creation_date-$slug.md"
 abs_img_path="/img/photo/$creation_date-$slug.jpg"
 
 # Ensure directories exist
-mkdir -p "./static/img/photo"
+mkdir -p "./assets/img/photo"
 mkdir -p "./content/photo"
 
 # Copy and transform the image file

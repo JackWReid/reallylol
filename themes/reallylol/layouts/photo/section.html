@@ -5,9 +5,18 @@
 {{ $paginator := .Paginate .Pages 24 }}
 <div class="photo-section-grid">
 {{ range  $paginator.Pages }}
+{{ $imagePath := .Params.image }}
+{{ $thumbSrc := "" }}
+{{ if $imagePath }}
+  {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
+  {{ with resources.Get $relativePath }}
+    {{ $thumb := .Fit "500x500" }}
+    {{ $thumbSrc = $thumb.RelPermalink }}
+  {{ end }}
+{{ end }}
 <article class="photo-section-item">
   <a href="{{ .Permalink }}">
-    <img src="{{ .Params.image | absURL }}" alt="">
+    <img src="{{ if $thumbSrc }}{{ $thumbSrc }}{{ else }}{{ $imagePath | absURL }}{{ end }}" alt="{{ .Title }}">
   </a>
 
   <h3 class="photo-section-item__title">

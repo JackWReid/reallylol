@@ -23,8 +23,15 @@
 
   <!-- Main photo display -->
   {{ if .Params.image }}
+  {{ $imagePath := .Params.image }}
+  {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
+  {{ $heroSrc := "" }}
+  {{ with resources.Get $relativePath }}
+    {{ $hero := .Fit "1400x1400" }}
+    {{ $heroSrc = $hero.RelPermalink }}
+  {{ end }}
   <div class="single-main__photo">
-    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" />
+    <img src="{{ if $heroSrc }}{{ $heroSrc }}{{ else }}{{ $imagePath | absURL }}{{ end }}" alt="{{ .Title }}" />
   </div>
   {{ end }}
 

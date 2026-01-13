@@ -6,8 +6,17 @@
         {{- $randomEntry := index (shuffle $randomPhotos) 0 -}}
         {{- $photoPage := site.GetPage $randomEntry.path -}}
         {{- if $photoPage -}}
+          {{ $imagePath := $photoPage.Params.image }}
+          {{ $thumbSrc := "" }}
+          {{ if $imagePath }}
+            {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
+            {{ with resources.Get $relativePath }}
+              {{ $thumb := .Fit "500x500" }}
+              {{ $thumbSrc = $thumb.RelPermalink }}
+            {{ end }}
+          {{ end }}
           <a class="photo-box__link" href="{{ $photoPage.Permalink }}">
-            <img class="photo-box__image" src="{{ $photoPage.Params.image }}" alt="">
+            <img class="photo-box__image" src="{{ if $thumbSrc }}{{ $thumbSrc }}{{ else }}{{ $imagePath | absURL }}{{ end }}" alt="">
           </a>
           <div class="photo-box__details">
             <p class="image-item__label">Random photo</p>
