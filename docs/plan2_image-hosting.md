@@ -7,9 +7,9 @@
 - **290MB total size** of image files
 - **2,609+ markdown files** with image references
 - Images stored in multiple locations:
-  - `assets/img/` - Main image directory
-  - `static/img/photo/` - Photo posts
-  - `static/img/` - General static images
+  - `assets/img/photo/` - Photo posts processed via Hugo’s asset pipeline
+  - `assets/img/` - Other processed assets
+  - `static/img/` - Remaining general static images
 
 **Key Issues:**
 1. Repository is becoming unwieldy with hundreds of images
@@ -107,7 +107,7 @@ curl -X POST "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/images/v
 
 **Before:**
 ```markdown
-![Alt text](/img/photo/2023-02-05-tempelhof-terminal.jpg)
+{{< photo src="img/photo/2023-02-05-tempelhof-terminal.jpg" alt="Alt text" >}}
 ```
 
 **After:**
@@ -119,9 +119,9 @@ curl -X POST "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/images/v
 
 **Current workflow:**
 1. Extract EXIF data
-2. Copy to `static/img/photo/`
+2. Copy to `assets/img/photo/`
 3. Process with ImageMagick
-4. Create markdown file
+4. Create markdown file using the `photo` shortcode
 
 **New workflow:**
 1. Extract EXIF data

@@ -107,9 +107,10 @@ The site uses custom Hugo archetypes for different content types:
    - Template: `archetypes/photo.md`
    - Location: `content/photo/`
    - Filename format: `YYYY-MM-DD-slug.md`
-   - Image location: `assets/img/photo/YYYY-MM-DD-slug.jpg` (served via symlink in `static/img/photo/`)
+   - Image location: `assets/img/photo/YYYY-MM-DD-slug.jpg` (referenced via Hugo’s asset pipeline)
    - Fields: title, date, image, location, tags
    - Images are resized to max 1400x1400px, converted to JPG
+   - Body embeds the photo using the `photo` shortcode so Hugo can generate responsive outputs
 
 4. **post** - Standard blog posts
    - Template: `archetypes/post.md`
@@ -171,15 +172,14 @@ Creates a new note post with auto-generated slug.
 #### `scripts/new-photo.sh`
 Creates a new photo post from an image file with EXIF extraction and image processing.
 
-**Functionality:**
 - Requires image path as argument
 - Extracts creation date from EXIF data (DateTimeOriginal)
 - Prompts for: slug, title, location, tags (comma-separated), alt text
-- Copies image to `assets/img/photo/YYYY-MM-DD-slug.jpg` (symlinked into `static/img/photo/` for legacy references)
+- Copies image to `assets/img/photo/YYYY-MM-DD-slug.jpg`
 - Resizes to max 1400x1400px (maintains aspect ratio)
 - Converts to JPG format, quality 100%
 - Creates file: `content/photo/YYYY-MM-DD-slug.md`
-- Frontmatter: title, date (from EXIF), image path, location, tags (YAML list), alt text in markdown
+- Frontmatter: title, date (from EXIF), image path, location, tags (YAML list), photo shortcode referencing the asset
 
 **Dependencies:**
 - `exiftool` - For EXIF data extraction
