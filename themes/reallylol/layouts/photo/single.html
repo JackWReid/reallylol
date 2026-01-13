@@ -45,33 +45,6 @@
     {{ $content | safeHTML }}
   </div>
 
-  <!-- Photo navigation -->
-  {{ $photos := where .Site.RegularPages "Section" "photo" }}
-  {{ $currentIndex := 0 }}
-  {{ range $index, $page := $photos }}
-    {{ if eq $page.RelPermalink $.RelPermalink }}
-      {{ $currentIndex = $index }}
-    {{ end }}
-  {{ end }}
-  
-  {{ $prevPhoto := index $photos (add $currentIndex 1) }}
-  {{ $nextPhoto := index $photos (sub $currentIndex 1) }}
-  
-  {{ if or $prevPhoto $nextPhoto }}
-  <nav class="photo-navigation">
-    {{ if $prevPhoto }}
-    <a href="{{ $prevPhoto.RelPermalink }}" class="photo-nav-prev">
-      ← {{ $prevPhoto.Title }}
-    </a>
-    {{ end }}
-    {{ if $nextPhoto }}
-    <a href="{{ $nextPhoto.RelPermalink }}" class="photo-nav-next">
-      {{ $nextPhoto.Title }} →
-    </a>
-    {{ end }}
-  </nav>
-  {{ end }}
-
   {{- partial "see-also.html" . -}}
 </main>
 {{ end }}
