@@ -10,7 +10,10 @@
       <dd><span>{{ .title }}</span> by {{ .author }}</dd>
       {{ end }}
     </div>
-    <img alt="A line drawing of the solar system" class="home-hero-image" src="/img/layout/solar-system.jpg">
+    {{ with resources.Get "img/layout/solar-system.jpg" }}
+      {{ $solar := .Resize "800x" }}
+      <img alt="A line drawing of the solar system" class="home-hero-image" src="{{ $solar.RelPermalink }}">
+    {{ end }}
   </div>
   </div>
 </div>

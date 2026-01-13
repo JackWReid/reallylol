@@ -4,11 +4,14 @@
     {{ partial "sub-nav.html" . }}
   {{ end }}
   {{ if eq .Section "post" }}
+  {{ with resources.Get "img/layout/mushrooms.png" }}
+  {{ $mushrooms := .Resize "800x" }}
   <img
     alt="A watercolor illustration of mushrooms"
     class="section-hero-image--post"
-    src="/img/layout/mushrooms.png"
+    src="{{ $mushrooms.RelPermalink }}"
   />
+  {{ end }}
   {{ end }}
   <h1 class="section-title">
     {{ if eq .Section "post" }}Posts{{ else }}{{ .Title }}{{ end }}

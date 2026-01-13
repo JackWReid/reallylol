@@ -1,6 +1,9 @@
 {{ define "main" }}
 <main class="note-main">
-  <img class="note-main__image" alt="Cyanotype of parts of a musket gun" src="/img/layout/smithsonian-tackle.png" />
+  {{ with resources.Get "img/layout/smithsonian-tackle.png" }}
+    {{ $tackle := .Resize "800x" }}
+    <img class="note-main__image" alt="Cyanotype of parts of a musket gun" src="{{ $tackle.RelPermalink }}" />
+  {{ end }}
   <div class="note-main__container">
     <div class="note-main__content">{{ .Title }}</div>
     <div class="note-main__infoline">
