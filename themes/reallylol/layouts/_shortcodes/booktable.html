@@ -15,16 +15,20 @@
 
 <ul class="book-grid book-grid--fullwidth" data-paginate="true">
   {{ range $index, $item := $data }}
+  {{ $book := $item }}
   <li class="book-card" data-item>
     <div class="book-card__cover-frame">
-      {{ if .image_url }}
+      {{ if $book.image_url }}
         {{ if lt $index 24 }}
-          <img src="{{ .image_url }}" alt="Cover of {{ .title }}" loading="lazy" class="book-card__cover" />
+          <img src="{{ $book.image_url }}" alt="Cover of {{ $book.title }}" loading="lazy" class="book-card__cover" />
         {{ else }}
-          <img data-src="{{ .image_url }}" alt="Cover of {{ .title }}" loading="lazy" class="book-card__cover" data-lazy-image />
+          <img data-src="{{ $book.image_url }}" alt="Cover of {{ $book.title }}" loading="lazy" class="book-card__cover" data-lazy-image />
         {{ end }}
       {{ else }}
-        <img src="/img/layout/no-book-cover.jpg" alt="Cover of {{ .title }}" loading="lazy" class="book-card__cover" />
+        {{ with resources.Get "img/layout/no-book-cover.jpg" }}
+          {{ $fallback := .Resize "800x" }}
+          <img src="{{ $fallback.RelPermalink }}" alt="Cover of {{ $book.title }}" loading="lazy" class="book-card__cover" />
+        {{ end }}
       {{ end }}
     </div>
     <div class="book-card__meta">

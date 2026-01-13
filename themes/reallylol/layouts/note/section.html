@@ -1,11 +1,14 @@
 {{ define "main" }}
 <main class="note-section-main">
 <header class="note-section-header">
+  {{ with resources.Get "img/layout/angel-small.png" }}
+  {{ $angel := .Resize "800x" }}
   <img
     alt="A statue of an angel"
     class="section-hero-image--note"
-    src="/img/layout/angel-small.png"
+    src="{{ $angel.RelPermalink }}"
   />
+  {{ end }}
   <h1 class="note-list-title">{{ .Title }}</h1>
 </header>
 {{ .Content }}
