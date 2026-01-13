@@ -7,4 +7,4 @@ tags: [ germany, landscape, infrastructure, nature ]
 ---
 
 
-{{< photo src="img/photo/2023-05-14-solar-farm-marquadt.jpg" alt="A solar farm in a field" >}}
+{{< image src="img/photo/2023-05-14-solar-farm-marquadt.jpg" alt="A solar farm in a field" >}}

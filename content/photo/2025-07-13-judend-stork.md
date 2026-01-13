@@ -13,4 +13,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2025-07-13-judend-stork.jpg" alt="A stork standing under a bridge with graffiti on it" >}}
+{{< image src="img/photo/2025-07-13-judend-stork.jpg" alt="A stork standing under a bridge with graffiti on it" >}}

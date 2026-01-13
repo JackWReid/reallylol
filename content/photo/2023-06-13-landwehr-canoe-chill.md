@@ -7,4 +7,4 @@ tags: [ berlin,water,nature,sarah,people ]
 ---
 
 
-{{< photo src="img/photo/2023-06-13-landwehr-canoe-chill.jpg" alt="Sarah lying back in a kayak with sunshine and water around her" >}}
+{{< image src="img/photo/2023-06-13-landwehr-canoe-chill.jpg" alt="Sarah lying back in a kayak with sunshine and water around her" >}}

@@ -10,4 +10,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/kitchens-i.jpg" alt="A rustic country kitchen" >}}
+{{< image src="img/photo/kitchens-i.jpg" alt="A rustic country kitchen" >}}

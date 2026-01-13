@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-09-10-snowdon-lake.jpg" alt="A lake set into the side of a green mountain" >}}
+{{< image src="img/photo/2022-09-10-snowdon-lake.jpg" alt="A lake set into the side of a green mountain" >}}

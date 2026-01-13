@@ -13,4 +13,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-22-matt-beach.jpg" alt="A man in a windbreaker reading a book on the beach" >}}
+{{< image src="img/photo/2022-07-22-matt-beach.jpg" alt="A man in a windbreaker reading a book on the beach" >}}

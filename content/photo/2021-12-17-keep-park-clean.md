@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2021-12-17-keep-park-clean.jpg" alt="A donut seller in the park" >}}
+{{< image src="img/photo/2021-12-17-keep-park-clean.jpg" alt="A donut seller in the park" >}}

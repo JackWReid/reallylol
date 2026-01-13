@@ -7,4 +7,4 @@ tags: [ berlin, germany, street ]
 ---
 
 
-{{< photo src="img/photo/2024-02-03-burned-interior.jpg" alt="The back seat of a burned out car" >}}
+{{< image src="img/photo/2024-02-03-burned-interior.jpg" alt="The back seat of a burned out car" >}}

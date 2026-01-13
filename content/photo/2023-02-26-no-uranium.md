@@ -10,4 +10,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-02-26-no-uranium.jpg" alt="A yellow tiled metro station interior" >}}
+{{< image src="img/photo/2023-02-26-no-uranium.jpg" alt="A yellow tiled metro station interior" >}}

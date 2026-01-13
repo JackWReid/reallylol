@@ -9,4 +9,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2021-11-18-orleans-forest-ligne.jpg" alt="A forest with a path through it" >}}
+{{< image src="img/photo/2021-11-18-orleans-forest-ligne.jpg" alt="A forest with a path through it" >}}

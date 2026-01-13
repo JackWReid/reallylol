@@ -10,4 +10,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-05-26-basel-bike-sil.jpg" alt="A bike in silhouette in front of the river" >}}
+{{< image src="img/photo/2022-05-26-basel-bike-sil.jpg" alt="A bike in silhouette in front of the river" >}}

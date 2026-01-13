@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2026-01-04-brittle-walk.jpg" alt="A frozen canal bank with five-storey apartment buildings against it" >}}
+{{< image src="img/photo/2026-01-04-brittle-walk.jpg" alt="A frozen canal bank with five-storey apartment buildings against it" >}}

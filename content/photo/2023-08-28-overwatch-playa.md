@@ -7,4 +7,4 @@ tags: [ mallorca, travel, spain, people, friends ]
 ---
 
 
-{{< photo src="img/photo/2023-08-28-overwatch-playa.jpg" alt="Two people reading books on a balcony above the bay" >}}
+{{< image src="img/photo/2023-08-28-overwatch-playa.jpg" alt="Two people reading books on a balcony above the bay" >}}

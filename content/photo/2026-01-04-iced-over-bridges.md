@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2026-01-04-iced-over-bridges.jpg" alt="A frozen canal with a bridge in the distance" >}}
+{{< image src="img/photo/2026-01-04-iced-over-bridges.jpg" alt="A frozen canal with a bridge in the distance" >}}

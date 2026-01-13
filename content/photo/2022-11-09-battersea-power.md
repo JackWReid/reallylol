@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-11-09-battersea-power.jpg" alt="Battersea Power Station lit up at dusk" >}}
+{{< image src="img/photo/2022-11-09-battersea-power.jpg" alt="Battersea Power Station lit up at dusk" >}}

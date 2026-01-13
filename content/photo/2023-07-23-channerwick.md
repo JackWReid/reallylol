@@ -7,4 +7,4 @@ tags: [ nature, scotland, shetland, landscape ]
 ---
 
 
-{{< photo src="img/photo/2023-07-23-channerwick.jpg" alt="A croft on the seaside" >}}
+{{< image src="img/photo/2023-07-23-channerwick.jpg" alt="A croft on the seaside" >}}

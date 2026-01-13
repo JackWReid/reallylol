@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2026-01-04-ice-warning-canal.jpg" alt="A frozen over canal with a sign poking through that reads: Achtung! Unterwasserhindernis" >}}
+{{< image src="img/photo/2026-01-04-ice-warning-canal.jpg" alt="A frozen over canal with a sign poking through that reads: Achtung! Unterwasserhindernis" >}}

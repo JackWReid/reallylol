@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-02-14-ferry-crossing.jpg" alt="A man and woman in formalwear sitting on a boat" >}}
+{{< image src="img/photo/2022-02-14-ferry-crossing.jpg" alt="A man and woman in formalwear sitting on a boat" >}}

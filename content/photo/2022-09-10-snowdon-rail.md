@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-09-10-snowdon-rail.jpg" alt="A railway snaking through a green valley" >}}
+{{< image src="img/photo/2022-09-10-snowdon-rail.jpg" alt="A railway snaking through a green valley" >}}

@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-22-ben-cline-hike.jpg" alt="Two people walking between high ferns" >}}
+{{< image src="img/photo/2022-07-22-ben-cline-hike.jpg" alt="Two people walking between high ferns" >}}

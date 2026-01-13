@@ -13,4 +13,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-01-26-sarah-hochstrasse.jpg" alt="A girl in ski gear stood at the top of a mountain with the clouds below" >}}
+{{< image src="img/photo/2023-01-26-sarah-hochstrasse.jpg" alt="A girl in ski gear stood at the top of a mountain with the clouds below" >}}

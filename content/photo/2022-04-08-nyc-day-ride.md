@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-04-08-nyc-day-ride.jpg" alt="A close up of bicycles and peoples&#x27; legs" >}}
+{{< image src="img/photo/2022-04-08-nyc-day-ride.jpg" alt="A close up of bicycles and peoples&#x27; legs" >}}

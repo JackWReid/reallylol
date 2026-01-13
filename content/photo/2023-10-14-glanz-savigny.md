@@ -7,4 +7,4 @@ tags: [ berlin, cities, friends, germany ]
 ---
 
 
-{{< photo src="img/photo/2023-10-14-glanz-savigny.jpg" alt="A bunch of smiling people visible through a dusty window" >}}
+{{< image src="img/photo/2023-10-14-glanz-savigny.jpg" alt="A bunch of smiling people visible through a dusty window" >}}

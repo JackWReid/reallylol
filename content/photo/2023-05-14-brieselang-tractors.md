@@ -7,4 +7,4 @@ tags: [ germany, landscape ]
 ---
 
 
-{{< photo src="img/photo/2023-05-14-brieselang-tractors.jpg" alt="A tractor in a farm yard" >}}
+{{< image src="img/photo/2023-05-14-brieselang-tractors.jpg" alt="A tractor in a farm yard" >}}

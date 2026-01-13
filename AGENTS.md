@@ -110,7 +110,7 @@ The site uses custom Hugo archetypes for different content types:
    - Image location: `assets/img/photo/YYYY-MM-DD-slug.jpg` (referenced via Hugo’s asset pipeline)
    - Fields: title, date, image, location, tags
    - Images are resized to max 1400x1400px, converted to JPG
-   - Body embeds the photo using the `photo` shortcode so Hugo can generate responsive outputs
+   - Body embeds the photo using the `image` shortcode so Hugo can generate responsive outputs
 
 4. **post** - Standard blog posts
    - Template: `archetypes/post.md`
@@ -118,6 +118,7 @@ The site uses custom Hugo archetypes for different content types:
    - Filename format: `YYYY-MM-DD-slug.md`
    - Fields: title, date, tags (default: journal)
    - Opens in vim after creation
+   - Posts that embed local media should be page bundles (`content/post/<slug>/index.md`) with assets stored beside the Markdown. Use `scripts/convert-post-to-bundle.py` to convert a flat post before adding images.
 
 5. **media** - Media log entries (books/movies)
    - Template: `archetypes/media.md`
@@ -179,7 +180,7 @@ Creates a new photo post from an image file with EXIF extraction and image proce
 - Resizes to max 1400x1400px (maintains aspect ratio)
 - Converts to JPG format, quality 100%
 - Creates file: `content/photo/YYYY-MM-DD-slug.md`
-- Frontmatter: title, date (from EXIF), image path, location, tags (YAML list), photo shortcode referencing the asset
+- Frontmatter: title, date (from EXIF), image path, location, tags (YAML list), image shortcode referencing the asset
 
 **Dependencies:**
 - `exiftool` - For EXIF data extraction
@@ -234,6 +235,29 @@ Interactive script to create medialog posts for books or movies using fzf.
 ```bash
 ./scripts/new-media.sh              # Interactive mode
 ./scripts/new-media.sh --benchmark  # Benchmark mode (no fzf)
+```
+
+#### `scripts/convert-post-to-bundle.py`
+Converts an existing flat post into a page bundle so its media can live beside `index.md`.
+
+- Lists non-bundle posts in reverse chronological order (uses `fzf` if available) and moves the selected Markdown file into `content/post/<slug>/index.md`.
+- Copies any referenced `/img/...` assets (shortcodes or Markdown images, including `image:` front matter) into the bundle and rewrites the references to use relative paths + the `photo` shortcode.
+- Supports automation flags: `--slug <filename>`, `--path <path/to/post.md>`, and `--all-media` (converts every flat post that currently references `/img/`).
+
+**Dependencies:**
+- `python3`
+- `fzf` (optional, for selection UI)
+
+**Usage:**
+```bash
+# interactive picker
+./scripts/convert-post-to-bundle.py
+
+# convert a specific file
+./scripts/convert-post-to-bundle.py --slug 2021-10-08-museums-of-oxford
+
+# migrate every flat post that currently embeds /img/ assets
+./scripts/convert-post-to-bundle.py --all-media
 ```
 
 ### Data Update Scripts

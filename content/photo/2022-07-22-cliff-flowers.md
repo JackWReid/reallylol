@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-22-cliff-flowers.jpg" alt="Yellow wild flowers on a cliff by the sea" >}}
+{{< image src="img/photo/2022-07-22-cliff-flowers.jpg" alt="Yellow wild flowers on a cliff by the sea" >}}

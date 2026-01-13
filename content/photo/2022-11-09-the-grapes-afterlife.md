@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-11-09-the-grapes-afterlife.jpg" alt="A girl sat at a table with beers in a pub, heavily backlit by a sunset" >}}
+{{< image src="img/photo/2022-11-09-the-grapes-afterlife.jpg" alt="A girl sat at a table with beers in a pub, heavily backlit by a sunset" >}}

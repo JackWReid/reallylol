@@ -7,4 +7,4 @@ tags: [ flowers, nature, germany ]
 ---
 
 
-{{< photo src="img/photo/2023-06-18-henningsdorf-poppy.jpg" alt="A couple of red poppies in a field of barley" >}}
+{{< image src="img/photo/2023-06-18-henningsdorf-poppy.jpg" alt="A couple of red poppies in a field of barley" >}}

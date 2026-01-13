@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-02-26-glass-swimmer.jpg" alt="A swimmer sculpture in front of a large glass building" >}}
+{{< image src="img/photo/2023-02-26-glass-swimmer.jpg" alt="A swimmer sculpture in front of a large glass building" >}}

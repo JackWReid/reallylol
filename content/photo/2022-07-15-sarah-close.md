@@ -10,4 +10,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-15-sarah-close.jpg" alt="A woman&#x27;s face in close up" >}}
+{{< image src="img/photo/2022-07-15-sarah-close.jpg" alt="A woman&#x27;s face in close up" >}}

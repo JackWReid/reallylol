@@ -10,4 +10,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-02-14-martha-phonecall.jpg" alt="A woman with a bouquet in her hand and a phone to her ear" >}}
+{{< image src="img/photo/2022-02-14-martha-phonecall.jpg" alt="A woman with a bouquet in her hand and a phone to her ear" >}}

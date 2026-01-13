@@ -7,4 +7,4 @@ tags: [ germany, nature, lakes ]
 ---
 
 
-{{< photo src="img/photo/2023-06-18-nyphensee-hut.jpg" alt="A blue hut on the beach" >}}
+{{< image src="img/photo/2023-06-18-nyphensee-hut.jpg" alt="A blue hut on the beach" >}}

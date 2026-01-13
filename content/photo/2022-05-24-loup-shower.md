@@ -10,4 +10,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-05-24-loup-shower.jpg" alt="The sun hitting a shower curtain" >}}
+{{< image src="img/photo/2022-05-24-loup-shower.jpg" alt="The sun hitting a shower curtain" >}}

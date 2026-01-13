@@ -7,4 +7,4 @@ tags: [ berlin, germany, wedding, family, sarah ]
 ---
 
 
-{{< photo src="img/photo/2023-10-20-wedding-dads.jpg" alt="A bride and groom hugging two older men in a registry office" >}}
+{{< image src="img/photo/2023-10-20-wedding-dads.jpg" alt="A bride and groom hugging two older men in a registry office" >}}

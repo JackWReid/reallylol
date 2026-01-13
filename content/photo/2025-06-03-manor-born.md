@@ -7,4 +7,4 @@ tags: [ architecture,france,dusk,sunset,travel ]
 ---
 
 
-{{< photo src="img/photo/2025-06-03-manor-born.jpg" alt="A French manor house at dusk with light coming from within the windows" >}}
+{{< image src="img/photo/2025-06-03-manor-born.jpg" alt="A French manor house at dusk with light coming from within the windows" >}}

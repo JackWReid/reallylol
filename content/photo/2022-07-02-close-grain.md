@@ -9,4 +9,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-02-close-grain.jpg" alt="Close up of ears of grain" >}}
+{{< image src="img/photo/2022-07-02-close-grain.jpg" alt="Close up of ears of grain" >}}

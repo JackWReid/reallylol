@@ -9,4 +9,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-04-15-seder-place.jpg" alt="A garden and lake at sunset" >}}
+{{< image src="img/photo/2022-04-15-seder-place.jpg" alt="A garden and lake at sunset" >}}

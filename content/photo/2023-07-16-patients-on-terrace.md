@@ -7,4 +7,4 @@ tags: [ germany, berlin, plants ]
 ---
 
 
-{{< photo src="img/photo/2023-07-16-patients-on-terrace.jpg" alt="House plants in the sun sitting on the floor of a terrace" >}}
+{{< image src="img/photo/2023-07-16-patients-on-terrace.jpg" alt="House plants in the sun sitting on the floor of a terrace" >}}

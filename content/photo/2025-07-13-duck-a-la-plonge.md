@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2025-07-13-duck-a-la-plonge.jpg" alt="A duck among lilypads" >}}
+{{< image src="img/photo/2025-07-13-duck-a-la-plonge.jpg" alt="A duck among lilypads" >}}

@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-05-25-loup-cherry-bounty.jpg" alt="A tree full of cherries" >}}
+{{< image src="img/photo/2022-05-25-loup-cherry-bounty.jpg" alt="A tree full of cherries" >}}

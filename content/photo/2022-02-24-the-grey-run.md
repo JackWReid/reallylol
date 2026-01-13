@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-02-24-the-grey-run.jpg" alt="A cloudy mountain landscape" >}}
+{{< image src="img/photo/2022-02-24-the-grey-run.jpg" alt="A cloudy mountain landscape" >}}

@@ -7,4 +7,4 @@ tags: [ travel, people, sarah ]
 ---
 
 
-{{< photo src="img/photo/2023-08-27-sarah-stretches.jpg" alt="A girl lying on a bed in slacks and a hoodie" >}}
+{{< image src="img/photo/2023-08-27-sarah-stretches.jpg" alt="A girl lying on a bed in slacks and a hoodie" >}}

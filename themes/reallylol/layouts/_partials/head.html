@@ -44,7 +44,15 @@
   {{ $ogSrc := "" }}
   {{ if $imagePath }}
     {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
-    {{ with resources.Get $relativePath }}
+    {{ $resource := "" }}
+    {{ with .Resources.GetMatch $relativePath }}
+      {{ $resource = . }}
+    {{ else }}
+      {{ with resources.Get $relativePath }}
+        {{ $resource = . }}
+      {{ end }}
+    {{ end }}
+    {{ with $resource }}
       {{ $ogImage := .Fit "1200x1200" }}
       {{ $ogSrc = $ogImage.RelPermalink | absURL }}
     {{ end }}

@@ -7,4 +7,4 @@ tags: [ sarah, people, nature, germany ]
 ---
 
 
-{{< photo src="img/photo/2023-05-07-sarah-treehouse.jpg" alt="Sarah climbing down the ladder of a birding hide" >}}
+{{< image src="img/photo/2023-05-07-sarah-treehouse.jpg" alt="Sarah climbing down the ladder of a birding hide" >}}

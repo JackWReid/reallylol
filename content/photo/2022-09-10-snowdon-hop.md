@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-09-10-snowdon-hop.jpg" alt="Two figures picking through a bog with a valley in the background" >}}
+{{< image src="img/photo/2022-09-10-snowdon-hop.jpg" alt="Two figures picking through a bog with a valley in the background" >}}

@@ -14,4 +14,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-05-27-wedding-sarah-jack.jpg" alt="A couple&#x27;s selfie at a wedding" >}}
+{{< image src="img/photo/2022-05-27-wedding-sarah-jack.jpg" alt="A couple&#x27;s selfie at a wedding" >}}

@@ -7,4 +7,4 @@ tags: [ germany, nature, forest ]
 ---
 
 
-{{< photo src="img/photo/2023-05-07-potsdam-woods.jpg" alt="Woods lit by sunlight" >}}
+{{< image src="img/photo/2023-05-07-potsdam-woods.jpg" alt="Woods lit by sunlight" >}}

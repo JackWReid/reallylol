@@ -7,4 +7,4 @@ tags: [ france, travel, landscape, coast ]
 ---
 
 
-{{< photo src="img/photo/2023-09-15-not-a-bad-view.jpg" alt="An birds-eye view of Nice from the hills above" >}}
+{{< image src="img/photo/2023-09-15-not-a-bad-view.jpg" alt="An birds-eye view of Nice from the hills above" >}}

@@ -9,4 +9,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2021-12-04-regents-rose-garden.jpg" alt="A lush English garden" >}}
+{{< image src="img/photo/2021-12-04-regents-rose-garden.jpg" alt="A lush English garden" >}}

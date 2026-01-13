@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-15-paddleboard.jpg" alt="A man on a 2022-07-15-paddleboard on flat water by the sea" >}}
+{{< image src="img/photo/2022-07-15-paddleboard.jpg" alt="A man on a 2022-07-15-paddleboard on flat water by the sea" >}}

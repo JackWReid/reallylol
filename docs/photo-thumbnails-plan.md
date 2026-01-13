@@ -26,7 +26,7 @@
 The dynamic Hugo pipeline with cached `resources/_gen` gives the best balance: we only pay the resize cost when adding new photos, repo size stays stable, and we still get lightweight 500 px thumbnails in the grid.
 
 ## Implementation notes (assets-based)
-- Moved `static/img/photo/` into `assets/img/photo/`, updated every photo’s front matter + Markdown to reference that asset path (via the `photo` shortcode), and removed the need for a compatibility symlink.
+- Moved `static/img/photo/` into `assets/img/photo/`, updated every photo’s front matter + Markdown to reference that asset path (via the `image` shortcode), and removed the need for a compatibility symlink.
 - Updated photo listing, single view, multi-preview, footer random photo templates, and head metadata to call `resources.Get` and render `.Fit`ted derivatives (500 px for thumbnails, 1400 px for the hero image).
 - Adjusted `scripts/new-photo.sh` + documentation so new uploads land in `assets/img/photo/` and use the shortcode automatically.
 - A full `hugo` build now processes ~5.3k images the first time (~90 s locally) and caches them under `resources/_gen/` for subsequent runs.

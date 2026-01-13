@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-22-pem-beach-panorama.jpg" alt="A beach under cliffs, from above" >}}
+{{< image src="img/photo/2022-07-22-pem-beach-panorama.jpg" alt="A beach under cliffs, from above" >}}

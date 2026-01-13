@@ -7,4 +7,4 @@ tags: [ berlin, germany, home, sarah ]
 ---
 
 
-{{< photo src="img/photo/2024-02-10-sunday-ring.jpg" alt="A close up a scratchy jumper and hands wearing rings" >}}
+{{< image src="img/photo/2024-02-10-sunday-ring.jpg" alt="A close up a scratchy jumper and hands wearing rings" >}}

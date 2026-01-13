@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-01-24-haaggen-down.jpg" alt="A snowy Alpine panorama" >}}
+{{< image src="img/photo/2023-01-24-haaggen-down.jpg" alt="A snowy Alpine panorama" >}}

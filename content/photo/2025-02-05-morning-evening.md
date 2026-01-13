@@ -7,4 +7,4 @@ tags: [ berlin, germany, architecture ]
 ---
 
 
-{{< photo src="img/photo/2025-02-05-morning-evening.jpg" alt="Tree shadows cast on a building facade" >}}
+{{< image src="img/photo/2025-02-05-morning-evening.jpg" alt="Tree shadows cast on a building facade" >}}

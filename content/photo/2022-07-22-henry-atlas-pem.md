@@ -17,4 +17,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-22-henry-atlas-pem.jpg" alt="A man holding a spoodle in his arms on a beach" >}}
+{{< image src="img/photo/2022-07-22-henry-atlas-pem.jpg" alt="A man holding a spoodle in his arms on a beach" >}}

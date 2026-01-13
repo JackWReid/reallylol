@@ -7,4 +7,4 @@ tags: [ germany, berlin, interior, food, interior ]
 ---
 
 
-{{< photo src="img/photo/2023-07-16-onion-chopper.jpg" alt="A cut white onion on a chopping board" >}}
+{{< image src="img/photo/2023-07-16-onion-chopper.jpg" alt="A cut white onion on a chopping board" >}}

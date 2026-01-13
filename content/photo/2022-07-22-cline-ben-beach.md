@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-22-cline-ben-beach.jpg" alt="Two people dozing on a sunny beach" >}}
+{{< image src="img/photo/2022-07-22-cline-ben-beach.jpg" alt="Two people dozing on a sunny beach" >}}

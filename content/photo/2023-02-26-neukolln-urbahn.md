@@ -9,4 +9,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-02-26-neukolln-urbahn.jpg" alt="A brand new autobahn with no road markings" >}}
+{{< image src="img/photo/2023-02-26-neukolln-urbahn.jpg" alt="A brand new autobahn with no road markings" >}}

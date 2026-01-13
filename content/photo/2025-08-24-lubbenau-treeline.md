@@ -10,4 +10,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2025-08-24-lubbenau-treeline.jpg" alt="A treeline at the edge of a small canal" >}}
+{{< image src="img/photo/2025-08-24-lubbenau-treeline.jpg" alt="A treeline at the edge of a small canal" >}}

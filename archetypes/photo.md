@@ -6,4 +6,4 @@ location: ""
 tags: []
 ---
 
-{{< photo src="img/photo/{{ .Name }}.jpg" alt="Alt text" >}}
+{{< image src="img/photo/{{ .Name }}.jpg" alt="Alt text" >}}

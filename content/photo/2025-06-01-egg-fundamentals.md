@@ -7,4 +7,4 @@ tags: [ food,paris,france,travel ]
 ---
 
 
-{{< photo src="img/photo/2025-06-01-egg-fundamentals.jpg" alt="A brunch table with bread, french toast, and an egg omelette" >}}
+{{< image src="img/photo/2025-06-01-egg-fundamentals.jpg" alt="A brunch table with bread, french toast, and an egg omelette" >}}

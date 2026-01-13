@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-02-river-change.jpg" alt="A girl stooping over next to a river bank" >}}
+{{< image src="img/photo/2022-07-02-river-change.jpg" alt="A girl stooping over next to a river bank" >}}

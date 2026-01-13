@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-02-26-neukolln-construction.jpg" alt="A construction site" >}}
+{{< image src="img/photo/2023-02-26-neukolln-construction.jpg" alt="A construction site" >}}

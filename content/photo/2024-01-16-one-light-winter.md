@@ -7,4 +7,4 @@ tags: [ berlin, germany, winter, dusk, architecture ]
 ---
 
 
-{{< photo src="img/photo/2024-01-16-one-light-winter.jpg" alt="One apartment light shining in the courtyard" >}}
+{{< image src="img/photo/2024-01-16-one-light-winter.jpg" alt="One apartment light shining in the courtyard" >}}

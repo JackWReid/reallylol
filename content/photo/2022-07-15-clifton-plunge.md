@@ -10,4 +10,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-15-clifton-plunge.jpg" alt="The drop underneath a bridge, with a river far below" >}}
+{{< image src="img/photo/2022-07-15-clifton-plunge.jpg" alt="The drop underneath a bridge, with a river far below" >}}

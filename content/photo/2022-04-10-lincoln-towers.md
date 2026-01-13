@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-04-10-lincoln-towers.jpg" alt="Tower blocks at night" >}}
+{{< image src="img/photo/2022-04-10-lincoln-towers.jpg" alt="Tower blocks at night" >}}

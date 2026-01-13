@@ -7,4 +7,4 @@ tags: [ sarah, people, nature, water ]
 ---
 
 
-{{< photo src="img/photo/2023-06-18-nymphensee-necklace.jpg" alt="A close up a thin gold chain around Sarah&#x27;s neck" >}}
+{{< image src="img/photo/2023-06-18-nymphensee-necklace.jpg" alt="A close up a thin gold chain around Sarah&#x27;s neck" >}}

@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-05-30-barca-ventillation.jpg" alt="The interior space of an apartment building shot from below" >}}
+{{< image src="img/photo/2022-05-30-barca-ventillation.jpg" alt="The interior space of an apartment building shot from below" >}}

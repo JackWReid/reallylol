@@ -7,4 +7,4 @@ tags: [ architecture, germany, nature, landscape ]
 ---
 
 
-{{< photo src="img/photo/2023-05-07-potsdam-lake-house.jpg" alt="A green farmhouse by a lakeside" >}}
+{{< image src="img/photo/2023-05-07-potsdam-lake-house.jpg" alt="A green farmhouse by a lakeside" >}}

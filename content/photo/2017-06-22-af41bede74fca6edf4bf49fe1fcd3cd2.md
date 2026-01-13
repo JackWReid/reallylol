@@ -7,4 +7,4 @@ instagram: true
 ---
 
 
-{{< photo src="img/photo/2017-06-22-af41bede74fca6edf4bf49fe1fcd3cd2.jpg" alt="147.2 - bedbugs" >}}
+{{< image src="img/photo/2017-06-22-af41bede74fca6edf4bf49fe1fcd3cd2.jpg" alt="147.2 - bedbugs" >}}

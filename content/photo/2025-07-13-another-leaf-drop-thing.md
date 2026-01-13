@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2025-07-13-another-leaf-drop-thing.jpg" alt="Drops of water on leaves" >}}
+{{< image src="img/photo/2025-07-13-another-leaf-drop-thing.jpg" alt="Drops of water on leaves" >}}

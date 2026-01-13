@@ -13,4 +13,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-01-23-alptower-lineup.jpg" alt="Three skiers lined up in front of an Alpine panorama" >}}
+{{< image src="img/photo/2023-01-23-alptower-lineup.jpg" alt="Three skiers lined up in front of an Alpine panorama" >}}

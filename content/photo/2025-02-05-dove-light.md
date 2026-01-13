@@ -7,4 +7,4 @@ tags: [ berlin, germany, interior ]
 ---
 
 
-{{< photo src="img/photo/2025-02-05-dove-light.jpg" alt="A softly lit lamp in a bedroom" >}}
+{{< image src="img/photo/2025-02-05-dove-light.jpg" alt="A softly lit lamp in a bedroom" >}}

@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-05-30-barca-sagrada-view.jpg" alt="Barclona skyline from above" >}}
+{{< image src="img/photo/2022-05-30-barca-sagrada-view.jpg" alt="Barclona skyline from above" >}}

@@ -10,4 +10,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-02-26-mutter-memorial.jpg" alt="A symmetrical plaza with a statue in the middle" >}}
+{{< image src="img/photo/2023-02-26-mutter-memorial.jpg" alt="A symmetrical plaza with a statue in the middle" >}}

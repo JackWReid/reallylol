@@ -7,4 +7,4 @@ tags: [ berlin, germany, sunset, sky ]
 ---
 
 
-{{< photo src="img/photo/2023-02-19-fernsehen-sunset.jpg" alt="Fernseheturm silhouette against a sunset" >}}
+{{< image src="img/photo/2023-02-19-fernsehen-sunset.jpg" alt="Fernseheturm silhouette against a sunset" >}}

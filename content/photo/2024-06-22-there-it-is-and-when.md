@@ -7,4 +7,4 @@ tags: [ wedding, sarah, jack, france ]
 ---
 
 
-{{< photo src="img/photo/2024-06-22-there-it-is-and-when.jpg" alt="A black and white photo of a couple getting married" >}}
+{{< image src="img/photo/2024-06-22-there-it-is-and-when.jpg" alt="A black and white photo of a couple getting married" >}}

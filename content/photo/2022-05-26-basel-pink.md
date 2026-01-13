@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-05-26-basel-pink.jpg" alt="A modernist building at sunset" >}}
+{{< image src="img/photo/2022-05-26-basel-pink.jpg" alt="A modernist building at sunset" >}}

@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-22-beach-rocks.jpg" alt="Colourful rocks in a cliffside" >}}
+{{< image src="img/photo/2022-07-22-beach-rocks.jpg" alt="Colourful rocks in a cliffside" >}}
