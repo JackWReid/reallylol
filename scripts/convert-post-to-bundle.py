@@ -166,20 +166,31 @@ def convert_post(post_path: Path):
 
 
 def pick_post_interactively(posts):
-    entries = [f"{p.date_str or '0000-00-00'} | {p.title} | {p.rel_path}" for p in posts]
+    entries = []
+    for p in posts:
+        date_display = p.date_sort.strftime('%Y-%m-%d') if p.date_sort != dt.datetime.min else '0000-00-00'
+        icon = '✓' if p.has_media else ' '
+        display = f"{icon} {p.title}"
+        entries.append('|'.join(['', icon, p.title, date_display, p.rel_path, display]))
     if not entries:
         print("No eligible posts found.")
         sys.exit(0)
     fzf = shutil.which('fzf')
     if fzf:
-        proc = subprocess.run([fzf, '--prompt', 'Convert post> '], input='\n'.join(entries), text=True, capture_output=True)
+        prompt = 'Convert post> '
+        preview = 'echo "Date: {4}"'
+        proc = subprocess.run(
+            [fzf, '--delimiter=|', '--with-nth=6', '--prompt', prompt,
+             '--preview', preview, '--preview-window', 'down:1', '--header', '[ENTER] convert post | ✓ = already bundle'],
+            input='\n'.join(entries), text=True, capture_output=True)
         if proc.returncode != 0 or not proc.stdout.strip():
             print('No selection made.')
             sys.exit(0)
         selected = proc.stdout.strip()
     else:
         for idx, entry in enumerate(entries, 1):
-            print(f"{idx}. {entry}")
+            parts = entry.split('|')
+            print(f"{idx}. {parts[5]} ({parts[3]})")
         choice = input('Select a post number: ').strip()
         if not choice.isdigit():
             print('Invalid selection.')
@@ -189,7 +200,7 @@ def pick_post_interactively(posts):
             print('Selection out of range.')
             sys.exit(1)
         selected = entries[idx]
-    rel_path = selected.split('|')[-1].strip()
+    rel_path = selected.split('|')[4].strip()
     return ROOT / rel_path
 
 
