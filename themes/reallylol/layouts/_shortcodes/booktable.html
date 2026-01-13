@@ -39,8 +39,14 @@
   </li>
   {{ end }}
 </ul>
-<div class="pagination-controls" data-pagination-controls style="display: none;">
-  <button type="button" class="pagination-controls__button pagination-controls__button--prev" data-pagination-prev aria-label="Previous page">Previous</button>
-  <span class="pagination-controls__info" data-pagination-info></span>
-  <button type="button" class="pagination-controls__button pagination-controls__button--next" data-pagination-next aria-label="Next page">Next</button>
-</div>
+<nav class="pagination" data-pagination-controls style="display: none;">
+  <div class="prev-wrapper">
+    <span data-pagination-prev>Back</span>
+  </div>
+
+  <span class="page-count" data-pagination-info></span>
+  
+  <div class="next-wrapper">
+    <span data-pagination-next>Next</span>
+  </div>
+</nav>
