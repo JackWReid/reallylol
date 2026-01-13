@@ -2,7 +2,7 @@
 title: "Crystal store"
 date: 2022-09-04
 location: Litlington, East Sussex
-image: "/img/photo/2022-09-04-crystal-store.jpg"
+image: "img/photo/2022-09-04-crystal-store.jpg"
 tags:
   - landscape
   - countryside
@@ -10,4 +10,5 @@ tags:
   - uk
 ---
 
-![A small shop in between green trees](/img/photo/2022-09-04-crystal-store.jpg)
+
+{{< photo src="img/photo/2022-09-04-crystal-store.jpg" alt="A small shop in between green trees" >}}

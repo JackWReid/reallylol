@@ -1,7 +1,7 @@
 ---
 title: "Loeschwasser"
 date: 2025-07-13T11:47:17
-image: "/img/photo/2025-07-13-loesch-wasser.jpg"
+image: "img/photo/2025-07-13-loesch-wasser.jpg"
 location: Berlin, Germany
 tags:
   - berlin
@@ -9,4 +9,5 @@ tags:
   - typography
 ---
 
-![Two fire hydrants on a brick wall](/img/photo/2025-07-13-loesch-wasser.jpg)
+
+{{< photo src="img/photo/2025-07-13-loesch-wasser.jpg" alt="Two fire hydrants on a brick wall" >}}

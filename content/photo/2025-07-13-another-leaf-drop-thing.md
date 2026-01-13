@@ -1,7 +1,7 @@
 ---
 title: "Another leaf drop thing"
 date: 2025-07-13T14:47:25
-image: "/img/photo/2025-07-13-another-leaf-drop-thing.jpg"
+image: "img/photo/2025-07-13-another-leaf-drop-thing.jpg"
 location: Berlin, Germany
 tags:
   - berlin
@@ -10,4 +10,5 @@ tags:
   - landscape
 ---
 
-![Drops of water on leaves](/img/photo/2025-07-13-another-leaf-drop-thing.jpg)
+
+{{< photo src="img/photo/2025-07-13-another-leaf-drop-thing.jpg" alt="Drops of water on leaves" >}}

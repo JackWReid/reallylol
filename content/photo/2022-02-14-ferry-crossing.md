@@ -2,7 +2,7 @@
 title: "Ferry crossing"
 date: 2022-02-14
 location: Basel, Switzerland
-image: "/img/photo/2022-02-14-ferry-crossing.jpg"
+image: "img/photo/2022-02-14-ferry-crossing.jpg"
 tags:
     - travel
     - switzerland
@@ -10,4 +10,5 @@ tags:
     - faces
 ---
 
-![A man and woman in formalwear sitting on a boat](/img/photo/2022-02-14-ferry-crossing.jpg)
+
+{{< photo src="img/photo/2022-02-14-ferry-crossing.jpg" alt="A man and woman in formalwear sitting on a boat" >}}

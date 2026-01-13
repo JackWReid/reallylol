@@ -2,7 +2,8 @@
 title: "Spring bloom"
 date: 2022-04-08
 location: Manhattan, New York
-image: "/img/photo/2022-04-08-nyc-daffotrash.jpg"
+image: "img/photo/2022-04-08-nyc-daffotrash.jpg"
 ---
 
-![Daffodils and trash bags on a sidewalk](/img/photo/2022-04-08-nyc-daffotrash.jpg)
+
+{{< photo src="img/photo/2022-04-08-nyc-daffotrash.jpg" alt="Daffodils and trash bags on a sidewalk" >}}

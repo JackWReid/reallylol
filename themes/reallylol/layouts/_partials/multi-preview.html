@@ -2,10 +2,14 @@
 {{ $imagePath := .Params.image }}
 {{ $thumbSrc := "" }}
 {{ if $imagePath }}
-  {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
-  {{ with resources.Get $relativePath }}
-    {{ $thumb := .Fit "500x500" }}
-    {{ $thumbSrc = $thumb.RelPermalink }}
+  {{ if hasPrefix $imagePath "http" }}
+    {{ $thumbSrc = $imagePath }}
+  {{ else }}
+    {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
+    {{ with resources.Get $relativePath }}
+      {{ $thumb := .Fit "500x500" }}
+      {{ $thumbSrc = $thumb.RelPermalink }}
+    {{ end }}
   {{ end }}
 {{ end }}
 <article class="image-item">
@@ -22,7 +26,7 @@
       {{ partial "icons/calendar.html" . }} {{ .Date.Format "2006-01-02" }}
     </p>
   </div>
-  <img src="{{ if $thumbSrc }}{{ $thumbSrc }}{{ else }}{{ $imagePath | absURL }}{{ end }}" alt="{{ .Title }}" />
+  <img src="{{ if $thumbSrc }}{{ $thumbSrc }}{{ else }}{{ $imagePath }}{{ end }}" alt="{{ .Title }}" />
 </article>
 {{ else if eq "highlight" .Type }}
 <article class="highlight-item">

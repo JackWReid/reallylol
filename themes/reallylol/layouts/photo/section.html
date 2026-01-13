@@ -8,15 +8,19 @@
 {{ $imagePath := .Params.image }}
 {{ $thumbSrc := "" }}
 {{ if $imagePath }}
-  {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
-  {{ with resources.Get $relativePath }}
-    {{ $thumb := .Fit "500x500" }}
-    {{ $thumbSrc = $thumb.RelPermalink }}
+  {{ if hasPrefix $imagePath "http" }}
+    {{ $thumbSrc = $imagePath }}
+  {{ else }}
+    {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
+    {{ with resources.Get $relativePath }}
+      {{ $thumb := .Fit "500x500" }}
+      {{ $thumbSrc = $thumb.RelPermalink }}
+    {{ end }}
   {{ end }}
 {{ end }}
 <article class="photo-section-item">
   <a href="{{ .Permalink }}">
-    <img src="{{ if $thumbSrc }}{{ $thumbSrc }}{{ else }}{{ $imagePath | absURL }}{{ end }}" alt="{{ .Title }}">
+    <img src="{{ if $thumbSrc }}{{ $thumbSrc }}{{ else }}{{ $imagePath }}{{ end }}" alt="{{ .Title }}">
   </a>
 
   <h3 class="photo-section-item__title">

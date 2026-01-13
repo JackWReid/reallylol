@@ -2,7 +2,7 @@
 title: "The river change"
 date: 2022-07-02
 location: Dedham Vale, Suffolk
-image: "/img/photo/2022-07-02-river-change.jpg"
+image: "img/photo/2022-07-02-river-change.jpg"
 tags:
   - uk
   - nature
@@ -10,4 +10,5 @@ tags:
   - river
 ---
 
-![A girl stooping over next to a river bank](/img/photo/2022-07-02-river-change.jpg)
+
+{{< photo src="img/photo/2022-07-02-river-change.jpg" alt="A girl stooping over next to a river bank" >}}

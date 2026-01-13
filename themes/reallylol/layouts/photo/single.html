@@ -24,14 +24,18 @@
   <!-- Main photo display -->
   {{ if .Params.image }}
   {{ $imagePath := .Params.image }}
-  {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
   {{ $heroSrc := "" }}
-  {{ with resources.Get $relativePath }}
-    {{ $hero := .Fit "1400x1400" }}
-    {{ $heroSrc = $hero.RelPermalink }}
+  {{ if hasPrefix $imagePath "http" }}
+    {{ $heroSrc = $imagePath }}
+  {{ else }}
+    {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
+    {{ with resources.Get $relativePath }}
+      {{ $heroImg := .Fit "1400x1400" }}
+      {{ $heroSrc = $heroImg.RelPermalink }}
+    {{ end }}
   {{ end }}
   <div class="single-main__photo">
-    <img src="{{ if $heroSrc }}{{ $heroSrc }}{{ else }}{{ $imagePath | absURL }}{{ end }}" alt="{{ .Title }}" />
+    <img src="{{ if $heroSrc }}{{ $heroSrc }}{{ else }}{{ $imagePath }}{{ end }}" alt="{{ .Title }}" />
   </div>
   {{ end }}
 

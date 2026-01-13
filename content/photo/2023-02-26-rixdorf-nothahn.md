@@ -2,7 +2,7 @@
 title: "Beachy"
 date: 2023-02-26
 location: Rixdorf, Berlin
-image: "/img/photo/2023-02-26-rixdorf-nothahn.jpg"
+image: "img/photo/2023-02-26-rixdorf-nothahn.jpg"
 tags:
  - cities
  - berlin
@@ -10,4 +10,5 @@ tags:
  - rixdorf
 ---
 
-![A brightly coloured café on the streetside in Berlin](/img/photo/2023-02-26-rixdorf-nothahn.jpg)
+
+{{< photo src="img/photo/2023-02-26-rixdorf-nothahn.jpg" alt="A brightly coloured café on the streetside in Berlin" >}}
