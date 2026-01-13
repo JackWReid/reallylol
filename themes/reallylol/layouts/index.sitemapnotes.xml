@@ -4,6 +4,8 @@
 {{ range where .Site.RegularPages "Section" "note" }}
   <url>
     <loc>{{ .Permalink }}</loc>
+    {{ $lm := or .Lastmod .Date }}
+    {{ with $lm }}<lastmod>{{ .Format "2006-01-02" }}</lastmod>{{ end }}
     <priority>0.3</priority>
   </url>
 {{ end }}
