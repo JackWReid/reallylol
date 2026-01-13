@@ -13,4 +13,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-02-26-last-walk-ski.jpg" alt="A man and woman climbing a hill with skis over their shoulders" >}}
+{{< image src="img/photo/2022-02-26-last-walk-ski.jpg" alt="A man and woman climbing a hill with skis over their shoulders" >}}

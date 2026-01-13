@@ -107,7 +107,7 @@ curl -X POST "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/images/v
 
 **Before:**
 ```markdown
-{{< photo src="img/photo/2023-02-05-tempelhof-terminal.jpg" alt="Alt text" >}}
+{{< image src="img/photo/2023-02-05-tempelhof-terminal.jpg" alt="Alt text" >}}
 ```
 
 **After:**
@@ -121,7 +121,7 @@ curl -X POST "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/images/v
 1. Extract EXIF data
 2. Copy to `assets/img/photo/`
 3. Process with ImageMagick
-4. Create markdown file using the `photo` shortcode
+4. Create markdown file using the `image` shortcode
 
 **New workflow:**
 1. Extract EXIF data

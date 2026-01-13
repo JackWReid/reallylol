@@ -7,4 +7,4 @@ tags: [ germany, landscape ]
 ---
 
 
-{{< photo src="img/photo/2023-05-14-trailer-bench.jpg" alt="A bench on the back of a trailer in an empty yard" >}}
+{{< image src="img/photo/2023-05-14-trailer-bench.jpg" alt="A bench on the back of a trailer in an empty yard" >}}

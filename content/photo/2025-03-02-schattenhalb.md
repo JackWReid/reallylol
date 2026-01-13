@@ -7,4 +7,4 @@ tags: [ landscape, switzerland, mountains ]
 ---
 
 
-{{< photo src="img/photo/2025-03-02-schattenhalb.jpg" alt="An alpine house next to bare mountainsides" >}}
+{{< image src="img/photo/2025-03-02-schattenhalb.jpg" alt="An alpine house next to bare mountainsides" >}}

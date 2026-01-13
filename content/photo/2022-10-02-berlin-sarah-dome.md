@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-10-02-berlin-sarah-dome.jpg" alt="A smiling woman in front of Berliner Dom" >}}
+{{< image src="img/photo/2022-10-02-berlin-sarah-dome.jpg" alt="A smiling woman in front of Berliner Dom" >}}

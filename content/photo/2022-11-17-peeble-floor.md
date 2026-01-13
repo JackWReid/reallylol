@@ -13,4 +13,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-11-17-peeble-floor.jpg" alt="Close up of a wet forest floor with moss and long grass" >}}
+{{< image src="img/photo/2022-11-17-peeble-floor.jpg" alt="Close up of a wet forest floor with moss and long grass" >}}

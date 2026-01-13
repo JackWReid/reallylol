@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-07-15-canonbury.jpg" alt="The Overground station platform at Canonbury" >}}
+{{< image src="img/photo/2022-07-15-canonbury.jpg" alt="The Overground station platform at Canonbury" >}}

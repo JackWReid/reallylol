@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-04-08-nyc-night-ride.jpg" alt="A group of cyclists on a street corner at night" >}}
+{{< image src="img/photo/2022-04-08-nyc-night-ride.jpg" alt="A group of cyclists on a street corner at night" >}}

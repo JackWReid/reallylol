@@ -7,4 +7,4 @@ tags: [ berlin,interior,home ]
 ---
 
 
-{{< photo src="img/photo/2025-05-13-soft-bed-sheets.jpg" alt="Crumpled bedsheets in a white-walled bedroom" >}}
+{{< image src="img/photo/2025-05-13-soft-bed-sheets.jpg" alt="Crumpled bedsheets in a white-walled bedroom" >}}

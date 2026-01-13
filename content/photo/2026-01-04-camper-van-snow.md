@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2026-01-04-camper-van-snow.jpg" alt="An old red camper van piled high with snow" >}}
+{{< image src="img/photo/2026-01-04-camper-van-snow.jpg" alt="An old red camper van piled high with snow" >}}

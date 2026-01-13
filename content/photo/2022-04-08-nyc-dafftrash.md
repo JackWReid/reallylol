@@ -6,4 +6,4 @@ image: "img/photo/2022-04-08-nyc-daffotrash.jpg"
 ---
 
 
-{{< photo src="img/photo/2022-04-08-nyc-daffotrash.jpg" alt="Daffodils and trash bags on a sidewalk" >}}
+{{< image src="img/photo/2022-04-08-nyc-daffotrash.jpg" alt="Daffodils and trash bags on a sidewalk" >}}

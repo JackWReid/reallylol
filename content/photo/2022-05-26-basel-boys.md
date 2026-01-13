@@ -15,4 +15,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/basel-pink.jpg" alt="A girl, a boy, and his bike in front of the Rhine" >}}
+{{< image src="img/photo/basel-pink.jpg" alt="A girl, a boy, and his bike in front of the Rhine" >}}

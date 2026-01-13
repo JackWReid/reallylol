@@ -7,4 +7,4 @@ tags: [ france, travel, people, friends ]
 ---
 
 
-{{< photo src="img/photo/2023-09-16-nice-bar-side.jpg" alt="Two topless guys leaning on a windowsill" >}}
+{{< image src="img/photo/2023-09-16-nice-bar-side.jpg" alt="Two topless guys leaning on a windowsill" >}}

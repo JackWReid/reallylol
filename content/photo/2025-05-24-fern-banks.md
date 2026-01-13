@@ -7,4 +7,4 @@ tags: [ berlin,nature,landscape,water ]
 ---
 
 
-{{< photo src="img/photo/2025-05-24-fern-banks.jpg" alt="A group of ferns on a river bank" >}}
+{{< image src="img/photo/2025-05-24-fern-banks.jpg" alt="A group of ferns on a river bank" >}}

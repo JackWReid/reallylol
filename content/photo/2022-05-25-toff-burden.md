@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-05-25-loup-suit-hang.jpg" alt="White shirts hanging on the side of a barn" >}}
+{{< image src="img/photo/2022-05-25-loup-suit-hang.jpg" alt="White shirts hanging on the side of a barn" >}}

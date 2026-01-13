@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-04-27-nyc-the-ferry.jpg" alt="A girl in a facemask by the railing of a windy ferry with NYC in the background" >}}
+{{< image src="img/photo/2022-04-27-nyc-the-ferry.jpg" alt="A girl in a facemask by the railing of a windy ferry with NYC in the background" >}}

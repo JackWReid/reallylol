@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-06-05-primavera-nightscape.jpg" alt="A big musical festival with lights at night" >}}
+{{< image src="img/photo/2022-06-05-primavera-nightscape.jpg" alt="A big musical festival with lights at night" >}}

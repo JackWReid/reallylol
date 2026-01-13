@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-02-26-gropius-pano.jpg" alt="A field of kleingarten with modernist tower blocks in the background" >}}
+{{< image src="img/photo/2023-02-26-gropius-pano.jpg" alt="A field of kleingarten with modernist tower blocks in the background" >}}

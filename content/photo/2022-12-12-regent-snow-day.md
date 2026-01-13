@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-12-12-regent-snow-day.jpg" alt="Regents Canal in the early morning with snow covering every surface" >}}
+{{< image src="img/photo/2022-12-12-regent-snow-day.jpg" alt="Regents Canal in the early morning with snow covering every surface" >}}

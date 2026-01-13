@@ -7,4 +7,4 @@ tags: [ mallorca, spain, landscape, travel ]
 ---
 
 
-{{< photo src="img/photo/2023-08-28-the-pins-mallorca.jpg" alt="A headland cover in pines by the sea" >}}
+{{< image src="img/photo/2023-08-28-the-pins-mallorca.jpg" alt="A headland cover in pines by the sea" >}}

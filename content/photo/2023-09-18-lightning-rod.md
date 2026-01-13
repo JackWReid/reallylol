@@ -7,4 +7,4 @@ tags: [ travel, friends, rain, weather, france ]
 ---
 
 
-{{< photo src="img/photo/2023-09-18-lightning-rod.jpg" alt="A man in swimming trunks in the pouring rain, holding an umbrella" >}}
+{{< image src="img/photo/2023-09-18-lightning-rod.jpg" alt="A man in swimming trunks in the pouring rain, holding an umbrella" >}}

@@ -7,4 +7,4 @@ tags: [ landscape italy, mountains ]
 ---
 
 
-{{< photo src="img/photo/2025-03-06-tight-and-open.jpg" alt="A stream running through a mountain valley" >}}
+{{< image src="img/photo/2025-03-06-tight-and-open.jpg" alt="A stream running through a mountain valley" >}}

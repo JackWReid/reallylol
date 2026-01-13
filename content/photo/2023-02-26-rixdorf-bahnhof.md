@@ -10,4 +10,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-02-26-rixdorf-bahnhof.jpg" alt="A defunct S-bahn station" >}}
+{{< image src="img/photo/2023-02-26-rixdorf-bahnhof.jpg" alt="A defunct S-bahn station" >}}

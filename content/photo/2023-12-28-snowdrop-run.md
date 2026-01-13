@@ -7,4 +7,4 @@ tags: [ berlin, germany, nature, forest ]
 ---
 
 
-{{< photo src="img/photo/2023-12-28-snowdrop-run.jpg" alt="An otherwise bare bush blooming with snowdrops" >}}
+{{< image src="img/photo/2023-12-28-snowdrop-run.jpg" alt="An otherwise bare bush blooming with snowdrops" >}}

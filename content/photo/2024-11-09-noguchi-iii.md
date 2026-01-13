@@ -7,4 +7,4 @@ tags: [ usa, nyc, culture, art, interior, museum ]
 ---
 
 
-{{< photo src="img/photo/2024-11-09-noguchi-iii.jpg" alt="An abstract diarama art piece" >}}
+{{< image src="img/photo/2024-11-09-noguchi-iii.jpg" alt="An abstract diarama art piece" >}}

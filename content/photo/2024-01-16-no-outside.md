@@ -7,4 +7,4 @@ tags: [ berlin, germany, winter, interior, dusk, snow ]
 ---
 
 
-{{< photo src="img/photo/2024-01-16-no-outside.jpg" alt="A frozen courtyard visible out the back windows of a dark apartment" >}}
+{{< image src="img/photo/2024-01-16-no-outside.jpg" alt="A frozen courtyard visible out the back windows of a dark apartment" >}}

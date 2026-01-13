@@ -7,4 +7,4 @@ tags: [ landscape, switzerland, mountains, sarah ]
 ---
 
 
-{{< photo src="img/photo/2025-03-02-hochspatz.jpg" alt="A lone skier on top of a mountain" >}}
+{{< image src="img/photo/2025-03-02-hochspatz.jpg" alt="A lone skier on top of a mountain" >}}

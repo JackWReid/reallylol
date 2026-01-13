@@ -7,4 +7,4 @@ tags: [ wedding, france, people, food ]
 ---
 
 
-{{< photo src="img/photo/2024-06-22-and-you-and-you.jpg" alt="A couple giving a wedding speech among their guests" >}}
+{{< image src="img/photo/2024-06-22-and-you-and-you.jpg" alt="A couple giving a wedding speech among their guests" >}}

@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-05-30-barca-building-sheet.jpg" alt="A fancy decrepit under a gauze-like sheet" >}}
+{{< image src="img/photo/2022-05-30-barca-building-sheet.jpg" alt="A fancy decrepit under a gauze-like sheet" >}}

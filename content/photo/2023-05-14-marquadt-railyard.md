@@ -7,4 +7,4 @@ tags: [ infrastructure, germany, landscape ]
 ---
 
 
-{{< photo src="img/photo/2023-05-14-marquadt-railyard.jpg" alt="A train yard with overhead cables" >}}
+{{< image src="img/photo/2023-05-14-marquadt-railyard.jpg" alt="A train yard with overhead cables" >}}

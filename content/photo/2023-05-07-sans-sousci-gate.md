@@ -7,4 +7,4 @@ tags: [ germany, plants ]
 ---
 
 
-{{< photo src="img/photo/2023-05-07-sans-sousci-gate.jpg" alt="Vines against a stone wall, protected by a gate" >}}
+{{< image src="img/photo/2023-05-07-sans-sousci-gate.jpg" alt="Vines against a stone wall, protected by a gate" >}}

@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-06-07-canya-balcony.jpg" alt="A balcony view of a bay in Mallorca through mosquito nets" >}}
+{{< image src="img/photo/2022-06-07-canya-balcony.jpg" alt="A balcony view of a bay in Mallorca through mosquito nets" >}}

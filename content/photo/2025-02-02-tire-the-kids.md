@@ -7,4 +7,4 @@ tags: [ people, wedding, france, party ]
 ---
 
 
-{{< photo src="img/photo/2025-02-02-tire-the-kids.jpg" alt="Children and men in shirt-sleeves playing football in the garden" >}}
+{{< image src="img/photo/2025-02-02-tire-the-kids.jpg" alt="Children and men in shirt-sleeves playing football in the garden" >}}

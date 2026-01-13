@@ -7,4 +7,4 @@ tags: [ animals, pigs, scotland, nature ]
 ---
 
 
-{{< photo src="img/photo/2023-07-22-george-the-pig.jpg" alt="A black and white pig" >}}
+{{< image src="img/photo/2023-07-22-george-the-pig.jpg" alt="A black and white pig" >}}

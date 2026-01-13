@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-02-23-reutibach.jpg" alt="A valley in the Swiss mountains" >}}
+{{< image src="img/photo/2022-02-23-reutibach.jpg" alt="A valley in the Swiss mountains" >}}

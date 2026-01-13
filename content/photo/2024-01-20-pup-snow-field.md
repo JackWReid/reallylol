@@ -7,4 +7,4 @@ tags: [ berlin, nature, sarah, faces, people, winter, snow ]
 ---
 
 
-{{< photo src="img/photo/2024-01-20-pup-snow-field.jpg" alt="Sarah smiling in the sunshine of a snowy park" >}}
+{{< image src="img/photo/2024-01-20-pup-snow-field.jpg" alt="Sarah smiling in the sunshine of a snowy park" >}}

@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2025-08-24-giving-chase.jpg" alt="An old couple paddling a canoe down a green-lined canal" >}}
+{{< image src="img/photo/2025-08-24-giving-chase.jpg" alt="An old couple paddling a canoe down a green-lined canal" >}}

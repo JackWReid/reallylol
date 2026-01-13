@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2025-07-13-karpfenteich-green.jpg" alt="A pond surrounded by summer greenery" >}}
+{{< image src="img/photo/2025-07-13-karpfenteich-green.jpg" alt="A pond surrounded by summer greenery" >}}

@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-05-30-barca-balcon.jpg" alt="Balconies in an alleyway in Barcelona" >}}
+{{< image src="img/photo/2022-05-30-barca-balcon.jpg" alt="Balconies in an alleyway in Barcelona" >}}

@@ -1,0 +1,56 @@
+{{ $srcParam := .Get "src" }}
+{{ $caption := .Get "caption" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $class := .Get "class" }}
+{{ $method := (.Get "method" | default "resize") | lower }}
+{{ $size := .Get "size" }}
+{{ $width := (.Get "width" | default "") }}
+{{ $height := (.Get "height" | default "") }}
+{{ if or $width $height }}
+  {{ $size = printf "%sx%s" $width $height }}
+{{ end }}
+{{ if not $size }}
+  {{ $size = "1000x" }}
+{{ end }}
+{{ $loading := .Get "loading" | default "lazy" }}
+
+{{ if $caption }}
+<figure>
+{{ end }}
+
+{{ $relative := strings.TrimPrefix "/" $srcParam }}
+{{ $resource := "" }}
+{{ with .Page.Resources.GetMatch $relative }}
+  {{ $resource = . }}
+{{ else }}
+  {{ with resources.Get $relative }}
+    {{ $resource = . }}
+  {{ end }}
+{{ end }}
+
+{{ $isGif := false }}
+{{ with $resource }}
+  {{ $isGif = eq .MediaType.SubType "gif" }}
+{{ end }}
+
+{{ $imgSrc := $srcParam }}
+{{ if and $resource (not $isGif) (gt (len $size) 0) }}
+  {{ $processed := $resource }}
+  {{ if eq $method "fill" }}
+    {{ $processed = $resource.Fill $size }}
+  {{ else if eq $method "fit" }}
+    {{ $processed = $resource.Fit $size }}
+  {{ else }}
+    {{ $processed = $resource.Resize $size }}
+  {{ end }}
+  {{ $imgSrc = $processed.RelPermalink }}
+{{ else if $resource }}
+  {{ $imgSrc = $resource.RelPermalink }}
+{{ end }}
+
+<img src="{{ $imgSrc }}" alt="{{ $alt }}" loading="{{ $loading }}"{{ with $class }} class="{{ . }}"{{ end }}>
+
+{{ if $caption }}
+<figcaption>{{ $caption }}</figcaption>
+</figure>
+{{ end }}

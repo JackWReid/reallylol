@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-09-04-crystal-store.jpg" alt="A small shop in between green trees" >}}
+{{< image src="img/photo/2022-09-04-crystal-store.jpg" alt="A small shop in between green trees" >}}

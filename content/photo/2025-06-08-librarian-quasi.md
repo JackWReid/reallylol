@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2025-06-08-librarian-quasi.jpg" alt="A woman standing in a library with her hands behind her back" >}}
+{{< image src="img/photo/2025-06-08-librarian-quasi.jpg" alt="A woman standing in a library with her hands behind her back" >}}

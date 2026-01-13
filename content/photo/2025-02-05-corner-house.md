@@ -7,4 +7,4 @@ tags: [ berlin, germany, architecture ]
 ---
 
 
-{{< photo src="img/photo/2025-02-05-corner-house.jpg" alt="A simple, modern apartment building against blue sky" >}}
+{{< image src="img/photo/2025-02-05-corner-house.jpg" alt="A simple, modern apartment building against blue sky" >}}

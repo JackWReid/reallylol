@@ -13,4 +13,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-05-30-guell-sagra.jpg" alt="The Sagrada Familia cathedral between trees" >}}
+{{< image src="img/photo/2022-05-30-guell-sagra.jpg" alt="The Sagrada Familia cathedral between trees" >}}

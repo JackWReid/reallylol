@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-02-26-planter-bahnhof.jpg" alt="A 30s style S-Bahnhof in Berlin" >}}
+{{< image src="img/photo/2023-02-26-planter-bahnhof.jpg" alt="A 30s style S-Bahnhof in Berlin" >}}

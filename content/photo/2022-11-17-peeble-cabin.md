@@ -13,4 +13,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-11-17-peeble-cabin.jpg" alt="A forest cabin between pine trees" >}}
+{{< image src="img/photo/2022-11-17-peeble-cabin.jpg" alt="A forest cabin between pine trees" >}}

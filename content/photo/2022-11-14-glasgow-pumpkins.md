@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-11-14-glasgow-pumpkins.jpg" alt="A house barely visible through autumn leaves" >}}
+{{< image src="img/photo/2022-11-14-glasgow-pumpkins.jpg" alt="A house barely visible through autumn leaves" >}}

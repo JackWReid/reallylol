@@ -7,4 +7,4 @@ tags: [ sarah, people, friends ]
 ---
 
 
-{{< photo src="img/photo/2023-08-31-sarah-pieta.jpg" alt="One girl sat on anothers lap in the semi-dark" >}}
+{{< image src="img/photo/2023-08-31-sarah-pieta.jpg" alt="One girl sat on anothers lap in the semi-dark" >}}

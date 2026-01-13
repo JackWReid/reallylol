@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2023-01-19-warschauer-sunrise.jpg" alt="A sunrise over train tracks in central Berlin" >}}
+{{< image src="img/photo/2023-01-19-warschauer-sunrise.jpg" alt="A sunrise over train tracks in central Berlin" >}}

@@ -7,4 +7,4 @@ tags: [ berlin, germany, architecture, animals ]
 ---
 
 
-{{< photo src="img/photo/2025-02-15-crow-crossing.jpg" alt="A crow sitting on a road sign in Berlin" >}}
+{{< image src="img/photo/2025-02-15-crow-crossing.jpg" alt="A crow sitting on a road sign in Berlin" >}}

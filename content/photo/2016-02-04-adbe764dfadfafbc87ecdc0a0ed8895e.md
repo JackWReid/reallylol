@@ -7,4 +7,4 @@ instagram: true
 ---
 
 
-{{< photo src="img/photo/2016-02-04-adbe764dfadfafbc87ecdc0a0ed8895e.jpg" alt="Observe, the herd gathers around the watering hole, vying for increasingly obscure cured meats and Mediterranean pulses." >}}
+{{< image src="img/photo/2016-02-04-adbe764dfadfafbc87ecdc0a0ed8895e.jpg" alt="Observe, the herd gathers around the watering hole, vying for increasingly obscure cured meats and Mediterranean pulses." >}}

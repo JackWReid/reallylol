@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-02-22-hasli-snow-haus.jpg" alt="A Swiss house buried in snow" >}}
+{{< image src="img/photo/2022-02-22-hasli-snow-haus.jpg" alt="A Swiss house buried in snow" >}}

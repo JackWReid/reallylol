@@ -13,4 +13,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/sea-graves.jpg" alt="A graveyard right next to the sea" >}}
+{{< image src="img/photo/sea-graves.jpg" alt="A graveyard right next to the sea" >}}

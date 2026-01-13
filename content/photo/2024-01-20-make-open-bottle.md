@@ -7,4 +7,4 @@ tags: [ snow, berlin, winter, street ]
 ---
 
 
-{{< photo src="img/photo/2024-01-20-make-open-bottle.jpg" alt="A discarded shoe and bottle of sekt on a snowy pavement in Berlin" >}}
+{{< image src="img/photo/2024-01-20-make-open-bottle.jpg" alt="A discarded shoe and bottle of sekt on a snowy pavement in Berlin" >}}

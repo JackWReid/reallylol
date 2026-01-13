@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-06-05-primavera-triangles.jpg" alt="Two modern triangular buildings" >}}
+{{< image src="img/photo/2022-06-05-primavera-triangles.jpg" alt="Two modern triangular buildings" >}}

@@ -100,7 +100,7 @@ location: $location
 tags:
 $formatted_tags---
 
-{{< photo src="$rel_img_path" alt="$alt_text_escaped" >}}
+{{< image src="$rel_img_path" alt="$alt_text_escaped" >}}
 EOF
 )
 

@@ -10,4 +10,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2025-08-24-lubbenau-arm.jpg" alt="A forearm flexing with a kayak paddle in close-up" >}}
+{{< image src="img/photo/2025-08-24-lubbenau-arm.jpg" alt="A forearm flexing with a kayak paddle in close-up" >}}

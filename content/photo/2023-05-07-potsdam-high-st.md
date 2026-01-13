@@ -7,4 +7,4 @@ tags: [ germany, architecture ]
 ---
 
 
-{{< photo src="img/photo/2023-05-07-potsdam-high-st.jpg" alt="A cobbled German high street with a church spire at the end" >}}
+{{< image src="img/photo/2023-05-07-potsdam-high-st.jpg" alt="A cobbled German high street with a church spire at the end" >}}

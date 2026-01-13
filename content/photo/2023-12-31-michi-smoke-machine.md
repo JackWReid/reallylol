@@ -7,4 +7,4 @@ tags: [ berlin, germany, people ]
 ---
 
 
-{{< photo src="img/photo/2023-12-31-michi-smoke-machine.jpg" alt="A girl holding up a phone obscured by smoke at a party" >}}
+{{< image src="img/photo/2023-12-31-michi-smoke-machine.jpg" alt="A girl holding up a phone obscured by smoke at a party" >}}

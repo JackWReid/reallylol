@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-12-12-primrose-snow-day.jpg" alt="Primrose Hill covered in snow in pre-dawn light" >}}
+{{< image src="img/photo/2022-12-12-primrose-snow-day.jpg" alt="Primrose Hill covered in snow in pre-dawn light" >}}

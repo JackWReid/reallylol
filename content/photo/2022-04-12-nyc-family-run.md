@@ -11,4 +11,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-04-12-nyc-family-run.jpg" alt="" >}}
+{{< image src="img/photo/2022-04-12-nyc-family-run.jpg" alt="" >}}

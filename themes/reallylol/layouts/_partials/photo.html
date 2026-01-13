@@ -1,12 +1,21 @@
 {{ $srcParam := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
 {{ $relative := strings.TrimPrefix "/" $srcParam }}
-{{ with resources.Get $relative }}
+{{ $resource := "" }}
+{{ with .Page.Resources.GetMatch $relative }}
+  {{ $resource = . }}
+{{ else }}
+  {{ with resources.Get $relative }}
+    {{ $resource = . }}
+  {{ end }}
+{{ end }}
+{{ if $resource }}
   {{ if in $relative ".gif" }}
-    <img src="{{ .RelPermalink }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+    <img src="{{ $resource.RelPermalink }}" alt="{{ $alt }}">
   {{ else }}
-    {{ $resized := .Resize "1000x" }}
-    <img src="{{ $resized.RelPermalink }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+    {{ $resized := $resource.Resize "1000x" }}
+    <img src="{{ $resized.RelPermalink }}" alt="{{ $alt }}">
   {{ end }}
 {{ else }}
-  <img src="{{ $srcParam }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+  <img src="{{ $srcParam }}" alt="{{ $alt }}">
 {{ end }}

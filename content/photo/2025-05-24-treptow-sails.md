@@ -7,4 +7,4 @@ tags: [ berlin,architecture,landscape ]
 ---
 
 
-{{< photo src="img/photo/2025-05-24-treptow-sails.jpg" alt="A residential building with scaffolding covered in orange netting" >}}
+{{< image src="img/photo/2025-05-24-treptow-sails.jpg" alt="A residential building with scaffolding covered in orange netting" >}}

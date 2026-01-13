@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2026-01-04-factory-siemens-snow.jpg" alt="Snowy cars with a factory in the background" >}}
+{{< image src="img/photo/2026-01-04-factory-siemens-snow.jpg" alt="Snowy cars with a factory in the background" >}}

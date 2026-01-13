@@ -42,7 +42,7 @@ for md_file in sorted(PHOTO_DIR.glob('*.md')):
     def repl(match):
         alt = html.escape(match.group('alt'), quote=True)
         path = match.group('path')
-        return f"{{{{< photo src=\"img/photo/{path}\" alt=\"{alt}\" >}}}}"
+        return f"{{{{< image src=\"img/photo/{path}\" alt=\"{alt}\" >}}}}"
     new_body_text, body_replacements = md_image_re.subn(repl, body_text)
 
     if not fm_changed and body_replacements == 0:

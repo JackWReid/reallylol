@@ -7,4 +7,4 @@ tags: [ berlin, germany, interiors ]
 ---
 
 
-{{< photo src="img/photo/2023-07-16-the-hot-room-again.jpg" alt="A chair in the corner of a room, next to a side board of houseplants" >}}
+{{< image src="img/photo/2023-07-16-the-hot-room-again.jpg" alt="A chair in the corner of a room, next to a side board of houseplants" >}}

@@ -7,4 +7,4 @@ tags: [ paris,france,architecture,cities ]
 ---
 
 
-{{< photo src="img/photo/2025-06-01-hotel-opera.jpg" alt="A green hotel sign on the side of a Paris block" >}}
+{{< image src="img/photo/2025-06-01-hotel-opera.jpg" alt="A green hotel sign on the side of a Paris block" >}}

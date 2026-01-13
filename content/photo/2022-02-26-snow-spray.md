@@ -12,4 +12,4 @@ tags:
 ---
 
 
-{{< photo src="img/photo/2022-02-26-snow-spray.jpg" alt="A mountain landscape" >}}
+{{< image src="img/photo/2022-02-26-snow-spray.jpg" alt="A mountain landscape" >}}
