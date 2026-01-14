@@ -72,10 +72,10 @@
     "cover": "http://homeromanteion.com/shareScreenshot.png"
   },
   {
-    "title": "ORBIS: The Stanford Geospatial Network Model of the Roman World",
+    "title": "ORBIS",
     "url": "https://orbis.stanford.edu/",
     "date": "2026-01-12",
-    "excerpt": "Google Maps for Roman legions.",
+    "excerpt": "The Stanford geospatial network model of the Roman world or, Google Maps for Roman legions.",
     "tags": [
       "toblog",
       "History",
