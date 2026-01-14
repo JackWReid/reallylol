@@ -4,14 +4,15 @@
 >
     {{ partial "sub-nav.html" . }}
     <h1 class="single-main__title">{{ .Title }}</h1>
+    <h2 class="single-main__page-indicator" data-pagination-indicator></h2>
     <div class="single-main__content">
         {{ if in .RelPermalink "/links/saved" }}
           {{ .Content }}
           
-          <ul class="saved-links-list">
+          <ul class="saved-links-list" data-paginate="true">
           {{ $links := .Site.Data.links }}
           {{ range $links }}
-              <li>
+              <li data-item>
                 <article class="saved-link">
                   <header class="saved-link__header">
                     <a href="{{ .url }}" target="_blank" rel="noopener" class="saved-link__title">{{ .title }}</a>
@@ -26,9 +27,21 @@
               </li>
           {{ end }}
           </ul>
+          <nav class="pagination" data-pagination-controls style="display: none;">
+            <div class="prev-wrapper">
+              <span data-pagination-prev>Back</span>
+            </div>
+
+            <span class="page-count" data-pagination-info></span>
+            
+            <div class="next-wrapper">
+              <span data-pagination-next>Next</span>
+            </div>
+          </nav>
         {{ else }}
           {{ .Content }}
         {{ end }}
     </div>
 </main>
+<script src="{{ "js/media-pagination.js" | absURL }}" defer></script>
 {{ end }}
