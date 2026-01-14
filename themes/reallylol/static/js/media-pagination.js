@@ -3,6 +3,23 @@
 
   const ITEMS_PER_PAGE = 24;
 
+  function setPageIndicator(page, totalPages) {
+    const indicators = document.querySelectorAll('[data-pagination-indicator]');
+    if (!indicators.length) {
+      return;
+    }
+
+    indicators.forEach(indicator => {
+      if (page && page > 1) {
+        indicator.textContent = `Page ${page} of ${totalPages}`;
+        indicator.style.display = 'block';
+      } else {
+        indicator.textContent = '';
+        indicator.style.display = 'none';
+      }
+    });
+  }
+
   /**
    * Get URL parameter value
    */
@@ -138,6 +155,8 @@
       // Update info text (e.g., "1 of 5")
       infoSpan.textContent = `${page} of ${totalPages}`;
 
+      setPageIndicator(page, totalPages);
+
       // Update URL
       updateUrlParam('page', page);
 
@@ -259,6 +278,7 @@
               }
 
               infoSpan.textContent = `${targetPage} of ${totalPages}`;
+              setPageIndicator(targetPage, totalPages);
             }
           }
         }

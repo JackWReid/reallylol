@@ -13,7 +13,7 @@
 
   /* Typography */
   --font-base: Charter, Georgia, Times New Roman, times, serif;
-  --font-title:
+  --font-sans:
     -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen-sans, ubuntu,
     cantarell, "helvetica neue", sans-serif;
   --font-size-xs: 0.8rem;
@@ -549,12 +549,12 @@
   .image-item__label {
     margin: 0 0 var(--spacing-base);
     font-size: var(--font-size-xs);
-    font-family: var(--font-title);
+    font-family: var(--font-sans);
   }
 
   .image-item__title {
     margin: 0 0 var(--spacing-base);
-    font-family: var(--font-title);
+    font-family: var(--font-sans);
     display: flex;
     align-items: center;
   }
@@ -605,7 +605,7 @@
   .highlight-item__title {
     margin: 0 0 var(--spacing-xs);
     font-size: var(--font-size-lg);
-    font-family: var(--font-title);
+    font-family: var(--font-sans);
 
     a {
       color: inherit;
@@ -643,7 +643,7 @@
   .blog-item__title {
     margin: 0 0 var(--spacing-xs);
     font-size: var(--font-size-lg);
-    font-family: var(--font-title);
+    font-family: var(--font-sans);
 
     a {
       color: inherit;
@@ -675,7 +675,7 @@
   .blog-item_title {
     margin: 0 0 var(--spacing-xs);
     font-size: var(--font-size-lg);
-    font-family: var(--font-title);
+    font-family: var(--font-sans);
 
     a {
       color: inherit;
@@ -812,7 +812,7 @@
       padding-bottom: var(--spacing-md);
     }
 
-    h2 {
+    .single-main__content h2 {
       margin-top: var(--spacing-lg);
     }
   }
@@ -820,6 +820,14 @@
   .single-main-title,
   .single-main__title {
     margin-bottom: var(--spacing-base);
+  }
+
+  .single-main__page-indicator {
+    display: none;
+    margin: -.5rem 0 var(--spacing-md);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--color-text-secondary);
   }
 
   .single-main__date {
