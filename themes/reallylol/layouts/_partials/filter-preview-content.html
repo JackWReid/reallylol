@@ -1,7 +1,13 @@
 {{- $content := .content -}}
 {{- $type := .type -}}
 
-{{- /* Remove images */ -}}
+{{- /* Remove figure blocks (images with captions) */ -}}
+{{- $content = replaceRE `<figure>[\s\S]*?</figure>` "" $content -}}
+
+{{- /* Remove shortcode-image divs (images without captions) */ -}}
+{{- $content = replaceRE `<div class="shortcode-image">[\s\S]*?</div>` "" $content -}}
+
+{{- /* Remove standalone images */ -}}
 {{- $content = replaceRE `<img[^>]*>` "" $content -}}
 
 {{- /* Remove horizontal rules */ -}}

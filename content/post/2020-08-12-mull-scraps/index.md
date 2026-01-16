@@ -6,7 +6,7 @@ tags:
   - scraps
 ---
 
-{{< image src="machair.jpg" caption="Machair behind the dunes at Salen Bay, Mull" alt="Rivulets cut up boggy and verdant ground at dusk" >}}}
+{{< image src="machair.jpg" caption="Machair behind the dunes at Salen Bay, Mull" alt="Rivulets cut up boggy and verdant ground at dusk" >}}
 
 A few weeks ago I went camping in Scotland. Below are some scraps I wrote down while I was on the Isle of Mull.
 
@@ -24,7 +24,7 @@ Distinct from machair is **links** (from Old English "hlinc" meaning rising grou
 
 ---
 
-{{< image src="ardalanish-beach.jpg" caption="Ardalanish Beach at dawn" alt="A sandy beach over a fringe of rough coastal grass" >}}}
+{{< image src="ardalanish-beach.jpg" caption="Ardalanish Beach at dawn" alt="A sandy beach over a fringe of rough coastal grass" >}}
 
 **Dunlins** are sand-pipers that use their long beaks to pull worms out of the wet sand of coastal areas. They are resident to Mull, Skye, and Uist. We saw a pair on Ardalanish beach.
 

@@ -6,7 +6,7 @@ tags:
   - notes
 ---
 
-{{< image src="iona-dock-water.jpg" caption="The swimmable water in Iona harbour, because I don't have a photo of my pool" alt="Bright blue water fringed by a concrete pier" >}}}
+{{< image src="iona-dock-water.jpg" caption="The swimmable water in Iona harbour, because I don't have a photo of my pool" alt="Bright blue water fringed by a concrete pier" >}}
 
 I’ve grown up with a Pavlovian connection between swimming pools and chocolate bars. When I was a kid I was often taken to the local swimming baths and would stage a successful whinging campaign afterwards to be given 50p for a chocolate bar from the vending machine in the lobby of the baths. Now when I go swimming as an adult, something about climbing out of the chlorinated  water in the echoey tiled hall, yanking on socks and jeans to my still-damp body, it makes me crave a chocolate bar from the machine on my way out.
 

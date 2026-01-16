@@ -14,7 +14,7 @@ tags:
 ---
  
 
-It&#8217;s getting darker and colder, but so far I don&#8217;t mind. Like I said before, I&#8217;m [cooking a lot][1] of satisfying food. It&#8217;s still warm enough to [get into the Hampstead Heath ponds][2] every Saturday morning. The crowd there is thinning out and there&#8217;s now a pleasing corps of batty and rich ladies of a certain age who we&#8217;re starting to see on a regular basis.<figure class="wp-block-image size-large">
+It&#8217;s getting darker and colder, but so far I don&#8217;t mind. Like I said before, I&#8217;m [cooking a lot][1] of satisfying food. It&#8217;s still warm enough to [get into the Hampstead Heath ponds][2] every Saturday morning. The crowd there is thinning out and there&#8217;s now a pleasing corps of batty and rich ladies of a certain age who we&#8217;re starting to see on a regular basis.
 
 {{< image src="pesto-udon.jpg" alt="A bowl of noodles" caption="Leftover homemade pesto with udon noodles" >}}
 
