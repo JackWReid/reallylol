@@ -10,7 +10,7 @@ tags:
   - cinema
 ---
 
-{{{< image src="rocks-netflix.jpg" alt="A group of schoolgirls laughing together" >}}}}
+{{< image src="rocks-netflix.jpg" alt="A group of schoolgirls laughing together" >}}
 
 I think the last film I saw in the cinema before they all closed was _The Lighthouse_. After that weird nautical trip we emerged from The Ritzy in Brixton in the middle of the afternoon, dazed and out of sync with the normal world where people were charging up and down the pavement. The cinema was only a couple of minutes down the road from where I was living at the time; it didn’t seem like a big deal.
 
@@ -24,7 +24,7 @@ I think that right before I caught a flight to India, I watched _The Farewell_ a
 
 We got back to the UK just as everything turned to shit. For months we used films not necessarily for their own sake but as distractions. Sometimes I needed a dim distraction, something easy and trashy. Sometimes I felt like I should be using the time locked inside to better myself, watch something **enriching**.
 
-{{{< image src="rams-movie.jpg" alt="A man in doorway with rams in the foreground" >}}}}
+{{< image src="rams-movie.jpg" alt="A man in doorway with rams in the foreground" >}}
 
 One of the success stories in the first lockdown was _Portrait of a Lady on Fire_. It was just a visually beautiful film, a small love story with the some nice pathos. We watched it one night in that house share after watching another briefing from the Prime Minister, back when everybody watched those. Another film we watched  as a house during the worst of the first lockdown was _Moffie_, a film about a South African boy conscripted to fight a border conflict with Angola. The atmosphere around him is violent and threatening, most of all from his fellow soldiers who radiate dangerous, volatile masculinity. In the end, it's a love story.
 
@@ -42,7 +42,7 @@ When a film is so hyped it often takes the dazzle off the actual experience of w
 
 The best case scenario is taking a chance on something and being pleasantly surprised. Perhaps the best example of that was _Rams_, an Icelandic film ostensibly about two estranged brothers who defy a governmental order to destroy their flock of sheep during an outbreak of foot and mouth disease. It's really a story about authority, community, and brotherly love. I loved it and I think about Gummi and his rams a lot.
 
-{{{< image src="black-power-mixtape-stokey.jpg" alt="Stokey Carmichael at the mic" >}}}}
+{{< image src="black-power-mixtape-stokey.jpg" alt="Stokey Carmichael at the mic" >}}
 
 Another case of a punt paying off was _Rocks_. Mercifully released on Netflix, it tells the story of a poor girl in London whose mother abandons her and her younger brother, for whom she has to care while keeping it together at school. It all feels very real and relatable to me, and Rock’s downfall is all the more painful to watch for it. The shining light of this movie is the supporting cast of Rocks’s friends, all teenage actors putting in great performances. 
 
