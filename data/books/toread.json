@@ -1,5 +1,33 @@
 [
   {
+    "date_updated": "2026-01-15",
+    "title": "Michel the Giant: An African in Greenland",
+    "author": "Tété-Michel Kpomassie",
+    "image_url": "https://assets.hardcover.app/edition/30465655/58261061._SX98_.jpg",
+    "hardcover_url": "https://hardcover.app/books/michel-the-giant-an-african-in-greenland"
+  },
+  {
+    "date_updated": "2026-01-15",
+    "title": "Strangers I Know",
+    "author": "Claudia Durastanti",
+    "image_url": "https://assets.hardcover.app/edition/30654325/13229421-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/strangers-i-know"
+  },
+  {
+    "date_updated": "2026-01-15",
+    "title": "Watching Over Her",
+    "author": "Jean-Baptiste Andrea",
+    "image_url": "https://assets.hardcover.app/edition/32475534/340133ce865892b2a339897719ce8c099409daa5.jpeg",
+    "hardcover_url": "https://hardcover.app/books/watching-over-her-2023"
+  },
+  {
+    "date_updated": "2026-01-15",
+    "title": "The Spy in the Archive",
+    "author": "Gordon Corera",
+    "image_url": "https://assets.hardcover.app/edition/32171360/bf223c657af83b9c57536ef67a86fd08a79a8477.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-spy-in-the-archive"
+  },
+  {
     "date_updated": "2026-01-08",
     "title": "Hemlock: A Novel",
     "author": "Melissa Faliveno",
@@ -15,17 +43,17 @@
   },
   {
     "date_updated": "2026-01-04",
-    "title": "The Course of the Heart",
-    "author": "M. John Harrison",
-    "image_url": "https://assets.hardcover.app/external_data/60821783/8a43fe8fbd4b8b7cce91ddc97cef25055ec21d8b.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-course-of-the-heart"
-  },
-  {
-    "date_updated": "2026-01-04",
     "title": "Territory of Light",
     "author": "Yuko Tsushima",
     "image_url": "https://assets.hardcover.app/edition/7065545/10840328-L.jpg",
     "hardcover_url": "https://hardcover.app/books/territory-of-light"
+  },
+  {
+    "date_updated": "2026-01-04",
+    "title": "The Course of the Heart",
+    "author": "M. John Harrison",
+    "image_url": "https://assets.hardcover.app/external_data/60821783/8a43fe8fbd4b8b7cce91ddc97cef25055ec21d8b.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-course-of-the-heart"
   },
   {
     "date_updated": "2026-01-04",
@@ -78,17 +106,17 @@
   },
   {
     "date_updated": "2025-07-09",
-    "title": "The Aeneid",
-    "author": "Virgil",
-    "image_url": "https://assets.hardcover.app/external_data/59792525/2cc232e409a99283778212654792cefd0cc1ac81.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-aeneid"
-  },
-  {
-    "date_updated": "2025-07-09",
     "title": "Gilgamesh: A New Translation of the Ancient Epic",
     "author": "Anonymous",
     "image_url": "https://assets.hardcover.app/external_data/60430646/b74a82bd8754b438a63dc9ceb81382f38ca0605a.jpeg",
     "hardcover_url": "https://hardcover.app/books/gilgamesh-a-new-translation-of-the-ancient-epic"
+  },
+  {
+    "date_updated": "2025-07-09",
+    "title": "The Aeneid",
+    "author": "Virgil",
+    "image_url": "https://assets.hardcover.app/external_data/59792525/2cc232e409a99283778212654792cefd0cc1ac81.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-aeneid"
   },
   {
     "date_updated": "2025-06-29",
@@ -127,6 +155,20 @@
   },
   {
     "date_updated": "2025-06-26",
+    "title": "Native Nations: A Millennium in North America",
+    "author": "Kathleen DuVal",
+    "image_url": "https://assets.hardcover.app/external_data/60396439/efdf2930d9f97bb9d534b7cf7663daa5cf61435b.jpeg",
+    "hardcover_url": "https://hardcover.app/books/native-nations-a-millennium-in-north-america"
+  },
+  {
+    "date_updated": "2025-06-26",
+    "title": "The Greek Revolution and the Violent Birth of Nationalism",
+    "author": "Yanni Kotsonis",
+    "image_url": "https://assets.hardcover.app/edition/32079538/09547dd4ba452981afd1df8e04f1a32ced8b4956.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-greek-revolution-and-the-violent-birth-of-nationalism"
+  },
+  {
+    "date_updated": "2025-06-26",
     "title": "The Death of Stalin",
     "author": "Sheila Fitzpatrick",
     "image_url": "https://assets.hardcover.app/external_data/603928/3cd075d260f76c27cd0ea460df3d64bb5c6f3440.jpeg",
@@ -139,20 +181,6 @@
     "hardcover_url": "https://hardcover.app/books/revolutionary-spring"
   },
   {
-    "date_updated": "2025-06-26",
-    "title": "The Greek Revolution and the Violent Birth of Nationalism",
-    "author": "Yanni Kotsonis",
-    "image_url": "https://assets.hardcover.app/edition/32079538/09547dd4ba452981afd1df8e04f1a32ced8b4956.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-greek-revolution-and-the-violent-birth-of-nationalism"
-  },
-  {
-    "date_updated": "2025-06-26",
-    "title": "Native Nations: A Millennium in North America",
-    "author": "Kathleen DuVal",
-    "image_url": "https://assets.hardcover.app/external_data/60396439/efdf2930d9f97bb9d534b7cf7663daa5cf61435b.jpeg",
-    "hardcover_url": "https://hardcover.app/books/native-nations-a-millennium-in-north-america"
-  },
-  {
     "date_updated": "2025-06-23",
     "title": "Culture Creep: Notes on the Pop Apocalypse",
     "author": "Alice Bolin",
@@ -161,17 +189,17 @@
   },
   {
     "date_updated": "2025-05-25",
-    "title": "The Listeners",
-    "author": "Maggie Stiefvater",
-    "image_url": "https://assets.hardcover.app/editions/31592437/7708735c-45ec-4432-aeb4-9472acb3fda4.jpg",
-    "hardcover_url": "https://hardcover.app/books/the-listeners-2025"
-  },
-  {
-    "date_updated": "2025-05-25",
     "title": "Katabasis",
     "author": "R.F. Kuang",
     "image_url": "https://assets.hardcover.app/editions/31147378/6272729711218434.jpg",
     "hardcover_url": "https://hardcover.app/books/katabasis-2025"
+  },
+  {
+    "date_updated": "2025-05-25",
+    "title": "The Listeners",
+    "author": "Maggie Stiefvater",
+    "image_url": "https://assets.hardcover.app/editions/31592437/7708735c-45ec-4432-aeb4-9472acb3fda4.jpg",
+    "hardcover_url": "https://hardcover.app/books/the-listeners-2025"
   },
   {
     "date_updated": "2025-05-25",
@@ -196,17 +224,17 @@
   },
   {
     "date_updated": "2025-03-16",
-    "title": "Everything Must Go: The Stories We Tell About The End of the World",
-    "author": "Dorian Lynskey",
-    "image_url": "https://assets.hardcover.app/edition/31518942/07f5c3830da25371ee87943cfd41f65b00c059e4.jpeg",
-    "hardcover_url": "https://hardcover.app/books/everything-must-go-the-stories-we-tell-about-the-end-of-the-world"
-  },
-  {
-    "date_updated": "2025-03-16",
     "title": "The Frozen River",
     "author": "Ariel Lawhon",
     "image_url": "https://assets.hardcover.app/external_data/61272700/e7bcb6033f14367497becadca466581d7e92122f.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-frozen-river-2023"
+  },
+  {
+    "date_updated": "2025-03-16",
+    "title": "Everything Must Go: The Stories We Tell About The End of the World",
+    "author": "Dorian Lynskey",
+    "image_url": "https://assets.hardcover.app/edition/31518942/07f5c3830da25371ee87943cfd41f65b00c059e4.jpeg",
+    "hardcover_url": "https://hardcover.app/books/everything-must-go-the-stories-we-tell-about-the-end-of-the-world"
   },
   {
     "date_updated": "2025-01-13",
@@ -224,17 +252,17 @@
   },
   {
     "date_updated": "2024-11-23",
-    "title": "War and War",
-    "author": "László Krasznahorkai",
-    "image_url": "https://assets.hardcover.app/edition/30552189/598471-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/war-and-war-4cd11806-1302-4bb9-bb2a-5059a7d0801c"
-  },
-  {
-    "date_updated": "2024-11-23",
     "title": "The Melancholy of Resistance",
     "author": "László Krasznahorkai",
     "image_url": "https://assets.hardcover.app/edition/30401090/919094c88335424538739b908c913c9377429f7d.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-melancholy-of-resistance"
+  },
+  {
+    "date_updated": "2024-11-23",
+    "title": "War and War",
+    "author": "László Krasznahorkai",
+    "image_url": "https://assets.hardcover.app/edition/30552189/598471-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/war-and-war-4cd11806-1302-4bb9-bb2a-5059a7d0801c"
   },
   {
     "date_updated": "2024-10-23",
@@ -245,45 +273,10 @@
   },
   {
     "date_updated": "2024-10-20",
-    "title": "The Stepdaughter",
-    "author": "Caroline Blackwood",
-    "image_url": "https://assets.hardcover.app/edition/30821497/0dc88a2d074b4e2e5ed6837c155750eb48c9c5e7.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-stepdaughter-1976"
-  },
-  {
-    "date_updated": "2024-10-20",
-    "title": "Autumn Journal",
-    "author": "Louis MacNeice",
-    "image_url": "https://assets.hardcover.app/external_data/1254522/d4b75e827667236eead6e8ca36fd00adcd581818.jpeg",
-    "hardcover_url": "https://hardcover.app/books/autumn-journal"
-  },
-  {
-    "date_updated": "2024-10-20",
-    "title": "Jagua Nana",
-    "author": "Cyprian Ekwensi",
-    "image_url": "https://assets.hardcover.app/external_data/60825325/7d6c75e8131d8833cb52deca9862a5dbad639efe.jpeg",
-    "hardcover_url": "https://hardcover.app/books/jagua-nana"
-  },
-  {
-    "date_updated": "2024-10-20",
-    "title": "Mood Indigo",
-    "author": "Boris Vian",
-    "image_url": "https://assets.hardcover.app/external_data/59870858/9868398fbc37a0684addc85a0a98edbf3672c8d3.jpeg",
-    "hardcover_url": "https://hardcover.app/books/mood-indigo"
-  },
-  {
-    "date_updated": "2024-10-20",
     "title": "The Kreutzer Sonata",
     "author": "Leo Tolstoy",
     "image_url": "https://assets.hardcover.app/edition/4613416/606062-L.jpg",
     "hardcover_url": "https://hardcover.app/books/the-kreutzer-sonata-1880"
-  },
-  {
-    "date_updated": "2024-10-20",
-    "title": "Satantango",
-    "author": "László Krasznahorkai",
-    "image_url": "https://assets.hardcover.app/book_mappings/7335330/0828a9e2e5c163b59253bb90077f25a56ae09161.jpeg",
-    "hardcover_url": "https://hardcover.app/books/satantango"
   },
   {
     "date_updated": "2024-10-20",
@@ -308,16 +301,44 @@
   },
   {
     "date_updated": "2024-10-20",
+    "title": "Jagua Nana",
+    "author": "Cyprian Ekwensi",
+    "image_url": "https://assets.hardcover.app/external_data/60825325/7d6c75e8131d8833cb52deca9862a5dbad639efe.jpeg",
+    "hardcover_url": "https://hardcover.app/books/jagua-nana"
+  },
+  {
+    "date_updated": "2024-10-20",
+    "title": "Mood Indigo",
+    "author": "Boris Vian",
+    "image_url": "https://assets.hardcover.app/external_data/59870858/9868398fbc37a0684addc85a0a98edbf3672c8d3.jpeg",
+    "hardcover_url": "https://hardcover.app/books/mood-indigo"
+  },
+  {
+    "date_updated": "2024-10-20",
     "title": "The Dear Green Place",
     "author": "Archie Hind",
     "hardcover_url": "https://hardcover.app/books/the-dear-green-place"
   },
   {
-    "date_updated": "2024-10-18",
-    "title": "The Island",
-    "author": "Ana María Matute",
-    "image_url": "https://assets.hardcover.app/edition/31146875/2c7be76408d05abb4c07e9dcb1582079f0cc3ff1.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-island-1959"
+    "date_updated": "2024-10-20",
+    "title": "Satantango",
+    "author": "László Krasznahorkai",
+    "image_url": "https://assets.hardcover.app/book_mappings/7335330/0828a9e2e5c163b59253bb90077f25a56ae09161.jpeg",
+    "hardcover_url": "https://hardcover.app/books/satantango"
+  },
+  {
+    "date_updated": "2024-10-20",
+    "title": "Autumn Journal",
+    "author": "Louis MacNeice",
+    "image_url": "https://assets.hardcover.app/external_data/1254522/d4b75e827667236eead6e8ca36fd00adcd581818.jpeg",
+    "hardcover_url": "https://hardcover.app/books/autumn-journal"
+  },
+  {
+    "date_updated": "2024-10-20",
+    "title": "The Stepdaughter",
+    "author": "Caroline Blackwood",
+    "image_url": "https://assets.hardcover.app/edition/30821497/0dc88a2d074b4e2e5ed6837c155750eb48c9c5e7.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-stepdaughter-1976"
   },
   {
     "date_updated": "2024-10-18",
@@ -332,6 +353,13 @@
     "author": "Robert  Burton",
     "image_url": "https://assets.hardcover.app/edition/29747837/fdadcaabcc8a71a109366cbd0b355eb41491dd6b.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-anatomy-of-melancholy"
+  },
+  {
+    "date_updated": "2024-10-18",
+    "title": "The Island",
+    "author": "Ana María Matute",
+    "image_url": "https://assets.hardcover.app/edition/31146875/2c7be76408d05abb4c07e9dcb1582079f0cc3ff1.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-island-1959"
   },
   {
     "date_updated": "2024-09-30",
@@ -349,6 +377,13 @@
   },
   {
     "date_updated": "2024-08-25",
+    "title": "The Day of the Jackal",
+    "author": "Frederick Forsyth",
+    "image_url": "https://assets.hardcover.app/external_data/48527687/6f64af8b0914d0487e212be627c5d5f734c189d4.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-day-of-the-jackal"
+  },
+  {
+    "date_updated": "2024-08-25",
     "title": "Veronica",
     "author": "Mary Gaitskill",
     "image_url": "https://assets.hardcover.app/external_data/59540688/bc759a9a705edb866a8efcf2ed3e20244e67b7aa.jpeg",
@@ -356,30 +391,10 @@
   },
   {
     "date_updated": "2024-08-25",
-    "title": "The Third Man",
-    "author": "Graham Greene",
-    "image_url": "https://assets.hardcover.app/external_data/59319596/f02f84c17887c26a4663c4c227aa700982f85abb.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-third-man"
-  },
-  {
-    "date_updated": "2024-08-25",
-    "title": "Background to danger",
-    "author": "Eric Ambler",
-    "image_url": "https://assets.hardcover.app/edition/19728927/ca002891119bfe02842c5847bacfc07f2fc6bc76.jpeg",
-    "hardcover_url": "https://hardcover.app/books/background-to-danger-1939"
-  },
-  {
-    "date_updated": "2024-08-25",
-    "title": "Stars and Bars",
-    "author": "William Boyd",
-    "hardcover_url": "https://hardcover.app/books/stars-and-bars"
-  },
-  {
-    "date_updated": "2024-08-25",
-    "title": "The Day of the Jackal",
-    "author": "Frederick Forsyth",
-    "image_url": "https://assets.hardcover.app/external_data/48527687/6f64af8b0914d0487e212be627c5d5f734c189d4.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-day-of-the-jackal"
+    "title": "Djinns",
+    "author": "Fatma Aydemir",
+    "image_url": "https://assets.hardcover.app/external_data/61908768/d958598b805eb76863a5cc66eaa6e5bda62d02ac.jpeg",
+    "hardcover_url": "https://hardcover.app/books/djinns-2022"
   },
   {
     "date_updated": "2024-08-25",
@@ -397,10 +412,23 @@
   },
   {
     "date_updated": "2024-08-25",
-    "title": "Djinns",
-    "author": "Fatma Aydemir",
-    "image_url": "https://assets.hardcover.app/external_data/61908768/d958598b805eb76863a5cc66eaa6e5bda62d02ac.jpeg",
-    "hardcover_url": "https://hardcover.app/books/djinns-2022"
+    "title": "The Third Man",
+    "author": "Graham Greene",
+    "image_url": "https://assets.hardcover.app/external_data/59319596/f02f84c17887c26a4663c4c227aa700982f85abb.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-third-man"
+  },
+  {
+    "date_updated": "2024-08-25",
+    "title": "Stars and Bars",
+    "author": "William Boyd",
+    "hardcover_url": "https://hardcover.app/books/stars-and-bars"
+  },
+  {
+    "date_updated": "2024-08-25",
+    "title": "Background to danger",
+    "author": "Eric Ambler",
+    "image_url": "https://assets.hardcover.app/edition/19728927/ca002891119bfe02842c5847bacfc07f2fc6bc76.jpeg",
+    "hardcover_url": "https://hardcover.app/books/background-to-danger-1939"
   },
   {
     "date_updated": "2024-08-21",
@@ -418,10 +446,10 @@
   },
   {
     "date_updated": "2024-07-25",
-    "title": "The Great Movies",
-    "author": "Roger Ebert",
-    "image_url": "https://assets.hardcover.app/edition/11818592/2262231-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/the-great-movies"
+    "title": "Making Movies",
+    "author": "Sidney Lumet",
+    "image_url": "https://assets.hardcover.app/external_data/59849612/ba9c63cf8a12e6e9415de5f8422111bb86634beb.jpeg",
+    "hardcover_url": "https://hardcover.app/books/making-movies-1995"
   },
   {
     "date_updated": "2024-07-25",
@@ -432,10 +460,10 @@
   },
   {
     "date_updated": "2024-07-25",
-    "title": "Making Movies",
-    "author": "Sidney Lumet",
-    "image_url": "https://assets.hardcover.app/external_data/59849612/ba9c63cf8a12e6e9415de5f8422111bb86634beb.jpeg",
-    "hardcover_url": "https://hardcover.app/books/making-movies-1995"
+    "title": "The Great Movies",
+    "author": "Roger Ebert",
+    "image_url": "https://assets.hardcover.app/edition/11818592/2262231-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/the-great-movies"
   },
   {
     "date_updated": "2024-07-24",
@@ -481,38 +509,17 @@
   },
   {
     "date_updated": "2024-07-08",
-    "title": "Mariette in Ecstasy",
-    "author": "Ron Hansen",
-    "image_url": "https://assets.hardcover.app/edition/9122985/4037855-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/mariette-in-ecstasy"
-  },
-  {
-    "date_updated": "2024-07-08",
     "title": "The Monk: A Romance",
     "author": "Matthew Gregory Lewis",
     "image_url": "https://assets.hardcover.app/editions/17630329/8398996998471886.jpg",
     "hardcover_url": "https://hardcover.app/books/the-monk"
   },
   {
-    "date_updated": "2024-07-06",
-    "title": "The History of Jazz",
-    "author": "Ted Gioia",
-    "image_url": "https://assets.hardcover.app/edition/20332155/6282100-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/the-history-of-jazz"
-  },
-  {
-    "date_updated": "2024-07-06",
-    "title": "The Weary Blues",
-    "author": "Langston Hughes",
-    "image_url": "https://assets.hardcover.app/edition/30433954/content.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-weary-blues"
-  },
-  {
-    "date_updated": "2024-07-06",
-    "title": "Invisible Man",
-    "author": "Ralph Ellison",
-    "image_url": "https://assets.hardcover.app/edition/7666927/b43b7cbad4dd84c66221b2ed7854ba20a6b02dbc.jpeg",
-    "hardcover_url": "https://hardcover.app/books/invisible-man"
+    "date_updated": "2024-07-08",
+    "title": "Mariette in Ecstasy",
+    "author": "Ron Hansen",
+    "image_url": "https://assets.hardcover.app/edition/9122985/4037855-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/mariette-in-ecstasy"
   },
   {
     "date_updated": "2024-07-06",
@@ -530,10 +537,31 @@
   },
   {
     "date_updated": "2024-07-06",
+    "title": "The Weary Blues",
+    "author": "Langston Hughes",
+    "image_url": "https://assets.hardcover.app/edition/30433954/content.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-weary-blues"
+  },
+  {
+    "date_updated": "2024-07-06",
     "title": "The Collected Dorothy Parker",
     "author": "Dorothy Parker",
     "image_url": "https://assets.hardcover.app/external_data/60099509/217fd7a21aee2a5829148de73eefd45e8f39107b.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-collected-dorothy-parker-1944"
+  },
+  {
+    "date_updated": "2024-07-06",
+    "title": "The History of Jazz",
+    "author": "Ted Gioia",
+    "image_url": "https://assets.hardcover.app/edition/20332155/6282100-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/the-history-of-jazz"
+  },
+  {
+    "date_updated": "2024-07-06",
+    "title": "Invisible Man",
+    "author": "Ralph Ellison",
+    "image_url": "https://assets.hardcover.app/edition/7666927/b43b7cbad4dd84c66221b2ed7854ba20a6b02dbc.jpeg",
+    "hardcover_url": "https://hardcover.app/books/invisible-man"
   },
   {
     "date_updated": "2024-06-11",
@@ -551,17 +579,17 @@
   },
   {
     "date_updated": "2024-05-27",
-    "title": "Before European Hegemony: The World System A.D. 1250-1350",
-    "author": "Janet L. Abu-Lughod",
-    "image_url": "https://assets.hardcover.app/edition/15364082/121729-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/before-european-hegemony-the-world-system-ad-1250-1350"
-  },
-  {
-    "date_updated": "2024-05-27",
     "title": "Ours",
     "author": "Phillip B. Williams",
     "image_url": "https://assets.hardcover.app/edition/31171812/165d223c11b943f7ab3c2317821f716c0435e606.jpeg",
     "hardcover_url": "https://hardcover.app/books/ours-5fbbd898-b4f9-428d-b8c3-64455c81eae8"
+  },
+  {
+    "date_updated": "2024-05-27",
+    "title": "Before European Hegemony: The World System A.D. 1250-1350",
+    "author": "Janet L. Abu-Lughod",
+    "image_url": "https://assets.hardcover.app/edition/15364082/121729-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/before-european-hegemony-the-world-system-ad-1250-1350"
   },
   {
     "date_updated": "2024-05-12",
@@ -571,17 +599,17 @@
   },
   {
     "date_updated": "2024-04-15",
-    "title": "Eve's Hollywood",
-    "author": "Eve Babitz",
-    "image_url": "https://assets.hardcover.app/edition/8714848/content.jpeg",
-    "hardcover_url": "https://hardcover.app/books/eves-hollywood"
-  },
-  {
-    "date_updated": "2024-04-15",
     "title": "The Obscene Madame D",
     "author": "Hilda Hilst",
     "image_url": "https://assets.hardcover.app/external_data/60072672/3b13813d68a2b36943eca2748f0d2681a25ae8bc.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-obscene-madame-d"
+  },
+  {
+    "date_updated": "2024-04-15",
+    "title": "Eve's Hollywood",
+    "author": "Eve Babitz",
+    "image_url": "https://assets.hardcover.app/edition/8714848/content.jpeg",
+    "hardcover_url": "https://hardcover.app/books/eves-hollywood"
   },
   {
     "date_updated": "2024-04-15",
@@ -599,17 +627,17 @@
   },
   {
     "date_updated": "2024-04-09",
+    "title": "The Great Cat Massacre",
+    "author": "Robert Darnton",
+    "image_url": "https://assets.hardcover.app/edition/5042933/254270-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/the-great-cat-massacre"
+  },
+  {
+    "date_updated": "2024-04-09",
     "title": "Bunny",
     "author": "Mona Awad",
     "image_url": "https://assets.hardcover.app/edition/27393723/f14fe0c5dd31bd934590afeb8b8b7aaa9abe3bcc.jpeg",
     "hardcover_url": "https://hardcover.app/books/bunny"
-  },
-  {
-    "date_updated": "2024-04-09",
-    "title": "Porn: An Oral History",
-    "author": "Polly Barton",
-    "image_url": "https://assets.hardcover.app/external_data/60292971/aabb9a0e94cd9f58df1686f5e69441baee124818.jpeg",
-    "hardcover_url": "https://hardcover.app/books/porn-an-oral-history"
   },
   {
     "date_updated": "2024-04-09",
@@ -620,10 +648,17 @@
   },
   {
     "date_updated": "2024-04-09",
-    "title": "The Great Cat Massacre",
-    "author": "Robert Darnton",
-    "image_url": "https://assets.hardcover.app/edition/5042933/254270-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/the-great-cat-massacre"
+    "title": "Porn: An Oral History",
+    "author": "Polly Barton",
+    "image_url": "https://assets.hardcover.app/external_data/60292971/aabb9a0e94cd9f58df1686f5e69441baee124818.jpeg",
+    "hardcover_url": "https://hardcover.app/books/porn-an-oral-history"
+  },
+  {
+    "date_updated": "2024-04-04",
+    "title": "Bugsy \u0026 Other Stories",
+    "author": "Rafael Frumkin",
+    "image_url": "https://assets.hardcover.app/edition/31599931/1eb6ceae2cd7424d6e9422b975f8245dee05c452.jpeg",
+    "hardcover_url": "https://hardcover.app/books/bugsy-other-stories"
   },
   {
     "date_updated": "2024-04-04",
@@ -640,18 +675,18 @@
     "hardcover_url": "https://hardcover.app/books/women-in-peril"
   },
   {
-    "date_updated": "2024-04-04",
-    "title": "Bugsy \u0026 Other Stories",
-    "author": "Rafael Frumkin",
-    "image_url": "https://assets.hardcover.app/edition/31599931/1eb6ceae2cd7424d6e9422b975f8245dee05c452.jpeg",
-    "hardcover_url": "https://hardcover.app/books/bugsy-other-stories"
-  },
-  {
     "date_updated": "2024-04-03",
     "title": "Debt: The First 5,000 Years",
     "author": "David Graeber",
     "image_url": "https://assets.hardcover.app/external_data/59533990/5a9ddbe5b1631a0e0d70fa996fa7f44c62cf1cea.jpeg",
     "hardcover_url": "https://hardcover.app/books/debt"
+  },
+  {
+    "date_updated": "2024-04-02",
+    "title": "Pym",
+    "author": "Mat Johnson",
+    "image_url": "https://assets.hardcover.app/edition/1243034/6707641-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/pym"
   },
   {
     "date_updated": "2024-04-02",
@@ -668,20 +703,6 @@
   },
   {
     "date_updated": "2024-04-02",
-    "title": "A Far Cry from Kensington",
-    "author": "Muriel Spark",
-    "image_url": "https://assets.hardcover.app/edition/26660058/598332-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/a-far-cry-from-kensington"
-  },
-  {
-    "date_updated": "2024-04-02",
-    "title": "We Are a Haunting",
-    "author": "Tyriek White",
-    "image_url": "https://assets.hardcover.app/external_data/60134135/ad334c53ca18e48df23eaa7fe85f9882f9edd704.jpeg",
-    "hardcover_url": "https://hardcover.app/books/we-are-a-haunting"
-  },
-  {
-    "date_updated": "2024-04-02",
     "title": "The Wounded World: W. E. B. Du Bois and the First World War",
     "author": "Chad L. Williams",
     "image_url": "https://assets.hardcover.app/external_data/60315168/0c5fa5841987b7abca3cbea5b760fe0ec6e22900.jpeg",
@@ -689,10 +710,17 @@
   },
   {
     "date_updated": "2024-04-02",
-    "title": "Headshot",
-    "author": "Rita Bullwinkel",
-    "image_url": "https://assets.hardcover.app/edition/31201745/6ee35d9c67032592fb843d806f73fcf46cceb722.jpeg",
-    "hardcover_url": "https://hardcover.app/books/headshot"
+    "title": "A Far Cry from Kensington",
+    "author": "Muriel Spark",
+    "image_url": "https://assets.hardcover.app/edition/26660058/598332-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/a-far-cry-from-kensington"
+  },
+  {
+    "date_updated": "2024-04-02",
+    "title": "The Principle of Rapid Peering",
+    "author": "Sylvia Legris",
+    "image_url": "https://assets.hardcover.app/edition/32079551/6ca93ec49e50178efe35e3879bb6d65f84ab2f87.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-principle-of-rapid-peering"
   },
   {
     "date_updated": "2024-04-02",
@@ -703,73 +731,17 @@
   },
   {
     "date_updated": "2024-04-02",
-    "title": "Pym",
-    "author": "Mat Johnson",
-    "image_url": "https://assets.hardcover.app/edition/1243034/6707641-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/pym"
+    "title": "We Are a Haunting",
+    "author": "Tyriek White",
+    "image_url": "https://assets.hardcover.app/external_data/60134135/ad334c53ca18e48df23eaa7fe85f9882f9edd704.jpeg",
+    "hardcover_url": "https://hardcover.app/books/we-are-a-haunting"
   },
   {
     "date_updated": "2024-04-02",
-    "title": "The Principle of Rapid Peering",
-    "author": "Sylvia Legris",
-    "image_url": "https://assets.hardcover.app/edition/32079551/6ca93ec49e50178efe35e3879bb6d65f84ab2f87.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-principle-of-rapid-peering"
-  },
-  {
-    "date_updated": "2024-03-28",
-    "title": "Happening",
-    "author": "Annie Ernaux",
-    "image_url": "https://assets.hardcover.app/external_data/400080/0ff7b2fa8d1a0ce8c578f636d2d30e8a598e6a16.jpeg",
-    "hardcover_url": "https://hardcover.app/books/happening"
-  },
-  {
-    "date_updated": "2024-03-28",
-    "title": "City of Laughter",
-    "author": "Temim Fruchter",
-    "image_url": "https://assets.hardcover.app/external_data/60234601/6ef5fb13fdb543185e1105376cbf288b735ae67d.jpeg",
-    "hardcover_url": "https://hardcover.app/books/city-of-laughter-2024"
-  },
-  {
-    "date_updated": "2024-03-28",
-    "title": "Cursed Bunny",
-    "author": "Bora Chung",
-    "image_url": "https://assets.hardcover.app/external_data/61507072/56ca5a08800998de41ac8fb5b85083f45990ef51.jpeg",
-    "hardcover_url": "https://hardcover.app/books/cursed-bunny"
-  },
-  {
-    "date_updated": "2024-03-28",
-    "title": "The Years",
-    "author": "Annie Ernaux",
-    "image_url": "https://assets.hardcover.app/external_data/36323131/679de43478640a1c4d59657b8c0b4ed773dbd2d5.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-years"
-  },
-  {
-    "date_updated": "2024-03-28",
-    "title": "South and West: From a Notebook",
-    "author": "Joan Didion",
-    "image_url": "https://assets.hardcover.app/external_data/59464285/d1ae21d188a62a1ecbfec5ce82348ea9aa06cfa2.jpeg",
-    "hardcover_url": "https://hardcover.app/books/south-and-west-from-a-notebook"
-  },
-  {
-    "date_updated": "2024-03-28",
-    "title": "The Memory Police",
-    "author": "Yōko Ogawa",
-    "image_url": "https://assets.hardcover.app/external_data/45951583/f8c2899b7d2fbe2fef3ccce33df90c50c2d4c3e3.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-memory-police"
-  },
-  {
-    "date_updated": "2024-03-28",
-    "title": "Baumgartner",
-    "author": "Paul Auster",
-    "image_url": "https://assets.hardcover.app/external_data/60279967/0f47daf77ab0192227a58d87981a405505c9eec5.jpeg",
-    "hardcover_url": "https://hardcover.app/books/baumgartner"
-  },
-  {
-    "date_updated": "2024-03-28",
-    "title": "The Cement Garden",
-    "author": "Ian McEwan",
-    "image_url": "https://assets.hardcover.app/external_data/59471831/499264b3e337685203640f2f4cb1b41d6aba9dc2.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-cement-garden"
+    "title": "Headshot",
+    "author": "Rita Bullwinkel",
+    "image_url": "https://assets.hardcover.app/edition/31201745/6ee35d9c67032592fb843d806f73fcf46cceb722.jpeg",
+    "hardcover_url": "https://hardcover.app/books/headshot"
   },
   {
     "date_updated": "2024-03-28",
@@ -780,17 +752,17 @@
   },
   {
     "date_updated": "2024-03-28",
-    "title": "Prophet Song",
-    "author": "Paul Lynch",
-    "image_url": "https://assets.hardcover.app/external_data/59955446/e9404a7d6caf5ee22857d9b7b679251847f89d8c.jpeg",
-    "hardcover_url": "https://hardcover.app/books/prophet-song"
+    "title": "The Children Act",
+    "author": "Ian McEwan",
+    "image_url": "https://assets.hardcover.app/external_data/49406237/d40cedaac0b9061aaa3702694adf125ddddc5d9a.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-children-act"
   },
   {
     "date_updated": "2024-03-28",
-    "title": "A Girl's Story",
-    "author": "Annie Ernaux",
-    "image_url": "https://assets.hardcover.app/external_data/59620604/793098574cf03e67a6bbb05d0c25f5256063a5c7.jpeg",
-    "hardcover_url": "https://hardcover.app/books/a-girls-story"
+    "title": "Klara and the Sun",
+    "author": "Kazuo Ishiguro",
+    "image_url": "https://assets.hardcover.app/external_data/59592031/11d4c25aa782acfbff944edbec1e89a6dbdbaace.jpeg",
+    "hardcover_url": "https://hardcover.app/books/klara-and-the-sun"
   },
   {
     "date_updated": "2024-03-28",
@@ -801,17 +773,24 @@
   },
   {
     "date_updated": "2024-03-28",
-    "title": "Come and Get It",
-    "author": "Kiley Reid",
-    "image_url": "https://assets.hardcover.app/external_data/61440395/f9204437e1f1ccf3824894cb7f840c131abf5e2a.jpeg",
-    "hardcover_url": "https://hardcover.app/books/come-and-get-it-a-gma-book-club-pick-2024"
+    "title": "A Girl's Story",
+    "author": "Annie Ernaux",
+    "image_url": "https://assets.hardcover.app/external_data/59620604/793098574cf03e67a6bbb05d0c25f5256063a5c7.jpeg",
+    "hardcover_url": "https://hardcover.app/books/a-girls-story"
   },
   {
     "date_updated": "2024-03-28",
-    "title": "Klara and the Sun",
-    "author": "Kazuo Ishiguro",
-    "image_url": "https://assets.hardcover.app/external_data/59592031/11d4c25aa782acfbff944edbec1e89a6dbdbaace.jpeg",
-    "hardcover_url": "https://hardcover.app/books/klara-and-the-sun"
+    "title": "Greek Lessons",
+    "author": "Han Kang",
+    "image_url": "https://assets.hardcover.app/external_data/61649589/fa54441840594b7df042a44de3329563963b35d1.jpeg",
+    "hardcover_url": "https://hardcover.app/books/greek-lessons"
+  },
+  {
+    "date_updated": "2024-03-28",
+    "title": "Cursed Bunny",
+    "author": "Bora Chung",
+    "image_url": "https://assets.hardcover.app/external_data/61507072/56ca5a08800998de41ac8fb5b85083f45990ef51.jpeg",
+    "hardcover_url": "https://hardcover.app/books/cursed-bunny"
   },
   {
     "date_updated": "2024-03-28",
@@ -829,17 +808,66 @@
   },
   {
     "date_updated": "2024-03-28",
-    "title": "Greek Lessons",
-    "author": "Han Kang",
-    "image_url": "https://assets.hardcover.app/external_data/61649589/fa54441840594b7df042a44de3329563963b35d1.jpeg",
-    "hardcover_url": "https://hardcover.app/books/greek-lessons"
+    "title": "The Years",
+    "author": "Annie Ernaux",
+    "image_url": "https://assets.hardcover.app/external_data/36323131/679de43478640a1c4d59657b8c0b4ed773dbd2d5.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-years"
   },
   {
     "date_updated": "2024-03-28",
-    "title": "The Children Act",
+    "title": "Happening",
+    "author": "Annie Ernaux",
+    "image_url": "https://assets.hardcover.app/external_data/400080/0ff7b2fa8d1a0ce8c578f636d2d30e8a598e6a16.jpeg",
+    "hardcover_url": "https://hardcover.app/books/happening"
+  },
+  {
+    "date_updated": "2024-03-28",
+    "title": "Come and Get It",
+    "author": "Kiley Reid",
+    "image_url": "https://assets.hardcover.app/external_data/61440395/f9204437e1f1ccf3824894cb7f840c131abf5e2a.jpeg",
+    "hardcover_url": "https://hardcover.app/books/come-and-get-it-a-gma-book-club-pick-2024"
+  },
+  {
+    "date_updated": "2024-03-28",
+    "title": "The Cement Garden",
     "author": "Ian McEwan",
-    "image_url": "https://assets.hardcover.app/external_data/49406237/d40cedaac0b9061aaa3702694adf125ddddc5d9a.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-children-act"
+    "image_url": "https://assets.hardcover.app/external_data/59471831/499264b3e337685203640f2f4cb1b41d6aba9dc2.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-cement-garden"
+  },
+  {
+    "date_updated": "2024-03-28",
+    "title": "Baumgartner",
+    "author": "Paul Auster",
+    "image_url": "https://assets.hardcover.app/external_data/60279967/0f47daf77ab0192227a58d87981a405505c9eec5.jpeg",
+    "hardcover_url": "https://hardcover.app/books/baumgartner"
+  },
+  {
+    "date_updated": "2024-03-28",
+    "title": "City of Laughter",
+    "author": "Temim Fruchter",
+    "image_url": "https://assets.hardcover.app/external_data/60234601/6ef5fb13fdb543185e1105376cbf288b735ae67d.jpeg",
+    "hardcover_url": "https://hardcover.app/books/city-of-laughter-2024"
+  },
+  {
+    "date_updated": "2024-03-28",
+    "title": "The Memory Police",
+    "author": "Yōko Ogawa",
+    "image_url": "https://assets.hardcover.app/external_data/45951583/f8c2899b7d2fbe2fef3ccce33df90c50c2d4c3e3.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-memory-police"
+  },
+  {
+    "date_updated": "2024-03-28",
+    "title": "Prophet Song",
+    "author": "Paul Lynch",
+    "image_url": "https://assets.hardcover.app/external_data/59955446/e9404a7d6caf5ee22857d9b7b679251847f89d8c.jpeg",
+    "hardcover_url": "https://hardcover.app/books/prophet-song"
+  },
+  {
+    "date_updated": "2024-03-28",
+    "title": "South and West: From a Notebook",
+    "author": "Joan Didion",
+    "image_url": "https://assets.hardcover.app/external_data/59464285/d1ae21d188a62a1ecbfec5ce82348ea9aa06cfa2.jpeg",
+    "hardcover_url": "https://hardcover.app/books/south-and-west-from-a-notebook"
   },
   {
     "date_updated": "2024-03-17",
@@ -878,17 +906,17 @@
   },
   {
     "date_updated": "2024-03-02",
-    "title": "Goodbye Tsugumi",
-    "author": "Banana Yoshimoto",
-    "image_url": "https://assets.hardcover.app/book_mappings/7335262/1b4629cb42e4d5fcda7b660c41ec56d088d043a6.jpeg",
-    "hardcover_url": "https://hardcover.app/books/goodbye-tsugumi-1989"
-  },
-  {
-    "date_updated": "2024-03-02",
     "title": "The Barbara Johnson Reader: The Surprise of Otherness",
     "author": "Barbara   Johnson",
     "image_url": "https://assets.hardcover.app/edition/32079546/4078247727a7955869ae3d2504c68729cee36b71.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-barbara-johnson-reader"
+  },
+  {
+    "date_updated": "2024-03-02",
+    "title": "Goodbye Tsugumi",
+    "author": "Banana Yoshimoto",
+    "image_url": "https://assets.hardcover.app/book_mappings/7335262/1b4629cb42e4d5fcda7b660c41ec56d088d043a6.jpeg",
+    "hardcover_url": "https://hardcover.app/books/goodbye-tsugumi-1989"
   },
   {
     "date_updated": "2024-02-20",
@@ -927,6 +955,13 @@
   },
   {
     "date_updated": "2024-01-16",
+    "title": "Sex with a Brain Injury: On Concussion and Recovery",
+    "author": "Annie Liontas",
+    "image_url": "https://assets.hardcover.app/external_data/60256250/d2ea7f0794d40ac35de6b11437e20ad2eabb66f5.jpeg",
+    "hardcover_url": "https://hardcover.app/books/sex-with-a-brain-injury"
+  },
+  {
+    "date_updated": "2024-01-16",
     "title": "Beautyland",
     "author": "Marie-Helene Bertino",
     "image_url": "https://assets.hardcover.app/edition/30961623/705e56727c4a80709cdbf53f2b84d0b0ff95a0f2.jpeg",
@@ -947,13 +982,6 @@
     "hardcover_url": "https://hardcover.app/books/tripping-on-utopia"
   },
   {
-    "date_updated": "2024-01-16",
-    "title": "Sex with a Brain Injury: On Concussion and Recovery",
-    "author": "Annie Liontas",
-    "image_url": "https://assets.hardcover.app/external_data/60256250/d2ea7f0794d40ac35de6b11437e20ad2eabb66f5.jpeg",
-    "hardcover_url": "https://hardcover.app/books/sex-with-a-brain-injury"
-  },
-  {
     "date_updated": "2023-12-25",
     "title": "How to Draw a Novel",
     "author": "Martin Solares",
@@ -969,10 +997,10 @@
   },
   {
     "date_updated": "2023-12-14",
-    "title": "The Devil Takes You Home",
-    "author": "Gabino Iglesias",
-    "image_url": "https://assets.hardcover.app/external_data/59761765/445b57813954ffb5da0f81bcb59d78d0e86e86c9.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-devil-takes-you-home"
+    "title": "Marzahn, mon amour",
+    "author": "Katja Oskamp",
+    "image_url": "https://assets.hardcover.app/edition/30539995/content.jpeg",
+    "hardcover_url": "https://hardcover.app/books/marzahn-mon-amour"
   },
   {
     "date_updated": "2023-12-14",
@@ -990,17 +1018,17 @@
   },
   {
     "date_updated": "2023-12-14",
+    "title": "The Devil Takes You Home",
+    "author": "Gabino Iglesias",
+    "image_url": "https://assets.hardcover.app/external_data/59761765/445b57813954ffb5da0f81bcb59d78d0e86e86c9.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-devil-takes-you-home"
+  },
+  {
+    "date_updated": "2023-12-14",
     "title": "Bliss Montage",
     "author": "Ling Ma",
     "image_url": "https://assets.hardcover.app/edition/30525199/content.jpeg",
     "hardcover_url": "https://hardcover.app/books/bliss-montage"
-  },
-  {
-    "date_updated": "2023-12-14",
-    "title": "Marzahn, mon amour",
-    "author": "Katja Oskamp",
-    "image_url": "https://assets.hardcover.app/edition/30539995/content.jpeg",
-    "hardcover_url": "https://hardcover.app/books/marzahn-mon-amour"
   },
   {
     "date_updated": "2023-12-13",
@@ -1011,10 +1039,9 @@
   },
   {
     "date_updated": "2023-12-12",
-    "title": "Antkind",
-    "author": "Charlie Kaufman",
-    "image_url": "https://assets.hardcover.app/external_data/59527811/19d190971364b0ab01e47af94be37f9a5e4cf13f.jpeg",
-    "hardcover_url": "https://hardcover.app/books/antkind"
+    "title": "The Letters of Gustave Flaubert",
+    "author": "Gustave Flaubert",
+    "hardcover_url": "https://hardcover.app/books/the-letters-of-gustave-flaubert"
   },
   {
     "date_updated": "2023-12-12",
@@ -1025,37 +1052,10 @@
   },
   {
     "date_updated": "2023-12-12",
-    "title": "The Letters of Gustave Flaubert",
-    "author": "Gustave Flaubert",
-    "hardcover_url": "https://hardcover.app/books/the-letters-of-gustave-flaubert"
-  },
-  {
-    "date_updated": "2023-12-11",
-    "title": "The Apple in the Dark",
-    "author": "Clarice Lispector",
-    "image_url": "https://assets.hardcover.app/external_data/60378825/95300b616057e5722a274b7ebf3cf54217bce058.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-apple-in-the-dark"
-  },
-  {
-    "date_updated": "2023-12-11",
-    "title": "The Bee Sting",
-    "author": "Paul Murray",
-    "image_url": "https://assets.hardcover.app/edition/30732077/dad22dee66efdfa1150edcdbad0e35c3349f84a9.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-bee-sting-abf30dd4-4b5f-4f9b-9502-d8fd3218c1b8"
-  },
-  {
-    "date_updated": "2023-12-11",
-    "title": "There Is No Antimemetics Division: A Novel",
-    "author": "qntm",
-    "image_url": "https://assets.hardcover.app/external_data/193765/b3af02e08dc537afe1627e9cc6a20131874e056d.jpeg",
-    "hardcover_url": "https://hardcover.app/books/there-is-no-antimemetics-division"
-  },
-  {
-    "date_updated": "2023-12-11",
-    "title": "Minor Detail",
-    "author": "Adania Shibli",
-    "image_url": "https://assets.hardcover.app/external_data/49459201/f6fbe17527687c8c4b0f02ef44c109a300581508.jpeg",
-    "hardcover_url": "https://hardcover.app/books/minor-detail"
+    "title": "Antkind",
+    "author": "Charlie Kaufman",
+    "image_url": "https://assets.hardcover.app/external_data/59527811/19d190971364b0ab01e47af94be37f9a5e4cf13f.jpeg",
+    "hardcover_url": "https://hardcover.app/books/antkind"
   },
   {
     "date_updated": "2023-12-11",
@@ -1066,6 +1066,20 @@
   },
   {
     "date_updated": "2023-12-11",
+    "title": "The Book at War: Libraries and Readers in an Age of Conflict",
+    "author": "Andrew Pettegree",
+    "image_url": "https://assets.hardcover.app/external_data/60355919/2edc3734a6146a54bd95551e652fa53f05ec35dd.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-book-at-war-libraries-and-readers-in-an-age-of-conflict"
+  },
+  {
+    "date_updated": "2023-12-11",
+    "title": "There Is No Antimemetics Division: A Novel",
+    "author": "qntm",
+    "image_url": "https://assets.hardcover.app/external_data/193765/b3af02e08dc537afe1627e9cc6a20131874e056d.jpeg",
+    "hardcover_url": "https://hardcover.app/books/there-is-no-antimemetics-division"
+  },
+  {
+    "date_updated": "2023-12-11",
     "title": "The Overstory",
     "author": "Richard Powers",
     "image_url": "https://assets.hardcover.app/edition/30401461/19567cead6be7afe3c46572b7219daa6620b892b.jpeg",
@@ -1073,38 +1087,31 @@
   },
   {
     "date_updated": "2023-12-11",
+    "title": "The Apple in the Dark",
+    "author": "Clarice Lispector",
+    "image_url": "https://assets.hardcover.app/external_data/60378825/95300b616057e5722a274b7ebf3cf54217bce058.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-apple-in-the-dark"
+  },
+  {
+    "date_updated": "2023-12-11",
+    "title": "Minor Detail",
+    "author": "Adania Shibli",
+    "image_url": "https://assets.hardcover.app/external_data/49459201/f6fbe17527687c8c4b0f02ef44c109a300581508.jpeg",
+    "hardcover_url": "https://hardcover.app/books/minor-detail"
+  },
+  {
+    "date_updated": "2023-12-11",
+    "title": "The Bee Sting",
+    "author": "Paul Murray",
+    "image_url": "https://assets.hardcover.app/edition/30732077/dad22dee66efdfa1150edcdbad0e35c3349f84a9.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-bee-sting-abf30dd4-4b5f-4f9b-9502-d8fd3218c1b8"
+  },
+  {
+    "date_updated": "2023-12-11",
     "title": "Ægypt",
     "author": "John Crowley",
     "image_url": "https://assets.hardcover.app/edition/30386714/4173226-L.jpg",
     "hardcover_url": "https://hardcover.app/books/aegypt-1987"
-  },
-  {
-    "date_updated": "2023-12-11",
-    "title": "The Book at War: Libraries and Readers in an Age of Conflict",
-    "author": "Andrew Pettegree",
-    "image_url": "https://assets.hardcover.app/external_data/60355919/2edc3734a6146a54bd95551e652fa53f05ec35dd.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-book-at-war-libraries-and-readers-in-an-age-of-conflict"
-  },
-  {
-    "date_updated": "2023-12-10",
-    "title": "Blackouts",
-    "author": "Justin Torres",
-    "image_url": "https://assets.hardcover.app/editions/30882159/5525269828654236.jpg",
-    "hardcover_url": "https://hardcover.app/books/blackouts"
-  },
-  {
-    "date_updated": "2023-12-10",
-    "title": "There Will Be Fire: Margaret Thatcher, the IRA, and Two Minutes That Changed History",
-    "author": "Rory Carroll",
-    "image_url": "https://assets.hardcover.app/external_data/60146625/9573034ce6e8a5186a86690c37b5aa9c857aecdf.jpeg",
-    "hardcover_url": "https://hardcover.app/books/there-will-be-fire"
-  },
-  {
-    "date_updated": "2023-12-10",
-    "title": "DallerGut Dream Department Store",
-    "author": "Lee Mi-ye",
-    "image_url": "https://assets.hardcover.app/edition/31487056/829da0bf5a04590dfb429c49d66d8aac8fb9ab85.jpeg",
-    "hardcover_url": "https://hardcover.app/books/dallergut-dream-department-store"
   },
   {
     "date_updated": "2023-12-10",
@@ -1115,10 +1122,31 @@
   },
   {
     "date_updated": "2023-12-10",
+    "title": "There Will Be Fire: Margaret Thatcher, the IRA, and Two Minutes That Changed History",
+    "author": "Rory Carroll",
+    "image_url": "https://assets.hardcover.app/external_data/60146625/9573034ce6e8a5186a86690c37b5aa9c857aecdf.jpeg",
+    "hardcover_url": "https://hardcover.app/books/there-will-be-fire"
+  },
+  {
+    "date_updated": "2023-12-10",
     "title": "Big Swiss",
     "author": "Jen Beagin",
     "image_url": "https://assets.hardcover.app/external_data/59837938/b1ce5a10efabf70bc3851046ff71277d179150ee.jpeg",
     "hardcover_url": "https://hardcover.app/books/big-swiss"
+  },
+  {
+    "date_updated": "2023-12-10",
+    "title": "DallerGut Dream Department Store",
+    "author": "Lee Mi-ye",
+    "image_url": "https://assets.hardcover.app/edition/31487056/829da0bf5a04590dfb429c49d66d8aac8fb9ab85.jpeg",
+    "hardcover_url": "https://hardcover.app/books/dallergut-dream-department-store"
+  },
+  {
+    "date_updated": "2023-12-10",
+    "title": "Blackouts",
+    "author": "Justin Torres",
+    "image_url": "https://assets.hardcover.app/editions/30882159/5525269828654236.jpg",
+    "hardcover_url": "https://hardcover.app/books/blackouts"
   },
   {
     "date_updated": "2023-12-07",
@@ -1126,6 +1154,13 @@
     "author": "David Grann",
     "image_url": "https://assets.hardcover.app/editions/30696484/6252196455702517.jpg",
     "hardcover_url": "https://hardcover.app/books/the-wager-a-tale-of-shipwreck-mutiny-and-murder"
+  },
+  {
+    "date_updated": "2023-12-05",
+    "title": "Salt Lick",
+    "author": "Lulu Allison",
+    "image_url": "https://assets.hardcover.app/edition/30465388/58861486._SX98_.jpg",
+    "hardcover_url": "https://hardcover.app/books/salt-lick"
   },
   {
     "date_updated": "2023-12-05",
@@ -1140,13 +1175,6 @@
     "author": "Sigrid Nunez",
     "image_url": "https://assets.hardcover.app/edition/10363417/43570546._SX98_.jpg",
     "hardcover_url": "https://hardcover.app/books/mitz"
-  },
-  {
-    "date_updated": "2023-12-05",
-    "title": "Salt Lick",
-    "author": "Lulu Allison",
-    "image_url": "https://assets.hardcover.app/edition/30465388/58861486._SX98_.jpg",
-    "hardcover_url": "https://hardcover.app/books/salt-lick"
   },
   {
     "date_updated": "2023-12-04",
@@ -1164,6 +1192,13 @@
   },
   {
     "date_updated": "2023-11-28",
+    "title": "Human Capital: A History of Putting Refugees to Work",
+    "author": "Laura Robson",
+    "image_url": "https://assets.hardcover.app/edition/32079556/ffc3668a86654f51973e30be1c197ea04c11f662.jpeg",
+    "hardcover_url": "https://hardcover.app/books/human-capital-a-history-of-putting-refugees-to-work"
+  },
+  {
+    "date_updated": "2023-11-28",
     "title": "Alice Sadie Celine",
     "author": "Sarah Blakley-Cartwright",
     "image_url": "https://assets.hardcover.app/edition/30899252/3e6b98ba8b676647b8bdf7101b88754150c9cab6.jpeg",
@@ -1175,13 +1210,6 @@
     "author": "Lauren Grodstein",
     "image_url": "https://assets.hardcover.app/external_data/60175578/045e70806ab61cec3cb9e352a08b9525d75c0345.jpeg",
     "hardcover_url": "https://hardcover.app/books/we-must-not-think-of-ourselves"
-  },
-  {
-    "date_updated": "2023-11-28",
-    "title": "Human Capital: A History of Putting Refugees to Work",
-    "author": "Laura Robson",
-    "image_url": "https://assets.hardcover.app/edition/32079556/ffc3668a86654f51973e30be1c197ea04c11f662.jpeg",
-    "hardcover_url": "https://hardcover.app/books/human-capital-a-history-of-putting-refugees-to-work"
   },
   {
     "date_updated": "2023-11-24",
@@ -1234,24 +1262,17 @@
   },
   {
     "date_updated": "2023-10-08",
-    "title": "Palace of Treason",
-    "author": "Jason Matthews",
-    "image_url": "https://assets.hardcover.app/external_data/46833574/79eb3fa34a8b21c4e0850db6c444620079214409.jpeg",
-    "hardcover_url": "https://hardcover.app/books/palace-of-treason"
-  },
-  {
-    "date_updated": "2023-10-08",
     "title": "The Kremlin's Candidate",
     "author": "Jason  Matthews",
     "image_url": "https://assets.hardcover.app/external_data/61345901/8dbcc05fdbad8c7366505359c804c8604986b928.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-kremlins-candidate"
   },
   {
-    "date_updated": "2023-09-27",
-    "title": "Cloven Country: The Devil and the English Landscape",
-    "author": "Jeremy Harte",
-    "image_url": "https://assets.hardcover.app/edition/31474825/8ba717ade7982c62c0dda455588a0072036fe445.jpeg",
-    "hardcover_url": "https://hardcover.app/books/cloven-country"
+    "date_updated": "2023-10-08",
+    "title": "Palace of Treason",
+    "author": "Jason Matthews",
+    "image_url": "https://assets.hardcover.app/external_data/46833574/79eb3fa34a8b21c4e0850db6c444620079214409.jpeg",
+    "hardcover_url": "https://hardcover.app/books/palace-of-treason"
   },
   {
     "date_updated": "2023-09-27",
@@ -1259,6 +1280,13 @@
     "author": "Rachel Cusk",
     "image_url": "https://assets.hardcover.app/external_data/59404593/f8b0d069369f29c7d51e998f58e56c794df0ecec.jpeg",
     "hardcover_url": "https://hardcover.app/books/second-place"
+  },
+  {
+    "date_updated": "2023-09-27",
+    "title": "Cloven Country: The Devil and the English Landscape",
+    "author": "Jeremy Harte",
+    "image_url": "https://assets.hardcover.app/edition/31474825/8ba717ade7982c62c0dda455588a0072036fe445.jpeg",
+    "hardcover_url": "https://hardcover.app/books/cloven-country"
   },
   {
     "date_updated": "2023-09-24",
@@ -1283,17 +1311,24 @@
   },
   {
     "date_updated": "2023-07-04",
+    "title": "Boys Weekend",
+    "author": "Mattie Lubchansky",
+    "image_url": "https://assets.hardcover.app/external_data/1030050/11f7c3a3d82855ce88f2b3c4a2bc7caeb8913a72.jpeg",
+    "hardcover_url": "https://hardcover.app/books/boys-weekend-2023"
+  },
+  {
+    "date_updated": "2023-07-04",
     "title": "Fabulosa!: The Story of Polari, Britain’s Secret Gay Language",
     "author": "Paul Baker",
     "image_url": "https://assets.hardcover.app/external_data/60377508/ceaafab36226b4220e4873fa313f34952038fa31.jpeg",
     "hardcover_url": "https://hardcover.app/books/fabulosa"
   },
   {
-    "date_updated": "2023-07-04",
-    "title": "Boys Weekend",
-    "author": "Mattie Lubchansky",
-    "image_url": "https://assets.hardcover.app/external_data/1030050/11f7c3a3d82855ce88f2b3c4a2bc7caeb8913a72.jpeg",
-    "hardcover_url": "https://hardcover.app/books/boys-weekend-2023"
+    "date_updated": "2023-06-29",
+    "title": "You Look Like a Thing and I Love You: How Artificial Intelligence Works and Why It's Making the World a Weirder Place",
+    "author": "Janelle Shane",
+    "image_url": "https://assets.hardcover.app/external_data/59377112/1dfd7ddc7c6bbf3d07a5a32f65ffe5fc535f907e.jpeg",
+    "hardcover_url": "https://hardcover.app/books/you-look-like-a-thing-and-i-love-you"
   },
   {
     "date_updated": "2023-06-29",
@@ -1304,17 +1339,10 @@
   },
   {
     "date_updated": "2023-06-29",
-    "title": "The Soul of a New Machine",
-    "author": "Tracy Kidder",
-    "image_url": "https://assets.hardcover.app/edition/9041529/3d5eb6f3f41ec0a68c9e066336c719c5a63aeed6.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-soul-of-a-new-machine"
-  },
-  {
-    "date_updated": "2023-06-29",
-    "title": "The Rhetorics of Feminism: Readings in Contemporary Cultural Theory and the Popular Press",
-    "author": "Lynne Pearce",
-    "image_url": "https://assets.hardcover.app/edition/14163790/4272606-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/the-rhetorics-of-feminism"
+    "title": "Who Controls the Internet?: Illusions of a Borderless World",
+    "author": "Jack L. Goldsmith",
+    "image_url": "https://assets.hardcover.app/external_data/60259874/8d3b61b72cd8fed083ffc8d3ac3278db60247420.jpeg",
+    "hardcover_url": "https://hardcover.app/books/who-controls-the-internet-illusions-of-a-borderless-world"
   },
   {
     "date_updated": "2023-06-29",
@@ -1325,17 +1353,17 @@
   },
   {
     "date_updated": "2023-06-29",
-    "title": "Who Controls the Internet?: Illusions of a Borderless World",
-    "author": "Jack L. Goldsmith",
-    "image_url": "https://assets.hardcover.app/external_data/60259874/8d3b61b72cd8fed083ffc8d3ac3278db60247420.jpeg",
-    "hardcover_url": "https://hardcover.app/books/who-controls-the-internet-illusions-of-a-borderless-world"
+    "title": "The Rhetorics of Feminism: Readings in Contemporary Cultural Theory and the Popular Press",
+    "author": "Lynne Pearce",
+    "image_url": "https://assets.hardcover.app/edition/14163790/4272606-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/the-rhetorics-of-feminism"
   },
   {
     "date_updated": "2023-06-29",
-    "title": "You Look Like a Thing and I Love You: How Artificial Intelligence Works and Why It's Making the World a Weirder Place",
-    "author": "Janelle Shane",
-    "image_url": "https://assets.hardcover.app/external_data/59377112/1dfd7ddc7c6bbf3d07a5a32f65ffe5fc535f907e.jpeg",
-    "hardcover_url": "https://hardcover.app/books/you-look-like-a-thing-and-i-love-you"
+    "title": "The Soul of a New Machine",
+    "author": "Tracy Kidder",
+    "image_url": "https://assets.hardcover.app/edition/9041529/3d5eb6f3f41ec0a68c9e066336c719c5a63aeed6.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-soul-of-a-new-machine"
   },
   {
     "date_updated": "2023-06-19",
@@ -1387,17 +1415,17 @@
   },
   {
     "date_updated": "2023-03-12",
-    "title": "Germinal",
-    "author": "Émile Zola",
-    "image_url": "https://assets.hardcover.app/edition/14062879/295298-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/germinal"
-  },
-  {
-    "date_updated": "2023-03-12",
     "title": "The Odyssey",
     "author": "Lara    Williams",
     "image_url": "https://assets.hardcover.app/edition/30466059/4172391a9b53e141e8dbeccab77aa910537b4948.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-odyssey-2022"
+  },
+  {
+    "date_updated": "2023-03-12",
+    "title": "Germinal",
+    "author": "Émile Zola",
+    "image_url": "https://assets.hardcover.app/edition/14062879/295298-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/germinal"
   },
   {
     "date_updated": "2023-03-07",
@@ -1436,10 +1464,10 @@
   },
   {
     "date_updated": "2023-01-29",
-    "title": "The English Understand Wool",
-    "author": "Helen DeWitt",
-    "image_url": "https://assets.hardcover.app/external_data/59857497/0dfc158678b72cbfeba1a81bf64f3c24f35a2ce3.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-english-understand-wool"
+    "title": "The Shards",
+    "author": "Bret Easton Ellis",
+    "image_url": "https://assets.hardcover.app/external_data/59809434/68d90e752a1a3e401fd5573b1cad9f11bcbdd448.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-shards"
   },
   {
     "date_updated": "2023-01-29",
@@ -1450,10 +1478,10 @@
   },
   {
     "date_updated": "2023-01-29",
-    "title": "The Shards",
-    "author": "Bret Easton Ellis",
-    "image_url": "https://assets.hardcover.app/external_data/59809434/68d90e752a1a3e401fd5573b1cad9f11bcbdd448.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-shards"
+    "title": "The English Understand Wool",
+    "author": "Helen DeWitt",
+    "image_url": "https://assets.hardcover.app/external_data/59857497/0dfc158678b72cbfeba1a81bf64f3c24f35a2ce3.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-english-understand-wool"
   },
   {
     "date_updated": "2023-01-04",
@@ -1492,13 +1520,6 @@
   },
   {
     "date_updated": "2022-12-29",
-    "title": "Showroom City: Real Estate and Resistance in the Furniture Capital of the World",
-    "author": "John Joe Schlichtman",
-    "image_url": "https://assets.hardcover.app/edition/32079558/79faab91f290d8d0cd209a5f86666c7dbdd7fdff.jpeg",
-    "hardcover_url": "https://hardcover.app/books/showroom-city"
-  },
-  {
-    "date_updated": "2022-12-29",
     "title": "Emergent Tokyo: Designing the Spontaneous City",
     "author": "Jorge Almazán",
     "image_url": "https://assets.hardcover.app/external_data/59703667/8a3033f5668a7498a37becf4a4f354cfdfec18a4.jpeg",
@@ -1512,11 +1533,11 @@
     "hardcover_url": "https://hardcover.app/books/the-office-of-good-intentions-human-s-work"
   },
   {
-    "date_updated": "2022-12-20",
-    "title": "Towards a Philosophy of Photography",
-    "author": "Vilém Flusser",
-    "image_url": "https://assets.hardcover.app/edition/24243491/917481-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/towards-a-philosophy-of-photography"
+    "date_updated": "2022-12-29",
+    "title": "Showroom City: Real Estate and Resistance in the Furniture Capital of the World",
+    "author": "John Joe Schlichtman",
+    "image_url": "https://assets.hardcover.app/edition/32079558/79faab91f290d8d0cd209a5f86666c7dbdd7fdff.jpeg",
+    "hardcover_url": "https://hardcover.app/books/showroom-city"
   },
   {
     "date_updated": "2022-12-20",
@@ -1524,6 +1545,13 @@
     "author": "Vilém Flusser",
     "image_url": "https://assets.hardcover.app/edition/31405396/9c79f9aa03b7d5fa4ef0135a32780e48c0b031fa.jpeg",
     "hardcover_url": "https://hardcover.app/books/into-the-universe-of-technical-images"
+  },
+  {
+    "date_updated": "2022-12-20",
+    "title": "Towards a Philosophy of Photography",
+    "author": "Vilém Flusser",
+    "image_url": "https://assets.hardcover.app/edition/24243491/917481-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/towards-a-philosophy-of-photography"
   },
   {
     "date_updated": "2022-12-14",
@@ -1534,17 +1562,17 @@
   },
   {
     "date_updated": "2022-12-13",
-    "title": "Aesthetica",
-    "author": "Allie Rowbottom",
-    "image_url": "https://assets.hardcover.app/edition/30645716/content.jpeg",
-    "hardcover_url": "https://hardcover.app/books/aesthetica-2022"
-  },
-  {
-    "date_updated": "2022-12-13",
     "title": "Either/Or",
     "author": "Elif Batuman",
     "image_url": "https://assets.hardcover.app/external_data/59623039/61c3006902eb3684b90bc1a17f5634ba5736a197.jpeg",
     "hardcover_url": "https://hardcover.app/books/either-or-2022"
+  },
+  {
+    "date_updated": "2022-12-13",
+    "title": "Aesthetica",
+    "author": "Allie Rowbottom",
+    "image_url": "https://assets.hardcover.app/edition/30645716/content.jpeg",
+    "hardcover_url": "https://hardcover.app/books/aesthetica-2022"
   },
   {
     "date_updated": "2022-12-13",
@@ -1562,59 +1590,10 @@
   },
   {
     "date_updated": "2022-11-15",
-    "title": "Ferdinand, the Man with the Kind Heart",
-    "author": "Irmgard Keun",
-    "image_url": "https://assets.hardcover.app/edition/31429481/c67488c6daf8326305d7ba08e531b93e9432286b.jpeg",
-    "hardcover_url": "https://hardcover.app/books/ferdinand-the-man-with-the-kind-heart"
-  },
-  {
-    "date_updated": "2022-11-15",
     "title": "All Our Yesterdays",
     "author": "Natalia Ginzburg",
     "image_url": "https://assets.hardcover.app/edition/30576888/content.jpeg",
     "hardcover_url": "https://hardcover.app/books/all-our-yesterdays-1952"
-  },
-  {
-    "date_updated": "2022-11-15",
-    "title": "Ancient Evenings",
-    "author": "Norman Mailer",
-    "image_url": "https://assets.hardcover.app/external_data/59540512/d3f80acba99c461a5765c51c2822fd4491c108ed.jpeg",
-    "hardcover_url": "https://hardcover.app/books/ancient-evenings"
-  },
-  {
-    "date_updated": "2022-11-15",
-    "title": "There Once Lived a Girl Who Seduced Her Sister's Husband, and He Hanged Himself",
-    "author": "Ludmilla Petrushevskaya",
-    "image_url": "https://assets.hardcover.app/external_data/59922550/5ccc63ebb3173604d79131e9aa4d58e5b99ce90c.jpeg",
-    "hardcover_url": "https://hardcover.app/books/there-once-lived-a-girl-who-seduced-her-sisters-husband-and-he-hanged-himself"
-  },
-  {
-    "date_updated": "2022-11-15",
-    "title": "The Books of Jacob",
-    "author": "Olga Tokarczuk",
-    "image_url": "https://assets.hardcover.app/edition/30394762/b461d4f8b367e4a8920b68947be42461fa0bee74.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-books-of-jacob"
-  },
-  {
-    "date_updated": "2022-11-15",
-    "title": "The Sirens of Titan",
-    "author": "Kurt Vonnegut",
-    "image_url": "https://assets.hardcover.app/editions/6152899/6238489301732648-thesirens.jpg",
-    "hardcover_url": "https://hardcover.app/books/the-sirens-of-titan"
-  },
-  {
-    "date_updated": "2022-11-15",
-    "title": "Invisible Cities",
-    "author": "Italo Calvino",
-    "image_url": "https://assets.hardcover.app/external_data/24060934/7fde80aca0397bff2277f5b6239b751c33f8b4da.jpeg",
-    "hardcover_url": "https://hardcover.app/books/invisible-cities"
-  },
-  {
-    "date_updated": "2022-11-15",
-    "title": "The Difference Engine ",
-    "author": "William Gibson",
-    "image_url": "https://assets.hardcover.app/editions/15522797/2932924099952847.jpg",
-    "hardcover_url": "https://hardcover.app/books/the-difference-engine"
   },
   {
     "date_updated": "2022-11-15",
@@ -1625,17 +1604,17 @@
   },
   {
     "date_updated": "2022-11-15",
-    "title": "The Word for World Is Forest",
-    "author": "Ursula K. Le Guin",
-    "image_url": "https://assets.hardcover.app/editions/18441512/7150639274406292.jpg",
-    "hardcover_url": "https://hardcover.app/books/the-word-for-world-is-forest"
+    "title": "There Once Lived a Girl Who Seduced Her Sister's Husband, and He Hanged Himself",
+    "author": "Ludmilla Petrushevskaya",
+    "image_url": "https://assets.hardcover.app/external_data/59922550/5ccc63ebb3173604d79131e9aa4d58e5b99ce90c.jpeg",
+    "hardcover_url": "https://hardcover.app/books/there-once-lived-a-girl-who-seduced-her-sisters-husband-and-he-hanged-himself"
   },
   {
     "date_updated": "2022-11-15",
-    "title": "LOTE",
-    "author": "Shola von Reinhold",
-    "image_url": "https://assets.hardcover.app/external_data/23380626/242ec1b521e39b115b95d6fb1642bf7d71b9029e.jpeg",
-    "hardcover_url": "https://hardcover.app/books/lote"
+    "title": "The Difference Engine ",
+    "author": "William Gibson",
+    "image_url": "https://assets.hardcover.app/editions/15522797/2932924099952847.jpg",
+    "hardcover_url": "https://hardcover.app/books/the-difference-engine"
   },
   {
     "date_updated": "2022-11-15",
@@ -1643,6 +1622,55 @@
     "author": "Jon Fosse",
     "image_url": "https://assets.hardcover.app/edition/30951583/7ebcf5215d52f704aec2dd844fe236bd095e23a4.jpeg",
     "hardcover_url": "https://hardcover.app/books/septology"
+  },
+  {
+    "date_updated": "2022-11-15",
+    "title": "The Sirens of Titan",
+    "author": "Kurt Vonnegut",
+    "image_url": "https://assets.hardcover.app/editions/6152899/6238489301732648-thesirens.jpg",
+    "hardcover_url": "https://hardcover.app/books/the-sirens-of-titan"
+  },
+  {
+    "date_updated": "2022-11-15",
+    "title": "Ferdinand, the Man with the Kind Heart",
+    "author": "Irmgard Keun",
+    "image_url": "https://assets.hardcover.app/edition/31429481/c67488c6daf8326305d7ba08e531b93e9432286b.jpeg",
+    "hardcover_url": "https://hardcover.app/books/ferdinand-the-man-with-the-kind-heart"
+  },
+  {
+    "date_updated": "2022-11-15",
+    "title": "Invisible Cities",
+    "author": "Italo Calvino",
+    "image_url": "https://assets.hardcover.app/external_data/24060934/7fde80aca0397bff2277f5b6239b751c33f8b4da.jpeg",
+    "hardcover_url": "https://hardcover.app/books/invisible-cities"
+  },
+  {
+    "date_updated": "2022-11-15",
+    "title": "The Word for World Is Forest",
+    "author": "Ursula K. Le Guin",
+    "image_url": "https://assets.hardcover.app/editions/18441512/7150639274406292.jpg",
+    "hardcover_url": "https://hardcover.app/books/the-word-for-world-is-forest"
+  },
+  {
+    "date_updated": "2022-11-15",
+    "title": "The Books of Jacob",
+    "author": "Olga Tokarczuk",
+    "image_url": "https://assets.hardcover.app/edition/30394762/b461d4f8b367e4a8920b68947be42461fa0bee74.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-books-of-jacob"
+  },
+  {
+    "date_updated": "2022-11-15",
+    "title": "Ancient Evenings",
+    "author": "Norman Mailer",
+    "image_url": "https://assets.hardcover.app/external_data/59540512/d3f80acba99c461a5765c51c2822fd4491c108ed.jpeg",
+    "hardcover_url": "https://hardcover.app/books/ancient-evenings"
+  },
+  {
+    "date_updated": "2022-11-15",
+    "title": "LOTE",
+    "author": "Shola von Reinhold",
+    "image_url": "https://assets.hardcover.app/external_data/23380626/242ec1b521e39b115b95d6fb1642bf7d71b9029e.jpeg",
+    "hardcover_url": "https://hardcover.app/books/lote"
   },
   {
     "date_updated": "2022-11-15",
@@ -1673,17 +1701,17 @@
   },
   {
     "date_updated": "2022-11-13",
-    "title": "Distant Star",
-    "author": "Roberto Bolaño",
-    "image_url": "https://assets.hardcover.app/external_data/36306746/8e0c3eebf3a25b30cbf275a952016ca80d4c039f.jpeg",
-    "hardcover_url": "https://hardcover.app/books/distant-star"
-  },
-  {
-    "date_updated": "2022-11-13",
     "title": "Iron Kingdom",
     "author": "Christopher   Clark",
     "image_url": "https://assets.hardcover.app/edition/30563860/58138f6445a1981bef6a3b54f76a6a8957f68473.jpeg",
     "hardcover_url": "https://hardcover.app/books/iron-kingdom"
+  },
+  {
+    "date_updated": "2022-11-13",
+    "title": "Distant Star",
+    "author": "Roberto Bolaño",
+    "image_url": "https://assets.hardcover.app/external_data/36306746/8e0c3eebf3a25b30cbf275a952016ca80d4c039f.jpeg",
+    "hardcover_url": "https://hardcover.app/books/distant-star"
   },
   {
     "date_updated": "2022-11-08",
@@ -1722,16 +1750,16 @@
   },
   {
     "date_updated": "2022-10-16",
-    "title": "The Pahrump Report",
-    "author": "Lisa Crystal Carver",
-    "hardcover_url": "https://hardcover.app/books/the-pahrump-report"
-  },
-  {
-    "date_updated": "2022-10-16",
     "title": "The Lisa Diaries",
     "author": "Lisa Crystal Carver",
     "image_url": "https://assets.hardcover.app/external_data/604124/a918b2545972a03a185e96650dfdb4e26d62243d.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-lisa-diaries"
+  },
+  {
+    "date_updated": "2022-10-16",
+    "title": "The Pahrump Report",
+    "author": "Lisa Crystal Carver",
+    "hardcover_url": "https://hardcover.app/books/the-pahrump-report"
   },
   {
     "date_updated": "2022-10-16",
@@ -1811,17 +1839,17 @@
   },
   {
     "date_updated": "2022-03-28",
-    "title": "Last Exit",
-    "author": "Max Gladstone",
-    "image_url": "https://assets.hardcover.app/edition/30382827/57693437._SX98_.jpg",
-    "hardcover_url": "https://hardcover.app/books/last-exit"
-  },
-  {
-    "date_updated": "2022-03-28",
     "title": "How High We Go in the Dark",
     "author": "Sequoia Nagamatsu",
     "image_url": "https://assets.hardcover.app/external_data/61595697/c24633f28bb401f0be3919927acfc3385c819e36.jpeg",
     "hardcover_url": "https://hardcover.app/books/how-high-we-go-in-the-dark"
+  },
+  {
+    "date_updated": "2022-03-28",
+    "title": "Last Exit",
+    "author": "Max Gladstone",
+    "image_url": "https://assets.hardcover.app/edition/30382827/57693437._SX98_.jpg",
+    "hardcover_url": "https://hardcover.app/books/last-exit"
   },
   {
     "date_updated": "2022-03-28",
@@ -1895,20 +1923,6 @@
   },
   {
     "date_updated": "2021-10-13",
-    "title": "Zone One",
-    "author": "Colson Whitehead",
-    "image_url": "https://assets.hardcover.app/external_data/59387682/7b161b5d25e624da1ca3eb7ad273688bf1e63832.jpeg",
-    "hardcover_url": "https://hardcover.app/books/zone-one"
-  },
-  {
-    "date_updated": "2021-10-13",
-    "title": "Pyongyang: A Journey in North Korea",
-    "author": "Guy Delisle",
-    "image_url": "https://assets.hardcover.app/edition/15193061/6befbeaca90ade8f0b1748c1655e0bfdd7facb2c.jpeg",
-    "hardcover_url": "https://hardcover.app/books/pyongyang"
-  },
-  {
-    "date_updated": "2021-10-13",
     "title": "Billy Liar",
     "author": "Keith Waterhouse",
     "image_url": "https://assets.hardcover.app/edition/30467064/f23b8cfce049e792ea342927c21f7d5a27ba0e4f.jpeg",
@@ -1923,17 +1937,24 @@
   },
   {
     "date_updated": "2021-10-13",
+    "title": "Pyongyang: A Journey in North Korea",
+    "author": "Guy Delisle",
+    "image_url": "https://assets.hardcover.app/edition/15193061/6befbeaca90ade8f0b1748c1655e0bfdd7facb2c.jpeg",
+    "hardcover_url": "https://hardcover.app/books/pyongyang"
+  },
+  {
+    "date_updated": "2021-10-13",
+    "title": "Zone One",
+    "author": "Colson Whitehead",
+    "image_url": "https://assets.hardcover.app/external_data/59387682/7b161b5d25e624da1ca3eb7ad273688bf1e63832.jpeg",
+    "hardcover_url": "https://hardcover.app/books/zone-one"
+  },
+  {
+    "date_updated": "2021-10-13",
     "title": "Black Boy: A Record of Youth and Childhood",
     "author": "Richard Wright",
     "image_url": "https://assets.hardcover.app/edition/18331452/feba550c14fcf8d3c2769cf3f38b42e53709cc09.jpeg",
     "hardcover_url": "https://hardcover.app/books/black-boy-a-record-of-youth-and-childhood-1945"
-  },
-  {
-    "date_updated": "2021-10-12",
-    "title": "Immigration, Poverty, and Socioeconomic Inequality",
-    "author": "David Card",
-    "image_url": "https://assets.hardcover.app/edition/32079568/57a2a4200eb7cd718be6a9634280cfff02b139a8.jpeg",
-    "hardcover_url": "https://hardcover.app/books/immigration-poverty-and-socioeconomic-inequality"
   },
   {
     "date_updated": "2021-10-12",
@@ -1948,6 +1969,13 @@
     "author": "Bethany Ball",
     "image_url": "https://assets.hardcover.app/edition/30409394/11267264-L.jpg",
     "hardcover_url": "https://hardcover.app/books/the-pessimists"
+  },
+  {
+    "date_updated": "2021-10-12",
+    "title": "Immigration, Poverty, and Socioeconomic Inequality",
+    "author": "David Card",
+    "image_url": "https://assets.hardcover.app/edition/32079568/57a2a4200eb7cd718be6a9634280cfff02b139a8.jpeg",
+    "hardcover_url": "https://hardcover.app/books/immigration-poverty-and-socioeconomic-inequality"
   },
   {
     "date_updated": "2021-10-11",
@@ -1965,6 +1993,13 @@
   },
   {
     "date_updated": "2021-09-28",
+    "title": "The Bookseller's Tale",
+    "author": "Ann Swinfen",
+    "image_url": "https://assets.hardcover.app/edition/4701738/10872358-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/the-booksellers-tale"
+  },
+  {
+    "date_updated": "2021-09-28",
     "title": "The Black Death",
     "author": "Rosemary Horrox",
     "image_url": "https://assets.hardcover.app/external_data/60291337/c38c7f7ac4bde7ad7f9933045fc0b6c9e5b4a689.jpeg",
@@ -1979,13 +2014,6 @@
   },
   {
     "date_updated": "2021-09-28",
-    "title": "Tenth of December",
-    "author": "George Saunders",
-    "image_url": "https://assets.hardcover.app/external_data/60060656/7aa9af88591d391fee97e7827727c058ce4ce343.jpeg",
-    "hardcover_url": "https://hardcover.app/books/tenth-of-december"
-  },
-  {
-    "date_updated": "2021-09-28",
     "title": "Tuff",
     "author": "Paul Beatty",
     "image_url": "https://assets.hardcover.app/edition/30703993/content.jpeg",
@@ -1993,10 +2021,10 @@
   },
   {
     "date_updated": "2021-09-28",
-    "title": "The Bookseller's Tale",
-    "author": "Ann Swinfen",
-    "image_url": "https://assets.hardcover.app/edition/4701738/10872358-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/the-booksellers-tale"
+    "title": "Tenth of December",
+    "author": "George Saunders",
+    "image_url": "https://assets.hardcover.app/external_data/60060656/7aa9af88591d391fee97e7827727c058ce4ce343.jpeg",
+    "hardcover_url": "https://hardcover.app/books/tenth-of-december"
   },
   {
     "date_updated": "2021-09-22",
@@ -2028,13 +2056,6 @@
   },
   {
     "date_updated": "2021-09-03",
-    "title": "Stone Butch Blues",
-    "author": "Leslie Feinberg",
-    "image_url": "https://assets.hardcover.app/edition/15661416/bd591cbce7884227cb96bd2fb4e825a1e2ba4abd.jpeg",
-    "hardcover_url": "https://hardcover.app/books/stone-butch-blues"
-  },
-  {
-    "date_updated": "2021-09-03",
     "title": "Foucault's Pendulum",
     "author": "Umberto Eco",
     "image_url": "https://assets.hardcover.app/edition/30628450/153e253a-101a-44cf-bb36-2c7726994e65.jpeg",
@@ -2046,6 +2067,13 @@
     "author": "Judith Butler",
     "image_url": "https://assets.hardcover.app/edition/30629484/9ed53b3a8b4a53ae82593653314426ca69475ccb.jpeg",
     "hardcover_url": "https://hardcover.app/books/precarious-life"
+  },
+  {
+    "date_updated": "2021-09-03",
+    "title": "Stone Butch Blues",
+    "author": "Leslie Feinberg",
+    "image_url": "https://assets.hardcover.app/edition/15661416/bd591cbce7884227cb96bd2fb4e825a1e2ba4abd.jpeg",
+    "hardcover_url": "https://hardcover.app/books/stone-butch-blues"
   },
   {
     "date_updated": "2021-09-03",
@@ -2188,6 +2216,13 @@
   },
   {
     "date_updated": "2021-05-08",
+    "title": "Must I Go",
+    "author": "Yiyun Li",
+    "image_url": "https://assets.hardcover.app/edition/19591774/10221116-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/must-i-go"
+  },
+  {
+    "date_updated": "2021-05-08",
     "title": "The Life of the Mind",
     "author": "Christine  Smallwood",
     "image_url": "https://assets.hardcover.app/edition/28332717/54075354._SX98_.jpg",
@@ -2201,11 +2236,11 @@
     "hardcover_url": "https://hardcover.app/books/the-last-libertines"
   },
   {
-    "date_updated": "2021-05-08",
-    "title": "Must I Go",
-    "author": "Yiyun Li",
-    "image_url": "https://assets.hardcover.app/edition/19591774/10221116-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/must-i-go"
+    "date_updated": "2021-04-09",
+    "title": "The Incendiaries",
+    "author": "R.O. Kwon",
+    "image_url": "https://assets.hardcover.app/external_data/60833968/d66aed5de845dfe2b57d6ce48397b141d07f4433.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-incendiaries"
   },
   {
     "date_updated": "2021-04-09",
@@ -2213,13 +2248,6 @@
     "author": "David France",
     "image_url": "https://assets.hardcover.app/edition/9056710/11203782-L.jpg",
     "hardcover_url": "https://hardcover.app/books/how-to-survive-a-plague"
-  },
-  {
-    "date_updated": "2021-04-09",
-    "title": "The Incendiaries",
-    "author": "R.O. Kwon",
-    "image_url": "https://assets.hardcover.app/external_data/60833968/d66aed5de845dfe2b57d6ce48397b141d07f4433.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-incendiaries"
   },
   {
     "date_updated": "2020-12-04",
@@ -2258,10 +2286,10 @@
   },
   {
     "date_updated": "2020-11-18",
-    "title": "The Smart Enough City: Putting Technology in Its Place to Reclaim Our Urban Future",
-    "author": "Ben Green",
-    "image_url": "https://assets.hardcover.app/external_data/60348849/7e0d6bf86e557003d1c59e9c2444de6eb9c50c2c.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-smart-enough-city"
+    "title": "Logical chess move by move",
+    "author": "Irving Chernev",
+    "image_url": "https://assets.hardcover.app/external_data/59355370/e6414e6a3c12f19318be665dee713c7e1bf95177.jpeg",
+    "hardcover_url": "https://hardcover.app/books/logical-chess-move-by-move"
   },
   {
     "date_updated": "2020-11-18",
@@ -2274,14 +2302,15 @@
     "date_updated": "2020-11-18",
     "title": "A Civic Technologist's Practice Guide",
     "author": "Cyd Harrell",
+    "image_url": "https://assets.hardcover.app/external_data/2216180/ebf953cfe6f45d7b35834915a2592a318432a7bf.jpeg",
     "hardcover_url": "https://hardcover.app/books/a-civic-technologists-practice-guide"
   },
   {
     "date_updated": "2020-11-18",
-    "title": "Logical chess move by move",
-    "author": "Irving Chernev",
-    "image_url": "https://assets.hardcover.app/external_data/59355370/e6414e6a3c12f19318be665dee713c7e1bf95177.jpeg",
-    "hardcover_url": "https://hardcover.app/books/logical-chess-move-by-move"
+    "title": "The Smart Enough City: Putting Technology in Its Place to Reclaim Our Urban Future",
+    "author": "Ben Green",
+    "image_url": "https://assets.hardcover.app/external_data/60348849/7e0d6bf86e557003d1c59e9c2444de6eb9c50c2c.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-smart-enough-city"
   },
   {
     "date_updated": "2020-11-16",
@@ -2417,39 +2446,6 @@
   },
   {
     "date_updated": "2020-01-24",
-    "title": "Greek and Roman Myths: A Guide to the Classical Stories",
-    "author": "Philip Matyszak",
-    "image_url": "https://assets.hardcover.app/edition/30455104/3fbd90852839fdac9b784551c34bac3e78b5ff6c.jpeg",
-    "hardcover_url": "https://hardcover.app/books/greek-and-roman-myths"
-  },
-  {
-    "date_updated": "2020-01-24",
-    "title": "The Division Bell Mystery",
-    "author": "Ellen Wilkinson",
-    "hardcover_url": "https://hardcover.app/books/the-division-bell-mystery"
-  },
-  {
-    "date_updated": "2020-01-24",
-    "title": "Medea and Other Plays",
-    "author": "Euripides",
-    "image_url": "https://assets.hardcover.app/edition/30463627/b1df9e1dda3f2710e0f5624b415543316d2899a0.jpeg",
-    "hardcover_url": "https://hardcover.app/books/medea-and-other-plays"
-  },
-  {
-    "date_updated": "2020-01-24",
-    "title": "Parliament: The Biography",
-    "author": "Chris Bryant",
-    "hardcover_url": "https://hardcover.app/books/parliament-the-biography-2014"
-  },
-  {
-    "date_updated": "2020-01-24",
-    "title": "Bring Up The Bodies",
-    "author": "Hilary Mantel",
-    "image_url": "https://assets.hardcover.app/edition/24081050/6d70c06be761050ddffbdb9a7be2a87ada332f85.jpeg",
-    "hardcover_url": "https://hardcover.app/books/bring-up-the-bodies"
-  },
-  {
-    "date_updated": "2020-01-24",
     "title": "Remarkable Birds",
     "author": "Mark Avery",
     "image_url": "https://assets.hardcover.app/external_data/60378079/c30f42994ef89b6af57b92ecac9d9283e82f9837.jpeg",
@@ -2457,10 +2453,9 @@
   },
   {
     "date_updated": "2020-01-24",
-    "title": "A Place of Greater Safety",
-    "author": "Hilary Mantel",
-    "image_url": "https://assets.hardcover.app/external_data/40665932/a321b8c81fc0e288f26037420bbb157d59af60a9.jpeg",
-    "hardcover_url": "https://hardcover.app/books/a-place-of-greater-safety"
+    "title": "Parliament: The Biography",
+    "author": "Chris Bryant",
+    "hardcover_url": "https://hardcover.app/books/parliament-the-biography-2014"
   },
   {
     "date_updated": "2020-01-24",
@@ -2471,17 +2466,23 @@
   },
   {
     "date_updated": "2020-01-24",
-    "title": "Wolf Hall",
-    "author": "Hilary Mantel",
-    "image_url": "https://assets.hardcover.app/edition/30401074/7d9995c821b827eac7694f73ce4a432afff74939.jpeg",
-    "hardcover_url": "https://hardcover.app/books/wolf-hall"
+    "title": "Zami: A New Spelling of My Name",
+    "author": "Audre Lorde",
+    "image_url": "https://assets.hardcover.app/edition/7600663/2717ab7020a5aa05e6d6a6407d01254c2254c6c4.jpeg",
+    "hardcover_url": "https://hardcover.app/books/zami"
   },
   {
     "date_updated": "2020-01-24",
-    "title": "Underland",
-    "author": "Robert Macfarlane",
-    "image_url": "https://assets.hardcover.app/edition/23847077/8753724-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/underland"
+    "title": "The Division Bell Mystery",
+    "author": "Ellen Wilkinson",
+    "hardcover_url": "https://hardcover.app/books/the-division-bell-mystery"
+  },
+  {
+    "date_updated": "2020-01-24",
+    "title": "Greek and Roman Myths: A Guide to the Classical Stories",
+    "author": "Philip Matyszak",
+    "image_url": "https://assets.hardcover.app/edition/30455104/3fbd90852839fdac9b784551c34bac3e78b5ff6c.jpeg",
+    "hardcover_url": "https://hardcover.app/books/greek-and-roman-myths"
   },
   {
     "date_updated": "2020-01-24",
@@ -2492,17 +2493,38 @@
   },
   {
     "date_updated": "2020-01-24",
-    "title": "Zami: A New Spelling of My Name",
-    "author": "Audre Lorde",
-    "image_url": "https://assets.hardcover.app/edition/7600663/2717ab7020a5aa05e6d6a6407d01254c2254c6c4.jpeg",
-    "hardcover_url": "https://hardcover.app/books/zami"
+    "title": "Bring Up The Bodies",
+    "author": "Hilary Mantel",
+    "image_url": "https://assets.hardcover.app/edition/24081050/6d70c06be761050ddffbdb9a7be2a87ada332f85.jpeg",
+    "hardcover_url": "https://hardcover.app/books/bring-up-the-bodies"
   },
   {
-    "date_updated": "2020-01-22",
-    "title": "What Is the Grass: Walt Whitman in My Life",
-    "author": "Mark Doty",
-    "image_url": "https://assets.hardcover.app/edition/30734321/a0a2a819c5663de9a305c2d6af19400084265bcb.jpeg",
-    "hardcover_url": "https://hardcover.app/books/what-is-the-grass"
+    "date_updated": "2020-01-24",
+    "title": "Medea and Other Plays",
+    "author": "Euripides",
+    "image_url": "https://assets.hardcover.app/edition/30463627/b1df9e1dda3f2710e0f5624b415543316d2899a0.jpeg",
+    "hardcover_url": "https://hardcover.app/books/medea-and-other-plays"
+  },
+  {
+    "date_updated": "2020-01-24",
+    "title": "Wolf Hall",
+    "author": "Hilary Mantel",
+    "image_url": "https://assets.hardcover.app/edition/30401074/7d9995c821b827eac7694f73ce4a432afff74939.jpeg",
+    "hardcover_url": "https://hardcover.app/books/wolf-hall"
+  },
+  {
+    "date_updated": "2020-01-24",
+    "title": "A Place of Greater Safety",
+    "author": "Hilary Mantel",
+    "image_url": "https://assets.hardcover.app/external_data/40665932/a321b8c81fc0e288f26037420bbb157d59af60a9.jpeg",
+    "hardcover_url": "https://hardcover.app/books/a-place-of-greater-safety"
+  },
+  {
+    "date_updated": "2020-01-24",
+    "title": "Underland",
+    "author": "Robert Macfarlane",
+    "image_url": "https://assets.hardcover.app/edition/23847077/8753724-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/underland"
   },
   {
     "date_updated": "2020-01-22",
@@ -2512,18 +2534,11 @@
     "hardcover_url": "https://hardcover.app/books/funny-weather-art-in-an-emergency"
   },
   {
-    "date_updated": "2020-01-21",
-    "title": "A Tale of Two Cities",
-    "author": "Charles Dickens",
-    "image_url": "https://assets.hardcover.app/edition/13992502/8493590-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/a-tale-of-two-cities"
-  },
-  {
-    "date_updated": "2020-01-21",
-    "title": "A Tree Grows in Brooklyn",
-    "author": "Betty  Smith",
-    "image_url": "https://assets.hardcover.app/edition/7447406/b981a3f8007e7220729d5cbccd38737ecbbed6f6.jpeg",
-    "hardcover_url": "https://hardcover.app/books/a-tree-grows-in-brooklyn-2024"
+    "date_updated": "2020-01-22",
+    "title": "What Is the Grass: Walt Whitman in My Life",
+    "author": "Mark Doty",
+    "image_url": "https://assets.hardcover.app/edition/30734321/a0a2a819c5663de9a305c2d6af19400084265bcb.jpeg",
+    "hardcover_url": "https://hardcover.app/books/what-is-the-grass"
   },
   {
     "date_updated": "2020-01-21",
@@ -2534,10 +2549,24 @@
   },
   {
     "date_updated": "2020-01-21",
+    "title": "A Tree Grows in Brooklyn",
+    "author": "Betty  Smith",
+    "image_url": "https://assets.hardcover.app/edition/7447406/b981a3f8007e7220729d5cbccd38737ecbbed6f6.jpeg",
+    "hardcover_url": "https://hardcover.app/books/a-tree-grows-in-brooklyn-2024"
+  },
+  {
+    "date_updated": "2020-01-21",
     "title": "Little Women",
     "author": "Louisa May Alcott",
     "image_url": "https://assets.hardcover.app/edition/26091088/6c8ca035efb9e9dbed40a7f45c64aaa924c2b578.jpeg",
     "hardcover_url": "https://hardcover.app/books/little-women"
+  },
+  {
+    "date_updated": "2020-01-21",
+    "title": "A Tale of Two Cities",
+    "author": "Charles Dickens",
+    "image_url": "https://assets.hardcover.app/edition/13992502/8493590-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/a-tale-of-two-cities"
   },
   {
     "date_updated": "2020-01-21",
@@ -2548,31 +2577,17 @@
   },
   {
     "date_updated": "2020-01-12",
-    "title": "Not Working",
-    "author": "Josh Cohen",
-    "image_url": "https://assets.hardcover.app/edition/30444007/content.jpeg",
-    "hardcover_url": "https://hardcover.app/books/not-working"
-  },
-  {
-    "date_updated": "2020-01-12",
     "title": "Up Down Inside Out",
     "author": "Joohee Yoon",
     "image_url": "https://assets.hardcover.app/edition/30600653/content.jpeg",
     "hardcover_url": "https://hardcover.app/books/up-down-inside-out"
   },
   {
-    "date_updated": "2020-01-11",
-    "title": "Let It Come Down",
-    "author": "Paul Bowles",
-    "image_url": "https://assets.hardcover.app/external_data/26933109/3ba34e35b68d46d152e4bd9607bbff12ccf41ee7.jpeg",
-    "hardcover_url": "https://hardcover.app/books/let-it-come-down"
-  },
-  {
-    "date_updated": "2020-01-11",
-    "title": "The Uninhabitable Earth: Life After Warming",
-    "author": "David Wallace-Wells",
-    "image_url": "https://assets.hardcover.app/external_data/48545266/52bf1099c6bf713f0211a76a83974935bcaa9c7a.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-uninhabitable-earth"
+    "date_updated": "2020-01-12",
+    "title": "Not Working",
+    "author": "Josh Cohen",
+    "image_url": "https://assets.hardcover.app/edition/30444007/content.jpeg",
+    "hardcover_url": "https://hardcover.app/books/not-working"
   },
   {
     "date_updated": "2020-01-11",
@@ -2583,20 +2598,6 @@
   },
   {
     "date_updated": "2020-01-11",
-    "title": "Gingerbread",
-    "author": "Helen Oyeyemi",
-    "image_url": "https://assets.hardcover.app/external_data/59387595/c23acc666591ce2da46bdd067da7e1c230fbae63.jpeg",
-    "hardcover_url": "https://hardcover.app/books/gingerbread"
-  },
-  {
-    "date_updated": "2020-01-11",
-    "title": "No. 10: The Geography of Power at Downing Street",
-    "author": "Jack Brown",
-    "image_url": "https://assets.hardcover.app/edition/32079581/d5d399ce2c5ae478a196756fb18f83a5a858a2bd.jpeg",
-    "hardcover_url": "https://hardcover.app/books/no-10"
-  },
-  {
-    "date_updated": "2020-01-11",
     "title": "The World Doesn't Require You",
     "author": "Rion Amilcar Scott",
     "image_url": "https://assets.hardcover.app/edition/19233562/8755937-L.jpg",
@@ -2604,65 +2605,17 @@
   },
   {
     "date_updated": "2020-01-11",
-    "title": "The Organs of Sense",
-    "author": "Adam Ehrlich Sachs",
-    "image_url": "https://assets.hardcover.app/external_data/60126798/32236d38c2d44af391371cc6bd7b81dde7a63356.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-organs-of-sense"
+    "title": "Let It Come Down",
+    "author": "Paul Bowles",
+    "image_url": "https://assets.hardcover.app/external_data/26933109/3ba34e35b68d46d152e4bd9607bbff12ccf41ee7.jpeg",
+    "hardcover_url": "https://hardcover.app/books/let-it-come-down"
   },
   {
     "date_updated": "2020-01-11",
-    "title": "Prozac Nation",
-    "author": "Elizabeth Wurtzel",
-    "image_url": "https://assets.hardcover.app/edition/14816394/6807845-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/prozac-nation"
-  },
-  {
-    "date_updated": "2020-01-11",
-    "title": "After the Ice",
-    "author": "Steven Mithen",
-    "image_url": "https://assets.hardcover.app/edition/28714226/412580-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/after-the-ice"
-  },
-  {
-    "date_updated": "2020-01-11",
-    "title": "Greater Gotham",
-    "author": "Mike  Wallace",
-    "image_url": "https://assets.hardcover.app/book_mappings/7338437/a29c1e09e86f99da282088770439298578ae8d92.jpeg",
-    "hardcover_url": "https://hardcover.app/books/greater-gotham"
-  },
-  {
-    "date_updated": "2020-01-11",
-    "title": "Recursion",
-    "author": "Blake Crouch",
-    "image_url": "https://assets.hardcover.app/external_data/31968027/91983cb00d2a53d0c88cf8b9eacf2d7714428465.jpeg",
-    "hardcover_url": "https://hardcover.app/books/recursion"
-  },
-  {
-    "date_updated": "2020-01-11",
-    "title": "Wild Game: My Mother, Her Lover, and Me",
-    "author": "Adrienne Brodeur",
-    "image_url": "https://assets.hardcover.app/external_data/59628777/aa53c68e6d029f5809b38d034a93f4cba4f85dd5.jpeg",
-    "hardcover_url": "https://hardcover.app/books/wild-game"
-  },
-  {
-    "date_updated": "2020-01-11",
-    "title": "Bloodlands: Europe Between Hitler and Stalin ",
-    "author": "Timothy Snyder",
-    "image_url": "https://assets.hardcover.app/edition/30436014/fefd3689bdfa8594288539f3562101582ac902b3.jpeg",
-    "hardcover_url": "https://hardcover.app/books/bloodlands-europe-between-hitler-and-stalin"
-  },
-  {
-    "date_updated": "2020-01-11",
-    "title": "How to Read Wittgenstein",
-    "author": "Ray Monk",
-    "hardcover_url": "https://hardcover.app/books/how-to-read-wittgenstein"
-  },
-  {
-    "date_updated": "2020-01-11",
-    "title": "The Power Broker: Robert Moses and the Fall of New York",
-    "author": "Robert A. Caro",
-    "image_url": "https://assets.hardcover.app/edition/764085/e5c8f0af79d86e3045adfef3925e06f68c56f3ae.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-power-broker"
+    "title": "Gingerbread",
+    "author": "Helen Oyeyemi",
+    "image_url": "https://assets.hardcover.app/external_data/59387595/c23acc666591ce2da46bdd067da7e1c230fbae63.jpeg",
+    "hardcover_url": "https://hardcover.app/books/gingerbread"
   },
   {
     "date_updated": "2020-01-11",
@@ -2673,31 +2626,17 @@
   },
   {
     "date_updated": "2020-01-11",
-    "title": "Old Drift",
-    "author": "Namwali Serpell",
-    "image_url": "https://assets.hardcover.app/edition/27161424/2f2ef8252c2fc765cf23108a9c1248f02bc6e69a.jpeg",
-    "hardcover_url": "https://hardcover.app/books/old-drift-2019"
-  },
-  {
-    "date_updated": "2020-01-11",
-    "title": "Society of the Spectacle",
-    "author": "Guy Debord",
-    "image_url": "https://assets.hardcover.app/external_data/59624104/f8680190a3251c26d67aa893da6d016882c8d4ab.jpeg",
-    "hardcover_url": "https://hardcover.app/books/society-of-the-spectacle"
-  },
-  {
-    "date_updated": "2020-01-11",
-    "title": "Secondhand Time: The Last of the Soviets",
-    "author": "Svetlana Alexievich",
-    "image_url": "https://assets.hardcover.app/edition/13920306/ce328a98f54bdd9fc6398a5edfcd84dbfc1ad9be.jpeg",
-    "hardcover_url": "https://hardcover.app/books/secondhand-time"
-  },
-  {
-    "date_updated": "2020-01-11",
     "title": "The Book of the City of Ladies",
     "author": "Christine de Pizan",
     "image_url": "https://assets.hardcover.app/edition/5190095/690602-L.jpg",
     "hardcover_url": "https://hardcover.app/books/the-book-of-the-city-of-ladies-1405"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "Old Drift",
+    "author": "Namwali Serpell",
+    "image_url": "https://assets.hardcover.app/edition/27161424/2f2ef8252c2fc765cf23108a9c1248f02bc6e69a.jpeg",
+    "hardcover_url": "https://hardcover.app/books/old-drift-2019"
   },
   {
     "date_updated": "2020-01-11",
@@ -2708,10 +2647,31 @@
   },
   {
     "date_updated": "2020-01-11",
-    "title": "Lucky Per",
-    "author": "Henrik Pontoppidan",
-    "image_url": "https://assets.hardcover.app/edition/29037319/8793359-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/lucky-per"
+    "title": "The Uninhabitable Earth: Life After Warming",
+    "author": "David Wallace-Wells",
+    "image_url": "https://assets.hardcover.app/external_data/48545266/52bf1099c6bf713f0211a76a83974935bcaa9c7a.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-uninhabitable-earth"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "Secondhand Time: The Last of the Soviets",
+    "author": "Svetlana Alexievich",
+    "image_url": "https://assets.hardcover.app/edition/13920306/ce328a98f54bdd9fc6398a5edfcd84dbfc1ad9be.jpeg",
+    "hardcover_url": "https://hardcover.app/books/secondhand-time"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "Society of the Spectacle",
+    "author": "Guy Debord",
+    "image_url": "https://assets.hardcover.app/external_data/59624104/f8680190a3251c26d67aa893da6d016882c8d4ab.jpeg",
+    "hardcover_url": "https://hardcover.app/books/society-of-the-spectacle"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "Bloodlands: Europe Between Hitler and Stalin ",
+    "author": "Timothy Snyder",
+    "image_url": "https://assets.hardcover.app/edition/30436014/fefd3689bdfa8594288539f3562101582ac902b3.jpeg",
+    "hardcover_url": "https://hardcover.app/books/bloodlands-europe-between-hitler-and-stalin"
   },
   {
     "date_updated": "2020-01-11",
@@ -2719,6 +2679,75 @@
     "author": "Kip S. Thorne",
     "image_url": "https://assets.hardcover.app/edition/30609253/8062488-L.jpg",
     "hardcover_url": "https://hardcover.app/books/modern-classical-physics"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "After the Ice",
+    "author": "Steven Mithen",
+    "image_url": "https://assets.hardcover.app/edition/28714226/412580-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/after-the-ice"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "No. 10: The Geography of Power at Downing Street",
+    "author": "Jack Brown",
+    "image_url": "https://assets.hardcover.app/edition/32079581/d5d399ce2c5ae478a196756fb18f83a5a858a2bd.jpeg",
+    "hardcover_url": "https://hardcover.app/books/no-10"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "The Organs of Sense",
+    "author": "Adam Ehrlich Sachs",
+    "image_url": "https://assets.hardcover.app/external_data/60126798/32236d38c2d44af391371cc6bd7b81dde7a63356.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-organs-of-sense"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "Lucky Per",
+    "author": "Henrik Pontoppidan",
+    "image_url": "https://assets.hardcover.app/edition/29037319/8793359-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/lucky-per"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "The Power Broker: Robert Moses and the Fall of New York",
+    "author": "Robert A. Caro",
+    "image_url": "https://assets.hardcover.app/edition/764085/e5c8f0af79d86e3045adfef3925e06f68c56f3ae.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-power-broker"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "How to Read Wittgenstein",
+    "author": "Ray Monk",
+    "hardcover_url": "https://hardcover.app/books/how-to-read-wittgenstein"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "Recursion",
+    "author": "Blake Crouch",
+    "image_url": "https://assets.hardcover.app/external_data/31968027/91983cb00d2a53d0c88cf8b9eacf2d7714428465.jpeg",
+    "hardcover_url": "https://hardcover.app/books/recursion"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "Prozac Nation: Young \u0026 Depressed In America: A Memoir",
+    "author": "Elizabeth Wurtzel",
+    "image_url": "https://assets.hardcover.app/edition/14816394/951a438a425f9e4f93108808a9a37bbeeefe6b61.jpeg",
+    "hardcover_url": "https://hardcover.app/books/prozac-nation"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "Greater Gotham",
+    "author": "Mike  Wallace",
+    "image_url": "https://assets.hardcover.app/book_mappings/7338437/a29c1e09e86f99da282088770439298578ae8d92.jpeg",
+    "hardcover_url": "https://hardcover.app/books/greater-gotham"
+  },
+  {
+    "date_updated": "2020-01-11",
+    "title": "Wild Game: My Mother, Her Lover, and Me",
+    "author": "Adrienne Brodeur",
+    "image_url": "https://assets.hardcover.app/external_data/59628777/aa53c68e6d029f5809b38d034a93f4cba4f85dd5.jpeg",
+    "hardcover_url": "https://hardcover.app/books/wild-game"
   },
   {
     "date_updated": "2019-09-03",
@@ -2738,7 +2767,7 @@
     "date_updated": "2019-04-28",
     "title": "Illness as Metaphor and AIDS and Its Metaphors",
     "author": "Susan Sontag",
-    "image_url": "https://assets.hardcover.app/edition/9511802/5410636-L.jpg",
+    "image_url": "https://assets.hardcover.app/edition/9511802/fb6ac667ce55468a1a3f3e7737c5f6b1065e4958.jpeg",
     "hardcover_url": "https://hardcover.app/books/illness-as-metaphor-and-aids-and-its-metaphors"
   },
   {
@@ -2750,24 +2779,24 @@
   },
   {
     "date_updated": "2019-04-02",
-    "title": "Women of Westminster: The MPs who Changed Politics",
-    "author": "Rachel Reeves",
-    "image_url": "https://assets.hardcover.app/edition/32079585/fdedcf63a71d53aa096f3c763bd5406f6285b71c.jpeg",
-    "hardcover_url": "https://hardcover.app/books/women-of-westminster-the-mps-who-changed-politics"
-  },
-  {
-    "date_updated": "2019-04-02",
     "title": "The Castle diaries, 1964-70",
     "author": "Barbara Castle",
     "image_url": "https://assets.hardcover.app/edition/32079586/e0835255b4be407046c6238eec1bcd0683c7f6d3.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-castle-diaries-1964-70"
   },
   {
+    "date_updated": "2019-04-02",
+    "title": "Women of Westminster: The MPs who Changed Politics",
+    "author": "Rachel Reeves",
+    "image_url": "https://assets.hardcover.app/edition/32079585/fdedcf63a71d53aa096f3c763bd5406f6285b71c.jpeg",
+    "hardcover_url": "https://hardcover.app/books/women-of-westminster-the-mps-who-changed-politics"
+  },
+  {
     "date_updated": "2019-03-12",
-    "title": "The Holocaust",
-    "author": "Laurence Rees",
-    "image_url": "https://assets.hardcover.app/edition/30622252/ee38d8ee78449d9ee8569af554d89f927c5313de.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-holocaust-a-new-history"
+    "title": "The Nice and the Good",
+    "author": "Iris Murdoch",
+    "image_url": "https://assets.hardcover.app/edition/30627535/content.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-nice-and-the-good"
   },
   {
     "date_updated": "2019-03-12",
@@ -3305,7 +3334,7 @@
     "date_updated": "2019-03-12",
     "title": "She Would Be King",
     "author": "Wayétu Moore",
-    "image_url": "https://assets.hardcover.app/edition/21007454/8292437-L.jpg",
+    "image_url": "https://assets.hardcover.app/edition/21007454/1608053aac90d79c2ccc8c475b141a2441783133.jpeg",
     "hardcover_url": "https://hardcover.app/books/she-would-be-king"
   },
   {
@@ -3803,10 +3832,10 @@
   },
   {
     "date_updated": "2019-03-12",
-    "title": "The Nice and the Good",
-    "author": "Iris Murdoch",
-    "image_url": "https://assets.hardcover.app/edition/30627535/content.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-nice-and-the-good"
+    "title": "The Holocaust",
+    "author": "Laurence Rees",
+    "image_url": "https://assets.hardcover.app/edition/30622252/ee38d8ee78449d9ee8569af554d89f927c5313de.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-holocaust-a-new-history"
   },
   {
     "date_updated": "2019-03-12",
@@ -4375,17 +4404,17 @@
   },
   {
     "date_updated": "2018-01-01",
-    "title": "Men Without Women",
-    "author": "Haruki Murakami",
-    "image_url": "https://assets.hardcover.app/external_data/45159330/b8b166ca10938b57471089c1060accd4431e4409.jpeg",
-    "hardcover_url": "https://hardcover.app/books/men-without-women"
-  },
-  {
-    "date_updated": "2018-01-01",
     "title": "A Little Life",
     "author": "Hanya Yanagihara",
     "image_url": "https://assets.hardcover.app/edition/774817/0bdba65a5c5c95da0a4a2cac8c6eeb447d6d5947.jpeg",
     "hardcover_url": "https://hardcover.app/books/a-little-life"
+  },
+  {
+    "date_updated": "2018-01-01",
+    "title": "Men Without Women",
+    "author": "Haruki Murakami",
+    "image_url": "https://assets.hardcover.app/external_data/45159330/b8b166ca10938b57471089c1060accd4431e4409.jpeg",
+    "hardcover_url": "https://hardcover.app/books/men-without-women"
   },
   {
     "date_updated": "2016-08-14",
@@ -4403,6 +4432,13 @@
   },
   {
     "date_updated": "2016-07-09",
+    "title": "The Female Eunuch",
+    "author": "Germaine Greer",
+    "image_url": "https://assets.hardcover.app/edition/21385535/4406644-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/the-female-eunuch"
+  },
+  {
+    "date_updated": "2016-07-09",
     "title": "Feminism is for Everybody: Passionate Politics",
     "author": "bell hooks",
     "image_url": "https://assets.hardcover.app/edition/9095531/651a63e21fe01311d2159402647faf1089b2f481.jpeg",
@@ -4414,6 +4450,20 @@
     "author": "Betty Friedan",
     "image_url": "https://assets.hardcover.app/external_data/59991167/600f92483806f6a711a9bba4693afc0d2c76b9a9.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-feminine-mystique"
+  },
+  {
+    "date_updated": "2016-07-09",
+    "title": "The Sense of Style",
+    "author": "Steven Pinker",
+    "image_url": "https://assets.hardcover.app/edition/30402195/5ef1b43e97e0c2cc7855d60280280438a6b17e7a.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-sense-of-style"
+  },
+  {
+    "date_updated": "2016-07-09",
+    "title": "The New Jim Crow: Mass Incarceration in the Age of Colorblindness",
+    "author": "Michelle Alexander",
+    "image_url": "https://assets.hardcover.app/edition/30401060/dc42b0fa2bce0963e1958025b5802c6678bda13f.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-new-jim-crow"
   },
   {
     "date_updated": "2016-07-09",
@@ -4430,25 +4480,73 @@
     "hardcover_url": "https://hardcover.app/books/the-beautiful-struggle"
   },
   {
-    "date_updated": "2016-07-09",
-    "title": "The Female Eunuch",
-    "author": "Germaine Greer",
-    "image_url": "https://assets.hardcover.app/edition/21385535/4406644-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/the-female-eunuch"
+    "date_updated": "2016-03-18",
+    "title": "The Science of Interstellar",
+    "author": "Kip S. Thorne",
+    "image_url": "https://assets.hardcover.app/book_mappings/7332178/4b9016e68fdcc067f63e6cf4e1fd502914bb0ad5.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-science-of-interstellar"
   },
   {
-    "date_updated": "2016-07-09",
-    "title": "The New Jim Crow: Mass Incarceration in the Age of Colorblindness",
-    "author": "Michelle Alexander",
-    "image_url": "https://assets.hardcover.app/edition/30401060/dc42b0fa2bce0963e1958025b5802c6678bda13f.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-new-jim-crow"
+    "date_updated": "2016-03-18",
+    "title": "Salvage the Bones",
+    "author": "Jesmyn Ward",
+    "image_url": "https://assets.hardcover.app/edition/19699150/daef594d6930d4934563709193fc2df2087e4c59.jpeg",
+    "hardcover_url": "https://hardcover.app/books/salvage-the-bones"
   },
   {
-    "date_updated": "2016-07-09",
-    "title": "The Sense of Style",
-    "author": "Steven Pinker",
-    "image_url": "https://assets.hardcover.app/edition/30402195/5ef1b43e97e0c2cc7855d60280280438a6b17e7a.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-sense-of-style"
+    "date_updated": "2016-03-18",
+    "title": "Blackass",
+    "author": "A. Igoni Barrett",
+    "image_url": "https://assets.hardcover.app/external_data/59387721/c3039d98de776f18c379975c4cc06219f441315c.jpeg",
+    "hardcover_url": "https://hardcover.app/books/blackass"
+  },
+  {
+    "date_updated": "2016-03-18",
+    "title": "The Elements of Typographic Style",
+    "author": "Robert Bringhurst",
+    "image_url": "https://assets.hardcover.app/edition/18244399/19e31b869c0085d8d5d6b2bae6ebe11a5f58956b.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-elements-of-typographic-style"
+  },
+  {
+    "date_updated": "2016-03-18",
+    "title": "Walkable City",
+    "author": "Jeff Speck",
+    "image_url": "https://assets.hardcover.app/edition/6214466/7412062-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/walkable-city"
+  },
+  {
+    "date_updated": "2016-03-18",
+    "title": "When Media Goes to War: Hegemonic Discourse, Public Opinion, and the Limits of Dissent",
+    "author": "Anthony DiMaggio",
+    "image_url": "https://assets.hardcover.app/external_data/604186/dcec659c67783807d9722eddc979b7cf16d69e48.jpeg",
+    "hardcover_url": "https://hardcover.app/books/when-media-goes-to-war"
+  },
+  {
+    "date_updated": "2016-03-18",
+    "title": "Airline Visual Identity: 1945–1975",
+    "author": "M.C. Huhne",
+    "image_url": "https://assets.hardcover.app/edition/32079619/f5ee9d2b99026d9d5159db1451d6d34cc1c85925.jpeg",
+    "hardcover_url": "https://hardcover.app/books/airline-visual-identity"
+  },
+  {
+    "date_updated": "2016-03-18",
+    "title": "Enjoy Your Symptom! Jacques Lacan in Hollywood and Out",
+    "author": "Slavoj Žižek",
+    "hardcover_url": "https://hardcover.app/books/enjoy-your-symptom-jacques-lacan-in-hollywood-and-out-1991"
+  },
+  {
+    "date_updated": "2016-03-18",
+    "title": "Good Neighbors: Gentrifying Diversity in Boston's South End",
+    "author": "Sylvie Tissot",
+    "image_url": "https://assets.hardcover.app/external_data/60251811/6701307ad185590ba81ad9ef2e2057f8b9723f2a.jpeg",
+    "hardcover_url": "https://hardcover.app/books/good-neighbors-gentrifying-diversity-in-bostons-south-end"
+  },
+  {
+    "date_updated": "2016-03-18",
+    "title": "Living in the End Times",
+    "author": "Slavoj Žižek",
+    "image_url": "https://assets.hardcover.app/external_data/60250480/d6367f947deefcab743edb49c4b04c5e9333d63c.jpeg",
+    "hardcover_url": "https://hardcover.app/books/living-in-the-end-times"
   },
   {
     "date_updated": "2016-03-18",
@@ -4459,23 +4557,9 @@
   },
   {
     "date_updated": "2016-03-18",
-    "title": "First as Tragedy, Then as Farce",
-    "author": "Slavoj Žižek",
-    "image_url": "https://assets.hardcover.app/edition/8811283/6684120-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/first-as-tragedy-then-as-farce"
-  },
-  {
-    "date_updated": "2016-03-18",
     "title": "Cities by Design: The Social Life of Urban Form",
     "author": "Fran Tonkiss",
     "hardcover_url": "https://hardcover.app/books/cities-by-design"
-  },
-  {
-    "date_updated": "2016-03-18",
-    "title": "The Elements of Typographic Style",
-    "author": "Robert Bringhurst",
-    "image_url": "https://assets.hardcover.app/edition/18244399/19e31b869c0085d8d5d6b2bae6ebe11a5f58956b.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-elements-of-typographic-style"
   },
   {
     "date_updated": "2016-03-18",
@@ -4500,64 +4584,9 @@
   },
   {
     "date_updated": "2016-03-18",
-    "title": "Blackass",
-    "author": "A. Igoni Barrett",
-    "image_url": "https://assets.hardcover.app/external_data/59387721/c3039d98de776f18c379975c4cc06219f441315c.jpeg",
-    "hardcover_url": "https://hardcover.app/books/blackass"
-  },
-  {
-    "date_updated": "2016-03-18",
-    "title": "The Science of Interstellar",
-    "author": "Kip S. Thorne",
-    "image_url": "https://assets.hardcover.app/book_mappings/7332178/4b9016e68fdcc067f63e6cf4e1fd502914bb0ad5.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-science-of-interstellar"
-  },
-  {
-    "date_updated": "2016-03-18",
-    "title": "Salvage the Bones",
-    "author": "Jesmyn Ward",
-    "image_url": "https://assets.hardcover.app/edition/19699150/daef594d6930d4934563709193fc2df2087e4c59.jpeg",
-    "hardcover_url": "https://hardcover.app/books/salvage-the-bones"
-  },
-  {
-    "date_updated": "2016-03-18",
-    "title": "Walkable City",
-    "author": "Jeff Speck",
-    "image_url": "https://assets.hardcover.app/edition/6214466/7412062-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/walkable-city"
-  },
-  {
-    "date_updated": "2016-03-18",
-    "title": "Enjoy Your Symptom! Jacques Lacan in Hollywood and Out",
+    "title": "First as Tragedy, Then as Farce",
     "author": "Slavoj Žižek",
-    "hardcover_url": "https://hardcover.app/books/enjoy-your-symptom-jacques-lacan-in-hollywood-and-out-1991"
-  },
-  {
-    "date_updated": "2016-03-18",
-    "title": "When Media Goes to War: Hegemonic Discourse, Public Opinion, and the Limits of Dissent",
-    "author": "Anthony DiMaggio",
-    "image_url": "https://assets.hardcover.app/external_data/604186/dcec659c67783807d9722eddc979b7cf16d69e48.jpeg",
-    "hardcover_url": "https://hardcover.app/books/when-media-goes-to-war"
-  },
-  {
-    "date_updated": "2016-03-18",
-    "title": "Good Neighbors: Gentrifying Diversity in Boston's South End",
-    "author": "Sylvie Tissot",
-    "image_url": "https://assets.hardcover.app/external_data/60251811/6701307ad185590ba81ad9ef2e2057f8b9723f2a.jpeg",
-    "hardcover_url": "https://hardcover.app/books/good-neighbors-gentrifying-diversity-in-bostons-south-end"
-  },
-  {
-    "date_updated": "2016-03-18",
-    "title": "Airline Visual Identity: 1945–1975",
-    "author": "M.C. Huhne",
-    "image_url": "https://assets.hardcover.app/edition/32079619/f5ee9d2b99026d9d5159db1451d6d34cc1c85925.jpeg",
-    "hardcover_url": "https://hardcover.app/books/airline-visual-identity"
-  },
-  {
-    "date_updated": "2016-03-18",
-    "title": "Living in the End Times",
-    "author": "Slavoj Žižek",
-    "image_url": "https://assets.hardcover.app/external_data/60250480/d6367f947deefcab743edb49c4b04c5e9333d63c.jpeg",
-    "hardcover_url": "https://hardcover.app/books/living-in-the-end-times"
+    "image_url": "https://assets.hardcover.app/edition/8811283/6684120-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/first-as-tragedy-then-as-farce"
   }
 ]
