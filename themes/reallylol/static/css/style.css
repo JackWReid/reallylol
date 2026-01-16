@@ -409,7 +409,8 @@
     width: var(--width-hero-image-post);
     z-index: 0;
 
-    @media screen and (max-width: var(--breakpoint-xl)) {
+    /* 1000px is breakpoint-lg */
+    @media screen and (max-width: 1000px) {
       display: none;
     }
   }
