@@ -4,7 +4,7 @@
 {{ if $imagePath }}
   {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
   {{ with resources.Get $relativePath }}
-    {{ $thumb := .Fit "500x500" }}
+    {{ $thumb := .Fit "800x500" }}
     {{ $thumbSrc = $thumb.RelPermalink }}
   {{ end }}
 {{ end }}
