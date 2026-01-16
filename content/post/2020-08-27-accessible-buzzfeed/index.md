@@ -12,7 +12,7 @@ tags:
 
 _This article was originally published on the [BuzzFeed Tech Blog](https://tech.buzzfeed.com/accessible-buzzfeed-2e1f3f94f352)_
 
-{{< image src="a11y-buzzfeed-banner.jpg" caption="Header image by Devin Argenta" alt="The words 'accessibility at BuzzFeed' surrounded by an illustrated eye, mouth, ear, and hand." >}}}
+{{< image src="a11y-buzzfeed-banner.jpg" caption="Header image by Devin Argenta" alt="The words 'accessibility at BuzzFeed' surrounded by an illustrated eye, mouth, ear, and hand." >}}
 
 Last month, external accessibility experts certified buzzfeed.com as compliant with the best accessibility practices for the web. That simple statement, ripped straight from the headlines of a boilerplate internal email, does not do justice to the two-year process that brought us to that point. Nor does it embody what the achievement means to our team, especially myself, on a personal level.
 
@@ -40,11 +40,11 @@ BuzzFeed is full of images. We tease our articles with carefully selected and cr
 
 First, we tried to avoid changing our editorial workflow. We assessed different machine learning services that offered to describe the content of images programmatically. None of them could describe everything, let alone describe it well.
 
-{{< image src="a11y-bad-captions.jpg" caption="Machine learning wasn’t up to the task of reliably describing our images." alt="Two images with inaccurate descriptions." >}}}
+{{< image src="a11y-bad-captions.jpg" caption="Machine learning wasn’t up to the task of reliably describing our images." alt="Two images with inaccurate descriptions." >}}
 
 We quickly realised that there was only one solution: to consider alt text as integral a piece of content as any piece of visible text in an article. That meant it would fall to our writers and editors to understand the importance of alt text and to write great image descriptions. So, while our engineering team whittled away at hundreds of issues that could be fixed in the background, we worked with our editorial team to put on workshops that demonstrated how screen readers experience our content. After establishing that understanding, we discussed the best alt text for all our different types of image content: from red carpet photos to meme screenshots to shopping items.
 
-{{< image src="a11y-edit-guide.jpg" caption="An example from our editorial alt text guide." alt="An image of Blake Lively on the red carpet with notes on how to describe the image for alt text." >}}}
+{{< image src="a11y-edit-guide.jpg" caption="An example from our editorial alt text guide." alt="An image of Blake Lively on the red carpet with notes on how to describe the image for alt text." >}}
 
 The editorial team didn’t just learn how to write alt text to pass the bare minimum standard. They brought alt text into their style guide, making sure the BuzzFeed voice shone through regardless of how someone experienced the content. The members of the team who attended multiple workshops became experts in good alt text, and now they help their colleagues write it every day. Andrew Ziegler, an editorial colleague who came to many of these workshops, remarked that the burden of writing good alt text was far less than expected: “You’re encouraged to keep it short … you’re not supposed to be redundant and repeat yourself, and you actually have a ton of freedom with it.” Furthermore, these workshops validated that our writers and editors were best placed to provide these descriptions: “Instead of robotically spewing out what’s in the image, you treat it like any other written part of the post and you’re free (and even encouraged) to carry the tone of the post into the alt text itself.”
 

@@ -8,11 +8,11 @@ tags:
   - london
 ---
 
-{{< image src="snow-ruskin.jpg" caption="Snow whiting out the park" alt="Thick snow falling in a park" >}}}
+{{< image src="snow-ruskin.jpg" caption="Snow whiting out the park" alt="Thick snow falling in a park" >}}
 
 London had its first snow day of the winter. We set out for a run in the mid-morning when the first specks starting to stick to the frosty tops of parked cars. By the time we were circling a park it was coming down thick. The roads were coated with a layer a couple of inches thick and quickly became communal playgrounds for bored families. Sleds emerged. Where do the sleds come from?
 
-{{< image src="snow-ruskin-allot.jpg" caption="Freezing the allotments" alt="Snow covering a small allottment in a park" >}}}
+{{< image src="snow-ruskin-allot.jpg" caption="Freezing the allotments" alt="Snow covering a small allottment in a park" >}}
 
 After we got back from running I went to Dulwich park to take some pictures. We sat on a bench in the cold and had a burger and chips.
 
@@ -20,8 +20,8 @@ After we got back from running I went to Dulwich park to take some pictures. We 
 
 Last night was Burns Night. We realised much too late and had to scramble to make our own vegan haggis, which was a big success in the end. Leftovers for lunch today were a delight. We finally broke dry January with the last drams of a couple of bottles of good whisky.
 
-{{< image src="snow-red-berries.jpg" caption="Snow in Dulwich Park" caption="Red berries in a bush covered in snow" >}}}
+{{< image src="snow-red-berries.jpg" caption="Snow in Dulwich Park" caption="Red berries in a bush covered in snow" >}}
 
 Many outrageous Scottish accents were performed.
 
-{{< image src="burns-night-table.jpg" caption="Finishing some good whisky" alt="A table laid with candles and bottles of whisky and a programme for Burns Night with songs" >}}}
+{{< image src="burns-night-table.jpg" caption="Finishing some good whisky" alt="A table laid with candles and bottles of whisky and a programme for Burns Night with songs" >}}
