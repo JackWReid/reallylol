@@ -19,3 +19,5 @@ I've had too many screens for too long today, and the day before. When I close m
 I wonder if I can get to Bauhaus to have them cut some timber for me so I can build a desk thing. Time at the farm house doing renovations (picking up and carrying what I'm told to bring) has given me unruly ideas about crude joinery solving my problems.
 
 Finally, finally, I've applied for German citizenship. In the end, I submitted a web form.
+
+{{< image src="bad-screen.jpg" alt="Person 1: welcome home. Did you have a good day looking at screens at work? Person 2: yes, my screens were good. How were your screens? 1: they were less good, so I'd like to watch something on the big screen in our house. 2: okay, but I might use my small screen while we watch." >}}
