@@ -1,5 +1,78 @@
 [
   {
+    "title": "Why I left",
+    "url": "https://brittahummel.substack.com/p/why-i-left?ref=blog.williammorland.com",
+    "date": "2026-01-19",
+    "excerpt": "Why a long-time employee of Meta finally left, citing grim cultural shifts that are happening across the whole industry.",
+    "tags": [
+      "Tech",
+      "Tech Ethics",
+      "management",
+      "Business",
+      "Blog",
+      "toblog",
+      "World of Work"
+    ],
+    "cover": "https://substackcdn.com/image/fetch/$s_!s8wx!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fbrittahummel.substack.com%2Fapi%2Fv1%2Fpost_preview%2F184017027%2Ftwitter.jpg%3Fversion%3D4"
+  },
+  {
+    "title": "bitchat",
+    "url": "https://bitchat.free/",
+    "date": "2026-01-19",
+    "excerpt": "Peer-to-peer Bluetooth messaing for when the internet goes out.",
+    "tags": [
+      "Tools",
+      "hacking",
+      "hardware",
+      "toblog",
+      "Cybersecurity",
+      "Emergency Prep"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fbitchat.free%2F"
+  },
+  {
+    "title": "East Germany balloon escape - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/East_Germany_balloon_escape",
+    "date": "2026-01-16",
+    "excerpt": "In 1979 a couple successfully escaped the DDR in a hot air balloon after extensive preparation and even a dry run.",
+    "tags": [
+      "Aviation",
+      "History",
+      "Germany",
+      "toblog"
+    ],
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Guenter_Wetzel%2C_Doris_Strelzyk_and_Peter_Strelzyk.jpg/1280px-Guenter_Wetzel%2C_Doris_Strelzyk_and_Peter_Strelzyk.jpg"
+  },
+  {
+    "title": "I Was Kidnapped by Idiots",
+    "url": "https://www.theatlantic.com/international/2026/01/kidnapped-baghdad/685470/?gift=j9r7avb6p-KY8zdjhsiSZ2bSbbls6v8p71_DdSlIn_8",
+    "date": "2026-01-15",
+    "excerpt": "An academic trip to Iraq unexpectedly turned into an immersive field study on the ways authoritarian regimes use brutality.",
+    "tags": [
+      "Conflict",
+      "Middle East",
+      "trauma",
+      "Blog",
+      "toblog"
+    ],
+    "cover": "https://cdn.theatlantic.com/thumbor/tkhWVMAsPnF4g9dci329tl3k96M=/0x0:2157x1123/1200x625/filters:watermark(https://cdn.theatlantic.com/media/files/badge_2x.png,-20,20,0,33)/media/img/mt/2026/01/patrick_leger_kidnappers_rgb/original.jpg"
+  },
+  {
+    "title": "The Long Now of the Web: Inside the Internet Archive’s Fight Against Forgetting | HackerNoon",
+    "url": "https://hackernoon.com/the-long-now-of-the-web-inside-the-internet-archives-fight-against-forgetting",
+    "date": "2026-01-15",
+    "excerpt": "A deep dive into the Internet Archive's custom tech stack.",
+    "tags": [
+      "Archives",
+      "libraries",
+      "Internet Culture",
+      "toblog",
+      "Web",
+      "library science"
+    ],
+    "cover": "https://hackernoon.imgix.net/images/bI3BzyBanbVxEZqmLV7jRnw6d9o2-yn0373q.png"
+  },
+  {
     "title": "House Arab",
     "url": "https://bidoun.org/articles/house-arab",
     "date": "2026-01-14",
@@ -294,6 +367,19 @@
       "toblog"
     ],
     "cover": "https://www.deepsouthventures.com/wp-content/uploads/vidalia-onions-in-field-300x225.jpg"
+  },
+  {
+    "title": "Is Holocaust Memory Over? – the Diasporist",
+    "url": "https://thediasporist.de/is-holocaust-memory-over/",
+    "date": "2025-12-24",
+    "excerpt": "How the German political and media classes have hollowed out the lessons of history",
+    "tags": [
+      "Germany",
+      "Israel-Palestine",
+      "Politics",
+      "toblog"
+    ],
+    "cover": "https://thediasporist.de/wp-content/uploads/2025/12/thediasporist-is-holocaust-memory-over-td-brd-article-03-1024x720.jpg"
   },
   {
     "title": "Hiby R3 Pro II",
