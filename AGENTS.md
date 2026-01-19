@@ -1,12 +1,15 @@
 # really.lol - AI agent information
 
 ## Prompt
+
 Do not stop to ask me anything. Use the parallel task tool to do everything in parallel without stopping. Do not update the todos in-between. Just spawn all sub-tasks as sub-agents and let them complete. 
 
 Store your plans and notes in `docs/`.
 
 ## Project Overview
+
 This is a Hugo-based personal blog and book tracking website hosted at https://really.lol. The site features:
+
 - Personal blog posts and highlights
 - Photo galleries
 - Book and media tracking
@@ -15,7 +18,8 @@ This is a Hugo-based personal blog and book tracking website hosted at https://r
 ## Architecture
 
 ### Project Structure
-```
+
+```bash
 reallylol/
 ├── config.toml           # Hugo configuration
 ├── content/              # Site content (markdown files)
@@ -51,6 +55,7 @@ reallylol/
 ```
 
 ### Hugo Configuration
+
 The site is configured via `config.toml`:
 
 ```toml
@@ -78,6 +83,7 @@ weight = 100
 ```
 
 Key configuration features:
+
 - **Theme**: Custom `reallylol` theme
 - **Language**: English (GB)
 - **Syntax highlighting**: Dracula theme
@@ -152,12 +158,27 @@ The site uses JSON data files in `data/` directory:
 
 ## Scripts
 
+### Project Management
+
+Use `task` for task management. The workflow:
+
+1. Check for in progress tasks: `task list --status progress` and pick those up first
+2. Check for todo tasks: `task ready`
+3. Get more details on your task with `task show $id`
+4. Take the task with `task take $id`
+5. If you make key findings during implementation, make a note with `task note $id $content"
+6. When you're done on implementation, close the task with `task close $id`
+7. If you get blocked, `task block $id`
+8. Report back to the user
+
 ### Content Creation Scripts
 
 #### `scripts/new-note.sh`
+
 Creates a new note post with auto-generated slug.
 
 **Functionality:**
+
 - Prompts for note text
 - Auto-generates slug from note text (lowercase, alphanumeric, dashes, max 50 chars)
 - Creates file: `content/note/YYYY-MM-DD-slug.md`
@@ -166,11 +187,13 @@ Creates a new note post with auto-generated slug.
 **Dependencies:** None
 
 **Usage:**
+
 ```bash
 ./scripts/new-note.sh
 ```
 
 #### `scripts/new-photo.sh`
+
 Creates a new photo post from an image file with EXIF extraction and image processing.
 
 - Requires image path as argument
@@ -183,18 +206,22 @@ Creates a new photo post from an image file with EXIF extraction and image proce
 - Frontmatter: title, date (from EXIF), image path, location, tags (YAML list), image shortcode referencing the asset
 
 **Dependencies:**
+
 - `exiftool` - For EXIF data extraction
 - `imagemagick` (mogrify) - For image processing
 
 **Usage:**
+
 ```bash
 ./scripts/new-photo.sh path/to/photo.jpg
 ```
 
 #### `scripts/new-post.sh`
+
 Creates a new blog post and opens in editor.
 
 **Functionality:**
+
 - Prompts for slug and title
 - Creates file: `content/post/YYYY-MM-DD-slug.md`
 - Frontmatter: title, date (current date), tags (default: journal)
@@ -203,14 +230,17 @@ Creates a new blog post and opens in editor.
 **Dependencies:** `vim` (or default editor)
 
 **Usage:**
+
 ```bash
 ./scripts/new-post.sh
 ```
 
 #### `scripts/new-media.sh`
+
 Interactive script to create medialog posts for books or movies using fzf.
 
 **Functionality:**
+
 - Uses `fzf` to browse and select from books (read.json) and movies (watched.json)
 - Shows checkmarks (✓) for items that already have posts
 - Automatically handles duplicate slugs by appending numbers (-1, -2, etc.)
@@ -221,6 +251,7 @@ Interactive script to create medialog posts for books or movies using fzf.
 - Opens file in vim after creation
 
 **Performance Optimizations:**
+
 - Post index caching: Single directory scan builds index once (~1.5s) instead of checking per-item
 - File-based index: Uses temporary file instead of associative arrays for bash 3.2 compatibility
 - Batch processing: All operations (slugify, lookup, format) happen in single awk pass (~30ms)
@@ -228,16 +259,19 @@ Interactive script to create medialog posts for books or movies using fzf.
 - Benchmark mode: Use `--benchmark` flag to see performance metrics
 
 **Dependencies:**
+
 - `jq` - For JSON parsing
 - `fzf` - For interactive selection
 
 **Usage:**
+
 ```bash
 ./scripts/new-media.sh              # Interactive mode
 ./scripts/new-media.sh --benchmark  # Benchmark mode (no fzf)
 ```
 
 #### `scripts/convert-post-to-bundle.py`
+
 Converts an existing flat post into a page bundle so its media can live beside `index.md`.
 
 - Lists non-bundle posts in reverse chronological order (uses `fzf` if available) and moves the selected Markdown file into `content/post/<slug>/index.md`.
@@ -245,10 +279,12 @@ Converts an existing flat post into a page bundle so its media can live beside `
 - Supports automation flags: `--slug <filename>`, `--path <path/to/post.md>`, and `--all-media` (converts every flat post that currently references `/img/`).
 
 **Dependencies:**
+
 - `python3`
 - `fzf` (optional, for selection UI)
 
 **Usage:**
+
 ```bash
 # interactive picker
 ./scripts/convert-post-to-bundle.py
@@ -263,9 +299,11 @@ Converts an existing flat post into a page bundle so its media can live beside `
 ### Data Update Scripts
 
 #### `scripts/update-books.sh`
+
 Updates book data from Hardcover API using the cover CLI.
 
 **Functionality:**
+
 - Fetches three book lists: toread, reading, read
 - Uses cover CLI with `--blog` format
 - Writes to `data/books/toread.json`, `reading.json`, `read.json`
@@ -273,33 +311,41 @@ Updates book data from Hardcover API using the cover CLI.
 - Uses temporary files to avoid corruption on failure
 
 **Dependencies:**
+
 - `cover` CLI - Must be in PATH (https://github.com/jackreid/cover)
 - `HARDCOVER_API_KEY` environment variable
 
 **Setup:**
+
 1. Install cover CLI:
+
    ```bash
    git clone https://github.com/jackreid/cover.git
    cd cover
    go build -o cover
    mv cover /usr/local/bin/  # or add to PATH
    ```
+
 2. Create Hardcover account at https://hardcover.app
 3. Get API key from account settings
 4. Set environment variable:
+
    ```bash
    export HARDCOVER_API_KEY="your-api-key-here"
    ```
 
 **Usage:**
+
 ```bash
 ./scripts/update-books.sh
 ```
 
 #### `scripts/update-films.sh`
+
 Updates film data from Letterboxd export.
 
 **Functionality:**
+
 - Supports two modes:
   - **Automatic mode**: Downloads export from Letterboxd using cookies
   - **Manual mode**: Processes pre-downloaded export directory
@@ -309,16 +355,19 @@ Updates film data from Letterboxd export.
 - Handles cookie authentication via file or environment variable
 
 **Dependencies:**
+
 - `sqlite3` - For CSV processing
 - `unzip` - For automatic mode (extracting export)
 - `curl` - For automatic mode (downloading export)
 
 **Cookie Setup:**
+
 - Default location: `./creds/letterboxd-cookies.txt`
 - Environment variable: `LETTERBOXD_COOKIE_FILE` or `LETTERBOXD_COOKIES`
 - Get cookies from browser after logging into Letterboxd
 
 **Usage:**
+
 ```bash
 # Automatic mode (downloads export)
 ./scripts/update-films.sh
@@ -328,17 +377,21 @@ Updates film data from Letterboxd export.
 ```
 
 #### `scripts/letterboxd-parse.sql`
+
 SQL queries for processing Letterboxd CSV exports. Used by `update-films.sh` via sqlite3.
 
 **Functionality:**
+
 - Creates temporary SQLite database from CSV files
 - Processes watchlist.csv and diary.csv
 - Generates JSON-compatible output for watched and to-watch films
 
 #### `scripts/update-random-photos.sh`
+
 Precomputes eligible photos for random selection in footer.
 
 **Functionality:**
+
 - Scans all photos in `content/photo/`
 - Filters out photos with tags listed in `data/content_config.json`'s `exclude_tags`
 - Writes eligible photo paths to `data/random_photos.json`
@@ -346,14 +399,17 @@ Precomputes eligible photos for random selection in footer.
 - Shows progress during scanning
 
 **Dependencies:**
+
 - `jq` - For JSON parsing and generation
 
 **Usage:**
+
 ```bash
 ./scripts/update-random-photos.sh
 ```
 
 **When to run:**
+
 - After adding new photos
 - After modifying photo tags
 - After updating `exclude_tags` in `data/content_config.json`
@@ -421,7 +477,9 @@ hugo --baseURL="https://your-domain.com" --minify
 ## Dependencies
 
 ### Required
+
 - **Hugo** - Static site generator
+
   ```bash
   # macOS
   brew install hugo
@@ -435,6 +493,7 @@ hugo --baseURL="https://your-domain.com" --minify
 ### Optional (for content management)
 
 - **exiftool** - Photo metadata extraction
+
   ```bash
   # macOS
   brew install exiftool
@@ -444,6 +503,7 @@ hugo --baseURL="https://your-domain.com" --minify
   ```
 
 - **ImageMagick** - Image processing (provides `mogrify`)
+
   ```bash
   # macOS
   brew install imagemagick
@@ -453,6 +513,7 @@ hugo --baseURL="https://your-domain.com" --minify
   ```
 
 - **SQLite3** - Film data processing
+
   ```bash
   # macOS (usually pre-installed)
   brew install sqlite3
@@ -462,6 +523,7 @@ hugo --baseURL="https://your-domain.com" --minify
   ```
 
 - **jq** - JSON processing
+
   ```bash
   # macOS
   brew install jq
@@ -471,6 +533,7 @@ hugo --baseURL="https://your-domain.com" --minify
   ```
 
 - **fzf** - Interactive selection (for new-media.sh)
+
   ```bash
   # macOS
   brew install fzf
@@ -480,11 +543,13 @@ hugo --baseURL="https://your-domain.com" --minify
   ```
 
 - **unzip** - For automatic Letterboxd export download
+
   ```bash
   # Usually pre-installed on macOS/Linux
   ```
 
 - **curl** - For automatic Letterboxd export download
+
   ```bash
   # Usually pre-installed on macOS/Linux
   ```
@@ -492,6 +557,7 @@ hugo --baseURL="https://your-domain.com" --minify
 ### Special Dependencies
 
 - **Go** - For building cover CLI
+
   ```bash
   # macOS
   brew install go
@@ -500,6 +566,7 @@ hugo --baseURL="https://your-domain.com" --minify
   ```
 
 - **Cover CLI** - For book data from Hardcover
+
   ```bash
   git clone https://github.com/jackreid/cover.git
   cd cover
@@ -510,12 +577,15 @@ hugo --baseURL="https://your-domain.com" --minify
 ## Environment Variables
 
 ### Required for Book Management
+
 - `HARDCOVER_API_KEY` - Hardcover API key for book data
+
   ```bash
   export HARDCOVER_API_KEY="your-api-key-here"
   ```
 
 ### Optional for Film Management
+
 - `LETTERBOXD_COOKIE_FILE` - Path to Letterboxd cookie file
 - `LETTERBOXD_COOKIES` - Letterboxd cookies as string
 
@@ -526,6 +596,7 @@ hugo --baseURL="https://your-domain.com" --minify
 The site generates static files in the `public/` directory after running `hugo build`. These can be deployed to any static hosting service.
 
 **Build for production:**
+
 ```bash
 hugo --minify
 ```
@@ -533,29 +604,34 @@ hugo --minify
 ### Common Hosting Platforms
 
 **Cloudflare Pages:**
+
 - Connect Git repository
 - Build command: `hugo --minify`
 - Build output directory: `public`
 - Environment variables: Set `HARDCOVER_API_KEY` if needed
 
 **Netlify:**
+
 - Connect Git repository
 - Build command: `hugo --minify`
 - Publish directory: `public`
 
 **Vercel:**
+
 - Connect Git repository
 - Framework preset: Hugo
 - Build command: `hugo --minify`
 - Output directory: `public`
 
 **GitHub Pages:**
+
 - Use GitHub Actions with Hugo workflow
 - Deploy from `public/` directory
 
 ### Environment Variables for Production
 
 Set these in your hosting platform:
+
 - `HARDCOVER_API_KEY` - For book updates (if using GitHub Actions)
 - `HUGO_VERSION` - Specify Hugo version if needed
 
@@ -573,27 +649,32 @@ Set these in your hosting platform:
 ## Troubleshooting
 
 ### Hugo Build Fails
+
 1. Check Hugo version: `hugo version`
 2. Verify config syntax: `hugo config`
 3. Check for missing theme: `ls themes/` (should contain 'reallylol')
 
 ### Content Not Appearing
+
 1. Check front matter format (proper YAML)
 2. Check date format: `2025-07-19T10:00:00`
 3. Check file location (correct `content/` subdirectory)
 4. Check drafts: `hugo server --buildDrafts`
 
 ### Scripts Not Working
+
 1. Check permissions: `chmod +x scripts/*.sh`
 2. Check dependencies: `which exiftool`, `which cover`, etc.
 3. Run from project root: `pwd` (should end in 'reallylol')
 4. Check environment variables: `echo $HARDCOVER_API_KEY`
 
 ### Image Processing Issues
+
 1. Check ImageMagick: `convert -version`
 2. Check file permissions: `ls -la static/img/`
 3. Check EXIF data: `exiftool path/to/image.jpg`
 
 ## Todo Items
+
 - Move content images to Cloudflare R2 (in a GitHub workflow?)
 - Update new image script to be compatible with Cloudflare images
