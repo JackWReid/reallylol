@@ -1,5 +1,35 @@
 [
   {
+    "title": "The Minneapolis Uprising",
+    "url": "https://www.theatlantic.com/politics/2026/01/minneapolis-uprising/685755/",
+    "date": "2026-01-26",
+    "excerpt": "Stories from the January 2026 uprising in Minneapolis, MN.",
+    "tags": [
+      "toblog",
+      "Politics",
+      "USA",
+      "Cities",
+      "f",
+      "Fascism",
+      "trump",
+      "Immigration"
+    ],
+    "cover": "https://cdn.theatlantic.com/thumbor/APGYcsM5ztOeSmT_qdcqZDz7HhA=/0x175:8243x4468/1200x625/media/img/mt/2026/01/Minneapolis_ICE_Story_Atlantic_140-1/original.jpg"
+  },
+  {
+    "title": "Shotguns for the Storytellers",
+    "url": "https://emilygorcenski.com/post/shotguns-for-the-storytellers/",
+    "date": "2026-01-26",
+    "excerpt": "A poem for all victims of secret police.",
+    "tags": [
+      "poetry",
+      "Fascism",
+      "Blog",
+      "toblog"
+    ],
+    "cover": "https://emilygorcenski.com/photo-gallery/berlin/Big%20Soldier.jpg"
+  },
+  {
     "title": "Why I left",
     "url": "https://brittahummel.substack.com/p/why-i-left?ref=blog.williammorland.com",
     "date": "2026-01-19",
@@ -1264,6 +1294,18 @@
     "cover": "https://winnielim.org/wp-content/uploads/2023/11/20231127-DSCF3976.jpg"
   },
   {
+    "title": "The Phrontistery: Obscure Words",
+    "url": "https://phrontistery.info/index.html",
+    "date": "2023-11-23",
+    "excerpt": "English obscure words and etymology resources: online dictionary of weird and unusual words, word lists, technical vocabulary aids, lipograms, and word related essays",
+    "tags": [
+      "History",
+      "Language",
+      "toblog"
+    ],
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fphrontistery.info%2Findex.html"
+  },
+  {
     "title": "Hallucinating with art models",
     "url": "https://meowni.ca/posts/hallucinations",
     "date": "2023-11-23",
@@ -1275,18 +1317,6 @@
       "Blog"
     ],
     "cover": "https://meowni.ca/posts/hallucinations/icons/icon-192x192.png"
-  },
-  {
-    "title": "The Phrontistery: Obscure Words",
-    "url": "https://phrontistery.info/index.html",
-    "date": "2023-11-23",
-    "excerpt": "English obscure words and etymology resources: online dictionary of weird and unusual words, word lists, technical vocabulary aids, lipograms, and word related essays",
-    "tags": [
-      "History",
-      "Language",
-      "toblog"
-    ],
-    "cover": "https://rdl.ink/render/https%3A%2F%2Fphrontistery.info%2Findex.html"
   },
   {
     "title": "fisking - Wiktionary",
