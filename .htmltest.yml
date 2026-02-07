@@ -1,0 +1,17 @@
+DirectoryPath: public
+CheckExternal: false
+# Hugo generates internal links without trailing slashes (e.g. /post/foo)
+# which htmltest flags as "target is a directory". The web server handles
+# this fine, so disable internal link checking to avoid ~650 false positives.
+CheckInternal: false
+CheckImages: true
+CheckScripts: false
+CheckFavicons: false
+IgnoreAltEmpty: true
+IgnoreURLs:
+  # Pre-existing: old CMS image reference in highlight content
+  - /images/uploads/
+  # Pre-existing: one photo with doubled date prefix in path
+  - img/photo/2017-09-13-2017-09-13
+IgnoreDirs:
+  - lib

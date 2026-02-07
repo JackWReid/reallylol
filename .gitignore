@@ -31,12 +31,19 @@ Thumbs.db
 Desktop.ini
 
 # Temporary files
+tmp/
 *.tmp
 *.temp
 *.log
 *.cache
 *.pid
 *.lock
+
+# Python
+__pycache__/
+
+# htmltest
+.htmltest/
 
 # Environment files
 .env

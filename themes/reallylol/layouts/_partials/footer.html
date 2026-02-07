@@ -15,9 +15,12 @@
               {{ $thumbSrc = $thumb.RelPermalink }}
             {{ end }}
           {{ end }}
+          {{ $src := $thumbSrc | default $imagePath }}
+          {{ if $src }}
           <a class="photo-box__link" href="{{ $photoPage.Permalink }}">
-            <img class="photo-box__image" src="{{ if $thumbSrc }}{{ $thumbSrc }}{{ else }}{{ $imagePath }}{{ end }}" alt="">
+            <img class="photo-box__image" src="{{ $src }}" alt="">
           </a>
+          {{ end }}
           <div class="photo-box__details">
             <p class="image-item__label">Random photo</p>
             <p class="image-item__title">

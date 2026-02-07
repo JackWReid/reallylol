@@ -14,9 +14,10 @@
     {{ $thumbSrc = $thumb.RelPermalink }}
   {{ end }}
 {{ end }}
+{{ $src := $thumbSrc | default $imagePath }}
 <article class="photo-section-item">
   <a href="{{ .Permalink }}">
-    <img src="{{ if $thumbSrc }}{{ $thumbSrc }}{{ else }}{{ $imagePath }}{{ end }}" alt="{{ .Title }}">
+    {{ if $src }}<img src="{{ $src }}" alt="{{ .Title }}">{{ end }}
   </a>
 
   <h3 class="photo-section-item__title">

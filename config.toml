@@ -3,7 +3,7 @@ languageCode = "en-gb"
 title = "really.lol"
 theme = "reallylol"
 buildFuture = true
-timeout = 999999
+timeout = 600000
 
 [pagination]
 pagerSize = 10
@@ -28,24 +28,5 @@ baseName = "sitemap"
 isPlainText = true
 notAlternative = true
 
-# Custom sitemap outputs for sectional sitemaps
-[outputFormats.SITEMAPPAGES]
-mediaType = "application/xml"
-baseName = "sitemap-pages"
-isPlainText = true
-notAlternative = true
-
-[outputFormats.SITEMAPPOSTS]
-mediaType = "application/xml"
-baseName = "sitemap-posts"
-isPlainText = true
-notAlternative = true
-
-[outputFormats.SITEMAPNOTES]
-mediaType = "application/xml"
-baseName = "sitemap-notes"
-isPlainText = true
-notAlternative = true
-
 [outputs]
-home = ["HTML", "SITEMAP", "SITEMAPPAGES", "SITEMAPPOSTS", "SITEMAPNOTES"]
+home = ["HTML", "SITEMAP"]

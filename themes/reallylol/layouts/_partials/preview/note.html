@@ -1,0 +1,9 @@
+<article class="note-item">
+  <p class="note-item__title">
+    {{ partial "icons/speech.html" . }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </p>
+  <p class="note-item__date">
+    {{ partial "icons/calendar.html" . }} {{ .Date.Format "2006-01-02" }}
+  </p>
+</article>

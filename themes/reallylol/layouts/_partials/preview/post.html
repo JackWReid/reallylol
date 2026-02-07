@@ -1,0 +1,19 @@
+<article class="blog-item">
+  <p class="blog-item__title">
+    {{ partial "icons/pen.html" . }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </p>
+  {{ if (.GetTerms "tags") }}
+  <ul class="section-item__tags">
+    {{ range (.GetTerms "tags") }}
+    <li class="section-item__tags-item">
+      <a href="{{ .Permalink }}">#{{ .LinkTitle | lower }}</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+  <p class="blog-item__date">
+    {{ partial "icons/calendar.html" . }} {{ .Date.Format "2006-01-02" }}
+  </p>
+  {{ partial "filter-preview-content.html" (dict "content" .Summary "type" "post") }}
+</article>
