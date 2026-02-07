@@ -19,11 +19,7 @@
   <li class="book-card" data-item>
     <div class="book-card__cover-frame">
       {{ if $book.image_url }}
-        {{ if lt $index 24 }}
-          <img src="{{ $book.image_url }}" alt="Cover of {{ $book.title }}" loading="lazy" class="book-card__cover" />
-        {{ else }}
-          <img data-src="{{ $book.image_url }}" alt="Cover of {{ $book.title }}" loading="lazy" class="book-card__cover" data-lazy-image />
-        {{ end }}
+        <img src="{{ $book.image_url }}" alt="Cover of {{ $book.title }}" loading="lazy" class="book-card__cover" />
       {{ else }}
         {{ with resources.Get "img/layout/no-book-cover.jpg" }}
           {{ $fallback := .Resize "800x" }}
@@ -45,7 +41,7 @@
   </div>
 
   <span class="page-count" data-pagination-info></span>
-  
+
   <div class="next-wrapper">
     <span data-pagination-next>Next</span>
   </div>

@@ -1,0 +1,25 @@
+{{ $imagePath := .Params.image }}
+{{ $thumbSrc := "" }}
+{{ if $imagePath }}
+  {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
+  {{ with resources.Get $relativePath }}
+    {{ $thumb := .Fit "500x500" }}
+    {{ $thumbSrc = $thumb.RelPermalink }}
+  {{ end }}
+{{ end }}
+<article class="image-item">
+  <div class="image-item__details">
+    <p class="image-item__title">
+      {{ partial "icons/capture.html" . }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </p>
+    <p class="image-item__location">
+      {{ partial "icons/location.html" . }}
+      <span>{{ .Params.location }}</span>
+    </p>
+    <p class="image-item__date">
+      {{ partial "icons/calendar.html" . }} {{ .Date.Format "2006-01-02" }}
+    </p>
+  </div>
+  <img src="{{ if $thumbSrc }}{{ $thumbSrc }}{{ else }}{{ $imagePath }}{{ end }}" alt="{{ .Title }}" />
+</article>

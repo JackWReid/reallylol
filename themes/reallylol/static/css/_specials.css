@@ -1,0 +1,8 @@
+body.note {
+  color: var(--color-link-hover-text);
+  background-color: var(--color-footer-bg);
+
+  .site-header {
+    border-bottom: 1px solid var(--color-link-hover-text);
+  }
+}
