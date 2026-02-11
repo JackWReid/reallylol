@@ -1,0 +1,16 @@
+{{ $permalink := .Permalink }}
+<nav class="sub-nav" aria-label="Sub Navigation">
+  <ul>
+    {{ if in $permalink "/books/" }}
+      <li><a href="/books/toread/">To Read</a></li>
+      <li><a href="/books/reading/">Reading</a></li>
+      <li><a href="/books/read/">Read</a></li>
+    {{ else if in $permalink "/films/" }}
+      <li><a href="/films/towatch/">To Watch</a></li>
+      <li><a href="/films/watched/">Watched</a></li>
+    {{ else if in $permalink "/links/" }}
+      <li><a href="/links/saved/">Saved Links</a></li>
+      <li><a href="/links/blogroll/">Blogroll</a></li>
+    {{ end }}
+  </ul>
+</nav>

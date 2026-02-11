@@ -1,0 +1,273 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner:
+      - generic [ref=e4]:
+        - link "Public Domain Image Archive" [ref=e5] [cursor=pointer]:
+          - /url: /galleries/all
+        - generic [ref=e6]: from
+        - link "The Public Domain Review" [ref=e8] [cursor=pointer]:
+          - /url: https://publicdomainreview.org
+          - img "The Public Domain Review" [ref=e9]
+        - navigation [ref=e10]:
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - link "About" [ref=e13] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e14]:
+              - link "Sources" [ref=e15] [cursor=pointer]:
+                - /url: /sources
+            - listitem [ref=e16]:
+              - link "Buy Prints" [ref=e17] [cursor=pointer]:
+                - /url: /prints
+            - listitem [ref=e18]:
+              - link "Donate" [ref=e19] [cursor=pointer]:
+                - /url: /donate
+            - listitem [ref=e20]:
+              - button [ref=e21] [cursor=pointer]:
+                - img [ref=e22]
+      - generic [ref=e26]:
+        - generic [ref=e29]:
+          - searchbox "Search the Collection" [ref=e30]
+          - button [ref=e31]:
+            - img [ref=e32]
+        - generic [ref=e34]: or
+        - generic [ref=e35]:
+          - generic [ref=e36]: Browse by
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - button "artist" [ref=e39] [cursor=pointer]
+              - text: /
+            - listitem [ref=e40]:
+              - button "century" [ref=e41] [cursor=pointer]
+              - text: /
+            - listitem [ref=e42]:
+              - button "style" [ref=e43] [cursor=pointer]
+              - text: /
+            - listitem [ref=e44]:
+              - button "theme" [ref=e45] [cursor=pointer]
+              - text: /
+            - listitem [ref=e46]:
+              - button "tag" [ref=e47] [cursor=pointer]
+              - text: /
+            - listitem [ref=e48]:
+              - link "all" [ref=e49] [cursor=pointer]:
+                - /url: /galleries/all
+        - combobox [ref=e51] [cursor=pointer]:
+          - option "Change View" [disabled] [selected]
+          - option "Catalog View" [disabled]
+          - option "Infinite View"
+          - option "Shuffle View"
+  - main [ref=e56]:
+    - generic [ref=e57]:
+      - heading "Images for Search Query \"leaf\"— 210 results Most Relevant You might also be interested in images tagged “leaves”" [level=1] [ref=e133]:
+        - generic [ref=e63]:
+          - generic [ref=e64]: Images for Search Query "leaf"— 210 results
+          - combobox [ref=e66]:
+            - option "Most Relevant" [selected]
+            - option "Newest to Oldest"
+            - option "Oldest to Newest"
+            - option "Largest to Smallest"
+            - option "Smallest to Largest"
+            - option "Open Ranking"
+          - generic [ref=e135]:
+            - text: You might also be interested in images tagged “
+            - link "leaves" [ref=e136] [cursor=pointer]:
+              - /url: /galleries/tags/leaves
+            - text: ”
+      - generic [ref=e138]:
+        - link "Leaf Leaf William Henry Fox Talbot, ca. 1839" [ref=e140] [cursor=pointer]:
+          - /url: /images/b24310db-bb5a-49bd-a07d-012248fd8585
+          - img "Leaf" [ref=e143]
+          - generic [ref=e144]:
+            - generic [ref=e145]: Leaf
+            - generic [ref=e146]: William Henry Fox Talbot, ca. 1839
+        - link "Cultivation of the Constructive-Play interest leaves no room for the Destructive-Play tendencies Cultivation of the Constructive-Play interest leaves no room for the Destructive-Play tendencies Anonymous, 1917" [ref=e148] [cursor=pointer]:
+          - /url: /images/f4c02a7e-9afd-465e-937e-58c69bf57384
+          - img "Cultivation of the Constructive-Play interest leaves no room for the Destructive-Play tendencies" [ref=e151]
+          - generic [ref=e152]:
+            - generic [ref=e153]: Cultivation of the Constructive-Play interest leaves no room for the Destructive-Play tendencies
+            - generic [ref=e154]: Anonymous, 1917
+        - link "“A jumping spider ready to spring from a leaf”. “A jumping spider ready to spring from a leaf”. David Fairchild, Marian Fairchild, 1914" [ref=e156] [cursor=pointer]:
+          - /url: /images/ef99ca79-aef1-4201-97df-276538e7b265
+          - img "“A jumping spider ready to spring from a leaf”." [ref=e159]
+          - generic [ref=e160]:
+            - generic [ref=e161]: “A jumping spider ready to spring from a leaf”.
+            - generic [ref=e162]: David Fairchild, Marian Fairchild, 1914
+        - link "Crumped-Leaf Caterpillar and Curled-Dead-Leaf-Mimicking Sphinx Caterpillar, in Position Crumped-Leaf Caterpillar and Curled-Dead-Leaf-Mimicking Sphinx Caterpillar, in Position Gerald H. Thayer, 1909" [ref=e164] [cursor=pointer]:
+          - /url: /images/e1d6fd35-4dec-4296-a0b7-491040470854
+          - img "Crumped-Leaf Caterpillar and Curled-Dead-Leaf-Mimicking Sphinx Caterpillar, in Position" [ref=e167]
+          - generic [ref=e168]:
+            - generic [ref=e169]: Crumped-Leaf Caterpillar and Curled-Dead-Leaf-Mimicking Sphinx Caterpillar, in Position
+            - generic [ref=e170]: Gerald H. Thayer, 1909
+        - link "The circumnutation of a young carnation leaf (_Dianthus caryophyllus_) across a three-day period in June The circumnutation of a young carnation leaf (Dianthus caryophyllus) across a three-day period in June Charles Darwin, 1896" [ref=e172] [cursor=pointer]:
+          - /url: /images/d737afae-a17a-4aea-baf8-f5fc7c324fba
+          - img "The circumnutation of a young carnation leaf (_Dianthus caryophyllus_) across a three-day period in June" [ref=e175]
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - text: The circumnutation of a young carnation leaf (
+              - emphasis [ref=e178]: Dianthus caryophyllus
+              - text: ) across a three-day period in June
+            - generic [ref=e179]: Charles Darwin, 1896
+        - link "Skeleton Leaves Skeleton Leaves John P. Soule, 1873" [ref=e181] [cursor=pointer]:
+          - /url: /images/d549273d-8acb-46a2-a950-366abf0aafde
+          - img "Skeleton Leaves" [ref=e184]
+          - generic [ref=e185]:
+            - generic [ref=e186]: Skeleton Leaves
+            - generic [ref=e187]: John P. Soule, 1873
+        - link "Unspotted Beach-Leaf-Edge , Oak-Leaf-Edge, and Crumpled-and-Withered-Leaf-Edge-Mimicking Caterpillars. Unspotted Beach-Leaf-Edge , Oak-Leaf-Edge, and Crumpled-and-Withered-Leaf-Edge-Mimicking Caterpillars. Gerald H. Thayer, 1909" [ref=e189] [cursor=pointer]:
+          - /url: /images/d37020b7-3aeb-4837-b60d-737f123ddd90
+          - img "Unspotted Beach-Leaf-Edge , Oak-Leaf-Edge, and Crumpled-and-Withered-Leaf-Edge-Mimicking Caterpillars." [ref=e192]
+          - generic [ref=e193]:
+            - generic [ref=e194]: Unspotted Beach-Leaf-Edge , Oak-Leaf-Edge, and Crumpled-and-Withered-Leaf-Edge-Mimicking Caterpillars.
+            - generic [ref=e195]: Gerald H. Thayer, 1909
+        - link "“A solitary leaf-cutting bee”. “A solitary leaf-cutting bee”. David Fairchild, Marian Fairchild, 1914" [ref=e197] [cursor=pointer]:
+          - /url: /images/c8d6b0c1-3e61-44c8-9d85-a3ed64acf4c8
+          - img "“A solitary leaf-cutting bee”." [ref=e200]
+          - generic [ref=e201]:
+            - generic [ref=e202]: “A solitary leaf-cutting bee”.
+            - generic [ref=e203]: David Fairchild, Marian Fairchild, 1914
+        - link "Maple Leaves in a Bubble Maple Leaves in a Bubble Anonymous, 1878" [ref=e205] [cursor=pointer]:
+          - /url: /images/c77f4763-474a-42a2-9d61-25a69a5c8c84
+          - img "Maple Leaves in a Bubble" [ref=e208]
+          - generic [ref=e209]:
+            - generic [ref=e210]: Maple Leaves in a Bubble
+            - generic [ref=e211]: Anonymous, 1878
+        - link "Trench art of name carved in leaf Trench art of name carved in leaf Hippolyte Hodeau, ca. 1917" [ref=e213] [cursor=pointer]:
+          - /url: /images/b46e48b1-3a7e-4c9e-8161-91dc8aada5db
+          - img "Trench art of name carved in leaf" [ref=e216]
+          - generic [ref=e217]:
+            - generic [ref=e218]: Trench art of name carved in leaf
+            - generic [ref=e219]: Hippolyte Hodeau, ca. 1917
+        - link "Copperhead Snake on Dead Leaves Copperhead Snake on Dead Leaves Gerald H. Thayer, 1909" [ref=e221] [cursor=pointer]:
+          - /url: /images/affcda1a-147c-40af-8ce4-1f06b4477291
+          - img "Copperhead Snake on Dead Leaves" [ref=e224]
+          - generic [ref=e225]:
+            - generic [ref=e226]: Copperhead Snake on Dead Leaves
+            - generic [ref=e227]: Gerald H. Thayer, 1909
+        - link "Two Goats as Leaf Ornament Two Goats as Leaf Ornament Anthonie de Winter, 1698" [ref=e229] [cursor=pointer]:
+          - /url: /images/aeb559e0-e3f7-4cfd-becb-cef3db01b5d5
+          - img "Two Goats as Leaf Ornament" [ref=e232]
+          - generic [ref=e233]:
+            - generic [ref=e234]: Two Goats as Leaf Ornament
+            - generic [ref=e235]: Anthonie de Winter, 1698
+        - link "Various caterpillars, some passing for the leaves on which they are feeding Various caterpillars, some passing for the leaves on which they are feeding Gerald H. Thayer, 1909" [ref=e237] [cursor=pointer]:
+          - /url: /images/a95d4dbb-d98a-46e2-bfe9-46345ddf8968
+          - img "Various caterpillars, some passing for the leaves on which they are feeding" [ref=e240]
+          - generic [ref=e241]:
+            - generic [ref=e242]: Various caterpillars, some passing for the leaves on which they are feeding
+            - generic [ref=e243]: Gerald H. Thayer, 1909
+        - link "Leaflet Advertising the Planned Ascent of a Hot Air Balloon Leaflet Advertising the Planned Ascent of a Hot Air Balloon Anonymous, 1785" [ref=e245] [cursor=pointer]:
+          - /url: /images/a791e9b6-97a5-432a-80cf-d74148165501
+          - img "Leaflet Advertising the Planned Ascent of a Hot Air Balloon" [ref=e248]
+          - generic [ref=e249]:
+            - generic [ref=e250]: Leaflet Advertising the Planned Ascent of a Hot Air Balloon
+            - generic [ref=e251]: Anonymous, 1785
+        - link "Fig. 2 shows how thin strips are cut from the sides of the four main sections, which are cut again from the top to the bottom, and from the bottom to the top, alternately, so as to form one continuous strip of small leaves, that with gentle pulling will lengthen into a goodly strip of peel. Fig. 2 shows how thin strips are cut from the sides of the four main sections, which are cut again from the top to the bottom, and from the bottom to the top, alternately, so as to form one continuous strip of small leaves, that with gentle pulling will lengthen into a goodly strip of peel. Anonymous, 1910" [ref=e253] [cursor=pointer]:
+          - /url: /images/9d7da6e2-66c9-4157-aad3-e2f821f621f7
+          - img "Fig. 2 shows how thin strips are cut from the sides of the four main sections, which are cut again from the top to the bottom, and from the bottom to the top, alternately, so as to form one continuous strip of small leaves, that with gentle pulling will lengthen into a goodly strip of peel." [ref=e256]
+          - generic [ref=e257]:
+            - generic [ref=e258]: Fig. 2 shows how thin strips are cut from the sides of the four main sections, which are cut again from the top to the bottom, and from the bottom to the top, alternately, so as to form one continuous strip of small leaves, that with gentle pulling will lengthen into a goodly strip of peel.
+            - generic [ref=e259]: Anonymous, 1910
+        - 'link "Leaf from Book of Hours: Snowball Fight Leaf from Book of Hours: Snowball Fight Anonymous, ca. 1510" [ref=e261] [cursor=pointer]':
+          - /url: /images/9205ca57-e373-43b7-bf85-8081fe83fc22
+          - 'img "Leaf from Book of Hours: Snowball Fight" [ref=e264]'
+          - generic [ref=e265]:
+            - generic [ref=e266]: "Leaf from Book of Hours: Snowball Fight"
+            - generic [ref=e267]: Anonymous, ca. 1510
+        - link "Skeleton Leaves Skeleton Leaves John P. Soule, 1873" [ref=e269] [cursor=pointer]:
+          - /url: /images/8fd289d7-6aca-4628-b404-0aae377f48f6
+          - img "Skeleton Leaves" [ref=e272]
+          - generic [ref=e273]:
+            - generic [ref=e274]: Skeleton Leaves
+            - generic [ref=e275]: John P. Soule, 1873
+        - link "Trench art of name carved in leaf Trench art of name carved in leaf Hippolyte Hodeau, ca. 1917" [ref=e277] [cursor=pointer]:
+          - /url: /images/83d9f5c1-bee3-43f1-b7fe-a20497645fa3
+          - img "Trench art of name carved in leaf" [ref=e280]
+          - generic [ref=e281]:
+            - generic [ref=e282]: Trench art of name carved in leaf
+            - generic [ref=e283]: Hippolyte Hodeau, ca. 1917
+        - link "Trench art of names carved in leaves Trench art of names carved in leaves Hippolyte Hodeau, ca. 1917" [ref=e285] [cursor=pointer]:
+          - /url: /images/7ca90acf-ce31-46e5-aa0b-fc79a7e71a40
+          - img "Trench art of names carved in leaves" [ref=e288]
+          - generic [ref=e289]:
+            - generic [ref=e290]: Trench art of names carved in leaves
+            - generic [ref=e291]: Hippolyte Hodeau, ca. 1917
+        - link "Skeleton Leaves Skeleton Leaves John P. Soule, 1873" [ref=e293] [cursor=pointer]:
+          - /url: /images/782349aa-bf66-4786-96ae-b5d02cf7d455
+          - img "Skeleton Leaves" [ref=e296]
+          - generic [ref=e297]:
+            - generic [ref=e298]: Skeleton Leaves
+            - generic [ref=e299]: John P. Soule, 1873
+  - contentinfo [ref=e67]:
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - paragraph [ref=e71]:
+          - text: The Public Domain Image Archive is run by
+          - link "The Public Domain Review" [ref=e72] [cursor=pointer]:
+            - /url: https://publicdomainreview.org
+          - text: ", a project registered in the UK as a Community Interest Company (#11386184), a category of company which exists primarily to benefit a community or with a view to pursuing a social purpose, with all profits having to be used for this purpose."
+        - paragraph [ref=e73]:
+          - text: We rely on donations from readers. Please consider
+          - link "supporting the project" [ref=e74] [cursor=pointer]:
+            - /url: /donate
+          - text: .
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "About" [ref=e78] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e79]:
+            - link "Sources" [ref=e80] [cursor=pointer]:
+              - /url: /sources
+          - listitem [ref=e81]:
+            - link "Prints for sale" [ref=e82] [cursor=pointer]:
+              - /url: /prints
+          - listitem [ref=e83]:
+            - link "Donate" [ref=e84] [cursor=pointer]:
+              - /url: /donate
+        - paragraph [ref=e85]:
+          - text: "Email contact:"
+          - link "pdia@publicdomainreview.org" [ref=e86] [cursor=pointer]:
+            - /url: mailto:pdia@publicdomainreview.org
+        - generic [ref=e90]:
+          - searchbox "Search the Collection" [ref=e91]
+          - button [ref=e92]:
+            - img [ref=e93]
+      - generic [ref=e95]:
+        - list [ref=e96]:
+          - listitem [ref=e97]:
+            - link "What is the Public Domain?" [ref=e98] [cursor=pointer]:
+              - /url: https://publicdomainreview.org/what-is-the-public-domain/
+          - listitem [ref=e99]:
+            - link "Rights Labelling" [ref=e100] [cursor=pointer]:
+              - /url: /rights-labelling-on-our-site
+          - listitem [ref=e101]:
+            - link "Reusing Images" [ref=e102] [cursor=pointer]:
+              - /url: /reusing-images
+          - listitem [ref=e103]:
+            - link "Privacy Policy" [ref=e104] [cursor=pointer]:
+              - /url: /privacy-policy
+          - listitem [ref=e105]:
+            - link "Returns and Refunds Policy" [ref=e106] [cursor=pointer]:
+              - /url: /returns-policy
+          - listitem [ref=e107]:
+            - link "Terms and Conditions" [ref=e108] [cursor=pointer]:
+              - /url: /terms-and-conditions
+        - link "Subscribe to Our Newsletter" [ref=e110] [cursor=pointer]:
+          - /url: /about#newsletter
+        - generic [ref=e111]:
+          - link "Facebook" [ref=e113] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=61571535394821
+            - img [ref=e114]
+          - link "X" [ref=e117] [cursor=pointer]:
+            - /url: https://x.com/pdimagearchive
+            - img "X" [ref=e118]
+          - link "Instagram" [ref=e121] [cursor=pointer]:
+            - /url: https://www.instagram.com/pdimagearchive/
+            - img [ref=e122]
+          - link "Bluesky" [ref=e125] [cursor=pointer]:
+            - /url: https://bsky.app/profile/pdimagearchive.bsky.social
+            - img "Bluesky" [ref=e126]
+          - link "Mastodon" [ref=e129] [cursor=pointer]:
+            - /url: https://mastodon.social/@pdimagearchive
+            - img [ref=e130]

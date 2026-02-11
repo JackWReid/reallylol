@@ -1,0 +1,87 @@
+:root {
+  /* Palette */
+  --color-parchment: #f0e8d8;
+  --color-parchment-dark: #e4d9c4;
+  --color-parchment-light: #f7f2e8;
+  --color-sepia: #3a2f23;
+  --color-sepia-light: #6b5d4f;
+  --color-botanical: #4a6741;
+  --color-botanical-dark: #2d4a26;
+  --color-copper: #7a5c3d;
+  --color-rust: #8a5a32;
+  --color-rule: #c4b498;
+
+  /* Semantic colour mapping */
+  --color-background: var(--color-parchment);
+  --color-line: var(--color-rule);
+  --color-text: var(--color-sepia);
+  --color-text-muted: var(--color-sepia-light);
+  --color-text-secondary: var(--color-copper);
+  --color-link: var(--color-botanical-dark);
+  --color-link-hover: var(--color-rust);
+  --color-footer-bg: var(--color-parchment-dark);
+
+  /* Typography */
+  --font-base: Charter, Georgia, "Times New Roman", times, serif;
+  --font-display: Didot, "Bodoni MT", Georgia, serif;
+  --font-label: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  --font-mono: "Courier Prime", "Courier New", monospace;
+  --font-sans: var(--font-label);
+
+  --font-size-xs: 0.8rem;
+  --font-size-sm: 0.85rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.05rem;
+  --font-size-lg: 1.2em;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 3rem;
+
+  /* Spacing */
+  --spacing-xs: 0.2rem;
+  --spacing-sm: 0.3rem;
+  --spacing-base: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 5rem;
+
+  /* Dimensions */
+  --width-inner: 700px;
+  --width-outer: 1000px;
+  --width-hero-image: 500px;
+  --width-hero-image-post: 300px;
+  --width-multi-preview: 600px;
+  --width-note-section-header: 500px;
+  --width-note-container: 30rem;
+  --width-note-list-item: 30em;
+  --width-photo-box-img: 20rem;
+  --width-book-card: 220px;
+  --width-book-card-cover-small: 64px;
+  --height-book-card: 340px;
+  --height-book-card-small: 220px;
+  --height-book-card-cover-small: 96px;
+  --height-photo-grid-img: 15rem;
+  --position-hero-right: 50px;
+  --position-hero-bottom: 6px;
+  --position-note-top: 40px;
+  --position-note-left: 60px;
+
+  /* Breakpoints */
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 800px;
+  --breakpoint-lg: 1000px;
+  --breakpoint-xl: 1070px;
+
+  /* Other */
+  --radius-small: 3px;
+  --transition-base: 0.2s ease;
+  --opacity-muted: 40%;
+  --line-height-content: 1.6;
+  --font-size-info: 0.95rem;
+  --spacing-table-cell: 0.75rem;
+  --width-book-grid-item: 200px;
+  --width-book-grid-item-small: 130px;
+
+  font-family: var(--font-base);
+}

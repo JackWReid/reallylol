@@ -1,0 +1,52 @@
+<div class="site-footer-wrapper">
+  <footer class="site-footer">
+    <section class="photo-box">
+      {{- $randomPhotos := site.Data.random_photos | default (slice) -}}
+      {{- if gt (len $randomPhotos) 0 -}}
+        {{- $randomEntry := index (shuffle $randomPhotos) 0 -}}
+        {{- $photoPage := site.GetPage $randomEntry.path -}}
+        {{- if $photoPage -}}
+          {{ $imagePath := $photoPage.Params.image }}
+          {{ $thumbSrc := "" }}
+          {{ if $imagePath }}
+            {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
+            {{ with resources.Get $relativePath }}
+              {{ $thumb := .Fit "500x500" }}
+              {{ $thumbSrc = $thumb.RelPermalink }}
+            {{ end }}
+          {{ end }}
+          {{ $src := $thumbSrc | default $imagePath }}
+          {{ if $src }}
+          <a class="photo-box__link" href="{{ $photoPage.Permalink }}">
+            <img class="photo-box__image" src="{{ $src }}" alt="">
+          </a>
+          {{ end }}
+          <div class="photo-box__details">
+            <p class="image-item__label">From the collection</p>
+            <p class="image-item__title">
+              <a href="{{ $photoPage.Permalink }}"> {{ $photoPage.Title }}</a>
+            </p>
+            {{ if $photoPage.Params.location }}
+            <p class="image-item__location">
+              {{ partial "icons/location.html" $photoPage }}
+              <span>{{ $photoPage.Params.location }}</span>
+            </p>
+            {{ end }}
+            <p class="image-item__date">
+              {{ partial "icons/calendar.html" $photoPage }}
+              {{ $photoPage.Date.Format "2 January 2006" }}
+            </p>
+          </div>
+        {{- end -}}
+      {{- end -}}
+    </section>
+    <section class="site-footer__details">
+      <p>
+				<a rel="me" href="https://social.lol/@nice">@nice</a>
+				<a href="{{ "/now" | absURL }}">/now</a>
+				<a href="{{ "/index.xml" | absURL }}">RSS</a>
+      </p>
+      <p>Catalogued {{ dateFormat "15:04, 2 January 2006" now }}</p>
+    </section>
+  </footer>
+</div>

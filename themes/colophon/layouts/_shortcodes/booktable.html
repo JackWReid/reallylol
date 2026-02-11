@@ -1,0 +1,48 @@
+{{ $scratch := newScratch }}
+
+{{ $data := "nil" }}
+
+{{ $key := .Get "key" }}
+{{ $scratch.Set "limit" (.Get "limit" | default 10000) }}
+
+{{ if eq $key "read" }}
+  {{ $data = first ($scratch.Get "limit") $.Site.Data.books.read }}
+{{ else if eq $key "reading" }}
+  {{ $data = first ($scratch.Get "limit") $.Site.Data.books.reading }}
+{{ else if eq $key "toread" }}
+  {{ $data = first ($scratch.Get "limit") $.Site.Data.books.toread }}
+{{ end }}
+
+<ul class="book-grid book-grid--fullwidth" data-paginate="true">
+  {{ range $index, $item := $data }}
+  {{ $book := $item }}
+  <li class="book-card" data-item>
+    <div class="book-card__cover-frame">
+      {{ if $book.image_url }}
+        <img src="{{ $book.image_url }}" alt="Cover of {{ $book.title }}" loading="lazy" class="book-card__cover" />
+      {{ else }}
+        {{ with resources.Get "img/layout/botanical-leaf.jpg" }}
+          {{ $fallback := .Resize "800x" }}
+          <img src="{{ $fallback.RelPermalink }}" alt="Cover of {{ $book.title }}" loading="lazy" class="book-card__cover" />
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="book-card__meta">
+      <h3 class="book-card__title">{{ .title }}</h3>
+      <div class="book-card__author">{{ .author }}</div>
+      <div class="book-card__date">{{ dateFormat "2 January 2006" .date_updated }}</div>
+    </div>
+  </li>
+  {{ end }}
+</ul>
+<nav class="pagination" data-pagination-controls style="display: none;">
+  <div class="prev-wrapper">
+    <span data-pagination-prev>&larr; Previous</span>
+  </div>
+
+  <span class="page-count" data-pagination-info></span>
+
+  <div class="next-wrapper">
+    <span data-pagination-next>Next &rarr;</span>
+  </div>
+</nav>

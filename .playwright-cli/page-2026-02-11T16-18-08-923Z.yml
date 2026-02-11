@@ -1,0 +1,443 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner:
+      - generic [ref=e4]:
+        - link "Public Domain Image Archive" [ref=e5] [cursor=pointer]:
+          - /url: /galleries/all
+        - generic [ref=e6]: from
+        - link "The Public Domain Review" [ref=e8] [cursor=pointer]:
+          - /url: https://publicdomainreview.org
+          - img "The Public Domain Review" [ref=e9]
+        - navigation [ref=e10]:
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - link "About" [ref=e13] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e14]:
+              - link "Sources" [ref=e15] [cursor=pointer]:
+                - /url: /sources
+            - listitem [ref=e16]:
+              - link "Buy Prints" [ref=e17] [cursor=pointer]:
+                - /url: /prints
+            - listitem [ref=e18]:
+              - link "Donate" [ref=e19] [cursor=pointer]:
+                - /url: /donate
+            - listitem [ref=e20]:
+              - button [ref=e21] [cursor=pointer]:
+                - img [ref=e22]
+      - generic [ref=e26]:
+        - generic [ref=e29]:
+          - searchbox "Search the Collection" [ref=e30]
+          - button [ref=e31]:
+            - img [ref=e32]
+        - generic [ref=e34]: or
+        - generic [ref=e35]:
+          - generic [ref=e36]: Browse by
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - button "artist" [ref=e39] [cursor=pointer]
+              - text: /
+            - listitem [ref=e40]:
+              - button "century" [ref=e41] [cursor=pointer]
+              - text: /
+            - listitem [ref=e42]:
+              - button "style" [ref=e43] [cursor=pointer]
+              - text: /
+            - listitem [ref=e44]:
+              - button "theme" [ref=e45] [cursor=pointer]
+              - text: /
+            - listitem [ref=e46]:
+              - button "tag" [ref=e47] [cursor=pointer]
+              - text: /
+            - listitem [ref=e48]:
+              - link "all" [ref=e49] [cursor=pointer]:
+                - /url: /galleries/all
+        - combobox [ref=e51] [cursor=pointer]:
+          - option "Change View" [disabled] [selected]
+          - option "Catalog View" [disabled]
+          - option "Infinite View"
+          - option "Shuffle View"
+  - main [ref=e56]:
+    - generic [ref=e57]:
+      - button "Open lightbox" [ref=e61] [cursor=pointer]:
+        - img [ref=e62]
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - 'heading "Featured on PDR in the collection Festooned: Martin Gerlach’s Decorative Groupings (1897)" [level=3] [ref=e65]':
+            - text: Featured on PDR in the collection
+            - 'link "Festooned: Martin Gerlach’s Decorative Groupings (1897)" [ref=e66] [cursor=pointer]':
+              - /url: https://publicdomainreview.org/collection/martin-gerlach-festons
+          - paragraph [ref=e67]:
+            - text: A prolific engraver and photographer, Martin Gerlach (1846–1918) made his name by founding an eponymous publishing company in Berlin. After relocating to Vienna, he launched a series of children’s books,
+            - emphasis [ref=e68]: Jugendbücherei
+            - text: ", which featured illustrations by Carl Otto Czeschka, Gustav Klimt, Franz Wacik, and other artists, many in vogue or soon to be. Eventually starting the Polygraphic Art Institute with Ferdinand Shenk, Gerlach passed on his business and artistic legacy to his son, also named Martin Gerlach (1879–1944), who adopted a surrealist approach to photography. Below you will find a set of images from one of the lesser-known works by Gerlach (senior),"
+            - emphasis [ref=e69]: Festons und Decorative Gruppen aus Pflanzen und Thieren
+            - text: (Festoons and Decorative Groups of Plants and Animals), originally published in 1893. It is a quintessential…
+          - link "Read More on The Public Domain Review…" [ref=e71] [cursor=pointer]:
+            - /url: https://publicdomainreview.org/collection/martin-gerlach-festons
+            - generic [ref=e72]: Read More on The Public Domain Review…
+        - generic [ref=e73]:
+          - heading "Also appearing in the collection…" [level=3] [ref=e74]
+          - list [ref=e75]:
+            - link [ref=e76] [cursor=pointer]:
+              - /url: /images/2b28a73c-072c-4a0f-a82a-cd59128c33b2
+              - img [ref=e78]
+            - link [ref=e79] [cursor=pointer]:
+              - /url: /images/23eae6c8-97b8-4577-a4a6-c58068277175
+              - img [ref=e81]
+            - link [ref=e82] [cursor=pointer]:
+              - /url: /images/39fc95c6-f54f-4e47-91d4-643ff70da27c
+              - img [ref=e84]
+            - link [ref=e85] [cursor=pointer]:
+              - /url: /images/3abd6a6a-f928-41f2-8e55-52467063cc59
+              - img [ref=e87]
+            - link [ref=e88] [cursor=pointer]:
+              - /url: /images/40b877b5-9890-48fb-b800-8ff42a03c363
+              - img [ref=e90]
+            - link [ref=e91] [cursor=pointer]:
+              - /url: /images/49963a97-c9ec-4715-83fc-9326d51ceb22
+              - img [ref=e93]
+            - link [ref=e94] [cursor=pointer]:
+              - /url: /images/4da52d51-632d-4bb0-bda4-0d1706ab9e44
+              - img [ref=e96]
+            - link [ref=e97] [cursor=pointer]:
+              - /url: /images/4a569767-27a1-4f7d-96d2-be7eba8c40cb
+              - img [ref=e99]
+            - link [ref=e100] [cursor=pointer]:
+              - /url: /images/41825016-908a-4c1d-9a48-2742a6cc1639
+              - img [ref=e102]
+            - link [ref=e103] [cursor=pointer]:
+              - /url: /images/4ccc9345-9b7f-4efc-bd26-be6847dfa3b1
+              - img [ref=e105]
+            - link [ref=e106] [cursor=pointer]:
+              - /url: /images/448be463-ef81-4ac2-9b18-abddecd06123
+              - img [ref=e108]
+            - link [ref=e109] [cursor=pointer]:
+              - /url: /images/49bc82f8-e1af-4f0d-97b9-060c1411aa86
+              - img [ref=e111]
+            - link [ref=e112] [cursor=pointer]:
+              - /url: /images/67a3fe22-56bd-4e28-a231-275dc3df3247
+              - img [ref=e114]
+            - link [ref=e115] [cursor=pointer]:
+              - /url: /images/6630d5fa-8720-440f-8ad1-df0491e05456
+              - img [ref=e117]
+            - link [ref=e118] [cursor=pointer]:
+              - /url: /images/6ef80f1e-3662-4152-a4bf-b7a0903be5a0
+              - img [ref=e120]
+            - link [ref=e121] [cursor=pointer]:
+              - /url: /images/602edfb6-a5b5-40e5-86c4-94b7aa56a1e2
+              - img [ref=e123]
+            - link [ref=e124] [cursor=pointer]:
+              - /url: /images/6242c9f3-6267-40c5-a1b4-889045472b21
+              - img [ref=e126]
+            - link [ref=e127] [cursor=pointer]:
+              - /url: /images/8d27e44a-b42c-4874-8285-e42864a26d5e
+              - img [ref=e129]
+            - link [ref=e130] [cursor=pointer]:
+              - /url: /images/8f5860ae-29f4-4445-ad91-44970c20b75c
+              - img [ref=e132]
+            - link [ref=e133] [cursor=pointer]:
+              - /url: /images/8ab0257f-fb5b-45e9-a8f2-237ea923380e
+              - img [ref=e135]
+            - link [ref=e136] [cursor=pointer]:
+              - /url: /images/80768347-22b3-402a-9491-8cfeedf7b30d
+              - img [ref=e138]
+            - link [ref=e139] [cursor=pointer]:
+              - /url: /images/84fea7fc-b310-4e0b-85dc-4289dba18cee
+              - img [ref=e141]
+            - link [ref=e142] [cursor=pointer]:
+              - /url: /images/84876897-aea6-47c6-bbbd-a3509849e4aa
+              - img [ref=e144]
+            - link [ref=e145] [cursor=pointer]:
+              - /url: /images/957091f5-1971-4215-8ef1-ff88254ab561
+              - img [ref=e147]
+            - link [ref=e148] [cursor=pointer]:
+              - /url: /images/96137757-6a98-4560-b570-514b7dba762d
+              - img [ref=e150]
+            - link [ref=e151] [cursor=pointer]:
+              - /url: /images/92072e6b-ed02-4262-b1e0-a9918b8aeb60
+              - img [ref=e153]
+            - link [ref=e154] [cursor=pointer]:
+              - /url: /images/022e472a-455d-4caa-b1ae-c40aac91f09d
+              - img [ref=e156]
+            - link [ref=e157] [cursor=pointer]:
+              - /url: /images/0dcea6ba-a5cc-4ded-8e53-9bf13c3895fb
+              - img [ref=e159]
+            - link [ref=e160] [cursor=pointer]:
+              - /url: /images/0e642ff8-c198-4fdb-bdd7-01fa7ba41711
+              - img [ref=e162]
+            - link [ref=e163] [cursor=pointer]:
+              - /url: /images/0f2ee32b-80cd-439d-a2f7-a90211328f71
+              - img [ref=e165]
+            - link [ref=e166] [cursor=pointer]:
+              - /url: /images/09a72e6c-2f68-4b59-a57b-6aa59f5dd30d
+              - img [ref=e168]
+            - link [ref=e169] [cursor=pointer]:
+              - /url: /images/0ff2e483-ee33-4fd4-91c0-617c08bf2126
+              - img [ref=e171]
+            - link [ref=e172] [cursor=pointer]:
+              - /url: /images/0559aa51-81cf-49ba-aca0-2994c27214ba
+              - img [ref=e174]
+            - link [ref=e175] [cursor=pointer]:
+              - /url: /images/a4965fb7-dc8c-43b1-8c22-7ae0d84ee068
+              - img [ref=e177]
+            - link [ref=e178] [cursor=pointer]:
+              - /url: /images/a2881883-d36c-4e1d-a809-f2e6a4754451
+              - img [ref=e180]
+            - link [ref=e181] [cursor=pointer]:
+              - /url: /images/a2f6f5db-9819-4628-84c5-1d96ca7b85b0
+              - img [ref=e183]
+            - link [ref=e184] [cursor=pointer]:
+              - /url: /images/afded7a3-24b3-473f-bef4-9d0d750ba016
+              - img [ref=e186]
+            - link [ref=e187] [cursor=pointer]:
+              - /url: /images/b9e2335e-60da-4396-88fd-ca6c3caf4a62
+              - img [ref=e189]
+            - link [ref=e190] [cursor=pointer]:
+              - /url: /images/b4315f93-bb75-4b65-bbd1-52ca4dcd221e
+              - img [ref=e192]
+            - link [ref=e193] [cursor=pointer]:
+              - /url: /images/b7fb502b-ee90-4522-a857-961f2d3e7ead
+              - img [ref=e195]
+            - link [ref=e196] [cursor=pointer]:
+              - /url: /images/c91e4a94-3acb-4196-8c0e-2fa7914c039d
+              - img [ref=e198]
+            - link [ref=e199] [cursor=pointer]:
+              - /url: /images/c965780c-dad5-410e-8b3f-d9240d921c10
+              - img [ref=e201]
+            - link [ref=e202] [cursor=pointer]:
+              - /url: /images/c07dc4b2-351c-4330-b563-e976fc76f9b2
+              - img [ref=e204]
+            - link [ref=e205] [cursor=pointer]:
+              - /url: /images/d2dd3c1b-a6ad-4355-9e5a-12c723895ca5
+              - img [ref=e207]
+            - link [ref=e208] [cursor=pointer]:
+              - /url: /images/d6532070-2f97-435e-a4d7-a159694f2e70
+              - img [ref=e210]
+            - link [ref=e211] [cursor=pointer]:
+              - /url: /images/e1e93b1e-4117-478d-8be8-b958366fa57c
+              - img [ref=e213]
+            - link [ref=e214] [cursor=pointer]:
+              - /url: /images/e2463cee-5fe6-4592-92f9-816b93a872d2
+              - img [ref=e216]
+            - link [ref=e217] [cursor=pointer]:
+              - /url: /images/eb043f0e-c111-4382-834f-73135cd41eda
+              - img [ref=e219]
+            - link:
+              - /url: /images/e4ffcfa2-8e79-4a51-a12f-4fb05f504f5f
+              - generic:
+                - img
+            - link:
+              - /url: /images/f0dfcff6-6472-4cfd-b7fe-3cc2d7b9d7da
+              - generic:
+                - img
+            - link:
+              - /url: /images/f7f95689-4826-45a0-b88b-ed0e12f22c3d
+              - generic:
+                - img
+            - link:
+              - /url: /images/f373eefc-ad78-47a4-9cd6-38e1a1605b6b
+              - generic:
+                - img
+      - generic [ref=e221]:
+        - generic [ref=e222]:
+          - generic [ref=e223]:
+            - heading "Artist" [level=3] [ref=e224]
+            - paragraph [ref=e226]:
+              - link "Martin Gerlach" [ref=e227] [cursor=pointer]:
+                - /url: /galleries/artists/martin-gerlach/random/desc
+            - heading "Date" [level=3] [ref=e228]
+            - paragraph [ref=e229]: "1897"
+            - heading "From" [level=3] [ref=e230]
+            - paragraph [ref=e231]: Festons und Decorative Gruppen aus Pflanzen und Thieren
+          - separator [ref=e232]
+        - generic [ref=e233]:
+          - generic [ref=e234]:
+            - heading "Source" [level=3] [ref=e235]
+            - paragraph [ref=e236]:
+              - link "Rijksmuseum" [ref=e237] [cursor=pointer]:
+                - /url: https://www.rijksmuseum.nl/en/content-search?q=%22%3AFestons+und+Decorative+Gruppen%22
+            - heading "More From" [level=3] [ref=e238]
+            - list [ref=e239]:
+              - listitem [ref=e241]:
+                - link "Rijksmuseum logo Rijksmuseum 731 images on PDIA" [ref=e242] [cursor=pointer]:
+                  - /url: /galleries/sources/rijksmuseum/random/desc
+                  - img "Rijksmuseum logo" [ref=e244]
+                  - generic [ref=e245]:
+                    - generic [ref=e246]: Rijksmuseum
+                    - generic [ref=e247]: 731 images on PDIA
+          - separator [ref=e248]
+        - generic [ref=e249]:
+          - generic [ref=e250]:
+            - heading "Underlying Rights" [level=3] [ref=e251]
+            - paragraph [ref=e252]:
+              - link "Public Domain Worldwide" [ref=e254] [cursor=pointer]:
+                - /url: /rights-labelling-on-our-site#pd-worldwide
+          - generic [ref=e255]:
+            - heading "Digital Rights" [level=3] [ref=e256]
+            - paragraph [ref=e257]:
+              - link "No Additional Rights" [ref=e259] [cursor=pointer]:
+                - /url: /rights-labelling-on-our-site#no-additional-rights
+            - list [ref=e260]:
+              - listitem [ref=e261]:
+                - text: Labelled
+                - link "CC0 license" [ref=e262] [cursor=pointer]:
+                  - /url: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+              - listitem [ref=e263]:
+                - text: See their general
+                - link "rights page" [ref=e264] [cursor=pointer]:
+                  - /url: https://www.rijksmuseum.nl/en/research/conduct-research/data/policy
+              - listitem [ref=e265]:
+                - text: We offer this info as
+                - link "guidance only" [ref=e266] [cursor=pointer]:
+                  - /url: /reusing-images
+          - separator [ref=e267]
+        - generic [ref=e268]:
+          - generic [ref=e269]:
+            - heading "Image Size" [level=3] [ref=e270]
+            - paragraph [ref=e271]: 1040 x 1400
+            - button "Download Image" [ref=e274] [cursor=pointer]: Download Image
+          - separator [ref=e275]
+        - generic [ref=e277]:
+          - generic [ref=e278]:
+            - heading "Styles" [level=3] [ref=e279]
+            - list [ref=e281]:
+              - listitem [ref=e282]:
+                - link "Collage" [ref=e283] [cursor=pointer]:
+                  - /url: /galleries/style/collage
+                - text: /
+              - listitem [ref=e284]:
+                - link "Photography" [ref=e285] [cursor=pointer]:
+                  - /url: /galleries/style/photography
+          - generic [ref=e286]:
+            - heading "Themes" [level=3] [ref=e287]
+            - list [ref=e289]:
+              - listitem [ref=e290]:
+                - link "Design & Typography" [ref=e291] [cursor=pointer]:
+                  - /url: /galleries/themes/design-and-typography
+                - text: /
+              - listitem [ref=e292]:
+                - link "Natural World" [ref=e293] [cursor=pointer]:
+                  - /url: /galleries/themes/natural-world
+          - generic [ref=e294]:
+            - heading "Tags" [level=3] [ref=e295]
+            - list [ref=e297]:
+              - listitem [ref=e298]:
+                - link "collage" [ref=e299] [cursor=pointer]:
+                  - /url: /galleries/tags/collage
+                - text: /
+              - listitem [ref=e300]:
+                - link "animals" [ref=e301] [cursor=pointer]:
+                  - /url: /galleries/tags/animals
+                - text: /
+              - listitem [ref=e302]:
+                - link "nature" [ref=e303] [cursor=pointer]:
+                  - /url: /galleries/tags/nature
+                - text: /
+              - listitem [ref=e304]:
+                - link "botanical" [ref=e305] [cursor=pointer]:
+                  - /url: /galleries/tags/botanical
+                - text: /
+              - listitem [ref=e306]:
+                - link "birds" [ref=e307] [cursor=pointer]:
+                  - /url: /galleries/tags/birds
+                - text: /
+              - listitem [ref=e308]:
+                - link "floral" [ref=e309] [cursor=pointer]:
+                  - /url: /galleries/tags/floral
+                - text: /
+              - listitem [ref=e310]:
+                - link "wreaths" [ref=e311] [cursor=pointer]:
+                  - /url: /galleries/tags/wreaths
+                - text: /
+              - listitem [ref=e312]:
+                - link "decorations" [ref=e313] [cursor=pointer]:
+                  - /url: /galleries/tags/decorations
+                - text: /
+              - listitem [ref=e314]:
+                - link "montage" [ref=e315] [cursor=pointer]:
+                  - /url: /galleries/tags/montage
+                - text: /
+              - listitem [ref=e316]:
+                - link "ornament" [ref=e317] [cursor=pointer]:
+                  - /url: /galleries/tags/ornament
+                - text: /
+              - listitem [ref=e318]:
+                - link "grapes" [ref=e319] [cursor=pointer]:
+                  - /url: /galleries/tags/grapes
+                - text: /
+              - listitem [ref=e320]:
+                - link "plants" [ref=e321] [cursor=pointer]:
+                  - /url: /galleries/tags/plants
+  - contentinfo [ref=e322]:
+    - generic [ref=e324]:
+      - generic [ref=e325]:
+        - paragraph [ref=e326]:
+          - text: The Public Domain Image Archive is run by
+          - link "The Public Domain Review" [ref=e327] [cursor=pointer]:
+            - /url: https://publicdomainreview.org
+          - text: ", a project registered in the UK as a Community Interest Company (#11386184), a category of company which exists primarily to benefit a community or with a view to pursuing a social purpose, with all profits having to be used for this purpose."
+        - paragraph [ref=e328]:
+          - text: We rely on donations from readers. Please consider
+          - link "supporting the project" [ref=e329] [cursor=pointer]:
+            - /url: /donate
+          - text: .
+      - generic [ref=e330]:
+        - list [ref=e331]:
+          - listitem [ref=e332]:
+            - link "About" [ref=e333] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e334]:
+            - link "Sources" [ref=e335] [cursor=pointer]:
+              - /url: /sources
+          - listitem [ref=e336]:
+            - link "Prints for sale" [ref=e337] [cursor=pointer]:
+              - /url: /prints
+          - listitem [ref=e338]:
+            - link "Donate" [ref=e339] [cursor=pointer]:
+              - /url: /donate
+        - paragraph [ref=e340]:
+          - text: "Email contact:"
+          - link "pdia@publicdomainreview.org" [ref=e341] [cursor=pointer]:
+            - /url: mailto:pdia@publicdomainreview.org
+        - generic [ref=e345]:
+          - searchbox "Search the Collection" [ref=e346]
+          - button [ref=e347]
+      - generic [ref=e348]:
+        - list [ref=e349]:
+          - listitem [ref=e350]:
+            - link "What is the Public Domain?" [ref=e351] [cursor=pointer]:
+              - /url: https://publicdomainreview.org/what-is-the-public-domain/
+          - listitem [ref=e352]:
+            - link "Rights Labelling" [ref=e353] [cursor=pointer]:
+              - /url: /rights-labelling-on-our-site
+          - listitem [ref=e354]:
+            - link "Reusing Images" [ref=e355] [cursor=pointer]:
+              - /url: /reusing-images
+          - listitem [ref=e356]:
+            - link "Privacy Policy" [ref=e357] [cursor=pointer]:
+              - /url: /privacy-policy
+          - listitem [ref=e358]:
+            - link "Returns and Refunds Policy" [ref=e359] [cursor=pointer]:
+              - /url: /returns-policy
+          - listitem [ref=e360]:
+            - link "Terms and Conditions" [ref=e361] [cursor=pointer]:
+              - /url: /terms-and-conditions
+        - link "Subscribe to Our Newsletter" [ref=e363] [cursor=pointer]:
+          - /url: /about#newsletter
+        - generic [ref=e364]:
+          - link "Facebook" [ref=e366] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=61571535394821
+            - img [ref=e367]
+          - link "X" [ref=e370] [cursor=pointer]:
+            - /url: https://x.com/pdimagearchive
+            - img "X" [ref=e371]
+          - link "Instagram" [ref=e374] [cursor=pointer]:
+            - /url: https://www.instagram.com/pdimagearchive/
+            - img [ref=e375]
+          - link "Bluesky" [ref=e378] [cursor=pointer]:
+            - /url: https://bsky.app/profile/pdimagearchive.bsky.social
+            - img "Bluesky" [ref=e379]
+          - link "Mastodon" [ref=e382] [cursor=pointer]:
+            - /url: https://mastodon.social/@pdimagearchive
+            - img [ref=e383]

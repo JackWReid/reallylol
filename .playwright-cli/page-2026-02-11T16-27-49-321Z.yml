@@ -1,0 +1,87 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e4]:
+    - heading "really.lol" [level=1] [ref=e5]:
+      - link "really.lol" [ref=e6] [cursor=pointer]:
+        - /url: http://localhost:1314/
+    - navigation "Main navigation" [ref=e7]:
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Posts" [ref=e10] [cursor=pointer]:
+            - /url: http://localhost:1314/post
+        - listitem [ref=e11]: ·
+        - listitem [ref=e12]:
+          - link "Notes" [ref=e13] [cursor=pointer]:
+            - /url: http://localhost:1314/note
+        - listitem [ref=e14]: ·
+        - listitem [ref=e15]:
+          - link "Photos" [ref=e16] [cursor=pointer]:
+            - /url: http://localhost:1314/photo
+        - listitem [ref=e17]: ·
+        - listitem [ref=e18]:
+          - link "Books" [ref=e19] [cursor=pointer]:
+            - /url: http://localhost:1314/books/reading
+        - listitem [ref=e20]: ·
+        - listitem [ref=e21]:
+          - link "Films" [ref=e22] [cursor=pointer]:
+            - /url: http://localhost:1314/films/watched
+        - listitem [ref=e23]: ·
+        - listitem [ref=e24]:
+          - link "Links" [ref=e25] [cursor=pointer]:
+            - /url: http://localhost:1314/links/saved
+  - main [ref=e27]:
+    - heading "Kiez Row" [level=1] [ref=e28]
+    - paragraph [ref=e29]:
+      - img [ref=e30]
+      - text: 13 July 2025
+    - paragraph [ref=e42]:
+      - img [ref=e43]
+      - text: Berlin, Germany
+    - generic [ref=e47]:
+      - link "#berlin" [ref=e48] [cursor=pointer]:
+        - /url: http://localhost:1314/tags/berlin/
+      - link "#cities" [ref=e49] [cursor=pointer]:
+        - /url: http://localhost:1314/tags/cities/
+      - link "#germany" [ref=e50] [cursor=pointer]:
+        - /url: http://localhost:1314/tags/germany/
+    - img "Kiez Row" [ref=e52]
+    - generic [ref=e53]:
+      - heading "See also" [level=2] [ref=e54]
+      - list [ref=e55]:
+        - listitem [ref=e56]:
+          - link "Material 2024" [ref=e57] [cursor=pointer]:
+            - /url: /post/2024-12-30-posters/
+        - listitem [ref=e58]:
+          - link "Material 2023" [ref=e59] [cursor=pointer]:
+            - /url: /post/2023-12-28-posters/
+        - listitem [ref=e60]:
+          - link "Notes from Granta 165 (Deutschland)" [ref=e61] [cursor=pointer]:
+            - /url: /post/2023-12-27-granta-deutschland/
+        - listitem [ref=e62]:
+          - link "Glanz Savigny" [ref=e63] [cursor=pointer]:
+            - /url: /photo/2023-10-14-glanz-savigny/
+        - listitem [ref=e64]:
+          - link "Beachy" [ref=e65] [cursor=pointer]:
+            - /url: /photo/2023-02-26-rixdorf-nothahn/
+  - contentinfo [ref=e67]:
+    - generic [ref=e68]:
+      - link [ref=e69] [cursor=pointer]:
+        - /url: http://localhost:1314/photo/2014-05-04-e08c18d5bd930d653035055db48f709c/
+      - generic [ref=e70]:
+        - paragraph [ref=e71]: From the collection
+        - paragraph [ref=e72]:
+          - link "Untitled" [ref=e73] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2014-05-04-e08c18d5bd930d653035055db48f709c/
+        - paragraph [ref=e74]:
+          - img [ref=e75]
+          - text: 4 May 2014
+    - generic [ref=e87]:
+      - paragraph [ref=e88]:
+        - link "@nice" [ref=e89] [cursor=pointer]:
+          - /url: https://social.lol/@nice
+        - link "/now" [ref=e90] [cursor=pointer]:
+          - /url: http://localhost:1314/now
+        - link "RSS" [ref=e91] [cursor=pointer]:
+          - /url: http://localhost:1314/index.xml
+      - paragraph [ref=e92]: Catalogued 17:21, 11 February 2026

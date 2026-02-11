@@ -1,0 +1,116 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e4]:
+    - heading "really.lol" [level=1] [ref=e5]:
+      - link "really.lol" [ref=e6] [cursor=pointer]:
+        - /url: http://localhost:1314/
+    - navigation "Main navigation" [ref=e7]:
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Posts" [ref=e10] [cursor=pointer]:
+            - /url: http://localhost:1314/post
+        - listitem [ref=e11]: ·
+        - listitem [ref=e12]:
+          - link "Notes" [ref=e13] [cursor=pointer]:
+            - /url: http://localhost:1314/note
+        - listitem [ref=e14]: ·
+        - listitem [ref=e15]:
+          - link "Photos" [ref=e16] [cursor=pointer]:
+            - /url: http://localhost:1314/photo
+        - listitem [ref=e17]: ·
+        - listitem [ref=e18]:
+          - link "Books" [ref=e19] [cursor=pointer]:
+            - /url: http://localhost:1314/books/reading
+        - listitem [ref=e20]: ·
+        - listitem [ref=e21]:
+          - link "Films" [ref=e22] [cursor=pointer]:
+            - /url: http://localhost:1314/films/watched
+        - listitem [ref=e23]: ·
+        - listitem [ref=e24]:
+          - link "Links" [ref=e25] [cursor=pointer]:
+            - /url: http://localhost:1314/links/saved
+  - main [ref=e27]:
+    - generic [ref=e28]:
+      - img "A botanical specimen illustration" [ref=e29]
+      - heading "Notes" [level=1] [ref=e30]
+    - article [ref=e31]:
+      - generic [ref=e32]: the words aren't coming
+      - time [ref=e33]:
+        - link "16 January 2026" [ref=e34] [cursor=pointer]:
+          - /url: http://localhost:1314/note/2026-01-16-the-words-arent-coming/
+    - article [ref=e35]:
+      - generic [ref=e36]: dreamed that the berlin cdu banned bike helmets because they were damaging car bodywork
+      - time [ref=e37]:
+        - link "7 November 2025" [ref=e38] [cursor=pointer]:
+          - /url: http://localhost:1314/note/2025-11-07-dreamed-that-the-berlin-cdu-banned-bike-helmets-be/
+    - article [ref=e39]:
+      - generic [ref=e40]: sometimes the absolute banality of work breaks thru my resolve and i just get crushed by a wave of despair. nothing even happened. it's just like the curtain wafted open a little bit when i wasn't paying attention and i was blasted by kms rays
+      - time [ref=e41]:
+        - link "4 November 2025" [ref=e42] [cursor=pointer]:
+          - /url: http://localhost:1314/note/2025-11-04-sometimes-the-absolute/
+    - article [ref=e43]:
+      - generic [ref=e44]: tim needs to do more if he's going to give the massed humanity a brief reprieve from considering the burning of the republic. he simply must bring more whizzbangs
+      - time [ref=e45]:
+        - link "10 September 2025" [ref=e46] [cursor=pointer]:
+          - /url: http://localhost:1314/note/2025-09-10-tim-needs-to-do-more-if-hes-going-to-give-the-mass/
+    - article [ref=e47]:
+      - generic [ref=e48]: i've got that cèilidh leg
+      - time [ref=e49]:
+        - link "28 July 2025" [ref=e50] [cursor=pointer]:
+          - /url: http://localhost:1314/note/2025-07-28-ive-got-that-cilidh-leg/
+    - article [ref=e51]:
+      - generic [ref=e52]: "learned it during covid and i'm remembering it now: during the apocalypse, you'll be expected to come to work"
+      - time [ref=e53]:
+        - link "27 March 2025" [ref=e54] [cursor=pointer]:
+          - /url: http://localhost:1314/note/2025-03-27-learned-it-during-covid-and-i-m-remembering-it-now/
+    - article [ref=e55]:
+      - generic [ref=e56]: german employment law
+      - time [ref=e57]:
+        - link "10 February 2025" [ref=e58] [cursor=pointer]:
+          - /url: http://localhost:1314/note/2025-02-10-german-employment-law/
+    - article [ref=e59]:
+      - generic [ref=e60]: sometimes it's bad but sometimes my airpods are still warm from wireless charging when i put them in my earholes
+      - time [ref=e61]:
+        - link "10 February 2025" [ref=e62] [cursor=pointer]:
+          - /url: http://localhost:1314/note/2025-02-10-sometimes-it-s-bad-but-sometimes-my-airpods-are-st/
+    - article [ref=e63]:
+      - generic [ref=e64]: i pine to leave my cold bolthole in berlin
+      - time [ref=e65]:
+        - link "21 January 2025" [ref=e66] [cursor=pointer]:
+          - /url: http://localhost:1314/note/2025-01-21-i-pine-to-leave-my-cold-bolthole-in-berlin/
+    - article [ref=e67]:
+      - generic [ref=e68]: today it's raining but only on my street. spring does that
+      - time [ref=e69]:
+        - link "16 April 2024" [ref=e70] [cursor=pointer]:
+          - /url: http://localhost:1314/note/2024-04-16-today-it-s-raining-but-only-on-my-street-spring-do/
+    - navigation "Pagination" [ref=e71]:
+      - generic [ref=e72]: ← Previous
+      - generic [ref=e73]: 1 of 11
+      - link "Next page" [ref=e75] [cursor=pointer]:
+        - /url: /note/page/2/
+        - text: Next →
+  - contentinfo [ref=e77]:
+    - generic [ref=e78]:
+      - link [ref=e79] [cursor=pointer]:
+        - /url: http://localhost:1314/photo/2016-03-26-ebba6c7d12357be3262444fc69066f66/
+      - generic [ref=e80]:
+        - paragraph [ref=e81]: From the collection
+        - paragraph [ref=e82]:
+          - link "🏪" [ref=e83] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2016-03-26-ebba6c7d12357be3262444fc69066f66/
+        - paragraph [ref=e84]:
+          - img [ref=e85]
+          - text: Freedom Forum
+        - paragraph [ref=e89]:
+          - img [ref=e90]
+          - text: 26 March 2016
+    - generic [ref=e102]:
+      - paragraph [ref=e103]:
+        - link "@nice" [ref=e104] [cursor=pointer]:
+          - /url: https://social.lol/@nice
+        - link "/now" [ref=e105] [cursor=pointer]:
+          - /url: http://localhost:1314/now
+        - link "RSS" [ref=e106] [cursor=pointer]:
+          - /url: http://localhost:1314/index.xml
+      - paragraph [ref=e107]: Catalogued 17:21, 11 February 2026

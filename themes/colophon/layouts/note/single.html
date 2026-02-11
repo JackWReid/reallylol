@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main class="note-main">
+  {{ with resources.Get "img/layout/botanical-fern-bg.jpg" }}
+    {{ $bg := .Resize "800x" }}
+    <img class="note-main__image" alt="A botanical illustration of a fern frond" src="{{ $bg.RelPermalink }}" />
+  {{ end }}
+  <div class="note-main__container">
+    <div class="note-main__content">{{ .Title }}</div>
+    <div class="note-main__infoline">
+      <time class="note-main__date"
+            datetime="{{ .Date.Format "2006-01-02T15:04:05.000Z" }}">
+        {{ .Date.Format "2 January 2006" }}
+      </time>
+    </div>
+  </div>
+</main>
+{{ end }}
