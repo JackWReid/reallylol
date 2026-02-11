@@ -44,6 +44,47 @@ hugo server
 hugo build
 ```
 
+### Testing
+
+The site has a Playwright test suite covering homepage rendering, navigation, content sections, accessibility, responsive layout, pagination, and visual regression screenshots.
+
+**Dependencies:** [Bun](https://bun.sh/)
+
+```bash
+# Install dependencies
+bun install
+
+# Install browsers (first time only)
+bunx playwright install chromium webkit
+```
+
+**Commands:**
+
+```bash
+# Run all tests (auto-starts Hugo dev server)
+bun run test
+
+# Run with visible browser
+bun run test:headed
+
+# Interactive Playwright UI
+bun run test:ui
+
+# Regenerate screenshot baselines after intentional visual changes
+bun run test:screenshots
+```
+
+**Test files:**
+
+| File | Coverage |
+|---|---|
+| `tests/homepage.spec.ts` | Title, meta, intro content, reading widget, visual regression |
+| `tests/navigation.spec.ts` | Header links, nav routing, footer, random photo box |
+| `tests/sections.spec.ts` | Notes/Photos/Posts titles, content lists, sub-navigation, visual regression |
+| `tests/accessibility.spec.ts` | Skip-to-content, aria labels, viewport, lang, image alt attributes |
+| `tests/responsive.spec.ts` | Mobile (iPhone 13) vs desktop screenshots |
+| `tests/pagination.spec.ts` | Pagination controls and page navigation |
+
 ### Creating Content
 
 #### `new-note.sh`
