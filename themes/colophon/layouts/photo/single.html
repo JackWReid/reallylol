@@ -1,0 +1,50 @@
+{{ define "main" }}
+<main class="single-main">
+  <h1 class="single-main__title">{{ .Title }}</h1>
+
+  <p class="single-main__date">
+    {{ partial "icons/calendar.html" . }} {{ .Date.Format "2 January 2006" }}
+  </p>
+
+  {{ if .Params.Location }}
+  <p class="single-main__location">
+    {{ partial "icons/location.html" . }}
+    <span>{{ .Params.location }}</span>
+  </p>
+  {{ end }}
+
+  {{ if (.GetTerms "tags") }}
+  <div class="single-main__tags">
+    {{ range (.GetTerms "tags") }}
+    <a href="{{ .Permalink }}">#{{ .LinkTitle | lower }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- Main photo display -->
+  {{ if .Params.image }}
+  {{ $imagePath := .Params.image }}
+  {{ $heroSrc := "" }}
+  {{ if $imagePath }}
+    {{ $relativePath := strings.TrimPrefix "/" $imagePath }}
+    {{ with resources.Get $relativePath }}
+      {{ $heroImg := .Fit "1400x1400" }}
+      {{ $heroSrc = $heroImg.RelPermalink }}
+    {{ end }}
+  {{ end }}
+  <div class="single-main__photo">
+    <img src="{{ if $heroSrc }}{{ $heroSrc }}{{ else }}{{ $imagePath }}{{ end }}" alt="{{ .Title }}" />
+  </div>
+  {{ end }}
+
+  <!-- Photo content/caption (excluding images) -->
+  <div class="single-main__content">
+    {{ $content := .Content }}
+    {{ $content := replaceRE `<p><img[^>]*></p>` "" $content }}
+    {{ $content := replaceRE `<img[^>]*>` "" $content }}
+    {{ $content | safeHTML }}
+  </div>
+
+  {{- partial "see-also.html" . -}}
+</main>
+{{ end }}

@@ -1,0 +1,55 @@
+/* Paper grain overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* Engraving-style dividers */
+hr {
+  border: none;
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-rule) 0px,
+    var(--color-rule) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  margin: var(--spacing-lg) 0;
+}
+
+/* Aged-edge shadows on cards and insets */
+.book-card,
+.saved-link,
+.highlight-list-item,
+.photo-section-item {
+  box-shadow: inset 0 0 30px rgba(160, 140, 100, 0.08);
+}
+
+/* Botanical ornament for section breaks */
+.ornament {
+  text-align: center;
+  margin: var(--spacing-xl) auto;
+  color: var(--color-botanical);
+  opacity: 0.6;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.ornament::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 20' fill='%234a6741'%3E%3Cpath d='M20 0C15 0 12 5 12 10s3 10 8 10c-3-2-5-5-5-10S17 2 20 0zm0 0c5 0 8 5 8 10s-3 10-8 10c3-2 5-5 5-10S23 2 20 0z' opacity='0.6'/%3E%3Cpath d='M20 2c-2 3-3 5-3 8s1 5 3 8c2-3 3-5 3-8s-1-5-3-8z' opacity='0.4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

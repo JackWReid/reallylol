@@ -1,0 +1,31 @@
+.pagination {
+  margin: var(--spacing-lg) auto 0;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-label);
+
+  > *:not(:last-child) {
+    margin-right: var(--spacing-md);
+  }
+
+  .page-count {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--spacing-md);
+  z-index: 100;
+  padding: var(--spacing-base) var(--spacing-md);
+  background: var(--color-sepia);
+  color: var(--color-parchment);
+  text-decoration: none;
+
+  &:focus {
+    top: var(--spacing-base);
+  }
+}

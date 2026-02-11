@@ -1,0 +1,377 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e4]:
+    - heading "really.lol" [level=1] [ref=e5]:
+      - link "really.lol" [ref=e6] [cursor=pointer]:
+        - /url: http://localhost:1314/
+    - navigation "Main navigation" [ref=e7]:
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Posts" [ref=e10] [cursor=pointer]:
+            - /url: http://localhost:1314/post
+        - listitem [ref=e11]: ·
+        - listitem [ref=e12]:
+          - link "Notes" [ref=e13] [cursor=pointer]:
+            - /url: http://localhost:1314/note
+        - listitem [ref=e14]: ·
+        - listitem [ref=e15]:
+          - link "Photos" [ref=e16] [cursor=pointer]:
+            - /url: http://localhost:1314/photo
+        - listitem [ref=e17]: ·
+        - listitem [ref=e18]:
+          - link "Books" [ref=e19] [cursor=pointer]:
+            - /url: http://localhost:1314/books/reading
+        - listitem [ref=e20]: ·
+        - listitem [ref=e21]:
+          - link "Films" [ref=e22] [cursor=pointer]:
+            - /url: http://localhost:1314/films/watched
+        - listitem [ref=e23]: ·
+        - listitem [ref=e24]:
+          - link "Links" [ref=e25] [cursor=pointer]:
+            - /url: http://localhost:1314/links/saved
+  - main [ref=e27]:
+    - heading "Photos" [level=1] [ref=e28]
+    - generic [ref=e29]:
+      - article [ref=e30]:
+        - link "Alexanderplatz, January" [ref=e31] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2026-01-13-alexanderplatz-january/
+          - img "Alexanderplatz, January" [ref=e32]
+        - heading "Alexanderplatz, January" [level=3] [ref=e33]:
+          - link "Alexanderplatz, January" [ref=e34] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2026-01-13-alexanderplatz-january/
+        - paragraph [ref=e35]:
+          - img [ref=e36]
+          - text: 13 January 2026
+        - paragraph [ref=e48]:
+          - img [ref=e49]
+          - text: Berlin, Germany
+      - article [ref=e53]:
+        - link "Far seen tower" [ref=e54] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2026-01-13-far-seen-tower/
+          - img "Far seen tower" [ref=e55]
+        - heading "Far seen tower" [level=3] [ref=e56]:
+          - link "Far seen tower" [ref=e57] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2026-01-13-far-seen-tower/
+        - paragraph [ref=e58]:
+          - img [ref=e59]
+          - text: 13 January 2026
+        - paragraph [ref=e71]:
+          - img [ref=e72]
+          - text: Berlin, Germany
+      - article [ref=e76]:
+        - link "Iced over bridges" [ref=e77] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2026-01-04-iced-over-bridges/
+          - img "Iced over bridges" [ref=e78]
+        - heading "Iced over bridges" [level=3] [ref=e79]:
+          - link "Iced over bridges" [ref=e80] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2026-01-04-iced-over-bridges/
+        - paragraph [ref=e81]:
+          - img [ref=e82]
+          - text: 4 January 2026
+        - paragraph [ref=e94]:
+          - img [ref=e95]
+          - text: Berlin, Germany
+      - article [ref=e99]:
+        - link "Brittle walk" [ref=e100] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2026-01-04-brittle-walk/
+          - img "Brittle walk" [ref=e101]
+        - heading "Brittle walk" [level=3] [ref=e102]:
+          - link "Brittle walk" [ref=e103] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2026-01-04-brittle-walk/
+        - paragraph [ref=e104]:
+          - img [ref=e105]
+          - text: 4 January 2026
+        - paragraph [ref=e117]:
+          - img [ref=e118]
+          - text: Berlin, Germany
+      - article [ref=e122]:
+        - link "Worse than ever" [ref=e123] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2026-01-04-ice-warning-canal/
+          - img "Worse than ever" [ref=e124]
+        - heading "Worse than ever" [level=3] [ref=e125]:
+          - link "Worse than ever" [ref=e126] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2026-01-04-ice-warning-canal/
+        - paragraph [ref=e127]:
+          - img [ref=e128]
+          - text: 4 January 2026
+        - paragraph [ref=e140]:
+          - img [ref=e141]
+          - text: Berlin, Germany
+      - article [ref=e145]:
+        - link "Snow at the plant" [ref=e146] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2026-01-04-factory-siemens-snow/
+          - img "Snow at the plant" [ref=e147]
+        - heading "Snow at the plant" [level=3] [ref=e148]:
+          - link "Snow at the plant" [ref=e149] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2026-01-04-factory-siemens-snow/
+        - paragraph [ref=e150]:
+          - img [ref=e151]
+          - text: 4 January 2026
+        - paragraph [ref=e163]:
+          - img [ref=e164]
+          - text: Berlin, Germany
+      - article [ref=e168]:
+        - link "Frozen in" [ref=e169] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2026-01-04-camper-van-snow/
+          - img "Frozen in" [ref=e170]
+        - heading "Frozen in" [level=3] [ref=e171]:
+          - link "Frozen in" [ref=e172] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2026-01-04-camper-van-snow/
+        - paragraph [ref=e173]:
+          - img [ref=e174]
+          - text: 4 January 2026
+        - paragraph [ref=e186]:
+          - img [ref=e187]
+          - text: Berlin, Germany
+      - article [ref=e191]:
+        - link "Car Cabine" [ref=e192] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-12-27-loup-car-cabine/
+          - img "Car Cabine" [ref=e193]
+        - heading "Car Cabine" [level=3] [ref=e194]:
+          - link "Car Cabine" [ref=e195] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-12-27-loup-car-cabine/
+        - paragraph [ref=e196]:
+          - img [ref=e197]
+          - text: 27 December 2025
+        - paragraph [ref=e209]:
+          - img [ref=e210]
+          - text: St-Loup-des-Vignes, France
+      - article [ref=e214]:
+        - link "Sage Frost" [ref=e215] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-12-27-sage-frost/
+          - img "Sage Frost" [ref=e216]
+        - heading "Sage Frost" [level=3] [ref=e217]:
+          - link "Sage Frost" [ref=e218] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-12-27-sage-frost/
+        - paragraph [ref=e219]:
+          - img [ref=e220]
+          - text: 27 December 2025
+        - paragraph [ref=e232]:
+          - img [ref=e233]
+          - text: St-Loup-des-Vignes, France
+      - article [ref=e237]:
+        - link "Loup Workshop" [ref=e238] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-12-26-loup-workshop/
+          - img "Loup Workshop" [ref=e239]
+        - heading "Loup Workshop" [level=3] [ref=e240]:
+          - link "Loup Workshop" [ref=e241] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-12-26-loup-workshop/
+        - paragraph [ref=e242]:
+          - img [ref=e243]
+          - text: 26 December 2025
+        - paragraph [ref=e255]:
+          - img [ref=e256]
+          - text: St-Loup-des-Vignes, France
+      - article [ref=e260]:
+        - link "Overpasses" [ref=e261] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-12-10-overpasses-glasgow/
+          - img "Overpasses" [ref=e262]
+        - heading "Overpasses" [level=3] [ref=e263]:
+          - link "Overpasses" [ref=e264] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-12-10-overpasses-glasgow/
+        - paragraph [ref=e265]:
+          - img [ref=e266]
+          - text: 10 December 2025
+        - paragraph [ref=e278]:
+          - img [ref=e279]
+          - text: Glasgow, Scotland
+      - article [ref=e283]:
+        - link "No Past" [ref=e284] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-11-16-no-past-slubice/
+          - img "No Past" [ref=e285]
+        - heading "No Past" [level=3] [ref=e286]:
+          - link "No Past" [ref=e287] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-11-16-no-past-slubice/
+        - paragraph [ref=e288]:
+          - img [ref=e289]
+          - text: 16 November 2025
+        - paragraph [ref=e301]:
+          - img [ref=e302]
+          - text: Słubice, Poland
+      - article [ref=e306]:
+        - link "Crew of Słubice" [ref=e307] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-11-16-crew-slubice/
+          - img "Crew of Słubice" [ref=e308]
+        - heading "Crew of Słubice" [level=3] [ref=e309]:
+          - link "Crew of Słubice" [ref=e310] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-11-16-crew-slubice/
+        - paragraph [ref=e311]:
+          - img [ref=e312]
+          - text: 16 November 2025
+        - paragraph [ref=e324]:
+          - img [ref=e325]
+          - text: Słubice, Poland
+      - article [ref=e329]:
+        - link "Woodcuts at the König" [ref=e330] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-09-28-koenig-woodcuts/
+          - img "Woodcuts at the König" [ref=e331]
+        - heading "Woodcuts at the König" [level=3] [ref=e332]:
+          - link "Woodcuts at the König" [ref=e333] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-09-28-koenig-woodcuts/
+        - paragraph [ref=e334]:
+          - img [ref=e335]
+          - text: 28 September 2025
+        - paragraph [ref=e347]:
+          - img [ref=e348]
+          - text: Berlin, Germany
+      - article [ref=e352]:
+        - link "Summoned Sounds" [ref=e353] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-09-18-summoned-sounds/
+          - img "Summoned Sounds" [ref=e354]
+        - heading "Summoned Sounds" [level=3] [ref=e355]:
+          - link "Summoned Sounds" [ref=e356] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-09-18-summoned-sounds/
+        - paragraph [ref=e357]:
+          - img [ref=e358]
+          - text: 18 September 2025
+        - paragraph [ref=e370]:
+          - img [ref=e371]
+          - text: Berlin, Germany
+      - article [ref=e375]:
+        - link "Happy Birthday Birds" [ref=e376] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-08-24-happy-birthday-birds/
+          - img "Happy Birthday Birds" [ref=e377]
+        - heading "Happy Birthday Birds" [level=3] [ref=e378]:
+          - link "Happy Birthday Birds" [ref=e379] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-08-24-happy-birthday-birds/
+        - paragraph [ref=e380]:
+          - img [ref=e381]
+          - text: 24 August 2025
+        - paragraph [ref=e393]:
+          - img [ref=e394]
+          - text: Lübbenau, Germany
+      - article [ref=e398]:
+        - link "Giving Chase" [ref=e399] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-08-24-giving-chase/
+          - img "Giving Chase" [ref=e400]
+        - heading "Giving Chase" [level=3] [ref=e401]:
+          - link "Giving Chase" [ref=e402] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-08-24-giving-chase/
+        - paragraph [ref=e403]:
+          - img [ref=e404]
+          - text: 24 August 2025
+        - paragraph [ref=e416]:
+          - img [ref=e417]
+          - text: Lübbenau, Germany
+      - article [ref=e421]:
+        - link "Lübbenau Treeline" [ref=e422] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-08-24-lubbenau-treeline/
+          - img "Lübbenau Treeline" [ref=e423]
+        - heading "Lübbenau Treeline" [level=3] [ref=e424]:
+          - link "Lübbenau Treeline" [ref=e425] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-08-24-lubbenau-treeline/
+        - paragraph [ref=e426]:
+          - img [ref=e427]
+          - text: 24 August 2025
+        - paragraph [ref=e439]:
+          - img [ref=e440]
+          - text: Lübbenau, Germany
+      - article [ref=e444]:
+        - link "Lübbenau Paddle" [ref=e445] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-08-24-lubbenau-arm/
+          - img "Lübbenau Paddle" [ref=e446]
+        - heading "Lübbenau Paddle" [level=3] [ref=e447]:
+          - link "Lübbenau Paddle" [ref=e448] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-08-24-lubbenau-arm/
+        - paragraph [ref=e449]:
+          - img [ref=e450]
+          - text: 24 August 2025
+        - paragraph [ref=e462]:
+          - img [ref=e463]
+          - text: Lübbenau, Germany
+      - article [ref=e467]:
+        - link "Another leaf drop thing" [ref=e468] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-07-13-another-leaf-drop-thing/
+          - img "Another leaf drop thing" [ref=e469]
+        - heading "Another leaf drop thing" [level=3] [ref=e470]:
+          - link "Another leaf drop thing" [ref=e471] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-07-13-another-leaf-drop-thing/
+        - paragraph [ref=e472]:
+          - img [ref=e473]
+          - text: 13 July 2025
+        - paragraph [ref=e485]:
+          - img [ref=e486]
+          - text: Berlin, Germany
+      - article [ref=e490]:
+        - link "Another One" [ref=e491] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-07-13-duck-a-la-plonge/
+          - img "Another One" [ref=e492]
+        - heading "Another One" [level=3] [ref=e493]:
+          - link "Another One" [ref=e494] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-07-13-duck-a-la-plonge/
+        - paragraph [ref=e495]:
+          - img [ref=e496]
+          - text: 13 July 2025
+        - paragraph [ref=e508]:
+          - img [ref=e509]
+          - text: Berlin, Germany
+      - article [ref=e513]:
+        - link "Jugend Stork" [ref=e514] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-07-13-judend-stork/
+          - img "Jugend Stork" [ref=e515]
+        - heading "Jugend Stork" [level=3] [ref=e516]:
+          - link "Jugend Stork" [ref=e517] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-07-13-judend-stork/
+        - paragraph [ref=e518]:
+          - img [ref=e519]
+          - text: 13 July 2025
+        - paragraph [ref=e531]:
+          - img [ref=e532]
+          - text: Berlin, Germany
+      - article [ref=e536]:
+        - link "Karpfenteich Green" [ref=e537] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-07-13-karpfenteich-green/
+          - img "Karpfenteich Green" [ref=e538]
+        - heading "Karpfenteich Green" [level=3] [ref=e539]:
+          - link "Karpfenteich Green" [ref=e540] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-07-13-karpfenteich-green/
+        - paragraph [ref=e541]:
+          - img [ref=e542]
+          - text: 13 July 2025
+        - paragraph [ref=e554]:
+          - img [ref=e555]
+          - text: Berlin, Germany
+      - article [ref=e559]:
+        - link "Muck" [ref=e560] [cursor=pointer]:
+          - /url: http://localhost:1314/photo/2025-07-13-muck/
+          - img "Muck" [ref=e561]
+        - heading "Muck" [level=3] [ref=e562]:
+          - link "Muck" [ref=e563] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2025-07-13-muck/
+        - paragraph [ref=e564]:
+          - img [ref=e565]
+          - text: 13 July 2025
+        - paragraph [ref=e577]:
+          - img [ref=e578]
+          - text: Berlin, Germany
+    - navigation "Pagination" [ref=e582]:
+      - generic [ref=e583]: ← Previous
+      - generic [ref=e584]: 1 of 110
+      - link "Next page" [ref=e586] [cursor=pointer]:
+        - /url: /photo/page/2/
+        - text: Next →
+  - contentinfo [ref=e588]:
+    - generic [ref=e589]:
+      - link [ref=e590] [cursor=pointer]:
+        - /url: http://localhost:1314/photo/2016-11-02-1e5d400317d6f4fc4c4e61db35718c36/
+      - generic [ref=e591]:
+        - paragraph [ref=e592]: From the collection
+        - paragraph [ref=e593]:
+          - link "morning. mr hoss goes sightseeing." [ref=e594] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2016-11-02-1e5d400317d6f4fc4c4e61db35718c36/
+        - paragraph [ref=e595]:
+          - img [ref=e596]
+          - text: Tower of London
+        - paragraph [ref=e600]:
+          - img [ref=e601]
+          - text: 2 November 2016
+    - generic [ref=e613]:
+      - paragraph [ref=e614]:
+        - link "@nice" [ref=e615] [cursor=pointer]:
+          - /url: https://social.lol/@nice
+        - link "/now" [ref=e616] [cursor=pointer]:
+          - /url: http://localhost:1314/now
+        - link "RSS" [ref=e617] [cursor=pointer]:
+          - /url: http://localhost:1314/index.xml
+      - paragraph [ref=e618]: Catalogued 17:21, 11 February 2026

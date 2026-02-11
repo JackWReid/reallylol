@@ -1,0 +1,247 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e4]:
+    - heading "really.lol" [level=1] [ref=e5]:
+      - link "really.lol" [ref=e6] [cursor=pointer]:
+        - /url: http://localhost:1314/
+    - navigation "Main navigation" [ref=e7]:
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Posts" [ref=e10] [cursor=pointer]:
+            - /url: http://localhost:1314/post
+        - listitem [ref=e11]: ·
+        - listitem [ref=e12]:
+          - link "Notes" [ref=e13] [cursor=pointer]:
+            - /url: http://localhost:1314/note
+        - listitem [ref=e14]: ·
+        - listitem [ref=e15]:
+          - link "Photos" [ref=e16] [cursor=pointer]:
+            - /url: http://localhost:1314/photo
+        - listitem [ref=e17]: ·
+        - listitem [ref=e18]:
+          - link "Books" [ref=e19] [cursor=pointer]:
+            - /url: http://localhost:1314/books/reading
+        - listitem [ref=e20]: ·
+        - listitem [ref=e21]:
+          - link "Films" [ref=e22] [cursor=pointer]:
+            - /url: http://localhost:1314/films/watched
+        - listitem [ref=e23]: ·
+        - listitem [ref=e24]:
+          - link "Links" [ref=e25] [cursor=pointer]:
+            - /url: http://localhost:1314/links/saved
+  - main [ref=e27]:
+    - navigation "Sub Navigation" [ref=e28]:
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - link "Saved Links" [ref=e31] [cursor=pointer]:
+            - /url: /links/saved/
+        - listitem [ref=e32]:
+          - link "Blogroll" [ref=e33] [cursor=pointer]:
+            - /url: /links/blogroll/
+    - heading "Saved Links" [level=1] [ref=e34]
+    - generic [ref=e35]:
+      - paragraph [ref=e36]: There’s a compulsion as you spend hours and hours reading things in little screens, to save the things that seem important somehow. You want to squirrel them away and at the same time mark them as significant somehow. It’s like you’re earmarking them as a source in some great big essay about everything that is always just around the corner and will be reviewed and marked, and that will ultimately secure your passage into the afterlife, or not.
+      - paragraph [ref=e37]:
+        - text: Here are the links I save in the delusion that I’ll come back to them someday. In a more orderly fashion, on
+        - link "the blogroll" [ref=e38] [cursor=pointer]:
+          - /url: /links/blogroll
+        - text: are links that I treasure in some way.
+      - list [ref=e39]:
+        - listitem [ref=e40]:
+          - article [ref=e41]:
+            - 'link "Into a Crueler America: Two Border Crossings, 30 Years Apart" [ref=e43] [cursor=pointer]':
+              - /url: https://lithub.com/into-a-crueler-america-two-border-crossings-30-years-part/
+            - paragraph [ref=e44]:
+              - time [ref=e45]: 31 January 2026
+            - paragraph [ref=e46]: What was I thinking? I asked myself that morning as I made my way to the San Antonio airport. Five weeks into my book tour, San Antonio was the 23rd city I’d visited to speak about my latest memoir…
+        - listitem [ref=e47]:
+          - article [ref=e48]:
+            - link "AntiRender - Reality Hits Different" [ref=e50] [cursor=pointer]:
+              - /url: https://antirender.com/
+            - paragraph [ref=e51]:
+              - time [ref=e52]: 31 January 2026
+            - paragraph [ref=e53]: Transform idealized architectural renders into what they'll actually look like. No sunshine. No happy families. Just cold, honest reality.
+        - listitem [ref=e54]:
+          - article [ref=e55]:
+            - link "Shotguns for the Storytellers" [ref=e57] [cursor=pointer]:
+              - /url: https://emilygorcenski.com/post/shotguns-for-the-storytellers/
+            - paragraph [ref=e58]:
+              - time [ref=e59]: 26 January 2026
+            - paragraph [ref=e60]: A poem for all victims of secret police.
+        - listitem [ref=e61]:
+          - article [ref=e62]:
+            - link "The Minneapolis Uprising" [ref=e64] [cursor=pointer]:
+              - /url: https://www.theatlantic.com/politics/2026/01/minneapolis-uprising/685755/
+            - paragraph [ref=e65]:
+              - time [ref=e66]: 26 January 2026
+            - paragraph [ref=e67]: Stories from the January 2026 uprising in Minneapolis, MN.
+        - listitem [ref=e68]:
+          - article [ref=e69]:
+            - link "bitchat" [ref=e71] [cursor=pointer]:
+              - /url: https://bitchat.free/
+            - paragraph [ref=e72]:
+              - time [ref=e73]: 19 January 2026
+            - paragraph [ref=e74]: Peer-to-peer Bluetooth messaing for when the internet goes out.
+        - listitem [ref=e75]:
+          - article [ref=e76]:
+            - link "Why I left" [ref=e78] [cursor=pointer]:
+              - /url: https://brittahummel.substack.com/p/why-i-left?ref=blog.williammorland.com
+            - paragraph [ref=e79]:
+              - time [ref=e80]: 19 January 2026
+            - paragraph [ref=e81]: Why a long-time employee of Meta finally left, citing grim cultural shifts that are happening across the whole industry.
+        - listitem [ref=e82]:
+          - article [ref=e83]:
+            - link "East Germany balloon escape - Wikipedia" [ref=e85] [cursor=pointer]:
+              - /url: https://en.wikipedia.org/wiki/East_Germany_balloon_escape
+            - paragraph [ref=e86]:
+              - time [ref=e87]: 16 January 2026
+            - paragraph [ref=e88]: In 1979 a couple successfully escaped the DDR in a hot air balloon after extensive preparation and even a dry run.
+        - listitem [ref=e89]:
+          - article [ref=e90]:
+            - 'link "The Long Now of the Web: Inside the Internet Archive’s Fight Against Forgetting | HackerNoon" [ref=e92] [cursor=pointer]':
+              - /url: https://hackernoon.com/the-long-now-of-the-web-inside-the-internet-archives-fight-against-forgetting
+            - paragraph [ref=e93]:
+              - time [ref=e94]: 15 January 2026
+            - paragraph [ref=e95]: A deep dive into the Internet Archive's custom tech stack.
+        - listitem [ref=e96]:
+          - article [ref=e97]:
+            - link "I Was Kidnapped by Idiots" [ref=e99] [cursor=pointer]:
+              - /url: https://www.theatlantic.com/international/2026/01/kidnapped-baghdad/685470/?gift=j9r7avb6p-KY8zdjhsiSZ2bSbbls6v8p71_DdSlIn_8
+            - paragraph [ref=e100]:
+              - time [ref=e101]: 15 January 2026
+            - paragraph [ref=e102]: An academic trip to Iraq unexpectedly turned into an immersive field study on the ways authoritarian regimes use brutality.
+        - listitem [ref=e103]:
+          - article [ref=e104]:
+            - link "Bringing Sexy Back" [ref=e106] [cursor=pointer]:
+              - /url: https://lux-magazine.com/article/privacy-eroticism/
+            - paragraph [ref=e107]:
+              - time [ref=e108]: 14 January 2026
+            - paragraph [ref=e109]: Internet surveillance has killed eroticism. We need privacy to reclaim it.
+        - listitem [ref=e110]:
+          - article [ref=e111]:
+            - link "McMansion Hell" [ref=e113] [cursor=pointer]:
+              - /url: https://mcmansionhell.com/
+            - paragraph [ref=e114]:
+              - time [ref=e115]: 14 January 2026
+            - paragraph [ref=e116]: If you love to hate the ugly houses that became ubiquitous before (and after) the bubble burst...
+        - listitem [ref=e117]:
+          - article [ref=e118]:
+            - link "The China Tech Canon—Asterisk" [ref=e120] [cursor=pointer]:
+              - /url: https://asteriskmag.com/issues/12-books/the-china-tech-canon
+            - paragraph [ref=e121]:
+              - time [ref=e122]: 14 January 2026
+            - paragraph [ref=e123]: How does the *paideía* of the Chinese tech elite differ from their counterparts in Silicon Valley?
+        - listitem [ref=e124]:
+          - article [ref=e125]:
+            - link "House Arab" [ref=e127] [cursor=pointer]:
+              - /url: https://bidoun.org/articles/house-arab
+            - paragraph [ref=e128]:
+              - time [ref=e129]: 14 January 2026
+            - paragraph [ref=e130]: A former fact-checker at the New Yorker reflects on his experience there after the October 8th attacks and subsequent genocide.
+        - listitem [ref=e131]:
+          - article [ref=e132]:
+            - 'link "Etymology: Amber" [ref=e134] [cursor=pointer]':
+              - /url: https://languagelog.ldc.upenn.edu/nll/?p=72589&utm_source=rss&utm_medium=rss&utm_campaign=amber-in-the-east
+            - paragraph [ref=e135]:
+              - time [ref=e136]: 13 January 2026
+            - paragraph [ref=e137]: Coming from Arabic, muddling ambergris and amber as it displaced Germanic “smelting”
+        - listitem [ref=e138]:
+          - article [ref=e139]:
+            - link "Kinopio – Thinking Canvas" [ref=e141] [cursor=pointer]:
+              - /url: https://kinopio.club/
+            - paragraph [ref=e142]:
+              - time [ref=e143]: 12 January 2026
+            - paragraph [ref=e144]: Kinopio is a spatial note-taking tool for collecting and connecting your thoughts, ideas, and feelings.
+        - listitem [ref=e145]:
+          - article [ref=e146]:
+            - link "Pentagon Pizza Index - Real-Time OSINT Dashboard" [ref=e148] [cursor=pointer]:
+              - /url: https://www.pizzint.watch/
+            - paragraph [ref=e149]:
+              - time [ref=e150]: 12 January 2026
+            - paragraph [ref=e151]: Track pizza shop activity around the Pentagon. The unconventional intelligence tool monitoring geopolitical tensions.
+        - listitem [ref=e152]:
+          - article [ref=e153]:
+            - link "a portrait of Tenochtitlan" [ref=e155] [cursor=pointer]:
+              - /url: https://tenochtitlan.thomaskole.nl/
+            - paragraph [ref=e156]:
+              - time [ref=e157]: 12 January 2026
+            - paragraph [ref=e158]: a 3D reconstruction of the capital of the Aztec Empire
+        - listitem [ref=e159]:
+          - article [ref=e160]:
+            - link "Bridges On The Tyne" [ref=e162] [cursor=pointer]:
+              - /url: https://www.bridgesonthetyne.co.uk/
+            - paragraph [ref=e163]:
+              - time [ref=e164]: 12 January 2026
+            - paragraph [ref=e165]: All Bridges On The River Tyne,including, Newcastle/Gateshead, North Tyne, South Tyne, ferries, tunnels, footbridges, defunct bridges, facts, etc.
+        - listitem [ref=e166]:
+          - article [ref=e167]:
+            - link "THEOI GREEK MYTHOLOGY - Exploring Mythology in Classical Literature & Art" [ref=e169] [cursor=pointer]:
+              - /url: https://www.theoi.com/
+            - paragraph [ref=e170]:
+              - time [ref=e171]: 12 January 2026
+            - paragraph [ref=e172]: Welcome to the Theoi Project, a site exploring Greek mythology and the gods in classical literature and art. The aim of the project is to provide a comprehensive, free reference guide to the gods (theoi), spirits (daimones), fabulous creatures (theres) and heroes of ancient Greek mythology and religion.
+        - listitem [ref=e173]:
+          - article [ref=e174]:
+            - link "ORBIS" [ref=e176] [cursor=pointer]:
+              - /url: https://orbis.stanford.edu/
+            - paragraph [ref=e177]:
+              - time [ref=e178]: 12 January 2026
+            - paragraph [ref=e179]: The Stanford geospatial network model of the Roman world or, Google Maps for Roman legions.
+        - listitem [ref=e180]:
+          - article [ref=e181]:
+            - link "Homeromanteion" [ref=e183] [cursor=pointer]:
+              - /url: http://www.homeromanteion.com/
+            - paragraph [ref=e184]:
+              - time [ref=e185]: 12 January 2026
+            - paragraph [ref=e186]: One of the more obscure methods of divination, found in the Greek Magical Papyri, is the Homeromanteion, where the diviner rolls a six-sided dice three times, and uses the result to pick a random verse from the works of Homer. Does it work? Only one way to find out!
+        - listitem [ref=e187]:
+          - article [ref=e188]:
+            - link "radicalcartography" [ref=e190] [cursor=pointer]:
+              - /url: http://www.radicalcartography.net/
+            - paragraph [ref=e191]:
+              - time [ref=e192]: 12 January 2026
+            - paragraph [ref=e193]: All manner of funny maps collected and considered.
+        - listitem [ref=e194]:
+          - article [ref=e195]:
+            - link "Neglected Books" [ref=e197] [cursor=pointer]:
+              - /url: https://neglectedbooks.com/
+            - paragraph [ref=e198]:
+              - time [ref=e199]: 12 January 2026
+            - paragraph [ref=e200]: Reviews and essays about forgotten books not yet welcomed into the canon.
+        - listitem [ref=e201]:
+          - article [ref=e202]:
+            - link "Mx Tynehorne’s Cabinet of Hypertext Curiosities" [ref=e204] [cursor=pointer]:
+              - /url: https://satyrs.eu/linkroll
+            - paragraph [ref=e205]:
+              - time [ref=e206]: 12 January 2026
+            - paragraph [ref=e207]: A link directory for the transhuman, the occult, the overgrown and strange underside of the internet.
+      - navigation [ref=e208]:
+        - generic [ref=e209]: Back
+        - generic [ref=e210]: 1 of 5
+        - link "Next" [ref=e212] [cursor=pointer]:
+          - /url: "#"
+  - contentinfo [ref=e214]:
+    - generic [ref=e215]:
+      - link [ref=e216] [cursor=pointer]:
+        - /url: http://localhost:1314/photo/2016-03-01-70a0dffa9f7224064f9402faf95480b6/
+      - generic [ref=e217]:
+        - paragraph [ref=e218]: From the collection
+        - paragraph [ref=e219]:
+          - link "Flying Virgin America, heard that's cool. ✈️" [ref=e220] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2016-03-01-70a0dffa9f7224064f9402faf95480b6/
+        - paragraph [ref=e221]:
+          - img [ref=e222]
+          - text: San Francisco International Airport (SFO)
+        - paragraph [ref=e226]:
+          - img [ref=e227]
+          - text: 1 March 2016
+    - generic [ref=e239]:
+      - paragraph [ref=e240]:
+        - link "@nice" [ref=e241] [cursor=pointer]:
+          - /url: https://social.lol/@nice
+        - link "/now" [ref=e242] [cursor=pointer]:
+          - /url: http://localhost:1314/now
+        - link "RSS" [ref=e243] [cursor=pointer]:
+          - /url: http://localhost:1314/index.xml
+      - paragraph [ref=e244]: Catalogued 17:21, 11 February 2026

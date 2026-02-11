@@ -1,0 +1,35 @@
+body.note {
+  color: var(--color-parchment-light);
+  background-color: var(--color-botanical-dark);
+
+  .site-header-wrapper {
+    background: rgba(0, 0, 0, 0.15);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .site-header {
+    a {
+      color: var(--color-parchment-light);
+
+      &:hover,
+      &:focus {
+        color: var(--color-parchment);
+      }
+    }
+
+    border-bottom: none;
+  }
+
+  .site-footer-wrapper {
+    background: rgba(0, 0, 0, 0.15);
+    border-top-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .site-footer a {
+    color: var(--color-parchment-light);
+  }
+
+  .nav-separator {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

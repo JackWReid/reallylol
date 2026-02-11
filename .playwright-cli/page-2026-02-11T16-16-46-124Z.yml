@@ -1,0 +1,318 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner:
+      - generic [ref=e4]:
+        - link "Public Domain Image Archive" [ref=e5] [cursor=pointer]:
+          - /url: /galleries/all
+        - generic [ref=e6]: from
+        - link "The Public Domain Review" [ref=e8] [cursor=pointer]:
+          - /url: https://publicdomainreview.org
+          - img "The Public Domain Review" [ref=e9]
+        - navigation [ref=e10]:
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - link "About" [ref=e13] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e14]:
+              - link "Sources" [ref=e15] [cursor=pointer]:
+                - /url: /sources
+            - listitem [ref=e16]:
+              - link "Buy Prints" [ref=e17] [cursor=pointer]:
+                - /url: /prints
+            - listitem [ref=e18]:
+              - link "Donate" [ref=e19] [cursor=pointer]:
+                - /url: /donate
+            - listitem [ref=e20]:
+              - button [ref=e21] [cursor=pointer]:
+                - img [ref=e22]
+      - generic [ref=e26]:
+        - generic [ref=e29]:
+          - searchbox "Search the Collection" [ref=e30]
+          - button [ref=e31]:
+            - img [ref=e32]
+        - generic [ref=e34]: or
+        - generic [ref=e35]:
+          - generic [ref=e36]: Browse by
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - button "artist" [ref=e39] [cursor=pointer]
+              - text: /
+            - listitem [ref=e40]:
+              - button "century" [ref=e41] [cursor=pointer]
+              - text: /
+            - listitem [ref=e42]:
+              - button "style" [ref=e43] [cursor=pointer]
+              - text: /
+            - listitem [ref=e44]:
+              - button "theme" [ref=e45] [cursor=pointer]
+              - text: /
+            - listitem [ref=e46]:
+              - button "tag" [ref=e47] [cursor=pointer]
+              - text: /
+            - listitem [ref=e48]:
+              - link "all" [ref=e49] [cursor=pointer]:
+                - /url: /galleries/all
+        - combobox [ref=e51] [cursor=pointer]:
+          - option "Change View" [disabled] [selected]
+          - option "Catalog View" [disabled]
+          - option "Infinite View"
+          - option "Shuffle View"
+  - main [ref=e56]:
+    - generic [ref=e57]:
+      - button "Open lightbox" [ref=e61] [cursor=pointer]:
+        - img [ref=e62]
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - heading "Featured on PDR in the collection A Careful Selection of Whisk Ferns (1837)" [level=3] [ref=e65]:
+            - text: Featured on PDR in the collection
+            - link "A Careful Selection of Whisk Ferns (1837)" [ref=e66] [cursor=pointer]:
+              - /url: https://publicdomainreview.org/collection/selection-of-whisk-ferns
+              - emphasis [ref=e67]: A Careful Selection of Whisk Ferns
+              - text: (1837)
+          - paragraph [ref=e68]:
+            - text: Of the aesthetic imperfections to be avoided by any serious practitioner, the 1989 guide
+            - emphasis [ref=e69]: Classic Bonsai of Japan
+            - text: lists
+            - emphasis [ref=e70]: kuruma-eda
+            - text: (“branches that originate from a single point”) and
+            - emphasis [ref=e71]: karami-eda
+            - text: (“branches . . . whose lines cross each other”), as well as vessels that are too-showy, attempts to make species like the gingko curve as they grow, and improper balance in the “twin-trunk style”. Such modern handbooks find their ultimate antecedents in the Tokugawa Period, when fans of these miniature trees included even the era’s namesake warlords — indeed, a five-needle pine said to have been nursed by the shōgun Tokugawa Iemitsu himself is still living to this day (despite its near-totally hollow trunk) and has been declared a national treasure by the Japanese state. Robert…
+          - link "Read More on The Public Domain Review…" [ref=e73] [cursor=pointer]:
+            - /url: https://publicdomainreview.org/collection/selection-of-whisk-ferns
+            - generic [ref=e74]: Read More on The Public Domain Review…
+        - generic [ref=e75]:
+          - heading "Also appearing in the collection…" [level=3] [ref=e76]
+          - list [ref=e77]:
+            - link [ref=e78] [cursor=pointer]:
+              - /url: /images/19d60d08-c41d-4c6c-a4f3-4b90aece789e
+              - img [ref=e80]
+            - link [ref=e81] [cursor=pointer]:
+              - /url: /images/1d2f0679-012f-46ad-bb57-be4a5e180e62
+              - img [ref=e83]
+            - link [ref=e84] [cursor=pointer]:
+              - /url: /images/2ac5dfa7-1064-46f8-b155-4453d527c89f
+              - img [ref=e86]
+            - link [ref=e87] [cursor=pointer]:
+              - /url: /images/33d66dc7-61c5-4eba-96ce-9d6f4bc556a9
+              - img [ref=e89]
+            - link [ref=e90] [cursor=pointer]:
+              - /url: /images/32134290-ff8e-42b6-9006-fbcd60a45c0d
+              - img [ref=e92]
+            - link [ref=e93] [cursor=pointer]:
+              - /url: /images/3e47a0ac-5b58-4978-acad-7a1bbdc23b08
+              - img [ref=e95]
+            - link [ref=e96] [cursor=pointer]:
+              - /url: /images/30ac6da5-38b2-4c91-a4ea-8743cd0941a4
+              - img [ref=e98]
+            - link [ref=e99] [cursor=pointer]:
+              - /url: /images/5c3c99d3-9950-469f-88ed-83f05dcdba01
+              - img [ref=e101]
+            - link [ref=e102] [cursor=pointer]:
+              - /url: /images/54cc6b56-64d0-4e71-a654-2dc0137f96fb
+              - img [ref=e104]
+            - link [ref=e105] [cursor=pointer]:
+              - /url: /images/7d428b4c-7ffa-4fe8-b588-ce9b48a91a58
+              - img [ref=e107]
+            - link [ref=e108] [cursor=pointer]:
+              - /url: /images/801ad7e4-eb47-489e-bfa0-e3fb8b21418b
+              - img [ref=e110]
+            - link [ref=e111] [cursor=pointer]:
+              - /url: /images/834671d5-48d5-492d-9c86-3a4d97e7bf0a
+              - img [ref=e113]
+            - link [ref=e114] [cursor=pointer]:
+              - /url: /images/9c446eaf-54ec-483e-bc10-00f92cc8c4a6
+              - img [ref=e116]
+            - link [ref=e117] [cursor=pointer]:
+              - /url: /images/02d52f21-1131-4fb9-8076-6a5c1c316524
+              - img [ref=e119]
+            - link [ref=e120] [cursor=pointer]:
+              - /url: /images/adac418d-f914-46db-8f82-0c5f0fec3987
+              - img [ref=e122]
+            - link [ref=e123] [cursor=pointer]:
+              - /url: /images/a6887a44-ddc7-4129-a815-5c45f2619bf8
+              - img [ref=e125]
+            - link [ref=e126] [cursor=pointer]:
+              - /url: /images/a32758c8-ce2f-4f5b-a59b-7ec99bb079c7
+              - img [ref=e128]
+            - link [ref=e129] [cursor=pointer]:
+              - /url: /images/a9941063-8589-4564-be6a-498fa67910ef
+              - img [ref=e131]
+            - link [ref=e132] [cursor=pointer]:
+              - /url: /images/ec832cc3-4ad7-48f7-8b01-4792f6362178
+              - img [ref=e134]
+            - link [ref=e135] [cursor=pointer]:
+              - /url: /images/e8e4701d-9ae5-49d7-b282-bc2cb846109f
+              - img [ref=e137]
+            - link [ref=e138] [cursor=pointer]:
+              - /url: /images/e097e90b-fa9f-40ac-b8c7-9a585276381a
+              - img [ref=e140]
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - heading "Date" [level=3] [ref=e145]
+            - paragraph [ref=e146]: "1837"
+            - heading "From" [level=3] [ref=e147]
+            - paragraph [ref=e148]: A Careful Selection of Whisk Ferns
+          - separator [ref=e149]
+        - generic [ref=e150]:
+          - generic [ref=e151]:
+            - heading "Source" [level=3] [ref=e152]
+            - paragraph [ref=e153]:
+              - link "Biodiversity Heritage Library / Smithsonian Libraries and Archives" [ref=e154] [cursor=pointer]:
+                - /url: https://www.biodiversitylibrary.org/bibliography/130575#/summary
+            - heading "More From" [level=3] [ref=e155]
+            - list [ref=e156]:
+              - listitem [ref=e158]:
+                - link "Biodiversity Heritage Library logo Biodiversity Heritage Library 1050 images on PDIA" [ref=e159] [cursor=pointer]:
+                  - /url: /galleries/sources/biodiversity-heritage-library/random/desc
+                  - img "Biodiversity Heritage Library logo" [ref=e161]
+                  - generic [ref=e162]:
+                    - generic [ref=e163]: Biodiversity Heritage Library
+                    - generic [ref=e164]: 1050 images on PDIA
+              - listitem [ref=e166]:
+                - link "Smithsonian Libraries and Archives logo Smithsonian Libraries and Archives 1163 images on PDIA" [ref=e167] [cursor=pointer]:
+                  - /url: /galleries/sources/smithsonian-libraries/random/desc
+                  - img "Smithsonian Libraries and Archives logo" [ref=e169]
+                  - generic [ref=e170]:
+                    - generic [ref=e171]: Smithsonian Libraries and Archives
+                    - generic [ref=e172]: 1163 images on PDIA
+          - separator [ref=e173]
+        - generic [ref=e174]:
+          - generic [ref=e175]:
+            - heading "Underlying Rights" [level=3] [ref=e176]
+            - paragraph [ref=e177]:
+              - link "Public Domain Worldwide" [ref=e179] [cursor=pointer]:
+                - /url: /rights-labelling-on-our-site#pd-worldwide
+          - generic [ref=e180]:
+            - heading "Digital Rights" [level=3] [ref=e181]
+            - paragraph [ref=e182]:
+              - link "No Additional Rights" [ref=e184] [cursor=pointer]:
+                - /url: /rights-labelling-on-our-site#no-additional-rights
+            - list [ref=e185]:
+              - listitem [ref=e186]: Labelled “public domain”
+              - listitem [ref=e187]:
+                - text: We offer this info as
+                - link "guidance only" [ref=e188] [cursor=pointer]:
+                  - /url: /reusing-images
+          - separator [ref=e189]
+        - generic [ref=e190]:
+          - generic [ref=e191]:
+            - heading "Image Size" [level=3] [ref=e192]
+            - paragraph [ref=e193]: 1827 x 1449
+            - button "Download Image" [ref=e196] [cursor=pointer]: Download Image
+          - separator [ref=e197]
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - heading "Styles" [level=3] [ref=e201]
+            - list [ref=e203]:
+              - listitem [ref=e204]:
+                - link "Book Illustration" [ref=e205] [cursor=pointer]:
+                  - /url: /galleries/style/book-illustration
+          - generic [ref=e206]:
+            - heading "Themes" [level=3] [ref=e207]
+            - list [ref=e209]:
+              - listitem [ref=e210]:
+                - link "Music & Arts" [ref=e211] [cursor=pointer]:
+                  - /url: /galleries/themes/music-and-arts
+                - text: /
+              - listitem [ref=e212]:
+                - link "Natural World" [ref=e213] [cursor=pointer]:
+                  - /url: /galleries/themes/natural-world
+          - generic [ref=e214]:
+            - heading "Tags" [level=3] [ref=e215]
+            - list [ref=e217]:
+              - listitem [ref=e218]:
+                - link "nature" [ref=e219] [cursor=pointer]:
+                  - /url: /galleries/tags/nature
+                - text: /
+              - listitem [ref=e220]:
+                - link "japan" [ref=e221] [cursor=pointer]:
+                  - /url: /galleries/tags/japan
+                - text: /
+              - listitem [ref=e222]:
+                - link "ferns" [ref=e223] [cursor=pointer]:
+                  - /url: /galleries/tags/ferns
+                - text: /
+              - listitem [ref=e224]:
+                - link "botanical" [ref=e225] [cursor=pointer]:
+                  - /url: /galleries/tags/botanical
+                - text: /
+              - listitem [ref=e226]:
+                - link "bonsai" [ref=e227] [cursor=pointer]:
+                  - /url: /galleries/tags/bonsai
+                - text: /
+              - listitem [ref=e228]:
+                - link "plants" [ref=e229] [cursor=pointer]:
+                  - /url: /galleries/tags/plants
+  - contentinfo [ref=e230]:
+    - generic [ref=e232]:
+      - generic [ref=e233]:
+        - paragraph [ref=e234]:
+          - text: The Public Domain Image Archive is run by
+          - link "The Public Domain Review" [ref=e235] [cursor=pointer]:
+            - /url: https://publicdomainreview.org
+          - text: ", a project registered in the UK as a Community Interest Company (#11386184), a category of company which exists primarily to benefit a community or with a view to pursuing a social purpose, with all profits having to be used for this purpose."
+        - paragraph [ref=e236]:
+          - text: We rely on donations from readers. Please consider
+          - link "supporting the project" [ref=e237] [cursor=pointer]:
+            - /url: /donate
+          - text: .
+      - generic [ref=e238]:
+        - list [ref=e239]:
+          - listitem [ref=e240]:
+            - link "About" [ref=e241] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e242]:
+            - link "Sources" [ref=e243] [cursor=pointer]:
+              - /url: /sources
+          - listitem [ref=e244]:
+            - link "Prints for sale" [ref=e245] [cursor=pointer]:
+              - /url: /prints
+          - listitem [ref=e246]:
+            - link "Donate" [ref=e247] [cursor=pointer]:
+              - /url: /donate
+        - paragraph [ref=e248]:
+          - text: "Email contact:"
+          - link "pdia@publicdomainreview.org" [ref=e249] [cursor=pointer]:
+            - /url: mailto:pdia@publicdomainreview.org
+        - generic [ref=e253]:
+          - searchbox "Search the Collection" [ref=e254]
+          - button [ref=e255]
+      - generic [ref=e256]:
+        - list [ref=e257]:
+          - listitem [ref=e258]:
+            - link "What is the Public Domain?" [ref=e259] [cursor=pointer]:
+              - /url: https://publicdomainreview.org/what-is-the-public-domain/
+          - listitem [ref=e260]:
+            - link "Rights Labelling" [ref=e261] [cursor=pointer]:
+              - /url: /rights-labelling-on-our-site
+          - listitem [ref=e262]:
+            - link "Reusing Images" [ref=e263] [cursor=pointer]:
+              - /url: /reusing-images
+          - listitem [ref=e264]:
+            - link "Privacy Policy" [ref=e265] [cursor=pointer]:
+              - /url: /privacy-policy
+          - listitem [ref=e266]:
+            - link "Returns and Refunds Policy" [ref=e267] [cursor=pointer]:
+              - /url: /returns-policy
+          - listitem [ref=e268]:
+            - link "Terms and Conditions" [ref=e269] [cursor=pointer]:
+              - /url: /terms-and-conditions
+        - link "Subscribe to Our Newsletter" [ref=e271] [cursor=pointer]:
+          - /url: /about#newsletter
+        - generic [ref=e272]:
+          - link "Facebook" [ref=e274] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=61571535394821
+            - img [ref=e275]
+          - link "X" [ref=e278] [cursor=pointer]:
+            - /url: https://x.com/pdimagearchive
+            - img "X" [ref=e279]
+          - link "Instagram" [ref=e282] [cursor=pointer]:
+            - /url: https://www.instagram.com/pdimagearchive/
+            - img [ref=e283]
+          - link "Bluesky" [ref=e286] [cursor=pointer]:
+            - /url: https://bsky.app/profile/pdimagearchive.bsky.social
+            - img "Bluesky" [ref=e287]
+          - link "Mastodon" [ref=e290] [cursor=pointer]:
+            - /url: https://mastodon.social/@pdimagearchive
+            - img [ref=e291]

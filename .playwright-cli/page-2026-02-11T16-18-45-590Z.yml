@@ -1,0 +1,270 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner:
+      - generic [ref=e4]:
+        - link "Public Domain Image Archive" [ref=e5] [cursor=pointer]:
+          - /url: /galleries/all
+        - generic [ref=e6]: from
+        - link "The Public Domain Review" [ref=e8] [cursor=pointer]:
+          - /url: https://publicdomainreview.org
+          - img "The Public Domain Review" [ref=e9]
+        - navigation [ref=e10]:
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - link "About" [ref=e13] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e14]:
+              - link "Sources" [ref=e15] [cursor=pointer]:
+                - /url: /sources
+            - listitem [ref=e16]:
+              - link "Buy Prints" [ref=e17] [cursor=pointer]:
+                - /url: /prints
+            - listitem [ref=e18]:
+              - link "Donate" [ref=e19] [cursor=pointer]:
+                - /url: /donate
+            - listitem [ref=e20]:
+              - button [ref=e21] [cursor=pointer]:
+                - img [ref=e22]
+      - generic [ref=e26]:
+        - generic [ref=e29]:
+          - searchbox "Search the Collection" [ref=e30]
+          - button [ref=e31]:
+            - img [ref=e32]
+        - generic [ref=e34]: or
+        - generic [ref=e35]:
+          - generic [ref=e36]: Browse by
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - button "artist" [ref=e39] [cursor=pointer]
+              - text: /
+            - listitem [ref=e40]:
+              - button "century" [ref=e41] [cursor=pointer]
+              - text: /
+            - listitem [ref=e42]:
+              - button "style" [ref=e43] [cursor=pointer]
+              - text: /
+            - listitem [ref=e44]:
+              - button "theme" [ref=e45] [cursor=pointer]
+              - text: /
+            - listitem [ref=e46]:
+              - button "tag" [ref=e47] [cursor=pointer]
+              - text: /
+            - listitem [ref=e48]:
+              - link "all" [ref=e49] [cursor=pointer]:
+                - /url: /galleries/all
+        - combobox [ref=e51] [cursor=pointer]:
+          - option "Change View" [disabled] [selected]
+          - option "Catalog View" [disabled]
+          - option "Infinite View"
+          - option "Shuffle View"
+  - main [ref=e56]:
+    - generic [ref=e57]:
+      - heading "Images for Search Query \"flower\"— 597 results Most Relevant You might also be interested in images tagged “flowers”" [level=1] [ref=e133]:
+        - generic [ref=e63]:
+          - generic [ref=e64]: Images for Search Query "flower"— 597 results
+          - combobox [ref=e66]:
+            - option "Most Relevant" [selected]
+            - option "Newest to Oldest"
+            - option "Oldest to Newest"
+            - option "Largest to Smallest"
+            - option "Smallest to Largest"
+            - option "Open Ranking"
+          - generic [ref=e135]:
+            - text: You might also be interested in images tagged “
+            - link "flowers" [ref=e136] [cursor=pointer]:
+              - /url: /galleries/tags/flowers
+            - text: ”
+      - generic [ref=e138]:
+        - link "Flowers From Mount Moria Flowers From Mount Moria Boulos Meo, 1890s" [ref=e140] [cursor=pointer]:
+          - /url: /images/ff9281d4-a458-4cc7-98ea-5b4e94e01752
+          - img "Flowers From Mount Moria" [ref=e143]
+          - generic [ref=e144]:
+            - generic [ref=e145]: Flowers From Mount Moria
+            - generic [ref=e146]: Boulos Meo, 1890s
+        - link "View of the form of the flower View of the form of the flower William Sharp, 1854" [ref=e148] [cursor=pointer]:
+          - /url: /images/f673a71b-e484-48f6-a5e0-7f29bd4ba037
+          - img "View of the form of the flower" [ref=e151]
+          - generic [ref=e152]:
+            - generic [ref=e153]: View of the form of the flower
+            - generic [ref=e154]: William Sharp, 1854
+        - 'link "A Midsummer-Night''s Dream: Act IV, Scene 1: Titania: Come set thee down upon this flowery bed A Midsummer-Night''s Dream: Act IV, Scene 1: Titania: Come set thee down upon this flowery bed Currier & Ives, Late 19th century" [ref=e156] [cursor=pointer]':
+          - /url: /images/eed6cbe5-8250-4db2-bfe2-01c202b86771
+          - 'img "A Midsummer-Night''s Dream: Act IV, Scene 1: Titania: Come set thee down upon this flowery bed" [ref=e159]'
+          - generic [ref=e160]:
+            - generic [ref=e161]: "A Midsummer-Night's Dream: Act IV, Scene 1: Titania: Come set thee down upon this flowery bed"
+            - generic [ref=e162]: Currier & Ives, Late 19th century
+        - link "Flowers From the Mount of Olives Flowers From the Mount of Olives Boulos Meo, 1890s" [ref=e164] [cursor=pointer]:
+          - /url: /images/ee59303d-4866-4cd2-8602-0294253e10c5
+          - img "Flowers From the Mount of Olives" [ref=e167]
+          - generic [ref=e168]:
+            - generic [ref=e169]: Flowers From the Mount of Olives
+            - generic [ref=e170]: Boulos Meo, 1890s
+        - link "Flowers From Jerusalem Flowers From Jerusalem Boulos Meo, 1890s" [ref=e172] [cursor=pointer]:
+          - /url: /images/ed79c6f0-29b9-4515-b4e3-891ced57ba4c
+          - img "Flowers From Jerusalem" [ref=e175]
+          - generic [ref=e176]:
+            - generic [ref=e177]: Flowers From Jerusalem
+            - generic [ref=e178]: Boulos Meo, 1890s
+        - link "Blackberry, unripe fruits and flower (Rubus sectio rubus) Blackberry, unripe fruits and flower (Rubus sectio rubus) Master of Claude de France, ca. 1510–1515" [ref=e180] [cursor=pointer]:
+          - /url: /images/d9a62b64-edae-4dc0-9ad2-9c7eb1e2e062
+          - img "Blackberry, unripe fruits and flower (Rubus sectio rubus)" [ref=e183]
+          - generic [ref=e184]:
+            - generic [ref=e185]: Blackberry, unripe fruits and flower (Rubus sectio rubus)
+            - generic [ref=e186]: Master of Claude de France, ca. 1510–1515
+        - link "Opening flower Opening flower William Sharp, 1854" [ref=e188] [cursor=pointer]:
+          - /url: /images/d20c3c1f-c106-4899-9a66-0cf67613ee19
+          - img "Opening flower" [ref=e191]
+          - generic [ref=e192]:
+            - generic [ref=e193]: Opening flower
+            - generic [ref=e194]: William Sharp, 1854
+        - link "The Marsh Flower, a Sad Human Head The Marsh Flower, a Sad Human Head Odilon Redon, 1885" [ref=e196] [cursor=pointer]:
+          - /url: /images/cd50d3b0-ccc1-41ab-a00a-5c84d1de7820
+          - img "The Marsh Flower, a Sad Human Head" [ref=e199]
+          - generic [ref=e200]:
+            - generic [ref=e201]: The Marsh Flower, a Sad Human Head
+            - generic [ref=e202]: Odilon Redon, 1885
+        - link "Flowers From Mount Zion Flowers From Mount Zion Boulos Meo, 1890s" [ref=e204] [cursor=pointer]:
+          - /url: /images/ca29b251-33a8-48d0-b1e7-6e062bf7a07f
+          - img "Flowers From Mount Zion" [ref=e207]
+          - generic [ref=e208]:
+            - generic [ref=e209]: Flowers From Mount Zion
+            - generic [ref=e210]: Boulos Meo, 1890s
+        - link "Large Flowering Sensitive Plant Large Flowering Sensitive Plant Robert John Thornton, 1807" [ref=e212] [cursor=pointer]:
+          - /url: /images/c3ba1727-657f-417a-a9b0-55062fef74e5
+          - img "Large Flowering Sensitive Plant" [ref=e215]
+          - generic [ref=e216]:
+            - generic [ref=e217]: Large Flowering Sensitive Plant
+            - generic [ref=e218]: Robert John Thornton, 1807
+        - link "Flowers of prickly sea-lavender Flowers of prickly sea-lavender American Colony, ca. 1900–20" [ref=e220] [cursor=pointer]:
+          - /url: /images/b842648f-9917-4ba8-aa8f-29da9a21a2b5
+          - img "Flowers of prickly sea-lavender" [ref=e223]
+          - generic [ref=e224]:
+            - generic [ref=e225]: Flowers of prickly sea-lavender
+            - generic [ref=e226]: American Colony, ca. 1900–20
+        - link "Vase of Flowers Vase of Flowers Jan Davidsz de Heem, ca. 1660" [ref=e228] [cursor=pointer]:
+          - /url: /images/a71a89e7-fcea-4400-baaa-a21a43f6033e
+          - img "Vase of Flowers" [ref=e231]
+          - generic [ref=e232]:
+            - generic [ref=e233]: Vase of Flowers
+            - generic [ref=e234]: Jan Davidsz de Heem, ca. 1660
+        - link "Tsuba made of iron, openwork, shaped like a round branch of the Empress Tree with three flowers and vines. Tsuba made of iron, openwork, shaped like a round branch of the Empress Tree with three flowers and vines. Georg Oeder, 1916" [ref=e236] [cursor=pointer]:
+          - /url: /images/a457ac8e-1729-459d-9612-23b68aa80a0a
+          - img "Tsuba made of iron, openwork, shaped like a round branch of the Empress Tree with three flowers and vines." [ref=e239]
+          - generic [ref=e240]:
+            - generic [ref=e241]: Tsuba made of iron, openwork, shaped like a round branch of the Empress Tree with three flowers and vines.
+            - generic [ref=e242]: Georg Oeder, 1916
+        - link "Flower Kept Alive by Putting in Water Flower Kept Alive by Putting in Water Kusakabe Kimbei, Late 19th century" [ref=e244] [cursor=pointer]:
+          - /url: /images/9f0bbdad-fcc7-4b4e-8a2d-879cb9c355b2
+          - img "Flower Kept Alive by Putting in Water" [ref=e247]
+          - generic [ref=e248]:
+            - generic [ref=e249]: Flower Kept Alive by Putting in Water
+            - generic [ref=e250]: Kusakabe Kimbei, Late 19th century
+        - link "The Flower o' the World Asleep The Flower o' the World Asleep Jay Van Everen, 1921" [ref=e252] [cursor=pointer]:
+          - /url: /images/984551f3-b2f0-414b-94ee-8ae17c9d3b31
+          - img "The Flower o' the World Asleep" [ref=e255]
+          - generic [ref=e256]:
+            - generic [ref=e257]: The Flower o' the World Asleep
+            - generic [ref=e258]: Jay Van Everen, 1921
+        - link "Tsuba made of iron, openwork. Koto and peony flowers in positive and negative silhouette within gold-plated hoop. Tsuba made of iron, openwork. Koto and peony flowers in positive and negative silhouette within gold-plated hoop. Georg Oeder, 1916" [ref=e260] [cursor=pointer]:
+          - /url: /images/97a3e94e-dc53-407e-8a85-62f680e2ff25
+          - img "Tsuba made of iron, openwork. Koto and peony flowers in positive and negative silhouette within gold-plated hoop." [ref=e263]
+          - generic [ref=e264]:
+            - generic [ref=e265]: Tsuba made of iron, openwork. Koto and peony flowers in positive and negative silhouette within gold-plated hoop.
+            - generic [ref=e266]: Georg Oeder, 1916
+        - link "[Unnamed flower] [Unnamed flower] American Colony, ca. 1900–20" [ref=e268] [cursor=pointer]:
+          - /url: /images/8ae10dc2-258e-4f87-937e-a239fff48f04
+          - img "[Unnamed flower]" [ref=e271]
+          - generic [ref=e272]:
+            - generic [ref=e273]: "[Unnamed flower]"
+            - generic [ref=e274]: American Colony, ca. 1900–20
+        - link "Flowers From the Holy Land Flowers From the Holy Land Boulos Meo, 1890s" [ref=e276] [cursor=pointer]:
+          - /url: /images/88a82819-0749-4a63-a385-54a9b7558859
+          - img "Flowers From the Holy Land" [ref=e279]
+          - generic [ref=e280]:
+            - generic [ref=e281]: Flowers From the Holy Land
+            - generic [ref=e282]: Boulos Meo, 1890s
+        - link "Banana Tree Flower with Io Moth Banana Tree Flower with Io Moth Maria Sibylla Merian, 1719" [ref=e284] [cursor=pointer]:
+          - /url: /images/86585fa7-6261-4bc4-8996-10af0857a8fe
+          - img "Banana Tree Flower with Io Moth" [ref=e287]
+          - generic [ref=e288]:
+            - generic [ref=e289]: Banana Tree Flower with Io Moth
+            - generic [ref=e290]: Maria Sibylla Merian, 1719
+        - link "A girl with flowers, a family appearing behind. A girl with flowers, a family appearing behind. Anonymous, ca. 1905" [ref=e292] [cursor=pointer]:
+          - /url: /images/7f7e50ea-1e38-44a0-85a3-576189b7d2eb
+          - img "A girl with flowers, a family appearing behind." [ref=e295]
+          - generic [ref=e296]:
+            - generic [ref=e297]: A girl with flowers, a family appearing behind.
+            - generic [ref=e298]: Anonymous, ca. 1905
+  - contentinfo [ref=e67]:
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - paragraph [ref=e71]:
+          - text: The Public Domain Image Archive is run by
+          - link "The Public Domain Review" [ref=e72] [cursor=pointer]:
+            - /url: https://publicdomainreview.org
+          - text: ", a project registered in the UK as a Community Interest Company (#11386184), a category of company which exists primarily to benefit a community or with a view to pursuing a social purpose, with all profits having to be used for this purpose."
+        - paragraph [ref=e73]:
+          - text: We rely on donations from readers. Please consider
+          - link "supporting the project" [ref=e74] [cursor=pointer]:
+            - /url: /donate
+          - text: .
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "About" [ref=e78] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e79]:
+            - link "Sources" [ref=e80] [cursor=pointer]:
+              - /url: /sources
+          - listitem [ref=e81]:
+            - link "Prints for sale" [ref=e82] [cursor=pointer]:
+              - /url: /prints
+          - listitem [ref=e83]:
+            - link "Donate" [ref=e84] [cursor=pointer]:
+              - /url: /donate
+        - paragraph [ref=e85]:
+          - text: "Email contact:"
+          - link "pdia@publicdomainreview.org" [ref=e86] [cursor=pointer]:
+            - /url: mailto:pdia@publicdomainreview.org
+        - generic [ref=e90]:
+          - searchbox "Search the Collection" [ref=e91]
+          - button [ref=e92]:
+            - img [ref=e93]
+      - generic [ref=e95]:
+        - list [ref=e96]:
+          - listitem [ref=e97]:
+            - link "What is the Public Domain?" [ref=e98] [cursor=pointer]:
+              - /url: https://publicdomainreview.org/what-is-the-public-domain/
+          - listitem [ref=e99]:
+            - link "Rights Labelling" [ref=e100] [cursor=pointer]:
+              - /url: /rights-labelling-on-our-site
+          - listitem [ref=e101]:
+            - link "Reusing Images" [ref=e102] [cursor=pointer]:
+              - /url: /reusing-images
+          - listitem [ref=e103]:
+            - link "Privacy Policy" [ref=e104] [cursor=pointer]:
+              - /url: /privacy-policy
+          - listitem [ref=e105]:
+            - link "Returns and Refunds Policy" [ref=e106] [cursor=pointer]:
+              - /url: /returns-policy
+          - listitem [ref=e107]:
+            - link "Terms and Conditions" [ref=e108] [cursor=pointer]:
+              - /url: /terms-and-conditions
+        - link "Subscribe to Our Newsletter" [ref=e110] [cursor=pointer]:
+          - /url: /about#newsletter
+        - generic [ref=e111]:
+          - link "Facebook" [ref=e113] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=61571535394821
+            - img [ref=e114]
+          - link "X" [ref=e117] [cursor=pointer]:
+            - /url: https://x.com/pdimagearchive
+            - img "X" [ref=e118]
+          - link "Instagram" [ref=e121] [cursor=pointer]:
+            - /url: https://www.instagram.com/pdimagearchive/
+            - img [ref=e122]
+          - link "Bluesky" [ref=e125] [cursor=pointer]:
+            - /url: https://bsky.app/profile/pdimagearchive.bsky.social
+            - img "Bluesky" [ref=e126]
+          - link "Mastodon" [ref=e129] [cursor=pointer]:
+            - /url: https://mastodon.social/@pdimagearchive
+            - img [ref=e130]

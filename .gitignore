@@ -4,6 +4,12 @@ resources/
 resources/_gen/
 .hugo_build.lock
 
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+tests/screenshots/
+
 # Dependencies
 node_modules/
 vendor/

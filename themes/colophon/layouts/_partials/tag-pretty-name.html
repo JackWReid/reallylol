@@ -1,0 +1,12 @@
+{{ $tagName := .tagName | lower }}
+{{ $tagNames := .Site.Data.content_config.map_tag_names }}
+{{ if $tagNames }}
+  {{ $prettyName := index $tagNames $tagName }}
+  {{ if $prettyName }}
+    {{ $prettyName }}
+  {{ else }}
+    {{ $tagName | title }}
+  {{ end }}
+{{ else }}
+  {{ $tagName | title }}
+{{ end }}

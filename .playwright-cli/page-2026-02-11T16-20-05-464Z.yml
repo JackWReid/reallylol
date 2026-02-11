@@ -1,0 +1,332 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner:
+      - generic [ref=e4]:
+        - link "Public Domain Image Archive" [ref=e5] [cursor=pointer]:
+          - /url: /galleries/all
+        - generic [ref=e6]: from
+        - link "The Public Domain Review" [ref=e8] [cursor=pointer]:
+          - /url: https://publicdomainreview.org
+          - img "The Public Domain Review" [ref=e9]
+        - navigation [ref=e10]:
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - link "About" [ref=e13] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e14]:
+              - link "Sources" [ref=e15] [cursor=pointer]:
+                - /url: /sources
+            - listitem [ref=e16]:
+              - link "Buy Prints" [ref=e17] [cursor=pointer]:
+                - /url: /prints
+            - listitem [ref=e18]:
+              - link "Donate" [ref=e19] [cursor=pointer]:
+                - /url: /donate
+            - listitem [ref=e20]:
+              - button [ref=e21] [cursor=pointer]:
+                - img [ref=e22]
+      - generic [ref=e26]:
+        - generic [ref=e29]:
+          - searchbox "Search the Collection" [ref=e30]
+          - button [ref=e31]:
+            - img [ref=e32]
+        - generic [ref=e34]: or
+        - generic [ref=e35]:
+          - generic [ref=e36]: Browse by
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - button "artist" [ref=e39] [cursor=pointer]
+              - text: /
+            - listitem [ref=e40]:
+              - button "century" [ref=e41] [cursor=pointer]
+              - text: /
+            - listitem [ref=e42]:
+              - button "style" [ref=e43] [cursor=pointer]
+              - text: /
+            - listitem [ref=e44]:
+              - button "theme" [ref=e45] [cursor=pointer]
+              - text: /
+            - listitem [ref=e46]:
+              - button "tag" [ref=e47] [cursor=pointer]
+              - text: /
+            - listitem [ref=e48]:
+              - link "all" [ref=e49] [cursor=pointer]:
+                - /url: /galleries/all
+        - combobox [ref=e51] [cursor=pointer]:
+          - option "Change View" [disabled] [selected]
+          - option "Catalog View" [disabled]
+          - option "Infinite View"
+          - option "Shuffle View"
+  - main [ref=e56]:
+    - generic [ref=e57]:
+      - button "Open lightbox" [ref=e61] [cursor=pointer]:
+        - img [ref=e62]
+      - paragraph [ref=e65]:
+        - emphasis [ref=e66]: Herbarium Apuleii
+        - text: ", Ms. 18 (Yale Medical Library), ca. 1400, p. 82."
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - 'heading "Featured on PDR in the collection Love Spells and Deadly Shrieks: Illustrations of Mandrakes (ca. 650–1927)" [level=3] [ref=e69]':
+            - text: Featured on PDR in the collection
+            - 'link "Love Spells and Deadly Shrieks: Illustrations of Mandrakes (ca. 650–1927)" [ref=e70] [cursor=pointer]':
+              - /url: https://publicdomainreview.org/collection/mandrakes
+          - paragraph [ref=e71]:
+            - text: Discussing the mandrake in his
+            - emphasis [ref=e72]: "Transcendental Magic: Its Doctrine and Ritual"
+            - text: "(1854), the occultist magician and writer Éliphas Lévi asked:"
+          - link "Read More on The Public Domain Review…" [ref=e74] [cursor=pointer]:
+            - /url: https://publicdomainreview.org/collection/mandrakes
+            - generic [ref=e75]: Read More on The Public Domain Review…
+        - generic [ref=e76]:
+          - heading "Also appearing in the collection…" [level=3] [ref=e77]
+          - list [ref=e78]:
+            - link [ref=e79] [cursor=pointer]:
+              - /url: /images/13746682-5d91-43c7-994d-e81b7fb4d354
+              - img [ref=e81]
+            - link [ref=e82] [cursor=pointer]:
+              - /url: /images/138379f0-dac3-48dd-adb2-330f787929e7
+              - img [ref=e84]
+            - link [ref=e85] [cursor=pointer]:
+              - /url: /images/27e3f74a-59de-429d-ab57-2d343959d713
+              - img [ref=e87]
+            - link [ref=e88] [cursor=pointer]:
+              - /url: /images/3cb95ea8-a82a-4326-8447-6639a40c4ea2
+              - img [ref=e90]
+            - link [ref=e91] [cursor=pointer]:
+              - /url: /images/520c6fca-af0c-40ba-af2e-d9f4c6f384c9
+              - img [ref=e93]
+            - link [ref=e94] [cursor=pointer]:
+              - /url: /images/549c8edb-0bbf-49d5-8f07-7242f46baf8b
+              - img [ref=e96]
+            - link [ref=e97] [cursor=pointer]:
+              - /url: /images/630b0b88-19c6-40ab-8885-344d34b38e24
+              - img [ref=e99]
+            - link [ref=e100] [cursor=pointer]:
+              - /url: /images/6a2bcaff-2346-4773-a2b2-b5abf4f55b9c
+              - img [ref=e102]
+            - link [ref=e103] [cursor=pointer]:
+              - /url: /images/73f94376-dbf4-4f9f-b00d-862cff23dba6
+              - img [ref=e105]
+            - link [ref=e106] [cursor=pointer]:
+              - /url: /images/7efc5a90-7cc3-41f0-a77c-0f9d33f31415
+              - img [ref=e108]
+            - link [ref=e109] [cursor=pointer]:
+              - /url: /images/a235530e-9f14-4bf1-9764-080f7bad6a41
+              - img [ref=e111]
+            - link [ref=e112] [cursor=pointer]:
+              - /url: /images/b02cef25-1720-4f9c-b12e-75148ee981ef
+              - img [ref=e114]
+            - link [ref=e115] [cursor=pointer]:
+              - /url: /images/b877134b-14ee-47c8-bc5f-c8e83a76447d
+              - img [ref=e117]
+            - link [ref=e118] [cursor=pointer]:
+              - /url: /images/cabf1a80-f428-4a76-bba3-db0437bda9eb
+              - img [ref=e120]
+            - link [ref=e121] [cursor=pointer]:
+              - /url: /images/cbf35082-035e-4c53-8ddb-4f984ea0fe7c
+              - img [ref=e123]
+            - link [ref=e124] [cursor=pointer]:
+              - /url: /images/c06c3e6c-d8bc-4737-9c2a-443febaa0f0e
+              - img [ref=e126]
+            - link [ref=e127] [cursor=pointer]:
+              - /url: /images/da9efbce-efab-4c81-a6e7-dbcab605618e
+              - img [ref=e129]
+            - link [ref=e130] [cursor=pointer]:
+              - /url: /images/d35e8600-2930-42b3-a270-64f073015c0b
+              - img [ref=e132]
+            - link [ref=e133] [cursor=pointer]:
+              - /url: /images/e5804c20-2452-4aaa-b6e7-8a0d053dfc53
+              - img [ref=e135]
+            - link [ref=e136] [cursor=pointer]:
+              - /url: /images/f2ca51e1-420a-4637-b1d5-8e881821f1ef
+              - img [ref=e138]
+            - link [ref=e139] [cursor=pointer]:
+              - /url: /images/f0a2fb76-d520-4f51-91d8-2bee780e7626
+              - img [ref=e141]
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - heading "Herbarium Apuleii, Ms. 18 (Yale Medical Library), ca. 1400, p. 82." [level=1] [ref=e145]:
+            - emphasis [ref=e146]: Herbarium Apuleii
+            - text: ", Ms. 18 (Yale Medical Library), ca. 1400, p. 82."
+          - generic [ref=e147]:
+            - heading "Date" [level=3] [ref=e148]
+            - paragraph [ref=e149]: ca. 1400
+            - heading "From" [level=3] [ref=e150]
+            - paragraph [ref=e151]: Herbarium Apuleii, Ms. 18 (Yale Medical Library
+          - separator [ref=e152]
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - heading "Source" [level=3] [ref=e155]
+            - paragraph [ref=e156]:
+              - link "UCLA Digital Library" [ref=e157] [cursor=pointer]:
+                - /url: https://digital.library.ucla.edu/catalog/ark:/21198/zz000100hh
+            - heading "More From" [level=3] [ref=e158]
+            - list [ref=e159]:
+              - listitem [ref=e161]:
+                - link "UCLA Digital Library logo UCLA Digital Library 33 images on PDIA" [ref=e162] [cursor=pointer]:
+                  - /url: /galleries/sources/ucla-digital-library/random/desc
+                  - img "UCLA Digital Library logo" [ref=e164]
+                  - generic [ref=e165]:
+                    - generic [ref=e166]: UCLA Digital Library
+                    - generic [ref=e167]: 33 images on PDIA
+          - separator [ref=e168]
+        - generic [ref=e169]:
+          - generic [ref=e170]:
+            - heading "Underlying Rights" [level=3] [ref=e171]
+            - paragraph [ref=e172]:
+              - link "Public Domain Worldwide" [ref=e174] [cursor=pointer]:
+                - /url: /rights-labelling-on-our-site#pd-worldwide
+          - generic [ref=e175]:
+            - heading "Digital Rights" [level=3] [ref=e176]
+            - paragraph [ref=e177]:
+              - link "No Additional Rights" [ref=e179] [cursor=pointer]:
+                - /url: /rights-labelling-on-our-site#no-additional-rights
+            - list [ref=e180]:
+              - listitem [ref=e181]: Labelled “Public Domain”
+              - listitem [ref=e182]:
+                - text: See their general
+                - link "rights page" [ref=e183] [cursor=pointer]:
+                  - /url: https://digital.library.ucla.edu/copyright_and_collections
+              - listitem [ref=e184]:
+                - text: We offer this info as
+                - link "guidance only" [ref=e185] [cursor=pointer]:
+                  - /url: /reusing-images
+          - separator [ref=e186]
+        - generic [ref=e187]:
+          - generic [ref=e189]:
+            - button "Buy a Print" [ref=e190] [cursor=pointer]:
+              - generic [ref=e191]: Buy a Print
+            - list [ref=e192]:
+              - listitem [ref=e193]: Available in size petite
+              - listitem [ref=e194]: Exceptional quality, from $32 including delivery
+              - listitem [ref=e195]: Archival inks on high grade art paper
+              - listitem [ref=e196]: Framed option with solid wood and ready to hang
+          - separator [ref=e197]
+          - generic [ref=e198]:
+            - heading "Image Size" [level=3] [ref=e199]
+            - paragraph [ref=e200]: 2100 x 2178
+            - button "Download Image" [ref=e203] [cursor=pointer]: Download Image
+          - separator [ref=e204]
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - heading "Styles" [level=3] [ref=e208]
+            - list [ref=e210]:
+              - listitem [ref=e211]:
+                - link "Manuscript" [ref=e212] [cursor=pointer]:
+                  - /url: /galleries/style/manuscript
+          - generic [ref=e213]:
+            - heading "Themes" [level=3] [ref=e214]
+            - list [ref=e216]:
+              - listitem [ref=e217]:
+                - link "Animals & Beasts" [ref=e218] [cursor=pointer]:
+                  - /url: /galleries/themes/animals-and-beasts
+                - text: /
+              - listitem [ref=e219]:
+                - link "Customs & Culture" [ref=e220] [cursor=pointer]:
+                  - /url: /galleries/themes/customs-and-culture
+                - text: /
+              - listitem [ref=e221]:
+                - link "Drugs" [ref=e222] [cursor=pointer]:
+                  - /url: /galleries/themes/drugs
+                - text: /
+              - listitem [ref=e223]:
+                - link "Natural World" [ref=e224] [cursor=pointer]:
+                  - /url: /galleries/themes/natural-world
+                - text: /
+              - listitem [ref=e225]:
+                - link "Religion, Myth & Legend" [ref=e226] [cursor=pointer]:
+                  - /url: /galleries/themes/religion-myth-and-legend
+          - generic [ref=e227]:
+            - heading "Tags" [level=3] [ref=e228]
+            - list [ref=e230]:
+              - listitem [ref=e231]:
+                - link "herbals" [ref=e232] [cursor=pointer]:
+                  - /url: /galleries/tags/herbals
+                - text: /
+              - listitem [ref=e233]:
+                - link "mandrakes" [ref=e234] [cursor=pointer]:
+                  - /url: /galleries/tags/mandrakes
+                - text: /
+              - listitem [ref=e235]:
+                - link "folklore" [ref=e236] [cursor=pointer]:
+                  - /url: /galleries/tags/folklore
+                - text: /
+              - listitem [ref=e237]:
+                - link "magic" [ref=e238] [cursor=pointer]:
+                  - /url: /galleries/tags/magic
+                - text: /
+              - listitem [ref=e239]:
+                - link "plants" [ref=e240] [cursor=pointer]:
+                  - /url: /galleries/tags/plants
+  - contentinfo [ref=e241]:
+    - generic [ref=e243]:
+      - generic [ref=e244]:
+        - paragraph [ref=e245]:
+          - text: The Public Domain Image Archive is run by
+          - link "The Public Domain Review" [ref=e246] [cursor=pointer]:
+            - /url: https://publicdomainreview.org
+          - text: ", a project registered in the UK as a Community Interest Company (#11386184), a category of company which exists primarily to benefit a community or with a view to pursuing a social purpose, with all profits having to be used for this purpose."
+        - paragraph [ref=e247]:
+          - text: We rely on donations from readers. Please consider
+          - link "supporting the project" [ref=e248] [cursor=pointer]:
+            - /url: /donate
+          - text: .
+      - generic [ref=e249]:
+        - list [ref=e250]:
+          - listitem [ref=e251]:
+            - link "About" [ref=e252] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e253]:
+            - link "Sources" [ref=e254] [cursor=pointer]:
+              - /url: /sources
+          - listitem [ref=e255]:
+            - link "Prints for sale" [ref=e256] [cursor=pointer]:
+              - /url: /prints
+          - listitem [ref=e257]:
+            - link "Donate" [ref=e258] [cursor=pointer]:
+              - /url: /donate
+        - paragraph [ref=e259]:
+          - text: "Email contact:"
+          - link "pdia@publicdomainreview.org" [ref=e260] [cursor=pointer]:
+            - /url: mailto:pdia@publicdomainreview.org
+        - generic [ref=e264]:
+          - searchbox "Search the Collection" [ref=e265]
+          - button [ref=e266]
+      - generic [ref=e267]:
+        - list [ref=e268]:
+          - listitem [ref=e269]:
+            - link "What is the Public Domain?" [ref=e270] [cursor=pointer]:
+              - /url: https://publicdomainreview.org/what-is-the-public-domain/
+          - listitem [ref=e271]:
+            - link "Rights Labelling" [ref=e272] [cursor=pointer]:
+              - /url: /rights-labelling-on-our-site
+          - listitem [ref=e273]:
+            - link "Reusing Images" [ref=e274] [cursor=pointer]:
+              - /url: /reusing-images
+          - listitem [ref=e275]:
+            - link "Privacy Policy" [ref=e276] [cursor=pointer]:
+              - /url: /privacy-policy
+          - listitem [ref=e277]:
+            - link "Returns and Refunds Policy" [ref=e278] [cursor=pointer]:
+              - /url: /returns-policy
+          - listitem [ref=e279]:
+            - link "Terms and Conditions" [ref=e280] [cursor=pointer]:
+              - /url: /terms-and-conditions
+        - link "Subscribe to Our Newsletter" [ref=e282] [cursor=pointer]:
+          - /url: /about#newsletter
+        - generic [ref=e283]:
+          - link "Facebook" [ref=e285] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=61571535394821
+            - img [ref=e286]
+          - link "X" [ref=e289] [cursor=pointer]:
+            - /url: https://x.com/pdimagearchive
+            - img "X" [ref=e290]
+          - link "Instagram" [ref=e293] [cursor=pointer]:
+            - /url: https://www.instagram.com/pdimagearchive/
+            - img [ref=e294]
+          - link "Bluesky" [ref=e297] [cursor=pointer]:
+            - /url: https://bsky.app/profile/pdimagearchive.bsky.social
+            - img "Bluesky" [ref=e298]
+          - link "Mastodon" [ref=e301] [cursor=pointer]:
+            - /url: https://mastodon.social/@pdimagearchive
+            - img [ref=e302]

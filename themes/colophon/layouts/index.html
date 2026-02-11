@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ $data := first 1 $.Site.Data.books.reading }}
+<div class="home-main">
+  <div class="home-intro">
+  {{ .Content }}
+  <div class="home-component">
+    <div class="home-component__reading">
+      <dt>Currently Reading</dt>
+      {{ range $data }}
+      <dd><span>{{ .title }}</span> by {{ .author }}</dd>
+      {{ end }}
+    </div>
+    {{ with resources.Get "img/layout/botanical-fern.jpg" }}
+      {{ $hero := .Resize "800x" }}
+      <img alt="A botanical engraving of a fern" class="home-hero-image" src="{{ $hero.RelPermalink }}">
+    {{ end }}
+  </div>
+  </div>
+</div>
+{{ end }}

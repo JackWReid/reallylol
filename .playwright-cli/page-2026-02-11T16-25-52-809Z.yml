@@ -1,0 +1,61 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e4]:
+    - heading "really.lol" [level=1] [ref=e5]:
+      - link "really.lol" [ref=e6] [cursor=pointer]:
+        - /url: http://localhost:1314/
+    - navigation "Main navigation" [ref=e7]:
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Posts" [ref=e10] [cursor=pointer]:
+            - /url: http://localhost:1314/post
+        - listitem [ref=e11]: ·
+        - listitem [ref=e12]:
+          - link "Notes" [ref=e13] [cursor=pointer]:
+            - /url: http://localhost:1314/note
+        - listitem [ref=e14]: ·
+        - listitem [ref=e15]:
+          - link "Photos" [ref=e16] [cursor=pointer]:
+            - /url: http://localhost:1314/photo
+        - listitem [ref=e17]: ·
+        - listitem [ref=e18]:
+          - link "Books" [ref=e19] [cursor=pointer]:
+            - /url: http://localhost:1314/books/reading
+        - listitem [ref=e20]: ·
+        - listitem [ref=e21]:
+          - link "Films" [ref=e22] [cursor=pointer]:
+            - /url: http://localhost:1314/films/watched
+        - listitem [ref=e23]: ·
+        - listitem [ref=e24]:
+          - link "Links" [ref=e25] [cursor=pointer]:
+            - /url: http://localhost:1314/links/saved
+  - main [ref=e27]:
+    - img "A botanical illustration of a fern frond" [ref=e28]
+    - generic [ref=e29]:
+      - generic [ref=e30]: the words aren't coming
+      - time [ref=e32]: 16 January 2026
+  - contentinfo [ref=e34]:
+    - generic [ref=e35]:
+      - link [ref=e36] [cursor=pointer]:
+        - /url: http://localhost:1314/photo/2017-06-27-16d8e6a7f559c08e5719e8486df0b43c/
+      - generic [ref=e37]:
+        - paragraph [ref=e38]: From the collection
+        - paragraph [ref=e39]:
+          - link "151.0 - barbershop duet" [ref=e40] [cursor=pointer]:
+            - /url: http://localhost:1314/photo/2017-06-27-16d8e6a7f559c08e5719e8486df0b43c/
+        - paragraph [ref=e41]:
+          - img [ref=e42]
+          - text: Brixton
+        - paragraph [ref=e46]:
+          - img [ref=e47]
+          - text: 27 June 2017
+    - generic [ref=e59]:
+      - paragraph [ref=e60]:
+        - link "@nice" [ref=e61] [cursor=pointer]:
+          - /url: https://social.lol/@nice
+        - link "/now" [ref=e62] [cursor=pointer]:
+          - /url: http://localhost:1314/now
+        - link "RSS" [ref=e63] [cursor=pointer]:
+          - /url: http://localhost:1314/index.xml
+      - paragraph [ref=e64]: Catalogued 17:21, 11 February 2026
