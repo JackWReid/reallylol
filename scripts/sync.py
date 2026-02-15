@@ -3,14 +3,13 @@
 
 Subcommands:
     books   Sync book data from Hardcover via cover CLI
-    films   Sync film data from a Letterboxd CSV export
+    films   Sync film data by scraping Letterboxd
     links   Sync links from Raindrop.io API
     photos  Rebuild random photo pool from content/photo/ frontmatter
     all     Run books + links + photos (everything except films)
 """
 
 import argparse
-import csv
 import json
 import os
 import re
@@ -20,6 +19,9 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
+from datetime import date
+from html import unescape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -80,59 +82,111 @@ def sync_books(_args: argparse.Namespace) -> None:
 
 # --- Films ---
 
+LETTERBOXD_DEFAULT_USER = "jackreid"
+
+
+def load_json(path: Path) -> list[dict]:
+    """Load a JSON array from a file, returning [] if missing."""
+    if not path.exists():
+        return []
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def fetch_rss_diary(username: str) -> list[dict]:
+    """Fetch watched films from Letterboxd RSS feed."""
+    url = f"https://letterboxd.com/{username}/rss/"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req) as resp:
+        tree = ET.parse(resp)
+
+    ns = {"letterboxd": "https://letterboxd.com"}
+    entries = []
+    for item in tree.findall(".//item"):
+        title_el = item.find("letterboxd:filmTitle", ns)
+        if title_el is None:
+            continue
+        year_el = item.find("letterboxd:filmYear", ns)
+        date_el = item.find("letterboxd:watchedDate", ns)
+        if date_el is None:
+            continue
+        entries.append({
+            "name": title_el.text,
+            "year": year_el.text if year_el is not None else "",
+            "date_updated": date_el.text,
+        })
+    return entries
+
+
+def scrape_watchlist(username: str) -> list[dict]:
+    """Scrape watchlist from Letterboxd HTML pages."""
+    films = []
+    page = 1
+    while True:
+        url = f"https://letterboxd.com/{username}/watchlist/page/{page}/"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        try:
+            with urllib.request.urlopen(req) as resp:
+                html = resp.read().decode("utf-8")
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                break
+            raise
+
+        matches = re.findall(r'data-item-name="([^"]+)"', html)
+        if not matches:
+            break
+
+        for raw_encoded in matches:
+            raw = unescape(raw_encoded)
+            # Format: "Title (Year)" — split on last " ("
+            idx = raw.rfind(" (")
+            if idx != -1 and raw.endswith(")"):
+                name = raw[:idx]
+                year = raw[idx + 2 : -1]
+            else:
+                name = raw
+                year = ""
+            films.append({"name": name, "year": year})
+
+        page += 1
+    return films
+
 
 def sync_films(args: argparse.Namespace) -> None:
-    """Sync film data from a Letterboxd CSV export directory."""
-    export_path = Path(args.export_path)
-    if not export_path.is_dir():
-        print(f"Error: Export directory not found: {export_path}")
-        sys.exit(1)
-
-    watchlist_csv = export_path / "watchlist.csv"
-    diary_csv = export_path / "diary.csv"
-
-    for f in (watchlist_csv, diary_csv):
-        if not f.exists():
-            print(f"Error: {f.name} not found in {export_path}")
-            sys.exit(1)
-
+    """Sync film data by scraping Letterboxd profile."""
+    username = args.username
     films_dir = ROOT / "data" / "films"
     films_dir.mkdir(parents=True, exist_ok=True)
+    today = date.today().isoformat()
 
-    # watchlist.csv → towatch.json
-    towatch = []
-    with open(watchlist_csv, encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            if row.get("Date", "").strip():
-                towatch.append(
-                    {
-                        "name": row["Name"],
-                        "year": row.get("Year", ""),
-                        "date_updated": row["Date"],
-                    }
-                )
+    # Watchlist
+    print(f"  Scraping watchlist for {username}...")
+    scraped = scrape_watchlist(username)
+    existing_towatch = load_json(films_dir / "towatch.json")
+    existing_dates = {
+        (f["name"], f["year"]): f["date_updated"] for f in existing_towatch
+    }
+    towatch = [
+        {
+            "name": f["name"],
+            "year": f["year"],
+            "date_updated": existing_dates.get((f["name"], f["year"]), today),
+        }
+        for f in scraped
+    ]
     towatch.sort(key=lambda x: x["date_updated"], reverse=True)
     write_compact_json(towatch, films_dir / "towatch.json")
 
-    # diary.csv → watched.json
-    # Original SQL: SELECT ... [Watched Date] as date_updated ... ORDER BY Date DESC
-    # "Date" is the diary log date; "Watched Date" is the actual watch date
-    watched = []
-    with open(diary_csv, encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            watched_date = row.get("Watched Date", "").strip()
-            if watched_date:
-                watched.append(
-                    {
-                        "name": row["Name"],
-                        "year": row.get("Year", ""),
-                        "date_updated": watched_date,
-                        "_sort": row.get("Date", ""),
-                    }
-                )
-    watched.sort(key=lambda x: x["_sort"], reverse=True)
-    for item in watched:
-        del item["_sort"]
+    # Diary (watched)
+    print(f"  Fetching RSS diary for {username}...")
+    rss_entries = fetch_rss_diary(username)
+    existing_watched = load_json(films_dir / "watched.json")
+    seen: dict[tuple[str, str], dict] = {}
+    for f in existing_watched:
+        seen[(f["name"], f["year"])] = f
+    for f in rss_entries:
+        seen[(f["name"], f["year"])] = f
+    watched = sorted(seen.values(), key=lambda x: x["date_updated"], reverse=True)
     write_compact_json(watched, films_dir / "watched.json")
 
     print("Films sync complete:")
@@ -307,7 +361,7 @@ def sync_photos(_args: argparse.Namespace) -> None:
 
 
 def sync_all(args: argparse.Namespace) -> None:
-    """Run all sync operations except films (which needs an export path)."""
+    """Run all sync operations except films."""
     print("=== Books ===")
     sync_books(args)
     print()
@@ -330,9 +384,11 @@ def main() -> None:
 
     sub.add_parser("books", help="Sync book data from Hardcover")
 
-    films_p = sub.add_parser("films", help="Sync film data from Letterboxd export")
+    films_p = sub.add_parser("films", help="Sync film data from Letterboxd")
     films_p.add_argument(
-        "export_path", help="Path to extracted Letterboxd export directory"
+        "--username",
+        default=LETTERBOXD_DEFAULT_USER,
+        help=f"Letterboxd username (default: {LETTERBOXD_DEFAULT_USER})",
     )
 
     links_p = sub.add_parser("links", help="Sync links from Raindrop.io")
