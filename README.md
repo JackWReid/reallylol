@@ -8,7 +8,7 @@ A Hugo-based personal blog and book tracking website.
 ## Dependencies
 
 ### Cover CLI
-The `scripts/update-books.sh` script uses the [cover CLI](https://github.com/jackreid/cover) to fetch book data from Hardcover. 
+The `bun run cli sync books` command uses the [cover CLI](https://github.com/jackreid/cover) to fetch book data from Hardcover.
 
 #### Installation
 ```bash
@@ -27,21 +27,15 @@ go build -o cover
    export HARDCOVER_API_KEY="your-api-key-here"
    ```
 
-#### Usage
-```bash
-# Update all book data
-./scripts/update-books.sh
-```
-
 ## Development
 
 ### Building the Site
 ```bash
 # Start development server
-hugo server
+hugo server -D --port 1313
 
 # Build for production
-hugo build
+hugo --minify
 ```
 
 ### Testing
@@ -72,6 +66,9 @@ bun run test:ui
 
 # Regenerate screenshot baselines after intentional visual changes
 bun run test:screenshots
+
+# Run CLI unit tests
+bun test scripts/
 ```
 
 **Test files:**
@@ -84,113 +81,46 @@ bun run test:screenshots
 | `tests/accessibility.spec.ts` | Skip-to-content, aria labels, viewport, lang, image alt attributes |
 | `tests/responsive.spec.ts` | Mobile (iPhone 13) vs desktop screenshots |
 | `tests/pagination.spec.ts` | Pagination controls and page navigation |
+| `scripts/lib/__tests__/*.test.ts` | CLI utility unit tests (slugify, frontmatter, dates, JSON) |
 
-### Creating Content
+### Scripts
 
-#### `new-note.sh`
-Creates a new note post. Prompts for note text and generates a slug automatically.
+All content management scripts are consolidated into a single TypeScript CLI run via Bun.
 
-**Dependencies:** None
+#### Content Creation
 
-**Usage:**
 ```bash
-./scripts/new-note.sh
+bun run cli new post              # Create new blog post (opens in vim)
+bun run cli new note              # Create new note
+bun run cli new photo photo.jpg   # Create new photo post (requires exiftool, imagemagick)
+bun run cli new media             # Create new medialog entry (requires fzf)
 ```
 
-#### `new-photo.sh`
-Creates a new photo post from an image file. Extracts creation date from EXIF data and prompts for metadata (slug, title, location, tags, alt text). Automatically resizes and optimizes the image.
+#### Data Sync
 
-**Dependencies:** 
-- `exiftool` (for EXIF data extraction)
-- `imagemagick` (for image processing via `mogrify`)
-
-**Usage:**
 ```bash
-./scripts/new-photo.sh path/to/photo.jpg
+bun run cli sync books            # Sync from Hardcover (requires cover CLI + HARDCOVER_API_KEY)
+bun run cli sync films            # Sync from Letterboxd (RSS + HTML scraping)
+bun run cli sync links            # Sync from Raindrop.io (requires token)
+bun run cli sync photos           # Rebuild random photo pool from content/photo/
+bun run cli sync all              # Run books + links + photos
 ```
 
-#### `new-post.sh`
-Creates a new blog post. Prompts for slug and title, then opens the file in vim for editing.
+#### Utilities
 
-**Dependencies:** `vim` (or your default editor)
-
-**Usage:**
 ```bash
-./scripts/new-post.sh
+bun run cli validate              # Validate frontmatter (reads paths from stdin)
+bun run cli bundle to-bundle      # Convert flat post to page bundle
+bun run cli bundle to-post        # Convert empty bundle to flat post
 ```
 
-#### `new-media.sh`
-Interactive script to create medialog posts for books or movies. Uses `fzf` to browse and select from your read books and watched movies. Shows checkmarks for items that already have posts. Automatically handles duplicate slugs by appending numbers.
+#### Pre-commit Hook
 
-**Dependencies:**
-- `jq` (for JSON parsing)
-- `fzf` (for interactive selection)
-- `vim` (for editing the created post)
+Install the pre-commit hook to validate frontmatter on staged content:
 
-**Usage:**
 ```bash
-./scripts/new-media.sh
+ln -sf ../../scripts/pre-commit .git/hooks/pre-commit
 ```
-
-### Updating Media
-
-#### `update-books.sh`
-Updates book data from Hardcover using the cover CLI. Fetches books in three categories: to-read, reading, and read.
-
-**Dependencies:**
-- `cover` CLI (see Dependencies section above)
-- `HARDCOVER_API_KEY` environment variable
-
-**Usage:**
-```bash
-./scripts/update-books.sh
-```
-
-#### `update-films.sh`
-Updates film data from Letterboxd export. Supports two modes:
-- **Automatic mode**: Downloads the export automatically using cookies
-- **Manual mode**: Processes a pre-downloaded and extracted export directory
-
-**Dependencies:**
-- `sqlite3` (for processing CSV data)
-- `unzip` (for automatic mode)
-- `curl` (for automatic mode)
-
-**Setup for automatic mode:**
-1. Export your Letterboxd cookies using a browser extension (e.g., "cookies.txt" or "Get cookies.txt LOCALLY")
-2. Save cookies to `./creds/letterboxd-cookies.txt` or set `LETTERBOXD_COOKIE_FILE` environment variable
-3. Or set `LETTERBOXD_COOKIES` environment variable with cookie string
-
-**Usage:**
-```bash
-# Automatic mode (requires cookies)
-./scripts/update-films.sh
-
-# Manual mode (if you've already downloaded and extracted the export)
-./scripts/update-films.sh /path/to/extracted/export/
-```
-
-#### `update-random-photos.sh`
-Precomputes a list of eligible photos for random selection in the footer. This reduces build-time computation by filtering photos before Hugo builds, which is especially important for builds running on resource-constrained servers.
-
-The script scans all photos in `content/photo/`, filters out photos with tags listed in `data/content_config.json`'s `exclude_tags`, and writes eligible photo paths to `data/random_photos.json`.
-
-**Dependencies:**
-- `jq` (for JSON parsing and generation)
-
-**Usage:**
-```bash
-# Update the random photo pool (run before committing changes)
-./scripts/update-random-photos.sh
-```
-
-**When to run:**
-- After adding new photos
-- After modifying photo tags
-- After updating `exclude_tags` in `data/content_config.json`
-- Before pushing to production (to ensure fast builds)
-
-The footer template uses this precomputed list to select a random photo, avoiding the need to scan and filter all photos during each Hugo build.
 
 ## Content Types
 The site uses custom Hugo archetypes for different content types:
