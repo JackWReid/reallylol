@@ -9,9 +9,14 @@
     "screenshot": "playwright test tests/dev-screenshots.spec.ts --project=desktop-chromium",
     "screenshot:mobile": "playwright test tests/dev-screenshots.spec.ts --project=mobile-safari",
     "screenshot:all": "playwright test tests/dev-screenshots.spec.ts",
-    "dev": "hugo server -D --port 1313"
+    "dev": "hugo server -D --port 1313",
+    "cli": "bun scripts/cli.ts",
+    "new": "bun scripts/cli.ts new",
+    "sync": "bun scripts/cli.ts sync",
+    "validate": "bun scripts/cli.ts validate"
   },
   "devDependencies": {
-    "@playwright/test": "^1.58.2"
+    "@playwright/test": "^1.58.2",
+    "bun-types": "latest"
   }
 }

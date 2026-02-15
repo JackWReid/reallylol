@@ -7,7 +7,7 @@ echo "Running pre-commit checks..."
 staged_content=$(git diff --cached --name-only --diff-filter=ACM -- 'content/**/*.md' || true)
 if [ -n "$staged_content" ]; then
     echo "  Validating frontmatter..."
-    echo "$staged_content" | python3 scripts/validate-frontmatter.py
+    echo "$staged_content" | bun scripts/cli.ts validate
 else
     echo "  No staged content files to validate."
 fi
