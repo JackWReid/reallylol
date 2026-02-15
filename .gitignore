@@ -9,6 +9,7 @@ test-results/
 playwright-report/
 blob-report/
 tests/screenshots/
+.playwright-cli/
 
 # Dependencies
 node_modules/
