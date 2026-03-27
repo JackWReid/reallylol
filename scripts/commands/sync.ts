@@ -327,6 +327,9 @@ export async function syncAll(args: string[]): Promise<void> {
   console.log("=== Links ===");
   await syncLinks(args);
   console.log();
+  console.log("=== Films ===");
+  await syncFilms(args);
+  console.log();
   console.log("=== Photos ===");
   await syncPhotos(args);
 }
