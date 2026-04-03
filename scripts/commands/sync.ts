@@ -1,4 +1,15 @@
-/** Sync commands: books, films, links, photos, all. */
+/**
+ * Sync commands: books, films, links, photos, all.
+ *
+ * TODO 1: Make `bun run sync` default to `sync all` when no subcommand is provided.
+ * TODO 2: Replace `process.exit()` usage in sync commands with thrown errors; keep exit handling centralised in `scripts/cli.ts`.
+ * TODO 3: Add network resilience helpers (request timeout + retries with exponential backoff for 429/5xx responses).
+ * TODO 4: Add lightweight runtime validation for external API JSON payloads before use.
+ * TODO 5: Unify and document CLI flags across sync commands (support `--flag value`, plus `--verbose`, `--dry-run`, optional output override for testing).
+ * TODO 6: Make scraping/parsing more robust (replace brittle regex-based HTML/RSS parsing with safer parser-based extraction).
+ * TODO 7: Improve dedupe key strategy beyond `${name}|${year}` to avoid collision edge cases.
+ * TODO 8: Return structured per-command summary stats and print a consolidated final summary in `syncAll`.
+ */
 
 import { resolve } from "path";
 import { existsSync, readdirSync, readFileSync } from "fs";
