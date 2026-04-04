@@ -4,6 +4,11 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://really.lol",
   output: "static",
+  vite: {
+    resolve: {
+      preserveSymlinks: true,
+    },
+  },
   integrations: [
     sitemap({
       serialize(item) {

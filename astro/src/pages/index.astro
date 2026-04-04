@@ -1,5 +1,10 @@
 ---
 import "../styles/style.css";
+import { getCollection } from "astro:content";
+const posts = await getCollection("post");
+const notes = await getCollection("note");
+const photos = await getCollection("photo");
+const highlights = await getCollection("highlight");
 ---
 <html lang="en-gb">
   <head><title>really.lol</title></head>
@@ -7,6 +12,7 @@ import "../styles/style.css";
     <header class="site-header">
       <div class="site-header-wrapper">
         <h1>really.lol</h1>
+        <p>posts: {posts.length}, notes: {notes.length}, photos: {photos.length}, highlights: {highlights.length}</p>
       </div>
     </header>
   </body>
