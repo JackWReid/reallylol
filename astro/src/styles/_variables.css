@@ -1,0 +1,73 @@
+:root {
+  /* Colors */
+  --color-background: #f5efd3;
+  --color-line: #19282f;
+  --color-text: #19282f;
+  --color-text-muted: #555;
+  --color-text-secondary: #a08c5b;
+  --color-link-hover-text: white;
+  --color-link-hover-bg: lightcoral;
+  --color-footer-bg: #0f5d9c;
+
+  /* Typography */
+  --font-base: Charter, Georgia, Times New Roman, times, serif;
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen-sans, ubuntu,
+    cantarell, "helvetica neue", sans-serif;
+  --font-size-xs: 0.8rem;
+  --font-size-sm: 0.85rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.05rem;
+  --font-size-lg: 1.2em;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 3rem;
+
+  /* Spacing */
+  --spacing-xs: 0.2rem;
+  --spacing-sm: 0.3rem;
+  --spacing-base: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 5rem;
+
+  /* Dimensions */
+  --width-inner: 700px;
+  --width-outer: 1000px;
+  --width-hero-image: 500px;
+  --width-hero-image-post: 300px;
+  --width-multi-preview: 600px;
+  --width-note-section-header: 500px;
+  --width-note-container: 30rem;
+  --width-note-list-item: 30em;
+  --width-photo-box-img: 20rem;
+  --width-book-card: 220px;
+  --width-book-card-cover-small: 64px;
+  --height-book-card: 340px;
+  --height-book-card-small: 220px;
+  --height-book-card-cover-small: 96px;
+  --height-photo-grid-img: 15rem;
+  --position-hero-right: 50px;
+  --position-hero-bottom: 6px;
+  --position-note-top: 40px;
+  --position-note-left: 60px;
+
+  /* Breakpoints */
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 800px;
+  --breakpoint-lg: 1000px;
+  --breakpoint-xl: 1070px;
+
+  /* Other */
+  --radius-small: 3px;
+  --transition-base: 0.2s ease;
+  --opacity-muted: 40%;
+  --line-height-content: 1.5;
+  --font-size-info: 0.95rem;
+  --spacing-table-cell: 0.75rem;
+  --width-book-grid-item: 200px;
+  --width-book-grid-item-small: 130px;
+
+  font-family: var(--font-base);
+}
