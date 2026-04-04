@@ -1,0 +1,45 @@
+---
+import { getCollection } from "astro:content";
+import type { GetStaticPathsOptions } from "astro";
+import Base from "../../layouts/Base.astro";
+import PreviewCard from "../../components/PreviewCard.astro";
+import Pagination from "../../components/Pagination.astro";
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const posts = await getCollection("post");
+  const sorted = posts.sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  );
+  return paginate(sorted, { pageSize: 10 });
+}
+
+const { page } = Astro.props;
+---
+
+<Base title="Posts" section="post">
+  <main class="section-main section-main--post">
+    <img
+      alt="A watercolor illustration of mushrooms"
+      class="section-hero-image--post"
+      src="/img/layout/mushrooms.png"
+    />
+    <h1 class="section-title">Posts</h1>
+    <div class="multi-preview-list">
+      {page.data.map((post) => (
+        <PreviewCard
+          type="post"
+          title={post.data.title}
+          date={post.data.date}
+          id={post.id}
+          tags={post.data.tags}
+        />
+      ))}
+    </div>
+    <Pagination
+      currentPage={page.currentPage}
+      lastPage={page.lastPage}
+      prevUrl={page.url.prev}
+      nextUrl={page.url.next}
+    />
+  </main>
+</Base>
