@@ -8,7 +8,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: "html",
   use: {
-    baseURL: "http://localhost:1313",
+    baseURL: "http://localhost:4321",
     trace: "on-first-retry",
   },
   projects: [
@@ -22,9 +22,9 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: "hugo server -D --port 1313",
-    url: "http://localhost:1313",
+    command: "bun run dev",
+    url: "http://localhost:4321",
     reuseExistingServer: !process.env.CI,
-    timeout: 30_000,
+    timeout: 60_000,
   },
 });

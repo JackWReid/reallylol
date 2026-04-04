@@ -1,9 +1,0 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-image: "img/photo/{{ .Name }}.jpg"
-location: ""
-tags: []
----
-
-{{< image src="img/photo/{{ .Name }}.jpg" alt="Alt text" >}}
