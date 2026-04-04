@@ -1,18 +1,13 @@
 # Worktrees
 .worktrees/
 
-# Hugo build artifacts (public/ is Astro's static assets dir, Hugo output is excluded except static assets)
-public/
-!public/favicon.png
-!public/manifest.json
-!public/img/
-resources/
-resources/_gen/
-.hugo_build.lock
-
-# Astro build output
+# Astro
 dist/
 .astro/
+
+# Local media (content photos for dev; production images are on R2)
+assets/
+public/img/photo
 
 # Playwright
 test-results/
@@ -20,6 +15,7 @@ playwright-report/
 blob-report/
 tests/screenshots/
 .playwright-cli/
+.playwright/
 
 # Dependencies
 node_modules/
