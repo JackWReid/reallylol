@@ -3,3 +3,5 @@ node_modules/
 .astro/
 *.log
 .DS_Store
+.env.local
+public/img
