@@ -8,6 +8,8 @@
  *   bun scripts/cli.ts new photo <image>
  *   bun scripts/cli.ts new media [--benchmark]
  *   bun scripts/cli.ts sync books|films|links|photos|all [--verbose] [--dry-run] [--output <path>]
+ *   bun scripts/cli.ts r2 sync [--dry-run] [--force]
+ *   bun scripts/cli.ts r2 verify [--verbose]
  *
  * Sync Command Flags (unified across all sync subcommands):
  *   --verbose / -v       Enable verbose logging output
@@ -22,6 +24,7 @@
  */
 
 import { newPost, newNote, newPhoto, newMedia } from "./commands/new";
+import { syncR2, verifyR2 } from "./commands/r2";
 import {
   syncBooks,
   syncFilms,
@@ -45,6 +48,10 @@ const commands: Record<string, Command | Record<string, Command>> = {
     links: syncLinks,
     photos: syncPhotos,
     all: syncAll,
+  },
+  r2: {
+    sync: syncR2,
+    verify: verifyR2,
   },
 };
 
