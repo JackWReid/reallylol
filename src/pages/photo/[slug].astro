@@ -1,5 +1,5 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import Calendar from "../../components/icons/Calendar.astro";
 import Location from "../../components/icons/Location.astro";
@@ -15,8 +15,6 @@ export async function getStaticPaths() {
 }
 
 const { photo } = Astro.props;
-const { Content } = await render(photo);
-
 const dateIso = photo.data.date.toISOString().slice(0, 10);
 const heroUrl = r2Hero(photo.data.image);
 ---
@@ -44,10 +42,6 @@ const heroUrl = r2Hero(photo.data.image);
 
     <div class="single-main__photo">
       <img src={heroUrl} alt={photo.data.title} />
-    </div>
-
-    <div class="single-main__content">
-      <Content />
     </div>
   </main>
 </Base>
