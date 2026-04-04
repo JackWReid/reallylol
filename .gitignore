@@ -1,3 +1,6 @@
+# Worktrees
+.worktrees/
+
 # Hugo build artifacts
 public/
 resources/
