@@ -48,6 +48,7 @@ tmp/
 *.cache
 *.pid
 *.lock
+!astro/bun.lock
 
 # Python
 __pycache__/
