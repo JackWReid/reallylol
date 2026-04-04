@@ -48,7 +48,7 @@ const lastUpdated = now.toLocaleString("en-GB", {
             />
           </a>
           <div class="photo-box__details">
-            <p class="image-item__label">From the collection</p>
+            <p class="image-item__label">Random photo</p>
             <p class="image-item__title">
               <a href={`/photo/${photo.id}/`}>{photo.data.title}</a>
             </p>
@@ -73,9 +73,9 @@ const lastUpdated = now.toLocaleString("en-GB", {
       <p>
         <a rel="me" href="https://social.lol/@nice">@nice</a>
         <a href="/now">/now</a>
-        <a href="/index.xml">RSS</a>
+        <a href="/rss.xml">RSS</a>
       </p>
-      <p>Catalogued {lastUpdated}</p>
+      <p>Fresh as of {lastUpdated}</p>
     </section>
   </footer>
 </div>
