@@ -26,7 +26,7 @@ import { createReadStream } from "node:fs";
 import { lookup as mimeLookup } from "node:path";
 
 const ACCOUNT_ID = process.env.R2_ACCOUNT_ID ?? "f163765cc814ca4c341357f282e5d166";
-const BUCKET = process.env.R2_BUCKET ?? "reallylol-images-production";
+const BUCKET = process.env.R2_BUCKET ?? "media-really-lol";
 const ROOT = resolve(import.meta.dir, "../..");
 const ASSETS_IMG = resolve(ROOT, "assets/img");
 const CONTENT_DIR = resolve(ROOT, "src/content");
