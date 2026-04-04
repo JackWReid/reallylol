@@ -1,7 +1,11 @@
 # Worktrees
 .worktrees/
 
-# Hugo build artifacts
+# Hugo build artifacts (public/ is Astro's static assets dir, Hugo output is excluded except static assets)
+public/
+!public/favicon.png
+!public/manifest.json
+!public/img/
 resources/
 resources/_gen/
 .hugo_build.lock

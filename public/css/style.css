@@ -1,9 +1,0 @@
-@layer reset, base, layout, components, specials, utilities;
-
-@import url("_variables.css");
-@import url("_reset.css") layer(reset);
-@import url("_base.css") layer(base);
-@import url("_layout.css") layer(layout);
-@import url("_components.css") layer(components);
-@import url("_specials.css") layer(specials);
-@import url("_utilities.css") layer(utilities);
