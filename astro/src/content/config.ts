@@ -71,4 +71,18 @@ const highlight = defineCollection({
   }),
 });
 
-export const collections = { post, note, photo, highlight };
+const about = defineCollection({
+  loader: glob({
+    pattern: ["**/*.md"],
+    base: contentBase("about"),
+  }),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    layout: z.string().optional(),
+    url: z.string().optional(),
+    tags: z.array(z.string()).optional(),
+  }),
+});
+
+export const collections = { post, note, photo, highlight, about };
