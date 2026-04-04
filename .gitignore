@@ -75,7 +75,7 @@ __pycache__/
 .tag_backups/
 
 # Content-specific
-content/.obsidian/
+src/content/.obsidian/
 
 # Build and deployment
 build/
