@@ -5,6 +5,7 @@ import Base from "../../../layouts/Base.astro";
 import PreviewCard from "../../../components/PreviewCard.astro";
 import Pagination from "../../../components/Pagination.astro";
 import { getPrettyName, tagToSlug } from "../../../lib/tags";
+import { generateSummary } from "../../../lib/summary";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const posts = await getCollection("post");
@@ -68,6 +69,7 @@ const prettyTag = getPrettyName(tag);
               date={item.data.date}
               id={item.id}
               tags={item.data.tags}
+              excerpt={generateSummary(item.body ?? "")}
             />
           );
         }
