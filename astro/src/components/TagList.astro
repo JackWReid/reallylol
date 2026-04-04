@@ -1,0 +1,20 @@
+---
+import { getPrettyName } from "../lib/tags";
+
+interface Props {
+  tags: string[];
+  baseHref?: string;
+}
+
+const { tags, baseHref = "/tags/" } = Astro.props;
+---
+
+{tags.length > 0 && (
+  <ul class="section-item__tags">
+    {tags.map((tag) => (
+      <li class="section-item__tags-item">
+        <a href={`${baseHref}${tag}/`}>#{getPrettyName(tag).toLowerCase()}</a>
+      </li>
+    ))}
+  </ul>
+)}

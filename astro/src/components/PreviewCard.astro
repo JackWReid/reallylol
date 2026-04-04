@@ -1,0 +1,109 @@
+---
+import Calendar from "./icons/Calendar.astro";
+import Capture from "./icons/Capture.astro";
+import Location from "./icons/Location.astro";
+import Paperclip from "./icons/Paperclip.astro";
+import Pen from "./icons/Pen.astro";
+import Speech from "./icons/Speech.astro";
+import { r2Thumb } from "../lib/images";
+import { getPrettyName } from "../lib/tags";
+
+interface Props {
+  type: "post" | "note" | "photo" | "highlight";
+  title: string;
+  date: Date;
+  id: string;
+  tags?: string[];
+  image?: string;
+  location?: string;
+  excerpt?: string;
+}
+
+const { type, title, date, id, tags, image, location, excerpt } = Astro.props;
+const dateStr = date.toLocaleDateString("en-GB", { year: "numeric", month: "long", day: "numeric" });
+const dateIso = date.toISOString().slice(0, 10);
+const thumbUrl = image ? r2Thumb(image) : undefined;
+
+const hrefMap: Record<string, string> = {
+  post: `/post/${id}/`,
+  note: `/note/${id}/`,
+  photo: `/photo/${id}/`,
+  highlight: `/highlight/${id}/`,
+};
+const href = hrefMap[type] ?? `/${type}/${id}/`;
+---
+
+{type === "post" && (
+  <article class="blog-item">
+    <p class="blog-item__title">
+      <Pen />
+      <a href={href}>{title}</a>
+    </p>
+    {tags && tags.length > 0 && (
+      <ul class="section-item__tags">
+        {tags.map((tag) => (
+          <li class="section-item__tags-item">
+            <a href={`/tags/${tag}/`}>#{getPrettyName(tag).toLowerCase()}</a>
+          </li>
+        ))}
+      </ul>
+    )}
+    <p class="blog-item__date">
+      <Calendar /> <time datetime={dateIso}>{dateStr}</time>
+    </p>
+    {excerpt && <div class="blog-item__excerpt" set:html={excerpt} />}
+  </article>
+)}
+
+{type === "note" && (
+  <article class="note-item">
+    <p class="note-item__title">
+      <Speech />
+      <a href={href}>{title}</a>
+    </p>
+    <p class="note-item__date">
+      <Calendar /> <time datetime={dateIso}>{dateStr}</time>
+    </p>
+  </article>
+)}
+
+{type === "photo" && (
+  <article class="image-item">
+    <div class="image-item__details">
+      <p class="image-item__title">
+        <Capture />
+        <a href={href}>{title}</a>
+      </p>
+      {location && (
+        <p class="image-item__location">
+          <Location />
+          <span>{location}</span>
+        </p>
+      )}
+      <p class="image-item__date">
+        <Calendar /> <time datetime={dateIso}>{dateStr}</time>
+      </p>
+    </div>
+    {thumbUrl && <img src={thumbUrl} alt={title} />}
+  </article>
+)}
+
+{type === "highlight" && (
+  <article class="highlight-item">
+    <p class="highlight-item__title">
+      <Paperclip />
+      <a href={href}>{title}</a>
+    </p>
+    {tags && tags.length > 0 && (
+      <p class="highlight-item__tags">
+        {tags.map((tag) => (
+          <a href={`/tags/${tag}/`}>#{getPrettyName(tag).toLowerCase()}</a>
+        ))}
+      </p>
+    )}
+    <p class="highlight-item__date">
+      <Calendar /> <time datetime={dateIso}>{dateStr}</time>
+    </p>
+    {excerpt && <div class="highlight-item__content" set:html={excerpt} />}
+  </article>
+)}
