@@ -1,19 +1,17 @@
 ---
 import { getCollection } from "astro:content";
-import type { GetStaticPathsOptions } from "astro";
 import Base from "../../layouts/Base.astro";
 import PreviewCard from "../../components/PreviewCard.astro";
 import Pagination from "../../components/Pagination.astro";
 
-export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-  const posts = await getCollection("post");
-  const sorted = posts.sort(
-    (a, b) => b.data.date.getTime() - a.data.date.getTime()
-  );
-  return paginate(sorted, { pageSize: 10 });
-}
+const posts = await getCollection("post");
+const sorted = posts.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
 
-const { page } = Astro.props;
+const pageSize = 10;
+const totalPages = Math.ceil(sorted.length / pageSize);
+const pageData = sorted.slice(0, pageSize);
 ---
 
 <Base title="Posts" section="post">
@@ -25,7 +23,7 @@ const { page } = Astro.props;
     />
     <h1 class="section-title">Posts</h1>
     <div class="multi-preview-list">
-      {page.data.map((post) => (
+      {pageData.map((post) => (
         <PreviewCard
           type="post"
           title={post.data.title}
@@ -36,10 +34,10 @@ const { page } = Astro.props;
       ))}
     </div>
     <Pagination
-      currentPage={page.currentPage}
-      lastPage={page.lastPage}
-      prevUrl={page.url.prev}
-      nextUrl={page.url.next}
+      currentPage={1}
+      lastPage={totalPages}
+      prevUrl={undefined}
+      nextUrl={totalPages > 1 ? "/post/page/2/" : undefined}
     />
   </main>
 </Base>

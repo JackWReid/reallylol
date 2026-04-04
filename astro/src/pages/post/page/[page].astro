@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../../layouts/Base.astro";
+import PreviewCard from "../../../components/PreviewCard.astro";
+import Pagination from "../../../components/Pagination.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("post");
+  const sorted = posts.sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  );
+
+  const pageSize = 10;
+  const totalPages = Math.ceil(sorted.length / pageSize);
+
+  const paths = [];
+  for (let page = 2; page <= totalPages; page++) {
+    const start = (page - 1) * pageSize;
+    const data = sorted.slice(start, start + pageSize);
+    paths.push({
+      params: { page: String(page) },
+      props: {
+        pageData: data,
+        currentPage: page,
+        lastPage: totalPages,
+        prevUrl: page === 2 ? "/post/" : `/post/page/${page - 1}/`,
+        nextUrl: page < totalPages ? `/post/page/${page + 1}/` : undefined,
+      },
+    });
+  }
+  return paths;
+}
+
+const { pageData, currentPage, lastPage, prevUrl, nextUrl } = Astro.props;
+---
+
+<Base title="Posts" section="post">
+  <main class="section-main section-main--post">
+    <img
+      alt="A watercolor illustration of mushrooms"
+      class="section-hero-image--post"
+      src="/img/layout/mushrooms.png"
+    />
+    <h1 class="section-title">Posts</h1>
+    <div class="multi-preview-list">
+      {pageData.map((post: any) => (
+        <PreviewCard
+          type="post"
+          title={post.data.title}
+          date={post.data.date}
+          id={post.id}
+          tags={post.data.tags}
+        />
+      ))}
+    </div>
+    <Pagination
+      currentPage={currentPage}
+      lastPage={lastPage}
+      prevUrl={prevUrl}
+      nextUrl={nextUrl}
+    />
+  </main>
+</Base>

@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
+import { remarkHugoShortcodes } from "./src/lib/remark-hugo-shortcodes";
 
 export default defineConfig({
   site: "https://really.lol",
@@ -21,6 +22,7 @@ export default defineConfig({
     }),
   ],
   markdown: {
+    remarkPlugins: [remarkHugoShortcodes],
     shikiConfig: { theme: "dracula" },
   },
 });

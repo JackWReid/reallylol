@@ -1,18 +1,38 @@
 ---
 import { getCollection } from "astro:content";
 import type { GetStaticPathsOptions } from "astro";
-import Base from "../../layouts/Base.astro";
-import Pagination from "../../components/Pagination.astro";
+import Base from "../../../layouts/Base.astro";
+import Pagination from "../../../components/Pagination.astro";
 
-export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+export async function getStaticPaths() {
   const notes = await getCollection("note");
   const sorted = notes.sort(
     (a, b) => b.data.date.getTime() - a.data.date.getTime()
   );
-  return paginate(sorted, { pageSize: 10 });
+
+  const pageSize = 10;
+  const totalPages = Math.ceil(sorted.length / pageSize);
+
+  // Generate paths for pages 2+
+  const paths = [];
+  for (let page = 2; page <= totalPages; page++) {
+    const start = (page - 1) * pageSize;
+    const data = sorted.slice(start, start + pageSize);
+    paths.push({
+      params: { page: String(page) },
+      props: {
+        pageData: data,
+        currentPage: page,
+        lastPage: totalPages,
+        prevUrl: page === 2 ? "/note/" : `/note/page/${page - 1}/`,
+        nextUrl: page < totalPages ? `/note/page/${page + 1}/` : undefined,
+      },
+    });
+  }
+  return paths;
 }
 
-const { page } = Astro.props;
+const { pageData, currentPage, lastPage, prevUrl, nextUrl } = Astro.props;
 ---
 
 <Base title="Notes" section="note">
@@ -25,7 +45,7 @@ const { page } = Astro.props;
       />
       <h1 class="note-list-title">Notes</h1>
     </header>
-    {page.data.map((note) => {
+    {pageData.map((note: any) => {
       const dateIso = note.data.date.toISOString().slice(0, 10);
       const dateStr = note.data.date.toLocaleDateString("en-GB", {
         year: "numeric",
@@ -42,10 +62,10 @@ const { page } = Astro.props;
       );
     })}
     <Pagination
-      currentPage={page.currentPage}
-      lastPage={page.lastPage}
-      prevUrl={page.url.prev}
-      nextUrl={page.url.next}
+      currentPage={currentPage}
+      lastPage={lastPage}
+      prevUrl={prevUrl}
+      nextUrl={nextUrl}
     />
   </main>
 </Base>
