@@ -18,16 +18,32 @@
  *   Permissions needed: Object Read & Write on reallylol-images-production
  */
 
-import { S3Client, HeadObjectCommand, ListObjectsV2Command, HeadObjectCommandInput } from "@aws-sdk/client-s3";
+import { S3Client, HeadObjectCommand } from "@aws-sdk/client-s3";
 import { Upload } from "@aws-sdk/lib-storage";
-import { readdir, readFile, stat } from "node:fs/promises";
+import { readdir, readFile, access } from "node:fs/promises";
 import { resolve, join, relative } from "node:path";
 import { createReadStream } from "node:fs";
-import { lookup as mimeLookup } from "node:path";
 
 const ACCOUNT_ID = process.env.R2_ACCOUNT_ID ?? "f163765cc814ca4c341357f282e5d166";
 const BUCKET = process.env.R2_BUCKET ?? "media-really-lol";
-const ROOT = resolve(import.meta.dir, "../..");
+const ROOT = resolve(new URL("../..", import.meta.url).pathname);
+
+async function loadEnvLocal(): Promise<void> {
+  const envPath = resolve(ROOT, ".env.local");
+  try {
+    await access(envPath);
+    const text = await readFile(envPath, "utf-8");
+    for (const line of text.split("\n")) {
+      const eq = line.indexOf("=");
+      if (eq < 1) continue;
+      const k = line.slice(0, eq).trim();
+      const v = line.slice(eq + 1).trim();
+      if (k && !(k in process.env)) process.env[k] = v;
+    }
+  } catch {
+    // no .env.local, that's fine
+  }
+}
 const ASSETS_IMG = resolve(ROOT, "assets/img");
 const CONTENT_DIR = resolve(ROOT, "src/content");
 
@@ -115,16 +131,7 @@ export async function syncR2(args: string[]): Promise<void> {
   const force = args.includes("--force");
   const concurrency = 8; // parallel uploads
 
-  // Load .env.local
-  const envPath = resolve(ROOT, ".env.local");
-  const envFile = Bun.file(envPath);
-  if (await envFile.exists()) {
-    const text = await envFile.text();
-    for (const line of text.split("\n")) {
-      const [k, ...rest] = line.split("=");
-      if (k && rest.length) process.env[k.trim()] = rest.join("=").trim();
-    }
-  }
+  await loadEnvLocal();
 
   const client = makeClient();
 
@@ -188,16 +195,7 @@ export async function syncR2(args: string[]): Promise<void> {
 export async function verifyR2(args: string[]): Promise<void> {
   const verbose = args.includes("--verbose");
 
-  // Load .env.local
-  const envPath = resolve(ROOT, ".env.local");
-  const envFile = Bun.file(envPath);
-  if (await envFile.exists()) {
-    const text = await envFile.text();
-    for (const line of text.split("\n")) {
-      const [k, ...rest] = line.split("=");
-      if (k && rest.length) process.env[k.trim()] = rest.join("=").trim();
-    }
-  }
+  await loadEnvLocal();
 
   const client = makeClient();
   console.log(`Verifying image paths in R2 bucket: ${BUCKET}`);

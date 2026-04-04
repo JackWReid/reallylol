@@ -134,13 +134,13 @@ interface CurtainFilmEntry {
 
 function curtainEntryToFilm(
   entry: CurtainFilmEntry,
-  dateField: string,
+  dateField: "watchedDate" | "addedDate",
 ): Film {
   const year = entry.film.year ?? "";
   return {
     name: entry.film.title,
     year: String(year),
-    date_updated: entry[dateField as keyof CurtainFilmEntry] as string | undefined,
+    date_updated: entry[dateField] ?? undefined,
   };
 }
 
@@ -216,8 +216,10 @@ export async function syncFilms(args: string[]): Promise<void> {
   const existingWatched = loadJson<Film>(watchedPath);
   const seen = new Map<string, Film>();
   for (const f of existingWatched) seen.set(`${f.name}|${f.year}`, f);
-  for (const f of rawDiary)
-    seen.set(`${f.name}|${f.year}`, curtainEntryToFilm(f, "watchedDate"));
+  for (const entry of rawDiary) {
+    const f = curtainEntryToFilm(entry, "watchedDate");
+    seen.set(`${f.name}|${f.year}`, f);
+  }
   const watched = [...seen.values()].sort((a, b) =>
     (b.date_updated ?? "").localeCompare(a.date_updated ?? ""),
   );
