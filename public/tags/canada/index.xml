@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Canada on really.lol</title>
+    <link>https://really.lol/tags/canada/</link>
+    <description>Recent content in Canada on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://really.lol/tags/canada/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🏙🇨🇦</title>
+      <link>https://really.lol/photo/2016-03-08-cad4cd3a6a9f5b67f6f3baae70ce7900/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2016-03-08-cad4cd3a6a9f5b67f6f3baae70ce7900/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>Toronto is proving a good place to chill for a bit and catch up on some rest.</title>
+      <link>https://really.lol/photo/2016-03-07-bc56a3fa56aca9212e3396bf2e330d5a/</link>
+      <pubDate>Mon, 07 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2016-03-07-bc56a3fa56aca9212e3396bf2e330d5a/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

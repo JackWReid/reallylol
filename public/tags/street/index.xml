@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Street on really.lol</title>
+    <link>https://really.lol/tags/street/</link>
+    <description>Recent content in Street on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 03 Feb 2024 14:18:07 +0000</lastBuildDate><atom:link href="https://really.lol/tags/street/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crackle</title>
+      <link>https://really.lol/photo/2024-02-03-burned-interior/</link>
+      <pubDate>Sat, 03 Feb 2024 14:18:07 +0000</pubDate>
+      <guid>https://really.lol/photo/2024-02-03-burned-interior/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>Make open</title>
+      <link>https://really.lol/photo/2024-01-20-make-open-bottle/</link>
+      <pubDate>Sat, 20 Jan 2024 12:28:20 +0000</pubDate>
+      <guid>https://really.lol/photo/2024-01-20-make-open-bottle/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>expensive shit</title>
+      <link>https://really.lol/photo/2018-04-19-e4ddc38937294cd119c52d0451ae4911/</link>
+      <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2018-04-19-e4ddc38937294cd119c52d0451ae4911/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

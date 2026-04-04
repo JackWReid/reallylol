@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engineering on really.lol</title>
+    <link>https://really.lol/tags/engineering/</link>
+    <description>Recent content in Engineering on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 28 May 2020 08:53:12 +0000</lastBuildDate><atom:link href="https://really.lol/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Off-Road Land Trains</title>
+      <link>https://really.lol/highlight/off-road-land-trains/</link>
+      <pubDate>Thu, 28 May 2020 08:53:12 +0000</pubDate>
+      <guid>https://really.lol/highlight/off-road-land-trains/</guid>
+      
+      <description>&lt;blockquote&gt;
+&lt;p&gt;By 1954, with the Cold War well underway, the U.S. government realized the quickest way to get a nuclear bomber from Russia to America was to go right over the Arctic Circle. If we wanted any chance of preventing a nuclear apocalypse, we needed to know if Soviet bombers were crossing the North Pole as soon as possible. The Army planned to build 63 manned radar stations in the high Arctic around the 69th parallel (200 miles north of the Arctic circle) as a result. And to transport all the necessary material that far north, it would have to get creative.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— &lt;a href=&#34;https://www.thedrive.com/news/33645/the-incredible-story-of-the-us-armys-earth-shaking-off-road-land-trains&#34;&gt;The Incredible Story of the US Army&amp;rsquo;s Earth-Shaking, Off-Road Land Trains&lt;/a&gt;, by Peter Holderith&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>Mother Earth Mother Board</title>
+      <link>https://really.lol/highlight/mother-board-earth/</link>
+      <pubDate>Thu, 21 May 2020 18:12:22 +0000</pubDate>
+      <guid>https://really.lol/highlight/mother-board-earth/</guid>
+      
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Douglas Barnes, an Oakland-based hacker and cypherpunk, looked into this issue a couple of years ago when, inspired by Bruce Sterling&amp;rsquo;s Islands in the Net, he was doing background research on a project to set up a data haven in the Caribbean. &amp;lsquo;I found out that the idea of the Internet as a highly distributed, redundant global communications system is a myth,&amp;rsquo;&amp;rsquo; he discovered. &amp;lsquo;Virtually all communications between countries take place through a very small number of bottlenecks, and the available bandwidth simply isn&amp;rsquo;t that great.&amp;rsquo;&amp;rsquo; And he cautions: &amp;lsquo;Even outfits like FLAG don&amp;rsquo;t really grok the Internet. The undersized cables they are running reflect their myopic outlook.&amp;rsquo;&amp;rsquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— &lt;a href=&#34;https://www.wired.com/1996/12/ffglass/&#34;&gt;Mother Earth Mother Board&lt;/a&gt;, Neal Stephenson in &lt;em&gt;WIRED&lt;/em&gt;&lt;/p&gt;
+</description>
+			
+    </item>
+    
+  </channel>
+</rss>

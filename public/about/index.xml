@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on really.lol</title>
+    <link>https://really.lol/about/</link>
+    <description>Recent content in Abouts on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://really.lol/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Now</title>
+      <link>https://really.lol/now/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/now/</guid>
+      
+      <description>&lt;p&gt;I&amp;rsquo;m living in Alt-Treptow, Berlin. I&amp;rsquo;m working in tech but I&amp;rsquo;m writing a lot of fiction (not this, this is true). We&amp;rsquo;re married.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>Uses</title>
+      <link>https://really.lol/uses/</link>
+      <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/uses/</guid>
+      
+      <description>&lt;h2 id=&#34;day-job&#34;&gt;Day Job&lt;/h2&gt;
+&lt;p&gt;At my day job at Miro I’m an Engineering Manager. I work from the office basically every day.&lt;/p&gt;
+&lt;p&gt;I use my company-issued &lt;strong&gt;MacBook Pro “14, 2022&lt;/strong&gt; (M1). At the office, use a &lt;strong&gt;Apple Magic Mouse&lt;/strong&gt; and the standard wireless &lt;strong&gt;Apple Keyboard&lt;/strong&gt; with an ultra-wide Samsung monitor that would never be able to afford or accommodate myself.&lt;/p&gt;
+&lt;p&gt;I really like handwritten notes but I hate writing them up. When I&amp;rsquo;m making notes by hand, I don&amp;rsquo;t use a bound notebook any more. I use notepads with tear away pages. At the moment I&amp;rsquo;m writing my notes digitally, using the &lt;strong&gt;Obsidian&lt;/strong&gt; markdown note editor knowledge-base thingy. One type of note I keep is a daily agenda that I write at the end of the previous day.It’s just headings of the projects I’m working on with a bullet pointed list of stuff to work through. Writing it at the end of the workday helps me empty my mind of work when I go home, and reading it in the morning feels like loading a condensed version of yesterday’s work brain again.&lt;/p&gt;
+&lt;p&gt;I’m on MacOS Big Sur. The apps I have open all day every day are &lt;strong&gt;Safari&lt;/strong&gt;, &lt;strong&gt;Chrome&lt;/strong&gt;, &lt;strong&gt;Mail&lt;/strong&gt;, &lt;strong&gt;Slack&lt;/strong&gt;, &lt;strong&gt;Apple Music&lt;/strong&gt;, &lt;strong&gt;Terminal&lt;/strong&gt;, &lt;strong&gt;Notes&lt;/strong&gt;, &lt;strong&gt;Reminders&lt;/strong&gt;, and &lt;strong&gt;Calendar&lt;/strong&gt;. My passwords are all managed through &lt;strong&gt;1Password&lt;/strong&gt; and some work logins are managed by IT through &lt;strong&gt;Okta&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I used to use Bash to keep things simple but since MacOS started defaulting to &lt;strong&gt;Zsh&lt;/strong&gt; I switched over to itI use &lt;strong&gt;Vim&lt;/strong&gt; with &lt;strong&gt;NERDtree&lt;/strong&gt; for all of my development. Towards the end of 2020 I moved into a more management heavy role, which means less time in Terminal and more time in &lt;strong&gt;Obsidian&lt;/strong&gt; and then &lt;strong&gt;Google Docs&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;daily-carry&#34;&gt;Daily Carry&lt;/h2&gt;
+&lt;p&gt;My backpack is a black Patagonia Black Hole 32L, which I adore. My bike is a &lt;strong&gt;Hackney Cycles single-speed in black&lt;/strong&gt;, which I hope is abundant and low value enough that it isn&amp;rsquo;t attractive to thieves.&lt;/p&gt;
+&lt;h2 id=&#34;personal-tech&#34;&gt;Personal Tech&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve got a more detailed post about about this but in short: it&amp;rsquo;s a Hugo site that I keep changing the hosting for. In long: &lt;a href=&#34;https://really.lol/post/how-this-site-works/&#34;&gt;you&amp;rsquo;ll have to read here&lt;/a&gt;.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+  </channel>
+</rss>

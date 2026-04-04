@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Greenwich on really.lol</title>
+    <link>https://really.lol/tags/greenwich/</link>
+    <description>Recent content in Greenwich on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 08 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://really.lol/tags/greenwich/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>morning</title>
+      <link>https://really.lol/photo/2018-02-08-ddc77ee01aa0bff3f134b0b36eaa6331/</link>
+      <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2018-02-08-ddc77ee01aa0bff3f134b0b36eaa6331/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>207.0 - zoom</title>
+      <link>https://really.lol/photo/2017-08-21-ce8832dd2466e956a572b0513dd27887/</link>
+      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2017-08-21-ce8832dd2466e956a572b0513dd27887/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>195.0 - when living</title>
+      <link>https://really.lol/photo/2017-08-08-0372c4d2fa857a05cec79bc80b37ef3a/</link>
+      <pubDate>Tue, 08 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2017-08-08-0372c4d2fa857a05cec79bc80b37ef3a/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

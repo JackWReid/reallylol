@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on really.lol</title>
+    <link>https://really.lol/tags/home/</link>
+    <description>Recent content in Home on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 13 May 2025 07:31:03 +0000</lastBuildDate><atom:link href="https://really.lol/tags/home/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>White sheets and blackout blinds</title>
+      <link>https://really.lol/photo/2025-05-13-soft-bed-sheets/</link>
+      <pubDate>Tue, 13 May 2025 07:31:03 +0000</pubDate>
+      <guid>https://really.lol/photo/2025-05-13-soft-bed-sheets/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>Sunday</title>
+      <link>https://really.lol/photo/2024-02-10-sunday-ring/</link>
+      <pubDate>Sat, 10 Feb 2024 15:04:14 +0000</pubDate>
+      <guid>https://really.lol/photo/2024-02-10-sunday-ring/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>Building a computer</title>
+      <link>https://really.lol/post/2023-06-23-nas/</link>
+      <pubDate>Fri, 23 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/post/2023-06-23-nas/</guid>
+      
+      <description>&lt;p&gt;I was a real life, buck-toothed &lt;strong&gt;nerd&lt;/strong&gt; when I was a child. I liked video games, didn&amp;rsquo;t play outside enough. I spent a lot of time playing around on a computer. But I never built one.&lt;/p&gt;
+&lt;p&gt;As an adult, I pay for the convenience of not having to be in one place to do computer things. I have been subscribed to Dropbox, iCloud, and many TV and movie streaming services over the years. Those are becoming less and less of a good deal, and the geeky voice at the back of mind is saying louder and louder: why not do it yourself?&lt;/p&gt;
+&lt;p&gt;For a while I had a second-hand Mac Mini with an external hard drive dangling out the back, and it was my Plex server. It did a passable job at this but there were problems. All the applications except for Plex were running inside Docker Desktop and that would just crash every week or so. I never did figure out why. The other big problem was that that single 4TB hard drive was filling up. and I didn&amp;rsquo;t really like the idea of building up a big squid of unreliable hard drives attached to an overpriced, ill-suited Mac.&lt;/p&gt;
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;I decided that I wanted to collapse a few disparate needs into one home server:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Physically un-intrusive and not too loud. I do not want to be a &amp;ldquo;big server guy&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;A media server capable of holding and streaming a big catalog at a high resolution&lt;/li&gt;
+&lt;li&gt;A multi-device file syncing service like Dropbox&lt;/li&gt;
+&lt;li&gt;Network attached storage for large and cumbersome files&lt;/li&gt;
+&lt;li&gt;Backup for important files (primarily photos and documents)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are a few non-requirements too:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A web server. I&amp;rsquo;ll keep hosting my web stuff on somebody else&amp;rsquo;s metal, away from my home and my ISP.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;An intensive course in sysadmin. I&amp;rsquo;m not trying to learn BSD from top to bottom with this and spend hours a day keeping it alive and at the cutting edge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;choices&#34;&gt;Choices&lt;/h2&gt;
+&lt;p&gt;I chose to build a compact Network Access Storage (NAS) box with a good amount of storage expandability. I chose &lt;em&gt;not&lt;/em&gt; to buy one of the NAS enclosures from people like Synology because they seemed expensive and also I felt like trying to build something myself. I chose TrueNAS as the operating system because the internet told me it was good and because I was too cheap to pay for Unraid.&lt;/p&gt;
+&lt;p&gt;Using PC Part Picker (without which I would never have been able to do this) I put together the following list, mostly built around the tidy little Node 304 case.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fractal Designs Node 304&lt;/li&gt;
+&lt;li&gt;ASRock B550M-ITX motherboard&lt;/li&gt;
+&lt;li&gt;AMD Ryzen 5 4600G&lt;/li&gt;
+&lt;li&gt;BeQuiet Pure Rock 2 Black CPU cooler&lt;/li&gt;
+&lt;li&gt;EVGA 500 W1 500W power supply&lt;/li&gt;
+&lt;li&gt;2 x Corsair 8GB RAM&lt;/li&gt;
+&lt;li&gt;Critical 1TB M2 SSD&lt;/li&gt;
+&lt;li&gt;4 x 4TB Seagate Barracuda&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I decided to go AMD because I heard it was cheap and less difficult to cool. I have since learned that if you want accelerated Plex transcoding, there&amp;rsquo;s a certain range of Intel processors with integrated graphics that Plex supports to do that. That&amp;rsquo;s okay though, the CPU-bound transcoding on the AMD CPU hasn&amp;rsquo;t really struggled. I then just chose a cheap but not the cheapest cooler on PC Part Picker and that&amp;rsquo;s how I ended up with the BeQuiet. I now use the fan that came with the case, but the big heatsink from BeQuiet is still in use.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m still happy with the motherboard but I think I probably could have found one with six SATA connections to max out the case&amp;rsquo;s capacity for drives. I&amp;rsquo;ve bought a PCIe to SATA expansion card for another two connectors, so it&amp;rsquo;s fine. That PCIe lane is available because I&amp;rsquo;m not bothering with a GPU, by the way. The AMD chip with integrated graphics is fine. I threw a 1TB M2 drive on the board without really thinking about the fact that I should have probably used that high speed storage for some more capacity, but never mind.&lt;/p&gt;
+&lt;p&gt;Onto the actual storage. What I&amp;rsquo;ve learned is that making ZFS pool and RAID configuration decisions is really annoying. I think I made the right call for now. I have a RAID Z1 pool of those four 4TB drives for about 10TB usable storage and it&amp;rsquo;s currently about 40% full. What&amp;rsquo;s annoying though is how hard it is to expand that. I&amp;rsquo;m not smart enough to know the reason for this, but if I buy two more 4TB for those other two slots in the case, I can&amp;rsquo;t just widen the vdev to be six drives. I have to make a new vdev, at which point I may as well just make a new pool. The other upgrade path is to replace the 4TB drives in the current pool with something bigger one-by-one. Once you have all matching capacity the pool magically just increases its capacity.&lt;/p&gt;
+&lt;p&gt;Anyway, a problem for future Jack. For now, I need to be careful not to start hoarding data to fill up those 10TB just because I can. When the time &lt;em&gt;does&lt;/em&gt; come, I&amp;rsquo;ll open up the case, add the PCIe storage expansion card, and add two drives to the empty drive frame.&lt;/p&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;The NAS is built and puttering along quite happily. It&amp;rsquo;s pretty quiet and it lives inside a well ventilated shelving unit in the living room. I could definitely forget about it 90% of the time, but I have found it very difficult to stop tinkering with it.&lt;/p&gt;
+&lt;p&gt;The SSD contains folders for syncing mine and Sarah&amp;rsquo;s important documents between devices with Syncthing. That works well and there&amp;rsquo;s a periodic job running to replicate those files to the main pool, which has more redundancy. The files are also periodically backed up to Backblaze. I haven&amp;rsquo;t really used Samba shares yes, though I have sunk some time into figuring out how to get all the file permissions right for when I &lt;em&gt;do&lt;/em&gt; want to use some network attached storage.&lt;/p&gt;
+&lt;p&gt;I use a script called &lt;code&gt;icloudpd&lt;/code&gt;, which makes a periodic backup of all my iCloud photos to the main pool. It&amp;rsquo;s good, but so far it only backs up my photos. I should set it up for Sarah too but I haven&amp;rsquo;t found any information on how to install the same TrueNAS Scale application twice but with different configurations. Also &lt;code&gt;icloudpd&lt;/code&gt; doesn&amp;rsquo;t bring any nice metadata, it&amp;rsquo;s just chronologically organised folders.&lt;/p&gt;
+&lt;p&gt;Other than the media centre applications, which I&amp;rsquo;m not going to detail here, that&amp;rsquo;s basically all the box is doing. That is probably a good thing, &lt;em&gt;but it&amp;rsquo;s very tempting to get it to do more and more&lt;/em&gt;. I spent a lot of time making first the TrueNAS admin panel available outside my network with port forwarding, and then some of the internal applications, &lt;em&gt;just so I could check on them&lt;/em&gt;, you know? It&amp;rsquo;s a slippery slope.&lt;/p&gt;
+&lt;p&gt;I hope I&amp;rsquo;ll be bored enough of it soon to leave it alone to do its job quietly. I do not enjoy being fascinated by computer things, and luckily I am only ever fascinated by them episodically.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Web hosting has been a long and winding road. I have previously served my website from a droplet on &lt;a href=&#34;https://really.lol/post/how-this-site-works/&#34;&gt;Digital Ocean&lt;/a&gt;, &lt;a href=&#34;https://really.lol/post/getting-off-of-netlify/&#34;&gt;Netlify&lt;/a&gt;, and it now lives in Cloudflare Pages.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>Overwhelming good</title>
+      <link>https://really.lol/post/2023-03-23-overwhelming-good/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/post/2023-03-23-overwhelming-good/</guid>
+      
+      <description>&lt;p&gt;This morning I was sitting at my desk with my eyes half closed. I started to yawn and I stretched my arms out and back. Something in my chest, around my sternum, made a dull pop. I didn&amp;rsquo;t realise I had anything to pop in there.&lt;/p&gt;
+&lt;p&gt;The last couple of weeks have been full of great new things, and I&amp;rsquo;ve totally worn me out. We moved into our new, more permanent home in Berlin. We&amp;rsquo;ve had lots of help with the entire process, and we&amp;rsquo;ve thrown money at the appropriate parts to try and make things easier. I am still completely wiped.&lt;/p&gt;
+&lt;p&gt;Completing a move alongside a busy full-time job and three evenings of German class per week is a bit much. I&amp;rsquo;m glad that I&amp;rsquo;ve fit an amount of running that I&amp;rsquo;m happy with but there are other pieces of self-care I&amp;rsquo;d really to get done. I&amp;rsquo;d like to join and start regularly going to a gym again. I&amp;rsquo;d like to get a haircut.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s been a while since we had any actual downtime, as in: relaxing just the two of us doing something we love. I&amp;rsquo;m really looking forward to some quiet enjoyment of our new home next week. I&amp;rsquo;m looking forward to going out to the cinema and coming back to our place where everything is in its right place.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>Gears</title>
+      <link>https://really.lol/photo/2021-07-20/</link>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2021-07-20/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>Parlour</title>
+      <link>https://really.lol/photo/2021-04-23/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2021-04-23/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>Steam Machines</title>
+      <link>https://really.lol/photo/2021-04-01/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2021-04-01/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>Autumn leaves</title>
+      <link>https://really.lol/post/2020-10-25-autumn-leaves/</link>
+      <pubDate>Sun, 25 Oct 2020 17:51:00 +0000</pubDate>
+      <guid>https://really.lol/post/2020-10-25-autumn-leaves/</guid>
+      
+      <description>&lt;p&gt;I was locked down for two weeks, so when I got out I wanted to make the most of the autumn leaves.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+&lt;img src=&#34;https://really.lol/post/2020-10-25-autumn-leaves/autumn-trees-hole_hu_56c564734ada9b54.jpg&#34; alt=&#34;Autumn trees from below that form a hole with the sky in it&#34; loading=&#34;lazy&#34;&gt;
+
+
+&lt;figcaption&gt;Dulwich Woods are only ten minutes awawy but they were new to me&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+&lt;img src=&#34;https://really.lol/post/2020-10-25-autumn-leaves/autumn-trees-overcast_hu_1348214d9ce5ee48.jpg&#34; alt=&#34;Red and yellow leaves up close&#34; loading=&#34;lazy&#34;&gt;
+
+
+&lt;figcaption&gt;The residential neighbourhood is heavily planted too&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;Most of the time though, I&amp;rsquo;m back inside. I saw &lt;em&gt;On The Rocks&lt;/em&gt; with Rashina Jones and Bill Murray after I listened to the &lt;em&gt;Big Picture&lt;/em&gt; episode about Sofia Coppola.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+&lt;img src=&#34;https://really.lol/post/2020-10-25-autumn-leaves/living-room_hu_c218c1ebe70d9dbd.jpg&#34; alt=&#34;Bill Murray on TV in a bright living room&#34; loading=&#34;lazy&#34;&gt;
+
+
+&lt;figcaption&gt;Bill Murray at home&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+&lt;img src=&#34;https://really.lol/post/2020-10-25-autumn-leaves/oranges-at-home_hu_dd13f30374adbad8.jpg&#34; alt=&#34;Oranges in a bowl in front of a mirror&#34; loading=&#34;lazy&#34;&gt;
+
+
+&lt;figcaption&gt;Fruit overage&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+
+</description>
+			
+    </item>
+    
+    <item>
+      <title>Thirty degrees</title>
+      <link>https://really.lol/post/2020-06-25-thirty-degrees/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/post/2020-06-25-thirty-degrees/</guid>
+      
+      <description>&lt;p&gt;It’s thirty degrees outside and we’re all, including the cat, feeling languid. The internet is down for much of South London, which adds to the general sense of stolid malaise.&lt;/p&gt;
+&lt;p&gt;The past few days have been much more active. I’ve been buzzing around the house trying to make it a home bit by bit. It’s a tightrope doing the practicalities while basking in the glow of our fresh, new space. Try to sit in the airy new lounge without a care like you never could before, but also get that shoe rack and cutlery drawer insert ordered. When is the sofa arriving?&lt;/p&gt;
+&lt;p&gt;Outside of our new bubble the country is opening inch by inch. Next week a new raft of things is opening including, most crucially, pubs. Once that happens I’ll be finding the nearest and largest pub garden and bedding in. We’d also like to fill this place with friends for the first time.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>New house peace</title>
+      <link>https://really.lol/post/2020-06-22-new-house-pace/</link>
+      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/post/2020-06-22-new-house-pace/</guid>
+      
+      <description>&lt;p&gt;This morning I woke up in my own house to sunlight. I got up and took a shower, the water pressure was great. I sat at the kitchen table and listened to the news, and then practiced my Spanish for a while. I hung out some washing to dry. Nobody came along. I had forgotten how it feels to start your day quietly and at your own pace.&lt;/p&gt;
+&lt;p&gt;The weekend was an endless blur of stress and back strain, but we’re in here now, a home of our own. It is the greatest thing. We’ll have lunch in the garden today.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>Floyd protests from afar</title>
+      <link>https://really.lol/post/2020-06-02-floyd-protests/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/post/2020-06-02-floyd-protests/</guid>
+      
+      <description>&lt;p&gt;We’ve picked a new house. It’s going to be a house! It’ll have a garden and stairs and space for the cat, space for us to work and relax. We’re leaving in three weeks unless some recalcitrant property manager or landlord gets in the way.&lt;/p&gt;
+&lt;p&gt;Outside, COVID-19 measures had begun to relax and things had begun drifting slowly toward normal. Then a few days ago the US exploded with protests against police violence in response to the murder of a man named George Floyd by a policeman in Minnesota. All over the country the authorities have responded with a &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Police_riot&#34; title=&#34;police riot&#34;&gt;police riot&lt;/a&gt;. Peaceful protestors, the press, and bystanders are being brutalised and arrested all over the country. Black Lives Matter marches are starting up here too; my employer has notified us we don’t need to use up holiday allocation to march. I’ve made some donations to &lt;a href=&#34;https://really.lol/post/activist-relief-resources/&#34; title=&#34;bail funds&#34;&gt;bail funds&lt;/a&gt; and encouraged others to do the same.&lt;/p&gt;
+&lt;p&gt;Back at work after a week off, I’m back on a carousel of screens of code, chats with colleagues in the eye of this new storm, and streams of videos of police savagery. I flip from one window to the other all day at the dining table, and then sign off, and then watch a film on a different laptop. My mum is in hospital to clear up an infection, she sent me a picture of her wearing a mask. I’m worried about her too. The privilege inherent in that experience of watching the problem from afar is big, but it doesn’t mean I don’t feel less human by the end of the day. There are going to be marches in London this week.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>Looking at Stoke Newington</title>
+      <link>https://really.lol/post/2020-05-25-looking-at-stoke/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/post/2020-05-25-looking-at-stoke/</guid>
+      
+      <description>&lt;figure&gt;
+&lt;audio
+  autoplay
+  controls
+  src=&#34;https://really.lol/audio/journal/abney-park.m4a&#34;&gt;
+&lt;/audio&gt;
+&lt;figcaption&gt;The quiet of Abney Park in Stoke Newington&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;We’re getting ready to leave the house. The idea of moving out of this place and into one of our own, already a firm intention before lockdown began, has become a serious one again. Subtly depersonalised pictures of the room we’ve spent so much time in have been taken, and posted online. We are responsible for reviewing applications for our replacements. Young professional, woman, 27, media. Smiley headshot, second photo featuring Aperol Spritz. In the meantime I’m sitting in the armchair. I’m watching the kitten bound around with a mouse toy in her mouth, jumping over Emma who’s dozing in bed. I’m looking at the bookshelves, two of them double-stacked on every shelf. All of it says that the life we have is getting too big for the place we’re in.&lt;/p&gt;
+&lt;p&gt;We’ve been cycling up to north London, to Stoke Newington. The forty minute journey is a little trip into our potential future. A few days ago we went up there and sat in a local park to see Emma’s friend, who is also living in the potential future, somewhat more idly shopping for flats to buy. He and Emma send RightMove links back and forth. More recently she and I went together and sat in an old graveyard that had been made a public park. We walked down the high street and tried to imagine in outside of its plague state: with people inside the restaurants and pubs rather than in queues outside the food shops with their masks on. We liked what we imagined. We imagined the breakdown on inside and out the pub in the summers as people spill onto the pavement. We imagined the cosy recess of the bookshop on a winter evening.&lt;/p&gt;
+&lt;p&gt;I’m going to be a little untethered from the present now that I’m thinking about this other time and place. We are still here for now. Last night we made everybody gnocchi and too many cocktails and sat out in the warm evening until midnight. But a lot of my mind is now idly making inventories of our possessions to remember to take away. My dreams take place in a mishmash of all of the flats we’ve looked at online and liked.&lt;/p&gt;
+&lt;p&gt;I’ve taken next week off work; I was sick of feeling stressed about it. I don’t have any great ambitions for the time: pin down the new flat, keep exercising, do some reading. I know in my heart I’ll spend all the time thinking about the life Emma and I will soon be expanding into.&lt;/p&gt;
+&lt;p&gt;P.S. I don’t think I can talk enough about the newfound joy on riding the bike around the city. It’s being found for the first time by so many people at the moment; we’re all just floating around the place in a way we didn’t know was possible.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>inside</title>
+      <link>https://really.lol/photo/2019-02-03-3c43d9fd4dca1cd3688b939f6aac96d7/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2019-02-03-3c43d9fd4dca1cd3688b939f6aac96d7/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>night. new carpet, white paint, and leather. 🌄</title>
+      <link>https://really.lol/photo/2016-10-14-12a611fdf5d24fb1e42a23620024490e/</link>
+      <pubDate>Fri, 14 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2016-10-14-12a611fdf5d24fb1e42a23620024490e/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

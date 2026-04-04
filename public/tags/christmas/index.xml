@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christmas on really.lol</title>
+    <link>https://really.lol/tags/christmas/</link>
+    <description>Recent content in Christmas on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 25 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://really.lol/tags/christmas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>late. water water ... obselete.</title>
+      <link>https://really.lol/photo/2016-12-25-54e366323e92cfcccb3a8b4c71cf3427/</link>
+      <pubDate>Sun, 25 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2016-12-25-54e366323e92cfcccb3a8b4c71cf3427/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>evening. one of my favourite book shops not looking itself. 📚</title>
+      <link>https://really.lol/photo/2016-11-06-64fbd09f41a7b4523fa12c10a1222e4a/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2016-11-06-64fbd09f41a7b4523fa12c10a1222e4a/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skyline on really.lol</title>
+    <link>https://really.lol/tags/skyline/</link>
+    <description>Recent content in Skyline on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://really.lol/tags/skyline/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>shiny swamp city</title>
+      <link>https://really.lol/photo/2017-11-18-03aa15cbabbc8f190303eee468482002/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2017-11-18-03aa15cbabbc8f190303eee468482002/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

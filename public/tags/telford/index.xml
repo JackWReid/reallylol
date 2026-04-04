@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Telford on really.lol</title>
+    <link>https://really.lol/tags/telford/</link>
+    <description>Recent content in Telford on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 20 Jun 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://really.lol/tags/telford/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>All the time if possible</title>
+      <link>https://really.lol/photo/2012-06-20-7a401cb3487d939fcf47fc40078dfa02/</link>
+      <pubDate>Wed, 20 Jun 2012 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2012-06-20-7a401cb3487d939fcf47fc40078dfa02/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>Trampoline</title>
+      <link>https://really.lol/photo/2012-05-21-901d566ee7c752aba4923f3c95ef0a80/</link>
+      <pubDate>Mon, 21 May 2012 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2012-05-21-901d566ee7c752aba4923f3c95ef0a80/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

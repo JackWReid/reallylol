@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Running on really.lol</title>
+    <link>https://really.lol/tags/running/</link>
+    <description>Recent content in Running on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 24 Feb 2020 15:56:39 +0000</lastBuildDate><atom:link href="https://really.lol/tags/running/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Runners</title>
+      <link>https://really.lol/note/2020-02-24-the-runners-victoria/</link>
+      <pubDate>Mon, 24 Feb 2020 15:56:39 +0000</pubDate>
+      <guid>https://really.lol/note/2020-02-24-the-runners-victoria/</guid>
+      
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Pounding the tarmac through the seasons, a band of runners are brazenly challenged with intimate questions as they pace their routes. Liberated from responsibilities, their guards drop dramatically, releasing funny and brutally frank confessions, and weaving a powerful narrative behind the anonymous masses.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— &lt;a href=&#34;https://vimeo.com/87169386&#34;&gt;The Runners&lt;/a&gt;&lt;/p&gt;
+</description>
+			
+    </item>
+    
+  </channel>
+</rss>

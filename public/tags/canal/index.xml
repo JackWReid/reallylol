@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Canal on really.lol</title>
+    <link>https://really.lol/tags/canal/</link>
+    <description>Recent content in Canal on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 29 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://really.lol/tags/canal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grown Out</title>
+      <link>https://really.lol/photo/2021-03-29-06/</link>
+      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2021-03-29-06/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>The Wash</title>
+      <link>https://really.lol/photo/2021-03-29-05/</link>
+      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2021-03-29-05/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

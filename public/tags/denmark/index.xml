@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Denmark on really.lol</title>
+    <link>https://really.lol/tags/denmark/</link>
+    <description>Recent content in Denmark on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 11 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://really.lol/tags/denmark/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>90s trivial pursuit 🧀</title>
+      <link>https://really.lol/photo/2018-01-11-0f0086892328125b0c55adf5b93fa5d1/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2018-01-11-0f0086892328125b0c55adf5b93fa5d1/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>more copenhagen by night</title>
+      <link>https://really.lol/photo/2018-01-11-eef724a807620e8cc0f0991e69cd83ae/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2018-01-11-eef724a807620e8cc0f0991e69cd83ae/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

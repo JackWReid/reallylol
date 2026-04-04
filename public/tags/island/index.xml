@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Island on really.lol</title>
+    <link>https://really.lol/tags/island/</link>
+    <description>Recent content in Island on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 21 Jul 2023 09:07:33 +0000</lastBuildDate><atom:link href="https://really.lol/tags/island/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Burra Bay</title>
+      <link>https://really.lol/photo/2023-07-21-burra-bay/</link>
+      <pubDate>Fri, 21 Jul 2023 09:07:33 +0000</pubDate>
+      <guid>https://really.lol/photo/2023-07-21-burra-bay/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

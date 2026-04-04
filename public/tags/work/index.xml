@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work on really.lol</title>
+    <link>https://really.lol/tags/work/</link>
+    <description>Recent content in Work on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 06 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://really.lol/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interview cycle</title>
+      <link>https://really.lol/post/2022-09-06-interview-cycle/</link>
+      <pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/post/2022-09-06-interview-cycle/</guid>
+      
+      <description>&lt;p&gt;I&amp;rsquo;m interviewing for other jobs. It&amp;rsquo;s a very strange process that sometimes feels like having a professional affair. You arrange off-the-calendar meetings with some exciting new thing, because the old one has turned sour.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll stop myself before I go to deep on the &amp;ldquo;jobs are like relationships&amp;rdquo; simile, which I don&amp;rsquo;t really believe in. What I want to say is it&amp;rsquo;s a tiring situation to both have a job and be applying for jobs. The interview process for tech jobs is particularly time consuming, although not as time consuming as other fields, I&amp;rsquo;m sure. Also, I have to remind myself that tech jobs are relatively well paid so maybe you should have to work pretty hard for your money.&lt;/p&gt;
+&lt;p&gt;Nevertheless, dealing with the swirl of recruiters, calendar juggling, technical interviews, meet-and-greets — it&amp;rsquo;s all taken a lot of energy. I&amp;rsquo;m hoping the process will draw to a close soon, maybe in two weeks. Then I hope I&amp;rsquo;ll have a job offer (hooray) and I can start the next tiring but exciting thing: starting a new job. After that, the &lt;em&gt;next&lt;/em&gt; tiring but exciting thing: getting ready to move my life overseas.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t know how serial those job hoppers and digital nomads in the startup scene do it.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>New job, new season</title>
+      <link>https://really.lol/new-job-new-season/</link>
+      <pubDate>Mon, 14 Mar 2022 09:52:27 +0000</pubDate>
+      <guid>https://really.lol/new-job-new-season/</guid>
+      
+      <description>&lt;p&gt;I left BuzzFeed two weeks ago and started at Kaluza the following Monday. The full implications of that are yet to be seen but for now they include: exciting new problems, lots of new people, nice new office, new cycle to the office through lots of parks, being a bit tired.&lt;/p&gt;
+&lt;p&gt;I’m a really simple creature. When people at the office asked me on Friday how my first week went I kept just talking about how nice the bike ride through Regents Park and Hyde Park was and how I was looking forward to spring. I think that’s partly because while I’m taking in a lot of new information about my job every day, it’s all still pretty abstract. A sunny morning in the park is not abstract.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>A year in ads</title>
+      <link>https://really.lol/a-year-in-ads/</link>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/a-year-in-ads/</guid>
+      
+      <description>&lt;p&gt;When, from the outside, a collection of people or an institution is doing things I strongly disagree with, it often turns out that from the inside I can see all the mechanisms and incentives that make perfectly normal people works towards bad outcomes. Take online advertising. In my last year at BuzzFeed I finally bit the bullet and started working in the part of the team that makes the money: the ad tech team.&lt;/p&gt;
+&lt;p&gt;Proposition: online publishing is generally supported by some combination of a paywall, donations, a benefactor, affiliate commerce, or ads. Financial Times is entirely behind a paywall. The New York Times has a partial paywall and ads. The Guardian gets by with some ads and some donations. The Washington Post is owned by Jeff Bezos who seems to have some interest in its continued existence and could pay for it to lose money indefinitely. Wirecutter and other review sites make a lot of money out of affiliate links to products, supplemented by ads. Finally, BuzzFeed and myriad other places make most of their revenue from advertising.&lt;/p&gt;
+&lt;p&gt;Every single one of those revenue models poses problems from a business perspective and an ethical perspective. My experience is with advertising though so I’m going to to walk you through what I learned about how the ecosystem actually seems to work. It’s rotten but it pays for the words we eat all day every day.&lt;/p&gt;
+&lt;p&gt;Let’s start with the problems an ad supported publisher faces.&lt;/p&gt;
+&lt;h2 id=&#34;a-primer-on-ads&#34;&gt;A primer on ads&lt;/h2&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;revenue = impressions × price
+
+impressions = pageviews × ad density&lt;/pre&gt;
+&lt;p&gt;Advertising revenue is derived from the number of ad impressions a publisher gets multiplied by the amount they were able to charge advertisers per impression to put their ads there. If somebody sees your ad on your web page, that’s an impression. As I learned more from the people who sell campaigns to advertisers, the amount that advertisers care about impressions versus more sophisticated metrics shocked me. For all of our fussing about targeted advertising and getting the &lt;em&gt;right&lt;/em&gt; ads in front of the &lt;em&gt;right&lt;/em&gt; people, the bottom line is to make money from ads you need to get people on the site and they need to have your ads in their viewport, getting impressions.&lt;/p&gt;
+&lt;p&gt;The number of impressions you get breaks down further into how many page views you got multiplied by the amount of ads you managed to show the user in the time they were on the page, also known as the ad density.&lt;/p&gt;
+&lt;p&gt;Because one factor of impressions is page views, your revenue is directly affected by anything that curtails the flow of users to your website. A decade ago along came the big platforms in social media and search that started to cannibalise those page views. People discover your content through their news feeds and timelines and they tap on the articles. If you’re lucky they end up on your actual website and your banner ad loads up top and gets you an impression. If not, they see a (much easier to read) stripped-back version of your article hosted by the platform themselves and it’s little to no ad revenue for you. The firehose of traffic is controlled for the most part by Facebook, Twitter et al, and they can (and have) arbitrarily decided to point it elsewhere in the past.&lt;/p&gt;
+&lt;p&gt;Factor two of the ad revenue equation is CPM (cost per mille, as in thousand impressions). How much do you get to charge for each of the impressions you went out and got for your advertiser? A lot of factors go into pricing but high on the list are: the prominence of the ad and the audience quality. Prominence of the ad works across time and space: an ad that you see for longer is more valuable, and an ad that takes up more of your screen is more valuable. Publishers tell stories about “premium packages” and specially integrated ad experiences but ultimately, it’s about how much time and space your ad is going to take up.&lt;/p&gt;
+&lt;p&gt;Publishers improve the quality of their ad audience by targeting ads and making advertiser’s ads are going to the right people. Right people in this context often means the right age group and the right income bracket. Knowing those aspects of your audience and being able to produce &lt;em&gt;segments&lt;/em&gt; that represent specific people the advertiser wants to reach, that’s the desire that drove the worst of the worst when it comes to web advertising.&lt;/p&gt;
+&lt;h2 id=&#34;play-the-game&#34;&gt;Play the game&lt;/h2&gt;
+&lt;p&gt;I worked in the ad tech space for one year, and I have absolutely no idea how the data privacy angle actually works. There are thousands of companies and products with impenetrable names who do something related to “audience insights” or “activation”. All of them want information about your audience. In exchange they offer you the ability to do things like target ads to racketball players in Utah over the age of forty.&lt;/p&gt;
+&lt;p&gt;Quite how those companies figure out who lives where and what they’re into isn’t clear to me, nor is whether the classifications are even accurate. What is obvious is that they rely on a collective effect. The more websites sign up and hand over user data, the more data points they have to join up from that user’s behaviour across multiple destinations on the web. Your profile of a user could start with matching their IP address with up with that of somebody who also has a plan with Verizon. Now you have a home address because Verizon has that. Your data connectivity platform is also used by Amazon, The New York Times, and CNN, so you also know what category of products they buy at what price points and what their key news topics are.&lt;/p&gt;
+&lt;p&gt;There is no mastermind behind it all. Each company plays it part and provides a service to a partner who makes up a different piece of the puzzle. The publishers share their data because they can increase their CPMs by offering better targeting to advertisers, the data platforms sign up as many sites as they can so they can offer a product with better targeting capabilities, the advertisers pay to place ads to market their stuff to an audience who might be interested and hey, even support digital media with some big ad buys.&lt;/p&gt;
+&lt;p&gt;Ironically, at the scales of traffic that a lot of publishers get, the kind of specificity I’ve described would yield an audience that’s too small to even make money from. Nevertheless, we want to be offer that ability to advertisers and put it in the slide decks we present to the Chief Marketing Officer of Coca Cola. A lesson I learned, and the reason why I doubted  some of the targeting capabilities offered by third parties, is that there need not be much of a relationship between the level of sophisticated targeting actually being done and the claims being made in marketing materials to other companies.&lt;/p&gt;
+&lt;p&gt;GDPR and other data privacy regulations were intended to solve this by forbidding publishers from sharing users’ data like this without their explicit and informed consent. From a part of the company shielded from the sausage factory, before I worked directly on ads, I welcomed these changes when they were introduced. I hoped that other jurisdictions would follow the EU and introduce similar measures, and so they did.&lt;/p&gt;
+&lt;p&gt;It’s incredible how quickly GDPR and other data privacy regulations go from looking like the solution to all our problems, to an implementation detail, another piece of third party code thrown into the slurry. Most publishers handled the informed consent problem by reaching out to another third party to integrate their &lt;em&gt;consent management platform&lt;/em&gt;. Script goes on the page, pop-up appears, user smashes “Consent to cookies” as fast as they can as they slice through the thicket of bullshit in front of their news article, informed consent acquired, fire the data off to the third parties and render the ads.&lt;/p&gt;
+&lt;p&gt;Consent management platforms break, they can be implemented incorrectly. In one failure state, all the ads might disappear from the page. In another, a rare user who has never consented to a single crumb of third party cookies will have their data sent to all askers without further regard. It is unclear even to people adding a consent system to the publisher’s website, what precisely is allowed or is not allowed to be shared and with whom under the various configurations you can choose from the consent pop-up. No malicious intent is needed for a website to add your visit to their article from an iPhone in north London to the constellation of data points about you that some platform like LiveRamp has stored, even though you denied all the cookies offered to you.&lt;/p&gt;
+&lt;p&gt;I don’t think I’m shocking anybody describing the situation in online advertising. You would even be forgiven for thinking things will soon get better, for users’ data privacy at least. Browsers are increasingly sparring with this ecosystem, locking down third-party cookies, blocking requests to trackers and ad networks like good little bodyguards. The ecosystem responds. Reports of the death of the cookie are greatly exaggerated. Universal ID is a system that circumvents third-party cookie blocking by laundering user data through first-party cookies instead. The incentives for publishers to integrate with these trackers are the same as in the old scheme: if you have this tracker in the page, x giant advertiser will pay more per impression because they think they know who they’re getting with more accuracy.&lt;/p&gt;
+&lt;h2 id=&#34;people-are-doing-their-local-best&#34;&gt;People are doing their local best&lt;/h2&gt;
+&lt;p&gt;Now you’ve had my very editorialised primer on how an ad-supported online publisher works. The thing I want to emphasise is that the ecosystem doesn’t require any malicious actors to produce terrible outcomes. It’s just about how the incentives are arranged.&lt;/p&gt;
+&lt;p&gt;Start with the user, so the books say. Users want to be informed, entertained, or even mollified by some content. They don’t think they should have to pay for that content really, there’s so much free stuff around and besides, there’s ads. The journalist wants to write about what they think is interesting or important for their audience. Maybe they’re not writing what they think will be their career-defining work right now but it’s not bad and they trust their editors’ instincts and the job market for reporters right now is such that they should be happy to not be freelancing. Besides, they work hard on their stories and the analytics tools the publisher provides tell them hundreds of thousands of people read their words every day.&lt;/p&gt;
+&lt;p&gt;The editor wants to be known for running a team that produces meaningful content that also performs. That is, they want content that gets clicks and is part of the conversation, slipping the greens (unique fact-based reporting and cultural analysis) in with dinner (posts that will appear in the search results of the day’s top ten search terms). They want to cultivate new writers and give their team the space to do great work, and they pray they’re not going to be pulled into a meeting room any time soon, given a dollar amount and a list of the names of people in the bullpen behind them.&lt;/p&gt;
+&lt;p&gt;The CEO wants to convince investors there’s growth coming, that they’ve got new ideas for revenue that haven’t already been tried to varying levels of success by every other publisher. The CTO wants to come up with ways they can increase revenue per user, reverse declining page views, and reduce the dependence the business has on platforms that could switch off the money hose tomorrow with an algorithm update. The ad sales team want to hit the excessively aggressive revenue targets the CEO set to wow the investors. They can’t do much about their audience size, that’s up to editorial and tech to figure out. So they focus on selling high CPM ads: big ads, highly targeted. The big clients won’t sign off on deals until their tracker of choice is in the page to verify they’re hitting the audiences the guys from sales are claiming.&lt;/p&gt;
+&lt;p&gt;The ad tech team want to be part of the solution for increasing those revenue numbers. They field those requests from sales for the umpteenth tracking script, another universal ID solution. They try and do as little harm as they possible, hitting the page performance as little as they can with the torrent of ad scripts. They try and push the ads out of the way of the content for the most part, put the kibosh on a new full-page popup ad format sales are asking for. When they do implement a new third party script, they try and decrypt the terrible documentation and ignore some of the more outrageous demands it makes of the page’s performance and users’ data.&lt;/p&gt;
+&lt;p&gt;It goes on. I could expand this circle to include the ad buyers, the programmatic ad exchanges, the product managers at the big platform companies. You get the picture though, each of the individual actors here are just doing their best for a hyper-local good. I’ll go out on a limb and say that nobody in this web has an actual in-depth understanding of the domains of their inter-connected counterparts. I can give the picture in overview. Wizened types who’ve been at it for a decade could go deep on how the data aggregators work and how they prop up the whole online publishing industry, but they don’t know the letter of the law coming out of Brussels and they don’t actually know why Facebook makes the changes to its news feed that it does.&lt;/p&gt;
+&lt;p&gt;I’ve only been talking about the ad supported revenue model, because that’s what I worked on at a company that has history had &lt;a href=&#34;https://variety.com/2017/digital/news/buzzfeed-jonah-peretti-paywalls-democracy-1202593489/&#34;&gt;an anti-paywall stance&lt;/a&gt;. That leaves the other models, which each have their own foibles. There’s affiliate content (editorial conflict and biased coverage), the wealthy benefactor (implicit censorship based on the benefactor’s interests), donations (unreliable and insufficient revenue), and the paywall. I don’t go as far as my former employer and claim that paywalls are fundamentally anti-democratic but there is a kernel of truth in the notion that &lt;a href=&#34;https://www.currentaffairs.org/2020/08/the-truth-is-paywalled-but-the-lies-are-free&#34;&gt;the truth is paywalled but the lies are free&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;These are some of the pathologies in the corner of the media industry I worked in. None of them belong to arch-villains or greedy monsters. Most of them belong to the inescapable, choking pull of capital, but some are built piece-by-piece by kind and thoughtful people I variously call friends and colleagues.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>The layoff business</title>
+      <link>https://really.lol/the-layoff-business/</link>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/the-layoff-business/</guid>
+      
+      <description>&lt;p&gt;When I was growing up I sometimes thought I wanted to be a writer, but I quickly realised that doing it for a job wasn’t going to be fun or rewarding. My position is that I took the coward’s way out in choosing to go into software engineering, for a more financially stable existence, but I went into the world with a respect for the writing staff and a general dread at their constant mistreatment.&lt;/p&gt;
+&lt;p&gt;At least in the time since I’ve entered the profession, software engineering has been a “seller’s market”. The pay is good, there are lots of jobs, and there’s generally good job security. In the same period the media industry has been collapsing in on itself. Ad revenues have fallen because of things like the platforms hoovering up all the views and dollars and we seem to be approaching the end of unbridled targeted advertising on the web.&lt;/p&gt;
+&lt;p&gt;Media companies have been merging or going out of business&lt;sup&gt;1&lt;/sup&gt;, and in the meantime they lay off swathes of reporters at every turn. When I joined BuzzFeed, the UK operation had a pretty healthy set of reporters. Sitting in the physical newsroom you had a big news desk with an editor-in-chief and deputy editor, an investigations team of six or so, about six news and politics reporters, and a collection of “desks” with one or two people covering science, celebrity, and so on. There were copy editors, a picture desk with a photographer, an illustrator. There was an art director.&lt;/p&gt;
+&lt;p&gt;That didn’t last. The newsroom was gutted in a deep &lt;a href=&#34;https://www.theguardian.com/media/2019/jan/24/buzzfeed-to-lay-off-200-staff-in-latest-round-of-cuts&#34;&gt;round of layoffs&lt;/a&gt; that saw off at least half of them. Coverage contracted to pull out of regular Westminster beat reporting (gone were the political reporter who became the first female Chairman of the Lobby and the other reporters who regularly appeared on the morning TV news). All news had to be reported with a global focus so that their content could serve audiences where ad revenue could support it. A year or so later and another round of layoffs. Most of the remaining reporters reporting into editors in the US.&lt;/p&gt;
+&lt;p&gt;Following the fortunes of those writers for a while after BuzzFeed, they are subjected to &lt;a href=&#34;https://www.theguardian.com/media/2019/feb/02/what-2000-job-cuts-tell-us-the-free-market-kills-digital-journalism&#34;&gt;a relentless game of musical chairs&lt;/a&gt; and new media startups make some splashy hires and then contract or fold, leaving their writers to head back out to complete for a seat after another chair or two has been whipped away. I developed a certain dread every time we made new hires on the editorial side. My overwhelming feeling became “we can’t be trusted with the care of a writing staff”. We couldn’t provide an environment for them to report the news, or to comment thoughtfully on culture and so on.&lt;/p&gt;
+&lt;p&gt;I worked closer with the senior figures in the US newsroom while we built a rebranded news website for them. Indeed it was a project for them. Our splashy editor-in-chief Ben Smith wanted to distinguish the BuzzFeed News brand from the “quiz people” so people could wrap their heads around the idea of reading a multi-part investigation into the Uyghur concentration camps by the people who did The Dress. The mis-alignment with what the readership cared about what typified by the time we spent on a front-page that could be curated into a number of layouts to present the nature of the news day when 90% of traffic went straight to an article page from a tweet, never seeing the homepage.&lt;/p&gt;
+&lt;p&gt;On a trip to the newsroom in New York during the project, I happened to be in the room when an all hands meeting was called. The podcast production team was &lt;a href=&#34;https://splinternews.com/leaked-audio-buzzfeed-executives-talk-diversity-and-la-1829306989&#34;&gt;summarily laid off&lt;/a&gt;. The team had produced at least two cult classic shows, &lt;em&gt;Another Round&lt;/em&gt; and &lt;em&gt;See Something Say Something&lt;/em&gt;. The former was an “unapologetically black space”, a very successful black culture show presented by two black women. The latter was a funny and thoughtful podcast that discussed the Muslim experience in America. The team comprised a deep bench of reporting, presenting, and producing talent for the audio format. Bim Adewunmi, a producer on the team who I watched fiercely quiz the sweaty leadership team on the cuts, has gone on to be a producer for &lt;em&gt;This American Life&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Later that afternoon, in a bar on the same block as the office that has since closed (cause of death: COVID-19), the newsroom commiserated as audio of the fraught meeting circulated on gossip sites. It was autumn and the rain was pouring down in the city. An aptly timed torrent of water broke through the ceiling in the middle of the newsroom and somebody tweeted a video, something about &lt;a href=&#34;https://splinternews.com/jonah-peretti-cautions-against-leaks-in-leaked-buzzfeed-1832205748&#34;&gt;leaks at BuzzFeed News&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I began to worry about what business we were really in. We came here to spend investor money and lay off journalists, and we’re all out of investor money. It seemed our remaining business function was to make incredible quantities of journalists jobless in annual or biannual cycles. Some organisations will proudly point to their alumni and what they’ve gone on to be, to claim to be an incubator of great talent. They hope others will infer that they are great talent scouts, that something in the practices and culture on the team cultivates outstanding reporters that go on and do amazing things elsewhere. It obviously begs the question as to why you have quite so many alumni, and whether in all honesty you really set out to be a journalism school or you’re just a media organisation who has a habit of losing (by laying off) great staff.&lt;/p&gt;
+&lt;p&gt;BuzzFeed has lately shifted to a strategy of mergers and acquisitions. They acquired HuffPost and then Complex. This seemed to be an acceptance of the fact that their existing audience was not going to grow and they didn’t have any ideas to fix that. Instead, they can buy other peoples’ audiences. So they bought HuffPost’s audience. They also bought their staff but had even fewer compunctions about &lt;a href=&#34;https://www.theguardian.com/media/2021/mar/09/huffpost-layoffs-buzzfeed-jonah-peretti&#34;&gt;stripping it down&lt;/a&gt;. Another of the great new UK newsrooms was scattered to the wind before they even got everybody on the same Google Drive account. Nevertheless, the audience had been bought and hopefully the remaining staff can keep up the output to keep them.&lt;/p&gt;
+&lt;p&gt;I’m out of the business now. I never had any bold ideas about how to fund media companies, my &lt;a href=&#34;https://really.lol/post/a-year-in-ads/&#34;&gt;year on ads&lt;/a&gt; saw to it that I was left with no grand illusions about Another Way. So once again I can’t blame anybody in particular for the crap conditions that exist for the people who actually write the stuff that we read. Once again the enemy is capital. There’s a new wave cresting where writers have to &lt;a href=&#34;https://nymag.com/intelligencer/2022/03/taylor-lorenz-now-at-washington-post-fights-maggie-haberman.html&#34;&gt;cultivate their personal brand&lt;/a&gt; independent of their current employer so that they can fire up a successfully monetised Substack newsletter when they get laid off. I’ll probably soak up some opinions on all of this while the remnants of Media Twitter still populate my feed, but hopefully in time that’ll be replaced with thoughts about renewable energy and grid balancing. Or even better, with nothing.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;The Max Read newsletter has an interesting take on why media organisations with big stable staffs used to be viable:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;But by the 1990s, faced with mounting costs and declining budgets, the CIA stopped covering journalists’ bar tabs, and instead began investing most of its money and talent behind important new agency projects like Google and Mark Burnett Productions. This is called neoliberalism, and it’s why it’s much harder to maintain steady employment in newsmedia in the 21st century than it was in the 20th.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— &lt;a href=&#34;https://maxread.substack.com/p/how-to-have-a-career-as-a-journalist&#34;&gt;Max Read&lt;/a&gt;, 9th March 2022&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>They give it away</title>
+      <link>https://really.lol/post/2022-02-14-they-give-it-away/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/post/2022-02-14-they-give-it-away/</guid>
+      
+      <description>&lt;p&gt;I think the time I spent on the Community team was interesting. Firstly it was the closest knit team I’ve ever been on, socially speaking. Partly there was a good social chemistry between team members and a sense that we had a fun part of the product to work on and we knew about it more than anybody else in the organisation. The pandemic baked in those personal relationships strongly, to the point that we became a sort of insufferable clique.&lt;/p&gt;
+&lt;p&gt;The product problem was interesting because it was one of the few places working at a publisher where you can actually get to know your users, where they actually have a specific understanding and engagement with BuzzFeed versus somewhere else. The downside was the fear we always had about the community content model being immoral.&lt;/p&gt;
+&lt;p&gt;These teens (and they were mostly teens) were using the tools we give them to make quizzes and lists for a few different reasons. Some of them were to share amongst their friends at school. Some of them were really interested in a particular fandom and the tools let them create and share fandom content with likeminded people in the community. Others, and this was the group I worried about, saw a byline hosted at &lt;a href=&#34;https://buzzfeed.com&#34;&gt;buzzfeed.com&lt;/a&gt; as a foot in the door that would break them into the world of being a BuzzFeed writer, or a writer generally.&lt;/p&gt;
+&lt;p&gt;The insidious part of all of it is that they are spending sometimes incredible quantities of time creating content for free, and we were serving ads next to it and making money off of it. Our team’s goals were to increase engagement in that core group, to reward them with points and trophies, and to grow the group. We were directly incentivising that behaviour with performance metrics like boosting the number of community posts written and so on. Meanwhile, we still employ full-time writers who create quizzes and lists and so on for a salary (and not a very good one), while a sub-group of the tech team is working to undercut their labour with free labour from volunteers. You can frame it how you like, and a lot of these users really loved the stuff we were giving them, but that’s the economic reality.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>Green chain walk</title>
+      <link>https://really.lol/post/2020-11-21-green-chain-walk/</link>
+      <pubDate>Sat, 21 Nov 2020 01:11:58 +0000</pubDate>
+      <guid>https://really.lol/post/2020-11-21-green-chain-walk/</guid>
+      
+      <description>&lt;p&gt;In this second lockdown it&amp;rsquo;s all suddenly become about long walks and big cooks. Emma&amp;rsquo;s been walking for a dozen miles at a time through a river of wild spaces in South London called the Green Chain Walk. I&amp;rsquo;ve been churning through the cookbooks that I&amp;rsquo;ve been picking at until now, mostly neglecting. Successes lately have been gyoza, massaman curry, drunken noodles, Tuscan bean soup with homebaked bread.&lt;/p&gt;
+&lt;p&gt;Fridays are for film night. We take turns and choose a film that is non-negotiable, which helps us to avoid commitment problems and the Mexican stand-off of choosing what we are Both Going To Do Tonight.&lt;/p&gt;
+&lt;p&gt;Our good will going into all of this is helped by the idea of a very big light (a vaccine) at the end of the tunnel (arriving within a year or so, please). Then again, I found a journal entry from August that discussed my imminent return to the office, so I&amp;rsquo;ve been made a fool of before.&lt;/p&gt;
+&lt;p&gt;Work distracts; a lot is changing for me (&amp;ldquo;manager&amp;rdquo;, &amp;ldquo;hiring&amp;rdquo;, &amp;ldquo;ads&amp;rdquo;, &amp;ldquo;HuffPost&amp;rdquo;). Talisker is also a constant source of something good.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>Accessible Buzzfeed</title>
+      <link>https://really.lol/post/accessible-buzzfeed/</link>
+      <pubDate>Thu, 27 Aug 2020 16:38:35 +0100</pubDate>
+      <guid>https://really.lol/post/accessible-buzzfeed/</guid>
+      
+      <description>&lt;p&gt;&lt;em&gt;This article was originally published on the &lt;a href=&#34;https://tech.buzzfeed.com/accessible-buzzfeed-2e1f3f94f352&#34;&gt;BuzzFeed Tech Blog&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+&lt;img src=&#34;https://really.lol/post/accessible-buzzfeed/a11y-buzzfeed-banner_hu_bc78ab876859453f.jpg&#34; alt=&#34;The words &amp;#39;accessibility at BuzzFeed&amp;#39; surrounded by an illustrated eye, mouth, ear, and hand.&#34; loading=&#34;lazy&#34;&gt;
+
+
+&lt;figcaption&gt;Header image by Devin Argenta&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;Last month, external accessibility experts certified buzzfeed.com as compliant with the best accessibility practices for the web. That simple statement, ripped straight from the headlines of a boilerplate internal email, does not do justice to the two-year process that brought us to that point. Nor does it embody what the achievement means to our team, especially myself, on a personal level.&lt;/p&gt;
+&lt;p&gt;In 2004, I watched my grandad build a remote control plane from scratch in his garage. I sat cross-legged at his feet on the grubby floor, ten years old. He was an engineer his whole life, a car mechanic, an ex-steel worker. His garage was filled with tools and machinery and he’d mastered all of it.&lt;/p&gt;
+&lt;p&gt;In 2016, I watched that same man try to shop online, an iPad in his lap. By then, diabetes had taken his foot, much of the sensation in his fingers, and left him with only a narrow, milky porthole for his vision. He manipulated the screen with a stylus attached to a lanyard. Even with that affordance, I watched him open Safari and make multiple attempts to select the address bar. That done, he slowly tapped in “ebay”, then made a few stabs at tapping the top result in the Google results. Presented with the homepage of ebay.com, he tried to pinch-to-zoom to find the search box, inadvertently activating a link to a promotion for a lawnmower.&lt;/p&gt;
+&lt;p&gt;A lot of people will have a story like this, perhaps less severe, perhaps worse. Statistically speaking, you’re pretty likely to have a similar anecdote, either about yourself or a loved one — after all, 1 in 4 Americans has a disability that may affect how they interact with screens. As the world fills more and more with those screens, it is going to shrink for those people unless the architects of those experiences take them seriously.&lt;/p&gt;
+&lt;h2 id=&#34;accessibility-at-buzzfeed&#34;&gt;Accessibility at BuzzFeed&lt;/h2&gt;
+&lt;p&gt;For me, it’s incredibly difficult to separate these personal moments from my day job as one of the people who builds BuzzFeed. Building things for the web is an invisible avalanche of tiny decisions influenced by a mix of implicit and explicit motives: make it fast, make it fun, make it profitable, make it maintainable, make it measurable. We occasionally spend some time talking about one of those things in isolation: a meeting about maintainable architecture, about adding the right metrics to our software. We then hope that those things stick around in the morass of motives in our colleagues’ minds when they’re building stuff. Sometimes it does stick, and sometimes it fades out in favour of bigger, newer, shinier priorities. We take great care to measure and report on the stuff that’s important to us as a business, but not all of the variables can be measured easily. The true quality of the experience we provide to a user with accessibility needs can’t be meaningfully quantified. Instead, maintaining and monitoring accessible experiences takes sustained effort from everybody who works on the product.&lt;/p&gt;
+&lt;p&gt;In the winter of 2018, we at BuzzFeed decided to take some serious action about making buzzfeed.com an accessible experience for everybody. We knew anecdotally that we weren’t doing well on the accessibility front. Engineers familiar with accessibility standards raised their concerns regularly, and fixes were made here and there; we had an &lt;code&gt;#a11y&lt;/code&gt; Slack channel. This time, though, we would be taking a more thorough and holistic approach to accessibility, not just a series of patch jobs. We would contract with a specialist accessibility auditor, Accessible360, who would produce a full report of all of our issues, and review our fixes as they went in. The end goal: an accessible experience accredited by the experts.&lt;/p&gt;
+&lt;p&gt;The initial audit report landed in our inboxes in January 2019, and our fears were confirmed: we had completely failed to provide a viable experience for users with accessibility needs. The issue tracker showed in excess of 400 problems with the site, and some of them sounded insurmountably difficult to solve within our current technological and organizational structures. There was no obvious single group to own all of the fixes, nor was there any one team big enough to get through the issues in any reasonable amount of time. It was going to have to be a holistic effort.&lt;/p&gt;
+&lt;p&gt;The issues could be categorized into two general buckets. The first bucket was smaller fixes — missing button titles, content presented as a list but not marked up as such — and could easily be divided among the teams who maintained those portions of the site. The issues in the second bucket, however, were going to take more dedicated effort and product thinking to resolve.&lt;/p&gt;
+&lt;p&gt;Here’s one example of an issue that needed to be tackled more strategically:&lt;/p&gt;
+&lt;h2 id=&#34;a-case-study&#34;&gt;A Case Study&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“These images lack alt attributes, thus it is not clear what they contain.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;BuzzFeed is full of images. We tease our articles with carefully selected and cropped thumbnails. The articles themselves are often adorned with gloriously art-directed banner images, stacks of red carpet photos, and the latest celebrity apology in a series of screenshots of the Notes app. In all of these cases, our content creators are putting a lot of work to tell stories with a visual medium that is inaccessible to users who can’t see the screen. To be accessible to somebody using a screen reader, those images need an alternative way to be experienced — in this case, descriptive alt text. When our writers have uploaded images to our content management system (CMS), we’ve never required them to provide descriptive alt text — or even provided them with the option to do so.&lt;/p&gt;
+&lt;p&gt;First, we tried to avoid changing our editorial workflow. We assessed different machine learning services that offered to describe the content of images programmatically. None of them could describe everything, let alone describe it well.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+&lt;img src=&#34;https://really.lol/post/accessible-buzzfeed/a11y-bad-captions_hu_d5a9b1641e301fae.jpg&#34; alt=&#34;Two images with inaccurate descriptions.&#34; loading=&#34;lazy&#34;&gt;
+
+
+&lt;figcaption&gt;Machine learning wasn’t up to the task of reliably describing our images.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;We quickly realised that there was only one solution: to consider alt text as integral a piece of content as any piece of visible text in an article. That meant it would fall to our writers and editors to understand the importance of alt text and to write great image descriptions. So, while our engineering team whittled away at hundreds of issues that could be fixed in the background, we worked with our editorial team to put on workshops that demonstrated how screen readers experience our content. After establishing that understanding, we discussed the best alt text for all our different types of image content: from red carpet photos to meme screenshots to shopping items.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+&lt;img src=&#34;https://really.lol/post/accessible-buzzfeed/a11y-edit-guide_hu_1f61bc8ddf00faca.jpg&#34; alt=&#34;An image of Blake Lively on the red carpet with notes on how to describe the image for alt text.&#34; loading=&#34;lazy&#34;&gt;
+
+
+&lt;figcaption&gt;An example from our editorial alt text guide.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;The editorial team didn’t just learn how to write alt text to pass the bare minimum standard. They brought alt text into their style guide, making sure the BuzzFeed voice shone through regardless of how someone experienced the content. The members of the team who attended multiple workshops became experts in good alt text, and now they help their colleagues write it every day. Andrew Ziegler, an editorial colleague who came to many of these workshops, remarked that the burden of writing good alt text was far less than expected: “You’re encouraged to keep it short … you’re not supposed to be redundant and repeat yourself, and you actually have a ton of freedom with it.” Furthermore, these workshops validated that our writers and editors were best placed to provide these descriptions: “Instead of robotically spewing out what’s in the image, you treat it like any other written part of the post and you’re free (and even encouraged) to carry the tone of the post into the alt text itself.”&lt;/p&gt;
+&lt;p&gt;We have a dedicated Slack channel where they exchange tips and establish practices for new kinds of content that present challenges for describing things at the appropriate level of detail. It’s inspiring to see that this enormous problem could be solved by our team by providing the right information and resources, and that they dove into the subject without hesitation once they understood how much the problem impacted our users.&lt;/p&gt;
+&lt;h2 id=&#34;doing-the-work&#34;&gt;Doing The Work&lt;/h2&gt;
+&lt;p&gt;When we embarked on the task of making BuzzFeed accessible to all, we set ourselves a tentative and extremely ambitious task. Over a hundred individuals have worked on fixing one of those 400+ issues in some way or another.&lt;/p&gt;
+&lt;p&gt;The biggest shift over the course of the last year goes above and beyond just a pile of bug fixes — changing our site also changed how we think about building our site. The consequence of having so many contributors to the technical side of our accessibility initiative is that nearly all of the front-end engineers working on the website have now made targeted accessibility fixes, and can identify and prevent additional instances of them in the future. This influence extends past engineering as well: product managers, designers, and QA engineers are now all more attuned to our accessibility concerns. We’re starting to hear “it’d be a huge accessibility win” in the arguments for a new feature or change. I think it’s becoming part of our DNA, and that makes me incredibly hopeful.&lt;/p&gt;
+&lt;p&gt;We’re trying to harness that new wave of motivation by supplying the best tooling and documentation. So far, we’ve used a mixture of the great assets already out there, such as accessible component recipes, as well as making some home-cooked guides on how patterns common to BuzzFeed have been made accessible in the past. Accessibility has also become a foundational part of the ongoing design language project.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The arrival of our letter of accessibility compliance from our external experts marked the end of an enormous push to fix years of inaccessible feature development. Our website is finally accessible to all. Whoever wants to read an article, take a quiz, leave a comment — they can do it. The work that is ahead of us now is making sure that accessible culture is a mainstay of how we build and write content at BuzzFeed.&lt;/p&gt;
+&lt;p&gt;I’ve noticed a real push lately to make digital products accessible to everybody. That’s probably partly due to an uptick in lawsuits under the Americans With Disabilities Act (ADA). However, I also think that there has been a recognition that we’ve replaced significant services and products that used to be physical, tactile things — like newspapers, television sets and telephones with dials and buttons — with digital applications. If you want to buy something particularly obscure, an electric motor for a remote control aeroplane, for example, you’re best off doing it online, particularly during a pandemic. People who want to take a quick picture usually aren’t reaching for their big manual cameras, but their little touch-screen phones. If the digital device is to be the mediating layer between us and the world, as it increasingly is, it must work for everybody.&lt;/p&gt;
+&lt;p&gt;We have finally reached a place where buzzfeed.com provides an accessible experience for all. My grandad passed away, but I can now imagine him asking about my job and being able to skim through articles on our homepage with VoiceOver on his iPad, as easily as he could roll his wheelchair down the ramp into the garden to listen to the aeroplanes overhead.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>Back to office</title>
+      <link>https://really.lol/post/2020-08-22-back-to-office/</link>
+      <pubDate>Sat, 22 Aug 2020 11:47:36 +0100</pubDate>
+      <guid>https://really.lol/post/2020-08-22-back-to-office/</guid>
+      
+      <description>&lt;p&gt;I might be getting back to work in the office soon. I always used to value the physical and mental separation of work and life. I think I still do and I’m looking forward to having it back for two days a week, which is the plan at first.&lt;/p&gt;
+&lt;p&gt;A lot has changed since I left the office, though. I am much more invested in my home. For one, it’s gotten much bigger and can therefore accommodate work mode more easily. I also have gotten to like sitting in my own garden as I break for lunch and the flexibility of fixing some practical task in between work meetings rather than having everything waiting for me at home when I make it back around 7.&lt;/p&gt;
+&lt;p&gt;The chances are I’m going to get back into the office and I’ll remember all the things that made it great to be out the house for work again. Seeing other people every day no matter what, for example.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>Remote Works Sucks</title>
+      <link>https://really.lol/highlight/remote-sucks/</link>
+      <pubDate>Tue, 04 Aug 2020 18:02:12 +0100</pubDate>
+      <guid>https://really.lol/highlight/remote-sucks/</guid>
+      
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s instead encourage companies to invest in the cities in which they are based. That means paying taxes, investing in local education, and generating wealth that can be used by workers to create more companies or fund more amenities where they live.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— &lt;a href=&#34;https://www.seanblanda.com/our-remote-work-future-is-going-to-suck&#34;&gt;Our remote work future is going to suck&lt;/a&gt;, Sean Blanda&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>What If Working From Home Goes on forever?</title>
+      <link>https://really.lol/highlight/wfh-forever/</link>
+      <pubDate>Mon, 15 Jun 2020 11:14:33 +0000</pubDate>
+      <guid>https://really.lol/highlight/wfh-forever/</guid>
+      
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Beyond the feverish pace of online work, employees are experiencing some problems specific to video  what has popularly come to be called Zoom fatigue. In late March I spoke via Zoom to Jessica Lindl, a vice president at Unity, a company that makes software for creating and operating interactive 3-D environments. Before the pandemic, Unity&amp;rsquo;s 3,700-person staff conducted about 10,000 Zoom calls a month. They were now doing five times as many. She was impressed by how productive Unity&amp;rsquo;s employees had been  they launched a new, 25,000-student online training class in the middle of the pandemic.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— &lt;a href=&#34;https://www.nytimes.com/interactive/2020/06/09/magazine/remote-work-covid.html&#34;&gt;What If Working From Home Goes on forever?&lt;/a&gt;, Clive Thompson in &lt;em&gt;The New York Times&lt;/em&gt;&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>167.1 - bots</title>
+      <link>https://really.lol/photo/2017-07-11-27a749ef3ab79ee7bfa2ee800a1c02cb/</link>
+      <pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2017-07-11-27a749ef3ab79ee7bfa2ee800a1c02cb/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>19.1 - menu venue seating</title>
+      <link>https://really.lol/photo/2017-01-19-86956a9b818e31b29f635cb62482e835/</link>
+      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2017-01-19-86956a9b818e31b29f635cb62482e835/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

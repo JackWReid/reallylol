@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Link on really.lol</title>
+    <link>https://really.lol/tags/link/</link>
+    <description>Recent content in Link on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 31 Dec 2019 14:50:57 +0000</lastBuildDate><atom:link href="https://really.lol/tags/link/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PearShaped Magazine Archive</title>
+      <link>https://really.lol/note/2019-12-31-pearshaped-magazine-archive/</link>
+      <pubDate>Tue, 31 Dec 2019 14:50:57 +0000</pubDate>
+      <guid>https://really.lol/note/2019-12-31-pearshaped-magazine-archive/</guid>
+      
+      <description>&lt;p&gt;When I was at university, me and some friends founded a music magazine and ran it for a few years before handing it off to the next generation of students when we graduated. It ran on for a few years after we left and then closed.&lt;/p&gt;
+&lt;p&gt;I noticed recently that the hosting was about to expire, so I exported the magazine&amp;rsquo;s content and turned it into a basic static site so it wasn&amp;rsquo;t lost forever. It&amp;rsquo;s the &lt;a href=&#34;https://pearshapedarchive.com&#34;&gt;PearShaped Magazine Archive&lt;/a&gt;.&lt;/p&gt;
+</description>
+			
+    </item>
+    
+    <item>
+      <title>The Académie Française</title>
+      <link>https://really.lol/note/2019-08-05-academie-francaise/</link>
+      <pubDate>Mon, 05 Aug 2019 11:34:00 +0100</pubDate>
+      <guid>https://really.lol/note/2019-08-05-academie-francaise/</guid>
+      
+      <description>&lt;p&gt;I was vaguely aware that the French language is basically policed by the Académie Française, but I&amp;rsquo;d never seen this statistic that really shows how small the base French vocabulary is. Aptly enough I saw it in &lt;a href=&#34;https://www.bbc.com/travel/story/20190804-why-the-french-love-to-say-no&#34;&gt;this article&lt;/a&gt; about the French propensity to say&amp;hellip; no.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;there are 500,000 words in the English language, but only 70,000 in French&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— &lt;em&gt;The Culture Map&lt;/em&gt; by Erin Meyer via BBC&lt;/p&gt;
+</description>
+			
+    </item>
+    
+  </channel>
+</rss>

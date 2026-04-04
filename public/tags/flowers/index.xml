@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flowers on really.lol</title>
+    <link>https://really.lol/tags/flowers/</link>
+    <description>Recent content in Flowers on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 18 Jun 2023 11:12:57 +0000</lastBuildDate><atom:link href="https://really.lol/tags/flowers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poppies</title>
+      <link>https://really.lol/photo/2023-06-18-henningsdorf-poppy/</link>
+      <pubDate>Sun, 18 Jun 2023 11:12:57 +0000</pubDate>
+      <guid>https://really.lol/photo/2023-06-18-henningsdorf-poppy/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>Cliff yellow</title>
+      <link>https://really.lol/photo/2022-07-22-cliff-flowers/</link>
+      <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2022-07-22-cliff-flowers/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+    <item>
+      <title>Pink Boom</title>
+      <link>https://really.lol/photo/2022-06-06-pink-boom/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://really.lol/photo/2022-06-06-pink-boom/</guid>
+      
+			<description>This is a photo post, which means you aren't going to be able to see it in the RSS feed. I haven't worked out how to reliably show images in the RSS feed, so you'll have to go the website itself. Sorry! I promise this isn't a growth hack! I'm just bad at this!</description>
+			
+    </item>
+    
+  </channel>
+</rss>

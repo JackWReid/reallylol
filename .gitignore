@@ -2,11 +2,13 @@
 .worktrees/
 
 # Hugo build artifacts
-public/
-!astro/public/
 resources/
 resources/_gen/
 .hugo_build.lock
+
+# Astro build output
+dist/
+.astro/
 
 # Playwright
 test-results/
@@ -49,7 +51,7 @@ tmp/
 *.cache
 *.pid
 *.lock
-!astro/bun.lock
+!bun.lock
 
 # Python
 __pycache__/
@@ -72,7 +74,6 @@ __pycache__/
 content/.obsidian/
 
 # Build and deployment
-dist/
 build/
 deploy/
 

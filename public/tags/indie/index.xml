@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="https://really.lol/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Indie on really.lol</title>
+    <link>https://really.lol/tags/indie/</link>
+    <description>Recent content in Indie on really.lol</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 05 Oct 2020 17:32:41 +0100</lastBuildDate><atom:link href="https://really.lol/tags/indie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Internet Is For End Users</title>
+      <link>https://really.lol/highlight/ietf-end-users/</link>
+      <pubDate>Mon, 05 Oct 2020 17:32:41 +0100</pubDate>
+      <guid>https://really.lol/highlight/ietf-end-users/</guid>
+      
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Many who participate in the IETF are most comfortable making what we believe to be purely technical decisions; our process favors technical merit through our well-known mantra of &amp;ldquo;rough consensus and running code.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Nevertheless, the running code that results from our process (when things work well) inevitably has an impact beyond technical considerations, because the underlying decisions afford some uses while discouraging others.  While we believe we are making only technical decisions, in reality, we are defining (in some degree) what is possible on the Internet itself.&lt;/p&gt;
+&lt;p&gt;This impact has become significant.  As the Internet increasingly mediates essential functions in societies, it has unavoidably become profoundly political; it has helped people overthrow governments, revolutionize social orders, swing elections, control populations, collect data about individuals, and reveal secrets.  It has created wealth for some individuals and companies while destroying that of others.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— &lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc8890.txt&#34;&gt;The Internet Is For End Users&lt;/a&gt;, Mark Nottingham in &lt;em&gt;Internet Architecture Board RFCs&lt;/em&gt;&lt;/p&gt;
+</description>
+			
+    </item>
+    
+  </channel>
+</rss>
