@@ -1,0 +1,56 @@
+---
+import { getCollection } from "astro:content";
+import type { GetStaticPathsOptions } from "astro";
+import Base from "../../layouts/Base.astro";
+import Pagination from "../../components/Pagination.astro";
+import Calendar from "../../components/icons/Calendar.astro";
+import Location from "../../components/icons/Location.astro";
+import { r2Thumb } from "../../lib/images";
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const photos = await getCollection("photo");
+  const sorted = photos.sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  );
+  return paginate(sorted, { pageSize: 24 });
+}
+
+const { page } = Astro.props;
+---
+
+<Base title="Photos" section="photo">
+  <main class="photo-section-main">
+    <h1 class="default-section-title">Photos</h1>
+    <div class="photo-section-grid">
+      {page.data.map((photo) => {
+        const dateIso = photo.data.date.toISOString().slice(0, 10);
+        const thumbUrl = r2Thumb(photo.data.image);
+        return (
+          <article class="photo-section-item">
+            <a href={`/photo/${photo.id}/`}>
+              <img src={thumbUrl} alt={photo.data.title} />
+            </a>
+            <h3 class="photo-section-item__title">
+              <a href={`/photo/${photo.id}/`}>{photo.data.title}</a>
+            </h3>
+            <p class="photo-section-item__date">
+              <Calendar /> {dateIso}
+            </p>
+            {photo.data.location && (
+              <p class="photo-section-item__location">
+                <Location />
+                <span>{photo.data.location}</span>
+              </p>
+            )}
+          </article>
+        );
+      })}
+    </div>
+    <Pagination
+      currentPage={page.currentPage}
+      lastPage={page.lastPage}
+      prevUrl={page.url.prev}
+      nextUrl={page.url.next}
+    />
+  </main>
+</Base>
