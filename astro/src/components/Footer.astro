@@ -11,7 +11,12 @@ const allPhotos = await getCollection("photo");
 const photoMap = new Map(allPhotos.map((p) => [p.id, p]));
 
 const entries = randomPhotosData as RandomPhotoEntry[];
-const shuffled = [...entries].sort(() => Math.random() - 0.5);
+// Fisher-Yates shuffle for unbiased random selection
+const shuffled = [...entries];
+for (let i = shuffled.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+}
 
 // Pick the first entry that resolves to a known photo
 let photo: (typeof allPhotos)[0] | undefined;

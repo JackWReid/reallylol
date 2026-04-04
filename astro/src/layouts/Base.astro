@@ -30,7 +30,12 @@ const pageTitle = title === "really.lol" ? title : `${title} | really.lol`;
     {description && <meta property="og:description" content={description} />}
     {image && <meta property="og:image" content={image} />}
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#f5efd3" />
+    <meta property="og:site_name" content="really.lol" />
+    <meta property="og:locale" content="en-GB" />
+    <meta name="theme-color" content="#2C471F" />
+    <meta name="author" content="really.lol" />
+    <meta name="robots" content="index,follow" />
+    <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" title="really.lol" href="/rss.xml" />
     <link rel="icon" type="image/png" href="/favicon.png" />
   </head>
