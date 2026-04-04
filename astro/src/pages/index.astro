@@ -1,19 +1,8 @@
 ---
-import "../styles/style.css";
-import { getCollection } from "astro:content";
-const posts = await getCollection("post");
-const notes = await getCollection("note");
-const photos = await getCollection("photo");
-const highlights = await getCollection("highlight");
+import Base from "../layouts/Base.astro";
 ---
-<html lang="en-gb">
-  <head><title>really.lol</title></head>
-  <body>
-    <header class="site-header">
-      <div class="site-header-wrapper">
-        <h1>really.lol</h1>
-        <p>posts: {posts.length}, notes: {notes.length}, photos: {photos.length}, highlights: {highlights.length}</p>
-      </div>
-    </header>
-  </body>
-</html>
+<Base title="really.lol" description="A scrapbook, a journal, and a logbook.">
+  <main class="home-main">
+    <p>Astro migration in progress.</p>
+  </main>
+</Base>

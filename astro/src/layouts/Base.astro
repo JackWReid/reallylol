@@ -1,0 +1,45 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/style.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  section?: string;
+}
+
+const {
+  title = "really.lol",
+  description,
+  image,
+  section = "",
+} = Astro.props;
+
+const pageTitle = title === "really.lol" ? title : `${title} | really.lol`;
+---
+<!doctype html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <meta property="og:title" content={pageTitle} />
+    {description && <meta property="og:description" content={description} />}
+    {image && <meta property="og:image" content={image} />}
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#f5efd3" />
+    <link rel="alternate" type="application/rss+xml" title="really.lol" href="/rss.xml" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  </head>
+  <body class={section}>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <SiteHeader />
+    <div class="site-wrapper" id="main-content">
+      <slot />
+    </div>
+    <Footer />
+  </body>
+</html>
