@@ -4,8 +4,8 @@ import { resolve, dirname } from "path";
 
 export const SCRIPTS_DIR = dirname(dirname(import.meta.dir));
 export const ROOT = resolve(dirname(import.meta.path), "../..");
-export const CONTENT_DIR = resolve(ROOT, "content");
-export const DATA_DIR = resolve(ROOT, "data");
+export const CONTENT_DIR = resolve(ROOT, "src/content");
+export const DATA_DIR = resolve(ROOT, "src/data");
 export const ASSETS_DIR = resolve(ROOT, "assets");
 export const CREDS_DIR = resolve(ROOT, "creds");
 export const POST_DIR = resolve(CONTENT_DIR, "post");

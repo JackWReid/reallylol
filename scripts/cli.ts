@@ -9,7 +9,6 @@
  *   bun scripts/cli.ts new media [--benchmark]
  *   bun scripts/cli.ts sync books|films|links|photos|all [--verbose] [--dry-run] [--output <path>]
  *   bun scripts/cli.ts validate
- *   bun scripts/cli.ts bundle to-bundle|to-post
  *
  * Sync Command Flags (unified across all sync subcommands):
  *   --verbose / -v       Enable verbose logging output
@@ -32,7 +31,6 @@ import {
   syncAll,
 } from "./commands/sync";
 import { validate } from "./commands/validate";
-import { toBundle, toPost } from "./commands/bundle";
 
 type Command = (args: string[]) => Promise<void>;
 
@@ -51,10 +49,6 @@ const commands: Record<string, Command | Record<string, Command>> = {
     all: syncAll,
   },
   validate: validate,
-  bundle: {
-    "to-bundle": toBundle,
-    "to-post": toPost,
-  },
 };
 
 async function main(): Promise<void> {
@@ -103,8 +97,6 @@ function printUsage(): void {
   console.error(
     "  validate              Validate frontmatter (reads paths from stdin)",
   );
-  console.error("  bundle to-bundle      Convert flat post to page bundle");
-  console.error("  bundle to-post        Convert empty bundle to flat post");
 }
 
 main().then(
