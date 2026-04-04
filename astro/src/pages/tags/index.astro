@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import { getPrettyName } from "../../lib/tags";
+import { getPrettyName, tagToSlug } from "../../lib/tags";
 
 const posts = await getCollection("post");
 const photos = await getCollection("photo");
@@ -34,7 +34,7 @@ const sortedTags = [...tagCounts.entries()].sort((a, b) => b[1] - a[1]);
     <ul class="tag-list">
       {sortedTags.map(([tag, count]) => (
         <li class="tag-list__item">
-          <a href={`/tags/${tag}/`}>
+          <a href={`/tags/${tagToSlug(tag)}/`}>
             #{getPrettyName(tag).toLowerCase()}
           </a>
           <span class="tag-list__count">({count})</span>

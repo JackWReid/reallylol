@@ -1,5 +1,5 @@
 ---
-import { getPrettyName } from "../lib/tags";
+import { getPrettyName, tagToSlug } from "../lib/tags";
 
 interface Props {
   tags: string[];
@@ -13,7 +13,7 @@ const { tags, baseHref = "/tags/" } = Astro.props;
   <ul class="section-item__tags">
     {tags.map((tag) => (
       <li class="section-item__tags-item">
-        <a href={`${baseHref}${tag}/`}>#{getPrettyName(tag).toLowerCase()}</a>
+        <a href={`${baseHref}${tagToSlug(tag)}/`}>#{getPrettyName(tag).toLowerCase()}</a>
       </li>
     ))}
   </ul>

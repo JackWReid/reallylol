@@ -4,7 +4,7 @@ import type { GetStaticPathsOptions } from "astro";
 import Base from "../../../layouts/Base.astro";
 import PreviewCard from "../../../components/PreviewCard.astro";
 import Pagination from "../../../components/Pagination.astro";
-import { getPrettyName } from "../../../lib/tags";
+import { getPrettyName, tagToSlug } from "../../../lib/tags";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const posts = await getCollection("post");
@@ -41,7 +41,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
     );
 
     const tagPages = paginate(combined, {
-      params: { tag },
+      params: { tag: tagToSlug(tag) },
       props: { tag },
       pageSize: 10,
     });
