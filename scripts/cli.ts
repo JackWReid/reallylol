@@ -7,13 +7,30 @@
  *   bun scripts/cli.ts new note
  *   bun scripts/cli.ts new photo <image>
  *   bun scripts/cli.ts new media [--benchmark]
- *   bun scripts/cli.ts sync books|films|links|photos|all
+ *   bun scripts/cli.ts sync books|films|links|photos|all [--verbose] [--dry-run] [--output <path>]
  *   bun scripts/cli.ts validate
  *   bun scripts/cli.ts bundle to-bundle|to-post
+ *
+ * Sync Command Flags (unified across all sync subcommands):
+ *   --verbose / -v       Enable verbose logging output
+ *   --dry-run            Simulate without writing files to disk
+ *   --output <path>      Override default output path (useful for testing)
+ *
+ * Command-Specific Flags:
+ *   sync films  --username=<user>  Letterboxd username (default: jackreid)
+ *   sync links  --tag=<tag>        Raindrop tag to sync (default: toblog)
+ *
+ * For detailed flag documentation, see: docs/cli-flags.md
  */
 
 import { newPost, newNote, newPhoto, newMedia } from "./commands/new";
-import { syncBooks, syncFilms, syncLinks, syncPhotos, syncAll } from "./commands/sync";
+import {
+  syncBooks,
+  syncFilms,
+  syncLinks,
+  syncPhotos,
+  syncAll,
+} from "./commands/sync";
 import { validate } from "./commands/validate";
 import { toBundle, toPost } from "./commands/bundle";
 
@@ -62,14 +79,16 @@ async function main(): Promise<void> {
   }
 
   // Subcommand (e.g. "new post", "sync books")
-  const sub = args[1];
+  // If no subcommand given (or next arg is a flag), default to "all" if available
+  const hasSubcommand = args[1] && !args[1].startsWith("-");
+  const sub = hasSubcommand ? args[1] : "all" in group ? "all" : undefined;
   if (!sub || !(sub in group)) {
-    console.error(`Unknown subcommand: ${args[0]} ${sub ?? ""}`);
+    console.error(`Unknown subcommand: ${args[0]} ${args[1] ?? ""}`);
     console.error(`Available: ${Object.keys(group).join(", ")}`);
     process.exit(1);
   }
 
-  await group[sub](args.slice(2));
+  await group[sub](hasSubcommand ? args.slice(2) : args.slice(1));
 }
 
 function printUsage(): void {
@@ -81,7 +100,9 @@ function printUsage(): void {
   console.error("  new photo <image>     Create a new photo post");
   console.error("  new media [--benchmark]  Create a new medialog post");
   console.error("  sync books|films|links|photos|all");
-  console.error("  validate              Validate frontmatter (reads paths from stdin)");
+  console.error(
+    "  validate              Validate frontmatter (reads paths from stdin)",
+  );
   console.error("  bundle to-bundle      Convert flat post to page bundle");
   console.error("  bundle to-post        Convert empty bundle to flat post");
 }
