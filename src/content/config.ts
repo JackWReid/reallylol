@@ -3,12 +3,10 @@ import { glob } from "astro/loaders";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
-// Resolve absolute paths to the real content directories (via symlinks)
 const contentRoot = resolve(dirname(fileURLToPath(import.meta.url)));
-const repoRoot = resolve(contentRoot, "../..");
 
 function contentBase(collection: string) {
-  return resolve(repoRoot, "content", collection);
+  return resolve(contentRoot, collection);
 }
 
 const post = defineCollection({
