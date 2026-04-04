@@ -1,9 +1,0 @@
-{{ if eq "photo" .Type }}
-  {{ partial "preview/photo.html" . }}
-{{ else if eq "highlight" .Type }}
-  {{ partial "preview/highlight.html" . }}
-{{ else if eq "post" .Type }}
-  {{ partial "preview/post.html" . }}
-{{ else if eq "note" .Type }}
-  {{ partial "preview/note.html" . }}
-{{ end }}
