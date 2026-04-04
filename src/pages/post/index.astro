@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import PreviewCard from "../../components/PreviewCard.astro";
 import Pagination from "../../components/Pagination.astro";
+import { generateSummary } from "../../lib/summary";
 
 const posts = await getCollection("post");
 const sorted = posts.sort(
@@ -30,6 +31,7 @@ const pageData = sorted.slice(0, pageSize);
           date={post.data.date}
           id={post.id}
           tags={post.data.tags}
+          excerpt={generateSummary(post.body ?? "")}
         />
       ))}
     </div>
