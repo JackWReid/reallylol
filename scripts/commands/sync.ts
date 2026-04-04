@@ -1,12 +1,11 @@
 /**
  * Sync commands: books, films, links, photos, all.
  *
- * TODO 1: Make `bun run sync` default to `sync all` when no subcommand is provided.
- * TODO 2: Replace `process.exit()` usage in sync commands with thrown errors; keep exit handling centralised in `scripts/cli.ts`.
+ * TODO 1: Replace `process.exit()` usage in sync commands with thrown errors; keep exit handling centralised in `scripts/cli.ts`.
  * TODO 3: Add network resilience helpers (request timeout + retries with exponential backoff for 429/5xx responses).
  * TODO 4: Add lightweight runtime validation for external API JSON payloads before use.
  * TODO 5: Unify and document CLI flags across sync commands (support `--flag value`, plus `--verbose`, `--dry-run`, optional output override for testing).
- * TODO 6: Make scraping/parsing more robust (replace brittle regex-based HTML/RSS parsing with safer parser-based extraction).
+ * TODO 6: ~~Make scraping/parsing more robust~~ -- Done. Replaced regex-based HTML/RSS scraping with `cover books --json` and `curtain diary/--json` + `curtain watchlist --json`.
  * TODO 7: Improve dedupe key strategy beyond `${name}|${year}` to avoid collision edge cases.
  * TODO 8: Return structured per-command summary stats and print a consolidated final summary in `syncAll`.
  */
@@ -17,13 +16,54 @@ import { run, commandExists } from "../lib/exec";
 import { writeCompactJson } from "../lib/json";
 import { ensureDir } from "../lib/files";
 import { parseTags } from "../lib/frontmatter";
-import { ROOT, DATA_DIR, BOOKS_DIR, FILMS_DIR, PHOTO_DIR, CREDS_DIR } from "../lib/paths";
+import {
+  ROOT,
+  DATA_DIR,
+  BOOKS_DIR,
+  FILMS_DIR,
+  PHOTO_DIR,
+  CREDS_DIR,
+} from "../lib/paths";
+import { parseFlags, getFlagValue, getFlagBoolean } from "../lib/flags";
 
 // ─── Books ──────────────────────────────────────────────────────────────────
 
-export async function syncBooks(_args: string[]): Promise<void> {
+interface BookRow {
+  title: string;
+  author: string;
+  date_updated: string;
+  image_url: string;
+  hardcover_url: string;
+}
+
+function transformCoverBook(raw: unknown): BookRow {
+  const entry = raw as {
+    book: {
+      title: string;
+      slug: string;
+      authors: string[];
+      imageUrl?: string | null;
+    };
+    dateUpdated: string;
+  };
+  return {
+    title: entry.book.title,
+    author: entry.book.authors?.join(", ") ?? "Unknown",
+    date_updated: entry.dateUpdated ?? "",
+    image_url: entry.book.imageUrl ?? "",
+    hardcover_url: `https://hardcover.app/books/${entry.book.slug}`,
+  };
+}
+
+export async function syncBooks(args: string[]): Promise<void> {
+  const flags = parseFlags(args);
+  const verbose = getFlagBoolean(flags, "verbose");
+  const dryRun = getFlagBoolean(flags, "dry-run");
+
   if (!(await commandExists("cover"))) {
-    console.error("Error: cover CLI not found. Install from https://github.com/jackreid/cover");
+    console.error(
+      "Error: cover CLI not found. Install from https://github.com/jackreid/cover",
+    );
     process.exit(1);
   }
   if (!process.env.HARDCOVER_API_KEY) {
@@ -31,15 +71,38 @@ export async function syncBooks(_args: string[]): Promise<void> {
     process.exit(1);
   }
 
-  await ensureDir(BOOKS_DIR);
+  if (dryRun) {
+    console.log("[dry-run] Skipping directory creation");
+  } else {
+    await ensureDir(BOOKS_DIR);
+  }
 
   for (const shelf of ["toread", "reading", "read"]) {
     console.log(`  Fetching ${shelf}...`);
-    const output = await run(["cover", "list", shelf, "--blog"]);
+    const output = await run([
+      "cover",
+      "books",
+      "--shelf",
+      shelf,
+      "--per-page",
+      "2000",
+      "--json",
+    ]);
     const trimmed = output.trim();
-    const data = trimmed.includes("No books found") ? [] : JSON.parse(trimmed);
-    await writeCompactJson(data, resolve(BOOKS_DIR, `${shelf}.json`));
-    console.log(`  ${shelf}.json (${data.length} books)`);
+    const rawBooks: unknown[] = trimmed === "[]" ? [] : JSON.parse(trimmed);
+    const books = rawBooks.map(transformCoverBook);
+
+    const outputPath = resolve(BOOKS_DIR, `${shelf}.json`);
+    if (dryRun) {
+      console.log(`[dry-run] Would write ${outputPath} (${books.length} books)`);
+    } else {
+      await writeCompactJson(books, outputPath);
+      console.log(`  ${shelf}.json (${books.length} books)`);
+    }
+
+    if (verbose) {
+      console.log(`[verbose] Processed shelf: ${shelf}, count: ${books.length}`);
+    }
   }
 
   console.log("Books sync complete.");
@@ -60,117 +123,112 @@ function loadJson<T>(path: string): T[] {
   return JSON.parse(readFileSync(path, "utf-8"));
 }
 
-async function fetchRssDiary(username: string): Promise<Film[]> {
-  const url = `https://letterboxd.com/${username}/rss/`;
-  const resp = await fetch(url, {
-    headers: { "User-Agent": "Mozilla/5.0" },
-  });
-  if (!resp.ok) throw new Error(`Letterboxd RSS returned ${resp.status}`);
-  const xml = await resp.text();
-
-  // Simple regex parsing — the RSS structure is flat and stable
-  const entries: Film[] = [];
-  const itemRegex = /<item>([\s\S]*?)<\/item>/g;
-  let match: RegExpExecArray | null;
-
-  while ((match = itemRegex.exec(xml)) !== null) {
-    const block = match[1];
-    const titleMatch = block.match(
-      /<letterboxd:filmTitle>(.*?)<\/letterboxd:filmTitle>/,
-    );
-    if (!titleMatch) continue;
-    const yearMatch = block.match(
-      /<letterboxd:filmYear>(.*?)<\/letterboxd:filmYear>/,
-    );
-    const dateMatch = block.match(
-      /<letterboxd:watchedDate>(.*?)<\/letterboxd:watchedDate>/,
-    );
-    if (!dateMatch) continue;
-
-    entries.push({
-      name: titleMatch[1],
-      year: yearMatch?.[1] ?? "",
-      date_updated: dateMatch[1],
-    });
-  }
-
-  return entries;
+interface CurtainFilmEntry {
+  film: {
+    title: string;
+    year: number | null;
+  };
+  watchedDate?: string | null;
+  addedDate?: string | null;
 }
 
-async function scrapeWatchlist(username: string): Promise<Film[]> {
-  const films: Film[] = [];
-  let page = 1;
-
-  while (true) {
-    const url = `https://letterboxd.com/${username}/watchlist/page/${page}/`;
-    const resp = await fetch(url, {
-      headers: { "User-Agent": "Mozilla/5.0" },
-    });
-    if (resp.status === 404) break;
-    if (!resp.ok) throw new Error(`Letterboxd returned ${resp.status}`);
-
-    const html = await resp.text();
-    const matches = [...html.matchAll(/data-item-name="([^"]+)"/g)];
-    if (matches.length === 0) break;
-
-    for (const m of matches) {
-      const raw = m[1]
-        .replace(/&amp;/g, "&")
-        .replace(/&lt;/g, "<")
-        .replace(/&gt;/g, ">")
-        .replace(/&quot;/g, '"')
-        .replace(/&#039;/g, "'")
-        .replace(/&#x27;/g, "'");
-
-      const idx = raw.lastIndexOf(" (");
-      if (idx !== -1 && raw.endsWith(")")) {
-        films.push({ name: raw.slice(0, idx), year: raw.slice(idx + 2, -1) });
-      } else {
-        films.push({ name: raw, year: "" });
-      }
-    }
-
-    page++;
-  }
-
-  return films;
+function curtainEntryToFilm(
+  entry: CurtainFilmEntry,
+  dateField: string,
+): Film {
+  const year = entry.film.year ?? "";
+  return {
+    name: entry.film.title,
+    year: String(year),
+    date_updated: entry[dateField as keyof CurtainFilmEntry] as string | undefined,
+  };
 }
 
 export async function syncFilms(args: string[]): Promise<void> {
-  const username =
-    args.find((a) => a.startsWith("--username="))?.split("=")[1] ??
-    LETTERBOXD_DEFAULT_USER;
+  const flags = parseFlags(args);
+  const verbose = getFlagBoolean(flags, "verbose");
+  const dryRun = getFlagBoolean(flags, "dry-run");
+  const username = getFlagValue(
+    flags,
+    "username",
+    undefined,
+    LETTERBOXD_DEFAULT_USER,
+  );
+  const outputOverride = getFlagValue(flags, "output");
 
-  await ensureDir(FILMS_DIR);
+  if (verbose) {
+    console.log(`[verbose] Using Letterboxd username: ${username}`);
+  }
+
+  if (!(await commandExists("curtain"))) {
+    console.error(
+      "Error: curtain CLI not found. Install from https://github.com/jackreid/curtain",
+    );
+    process.exit(1);
+  }
+
+  if (dryRun) {
+    console.log("[dry-run] Skipping directory creation");
+  } else {
+    await ensureDir(FILMS_DIR);
+  }
+
   const today = new Date().toISOString().slice(0, 10);
 
   // Watchlist
-  console.log(`  Scraping watchlist for ${username}...`);
-  const scraped = await scrapeWatchlist(username);
-  const existingTowatch = loadJson<Film>(resolve(FILMS_DIR, "towatch.json"));
+  console.log(`  Fetching watchlist for ${username}...`);
+  const wlOutput = await run(["curtain", "watchlist", "--json", "--per-page", "2000", username]);
+  const rawWatchlist: CurtainFilmEntry[] = JSON.parse(wlOutput.trim() || "[]");
+
+  const existingTowatch = loadJson<Film>(
+    outputOverride ?? resolve(FILMS_DIR, "towatch.json"),
+  );
   const existingDates = new Map(
     existingTowatch.map((f) => [`${f.name}|${f.year}`, f.date_updated]),
   );
-  const towatch = scraped
+  const towatch = rawWatchlist
+    .map((e) => curtainEntryToFilm(e, "addedDate"))
+    .filter((f) => f.name)
     .map((f) => ({
-      name: f.name,
-      year: f.year,
+      ...f,
       date_updated: existingDates.get(`${f.name}|${f.year}`) ?? today,
     }))
     .sort((a, b) => b.date_updated!.localeCompare(a.date_updated!));
-  await writeCompactJson(towatch, resolve(FILMS_DIR, "towatch.json"));
+
+  const towatchPath: string =
+    outputOverride ?? resolve(FILMS_DIR, "towatch.json");
+  if (dryRun) {
+    console.log(
+      `[dry-run] Would write ${towatchPath} (${towatch.length} films)`,
+    );
+  } else {
+    await writeCompactJson(towatch, towatchPath);
+  }
 
   // Diary (watched)
-  console.log(`  Fetching RSS diary for ${username}...`);
-  const rssEntries = await fetchRssDiary(username);
-  const existingWatched = loadJson<Film>(resolve(FILMS_DIR, "watched.json"));
+  console.log(`  Fetching diary for ${username}...`);
+  const diaryOutput = await run(["curtain", "diary", "--json", "--per-page", "2000", username]);
+  const rawDiary: CurtainFilmEntry[] = JSON.parse(diaryOutput.trim() || "[]");
+
+  const watchedPath: string =
+    outputOverride?.replace("towatch", "watched") ??
+    resolve(FILMS_DIR, "watched.json");
+  const existingWatched = loadJson<Film>(watchedPath);
   const seen = new Map<string, Film>();
   for (const f of existingWatched) seen.set(`${f.name}|${f.year}`, f);
-  for (const f of rssEntries) seen.set(`${f.name}|${f.year}`, f);
+  for (const f of rawDiary)
+    seen.set(`${f.name}|${f.year}`, curtainEntryToFilm(f, "watchedDate"));
   const watched = [...seen.values()].sort((a, b) =>
     (b.date_updated ?? "").localeCompare(a.date_updated ?? ""),
   );
-  await writeCompactJson(watched, resolve(FILMS_DIR, "watched.json"));
+
+  if (dryRun) {
+    console.log(
+      `[dry-run] Would write ${watchedPath} (${watched.length} films)`,
+    );
+  } else {
+    await writeCompactJson(watched, watchedPath);
+  }
 
   console.log("Films sync complete:");
   console.log(`  towatch.json (${towatch.length} films)`);
@@ -180,10 +238,15 @@ export async function syncFilms(args: string[]): Promise<void> {
 // ─── Links ──────────────────────────────────────────────────────────────────
 
 export async function syncLinks(args: string[]): Promise<void> {
-  const tag =
-    args.find((a) => a.startsWith("--tag="))?.split("=")[1] ??
-    process.env.RAINDROP_TAG ??
-    "toblog";
+  const flags = parseFlags(args);
+  const verbose = getFlagBoolean(flags, "verbose");
+  const dryRun = getFlagBoolean(flags, "dry-run");
+  const tag = getFlagValue(flags, "tag", "RAINDROP_TAG", "toblog");
+  const outputOverride = getFlagValue(flags, "output");
+
+  if (verbose) {
+    console.log(`[verbose] Syncing links with tag: ${tag}`);
+  }
 
   // Find token
   let token: string | undefined;
@@ -191,12 +254,18 @@ export async function syncLinks(args: string[]): Promise<void> {
 
   if (existsSync(tokenFile)) {
     token = readFileSync(tokenFile, "utf-8").trim();
-    if (token) console.log(`  Using token from creds/raindrop-token`);
+    if (token) {
+      console.log(`  Using token from creds/raindrop-token`);
+      if (verbose) console.log(`[verbose] Token loaded from file`);
+    }
   }
 
   if (!token) {
     token = process.env.RAINDROP_ACCESS_TOKEN?.trim();
-    if (token) console.log("  Using token from RAINDROP_ACCESS_TOKEN");
+    if (token) {
+      console.log("  Using token from RAINDROP_ACCESS_TOKEN");
+      if (verbose) console.log(`[verbose] Token loaded from environment`);
+    }
   }
 
   if (!token) {
@@ -222,6 +291,10 @@ export async function syncLinks(args: string[]): Promise<void> {
   while (true) {
     const encodedTag = encodeURIComponent(tag);
     const url = `https://api.raindrop.io/rest/v1/raindrops/0?search=%23${encodedTag}&page=${page}&perpage=${perPage}`;
+
+    if (verbose) {
+      console.log(`[verbose] Fetching page ${page + 1}`);
+    }
 
     const resp = await fetch(url, {
       headers: {
@@ -262,8 +335,16 @@ export async function syncLinks(args: string[]): Promise<void> {
 
   allItems.sort((a, b) => b.date.localeCompare(a.date));
 
-  await ensureDir(DATA_DIR);
-  await writeCompactJson(allItems, resolve(DATA_DIR, "links.json"));
+  const outputPath: string = outputOverride ?? resolve(DATA_DIR, "links.json");
+
+  if (dryRun) {
+    console.log(
+      `[dry-run] Would write ${outputPath} (${allItems.length} links)`,
+    );
+  } else {
+    await ensureDir(DATA_DIR);
+    await writeCompactJson(allItems, outputPath);
+  }
 
   console.log("Links sync complete:");
   console.log(`  links.json (${allItems.length} links)`);
@@ -271,7 +352,12 @@ export async function syncLinks(args: string[]): Promise<void> {
 
 // ─── Photos ─────────────────────────────────────────────────────────────────
 
-export async function syncPhotos(_args: string[]): Promise<void> {
+export async function syncPhotos(args: string[]): Promise<void> {
+  const flags = parseFlags(args);
+  const verbose = getFlagBoolean(flags, "verbose");
+  const dryRun = getFlagBoolean(flags, "dry-run");
+  const outputOverride = getFlagValue(flags, "output");
+
   const configPath = resolve(DATA_DIR, "content_config.json");
   if (!existsSync(configPath)) {
     console.error(`Error: data/content_config.json not found`);
@@ -282,6 +368,12 @@ export async function syncPhotos(_args: string[]): Promise<void> {
   const excludeTags = new Set(
     (config.exclude_tags ?? []).map((t: string) => t.toLowerCase()),
   );
+
+  if (verbose) {
+    console.log(
+      `[verbose] Exclude tags: ${Array.from(excludeTags).join(", ")}`,
+    );
+  }
 
   if (!existsSync(PHOTO_DIR)) {
     console.error("Error: content/photo/ not found");
@@ -323,7 +415,15 @@ export async function syncPhotos(_args: string[]): Promise<void> {
 
   console.log(); // newline after progress
 
-  await writeCompactJson(eligible, resolve(DATA_DIR, "random_photos.json"));
+  const outputPath = outputOverride ?? resolve(DATA_DIR, "random_photos.json");
+
+  if (dryRun) {
+    console.log(
+      `[dry-run] Would write ${outputPath} (${eligible.length} eligible photos)`,
+    );
+  } else {
+    await writeCompactJson(eligible, outputPath);
+  }
 
   console.log("Photos sync complete:");
   console.log(`  random_photos.json (${eligible.length} eligible photos)`);
@@ -332,6 +432,11 @@ export async function syncPhotos(_args: string[]): Promise<void> {
 // ─── All ────────────────────────────────────────────────────────────────────
 
 export async function syncAll(args: string[]): Promise<void> {
+  const flags = parseFlags(args);
+  if (getFlagBoolean(flags, "verbose")) {
+    console.log("[verbose] Running all sync commands");
+  }
+
   console.log("=== Books ===");
   await syncBooks(args);
   console.log();
