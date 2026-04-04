@@ -1,9 +1,11 @@
 # Worktrees
 .worktrees/
 
-# Astro
+# Astro / Wrangler
 dist/
 .astro/
+.wrangler/
+**/.wrangler/
 
 # Local media (content photos for dev; production images are on R2)
 assets/
