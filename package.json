@@ -17,7 +17,7 @@
     "cli": "bun scripts/cli.ts",
     "new": "bun scripts/cli.ts new",
     "sync": "bun scripts/cli.ts sync",
-    "validate": "bun scripts/cli.ts validate"
+    "validate": "astro check"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.0",

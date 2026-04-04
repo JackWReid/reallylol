@@ -8,7 +8,6 @@
  *   bun scripts/cli.ts new photo <image>
  *   bun scripts/cli.ts new media [--benchmark]
  *   bun scripts/cli.ts sync books|films|links|photos|all [--verbose] [--dry-run] [--output <path>]
- *   bun scripts/cli.ts validate
  *
  * Sync Command Flags (unified across all sync subcommands):
  *   --verbose / -v       Enable verbose logging output
@@ -30,7 +29,6 @@ import {
   syncPhotos,
   syncAll,
 } from "./commands/sync";
-import { validate } from "./commands/validate";
 
 type Command = (args: string[]) => Promise<void>;
 
@@ -48,7 +46,6 @@ const commands: Record<string, Command | Record<string, Command>> = {
     photos: syncPhotos,
     all: syncAll,
   },
-  validate: validate,
 };
 
 async function main(): Promise<void> {
@@ -95,8 +92,7 @@ function printUsage(): void {
   console.error("  new media [--benchmark]  Create a new medialog post");
   console.error("  sync books|films|links|photos|all");
   console.error(
-    "  validate              Validate frontmatter (reads paths from stdin)",
-  );
+    );
 }
 
 main().then(
