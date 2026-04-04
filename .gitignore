@@ -3,6 +3,7 @@
 
 # Hugo build artifacts
 public/
+!astro/public/
 resources/
 resources/_gen/
 .hugo_build.lock
