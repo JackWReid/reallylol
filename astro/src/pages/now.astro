@@ -1,8 +1,8 @@
 ---
 import { getEntry, render } from "astro:content";
-import Base from "../../layouts/Base.astro";
+import Base from "../layouts/Base.astro";
 
-const entry = await getEntry("about", "uses");
+const entry = await getEntry("about", "now");
 if (!entry) return Astro.redirect("/404");
 const { Content } = await render(entry);
 ---

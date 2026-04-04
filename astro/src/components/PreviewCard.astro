@@ -6,7 +6,7 @@ import Paperclip from "./icons/Paperclip.astro";
 import Pen from "./icons/Pen.astro";
 import Speech from "./icons/Speech.astro";
 import { r2Thumb } from "../lib/images";
-import { getPrettyName } from "../lib/tags";
+import { getPrettyName, tagToSlug } from "../lib/tags";
 
 interface Props {
   type: "post" | "note" | "photo" | "highlight";
@@ -43,7 +43,7 @@ const href = hrefMap[type] ?? `/${type}/${id}/`;
       <ul class="section-item__tags">
         {tags.map((tag) => (
           <li class="section-item__tags-item">
-            <a href={`/tags/${tag}/`}>#{getPrettyName(tag).toLowerCase()}</a>
+            <a href={`/tags/${tagToSlug(tag)}/`}>#{getPrettyName(tag).toLowerCase()}</a>
           </li>
         ))}
       </ul>
@@ -97,7 +97,7 @@ const href = hrefMap[type] ?? `/${type}/${id}/`;
     {tags && tags.length > 0 && (
       <p class="highlight-item__tags">
         {tags.map((tag) => (
-          <a href={`/tags/${tag}/`}>#{getPrettyName(tag).toLowerCase()}</a>
+          <a href={`/tags/${tagToSlug(tag)}/`}>#{getPrettyName(tag).toLowerCase()}</a>
         ))}
       </p>
     )}
