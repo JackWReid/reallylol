@@ -1,0 +1,54 @@
+---
+import Base from "../../layouts/Base.astro";
+import SubNav from "../../components/SubNav.astro";
+import readData from "../../data/books/read.json";
+
+const books = readData as Array<{
+  title: string;
+  author: string;
+  date_updated: string;
+  image_url?: string;
+  hardcover_url?: string;
+}>;
+---
+
+<Base title="Read" section="books">
+  <main class="single-main single-main--books">
+    <SubNav section="books" />
+    <h1 class="single-main__title">Read</h1>
+    <ul class="book-grid book-grid--fullwidth">
+      {books.map((book) => (
+        <li class="book-card">
+          <div class="book-card__cover-frame">
+            {book.image_url ? (
+              <img
+                src={book.image_url}
+                alt={`Cover of ${book.title}`}
+                loading="lazy"
+                class="book-card__cover"
+              />
+            ) : (
+              <img
+                src="/img/layout/no-book-cover.jpg"
+                alt={`Cover of ${book.title}`}
+                loading="lazy"
+                class="book-card__cover"
+              />
+            )}
+          </div>
+          <div class="book-card__meta">
+            <h3 class="book-card__title">{book.title}</h3>
+            <div class="book-card__author">{book.author}</div>
+            <div class="book-card__date">
+              {new Date(book.date_updated).toLocaleDateString("en-GB", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })}
+            </div>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </main>
+</Base>

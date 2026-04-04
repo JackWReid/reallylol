@@ -1,0 +1,15 @@
+---
+import Base from "../../layouts/Base.astro";
+import SubNav from "../../components/SubNav.astro";
+import { Content } from "../../../../content/links/blogroll.md";
+---
+
+<Base title="Blogroll" section="links">
+  <main class="single-main single-main--links">
+    <SubNav section="links" />
+    <h1 class="single-main__title">Blogroll</h1>
+    <div class="single-main__content">
+      <Content />
+    </div>
+  </main>
+</Base>

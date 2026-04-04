@@ -1,0 +1,34 @@
+---
+import Base from "../../layouts/Base.astro";
+import SubNav from "../../components/SubNav.astro";
+import towatchData from "../../data/films/towatch.json";
+
+const films = towatchData as Array<{
+  name: string;
+  year: string;
+  date_updated: string;
+}>;
+---
+
+<Base title="To Watch" section="films">
+  <main class="single-main single-main--films">
+    <SubNav section="films" />
+    <h1 class="single-main__title">To Watch</h1>
+    <table class="media-table media-table--film">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        {films.map((film) => (
+          <tr>
+            <td class="media-table__date">{film.date_updated}</td>
+            <td class="media-table__title">{film.name} ({film.year})</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </main>
+</Base>
