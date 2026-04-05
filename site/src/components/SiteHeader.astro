@@ -1,17 +1,28 @@
 ---
+const pathname = Astro.url.pathname;
+
+const navItems = [
+  { label: "Writing", href: "/writing/" },
+  { label: "Notes", href: "/notes/" },
+  { label: "Photos", href: "/photos/" },
+  { label: "Library", href: "/library/" },
+  { label: "Links", href: "/links/" },
+];
+
+function isActive(href: string): boolean {
+  return pathname.startsWith(href);
+}
 ---
-<div class="site-header-wrapper">
-  <header class="site-header">
-    <h1><a href="/">really.lol</a></h1>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="/post/">Posts</a></li>
-        <li><a href="/note/">Notes</a></li>
-        <li><a href="/photo/">Photos</a></li>
-        <li><a href="/books/reading/">Books</a></li>
-        <li><a href="/films/watched/">Films</a></li>
-        <li><a href="/links/saved/">Links</a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
+<header class="site-header">
+  <a href="/" class="site-header__logo">really.lol</a>
+  <nav class="site-header__nav" aria-label="Main navigation">
+    {navItems.map((item) => (
+      <a
+        href={item.href}
+        class:list={["site-header__link", { "site-header__link--active": isActive(item.href) }]}
+      >
+        {item.label}
+      </a>
+    ))}
+  </nav>
+</header>
