@@ -2,7 +2,6 @@
 import { getEntry } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import { r2Hero } from "../../lib/images";
-import { getPrettyName, tagToSlug } from "../../lib/tags";
 
 export const prerender = false;
 
@@ -31,7 +30,7 @@ const dateFormatted = photo.data.date.toLocaleDateString("en-GB", {
         {photo.data.tags && photo.data.tags.length > 0 && (
           <span class="photo-single__tags">
             {photo.data.tags.map((tag) => (
-              <a href={`/tags/${tagToSlug(tag)}/`}>#{getPrettyName(tag).toLowerCase()}</a>
+              <a href={`/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`}>#{tag.toLowerCase()}</a>
             ))}
           </span>
         )}
