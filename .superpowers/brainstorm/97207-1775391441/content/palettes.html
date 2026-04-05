@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>really.lol - Visual Directions</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; background: #f0f0f0; color: #222; }
+
+  .header { padding: 24px 32px; background: #222; color: #fff; position: sticky; top: 0; z-index: 10; }
+  .header h1 { font-size: 18px; font-weight: 400; }
+  .header p { font-size: 13px; opacity: 0.6; margin-top: 4px; }
+
+  .grid { display: grid; grid-template-columns: 1fr; gap: 32px; padding: 32px; max-width: 1400px; margin: 0 auto; }
+  @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+  .direction { background: #fff; border-radius: 8px; overflow: hidden; cursor: pointer; transition: box-shadow 0.2s, transform 0.15s; border: 3px solid transparent; }
+  .direction:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+  .direction.selected { border-color: #2563eb; box-shadow: 0 0 0 2px #2563eb44; }
+
+  .mockup-frame { min-height: 420px; padding: 0; overflow: hidden; }
+  .dir-info { padding: 20px 24px; border-top: 1px solid #e5e5e5; }
+  .dir-info h2 { font-size: 16px; margin-bottom: 4px; }
+  .dir-info .tagline { font-size: 14px; color: #666; margin-bottom: 12px; }
+  .dir-info .notes { font-size: 12px; color: #888; line-height: 1.5; }
+
+  .selected-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #2563eb; color: #fff; padding: 12px 32px; font-size: 14px; text-align: center; transform: translateY(100%); transition: transform 0.2s; z-index: 20; }
+  .selected-bar.visible { transform: translateY(0); }
+
+  /* Direction 1: Warm Stoneware */
+  .d1 { background: #f7f3ee; color: #2c2420; font-family: Charter, 'Bitstream Charter', Georgia, serif; }
+  .d1 .d-nav { padding: 16px 24px; border-bottom: 1.5px solid #2c2420; display: flex; justify-content: space-between; align-items: baseline; }
+  .d1 .d-logo { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; }
+  .d1 .d-links { font-size: 12px; font-family: system-ui, sans-serif; color: #8c7a68; letter-spacing: 0.5px; }
+  .d1 .d-hero { padding: 40px 24px; display: flex; gap: 24px; }
+  .d1 .d-hero-text { flex: 1; }
+  .d1 .d-hero-text h2 { font-size: 26px; line-height: 1.25; font-weight: 400; margin-bottom: 8px; }
+  .d1 .d-hero-text .meta { font-size: 11px; color: #b5846a; font-family: system-ui; text-transform: uppercase; letter-spacing: 1px; }
+  .d1 .d-hero-text p { font-size: 14px; line-height: 1.6; color: #5a4d42; margin-top: 12px; }
+  .d1 .d-hero-img { width: 140px; height: 180px; background: #e8ddd0; border-radius: 2px; display: flex; align-items: center; justify-content: center; }
+  .d1 .d-hero-img span { font-size: 10px; color: #b5846a; font-style: italic; text-align: center; padding: 8px; }
+  .d1 .d-accent { width: 100%; height: 3px; background: linear-gradient(90deg, #c4784a, #b5846a, #8c7a68); }
+  .d1 .d-items { padding: 20px 24px; display: flex; gap: 12px; }
+  .d1 .d-item { flex: 1; padding: 12px; background: #f0ebe3; border-radius: 2px; }
+  .d1 .d-item h3 { font-size: 13px; margin-bottom: 4px; }
+  .d1 .d-item .meta { font-size: 10px; color: #8c7a68; font-family: system-ui; }
+
+  /* Direction 2: Deep Ink */
+  .d2 { background: #fafaf7; color: #172845; font-family: Charter, 'Bitstream Charter', Georgia, serif; }
+  .d2 .d-nav { padding: 16px 24px; border-bottom: 2px solid #172845; display: flex; justify-content: space-between; align-items: baseline; }
+  .d2 .d-logo { font-size: 17px; font-weight: 700; color: #172845; }
+  .d2 .d-links { font-size: 11px; font-family: system-ui, sans-serif; color: #115388; letter-spacing: 1.5px; text-transform: uppercase; }
+  .d2 .d-hero { padding: 48px 24px 32px; border-bottom: 1px solid #172845; }
+  .d2 .d-hero h2 { font-size: 32px; line-height: 1.2; font-weight: 400; color: #172845; max-width: 480px; }
+  .d2 .d-hero .meta { font-size: 11px; color: #115388; font-family: system-ui; margin-top: 12px; letter-spacing: 0.5px; }
+  .d2 .d-hero p { font-size: 15px; line-height: 1.6; color: #3a4d66; margin-top: 16px; max-width: 520px; }
+  .d2 .d-cols { padding: 24px; display: grid; grid-template-columns: 2fr 1fr; gap: 24px; }
+  .d2 .d-col-main .d-post { padding: 16px 0; border-bottom: 1px solid #e0e0dc; }
+  .d2 .d-col-main .d-post h3 { font-size: 16px; font-weight: 400; color: #172845; }
+  .d2 .d-col-main .d-post .meta { font-size: 10px; color: #115388; font-family: system-ui; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .d2 .d-col-side { padding: 16px; background: #f0f0eb; }
+  .d2 .d-col-side h4 { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: #115388; font-family: system-ui; margin-bottom: 12px; }
+  .d2 .d-col-side .d-book { margin-bottom: 12px; }
+  .d2 .d-col-side .d-book span { font-size: 13px; display: block; }
+  .d2 .d-col-side .d-book .author { font-size: 11px; color: #6a7d96; font-style: italic; }
+
+  /* Direction 3: Broadsheet */
+  .d3 { background: #fdfcf8; color: #111; font-family: Charter, 'Bitstream Charter', Georgia, serif; }
+  .d3 .d-nav { padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px double #111; }
+  .d3 .d-logo { font-size: 28px; font-weight: 900; letter-spacing: -1.5px; text-transform: lowercase; }
+  .d3 .d-links { font-size: 10px; font-family: system-ui, sans-serif; text-transform: uppercase; letter-spacing: 2px; color: #555; }
+  .d3 .d-masthead { padding: 8px 24px; border-bottom: 1px solid #ccc; display: flex; gap: 24px; font-size: 10px; font-family: system-ui; color: #888; text-transform: uppercase; letter-spacing: 1.5px; }
+  .d3 .d-feature { padding: 32px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; border-bottom: 2px solid #111; }
+  .d3 .d-feature h2 { font-size: 36px; line-height: 1.1; font-weight: 900; letter-spacing: -0.5px; }
+  .d3 .d-feature .lede { font-size: 14px; line-height: 1.5; color: #444; margin-top: 12px; }
+  .d3 .d-feature .meta { font-size: 10px; color: #c44; font-family: system-ui; text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; }
+  .d3 .d-feature-img { background: #eee; display: flex; align-items: center; justify-content: center; min-height: 160px; }
+  .d3 .d-feature-img span { font-size: 10px; color: #999; font-style: italic; }
+  .d3 .d-cols { padding: 20px 24px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .d3 .d-col h3 { font-size: 15px; font-weight: 700; line-height: 1.3; margin-bottom: 6px; }
+  .d3 .d-col p { font-size: 12px; line-height: 1.5; color: #555; }
+  .d3 .d-col .tag { font-size: 9px; color: #c44; font-family: system-ui; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+
+  /* Direction 4: Soft Archive */
+  .d4 { background: #f2efe8; color: #3a3632; font-family: Charter, 'Bitstream Charter', Georgia, serif; }
+  .d4 .d-nav { padding: 16px 24px; display: flex; justify-content: space-between; align-items: baseline; }
+  .d4 .d-logo { font-size: 16px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; font-family: system-ui, sans-serif; color: #6b8f71; }
+  .d4 .d-links { font-size: 12px; color: #8a8278; }
+  .d4 .d-divider { height: 1px; background: #d4cfc5; margin: 0 24px; }
+  .d4 .d-hero { padding: 36px 24px; display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: start; }
+  .d4 .d-hero-img { height: 200px; background: #ddd7ca; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc5b5; }
+  .d4 .d-hero-img span { font-size: 10px; color: #a09888; font-style: italic; text-align: center; padding: 8px; }
+  .d4 .d-hero-text h2 { font-size: 22px; line-height: 1.3; font-weight: 400; color: #3a3632; }
+  .d4 .d-hero-text .meta { font-size: 11px; color: #6b8f71; font-family: system-ui; margin-top: 8px; }
+  .d4 .d-hero-text p { font-size: 14px; line-height: 1.65; color: #5e5650; margin-top: 12px; }
+  .d4 .d-shelf { padding: 24px; background: #ebe6dc; }
+  .d4 .d-shelf h3 { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #6b8f71; font-family: system-ui; margin-bottom: 16px; }
+  .d4 .d-shelf-items { display: flex; gap: 16px; }
+  .d4 .d-shelf-item { flex: 1; }
+  .d4 .d-shelf-item .thumb { height: 80px; background: #ddd7ca; margin-bottom: 6px; }
+  .d4 .d-shelf-item span { font-size: 11px; color: #5e5650; }
+
+  /* Direction 5: Chromatic Studio */
+  .d5 { background: #faf8f5; color: #1a1a1a; font-family: Charter, 'Bitstream Charter', Georgia, serif; }
+  .d5 .d-nav { padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+  .d5 .d-logo { font-size: 20px; font-weight: 700; }
+  .d5 .d-nav-pills { display: flex; gap: 4px; }
+  .d5 .d-nav-pills span { font-size: 11px; font-family: system-ui; padding: 4px 12px; border-radius: 20px; }
+  .d5 .pill-writing { background: #2d4a7a; color: #fff; }
+  .d5 .pill-photos { background: #7a4a2d; color: #fff; }
+  .d5 .pill-library { background: #4a7a2d; color: #fff; }
+  .d5 .pill-links { background: #7a2d5a; color: #fff; }
+  .d5 .d-hero { padding: 32px 24px; }
+  .d5 .d-hero .category { display: inline-block; font-size: 10px; font-family: system-ui; padding: 3px 10px; border-radius: 20px; background: #2d4a7a; color: #fff; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+  .d5 .d-hero h2 { font-size: 28px; line-height: 1.25; font-weight: 400; }
+  .d5 .d-hero p { font-size: 14px; line-height: 1.6; color: #555; margin-top: 12px; max-width: 500px; }
+  .d5 .d-hero .meta { font-size: 11px; color: #888; font-family: system-ui; margin-top: 8px; }
+  .d5 .d-section { padding: 20px 24px; background: #f0ede8; }
+  .d5 .d-section h3 { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; font-family: system-ui; color: #7a4a2d; margin-bottom: 12px; }
+  .d5 .d-photo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .d5 .d-photo-grid div { height: 70px; background: #ddd8d0; border-radius: 2px; }
+  .d5 .d-feed { padding: 20px 24px; }
+  .d5 .d-feed-item { padding: 12px 0; border-bottom: 1px solid #e8e4de; display: flex; justify-content: space-between; align-items: baseline; }
+  .d5 .d-feed-item h3 { font-size: 14px; font-weight: 400; }
+  .d5 .d-feed-item .pill { font-size: 9px; font-family: system-ui; padding: 2px 8px; border-radius: 10px; background: #4a7a2d; color: #fff; }
+</style>
+<script>
+  let selected = null;
+  const bar = document.createElement('div');
+
+  function init() {
+    bar.className = 'selected-bar';
+    document.body.appendChild(bar);
+    document.querySelectorAll('.direction').forEach(d => {
+      d.addEventListener('click', () => {
+        document.querySelectorAll('.direction').forEach(x => x.classList.remove('selected'));
+        d.classList.add('selected');
+        selected = d.dataset.choice;
+        bar.textContent = 'Selected: ' + d.querySelector('h2').textContent;
+        bar.classList.add('visible');
+        // Write selection event
+        if (window.__superpowers_emit) window.__superpowers_emit({ type: 'click', choice: selected, text: d.querySelector('h2').textContent });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+</head>
+<body>
+
+<div class="header">
+  <h1>really.lol redesign — 5 visual directions</h1>
+  <p>Click the one that pulls you. Or tell me what to steal from each.</p>
+</div>
+
+<div class="grid">
+
+  <!-- Direction 1: Warm Stoneware -->
+  <div class="direction" data-choice="1">
+    <div class="mockup-frame d1">
+      <div class="d-nav">
+        <span class="d-logo">really.lol</span>
+        <span class="d-links">writing · photos · library · links</span>
+      </div>
+      <div class="d-accent"></div>
+      <div class="d-hero">
+        <div class="d-hero-text">
+          <div class="meta">Journal · 5 April 2026</div>
+          <h2>On walking through Ludlow in February</h2>
+          <p>The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</p>
+        </div>
+        <div class="d-hero-img"><span>PDIA woodcut</span></div>
+      </div>
+      <div class="d-items">
+        <div class="d-item">
+          <div class="meta">Photo</div>
+          <h3>Harp Lane Deli</h3>
+        </div>
+        <div class="d-item">
+          <div class="meta">Reading</div>
+          <h3>Ordinary Notes</h3>
+        </div>
+        <div class="d-item">
+          <div class="meta">Link</div>
+          <h3>On public libraries</h3>
+        </div>
+      </div>
+    </div>
+    <div class="dir-info">
+      <h2>1. Warm Stoneware</h2>
+      <p class="tagline">Terracotta and linen. The ceramic in the art bookshop.</p>
+      <p class="notes">Warm off-white, earthy terracotta/sienna accents, Charter serif kept. Gentle gradient accent bar. Feels handmade, tactile, grounded. PDIA images sit naturally alongside like illustrations in a printed journal.</p>
+    </div>
+  </div>
+
+  <!-- Direction 2: Deep Ink -->
+  <div class="direction" data-choice="2">
+    <div class="mockup-frame d2">
+      <div class="d-nav">
+        <span class="d-logo">really.lol</span>
+        <span class="d-links">Writing · Photos · Library · Links</span>
+      </div>
+      <div class="d-hero">
+        <h2>On walking through Ludlow in February</h2>
+        <div class="meta">Journal · 5 April 2026</div>
+        <p>The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</p>
+      </div>
+      <div class="d-cols">
+        <div class="d-col-main">
+          <div class="d-post">
+            <h3>What I watched in March</h3>
+            <div class="meta">Media Log · 1 April 2026</div>
+          </div>
+          <div class="d-post">
+            <h3>Harp Lane Deli</h3>
+            <div class="meta">Photo · Ludlow · 9 May 2016</div>
+          </div>
+          <div class="d-post">
+            <h3>On the uses of walking</h3>
+            <div class="meta">Journal · 28 March 2026</div>
+          </div>
+        </div>
+        <div class="d-col-side">
+          <h4>Currently Reading</h4>
+          <div class="d-book"><span>Ordinary Notes</span><span class="author">Christina Sharpe</span></div>
+          <div class="d-book"><span>The Rings of Saturn</span><span class="author">W.G. Sebald</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="dir-info">
+      <h2>2. Deep Ink</h2>
+      <p class="tagline">LRB meets personal blog. Navy, authority, whitespace.</p>
+      <p class="notes">Cool off-white background, deep navy (#172845) as primary, blue accents for metadata. Two-column layout on homepage with sidebar. Structured, intellectual, confident. The literary review you publish yourself.</p>
+    </div>
+  </div>
+
+  <!-- Direction 3: Broadsheet -->
+  <div class="direction" data-choice="3">
+    <div class="mockup-frame d3">
+      <div class="d-nav">
+        <span class="d-logo">really.lol</span>
+        <span class="d-links">Writing · Photos · Library · Links</span>
+      </div>
+      <div class="d-masthead">
+        <span>5 April 2026</span>
+        <span>London</span>
+        <span>Issue nº 847</span>
+      </div>
+      <div class="d-feature">
+        <div>
+          <div class="meta">Journal</div>
+          <h2>On walking through Ludlow in February</h2>
+          <p class="lede">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs.</p>
+        </div>
+        <div class="d-feature-img"><span>PDIA full-bleed illustration</span></div>
+      </div>
+      <div class="d-cols">
+        <div class="d-col">
+          <div class="tag">Media Log</div>
+          <h3>What I watched in March</h3>
+          <p>Seven films and a half-abandoned series. The best was still the Varda.</p>
+        </div>
+        <div class="d-col">
+          <div class="tag">Photo</div>
+          <h3>Alpe Devero in snow</h3>
+          <p>February light on the reservoir. Everything blue and white and silent.</p>
+        </div>
+        <div class="d-col">
+          <div class="tag">Reading</div>
+          <h3>Ordinary Notes</h3>
+          <p>Christina Sharpe on notation, memory, and the weight of images.</p>
+        </div>
+      </div>
+    </div>
+    <div class="dir-info">
+      <h2>3. The Broadsheet</h2>
+      <p class="tagline">Baffler energy. Big type, tight columns, one red accent.</p>
+      <p class="notes">Near-white background, black text, single red (#c44) for section labels. Heavy 900-weight headlines, double-rule borders, three-column grid. Newspaper energy - playful, confident typography. The most fun option. PDIA images run large as feature illustrations.</p>
+    </div>
+  </div>
+
+  <!-- Direction 4: Soft Archive -->
+  <div class="direction" data-choice="4">
+    <div class="mockup-frame d4">
+      <div class="d-nav">
+        <span class="d-logo">really.lol</span>
+        <span class="d-links">writing · photos · library · links</span>
+      </div>
+      <div class="d-divider"></div>
+      <div class="d-hero">
+        <div class="d-hero-img"><span>PDIA botanical print</span></div>
+        <div class="d-hero-text">
+          <div class="meta">Journal · 5 April 2026</div>
+          <h2>On walking through Ludlow in February</h2>
+          <p>The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</p>
+        </div>
+      </div>
+      <div class="d-shelf">
+        <h3>Recently</h3>
+        <div class="d-shelf-items">
+          <div class="d-shelf-item">
+            <div class="thumb"></div>
+            <span>Alpe Devero</span>
+          </div>
+          <div class="d-shelf-item">
+            <div class="thumb"></div>
+            <span>Ordinary Notes</span>
+          </div>
+          <div class="d-shelf-item">
+            <div class="thumb"></div>
+            <span>On public libraries</span>
+          </div>
+          <div class="d-shelf-item">
+            <div class="thumb"></div>
+            <span>March films</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dir-info">
+      <h2>4. Soft Archive</h2>
+      <p class="tagline">Sage and stone. A curated collection in a quiet room.</p>
+      <p class="notes">Warm grey (#f2efe8) background, sage green (#6b8f71) accents, muted earth tones. PDIA images are prominent, displayed alongside content like illustrations in a natural history book. Library/archive energy. Calm, considered, collected.</p>
+    </div>
+  </div>
+
+  <!-- Direction 5: Chromatic Studio -->
+  <div class="direction" data-choice="5">
+    <div class="mockup-frame d5">
+      <div class="d-nav">
+        <span class="d-logo">really.lol</span>
+        <div class="d-nav-pills">
+          <span class="pill-writing">Writing</span>
+          <span class="pill-photos">Photos</span>
+          <span class="pill-library">Library</span>
+          <span class="pill-links">Links</span>
+        </div>
+      </div>
+      <div class="d-hero">
+        <div class="category">Journal</div>
+        <h2>On walking through Ludlow in February</h2>
+        <div class="meta">5 April 2026</div>
+        <p>The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</p>
+      </div>
+      <div class="d-section">
+        <h3>Recent Photos</h3>
+        <div class="d-photo-grid">
+          <div></div><div></div><div></div><div></div>
+        </div>
+      </div>
+      <div class="d-feed">
+        <div class="d-feed-item">
+          <h3>Ordinary Notes — Christina Sharpe</h3>
+          <span class="pill">Reading</span>
+        </div>
+        <div class="d-feed-item">
+          <h3>On public libraries</h3>
+          <span class="pill" style="background:#7a2d5a;">Link</span>
+        </div>
+        <div class="d-feed-item">
+          <h3>What I watched in March</h3>
+          <span class="pill" style="background:#2d4a7a;">Writing</span>
+        </div>
+      </div>
+    </div>
+    <div class="dir-info">
+      <h2>5. Chromatic Studio</h2>
+      <p class="tagline">Each section gets its own colour. A unified rainbow.</p>
+      <p class="notes">Near-white background, each content type has a signature colour (navy for writing, amber for photos, green for library, plum for links). Colour-coded pills in nav and inline. The most modern/web-native option. Homepage is a mixed feed with colour cues showing content type at a glance.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

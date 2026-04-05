@@ -1,0 +1,124 @@
+<h2>Three Design Directions</h2>
+<p class="subtitle">Same soul, different executions. Click the one that pulls you.</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: #f5efd3; padding: 24px; font-family: Charter, Georgia, serif; min-height: 280px;">
+        <div style="border-bottom: 2px solid #19282f; padding-bottom: 8px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: baseline;">
+          <span style="font-size: 18px; color: #19282f; font-weight: bold;">really.lol</span>
+          <span style="font-size: 12px; color: #a08c5b; font-family: system-ui;">writing &middot; photos &middot; reading &middot; links</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px;">
+          <div>
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #a08c5b; font-family: system-ui; margin-bottom: 6px;">Latest</div>
+            <div style="font-size: 15px; color: #19282f; line-height: 1.4; margin-bottom: 8px; font-weight: bold;">On walking through Ludlow in February</div>
+            <div style="font-size: 12px; color: #555; line-height: 1.5;">The high street curves and you lose sight of the castle for a moment...</div>
+          </div>
+          <div style="background: #e8dfc0; height: 120px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+            <div style="font-size: 11px; color: #a08c5b; font-style: italic;">[ PDIA botanical illustration ]</div>
+          </div>
+        </div>
+        <div style="margin-top: 16px; display: flex; gap: 8px;">
+          <span style="font-size: 10px; padding: 2px 8px; border: 1px solid #a08c5b; color: #a08c5b; font-family: system-ui;">#journal</span>
+          <span style="font-size: 10px; padding: 2px 8px; border: 1px solid #a08c5b; color: #a08c5b; font-family: system-ui;">#walking</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A: Refined Editorial</h3>
+      <p><strong>Keep the warmth, fix the structure.</strong> Same cream palette, Charter serif, gold accents. But: flatten navigation to a single clean bar, replace pagination with infinite scroll or "load more", give photos a proper masonry grid, consolidate links/highlights/blogroll into one "Links" section. PDIA images as section headers and decorative breaks.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Lowest risk - familiar but better</li>
+          <li>Fixes functional issues without identity crisis</li>
+          <li>PDIA images slot in naturally</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Might still feel "same" after the work</li>
+          <li>Doesn't address the per-section personality you liked about Notes</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: #f5efd3; padding: 24px; font-family: Charter, Georgia, serif; min-height: 280px;">
+        <div style="border-bottom: 2px solid #19282f; padding-bottom: 8px; margin-bottom: 16px; text-align: center;">
+          <span style="font-size: 18px; color: #19282f; font-weight: bold;">really.lol</span>
+        </div>
+        <div style="display: flex; gap: 12px; margin-bottom: 16px; justify-content: center;">
+          <div style="background: #19282f; color: #f5efd3; padding: 6px 14px; font-size: 11px; font-family: system-ui; text-transform: uppercase; letter-spacing: 1px;">Writing</div>
+          <div style="border: 1px solid #19282f; padding: 6px 14px; font-size: 11px; font-family: system-ui; text-transform: uppercase; letter-spacing: 1px; color: #19282f;">Photos</div>
+          <div style="border: 1px solid #19282f; padding: 6px 14px; font-size: 11px; font-family: system-ui; text-transform: uppercase; letter-spacing: 1px; color: #19282f;">Library</div>
+          <div style="border: 1px solid #19282f; padding: 6px 14px; font-size: 11px; font-family: system-ui; text-transform: uppercase; letter-spacing: 1px; color: #19282f;">Links</div>
+        </div>
+        <div style="text-align: center; margin: 20px 0;">
+          <div style="font-size: 22px; color: #19282f; line-height: 1.3; font-style: italic;">"On walking through Ludlow<br>in February"</div>
+          <div style="font-size: 11px; color: #a08c5b; margin-top: 8px; font-family: system-ui;">5 April 2026 &middot; #journal</div>
+        </div>
+        <div style="border-top: 1px solid #a08c5b; padding-top: 12px; display: flex; gap: 12px; justify-content: center;">
+          <div style="width: 60px; height: 60px; background: #e8dfc0;"></div>
+          <div style="width: 60px; height: 60px; background: #d4c9a8;"></div>
+          <div style="width: 60px; height: 60px; background: #e8dfc0;"></div>
+          <div style="width: 60px; height: 60px; background: #d4c9a8;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B: Zoned Personalities</h3>
+      <p><strong>Each section has its own visual world.</strong> Same base palette, but Writing gets the literary serif treatment, Photos get a dark/minimal gallery feel, Library (books+films merged) gets a cosy catalogue grid, Links gets a compact dense layout. Sections feel like rooms in the same house. Homepage becomes a feed mixing recent items from all zones. PDIA images as per-zone decorative motifs.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Extends the Notes differentiation you love to every section</li>
+          <li>Makes each content type shine on its own terms</li>
+          <li>Homepage feed solves the "what's this site for" problem</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>More design work - each zone needs its own treatment</li>
+          <li>Risk of feeling disjointed if not carefully unified</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: #1a1a1a; padding: 24px; font-family: Charter, Georgia, serif; min-height: 280px; color: #e8dfc0;">
+        <div style="border-bottom: 1px solid #a08c5b44; padding-bottom: 8px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: baseline;">
+          <span style="font-size: 18px; font-weight: bold; color: #f5efd3;">really.lol</span>
+          <span style="font-size: 12px; color: #a08c5b; font-family: system-ui;">w &middot; p &middot; l &middot; b</span>
+        </div>
+        <div style="margin: 20px 0; padding: 16px; border-left: 3px solid #a08c5b;">
+          <div style="font-size: 18px; line-height: 1.4; color: #f5efd3;">On walking through Ludlow in February</div>
+          <div style="font-size: 12px; color: #a08c5b; margin-top: 8px; font-family: system-ui;">journal &middot; 5 Apr</div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px; margin-top: 16px;">
+          <div style="background: #2a2a2a; height: 60px;"></div>
+          <div style="background: #2a2a2a; height: 60px;"></div>
+          <div style="background: #2a2a2a; height: 60px;"></div>
+        </div>
+        <div style="margin-top: 12px; font-size: 11px; color: #a08c5b66; font-family: system-ui; text-align: right; font-style: italic;">PDIA: Maria Sibylla Merian, 1705</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C: The Rogue Option</h3>
+      <p><strong>Dark, warm, cabinet-of-curiosities.</strong> Flip to a dark background with warm cream text. The PDIA images become the star - displayed prominently as full decorative elements, not just accents. Gold highlights on dark feels like a museum vitrine or a letterpress print. Same Charter serif, same soul, completely different mood. The "aged paper" becomes "aged cabinet".</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Dramatic transformation that still feels like you</li>
+          <li>PDIA images look stunning on dark backgrounds</li>
+          <li>Photos pop against dark, books/films feel curated</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Dark sites can feel heavy for long-form reading</li>
+          <li>Bigger departure - might miss the warmth</li>
+          <li>Needs careful contrast work for accessibility</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+</div>
