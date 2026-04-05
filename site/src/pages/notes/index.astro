@@ -18,6 +18,10 @@ function formatDate(date: Date): string {
 
 <Base title="Notes" section="notes">
   <main class="notes-list">
+    <figure class="notes-bird" aria-hidden="true">
+      <img src="/img/layout/audubon-falcon.jpg" alt="" width="800" height="472" loading="eager" />
+      <figcaption>J. J. Audubon, <em>Iceland or Gyr Falcon</em>, 1827</figcaption>
+    </figure>
     {sorted.map((note) => (
       <article class="notes-item">
         <a href={`/notes/${note.id}/`} class="notes-item__link">
