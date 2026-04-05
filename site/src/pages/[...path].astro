@@ -1,14 +1,14 @@
 ---
 import { getCollection, render } from "astro:content";
 import Base from "../layouts/Base.astro";
-import SubNav from "../components/SubNav.astro";
-import { BookGrid, FilmTable, LinkList } from "../components/PaginatedList";
-import { getBooks, getFilms, getLinks } from "../lib/cms-data";
 
 export async function getStaticPaths() {
   const pages = await getCollection("page");
+  // Exclude pages that are now handled by dedicated routes
+  const excludePrefixes = ["/books", "/films", "/links"];
   return pages
     .filter((p) => p.data.url && p.data.layout !== "redirect")
+    .filter((p) => !excludePrefixes.some((prefix) => p.data.url!.startsWith(prefix)))
     .map((page) => ({
       params: { path: page.data.url!.replace(/^\//, "").replace(/\/$/, "") },
       props: { page },
@@ -17,43 +17,15 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const { Content } = await render(page);
-
-const section = page.data.section as "books" | "films" | "links" | undefined;
-const dataSource = page.data.data_source;
-
-// Fetch data for the island if a data_source is specified
-let dataProps: Record<string, unknown> = {};
-if (dataSource) {
-  const [type, param] = dataSource.split(":");
-  if (type === "books" && param) {
-    dataProps = { books: await getBooks(param) };
-  } else if (type === "films" && param) {
-    dataProps = { films: await getFilms(param), showDate: param !== "towatch" };
-  } else if (type === "links") {
-    dataProps = { links: await getLinks() };
-  }
-}
-
-const sectionClass = section ? `single-main--${section}` : "";
 ---
 
-<Base title={page.data.title} section={section}>
-  <main class={`single-main ${sectionClass}`}>
-    {section && <SubNav section={section} />}
-    <h1 class="single-main__title">{page.data.title}</h1>
+<Base title={page.data.title}>
+  <main class="page-content">
+    <h1>{page.data.title}</h1>
     {page.body && (
-      <div class="single-main__content">
+      <div class="page-content__body">
         <Content />
       </div>
-    )}
-    {dataSource?.startsWith("books:") && (
-      <BookGrid books={dataProps.books as any} client:load />
-    )}
-    {dataSource?.startsWith("films:") && (
-      <FilmTable films={dataProps.films as any} showDate={dataProps.showDate as boolean} client:load />
-    )}
-    {dataSource === "links:saved" && (
-      <LinkList links={dataProps.links as any} client:load />
     )}
   </main>
 </Base>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>really.lol - Typography Options</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400&family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@400;500;600&family=Sora:wght@400;600;700&family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, system-ui, sans-serif; background: #f0f0f0; color: #222; }
+
+  .header { padding: 24px 32px; background: #222; color: #fff; position: sticky; top: 0; z-index: 10; }
+  .header h1 { font-size: 18px; font-weight: 400; }
+  .header p { font-size: 13px; opacity: 0.6; margin-top: 4px; }
+
+  .section-label { padding: 24px 32px 8px; max-width: 1400px; margin: 0 auto; }
+  .section-label h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #888; font-family: system-ui; }
+  .section-label p { font-size: 13px; color: #aaa; margin-top: 4px; }
+
+  .grid { display: grid; grid-template-columns: 1fr; gap: 24px; padding: 12px 32px 32px; max-width: 1400px; margin: 0 auto; }
+  @media (min-width: 1000px) { .grid { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1400px) { .grid.wide { grid-template-columns: 1fr 1fr 1fr; } }
+
+  .type-card { background: #fff; border-radius: 8px; overflow: hidden; cursor: pointer; transition: box-shadow 0.2s, transform 0.15s; border: 3px solid transparent; }
+  .type-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+  .type-card.selected { border-color: #2563eb; }
+
+  .type-sample { padding: 32px 28px; min-height: 260px; }
+  .type-info { padding: 16px 20px; border-top: 1px solid #e5e5e5; background: #fafafa; }
+  .type-info h3 { font-size: 14px; margin-bottom: 2px; }
+  .type-info .desc { font-size: 12px; color: #666; }
+  .type-info .tech { font-size: 11px; color: #999; margin-top: 6px; font-family: monospace; }
+
+  .selected-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #2563eb; color: #fff; padding: 12px 32px; font-size: 14px; text-align: center; transform: translateY(100%); transition: transform 0.2s; z-index: 20; }
+  .selected-bar.visible { transform: translateY(0); }
+</style>
+<script>
+  let selections = {};
+  const bar = document.createElement('div');
+
+  function init() {
+    bar.className = 'selected-bar';
+    document.body.appendChild(bar);
+    document.querySelectorAll('.type-card').forEach(d => {
+      d.addEventListener('click', () => {
+        const group = d.closest('[data-group]')?.dataset.group || 'default';
+        // Allow multi-select across groups
+        d.classList.toggle('selected');
+        const allSelected = document.querySelectorAll('.type-card.selected');
+        const names = Array.from(allSelected).map(s => s.querySelector('h3').textContent);
+        if (names.length) {
+          bar.textContent = 'Selected: ' + names.join(' + ');
+          bar.classList.add('visible');
+        } else {
+          bar.classList.remove('visible');
+        }
+        if (window.__superpowers_emit) window.__superpowers_emit({ type: 'click', choice: d.dataset.choice, text: d.querySelector('h3').textContent });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+</head>
+<body>
+
+<div class="header">
+  <h1>really.lol — typography exploration</h1>
+  <p>Multi-select welcome. Click anything that appeals. Mix headline + body from different cards.</p>
+</div>
+
+<!-- SERIF OPTIONS FOR HEADLINES -->
+<div class="section-label">
+  <h2>Serif Options</h2>
+  <p>For headlines, titles, and body text. The literary backbone.</p>
+</div>
+<div class="grid wide" data-group="serif">
+
+  <div class="type-card" data-choice="newsreader">
+    <div class="type-sample" style="background: #fafaf7;">
+      <div style="font-family: 'Newsreader', serif; color: #1a1a1a;">
+        <div style="font-size: 11px; font-family: system-ui; color: #888; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px;">Journal · 5 April 2026</div>
+        <div style="font-size: 30px; line-height: 1.2; font-weight: 400; margin-bottom: 16px;">On walking through Ludlow in February</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #444;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should. <em>Ordinary Notes</em> sits in my coat pocket, spine already cracked.</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>Newsreader</h3>
+      <p class="desc">Designed for on-screen reading. Crisp, contemporary, excellent italics. The smart upgrade from Charter.</p>
+      <p class="tech">Google Fonts · Variable · 6-72pt optical sizing</p>
+    </div>
+  </div>
+
+  <div class="type-card" data-choice="fraunces">
+    <div class="type-sample" style="background: #faf8f3;">
+      <div style="font-family: 'Fraunces', serif; color: #1a1a1a;">
+        <div style="font-size: 11px; font-family: system-ui; color: #888; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px;">Journal · 5 April 2026</div>
+        <div style="font-size: 28px; line-height: 1.2; font-weight: 400; margin-bottom: 16px; font-variation-settings: 'WONK' 1;">On walking through Ludlow in February</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #444; font-family: 'Newsreader', Charter, serif;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should. <em>Ordinary Notes</em> sits in my coat pocket, spine already cracked.</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>Fraunces</h3>
+      <p class="desc">Soft, wonky old-style serif. Has genuine personality - the "handmade ceramic" of typefaces. Best for headlines, pair with something cleaner for body.</p>
+      <p class="tech">Google Fonts · Variable · WONK + SOFT axes</p>
+    </div>
+  </div>
+
+  <div class="type-card" data-choice="literata">
+    <div class="type-sample" style="background: #f8f8f5;">
+      <div style="font-family: 'Literata', serif; color: #1a1a1a;">
+        <div style="font-size: 11px; font-family: system-ui; color: #888; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px;">Journal · 5 April 2026</div>
+        <div style="font-size: 28px; line-height: 1.25; font-weight: 700; margin-bottom: 16px;">On walking through Ludlow in February</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #444;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should. <em>Ordinary Notes</em> sits in my coat pocket, spine already cracked.</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>Literata</h3>
+      <p class="desc">Google's reading typeface. Slightly more structured than Charter, extremely legible at body sizes. Workhorse with character.</p>
+      <p class="tech">Google Fonts · Variable · 7-72pt optical sizing</p>
+    </div>
+  </div>
+
+  <div class="type-card" data-choice="source-serif">
+    <div class="type-sample" style="background: #fafaf8;">
+      <div style="font-family: 'Source Serif 4', serif; color: #1a1a1a;">
+        <div style="font-size: 11px; font-family: system-ui; color: #888; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px;">Journal · 5 April 2026</div>
+        <div style="font-size: 28px; line-height: 1.25; font-weight: 400; margin-bottom: 16px;">On walking through Ludlow in February</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #444;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should. <em>Ordinary Notes</em> sits in my coat pocket, spine already cracked.</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>Source Serif 4</h3>
+      <p class="desc">Adobe's open serif. Clean and professional with subtle warmth. The "I take typography seriously" choice without being showy.</p>
+      <p class="tech">Google Fonts · Variable · 8-60pt optical sizing</p>
+    </div>
+  </div>
+
+  <div class="type-card" data-choice="playfair">
+    <div class="type-sample" style="background: #faf8f5;">
+      <div style="color: #1a1a1a;">
+        <div style="font-size: 11px; font-family: system-ui; color: #888; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px;">Journal · 5 April 2026</div>
+        <div style="font-family: 'Playfair Display', serif; font-size: 32px; line-height: 1.15; font-weight: 900; margin-bottom: 16px;">On walking through Ludlow in February</div>
+        <div style="font-family: 'Lora', serif; font-size: 15px; line-height: 1.7; color: #444;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should. <em>Ordinary Notes</em> sits in my coat pocket, spine already cracked.</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>Playfair Display + Lora</h3>
+      <p class="desc">High contrast display serif for headlines, Lora for body. The most dramatic/editorial pairing. Broadsheet energy.</p>
+      <p class="tech">Google Fonts · Playfair (headlines) + Lora (body)</p>
+    </div>
+  </div>
+
+  <div class="type-card" data-choice="lora-solo">
+    <div class="type-sample" style="background: #f9f8f5;">
+      <div style="font-family: 'Lora', serif; color: #1a1a1a;">
+        <div style="font-size: 11px; font-family: system-ui; color: #888; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px;">Journal · 5 April 2026</div>
+        <div style="font-size: 28px; line-height: 1.25; font-weight: 700; margin-bottom: 16px;">On walking through Ludlow in February</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #444;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should. <em>Ordinary Notes</em> sits in my coat pocket, spine already cracked.</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>Lora</h3>
+      <p class="desc">Calligraphic serif with warmth. More personality than Charter, less showy than Playfair. A comfortable middle ground with lovely italics.</p>
+      <p class="tech">Google Fonts · Variable weight</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- SANS OPTIONS FOR UI/META -->
+<div class="section-label">
+  <h2>Sans-Serif Options</h2>
+  <p>For navigation, metadata, dates, tags, UI chrome. The functional voice.</p>
+</div>
+<div class="grid wide" data-group="sans">
+
+  <div class="type-card" data-choice="dm-sans">
+    <div class="type-sample" style="background: #fafaf7;">
+      <div style="font-family: 'DM Sans', sans-serif; color: #1a1a1a;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #ddd; padding-bottom: 12px; margin-bottom: 16px;">
+          <span style="font-size: 16px; font-weight: 700;">really.lol</span>
+          <span style="font-size: 12px; color: #666; letter-spacing: 0.5px;">Writing · Photos · Library · Links</span>
+        </div>
+        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #888; margin-bottom: 8px;">Journal · 5 April 2026</div>
+        <div style="display: flex; gap: 6px; margin-top: 16px;">
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555;">#walking</span>
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555;">#ludlow</span>
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555;">#journal</span>
+        </div>
+        <div style="margin-top: 16px; font-size: 13px; color: #888;">Back · 1 of 15 · Next</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>DM Sans</h3>
+      <p class="desc">Geometric but friendly. Slightly quirky letterforms. Good personality without being loud.</p>
+      <p class="tech">Google Fonts · Variable</p>
+    </div>
+  </div>
+
+  <div class="type-card" data-choice="space-grotesk">
+    <div class="type-sample" style="background: #fafaf7;">
+      <div style="font-family: 'Space Grotesk', sans-serif; color: #1a1a1a;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #ddd; padding-bottom: 12px; margin-bottom: 16px;">
+          <span style="font-size: 16px; font-weight: 700;">really.lol</span>
+          <span style="font-size: 12px; color: #666; letter-spacing: 0.5px;">Writing · Photos · Library · Links</span>
+        </div>
+        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #888; margin-bottom: 8px;">Journal · 5 April 2026</div>
+        <div style="display: flex; gap: 6px; margin-top: 16px;">
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555;">#walking</span>
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555;">#ludlow</span>
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555;">#journal</span>
+        </div>
+        <div style="margin-top: 16px; font-size: 13px; color: #888;">Back · 1 of 15 · Next</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>Space Grotesk</h3>
+      <p class="desc">Proportional companion to Space Mono. Distinctive, slightly techy, great at small sizes. The "I know about type" choice.</p>
+      <p class="tech">Google Fonts · Variable</p>
+    </div>
+  </div>
+
+  <div class="type-card" data-choice="ibm-plex">
+    <div class="type-sample" style="background: #fafaf7;">
+      <div style="font-family: 'IBM Plex Sans', sans-serif; color: #1a1a1a;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #ddd; padding-bottom: 12px; margin-bottom: 16px;">
+          <span style="font-size: 16px; font-weight: 600;">really.lol</span>
+          <span style="font-size: 12px; color: #666; letter-spacing: 0.5px;">Writing · Photos · Library · Links</span>
+        </div>
+        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #888; margin-bottom: 8px;">Journal · 5 April 2026</div>
+        <div style="display: flex; gap: 6px; margin-top: 16px;">
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555; font-family: 'IBM Plex Mono', monospace;">#walking</span>
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555; font-family: 'IBM Plex Mono', monospace;">#ludlow</span>
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555; font-family: 'IBM Plex Mono', monospace;">#journal</span>
+        </div>
+        <div style="margin-top: 16px; font-size: 13px; color: #888;">Back · 1 of 15 · Next</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>IBM Plex Sans + Mono</h3>
+      <p class="desc">Neutral but warm. The Plex family has sans, serif, AND mono in one design language. Tags in Plex Mono is a nice touch.</p>
+      <p class="tech">Google Fonts · Variable · Sans + Mono pairing</p>
+    </div>
+  </div>
+
+  <div class="type-card" data-choice="sora">
+    <div class="type-sample" style="background: #fafaf7;">
+      <div style="font-family: 'Sora', sans-serif; color: #1a1a1a;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #ddd; padding-bottom: 12px; margin-bottom: 16px;">
+          <span style="font-size: 16px; font-weight: 700;">really.lol</span>
+          <span style="font-size: 12px; color: #666; letter-spacing: 0.5px;">Writing · Photos · Library · Links</span>
+        </div>
+        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #888; margin-bottom: 8px;">Journal · 5 April 2026</div>
+        <div style="display: flex; gap: 6px; margin-top: 16px;">
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555;">#walking</span>
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555;">#ludlow</span>
+          <span style="font-size: 11px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 3px; color: #555;">#journal</span>
+        </div>
+        <div style="margin-top: 16px; font-size: 13px; color: #888;">Back · 1 of 15 · Next</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>Sora</h3>
+      <p class="desc">Geometric, modern, slightly rounded. More warmth than Inter, more personality than system fonts. Clean without being clinical.</p>
+      <p class="tech">Google Fonts · Variable</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- WILD CARD -->
+<div class="section-label">
+  <h2>Wild Card</h2>
+  <p>What if the sans does the heavy lifting?</p>
+</div>
+<div class="grid" data-group="wild">
+
+  <div class="type-card" data-choice="sans-headlines">
+    <div class="type-sample" style="background: #fafaf7;">
+      <div style="color: #1a1a1a;">
+        <div style="font-family: 'Space Grotesk', sans-serif; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #ddd; padding-bottom: 12px; margin-bottom: 16px;">
+          <span style="font-size: 16px; font-weight: 700;">really.lol</span>
+          <span style="font-size: 12px; color: #666;">Writing · Photos · Library · Links</span>
+        </div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #888; margin-bottom: 8px;">Journal · 5 April 2026</div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 30px; line-height: 1.2; font-weight: 700; margin-bottom: 16px;">On walking through Ludlow in February</div>
+        <div style="font-family: 'Newsreader', Charter, serif; font-size: 15px; line-height: 1.7; color: #444;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should. <em>Ordinary Notes</em> sits in my coat pocket, spine already cracked.</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>Inverted: Sans Headlines + Serif Body</h3>
+      <p class="desc">Flip the convention. Bold sans for headlines (more Baffler energy), serif for body text (keeps the literary reading feel). Best of both.</p>
+      <p class="tech">Space Grotesk headlines + Newsreader body (example pairing)</p>
+    </div>
+  </div>
+
+  <div class="type-card" data-choice="all-sans">
+    <div class="type-sample" style="background: #fafaf7;">
+      <div style="font-family: 'IBM Plex Sans', sans-serif; color: #1a1a1a;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #ddd; padding-bottom: 12px; margin-bottom: 16px;">
+          <span style="font-size: 16px; font-weight: 600;">really.lol</span>
+          <span style="font-size: 12px; color: #666;">Writing · Photos · Library · Links</span>
+        </div>
+        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #888; margin-bottom: 8px;">Journal · 5 April 2026</div>
+        <div style="font-size: 28px; line-height: 1.25; font-weight: 400; margin-bottom: 16px;">On walking through Ludlow in February</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #444;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should. <span style="font-family: 'IBM Plex Mono'; font-size: 14px;">Ordinary Notes</span> sits in my coat pocket, spine already cracked.</div>
+      </div>
+    </div>
+    <div class="type-info">
+      <h3>All Plex: Sans + Mono</h3>
+      <p class="desc">No serif at all. Clean, modern, the PDIA images provide all the warmth and texture. Book titles in mono. A real departure.</p>
+      <p class="tech">IBM Plex Sans + IBM Plex Mono</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

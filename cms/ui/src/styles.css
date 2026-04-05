@@ -195,6 +195,26 @@ a:hover {
   flex: 1;
 }
 
+.nav-rebuild {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.nav-rebuild:hover {
+  filter: brightness(0.85);
+}
+
+.nav-rebuild:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
 .nav-signout {
   background: none;
   border: none;

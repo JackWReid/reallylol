@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fraunces + IBM Plex — really.lol</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #e8e4de; font-family: 'IBM Plex Sans', sans-serif; color: #1a1a1a; }
+
+  .page-header { padding: 20px 32px; background: #222; color: #fff; position: sticky; top: 0; z-index: 10; }
+  .page-header h1 { font-size: 16px; font-weight: 400; }
+  .page-header p { font-size: 12px; opacity: 0.5; margin-top: 4px; }
+
+  .label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin: 32px 0 12px; font-family: 'IBM Plex Sans'; font-weight: 500; }
+
+  .samples { max-width: 1100px; margin: 0 auto; padding: 0 32px 48px; }
+
+  /* Mock site frame */
+  .site-mock { background: #fff; border-radius: 4px; overflow: hidden; margin-bottom: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+
+  /* Pairing A: Fraunces headlines, Plex Sans body, Plex Mono tags */
+  .pa { background: #faf8f4; }
+  .pa .nav { padding: 14px 28px; border-bottom: 1.5px solid #1a1a1a; display: flex; justify-content: space-between; align-items: baseline; }
+  .pa .nav .logo { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 500; font-variation-settings: 'WONK' 1, 'SOFT' 50; }
+  .pa .nav .links { font-family: 'IBM Plex Sans'; font-size: 12px; color: #666; letter-spacing: 0.5px; }
+  .pa .nav .links a { color: #666; text-decoration: none; }
+  .pa .nav .links a:hover { color: #1a1a1a; }
+
+  .pa .hero { padding: 40px 28px 36px; border-bottom: 1px solid #e0ddd6; }
+  .pa .hero .meta { font-family: 'IBM Plex Mono'; font-size: 11px; color: #999; margin-bottom: 10px; }
+  .pa .hero h2 { font-family: 'Fraunces', serif; font-size: 34px; line-height: 1.18; font-weight: 400; font-variation-settings: 'WONK' 1; max-width: 600px; margin-bottom: 14px; }
+  .pa .hero .excerpt { font-family: 'IBM Plex Sans'; font-size: 15px; line-height: 1.7; color: #555; max-width: 560px; }
+  .pa .hero .tags { margin-top: 14px; display: flex; gap: 6px; }
+  .pa .hero .tags span { font-family: 'IBM Plex Mono'; font-size: 11px; color: #888; padding: 2px 8px; border: 1px solid #ddd; }
+
+  .pa .feed { padding: 0 28px; }
+  .pa .feed-item { padding: 20px 0; border-bottom: 1px solid #e8e5de; display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: baseline; }
+  .pa .feed-item h3 { font-family: 'Fraunces', serif; font-size: 19px; font-weight: 400; font-variation-settings: 'WONK' 1; }
+  .pa .feed-item .feed-meta { font-family: 'IBM Plex Mono'; font-size: 11px; color: #aaa; text-align: right; white-space: nowrap; }
+  .pa .feed-item .feed-type { font-family: 'IBM Plex Sans'; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-top: 3px; }
+
+  /* Pairing B: Fraunces display only (logo + feature), Plex Sans for everything else */
+  .pb { background: #f7f5f0; }
+  .pb .nav { padding: 14px 28px; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; }
+  .pb .nav .logo { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 700; font-variation-settings: 'WONK' 1, 'SOFT' 80; letter-spacing: -0.5px; }
+  .pb .nav .links { font-family: 'IBM Plex Sans'; font-size: 12px; color: #888; display: flex; gap: 20px; }
+
+  .pb .feature { padding: 48px 28px; display: grid; grid-template-columns: 1fr 200px; gap: 32px; align-items: start; border-bottom: 1px solid #ddd; }
+  .pb .feature .meta { font-family: 'IBM Plex Sans'; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #aaa; margin-bottom: 10px; }
+  .pb .feature h2 { font-family: 'Fraunces', serif; font-size: 32px; line-height: 1.15; font-weight: 300; font-variation-settings: 'WONK' 1; margin-bottom: 14px; }
+  .pb .feature .excerpt { font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 1.7; color: #666; }
+  .pb .feature .aside { background: #edeae3; padding: 16px; height: 200px; display: flex; align-items: center; justify-content: center; }
+  .pb .feature .aside span { font-family: 'IBM Plex Mono'; font-size: 10px; color: #aaa; font-style: italic; }
+
+  .pb .grid { padding: 28px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .pb .grid-item { }
+  .pb .grid-item .type { font-family: 'IBM Plex Mono'; font-size: 10px; color: #aaa; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .pb .grid-item h3 { font-family: 'IBM Plex Sans'; font-size: 15px; font-weight: 500; line-height: 1.35; margin-bottom: 4px; }
+  .pb .grid-item p { font-family: 'IBM Plex Sans'; font-size: 12px; line-height: 1.5; color: #888; }
+
+  /* Pairing C: Reading context - long form body text */
+  .pc { background: #faf8f4; }
+  .pc .nav { padding: 14px 28px; border-bottom: 1.5px solid #1a1a1a; display: flex; justify-content: space-between; align-items: baseline; }
+  .pc .nav .logo { font-family: 'Fraunces', serif; font-size: 19px; font-weight: 500; font-variation-settings: 'WONK' 1; }
+  .pc .nav .back { font-family: 'IBM Plex Sans'; font-size: 12px; color: #888; }
+
+  .pc .article { padding: 40px 28px; max-width: 640px; }
+  .pc .article .meta { font-family: 'IBM Plex Mono'; font-size: 11px; color: #aaa; margin-bottom: 8px; }
+  .pc .article h1 { font-family: 'Fraunces', serif; font-size: 30px; line-height: 1.2; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 24px; }
+  .pc .article .body { font-family: 'IBM Plex Sans'; font-size: 15px; line-height: 1.75; color: #444; font-weight: 300; }
+  .pc .article .body p { margin-bottom: 16px; }
+  .pc .article .body em { font-style: italic; }
+  .pc .article .body strong { font-weight: 500; color: #1a1a1a; }
+  .pc .article blockquote { border-left: 2px solid #ccc; padding-left: 20px; margin: 20px 0; font-family: 'Fraunces', serif; font-size: 17px; line-height: 1.5; font-style: italic; font-variation-settings: 'WONK' 1; color: #555; }
+  .pc .article .tags { margin-top: 32px; padding-top: 16px; border-top: 1px solid #e0ddd6; display: flex; gap: 6px; }
+  .pc .article .tags span { font-family: 'IBM Plex Mono'; font-size: 11px; color: #888; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Fraunces + IBM Plex — three ways to use them together</h1>
+  <p>Same fonts, different ratios. How much Fraunces do you want?</p>
+</div>
+
+<div class="samples">
+
+  <div class="label">A: Fraunces everywhere it matters — headlines, titles, logo</div>
+  <div class="site-mock pa">
+    <div class="nav">
+      <span class="logo">really.lol</span>
+      <span class="links">Writing · Photos · Library · Links</span>
+    </div>
+    <div class="hero">
+      <div class="meta">5 Apr 2026 · journal</div>
+      <h2>On walking through Ludlow in February</h2>
+      <p class="excerpt">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</p>
+      <div class="tags"><span>#walking</span><span>#ludlow</span><span>#journal</span></div>
+    </div>
+    <div class="feed">
+      <div class="feed-item">
+        <div>
+          <h3>What I watched in March</h3>
+          <div class="feed-type">Media Log</div>
+        </div>
+        <div class="feed-meta">1 Apr 2026</div>
+      </div>
+      <div class="feed-item">
+        <div>
+          <h3>Alpe Devero in snow</h3>
+          <div class="feed-type">Photo</div>
+        </div>
+        <div class="feed-meta">22 Feb 2026</div>
+      </div>
+      <div class="feed-item">
+        <div>
+          <h3>Ordinary Notes — Christina Sharpe</h3>
+          <div class="feed-type">Reading</div>
+        </div>
+        <div class="feed-meta">18 Feb 2026</div>
+      </div>
+      <div class="feed-item">
+        <div>
+          <h3>On the uses of walking</h3>
+          <div class="feed-type">Journal</div>
+        </div>
+        <div class="feed-meta">14 Feb 2026</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="label">B: Fraunces restrained — logo + feature headline only, Plex does the rest</div>
+  <div class="site-mock pb">
+    <div class="nav">
+      <span class="logo">really.lol</span>
+      <span class="links"><span>Writing</span><span>Photos</span><span>Library</span><span>Links</span></span>
+    </div>
+    <div class="feature">
+      <div>
+        <div class="meta">Journal · 5 April 2026</div>
+        <h2>On walking through Ludlow in February</h2>
+        <p class="excerpt">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</p>
+      </div>
+      <div class="aside"><span>PDIA illustration</span></div>
+    </div>
+    <div class="grid">
+      <div class="grid-item">
+        <div class="type">Media Log</div>
+        <h3>What I watched in March</h3>
+        <p>Seven films and a half-abandoned series.</p>
+      </div>
+      <div class="grid-item">
+        <div class="type">Photo</div>
+        <h3>Alpe Devero in snow</h3>
+        <p>February light on the reservoir.</p>
+      </div>
+      <div class="grid-item">
+        <div class="type">Reading</div>
+        <h3>Ordinary Notes</h3>
+        <p>Christina Sharpe on notation and memory.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="label">C: Reading view — how a blog post feels with this pairing</div>
+  <div class="site-mock pc">
+    <div class="nav">
+      <span class="logo">really.lol</span>
+      <span class="back">← Back</span>
+    </div>
+    <div class="article">
+      <div class="meta">5 Apr 2026 · journal · 4 min read</div>
+      <h1>On walking through Ludlow in February</h1>
+      <div class="body">
+        <p>The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should. <em>Ordinary Notes</em> sits in my coat pocket, spine already cracked.</p>
+        <p>You walk past the church and the light changes. Something about the angle of the street funnels it. The stone goes from grey to <strong>almost gold</strong>, and you understand why people have been living here for a thousand years.</p>
+        <blockquote>To annotate is to add a note, a comment, an explanation. But it is also to notice.</blockquote>
+        <p>The castle is open but empty. February in a market town means you have the place to yourself. The woman at the ticket desk looks surprised to see anyone at all.</p>
+      </div>
+      <div class="tags">
+        <span>#walking</span>
+        <span>·</span>
+        <span>#ludlow</span>
+        <span>·</span>
+        <span>#journal</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
