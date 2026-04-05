@@ -1,27 +1,13 @@
 ---
 import Base from "../layouts/Base.astro";
-import { getBooks } from "../lib/cms-data";
+import { HomeFeed } from "../components/HomeFeed";
+import { getAllContent } from "../lib/cms-data";
 
-const readingData = await getBooks("reading");
-const reading = (readingData as Array<{ title: string; author: string }>).slice(0, 1);
+const items = await getAllContent();
 ---
 
-<Base title="really.lol" description="A scrapbook, a journal, and a logbook.">
-  <div class="home-main">
-    <div class="home-intro">
-      <div class="home-component">
-        <div class="home-component__reading">
-          <dt>Reading</dt>
-          {reading.map((book) => (
-            <dd><span>{book.title}</span> by {book.author}</dd>
-          ))}
-        </div>
-        <img
-          alt="A line drawing of the solar system"
-          class="home-hero-image"
-          src="/img/layout/solar-system.jpg"
-        />
-      </div>
-    </div>
-  </div>
+<Base title="really.lol" description="Writing, photos, notes, and things read and watched.">
+  <main>
+    <HomeFeed items={items} client:load />
+  </main>
 </Base>
