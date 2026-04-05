@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { LinksPage } from "../../components/LinksList";
+import { getLinks } from "../../lib/cms-data";
+
+const savedLinks = await getLinks();
+const saved = (savedLinks as Array<{ title: string; url: string; date: string; tags?: string[] }>)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+const highlights = await getCollection("highlight");
+const sortedHighlights = highlights
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .map((h) => ({
+    title: h.data.title,
+    slug: h.id,
+    date: h.data.date.toISOString(),
+    link: h.data.link,
+    excerpt: h.body?.slice(0, 300)?.replace(/[#*_\[\]>]/g, "").trim(),
+  }));
+
+// Blogroll: loaded from CMS pages collection
+// The blogroll page content will be parsed as structured data
+// For now, pass an empty array - will be populated when blogroll data is available
+const blogroll: Array<{ title: string; url: string; description?: string }> = [];
+
+const data = {
+  saved,
+  highlights: sortedHighlights,
+  blogroll,
+};
+---
+
+<Base title="Links" section="links">
+  <main>
+    <LinksPage data={data} client:load />
+  </main>
+</Base>
