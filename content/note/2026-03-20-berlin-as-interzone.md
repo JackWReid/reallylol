@@ -1,4 +1,0 @@
----
-title: "berlin as interzone"
-date: "2026-03-20T08:06:42"
----

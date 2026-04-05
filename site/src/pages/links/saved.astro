@@ -1,0 +1,23 @@
+---
+import Base from "../../layouts/Base.astro";
+import SubNav from "../../components/SubNav.astro";
+import { LinkList } from "../../components/PaginatedList";
+import { getLinks } from "../../lib/cms-data";
+
+const links = await getLinks() as Array<{
+  title: string;
+  url: string;
+  date: string;
+  excerpt?: string;
+  tags?: string[];
+  cover?: string;
+}>;
+---
+
+<Base title="Saved Links" section="links">
+  <main class="single-main single-main--links">
+    <SubNav section="links" />
+    <h1 class="single-main__title">Saved Links</h1>
+    <LinkList links={links} client:load />
+  </main>
+</Base>
