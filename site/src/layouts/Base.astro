@@ -42,7 +42,7 @@ const pageTitle = title === "really.lol" ? title : `${title} | really.lol`;
     <link rel="alternate" type="application/rss+xml" title="really.lol" href="/index.xml" />
     <link rel="icon" type="image/png" href="/favicon.png" />
   </head>
-  <body class={section}>
+  <body class:list={[section && `section-${section}`]}>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <SiteHeader />
     <div class="site-wrapper" id="main-content">
