@@ -25,7 +25,7 @@ function formatDate(date: Date): string {
 <Base title={note.data.title} section="notes">
   <main class="note-single">
     <div class="note-single__body">
-      <Content />
+      {note.body ? <Content /> : <p>{note.data.title}</p>}
     </div>
     <time class="note-single__date">{formatDate(note.data.date)}</time>
   </main>

@@ -69,8 +69,10 @@ export function LibraryTimeline({ data }: { data: LibraryData }) {
   };
 
   const items = tabData[tab];
-  const groups = groupByTimeline(items);
   const isBooks = tab.startsWith("books");
+  const isFlat = tab === "books-reading" || tab === "books-toread" || tab === "films-towatch";
+  const groups = isFlat ? [] : groupByTimeline(items);
+  const flatItems = isFlat ? [...items].sort((a, b) => a.title.localeCompare(b.title)) : [];
 
   return (
     <div class="library">
@@ -103,28 +105,42 @@ export function LibraryTimeline({ data }: { data: LibraryData }) {
         >To Watch</a>
       </div>
 
-      <div class="timeline">
-        {groups.map((yearGroup) => (
-          <div class="timeline__year" key={yearGroup.year}>
-            <h2 class="timeline__year-label">{yearGroup.year}</h2>
-            {yearGroup.months.map((month) => (
-              <div class="timeline__month" key={month.label}>
-                <h3 class="timeline__month-label">
-                  {month.label} — {month.count} {isBooks ? (month.count === 1 ? "book" : "books") : (month.count === 1 ? "film" : "films")}
-                </h3>
-                {month.items.map((item, i) => (
-                  <div class="timeline__item" key={`${item.title}-${i}`}>
-                    <span class="timeline__title">{item.title}</span>
-                    <span class="timeline__creator">
-                      {item.creator}{item.year ? ` (${item.year})` : ""}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
-        ))}
-      </div>
+      {isFlat ? (
+        <div class="timeline">
+          <p class="timeline__flat-count">{flatItems.length} {isBooks ? "books" : "films"}</p>
+          {flatItems.map((item, i) => (
+            <div class="timeline__item" key={`${item.title}-${i}`}>
+              <span class="timeline__title">{item.title}</span>
+              <span class="timeline__creator">
+                {item.creator}{item.year ? ` (${item.year})` : ""}
+              </span>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="timeline">
+          {groups.map((yearGroup) => (
+            <div class="timeline__year" key={yearGroup.year}>
+              <h2 class="timeline__year-label">{yearGroup.year}</h2>
+              {yearGroup.months.map((month) => (
+                <div class="timeline__month" key={month.label}>
+                  <h3 class="timeline__month-label">
+                    {month.label} — {month.count} {isBooks ? (month.count === 1 ? "book" : "books") : (month.count === 1 ? "film" : "films")}
+                  </h3>
+                  {month.items.map((item, i) => (
+                    <div class="timeline__item" key={`${item.title}-${i}`}>
+                      <span class="timeline__title">{item.title}</span>
+                      <span class="timeline__creator">
+                        {item.creator}{item.year ? ` (${item.year})` : ""}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
 
       <div class="library__stats">
         {data.bookCount.toLocaleString()} books · {data.authorCount.toLocaleString()} authors · {data.filmCount.toLocaleString()} films

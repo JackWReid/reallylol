@@ -19,10 +19,30 @@ const sortedHighlights = highlights
     excerpt: h.body?.slice(0, 300)?.replace(/[#*_\[\]>]/g, "").trim(),
   }));
 
-// Blogroll: loaded from CMS pages collection
-// The blogroll page content will be parsed as structured data
-// For now, pass an empty array - will be populated when blogroll data is available
-const blogroll: Array<{ title: string; url: string; description?: string }> = [];
+// Blogroll: parse markdown links from the CMS blogroll page
+const blogrollPage = await getCollection("page").then(
+  (pages) => pages.find((p) => p.id === "blogroll")
+);
+const blogroll: Array<{ title: string; url: string; description?: string; section?: string }> = [];
+if (blogrollPage?.body) {
+  let currentSection = "";
+  for (const line of blogrollPage.body.split("\n")) {
+    const sectionMatch = line.match(/^###\s+(.+)/);
+    if (sectionMatch) {
+      currentSection = sectionMatch[1].trim();
+      continue;
+    }
+    const linkMatch = line.match(/^-\s+\[([^\]]+)\]\(([^)]+)\)(?:\s*-\s*(.+))?/);
+    if (linkMatch) {
+      blogroll.push({
+        title: linkMatch[1],
+        url: linkMatch[2],
+        description: linkMatch[3]?.trim(),
+        section: currentSection || undefined,
+      });
+    }
+  }
+}
 
 const data = {
   saved,
