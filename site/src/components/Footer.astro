@@ -1,37 +1,6 @@
 ---
-import { getCollection } from "astro:content";
-import Calendar from "./icons/Calendar.astro";
-import Location from "./icons/Location.astro";
-import { r2Thumb } from "../lib/images";
-import { getRandomPhotos } from "../lib/cms-data";
-
-type RandomPhotoEntry = { path: string };
-const randomPhotosData = await getRandomPhotos();
-
-const allPhotos = await getCollection("photo");
-const photoMap = new Map(allPhotos.map((p) => [p.id, p]));
-
-const entries = randomPhotosData as RandomPhotoEntry[];
-// Fisher-Yates shuffle for unbiased random selection
-const shuffled = [...entries];
-for (let i = shuffled.length - 1; i > 0; i--) {
-  const j = Math.floor(Math.random() * (i + 1));
-  [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-}
-
-// Pick the first entry that resolves to a known photo
-let photo: (typeof allPhotos)[0] | undefined;
-for (const entry of shuffled) {
-  // path is like "photo/2024-01-01-slug" — the id is the part after "photo/"
-  const id = entry.path.replace(/^photo\//, "");
-  const match = photoMap.get(id);
-  if (match) {
-    photo = match;
-    break;
-  }
-}
-
 const now = new Date();
+const year = now.getFullYear();
 const lastUpdated = now.toLocaleString("en-GB", {
   hour: "2-digit",
   minute: "2-digit",
@@ -39,49 +8,32 @@ const lastUpdated = now.toLocaleString("en-GB", {
   month: "long",
   year: "numeric",
 });
+
+// A rotating set of dry sign-offs
+const signoffs = [
+  "lol",
+  "really though",
+  "no but seriously",
+  "anyway",
+  "right then",
+  "cheers",
+  "xoxo",
+  ";)",
+  "still here",
+  "end of the line",
+  "that's your lot",
+  "fin",
+];
+const signoff = signoffs[Math.floor(Math.random() * signoffs.length)];
 ---
-<div class="site-footer-wrapper">
-  <footer class="site-footer">
-    <section class="photo-box">
-      {photo && (
-        <>
-          <a class="photo-box__link" href={`/photo/${photo.id}/`}>
-            <img
-              class="photo-box__image"
-              src={r2Thumb(photo.data.image)}
-              alt=""
-              loading="lazy"
-            />
-          </a>
-          <div class="photo-box__details">
-            <p class="image-item__label">Random photo</p>
-            <p class="image-item__title">
-              <a href={`/photo/${photo.id}/`}>{photo.data.title}</a>
-            </p>
-            {photo.data.location && (
-              <p class="image-item__location">
-                <Location /> <span>{photo.data.location}</span>
-              </p>
-            )}
-            <p class="image-item__date">
-              <Calendar />
-              {photo.data.date.toLocaleDateString("en-GB", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              })}
-            </p>
-          </div>
-        </>
-      )}
-    </section>
-    <section class="site-footer__details">
-      <p>
-        <a rel="me" href="https://social.lol/@nice">@nice</a>
-        <a href="/now">/now</a>
-        <a href="/index.xml">RSS</a>
-      </p>
-      <p>Fresh as of {lastUpdated}</p>
-    </section>
-  </footer>
-</div>
+<footer class="site-footer">
+  <div class="site-footer__links">
+    <a rel="me" href="https://social.lol/@nice">@nice</a>
+    <a href="/now">/now</a>
+    <a href="/index.xml">rss</a>
+  </div>
+  <div class="site-footer__meta">
+    <span class="site-footer__signoff">{signoff}</span>
+    <span class="site-footer__freshness">Fresh as of {lastUpdated}</span>
+  </div>
+</footer>

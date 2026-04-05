@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section Personalities — really.lol</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #dddad2; font-family: 'IBM Plex Sans', sans-serif; }
+
+  .page-header { padding: 20px 32px; background: #222; color: #fff; position: sticky; top: 0; z-index: 10; }
+  .page-header h1 { font-size: 16px; font-weight: 400; }
+  .page-header p { font-size: 12px; opacity: 0.5; margin-top: 4px; }
+
+  .sections { max-width: 1200px; margin: 0 auto; padding: 32px; display: flex; flex-direction: column; gap: 40px; }
+
+  .section-intro { margin-bottom: -24px; }
+  .section-intro h2 { font-family: 'IBM Plex Sans'; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: #666; }
+  .section-intro p { font-size: 13px; color: #888; margin-top: 4px; line-height: 1.5; max-width: 700px; }
+
+  .mock-frame { border-radius: 6px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.1); }
+
+  /* Shared nav */
+  .site-nav { padding: 14px 28px; display: flex; justify-content: space-between; align-items: baseline; }
+  .site-nav .logo { font-family: 'Fraunces', serif; font-size: 19px; font-weight: 500; font-variation-settings: 'WONK' 1; }
+  .site-nav .links { font-family: 'IBM Plex Sans'; font-size: 11.5px; letter-spacing: 0.3px; }
+  .site-nav .links span { margin-left: 18px; opacity: 0.5; cursor: pointer; }
+  .site-nav .links span.active { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>really.lol — section personalities</h1>
+  <p>Each section shares the nav and base palette but has its own layout and feel. Scroll through all five.</p>
+</div>
+
+<div class="sections">
+
+<!-- ==================== HOMEPAGE ==================== -->
+<div class="section-intro">
+  <h2>Homepage — The Feed</h2>
+  <p>Mixed chronological feed. Latest item gets a feature treatment. PDIA image as decorative element. Simple, scannable.</p>
+</div>
+<div class="mock-frame">
+  <div style="background: #f0eeea;">
+    <div class="site-nav" style="border-bottom: 1.5px solid #2a3a2e; color: #2a3a2e;">
+      <span class="logo">really.lol</span>
+      <div class="links">
+        <span class="active">Home</span>
+        <span>Writing</span>
+        <span>Notes</span>
+        <span>Photos</span>
+        <span>Library</span>
+        <span>Links</span>
+      </div>
+    </div>
+
+    <div style="padding: 36px 28px 28px; display: grid; grid-template-columns: 1fr 180px; gap: 32px; border-bottom: 1px solid #d5d2ca;">
+      <div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px;">Journal · 5 Apr 2026</div>
+        <div style="font-family: 'Fraunces', serif; font-size: 30px; line-height: 1.18; color: #2a3a2e; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 12px;">On walking through Ludlow in February</div>
+        <div style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 1.65; color: #5a6658;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</div>
+      </div>
+      <div style="background: #e4dfd6; display: flex; align-items: center; justify-content: center; border-radius: 2px;">
+        <span style="font-family: 'IBM Plex Mono'; font-size: 9px; color: #a0a090; text-align: center; padding: 12px;">PDIA<br>illustration</span>
+      </div>
+    </div>
+
+    <div style="padding: 0 28px;">
+      <div style="padding: 18px 0; border-bottom: 1px solid #d5d2ca; display: grid; grid-template-columns: 1fr auto; align-items: baseline;">
+        <div>
+          <div style="font-family: 'Fraunces', serif; font-size: 17px; color: #2a3a2e; font-variation-settings: 'WONK' 1;">Alpe Devero in snow</div>
+          <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-top: 3px;">photo · 22 Feb 2026</div>
+        </div>
+        <div style="width: 48px; height: 48px; background: #d5d2ca; border-radius: 2px;"></div>
+      </div>
+      <div style="padding: 18px 0; border-bottom: 1px solid #d5d2ca; display: grid; grid-template-columns: 1fr auto; align-items: baseline;">
+        <div>
+          <div style="font-family: 'Fraunces', serif; font-size: 17px; color: #2a3a2e; font-variation-settings: 'WONK' 1;">really there's nothing better than lying drunk in a ditch</div>
+          <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-top: 3px;">note · 19 Feb 2026</div>
+        </div>
+        <div></div>
+      </div>
+      <div style="padding: 18px 0; border-bottom: 1px solid #d5d2ca; display: grid; grid-template-columns: 1fr auto; align-items: baseline;">
+        <div>
+          <div style="font-family: 'Fraunces', serif; font-size: 17px; color: #2a3a2e; font-variation-settings: 'WONK' 1;">Ordinary Notes — Christina Sharpe</div>
+          <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-top: 3px;">reading · 18 Feb 2026</div>
+        </div>
+        <div></div>
+      </div>
+      <div style="padding: 18px 0; display: grid; grid-template-columns: 1fr auto; align-items: baseline;">
+        <div>
+          <div style="font-family: 'Fraunces', serif; font-size: 17px; color: #2a3a2e; font-variation-settings: 'WONK' 1;">What I watched in January</div>
+          <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-top: 3px;">media log · 2 Feb 2026</div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <div style="padding: 20px 28px; text-align: center;">
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #7a8a6a; cursor: pointer;">Load more</span>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== WRITING ==================== -->
+<div class="section-intro">
+  <h2>Writing — The Editorial Default</h2>
+  <p>Posts and journal entries. The core reading experience. Clean, airy, Fraunces headlines at their most prominent. Tags and excerpts to help scan.</p>
+</div>
+<div class="mock-frame">
+  <div style="background: #f0eeea;">
+    <div class="site-nav" style="border-bottom: 1.5px solid #2a3a2e; color: #2a3a2e;">
+      <span class="logo">really.lol</span>
+      <div class="links">
+        <span>Home</span>
+        <span class="active">Writing</span>
+        <span>Notes</span>
+        <span>Photos</span>
+        <span>Library</span>
+        <span>Links</span>
+      </div>
+    </div>
+
+    <div style="max-width: 680px; padding: 36px 28px;">
+      <!-- Post 1 -->
+      <div style="margin-bottom: 36px; padding-bottom: 36px; border-bottom: 1px solid #d5d2ca;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-bottom: 8px; display: flex; gap: 12px;">
+          <span>5 Apr 2026</span>
+          <span style="opacity: 0.5;">·</span>
+          <span>#journal</span>
+          <span>#walking</span>
+        </div>
+        <div style="font-family: 'Fraunces', serif; font-size: 26px; line-height: 1.2; color: #2a3a2e; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 12px;">On walking through Ludlow in February</div>
+        <div style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 1.65; color: #5a6658;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</div>
+      </div>
+      <!-- Post 2 -->
+      <div style="margin-bottom: 36px; padding-bottom: 36px; border-bottom: 1px solid #d5d2ca;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-bottom: 8px; display: flex; gap: 12px;">
+          <span>1 Apr 2026</span>
+          <span style="opacity: 0.5;">·</span>
+          <span>#media log</span>
+        </div>
+        <div style="font-family: 'Fraunces', serif; font-size: 26px; line-height: 1.2; color: #2a3a2e; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 12px;">What I watched in March</div>
+        <div style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 1.65; color: #5a6658;">Seven films and a half-abandoned series. The best was still the Varda. The worst was something I've already forgotten the name of.</div>
+      </div>
+      <!-- Post 3 -->
+      <div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-bottom: 8px; display: flex; gap: 12px;">
+          <span>28 Mar 2026</span>
+          <span style="opacity: 0.5;">·</span>
+          <span>#books</span>
+        </div>
+        <div style="font-family: 'Fraunces', serif; font-size: 26px; line-height: 1.2; color: #2a3a2e; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 12px;">Ordinary Notes — Christina Sharpe</div>
+        <div style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 1.65; color: #5a6658;">To annotate is to add a note, a comment, an explanation. But it is also to notice. Sharpe builds something extraordinary from that double meaning.</div>
+      </div>
+    </div>
+
+    <div style="padding: 20px 28px; text-align: center;">
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #7a8a6a;">Load more</span>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== NOTES ==================== -->
+<div class="section-intro">
+  <h2>Notes — The Casual Space</h2>
+  <p>Short, untitled, dashed-off. Different background colour to mark the shift in register. Bigger type, less chrome, more breathing room. Like a different room in the same building.</p>
+</div>
+<div class="mock-frame">
+  <div style="background: #2a3a2e;">
+    <div class="site-nav" style="border-bottom: 1px solid #4a5a4e; color: #e0ddd6;">
+      <span class="logo" style="color: #e8e4dc;">really.lol</span>
+      <div class="links" style="color: #8a9a7a;">
+        <span>Home</span>
+        <span>Writing</span>
+        <span class="active" style="color: #e8e4dc;">Notes</span>
+        <span>Photos</span>
+        <span>Library</span>
+        <span>Links</span>
+      </div>
+    </div>
+
+    <div style="max-width: 600px; padding: 48px 28px; margin: 0 auto;">
+      <div style="margin-bottom: 48px;">
+        <div style="font-family: 'Fraunces', serif; font-size: 22px; line-height: 1.45; color: #e8e4dc; font-weight: 300; font-variation-settings: 'WONK' 1;">really there's nothing better than lying drunk in a ditch looking up at the stars and knowing that they're very far away and you're very small and none of it matters</div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-top: 12px;">19 Feb 2026</div>
+      </div>
+      <div style="margin-bottom: 48px; border-top: 1px solid #3a4a3e; padding-top: 48px;">
+        <div style="font-family: 'Fraunces', serif; font-size: 22px; line-height: 1.45; color: #e8e4dc; font-weight: 300; font-variation-settings: 'WONK' 1;">I keep thinking about that sentence in the Sebald. The one about the herring. How a single observation can hold an entire catastrophe.</div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-top: 12px;">14 Feb 2026</div>
+      </div>
+      <div style="border-top: 1px solid #3a4a3e; padding-top: 48px;">
+        <div style="font-family: 'Fraunces', serif; font-size: 22px; line-height: 1.45; color: #e8e4dc; font-weight: 300; font-variation-settings: 'WONK' 1;">First crocuses in the park. Unreasonably moving.</div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-top: 12px;">8 Feb 2026</div>
+      </div>
+    </div>
+
+    <div style="padding: 20px 28px; text-align: center;">
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #7a8a6a;">Load more</span>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PHOTOS ==================== -->
+<div class="section-intro">
+  <h2>Photos — Visual-First</h2>
+  <p>The images lead. Dark background so photos pop. Masonry grid, minimal text. Hovering reveals title and location. A gallery, not a list.</p>
+</div>
+<div class="mock-frame">
+  <div style="background: #1a1a18;">
+    <div class="site-nav" style="border-bottom: 1px solid #333; color: #ccc;">
+      <span class="logo" style="color: #e8e4dc;">really.lol</span>
+      <div class="links" style="color: #777;">
+        <span>Home</span>
+        <span>Writing</span>
+        <span>Notes</span>
+        <span class="active" style="color: #e8e4dc;">Photos</span>
+        <span>Library</span>
+        <span>Links</span>
+      </div>
+    </div>
+
+    <div style="padding: 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;">
+      <div style="background: #3a3832; height: 200px; border-radius: 2px; position: relative; overflow: hidden;">
+        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); padding: 12px;">
+          <div style="font-family: 'Fraunces', serif; font-size: 13px; color: #fff; font-variation-settings: 'WONK' 1;">Alpe Devero in snow</div>
+          <div style="font-family: 'IBM Plex Mono'; font-size: 9px; color: #aaa; margin-top: 2px;">Italy · Feb 2026</div>
+        </div>
+      </div>
+      <div style="background: #4a4840; height: 260px; border-radius: 2px; grid-row: span 1;"></div>
+      <div style="background: #353530; height: 200px; border-radius: 2px;"></div>
+      <div style="background: #404038; height: 240px; border-radius: 2px;"></div>
+      <div style="background: #3a3835; height: 180px; border-radius: 2px;"></div>
+      <div style="background: #454540; height: 240px; border-radius: 2px;"></div>
+      <div style="background: #383835; height: 160px; border-radius: 2px;"></div>
+      <div style="background: #4a4842; height: 200px; border-radius: 2px;"></div>
+      <div style="background: #3a3a35; height: 160px; border-radius: 2px;"></div>
+    </div>
+
+    <div style="padding: 20px 28px; text-align: center;">
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #666;">Load more</span>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== LIBRARY ==================== -->
+<div class="section-intro">
+  <h2>Library — Books & Films</h2>
+  <p>Catalogue energy. Tabs for Read/Reading/To Read and Watched/To Watch. Cover images prominent, metadata compact. Feels like browsing shelves.</p>
+</div>
+<div class="mock-frame">
+  <div style="background: #f0eeea;">
+    <div class="site-nav" style="border-bottom: 1.5px solid #2a3a2e; color: #2a3a2e;">
+      <span class="logo">really.lol</span>
+      <div class="links">
+        <span>Home</span>
+        <span>Writing</span>
+        <span>Notes</span>
+        <span>Photos</span>
+        <span class="active">Library</span>
+        <span>Links</span>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div style="padding: 16px 28px 0; display: flex; gap: 24px; border-bottom: 1px solid #d5d2ca;">
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; font-weight: 500; color: #2a3a2e; padding-bottom: 12px; border-bottom: 2px solid #2a3a2e;">Books — Read</span>
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #7a8a6a; padding-bottom: 12px;">Reading</span>
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #7a8a6a; padding-bottom: 12px;">To Read</span>
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #7a8a6a; padding-bottom: 12px; margin-left: 12px; border-left: 1px solid #d5d2ca; padding-left: 24px;">Films — Watched</span>
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #7a8a6a; padding-bottom: 12px;">To Watch</span>
+    </div>
+
+    <!-- Book grid -->
+    <div style="padding: 24px 28px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+      <div>
+        <div style="background: #d5d2ca; height: 180px; border-radius: 2px; margin-bottom: 8px;"></div>
+        <div style="font-family: 'Fraunces', serif; font-size: 14px; color: #2a3a2e; font-variation-settings: 'WONK' 1; line-height: 1.3;">Ordinary Notes</div>
+        <div style="font-family: 'IBM Plex Sans'; font-size: 11px; color: #7a8a6a; margin-top: 2px;">Christina Sharpe</div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 9px; color: #aaa; margin-top: 4px;">Feb 2026</div>
+      </div>
+      <div>
+        <div style="background: #ccc8c0; height: 180px; border-radius: 2px; margin-bottom: 8px;"></div>
+        <div style="font-family: 'Fraunces', serif; font-size: 14px; color: #2a3a2e; font-variation-settings: 'WONK' 1; line-height: 1.3;">The Rings of Saturn</div>
+        <div style="font-family: 'IBM Plex Sans'; font-size: 11px; color: #7a8a6a; margin-top: 2px;">W.G. Sebald</div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 9px; color: #aaa; margin-top: 4px;">Jan 2026</div>
+      </div>
+      <div>
+        <div style="background: #d8d5cc; height: 180px; border-radius: 2px; margin-bottom: 8px;"></div>
+        <div style="font-family: 'Fraunces', serif; font-size: 14px; color: #2a3a2e; font-variation-settings: 'WONK' 1; line-height: 1.3;">Austerlitz</div>
+        <div style="font-family: 'IBM Plex Sans'; font-size: 11px; color: #7a8a6a; margin-top: 2px;">W.G. Sebald</div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 9px; color: #aaa; margin-top: 4px;">Dec 2025</div>
+      </div>
+      <div>
+        <div style="background: #d0cdc5; height: 180px; border-radius: 2px; margin-bottom: 8px;"></div>
+        <div style="font-family: 'Fraunces', serif; font-size: 14px; color: #2a3a2e; font-variation-settings: 'WONK' 1; line-height: 1.3;">Dept. of Speculation</div>
+        <div style="font-family: 'IBM Plex Sans'; font-size: 11px; color: #7a8a6a; margin-top: 2px;">Jenny Offill</div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 9px; color: #aaa; margin-top: 4px;">Nov 2025</div>
+      </div>
+    </div>
+
+    <div style="padding: 20px 28px; text-align: center;">
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #7a8a6a;">Load more</span>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== LINKS ==================== -->
+<div class="section-intro">
+  <h2>Links — The Collection</h2>
+  <p>Consolidated: saved links (from Raindrop), blogroll, and old highlights all in one place. Dense, scannable, utility-forward. Tabs separate the types.</p>
+</div>
+<div class="mock-frame">
+  <div style="background: #f0eeea;">
+    <div class="site-nav" style="border-bottom: 1.5px solid #2a3a2e; color: #2a3a2e;">
+      <span class="logo">really.lol</span>
+      <div class="links">
+        <span>Home</span>
+        <span>Writing</span>
+        <span>Notes</span>
+        <span>Photos</span>
+        <span>Library</span>
+        <span class="active">Links</span>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div style="padding: 16px 28px 0; display: flex; gap: 24px; border-bottom: 1px solid #d5d2ca;">
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; font-weight: 500; color: #2a3a2e; padding-bottom: 12px; border-bottom: 2px solid #2a3a2e;">Saved</span>
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #7a8a6a; padding-bottom: 12px;">Highlights</span>
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #7a8a6a; padding-bottom: 12px;">Blogroll</span>
+    </div>
+
+    <div style="padding: 8px 28px 28px; max-width: 700px;">
+      <div style="padding: 14px 0; border-bottom: 1px solid #e0ddd6;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <div style="font-family: 'IBM Plex Sans'; font-size: 14px; font-weight: 500; color: #2a3a2e;">The Library Will Survive the Internet</div>
+          <div style="font-family: 'IBM Plex Mono'; font-size: 9px; color: #aaa; flex-shrink: 0; margin-left: 16px;">theverge.com</div>
+        </div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-top: 4px; display: flex; gap: 8px;">
+          <span>#libraries</span>
+          <span>#internet</span>
+          <span style="opacity: 0.5;">· 3 Apr 2026</span>
+        </div>
+      </div>
+      <div style="padding: 14px 0; border-bottom: 1px solid #e0ddd6;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <div style="font-family: 'IBM Plex Sans'; font-size: 14px; font-weight: 500; color: #2a3a2e;">On Rereading</div>
+          <div style="font-family: 'IBM Plex Mono'; font-size: 9px; color: #aaa; flex-shrink: 0; margin-left: 16px;">lrb.co.uk</div>
+        </div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-top: 4px; display: flex; gap: 8px;">
+          <span>#reading</span>
+          <span>#essays</span>
+          <span style="opacity: 0.5;">· 1 Apr 2026</span>
+        </div>
+      </div>
+      <div style="padding: 14px 0; border-bottom: 1px solid #e0ddd6;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <div style="font-family: 'IBM Plex Sans'; font-size: 14px; font-weight: 500; color: #2a3a2e;">Why I Still Use RSS</div>
+          <div style="font-family: 'IBM Plex Mono'; font-size: 9px; color: #aaa; flex-shrink: 0; margin-left: 16px;">blog.example.com</div>
+        </div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-top: 4px; display: flex; gap: 8px;">
+          <span>#rss</span>
+          <span>#indieweb</span>
+          <span style="opacity: 0.5;">· 28 Mar 2026</span>
+        </div>
+      </div>
+      <div style="padding: 14px 0;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <div style="font-family: 'IBM Plex Sans'; font-size: 14px; font-weight: 500; color: #2a3a2e;">A Map of Every Building in America</div>
+          <div style="font-family: 'IBM Plex Mono'; font-size: 9px; color: #aaa; flex-shrink: 0; margin-left: 16px;">nytimes.com</div>
+        </div>
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-top: 4px; display: flex; gap: 8px;">
+          <span>#maps</span>
+          <span>#data</span>
+          <span style="opacity: 0.5;">· 25 Mar 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding: 20px 28px; text-align: center;">
+      <span style="font-family: 'IBM Plex Sans'; font-size: 12px; color: #7a8a6a;">Load more</span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,24 +1,24 @@
-.pagination {
-  margin: var(--spacing-lg) auto 0;
-  display: flex;
-  justify-content: center;
-
-  > *:not(:last-child) {
-    margin-right: var(--spacing-md);
+@layer utilities {
+  .skip-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
   }
-}
 
-.skip-link {
-  position: absolute;
-  top: -100%;
-  left: var(--spacing-md);
-  z-index: 100;
-  padding: var(--spacing-base) var(--spacing-md);
-  background: var(--color-text);
-  color: var(--color-background);
-  text-decoration: none;
-
-  &:focus {
-    top: var(--spacing-base);
+  .skip-link:focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    clip: auto;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-text);
+    color: var(--color-bg);
+    z-index: 100;
+    font-size: var(--text-sm);
   }
 }

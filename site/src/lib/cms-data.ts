@@ -4,7 +4,7 @@
  */
 
 const CMS_API_URL = import.meta.env.CMS_API_URL ?? "http://localhost:8788";
-const CMS_API_KEY = import.meta.env.CMS_API_KEY ?? "dev-test-key";
+const CMS_API_KEY = import.meta.env.CMS_API_KEY ?? "over-the-hill";
 
 async function cmsGet<T>(path: string): Promise<T> {
   const url = `${CMS_API_URL}${path}`;
@@ -62,4 +62,47 @@ export async function getRandomPhotos(): Promise<RandomPhoto[]> {
 
 export async function getConfig(): Promise<Record<string, unknown>> {
   return cmsGet<Record<string, unknown>>("/api/data/config");
+}
+
+export interface FeedItem {
+  type: "post" | "note" | "photo" | "highlight";
+  title: string;
+  slug: string;
+  date: string;
+  excerpt?: string;
+  image?: string;
+  location?: string;
+}
+
+export async function getAllContent(): Promise<FeedItem[]> {
+  const types = ["post", "note", "photo", "highlight"] as const;
+  const perType = 50;
+
+  const results = await Promise.all(
+    types.map(async (type) => {
+      const res = await fetch(
+        `${CMS_API_URL}/api/content?type=${type}&status=published&limit=${perType}&sort=date&order=desc`,
+        { headers: { Authorization: `Bearer ${CMS_API_KEY}` } },
+      );
+      if (!res.ok) return [];
+      const data = await res.json() as { items: Array<{
+        type: string; slug: string; title: string; date: string;
+        body?: string; meta?: Record<string, unknown>;
+      }> };
+      return data.items;
+    }),
+  );
+
+  return results
+    .flat()
+    .map((item) => ({
+      type: item.type as FeedItem["type"],
+      title: item.title,
+      slug: item.slug,
+      date: item.date,
+      excerpt: item.body?.slice(0, 200)?.replace(/[#*_\[\]]/g, "").trim(),
+      image: item.type === "photo" ? (item.meta?.image as string) : undefined,
+      location: item.type === "photo" ? (item.meta?.location as string) : undefined,
+    }))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }

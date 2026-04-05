@@ -86,6 +86,9 @@ deploy/
 *.tar.gz
 *.rar
 
+# Superpowers
+.superpowers/
+
 # Local configuration
 config.local.*
 params.local.*

@@ -1,109 +1,85 @@
 ---
 import { getCollection } from "astro:content";
-import type { GetStaticPathsOptions } from "astro";
 import Base from "../../../layouts/Base.astro";
-import PreviewCard from "../../../components/PreviewCard.astro";
-import Pagination from "../../../components/Pagination.astro";
-import { getPrettyName, tagToSlug } from "../../../lib/tags";
+import { getPrettyName, tagToSlug, slugToTag } from "../../../lib/tags";
 import { generateSummary } from "../../../lib/summary";
 
-export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+export async function getStaticPaths() {
   const posts = await getCollection("post");
   const photos = await getCollection("photo");
   const highlights = await getCollection("highlight");
 
-  // Collect all unique tags
   const allTags = new Set<string>();
-  for (const post of posts) {
-    for (const tag of post.data.tags ?? []) allTags.add(tag);
-  }
-  for (const photo of photos) {
-    for (const tag of photo.data.tags ?? []) allTags.add(tag);
-  }
-  for (const highlight of highlights) {
-    for (const tag of highlight.data.tags ?? []) allTags.add(tag);
+  for (const item of [...posts, ...photos, ...highlights]) {
+    for (const tag of item.data.tags ?? []) {
+      allTags.add(tag);
+    }
   }
 
-  const paths: ReturnType<typeof paginate>[] = [];
+  return Array.from(allTags).map((tag) => {
+    const items = [
+      ...posts.filter((p) => p.data.tags?.includes(tag)).map((p) => ({
+        type: "post" as const,
+        title: p.data.title,
+        date: p.data.date,
+        slug: p.id,
+        excerpt: generateSummary(p.body ?? ""),
+      })),
+      ...photos.filter((p) => p.data.tags?.includes(tag)).map((p) => ({
+        type: "photo" as const,
+        title: p.data.title,
+        date: p.data.date,
+        slug: p.id,
+        excerpt: undefined,
+      })),
+      ...highlights.filter((h) => h.data.tags?.includes(tag)).map((h) => ({
+        type: "highlight" as const,
+        title: h.data.title,
+        date: h.data.date,
+        slug: h.id,
+        excerpt: undefined,
+      })),
+    ].sort((a, b) => b.date.getTime() - a.date.getTime());
 
-  for (const tag of allTags) {
-    const taggedPosts = posts
-      .filter((p) => (p.data.tags ?? []).includes(tag))
-      .map((p) => ({ type: "post" as const, ...p }));
-    const taggedPhotos = photos
-      .filter((p) => (p.data.tags ?? []).includes(tag))
-      .map((p) => ({ type: "photo" as const, ...p }));
-    const taggedHighlights = highlights
-      .filter((h) => (h.data.tags ?? []).includes(tag))
-      .map((h) => ({ type: "highlight" as const, ...h }));
-
-    const combined = [...taggedPosts, ...taggedPhotos, ...taggedHighlights].sort(
-      (a, b) => b.data.date.getTime() - a.data.date.getTime()
-    );
-
-    const tagPages = paginate(combined, {
-      params: { tag: tagToSlug(tag) },
-      props: { tag },
-      pageSize: 10,
-    });
-    paths.push(...tagPages);
-  }
-
-  return paths;
+    return {
+      params: { tag: tagToSlug(tag), page: undefined },
+      props: { tag, items },
+    };
+  });
 }
 
-const { page, tag } = Astro.props;
-const prettyTag = getPrettyName(tag);
+const { tag, items } = Astro.props;
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+}
+
+function itemUrl(type: string, slug: string): string {
+  if (type === "post") return `/writing/${slug}/`;
+  if (type === "photo") return `/photo/${slug}/`;
+  return "#";
+}
 ---
 
-<Base title={`#${prettyTag.toLowerCase()}`}>
-  <main class="section-main section-main--tag">
-    <h1 class="section-title">#{prettyTag.toLowerCase()}</h1>
-    <div class="multi-preview-list">
-      {page.data.map((item) => {
-        if (item.type === "post") {
-          return (
-            <PreviewCard
-              type="post"
-              title={item.data.title}
-              date={item.data.date}
-              id={item.id}
-              tags={item.data.tags}
-              excerpt={generateSummary(item.body ?? "")}
-            />
-          );
-        }
-        if (item.type === "photo") {
-          return (
-            <PreviewCard
-              type="photo"
-              title={item.data.title}
-              date={item.data.date}
-              id={item.id}
-              tags={item.data.tags}
-              image={item.data.image}
-              location={item.data.location}
-            />
-          );
-        }
-        if (item.type === "highlight") {
-          return (
-            <PreviewCard
-              type="highlight"
-              title={item.data.title}
-              date={item.data.date}
-              id={item.id}
-              tags={item.data.tags}
-            />
-          );
-        }
-      })}
+<Base title={`#${getPrettyName(tag)}`}>
+  <main class="tag-archive">
+    <h1>#{getPrettyName(tag)}</h1>
+    <p class="tag-archive__count">{items.length} items</p>
+    <div class="tag-archive__list">
+      {items.map((item) => (
+        <a href={itemUrl(item.type, item.slug)} class="feed-item">
+          <div class="feed-item__text">
+            <span class="feed-item__title">{item.title}</span>
+            <span class="feed-meta">
+              {item.type} · {formatDate(item.date)}
+            </span>
+          </div>
+        </a>
+      ))}
     </div>
-    <Pagination
-      currentPage={page.currentPage}
-      lastPage={page.lastPage}
-      prevUrl={page.url.prev}
-      nextUrl={page.url.next}
-    />
   </main>
 </Base>

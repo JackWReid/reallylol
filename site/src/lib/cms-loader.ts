@@ -5,7 +5,7 @@
 import type { Loader } from "astro/loaders";
 
 const CMS_API_URL = import.meta.env.CMS_API_URL ?? "http://localhost:8788";
-const CMS_API_KEY = import.meta.env.CMS_API_KEY ?? "dev-test-key";
+const CMS_API_KEY = import.meta.env.CMS_API_KEY ?? "over-the-hill";
 
 async function cmsGet(path: string): Promise<unknown> {
   const url = `${CMS_API_URL}${path}`;
