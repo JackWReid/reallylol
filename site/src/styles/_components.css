@@ -226,4 +226,65 @@
   .writing-single__tags a {
     text-decoration: none;
   }
+
+  /* Notes list */
+  .notes-list {
+    max-width: var(--width-notes);
+    margin: 0 auto;
+    padding: var(--space-3xl) 0;
+  }
+
+  .notes-item {
+    padding: var(--space-3xl) 0;
+    border-top: 1px solid var(--color-notes-border);
+  }
+
+  .notes-item:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .notes-item__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .notes-item__text {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 300;
+    font-variation-settings: var(--fraunces-wonk);
+    line-height: 1.45;
+  }
+
+  .notes-item__date {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--color-notes-accent);
+    display: block;
+    margin-top: var(--space-md);
+  }
+
+  /* Note single */
+  .note-single {
+    max-width: var(--width-notes);
+    margin: 0 auto;
+    padding: var(--space-3xl) 0;
+  }
+
+  .note-single__body {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 300;
+    font-variation-settings: var(--fraunces-wonk);
+    line-height: 1.45;
+  }
+
+  .note-single__date {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--color-notes-accent);
+    display: block;
+    margin-top: var(--space-xl);
+  }
 }
