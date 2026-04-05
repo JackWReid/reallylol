@@ -1,8 +1,26 @@
-body.note {
-  color: var(--color-link-hover-text);
-  background-color: var(--color-footer-bg);
+@layer specials {
+  /* Page content (static pages like /now, /uses) */
+  .page-content {
+    max-width: var(--width-content);
+    padding: var(--space-2xl) 0 var(--space-3xl);
+  }
 
-  .site-header {
-    border-bottom: 1px solid var(--color-link-hover-text);
+  .page-content h1 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-xl);
+  }
+
+  .page-content__body {
+    font-size: var(--text-md);
+    line-height: 1.75;
+    color: var(--color-text-secondary);
+  }
+
+  .page-content__body p {
+    margin-bottom: var(--space-md);
+  }
+
+  .page-content__body a {
+    text-decoration-thickness: 1px;
   }
 }

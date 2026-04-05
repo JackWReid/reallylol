@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colour Palettes — really.lol</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #e8e4de; font-family: 'IBM Plex Sans', sans-serif; color: #1a1a1a; }
+
+  .page-header { padding: 20px 32px; background: #222; color: #fff; position: sticky; top: 0; z-index: 10; }
+  .page-header h1 { font-size: 16px; font-weight: 400; }
+  .page-header p { font-size: 12px; opacity: 0.5; margin-top: 4px; }
+
+  .palettes { max-width: 1200px; margin: 0 auto; padding: 32px; display: grid; grid-template-columns: 1fr; gap: 40px; }
+
+  .palette { background: #fff; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); cursor: pointer; border: 3px solid transparent; transition: border-color 0.2s, box-shadow 0.2s; }
+  .palette:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
+  .palette.selected { border-color: #2563eb; }
+
+  .palette-info { padding: 16px 24px; background: #fafafa; border-top: 1px solid #eee; display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: start; }
+  .palette-info h2 { font-size: 16px; font-weight: 600; }
+  .palette-info .desc { font-size: 13px; color: #666; margin-top: 4px; line-height: 1.5; }
+  .palette-swatches { display: flex; gap: 4px; align-items: center; flex-shrink: 0; }
+  .swatch { width: 28px; height: 28px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.1); }
+
+  .mock { display: grid; grid-template-columns: 1fr 1fr; min-height: 360px; }
+  @media (max-width: 800px) { .mock { grid-template-columns: 1fr; } }
+
+  .mock-home, .mock-reading { padding: 28px; }
+
+  .selected-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #2563eb; color: #fff; padding: 12px 32px; font-size: 14px; text-align: center; transform: translateY(100%); transition: transform 0.2s; z-index: 20; }
+  .selected-bar.visible { transform: translateY(0); }
+</style>
+<script>
+  const bar = document.createElement('div');
+  function init() {
+    bar.className = 'selected-bar';
+    document.body.appendChild(bar);
+    document.querySelectorAll('.palette').forEach(d => {
+      d.addEventListener('click', () => {
+        d.classList.toggle('selected');
+        const sel = document.querySelectorAll('.palette.selected');
+        const names = Array.from(sel).map(s => s.querySelector('h2').textContent);
+        if (names.length) { bar.textContent = 'Selected: ' + names.join(' + '); bar.classList.add('visible'); }
+        else { bar.classList.remove('visible'); }
+        if (window.__superpowers_emit) window.__superpowers_emit({ type: 'click', choice: d.dataset.choice, text: d.querySelector('h2').textContent });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Colour palettes — Fraunces + IBM Plex on each</h1>
+  <p>Each shows a homepage feed (left) and reading view (right). Multi-select welcome.</p>
+</div>
+
+<div class="palettes">
+
+<!-- 1: Warm Stone -->
+<div class="palette" data-choice="warm-stone">
+  <div class="mock">
+    <div class="mock-home" style="background: #f4f1eb;">
+      <div style="font-family: 'Fraunces', serif; border-bottom: 1.5px solid #2c2420; padding-bottom: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: baseline;">
+        <span style="font-size: 20px; font-weight: 500; color: #2c2420; font-variation-settings: 'WONK' 1;">really.lol</span>
+        <span style="font-family: 'IBM Plex Sans'; font-size: 11px; color: #9a8a78; letter-spacing: 0.5px;">Writing · Photos · Library · Links</span>
+      </div>
+      <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #b09a84; margin-bottom: 6px;">5 Apr 2026 · journal</div>
+      <div style="font-family: 'Fraunces', serif; font-size: 24px; line-height: 1.2; color: #2c2420; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 10px;">On walking through Ludlow in February</div>
+      <div style="font-family: 'IBM Plex Sans'; font-size: 13px; line-height: 1.6; color: #6b5e52;">The high street curves and you lose sight of the castle...</div>
+      <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid #ddd6ca;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #b09a84; margin-bottom: 4px;">photo</div>
+        <div style="font-family: 'Fraunces', serif; font-size: 16px; color: #2c2420; font-variation-settings: 'WONK' 1;">Alpe Devero in snow</div>
+      </div>
+      <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid #ddd6ca;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #b09a84; margin-bottom: 4px;">reading</div>
+        <div style="font-family: 'Fraunces', serif; font-size: 16px; color: #2c2420; font-variation-settings: 'WONK' 1;">Ordinary Notes</div>
+      </div>
+    </div>
+    <div class="mock-reading" style="background: #faf8f4; border-left: 1px solid #e8e2d8;">
+      <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #b09a84; margin-bottom: 8px;">journal · 5 Apr 2026</div>
+      <div style="font-family: 'Fraunces', serif; font-size: 26px; line-height: 1.2; color: #2c2420; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 20px;">On walking through Ludlow in February</div>
+      <div style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 1.75; color: #4a4036; font-weight: 300;">
+        <p style="margin-bottom: 14px;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</p>
+        <p>You walk past the church and the light changes. The stone goes from grey to <strong style="font-weight: 500; color: #2c2420;">almost gold</strong>, and you understand why people have been living here for a thousand years.</p>
+      </div>
+    </div>
+  </div>
+  <div class="palette-info">
+    <div>
+      <h2>1. Warm Stone</h2>
+      <p class="desc">Linen and terracotta. Warm off-white, dark brown text, golden-brown accents. The closest to "ceramic in a bookshop". Cosy without being twee.</p>
+    </div>
+    <div class="palette-swatches">
+      <div class="swatch" style="background: #f4f1eb;"></div>
+      <div class="swatch" style="background: #2c2420;"></div>
+      <div class="swatch" style="background: #b09a84;"></div>
+      <div class="swatch" style="background: #6b5e52;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 2: Cool Paper -->
+<div class="palette" data-choice="cool-paper">
+  <div class="mock">
+    <div class="mock-home" style="background: #f5f5f2;">
+      <div style="font-family: 'Fraunces', serif; border-bottom: 1.5px solid #1a1a1a; padding-bottom: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: baseline;">
+        <span style="font-size: 20px; font-weight: 500; color: #1a1a1a; font-variation-settings: 'WONK' 1;">really.lol</span>
+        <span style="font-family: 'IBM Plex Sans'; font-size: 11px; color: #888; letter-spacing: 0.5px;">Writing · Photos · Library · Links</span>
+      </div>
+      <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #999; margin-bottom: 6px;">5 Apr 2026 · journal</div>
+      <div style="font-family: 'Fraunces', serif; font-size: 24px; line-height: 1.2; color: #1a1a1a; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 10px;">On walking through Ludlow in February</div>
+      <div style="font-family: 'IBM Plex Sans'; font-size: 13px; line-height: 1.6; color: #666;">The high street curves and you lose sight of the castle...</div>
+      <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid #ddd;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #999; margin-bottom: 4px;">photo</div>
+        <div style="font-family: 'Fraunces', serif; font-size: 16px; color: #1a1a1a; font-variation-settings: 'WONK' 1;">Alpe Devero in snow</div>
+      </div>
+      <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid #ddd;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #999; margin-bottom: 4px;">reading</div>
+        <div style="font-family: 'Fraunces', serif; font-size: 16px; color: #1a1a1a; font-variation-settings: 'WONK' 1;">Ordinary Notes</div>
+      </div>
+    </div>
+    <div class="mock-reading" style="background: #fafaf8; border-left: 1px solid #e5e5e2;">
+      <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #999; margin-bottom: 8px;">journal · 5 Apr 2026</div>
+      <div style="font-family: 'Fraunces', serif; font-size: 26px; line-height: 1.2; color: #1a1a1a; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 20px;">On walking through Ludlow in February</div>
+      <div style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 1.75; color: #444; font-weight: 300;">
+        <p style="margin-bottom: 14px;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</p>
+        <p>You walk past the church and the light changes. The stone goes from grey to <strong style="font-weight: 500; color: #1a1a1a;">almost gold</strong>, and you understand why people have been living here for a thousand years.</p>
+      </div>
+    </div>
+  </div>
+  <div class="palette-info">
+    <div>
+      <h2>2. Cool Paper</h2>
+      <p class="desc">Near-white, true black, grey accents. No warmth in the palette at all - Fraunces and the PDIA images provide all the personality. Clean, confident, gets out of the way. n+1 energy.</p>
+    </div>
+    <div class="palette-swatches">
+      <div class="swatch" style="background: #f5f5f2;"></div>
+      <div class="swatch" style="background: #1a1a1a;"></div>
+      <div class="swatch" style="background: #999;"></div>
+      <div class="swatch" style="background: #ddd;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 3: Ink & Rust -->
+<div class="palette" data-choice="ink-rust">
+  <div class="mock">
+    <div class="mock-home" style="background: #f6f4f0;">
+      <div style="font-family: 'Fraunces', serif; border-bottom: 1.5px solid #1c1c1c; padding-bottom: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: baseline;">
+        <span style="font-size: 20px; font-weight: 500; color: #1c1c1c; font-variation-settings: 'WONK' 1;">really.lol</span>
+        <span style="font-family: 'IBM Plex Sans'; font-size: 11px; color: #a0785a; letter-spacing: 0.5px;">Writing · Photos · Library · Links</span>
+      </div>
+      <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #a0785a; margin-bottom: 6px;">5 Apr 2026 · journal</div>
+      <div style="font-family: 'Fraunces', serif; font-size: 24px; line-height: 1.2; color: #1c1c1c; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 10px;">On walking through Ludlow in February</div>
+      <div style="font-family: 'IBM Plex Sans'; font-size: 13px; line-height: 1.6; color: #5a5550;">The high street curves and you lose sight of the castle...</div>
+      <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid #ddd8d0;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #a0785a; margin-bottom: 4px;">photo</div>
+        <div style="font-family: 'Fraunces', serif; font-size: 16px; color: #1c1c1c; font-variation-settings: 'WONK' 1;">Alpe Devero in snow</div>
+      </div>
+      <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid #ddd8d0;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #a0785a; margin-bottom: 4px;">reading</div>
+        <div style="font-family: 'Fraunces', serif; font-size: 16px; color: #1c1c1c; font-variation-settings: 'WONK' 1;">Ordinary Notes</div>
+      </div>
+    </div>
+    <div class="mock-reading" style="background: #faf8f5; border-left: 1px solid #e5e0d8;">
+      <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #a0785a; margin-bottom: 8px;">journal · 5 Apr 2026</div>
+      <div style="font-family: 'Fraunces', serif; font-size: 26px; line-height: 1.2; color: #1c1c1c; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 20px;">On walking through Ludlow in February</div>
+      <div style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 1.75; color: #444; font-weight: 300;">
+        <p style="margin-bottom: 14px;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</p>
+        <p>You walk past the church and the light changes. The stone goes from grey to <strong style="font-weight: 500; color: #1c1c1c;">almost gold</strong>, and you understand why people have been living here for a thousand years.</p>
+      </div>
+    </div>
+  </div>
+  <div class="palette-info">
+    <div>
+      <h2>3. Ink & Rust</h2>
+      <p class="desc">Cool neutral background, near-black text, a single warm rust/copper accent for all metadata and navigation. The accent does a lot of work - dates, tags, section labels all in that warm tone. Restrained but not cold.</p>
+    </div>
+    <div class="palette-swatches">
+      <div class="swatch" style="background: #f6f4f0;"></div>
+      <div class="swatch" style="background: #1c1c1c;"></div>
+      <div class="swatch" style="background: #a0785a;"></div>
+      <div class="swatch" style="background: #ddd8d0;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 4: Deep Shelf -->
+<div class="palette" data-choice="deep-shelf">
+  <div class="mock">
+    <div class="mock-home" style="background: #f0eeea;">
+      <div style="font-family: 'Fraunces', serif; border-bottom: 1.5px solid #2a3a2e; padding-bottom: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: baseline;">
+        <span style="font-size: 20px; font-weight: 500; color: #2a3a2e; font-variation-settings: 'WONK' 1;">really.lol</span>
+        <span style="font-family: 'IBM Plex Sans'; font-size: 11px; color: #7a8a6a; letter-spacing: 0.5px;">Writing · Photos · Library · Links</span>
+      </div>
+      <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-bottom: 6px;">5 Apr 2026 · journal</div>
+      <div style="font-family: 'Fraunces', serif; font-size: 24px; line-height: 1.2; color: #2a3a2e; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 10px;">On walking through Ludlow in February</div>
+      <div style="font-family: 'IBM Plex Sans'; font-size: 13px; line-height: 1.6; color: #5a6658;">The high street curves and you lose sight of the castle...</div>
+      <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid #d5d2ca;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-bottom: 4px;">photo</div>
+        <div style="font-family: 'Fraunces', serif; font-size: 16px; color: #2a3a2e; font-variation-settings: 'WONK' 1;">Alpe Devero in snow</div>
+      </div>
+      <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid #d5d2ca;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-bottom: 4px;">reading</div>
+        <div style="font-family: 'Fraunces', serif; font-size: 16px; color: #2a3a2e; font-variation-settings: 'WONK' 1;">Ordinary Notes</div>
+      </div>
+    </div>
+    <div class="mock-reading" style="background: #f8f7f4; border-left: 1px solid #dddad2;">
+      <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #7a8a6a; margin-bottom: 8px;">journal · 5 Apr 2026</div>
+      <div style="font-family: 'Fraunces', serif; font-size: 26px; line-height: 1.2; color: #2a3a2e; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 20px;">On walking through Ludlow in February</div>
+      <div style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 1.75; color: #444; font-weight: 300;">
+        <p style="margin-bottom: 14px;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</p>
+        <p>You walk past the church and the light changes. The stone goes from grey to <strong style="font-weight: 500; color: #2a3a2e;">almost gold</strong>, and you understand why people have been living here for a thousand years.</p>
+      </div>
+    </div>
+  </div>
+  <div class="palette-info">
+    <div>
+      <h2>4. Deep Shelf</h2>
+      <p class="desc">Warm grey background, dark forest green text, sage green accents. Library energy - the green is subtle but gives the whole site a natural, grounded feel. PDIA botanicals would sing against this.</p>
+    </div>
+    <div class="palette-swatches">
+      <div class="swatch" style="background: #f0eeea;"></div>
+      <div class="swatch" style="background: #2a3a2e;"></div>
+      <div class="swatch" style="background: #7a8a6a;"></div>
+      <div class="swatch" style="background: #d5d2ca;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 5: Ultramarine -->
+<div class="palette" data-choice="ultramarine">
+  <div class="mock">
+    <div class="mock-home" style="background: #f4f3f0;">
+      <div style="font-family: 'Fraunces', serif; border-bottom: 1.5px solid #1a2040; padding-bottom: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: baseline;">
+        <span style="font-size: 20px; font-weight: 500; color: #1a2040; font-variation-settings: 'WONK' 1;">really.lol</span>
+        <span style="font-family: 'IBM Plex Sans'; font-size: 11px; color: #6a70a0; letter-spacing: 0.5px;">Writing · Photos · Library · Links</span>
+      </div>
+      <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #6a70a0; margin-bottom: 6px;">5 Apr 2026 · journal</div>
+      <div style="font-family: 'Fraunces', serif; font-size: 24px; line-height: 1.2; color: #1a2040; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 10px;">On walking through Ludlow in February</div>
+      <div style="font-family: 'IBM Plex Sans'; font-size: 13px; line-height: 1.6; color: #555565;">The high street curves and you lose sight of the castle...</div>
+      <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid #d8d6d2;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #6a70a0; margin-bottom: 4px;">photo</div>
+        <div style="font-family: 'Fraunces', serif; font-size: 16px; color: #1a2040; font-variation-settings: 'WONK' 1;">Alpe Devero in snow</div>
+      </div>
+      <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid #d8d6d2;">
+        <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #6a70a0; margin-bottom: 4px;">reading</div>
+        <div style="font-family: 'Fraunces', serif; font-size: 16px; color: #1a2040; font-variation-settings: 'WONK' 1;">Ordinary Notes</div>
+      </div>
+    </div>
+    <div class="mock-reading" style="background: #f9f8f6; border-left: 1px solid #e0dee0;">
+      <div style="font-family: 'IBM Plex Mono'; font-size: 10px; color: #6a70a0; margin-bottom: 8px;">journal · 5 Apr 2026</div>
+      <div style="font-family: 'Fraunces', serif; font-size: 26px; line-height: 1.2; color: #1a2040; font-weight: 400; font-variation-settings: 'WONK' 1; margin-bottom: 20px;">On walking through Ludlow in February</div>
+      <div style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 1.75; color: #444; font-weight: 300;">
+        <p style="margin-bottom: 14px;">The high street curves and you lose sight of the castle for a moment. There's a butcher with hand-lettered signs and a bookshop that smells like it should.</p>
+        <p>You walk past the church and the light changes. The stone goes from grey to <strong style="font-weight: 500; color: #1a2040;">almost gold</strong>, and you understand why people have been living here for a thousand years.</p>
+      </div>
+    </div>
+  </div>
+  <div class="palette-info">
+    <div>
+      <h2>5. Ultramarine</h2>
+      <p class="desc">Cool grey background, deep ink-blue text, muted violet-blue accents. More LRB in mood - serious, intellectual, slightly cool. The most "literary review" option. Unexpected with Fraunces's warmth.</p>
+    </div>
+    <div class="palette-swatches">
+      <div class="swatch" style="background: #f4f3f0;"></div>
+      <div class="swatch" style="background: #1a2040;"></div>
+      <div class="swatch" style="background: #6a70a0;"></div>
+      <div class="swatch" style="background: #d8d6d2;"></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

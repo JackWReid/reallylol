@@ -1,73 +1,58 @@
 :root {
-  /* Colors */
-  --color-background: #f5efd3;
-  --color-line: #19282f;
-  --color-text: #19282f;
-  --color-text-muted: #555;
-  --color-text-secondary: #a08c5b;
-  --color-link-hover-text: white;
-  --color-link-hover-bg: lightcoral;
-  --color-footer-bg: #0f5d9c;
+  /* Palette: Deep Shelf */
+  --color-bg: #f0eeea;
+  --color-text: #2a3a2e;
+  --color-text-secondary: #475545;
+  --color-accent: #5f6f52;
+  --color-border: #d5d2ca;
+  --color-border-light: #e8e5de;
+
+  /* Section: Notes (dark green) */
+  --color-notes-bg: #2a3a2e;
+  --color-notes-text: #e8e4dc;
+  --color-notes-accent: #7a8a6a;
+  --color-notes-border: #3a4a3e;
+
+  /* Section: Photos (near-black) */
+  --color-photos-bg: #1a1a18;
+  --color-photos-text: #e8e4dc;
+  --color-photos-accent: #777;
 
   /* Typography */
-  --font-base: Charter, Georgia, Times New Roman, times, serif;
-  --font-sans:
-    -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen-sans, ubuntu,
-    cantarell, "helvetica neue", sans-serif;
-  --font-size-xs: 0.8rem;
-  --font-size-sm: 0.85rem;
-  --font-size-base: 1rem;
-  --font-size-md: 1.05rem;
-  --font-size-lg: 1.2em;
-  --font-size-xl: 1.5rem;
-  --font-size-2xl: 3rem;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
+
+  /* Type scale */
+  --text-xs: 0.625rem;    /* 10px - dates, tags */
+  --text-sm: 0.6875rem;   /* 11px - meta labels, nav */
+  --text-base: 0.875rem;  /* 14px - body, UI */
+  --text-md: 0.9375rem;   /* 15px - reading body */
+  --text-lg: 1rem;        /* 16px - list titles */
+  --text-xl: 1.125rem;    /* 18px - feed titles */
+  --text-2xl: 1.375rem;   /* 22px - note text */
+  --text-3xl: 1.625rem;   /* 26px - writing headlines */
+  --text-4xl: 1.875rem;   /* 30px - featured headline */
+  --text-5xl: 3rem;       /* 48px - year markers */
 
   /* Spacing */
-  --spacing-xs: 0.2rem;
-  --spacing-sm: 0.3rem;
-  --spacing-base: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
-  --spacing-2xl: 4rem;
-  --spacing-3xl: 5rem;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
 
   /* Dimensions */
-  --width-inner: 700px;
-  --width-outer: 1000px;
-  --width-hero-image: 500px;
-  --width-hero-image-post: 300px;
-  --width-multi-preview: 600px;
-  --width-note-section-header: 500px;
-  --width-note-container: 30rem;
-  --width-note-list-item: 30em;
-  --width-photo-box-img: 20rem;
-  --width-book-card: 220px;
-  --width-book-card-cover-small: 64px;
-  --height-book-card: 340px;
-  --height-book-card-small: 220px;
-  --height-book-card-cover-small: 96px;
-  --height-photo-grid-img: 15rem;
-  --position-hero-right: 50px;
-  --position-hero-bottom: 6px;
-  --position-note-top: 40px;
-  --position-note-left: 60px;
+  --width-content: 680px;
+  --width-content-wide: 1000px;
+  --width-notes: 600px;
 
-  /* Breakpoints */
-  --breakpoint-sm: 600px;
-  --breakpoint-md: 800px;
-  --breakpoint-lg: 1000px;
-  --breakpoint-xl: 1070px;
+  /* Fraunces variation settings */
+  --fraunces-wonk: 'WONK' 1;
 
-  /* Other */
-  --radius-small: 3px;
-  --transition-base: 0.2s ease;
-  --opacity-muted: 40%;
-  --line-height-content: 1.5;
-  --font-size-info: 0.95rem;
-  --spacing-table-cell: 0.75rem;
-  --width-book-grid-item: 200px;
-  --width-book-grid-item-small: 130px;
-
-  font-family: var(--font-base);
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
 }

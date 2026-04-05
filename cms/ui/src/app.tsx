@@ -2,6 +2,24 @@ import { render } from "preact";
 import { signal } from "@preact/signals";
 import Router from "preact-router";
 import { hasApiKey, setApiKey, clearApiKey, setAuthFailureHandler, api } from "./lib/api";
+
+const building = signal(false);
+const buildMessage = signal<string | null>(null);
+
+async function triggerBuild() {
+  building.value = true;
+  buildMessage.value = null;
+  try {
+    await api.post("/api/build/trigger", {});
+    buildMessage.value = "Build triggered";
+    setTimeout(() => { buildMessage.value = null; }, 3000);
+  } catch (e: any) {
+    buildMessage.value = e.message || "Build failed";
+    setTimeout(() => { buildMessage.value = null; }, 5000);
+  } finally {
+    building.value = false;
+  }
+}
 import { ContentList } from "./pages/content-list";
 import { ContentEditor } from "./pages/content-editor";
 import { MediaBrowser } from "./pages/media-browser";
@@ -81,6 +99,13 @@ function Nav() {
       <a href="/data">Data</a>
       <a href="/content/new">+ New</a>
       <span class="nav-spacer" />
+      <button
+        onClick={triggerBuild}
+        disabled={building.value}
+        class="nav-rebuild"
+      >
+        {building.value ? "Building..." : buildMessage.value || "Rebuild"}
+      </button>
       <button
         onClick={() => {
           clearApiKey();

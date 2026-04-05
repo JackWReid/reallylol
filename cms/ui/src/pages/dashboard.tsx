@@ -5,8 +5,6 @@ import type { ContentItem } from "../../../../shared/types";
 
 const recentContent = signal<ContentItem[]>([]);
 const loading = signal(true);
-const building = signal(false);
-const buildMessage = signal<string | null>(null);
 
 interface Stats {
   content: Record<string, number>;
@@ -46,35 +44,9 @@ export function Dashboard() {
     return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
   }
 
-  async function triggerBuild() {
-    building.value = true;
-    buildMessage.value = null;
-    try {
-      await api.post("/api/build/trigger", {});
-      buildMessage.value = "Build triggered";
-      // Refresh stats to update last build time
-      const statsData: any = await api.get("/api/data/stats");
-      stats.value = statsData;
-    } catch (e: any) {
-      buildMessage.value = e.message || "Build failed";
-    } finally {
-      building.value = false;
-    }
-  }
-
   return (
     <div>
-      <div class="page-header-actions">
-        <h1 class="page-title mb-md">Dashboard</h1>
-        <button class="btn btn-primary" onClick={triggerBuild} disabled={building.value}>
-          {building.value ? "Building..." : "Rebuild Site"}
-        </button>
-      </div>
-      {buildMessage.value && (
-        <div class={`success-banner ${buildMessage.value === "Build triggered" ? "" : "error-banner"}`}>
-          {buildMessage.value}
-        </div>
-      )}
+      <h1 class="page-title mb-md">Dashboard</h1>
 
       <div class="quick-actions">
         {["post", "note", "photo", "highlight"].map((type) => (
