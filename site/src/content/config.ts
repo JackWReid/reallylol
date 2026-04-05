@@ -56,6 +56,8 @@ const page = defineCollection({
     date: z.coerce.date(),
     layout: z.string().optional(),
     url: z.string().optional(),
+    section: z.string().optional(),
+    data_source: z.string().optional(),
     tags: z.array(z.string()).optional(),
   }),
 });

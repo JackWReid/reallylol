@@ -43,6 +43,8 @@ const META_FIELDS: Record<string, Array<{ key: string; label: string; type?: str
   page: [
     { key: "layout", label: "Layout" },
     { key: "url", label: "URL Path" },
+    { key: "section", label: "Section" },
+    { key: "data_source", label: "Data Source" },
   ],
 };
 
@@ -53,6 +55,8 @@ const PAGE_TYPES: string[] = ["page"];
 
 const MEDIA_URL = "https://media.really.lol";
 const PAGE_LAYOUTS = ["plain", "redirect"];
+const PAGE_SECTIONS = ["books", "films", "links"];
+const PAGE_DATA_SOURCES = ["books:read", "books:reading", "books:toread", "films:watched", "films:towatch", "links:saved"];
 
 // Parse a "Copy Link to Highlight" URL
 // e.g. https://example.com/page#:~:text=highlighted%20text
@@ -519,6 +523,28 @@ export function ContentEditor({ type: editType, slug: editSlug }: Props) {
                     <option value="">None</option>
                     {PAGE_LAYOUTS.map((l) => (
                       <option value={l}>{l}</option>
+                    ))}
+                  </select>
+                ) : field.key === "section" ? (
+                  <select
+                    value={String(meta.value.section ?? "")}
+                    onChange={(e) => setMeta("section", (e.target as HTMLSelectElement).value || undefined)}
+                    class="select"
+                  >
+                    <option value="">None</option>
+                    {PAGE_SECTIONS.map((s) => (
+                      <option value={s}>{s}</option>
+                    ))}
+                  </select>
+                ) : field.key === "data_source" ? (
+                  <select
+                    value={String(meta.value.data_source ?? "")}
+                    onChange={(e) => setMeta("data_source", (e.target as HTMLSelectElement).value || undefined)}
+                    class="select"
+                  >
+                    <option value="">None</option>
+                    {PAGE_DATA_SOURCES.map((d) => (
+                      <option value={d}>{d}</option>
                     ))}
                   </select>
                 ) : (
