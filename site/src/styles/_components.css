@@ -512,4 +512,58 @@
     color: var(--color-accent);
     margin-top: 2px;
   }
+
+  /* Tags page */
+  .tags-page {
+    max-width: var(--width-content);
+    padding: var(--space-2xl) 0;
+  }
+
+  .tags-page h1 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-xl);
+  }
+
+  .tags-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--space-sm);
+  }
+
+  .tags-grid__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: var(--space-sm) 0;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+
+  .tags-grid__name {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+  }
+
+  .tags-grid__count {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--color-accent);
+  }
+
+  /* Tag archive */
+  .tag-archive {
+    max-width: var(--width-content);
+    padding: var(--space-2xl) 0;
+  }
+
+  .tag-archive h1 {
+    font-size: var(--text-4xl);
+  }
+
+  .tag-archive__count {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--color-accent);
+    margin-bottom: var(--space-xl);
+  }
 }

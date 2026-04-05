@@ -8,38 +8,26 @@ const photos = await getCollection("photo");
 const highlights = await getCollection("highlight");
 
 const tagCounts = new Map<string, number>();
-
-for (const post of posts) {
-  for (const tag of post.data.tags ?? []) {
-    tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
-  }
-}
-for (const photo of photos) {
-  for (const tag of photo.data.tags ?? []) {
-    tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
-  }
-}
-for (const highlight of highlights) {
-  for (const tag of highlight.data.tags ?? []) {
+for (const item of [...posts, ...photos, ...highlights]) {
+  for (const tag of item.data.tags ?? []) {
     tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
   }
 }
 
-const sortedTags = [...tagCounts.entries()].sort((a, b) => b[1] - a[1]);
+const sortedTags = Array.from(tagCounts.entries())
+  .sort((a, b) => b[1] - a[1]);
 ---
 
 <Base title="Tags">
-  <main class="section-main section-main--tags">
-    <h1 class="section-title">Tags</h1>
-    <ul class="tag-list">
+  <main class="tags-page">
+    <h1>Tags</h1>
+    <div class="tags-grid">
       {sortedTags.map(([tag, count]) => (
-        <li class="tag-list__item">
-          <a href={`/tags/${tagToSlug(tag)}/`}>
-            #{getPrettyName(tag).toLowerCase()}
-          </a>
-          <span class="tag-list__count">({count})</span>
-        </li>
+        <a href={`/tags/${tagToSlug(tag)}/`} class="tags-grid__item">
+          <span class="tags-grid__name">#{getPrettyName(tag)}</span>
+          <span class="tags-grid__count">{count}</span>
+        </a>
       ))}
-    </ul>
+    </div>
   </main>
 </Base>
