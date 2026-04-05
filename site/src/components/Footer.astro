@@ -1,5 +1,6 @@
 ---
 const now = new Date();
+const year = now.getFullYear();
 const lastUpdated = now.toLocaleString("en-GB", {
   hour: "2-digit",
   minute: "2-digit",
@@ -7,14 +8,32 @@ const lastUpdated = now.toLocaleString("en-GB", {
   month: "long",
   year: "numeric",
 });
+
+// A rotating set of dry sign-offs
+const signoffs = [
+  "lol",
+  "really though",
+  "no but seriously",
+  "anyway",
+  "right then",
+  "cheers",
+  "xoxo",
+  ";)",
+  "still here",
+  "end of the line",
+  "that's your lot",
+  "fin",
+];
+const signoff = signoffs[Math.floor(Math.random() * signoffs.length)];
 ---
 <footer class="site-footer">
   <div class="site-footer__links">
     <a rel="me" href="https://social.lol/@nice">@nice</a>
     <a href="/now">/now</a>
-    <a href="/index.xml">RSS</a>
+    <a href="/index.xml">rss</a>
   </div>
   <div class="site-footer__meta">
-    Fresh as of {lastUpdated}
+    <span class="site-footer__signoff">{signoff}</span>
+    <span class="site-footer__freshness">Fresh as of {lastUpdated}</span>
   </div>
 </footer>

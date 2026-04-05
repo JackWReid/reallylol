@@ -21,6 +21,7 @@ interface BlogrollSite {
   title: string;
   url: string;
   description?: string;
+  section?: string;
 }
 
 type Tab = "saved" | "highlights" | "blogroll";
@@ -120,16 +121,29 @@ function HighlightsList({ items }: { items: Highlight[] }) {
 }
 
 function BlogrollList({ items }: { items: BlogrollSite[] }) {
+  // Group by section
+  const sections = new Map<string, BlogrollSite[]>();
+  for (const site of items) {
+    const key = site.section || "";
+    if (!sections.has(key)) sections.set(key, []);
+    sections.get(key)!.push(site);
+  }
+
   return (
     <div class="links-blogroll">
-      {items.map((site) => (
-        <div class="links-blogroll__item" key={site.url}>
-          <a href={site.url} target="_blank" rel="noopener" class="links-blogroll__title">
-            {site.title}
-          </a>
-          {site.description && (
-            <span class="links-blogroll__desc">{site.description}</span>
-          )}
+      {Array.from(sections.entries()).map(([section, sites]) => (
+        <div key={section}>
+          {section && <h3 class="links-blogroll__section">{section}</h3>}
+          {sites.map((site) => (
+            <div class="links-blogroll__item" key={site.url}>
+              <a href={site.url} target="_blank" rel="noopener" class="links-blogroll__title">
+                {site.title}
+              </a>
+              {site.description && (
+                <span class="links-blogroll__desc">{site.description}</span>
+              )}
+            </div>
+          ))}
         </div>
       ))}
     </div>

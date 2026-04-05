@@ -49,7 +49,7 @@
     border-top: 1px solid var(--color-border);
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     font-size: var(--text-sm);
     color: var(--color-accent);
   }
@@ -57,6 +57,25 @@
   .site-footer__links {
     display: flex;
     gap: var(--space-lg);
+  }
+
+  .site-footer__meta {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    text-align: right;
+  }
+
+  .site-footer__signoff {
+    display: block;
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    font-variation-settings: var(--fraunces-wonk);
+    font-style: italic;
+    margin-bottom: 2px;
+  }
+
+  .site-footer__freshness {
+    opacity: 0.6;
   }
 
   .site-footer__links a {

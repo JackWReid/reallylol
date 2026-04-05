@@ -1,43 +1,41 @@
 ---
 import { getEntry } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import Calendar from "../../components/icons/Calendar.astro";
-import Location from "../../components/icons/Location.astro";
-import TagList from "../../components/TagList.astro";
 import { r2Hero } from "../../lib/images";
+import { getPrettyName, tagToSlug } from "../../lib/tags";
 
 export const prerender = false;
 
 const { slug } = Astro.params;
 const photo = await getEntry("photo", slug!);
 if (!photo) return Astro.redirect("/404");
-const dateIso = photo.data.date.toISOString().slice(0, 10);
+
 const heroUrl = r2Hero(photo.data.image);
+const dateFormatted = photo.data.date.toLocaleDateString("en-GB", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
 ---
 
 <Base title={photo.data.title} section="photos">
-  <main class="single-main">
-    <h1 class="single-main__title">{photo.data.title}</h1>
-
-    <p class="single-main__date">
-      <Calendar /> <time datetime={dateIso}>{dateIso}</time>
-    </p>
-
-    {photo.data.location && (
-      <p class="single-main__location">
-        <Location />
-        <span>{photo.data.location}</span>
-      </p>
-    )}
-
-    {photo.data.tags && photo.data.tags.length > 0 && (
-      <div class="single-main__tags">
-        <TagList tags={photo.data.tags} />
-      </div>
-    )}
-
-    <div class="single-main__photo">
-      <img src={heroUrl} alt={photo.data.title} />
-    </div>
+  <main class="photo-single">
+    <figure class="photo-single__figure">
+      <img src={heroUrl} alt={photo.data.title} class="photo-single__img" />
+      <figcaption class="photo-single__caption">
+        <span class="photo-single__title">{photo.data.title}</span>
+        <span class="photo-single__details">
+          {photo.data.location && <span>{photo.data.location}</span>}
+          <time datetime={photo.data.date.toISOString().slice(0, 10)}>{dateFormatted}</time>
+        </span>
+        {photo.data.tags && photo.data.tags.length > 0 && (
+          <span class="photo-single__tags">
+            {photo.data.tags.map((tag) => (
+              <a href={`/tags/${tagToSlug(tag)}/`}>#{getPrettyName(tag).toLowerCase()}</a>
+            ))}
+          </span>
+        )}
+      </figcaption>
+    </figure>
   </main>
 </Base>
