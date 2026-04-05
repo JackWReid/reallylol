@@ -1,0 +1,52 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Calendar from "../../components/icons/Calendar.astro";
+import TagList from "../../components/TagList.astro";
+import SeeAlso from "../../components/SeeAlso.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("post");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const allPosts = await getCollection("post");
+const { Content } = await render(post);
+
+const dateIso = post.data.date.toISOString().slice(0, 10);
+const dateStr = post.data.date.toLocaleDateString("en-GB", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<Base title={post.data.title} section="post">
+  <main class="single-main">
+    <h1 class="single-main__title">{post.data.title}</h1>
+
+    <p class="single-main__date">
+      <Calendar /> <time datetime={dateIso}>{dateStr}</time>
+    </p>
+
+    {post.data.tags && post.data.tags.length > 0 && (
+      <p class="single-main__tags">
+        <TagList tags={post.data.tags} />
+      </p>
+    )}
+
+    <div class="single-main__content">
+      <Content />
+    </div>
+
+    <SeeAlso
+      currentId={post.id}
+      currentTags={post.data.tags ?? []}
+      allPosts={allPosts}
+    />
+  </main>
+</Base>

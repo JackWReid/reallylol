@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Calendar from "../../components/icons/Calendar.astro";
+import TagList from "../../components/TagList.astro";
+
+export async function getStaticPaths() {
+  const highlights = await getCollection("highlight");
+  return highlights.map((highlight) => ({
+    params: { slug: highlight.id },
+    props: { highlight },
+  }));
+}
+
+const { highlight } = Astro.props;
+const { Content } = await render(highlight);
+
+const dateIso = highlight.data.date.toISOString().slice(0, 10);
+---
+
+<Base title={highlight.data.title} section="highlight">
+  <main class="highlight-main">
+    <h1 class="single-main-title">{highlight.data.title}</h1>
+
+    <p class="single-main__date">
+      <Calendar /> <time datetime={dateIso}>{dateIso}</time>
+    </p>
+
+    {highlight.data.tags && highlight.data.tags.length > 0 && (
+      <p class="single-main__tags">
+        <TagList tags={highlight.data.tags} />
+      </p>
+    )}
+
+    {highlight.data.link && (
+      <p class="single-main__link">
+        <a href={highlight.data.link} rel="noopener noreferrer">{highlight.data.link}</a>
+      </p>
+    )}
+
+    <div class="highlight-main__content">
+      <Content />
+    </div>
+  </main>
+</Base>

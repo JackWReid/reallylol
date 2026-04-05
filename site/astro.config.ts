@@ -1,16 +1,23 @@
 import { defineConfig } from "astro/config";
+import cloudflare from "@astrojs/cloudflare";
+import preact from "@astrojs/preact";
 import sitemap from "@astrojs/sitemap";
 import { remarkHugoShortcodes } from "./src/lib/remark-hugo-shortcodes";
 
 export default defineConfig({
   site: "https://really.lol",
   output: "static",
+  adapter: cloudflare({
+    imageService: "passthrough",
+    sessions: false,
+  }),
   vite: {
     resolve: {
       preserveSymlinks: true,
     },
   },
   integrations: [
+    preact(),
     sitemap({
       serialize(item) {
         if (item.url === "https://really.lol/") item.priority = 1.0;
