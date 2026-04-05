@@ -70,7 +70,7 @@ export function Dashboard() {
             </div>
           </div>
           <div class="stat-section">
-            <h3 class="stat-section-title">Synced Data</h3>
+            <h3 class="stat-section-title">Library</h3>
             <div class="stat-row">
               <div class="stat-item">
                 <span class="stat-value">{stats.value!.books}</span>

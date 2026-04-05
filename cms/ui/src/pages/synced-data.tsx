@@ -115,6 +115,20 @@ async function handleSync() {
   }
 }
 
+function bookMedialogUrl(b: Book): string {
+  const meta = JSON.stringify({ book_author: b.author, media_image: b.image_url ?? "" });
+  const p: Record<string, string> = { type: "post", title: b.title, tags: "medialog", meta };
+  if (b.date_updated) p.date = `${b.date_updated}T12:00`;
+  return `/content/new?${new URLSearchParams(p)}`;
+}
+
+function filmMedialogUrl(f: Film): string {
+  const meta = JSON.stringify({ movie_released: f.year ?? "" });
+  const p: Record<string, string> = { type: "post", title: f.name, tags: "medialog", meta };
+  if (f.date_updated) p.date = `${f.date_updated}T12:00`;
+  return `/content/new?${new URLSearchParams(p)}`;
+}
+
 function BooksTable() {
   return (
     <div>
@@ -135,18 +149,18 @@ function BooksTable() {
             <th>Title</th>
             <th>Author</th>
             <th style="width:100px">Updated</th>
+            <th style="width:60px"></th>
           </tr>
         </thead>
         <tbody>
           {books.value.map((b) => (
             <tr key={`${b.title}-${b.author}`}>
               <td>
-                {b.hardcover_url ? (
-                  <a href={b.hardcover_url} target="_blank" rel="noopener">{b.title}</a>
-                ) : b.title}
+                <a href={bookMedialogUrl(b)}>{b.title}</a>
               </td>
               <td>{b.author}</td>
               <td class="date-col">{b.date_updated}</td>
+              <td><a href={bookMedialogUrl(b)} class="library-create-link">+ Review</a></td>
             </tr>
           ))}
         </tbody>
@@ -175,14 +189,16 @@ function FilmsTable() {
             <th>Film</th>
             <th style="width:70px">Year</th>
             <th style="width:100px">Updated</th>
+            <th style="width:60px"></th>
           </tr>
         </thead>
         <tbody>
           {films.value.map((f) => (
             <tr key={`${f.name}-${f.year}`}>
-              <td>{f.name}</td>
+              <td><a href={filmMedialogUrl(f)}>{f.name}</a></td>
               <td class="date-col">{f.year}</td>
               <td class="date-col">{f.date_updated}</td>
+              <td><a href={filmMedialogUrl(f)} class="library-create-link">+ Review</a></td>
             </tr>
           ))}
         </tbody>
@@ -246,7 +262,7 @@ export function SyncedData(_props: { path?: string }) {
   return (
     <div>
       <div class="page-header">
-        <h1 class="page-title">Synced Data</h1>
+        <h1 class="page-title">Library</h1>
         <div class="page-header-actions">
           {lastSynced.value && (
             <span class="latest-sync">Latest entry: {lastSynced.value}</span>

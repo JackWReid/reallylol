@@ -1,4 +1,4 @@
-/* CMS Theme — earth tones inspired by really.lol site */
+/* CMS Theme — Deep Shelf palette from really.lol site redesign */
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -7,58 +7,60 @@
 }
 
 :root {
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mono: ui-monospace, "Cascadia Code", "Fira Code", Menlo, monospace;
-  --radius: 6px;
-  --radius-sm: 4px;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
+  --fraunces-wonk: 'WONK' 1;
+  --radius: 3px;
+  --radius-sm: 2px;
   --transition: 0.15s ease;
   --max-width: 1200px;
 
-  /* Light mode (default) — warm earth tones from site */
-  --bg: #f5efd3;
-  --bg-surface: #ebe5c7;
-  --bg-surface-hover: #e1dabc;
-  --bg-inset: #ddd6b0;
-  --bg-overlay: rgba(25, 40, 47, 0.04);
+  /* Light mode (default) — Deep Shelf palette */
+  --bg: #f0eeea;
+  --bg-surface: #e8e5de;
+  --bg-surface-hover: #dfdcd4;
+  --bg-inset: #e4e1da;
+  --bg-overlay: rgba(42, 58, 46, 0.04);
 
-  --text: #19282f;
-  --text-secondary: #4a5e66;
-  --text-muted: #7a8a70;
-  --text-faint: #a08c5b;
+  --text: #2a3a2e;
+  --text-secondary: #475545;
+  --text-muted: #5f6f52;
+  --text-faint: #8a9880;
 
-  --border: #c9c2a0;
-  --border-subtle: #d9d2b4;
+  --border: #d5d2ca;
+  --border-subtle: #e8e5de;
 
-  --accent: #2C471F;
-  --accent-hover: #3a5c2a;
-  --accent-text: #fff;
+  --accent: #5f6f52;
+  --accent-hover: #4a5a3e;
+  --accent-text: #f0eeea;
 
   --danger: #a63020;
   --danger-hover: #c43a28;
   --danger-text: #fff;
 
   --warning: #b8860b;
-  --warning-bg: #f5efd3;
+  --warning-bg: #f0eeea;
 
-  --success: #2C471F;
-  --success-hover: #3a5c2a;
+  --success: #5f6f52;
+  --success-hover: #4a5a3e;
 
-  --tag-bg: #d9d2b4;
-  --tag-text: #4a5e66;
+  --tag-bg: #e8e5de;
+  --tag-text: #475545;
 
-  --link: #2C471F;
-  --link-hover: lightcoral;
+  --link: #2a3a2e;
+  --link-hover: #5f6f52;
 
-  --nav-bg: #19282f;
-  --nav-text: #f5efd3;
-  --nav-text-muted: #a08c5b;
-  --nav-link: #d9d2b4;
-  --nav-link-hover: #f5efd3;
+  --nav-bg: #2a3a2e;
+  --nav-text: #e8e4dc;
+  --nav-text-muted: #7a8a6a;
+  --nav-link: #c5c0b4;
+  --nav-link-hover: #e8e4dc;
 
   --input-bg: #fff;
-  --input-border: #c9c2a0;
-  --input-text: #19282f;
-  --input-placeholder: #a08c5b;
+  --input-border: #d5d2ca;
+  --input-text: #2a3a2e;
+  --input-placeholder: #8a9880;
 
   --draft-color: #b8860b;
   --editor-bg: #fff;
@@ -67,21 +69,21 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #1a1e16;
-    --bg-surface: #242920;
-    --bg-surface-hover: #2e3428;
-    --bg-inset: #1e2219;
-    --bg-overlay: rgba(245, 239, 211, 0.04);
+    --bg-surface: #222820;
+    --bg-surface-hover: #2c3228;
+    --bg-inset: #1e2319;
+    --bg-overlay: rgba(232, 228, 220, 0.04);
 
-    --text: #e4dfc8;
-    --text-secondary: #b8b29a;
-    --text-muted: #8a8570;
+    --text: #e8e4dc;
+    --text-secondary: #b8b4a8;
+    --text-muted: #8a8678;
     --text-faint: #6b6650;
 
     --border: #3a4030;
-    --border-subtle: #2e3428;
+    --border-subtle: #2c3228;
 
-    --accent: #7a9e68;
-    --accent-hover: #8fb57a;
+    --accent: #7a8a6a;
+    --accent-hover: #8b9c7a;
     --accent-text: #1a1e16;
 
     --danger: #d45545;
@@ -90,28 +92,28 @@
     --warning: #d4a63a;
     --warning-bg: #2e2810;
 
-    --success: #7a9e68;
-    --success-hover: #8fb57a;
+    --success: #7a8a6a;
+    --success-hover: #8b9c7a;
 
-    --tag-bg: #2e3428;
-    --tag-text: #b8b29a;
+    --tag-bg: #2c3228;
+    --tag-text: #b8b4a8;
 
-    --link: #7a9e68;
-    --link-hover: lightcoral;
+    --link: #c5c0b4;
+    --link-hover: #7a8a6a;
 
     --nav-bg: #141810;
-    --nav-text: #e4dfc8;
+    --nav-text: #e8e4dc;
     --nav-text-muted: #6b6650;
-    --nav-link: #b8b29a;
-    --nav-link-hover: #e4dfc8;
+    --nav-link: #b8b4a8;
+    --nav-link-hover: #e8e4dc;
 
-    --input-bg: #1e2219;
+    --input-bg: #1e2319;
     --input-border: #3a4030;
-    --input-text: #e4dfc8;
+    --input-text: #e8e4dc;
     --input-placeholder: #6b6650;
 
     --draft-color: #d4a63a;
-    --editor-bg: #1e2219;
+    --editor-bg: #1e2319;
   }
 }
 
@@ -120,6 +122,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
+  font-size: 0.875rem;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -176,15 +179,18 @@ a:hover {
 }
 
 .nav-brand {
-  font-weight: 700;
-  font-size: 1rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-variation-settings: var(--fraunces-wonk);
   color: var(--nav-text) !important;
   white-space: nowrap;
 }
 
 .nav a {
   color: var(--nav-link);
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.3px;
   white-space: nowrap;
 }
 .nav a:hover {
@@ -198,11 +204,14 @@ a:hover {
 .nav-rebuild {
   background: var(--accent);
   border: none;
-  color: #fff;
+  color: var(--accent-text);
   cursor: pointer;
-  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   padding: 0.25rem 0.6rem;
-  border-radius: 4px;
+  border-radius: 2px;
   white-space: nowrap;
 }
 
@@ -242,7 +251,10 @@ a:hover {
 
 .login-form h1 {
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-variation-settings: var(--fraunces-wonk);
 }
 
 /* ---- Common ---- */
@@ -257,8 +269,10 @@ a:hover {
 }
 
 .page-title {
+  font-family: var(--font-display);
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 400;
+  font-variation-settings: var(--fraunces-wonk);
 }
 
 @media (max-width: 639px) {
@@ -372,11 +386,12 @@ a:hover {
 .label {
   display: block;
   color: var(--text-muted);
-  font-size: 0.78rem;
-  font-weight: 500;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 400;
   margin-bottom: 0.2rem;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
 /* ---- Form grids ---- */
@@ -516,21 +531,22 @@ a:hover {
 }
 
 .content-row-type {
-  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
   min-width: 75px;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
-  font-weight: 600;
-  border-radius: 3px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  border-radius: 2px;
   padding: 0.1rem 0.3rem;
 }
-.type-post { color: #2C471F; }
+.type-post { color: #2a3a2e; }
 .type-note { color: #5b6abf; }
 .type-photo { color: #b8860b; }
 .type-highlight { color: #a0522d; }
 
 @media (prefers-color-scheme: dark) {
-  .type-post { color: #7a9e68; }
+  .type-post { color: #7a8a6a; }
   .type-note { color: #8b9cd9; }
   .type-photo { color: #d4a847; }
   .type-highlight { color: #c4845c; }
@@ -538,6 +554,9 @@ a:hover {
 
 .content-row-title {
   flex: 1;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-variation-settings: var(--fraunces-wonk);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -566,7 +585,8 @@ a:hover {
 
 .content-row-meta {
   color: var(--text-muted);
-  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
   min-width: 80px;
   text-align: right;
   white-space: nowrap;
@@ -574,9 +594,11 @@ a:hover {
 
 .draft-badge {
   color: var(--draft-color);
-  font-weight: 600;
-  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.625rem;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
   margin-right: 0.3rem;
 }
 
@@ -659,7 +681,8 @@ a:hover {
 }
 
 .stat-section-title {
-  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--text-muted);
@@ -680,8 +703,10 @@ a:hover {
 }
 
 .stat-value {
+  font-family: var(--font-display);
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 400;
+  font-variation-settings: var(--fraunces-wonk);
   color: var(--text);
 }
 
@@ -691,7 +716,8 @@ a:hover {
 }
 
 .stat-label {
-  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -965,8 +991,9 @@ a:hover {
   padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
-  font-size: 0.9rem;
-  font-family: inherit;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.02em;
   border-radius: var(--radius-sm) var(--radius-sm) 0 0;
   background: transparent;
   color: var(--text-muted);
@@ -994,8 +1021,9 @@ a:hover {
   color: var(--text-muted);
   border-radius: var(--radius-sm);
   cursor: pointer;
-  font-size: 0.8rem;
-  font-family: inherit;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.02em;
   transition: all var(--transition);
 }
 .sub-tab.active {
@@ -1011,13 +1039,14 @@ a:hover {
 
 .data-table th {
   padding: 0.5rem 0.75rem;
-  border-bottom: 2px solid var(--border);
+  border-bottom: 1.5px solid var(--border);
   color: var(--text-muted);
-  font-size: 0.78rem;
-  font-weight: 500;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 400;
   text-align: left;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
 .data-table td {
@@ -1032,7 +1061,8 @@ a:hover {
 
 .data-table .date-col {
   color: var(--text-muted);
-  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
   white-space: nowrap;
 }
 
@@ -1045,13 +1075,15 @@ a:hover {
 
 .data-count {
   color: var(--text-faint);
-  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
   margin-top: 1.5rem;
 }
 
 .latest-sync {
   color: var(--text-muted);
-  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
 }
 
 /* ---- Photo upload ---- */
@@ -1107,6 +1139,25 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.library-create-link {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  transition: opacity var(--transition);
+  white-space: nowrap;
+}
+
+.data-table tr:hover .library-create-link {
+  opacity: 1;
+}
+
+.library-create-link:hover {
+  color: var(--link);
 }
 
 .mb-sm { margin-bottom: 0.5rem; }

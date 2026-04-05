@@ -96,7 +96,7 @@ function Nav() {
       <a href="/content">Content</a>
       <a href="/media">Media</a>
       <a href="/pages">Pages</a>
-      <a href="/data">Data</a>
+      <a href="/data">Library</a>
       <a href="/content/new">+ New</a>
       <span class="nav-spacer" />
       <button

@@ -221,6 +221,16 @@ export function ContentEditor({ type: editType, slug: editSlug }: Props) {
       const params = new URLSearchParams(window.location.search);
       const presetType = params.get("type");
       if (presetType) contentType.value = presetType as ContentType;
+      const presetTitle = params.get("title");
+      if (presetTitle) title.value = presetTitle;
+      const presetTags = params.get("tags");
+      if (presetTags) tags.value = presetTags.split(",");
+      const presetDate = params.get("date");
+      if (presetDate) date.value = presetDate.slice(0, 16);
+      const presetMeta = params.get("meta");
+      if (presetMeta) {
+        try { meta.value = JSON.parse(presetMeta); } catch {}
+      }
     }
   }, [editType, editSlug]);
 
