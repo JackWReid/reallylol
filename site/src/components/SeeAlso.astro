@@ -1,0 +1,26 @@
+---
+import { getRelated } from "../lib/related";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  currentId: string;
+  currentTags: string[];
+  allPosts: CollectionEntry<"post">[];
+}
+
+const { currentId, currentTags, allPosts } = Astro.props;
+const related = getRelated(currentId, currentTags, allPosts);
+---
+
+{related.length > 0 && (
+  <div class="see-also">
+    <h2>See also</h2>
+    <ul>
+      {related.map((post) => (
+        <li>
+          <a href={`/post/${post.id}/`}>{post.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}

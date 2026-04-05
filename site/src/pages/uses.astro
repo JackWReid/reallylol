@@ -1,0 +1,17 @@
+---
+import { getEntry, render } from "astro:content";
+import Base from "../layouts/Base.astro";
+
+const entry = await getEntry("page", "uses");
+if (!entry) return Astro.redirect("/404");
+const { Content } = await render(entry);
+---
+
+<Base title={entry.data.title}>
+  <main class="single-main">
+    <h1 class="single-main__title">{entry.data.title}</h1>
+    <div class="single-main__content">
+      <Content />
+    </div>
+  </main>
+</Base>

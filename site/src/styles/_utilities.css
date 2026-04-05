@@ -1,0 +1,24 @@
+.pagination {
+  margin: var(--spacing-lg) auto 0;
+  display: flex;
+  justify-content: center;
+
+  > *:not(:last-child) {
+    margin-right: var(--spacing-md);
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--spacing-md);
+  z-index: 100;
+  padding: var(--spacing-base) var(--spacing-md);
+  background: var(--color-text);
+  color: var(--color-background);
+  text-decoration: none;
+
+  &:focus {
+    top: var(--spacing-base);
+  }
+}

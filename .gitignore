@@ -1,18 +1,24 @@
 # Worktrees
 .worktrees/
 
-# Hugo build artifacts
-public/
-resources/
-resources/_gen/
-.hugo_build.lock
+# Astro / Wrangler
+dist/
+.astro/
+.wrangler/
+**/.wrangler/
+cms/public/
+
+# Local media (content photos for dev; production images are on R2)
+assets/
+public/img/photo
 
 # Playwright
 test-results/
 playwright-report/
 blob-report/
-tests/screenshots/
+**/tests/screenshots/
 .playwright-cli/
+.playwright/
 
 # Dependencies
 node_modules/
@@ -48,6 +54,7 @@ tmp/
 *.cache
 *.pid
 *.lock
+!bun.lock
 
 # Python
 __pycache__/
@@ -59,6 +66,7 @@ __pycache__/
 .env
 .env.local
 .env.*.local
+.dev.vars
 
 # Backup files
 *.bak
@@ -67,10 +75,9 @@ __pycache__/
 .tag_backups/
 
 # Content-specific
-content/.obsidian/
+src/content/.obsidian/
 
 # Build and deployment
-dist/
 build/
 deploy/
 
