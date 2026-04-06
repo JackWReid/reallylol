@@ -62,6 +62,24 @@ export const api = {
     }
   },
 
+  async upload(path: string, formData: FormData) {
+    const res = await fetch(`${API_BASE}${path}`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${getApiKey()}` },
+      body: formData,
+    });
+    if (res.status === 401) {
+      clearApiKey();
+      onAuthFailure?.();
+      throw new Error("Unauthorised");
+    }
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({ message: `HTTP ${res.status}` }));
+      throw new Error(data.message ?? `HTTP ${res.status}`);
+    }
+    return res.json();
+  },
+
   async uploadFile(file: File, key: string) {
     const formData = new FormData();
     formData.append("file", file);

@@ -1,0 +1,18 @@
+---
+import Base from "../../layouts/Base.astro";
+import { LibraryTimeline } from "../../components/LibraryTimeline";
+import { getBooks } from "../../lib/cms-data";
+
+const books = await getBooks("toread");
+const items = (books as Array<{ title: string; author: string; date_updated: string }>).map((b) => ({
+  title: b.title,
+  creator: b.author,
+  date: b.date_updated,
+}));
+---
+
+<Base title="Library" section="library">
+  <main>
+    <LibraryTimeline activeTab="books-toread" items={items} />
+  </main>
+</Base>

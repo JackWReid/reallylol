@@ -599,7 +599,7 @@ export function ContentEditor({ type: editType, slug: editSlug }: Props) {
                 class="btn btn-ghost btn-sm"
                 onClick={async () => {
                   if (!showMediaPicker.value) {
-                    const data = (await api.get("/api/media?kind=image&limit=100")) as any;
+                    const data = (await api.get("/api/media?kind=image&limit=50")) as any;
                     mediaImages.value = data.items;
                   }
                   showMediaPicker.value = !showMediaPicker.value;
@@ -614,14 +614,23 @@ export function ContentEditor({ type: editType, slug: editSlug }: Props) {
             <div class="media-picker">
               <input
                 class="input media-picker-search"
-                placeholder="Filter images..."
+                placeholder="Search images..."
                 value={mediaSearch.value}
-                onInput={(e) => (mediaSearch.value = (e.target as HTMLInputElement).value)}
+                onInput={(e) => {
+                  const q = (e.target as HTMLInputElement).value;
+                  mediaSearch.value = q;
+                  clearTimeout((window as any).__mediaSearchTimer);
+                  (window as any).__mediaSearchTimer = setTimeout(async () => {
+                    const url = q
+                      ? `/api/media?kind=image&limit=50&search=${encodeURIComponent(q)}`
+                      : `/api/media?kind=image&limit=50`;
+                    const data = (await api.get(url)) as any;
+                    mediaImages.value = data.items;
+                  }, 300);
+                }}
               />
               <div class="media-picker-grid">
                 {mediaImages.value
-                  .filter((m) => !mediaSearch.value || m.r2_key.toLowerCase().includes(mediaSearch.value.toLowerCase()))
-                  .slice(0, 50)
                   .map((m) => (
                     <button
                       key={m.r2_key}

@@ -1,0 +1,15 @@
+---
+import Base from "../../layouts/Base.astro";
+import { LinksPage } from "../../components/LinksList";
+import { getLinks } from "../../lib/cms-data";
+
+const savedLinks = await getLinks();
+const saved = (savedLinks as Array<{ title: string; url: string; date: string; tags?: string[] }>)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+---
+
+<Base title="Links" section="links">
+  <main>
+    <LinksPage activeTab="saved" data={{ saved }} client:load />
+  </main>
+</Base>

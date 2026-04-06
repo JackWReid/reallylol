@@ -1,9 +1,48 @@
 import { Hono } from "hono";
 import { eq, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/d1";
+import { unzipSync } from "fflate";
 import * as schema from "../db/schema";
 import type { Env } from "../lib/types";
 import { BOOK_SHELVES, FILM_LISTS } from "../../../shared/types";
+
+// Minimal RFC 4180 CSV parser
+function parseCsvLine(line: string): string[] {
+  const fields: string[] = [];
+  let i = 0;
+  while (i <= line.length) {
+    if (i === line.length) { fields.push(""); break; }
+    if (line[i] === '"') {
+      let field = "";
+      i++;
+      while (i < line.length) {
+        if (line[i] === '"' && line[i + 1] === '"') { field += '"'; i += 2; }
+        else if (line[i] === '"') { i++; break; }
+        else { field += line[i++]; }
+      }
+      fields.push(field);
+      if (line[i] === ',') i++;
+    } else {
+      const end = line.indexOf(',', i);
+      if (end === -1) { fields.push(line.slice(i)); break; }
+      fields.push(line.slice(i, end));
+      i = end + 1;
+    }
+  }
+  return fields;
+}
+
+function parseCsv(text: string): Record<string, string>[] {
+  const lines = text.split(/\r?\n/).filter(l => l.trim());
+  if (lines.length < 2) return [];
+  const headers = parseCsvLine(lines[0]);
+  return lines.slice(1).map(line => {
+    const vals = parseCsvLine(line);
+    const row: Record<string, string> = {};
+    headers.forEach((h, i) => { row[h] = vals[i] ?? ""; });
+    return row;
+  });
+}
 
 const app = new Hono<{ Bindings: Env }>();
 
@@ -92,6 +131,93 @@ app.post("/films", async (c) => {
   }
 
   return c.json({ ok: true, list, count: rows.length });
+});
+
+// POST /api/sync/films/letterboxd — import from a Letterboxd export ZIP
+app.post("/films/letterboxd", async (c) => {
+  const db = drizzle(c.env.DB, { schema });
+
+  let formData: FormData;
+  try {
+    formData = await c.req.formData();
+  } catch {
+    return c.json({ error: "validation", message: "Expected multipart/form-data" }, 400);
+  }
+
+  const file = formData.get("file") as File | null;
+  if (!file) return c.json({ error: "validation", message: "No file field in form data" }, 400);
+
+  let zip: Record<string, Uint8Array>;
+  try {
+    const buf = new Uint8Array(await file.arrayBuffer());
+    zip = unzipSync(buf);
+  } catch {
+    return c.json({ error: "validation", message: "Could not parse ZIP file" }, 400);
+  }
+
+  const results: Record<string, number> = {};
+
+  // diary.csv → watched list
+  // Columns: Date, Name, Year, Letterboxd URI, Rating, Rewatch, Tags, Watched Date
+  const diaryCsv = zip["diary.csv"];
+  if (diaryCsv) {
+    const rows = parseCsv(new TextDecoder().decode(diaryCsv));
+    const items = rows
+      .map(r => ({
+        list: "watched" as const,
+        name: r["Name"] ?? "",
+        year: r["Year"] || null,
+        date_updated: r["Watched Date"] || r["Date"] || "",
+      }))
+      .filter(r => r.name);
+
+    await db.delete(schema.films).where(eq(schema.films.list, "watched"));
+    const seen = new Set<string>();
+    const deduped = items.filter(r => {
+      const key = `${r.name}|${r.year}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+    for (let i = 0; i < deduped.length; i += BATCH_SIZE) {
+      await db.insert(schema.films).values(deduped.slice(i, i + BATCH_SIZE));
+    }
+    results.watched = deduped.length;
+  }
+
+  // watchlist.csv → towatch list
+  // Columns: Date, Name, Year, Letterboxd URI
+  const watchlistCsv = zip["watchlist.csv"];
+  if (watchlistCsv) {
+    const rows = parseCsv(new TextDecoder().decode(watchlistCsv));
+    const items = rows
+      .map(r => ({
+        list: "towatch" as const,
+        name: r["Name"] ?? "",
+        year: r["Year"] || null,
+        date_updated: r["Date"] || "",
+      }))
+      .filter(r => r.name);
+
+    await db.delete(schema.films).where(eq(schema.films.list, "towatch"));
+    const seen = new Set<string>();
+    const deduped = items.filter(r => {
+      const key = `${r.name}|${r.year}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+    for (let i = 0; i < deduped.length; i += BATCH_SIZE) {
+      await db.insert(schema.films).values(deduped.slice(i, i + BATCH_SIZE));
+    }
+    results.towatch = deduped.length;
+  }
+
+  if (Object.keys(results).length === 0) {
+    return c.json({ error: "validation", message: "ZIP contained neither diary.csv nor watchlist.csv" }, 400);
+  }
+
+  return c.json({ ok: true, results });
 });
 
 // POST /api/sync/links — bulk replace all saved links

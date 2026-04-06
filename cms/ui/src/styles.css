@@ -748,6 +748,8 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 /* ---- Editor ---- */
@@ -800,11 +802,27 @@ a:hover {
 .editor-border {
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  overflow: auto;
   flex: 1;
   min-height: 250px;
   max-height: 500px;
   background: var(--editor-bg);
+}
+
+.editor-textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  padding: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--editor-bg);
+  border: none;
+  outline: none;
+  resize: vertical;
+  box-sizing: border-box;
 }
 
 .editor-toolbar {
@@ -985,6 +1003,8 @@ a:hover {
   gap: 0;
   border-bottom: 1px solid var(--border);
   margin-bottom: 1.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .tab-btn {

@@ -1,0 +1,40 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+
+export async function getStaticPaths() {
+  const highlights = await getCollection("highlight");
+  return highlights.map((h) => ({
+    params: { slug: h.id },
+    props: { highlight: h },
+  }));
+}
+
+const { highlight } = Astro.props;
+const { Content } = await render(highlight);
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+}
+---
+
+<Base title={highlight.data.title} section="links">
+  <main class="highlight-single">
+    <h1 class="highlight-single__title">{highlight.data.title}</h1>
+    <div class="highlight-single__body">
+      <Content />
+    </div>
+    <div class="highlight-single__meta">
+      {highlight.data.link && (
+        <a href={highlight.data.link} target="_blank" rel="noopener" class="highlight-single__source">
+          {highlight.data.link.replace(/^https?:\/\/(www\.)?/, "").split("/")[0]}
+        </a>
+      )}
+      <time class="highlight-single__date">{formatDate(highlight.data.date)}</time>
+    </div>
+  </main>
+</Base>

@@ -31,6 +31,7 @@ export async function getStaticPaths() {
         date: p.data.date,
         slug: p.id,
         excerpt: undefined,
+        image: p.data.image,
       })),
       ...highlights.filter((h) => h.data.tags?.includes(tag)).map((h) => ({
         type: "highlight" as const,
@@ -78,6 +79,11 @@ function itemUrl(type: string, slug: string): string {
               {item.type} · {formatDate(item.date)}
             </span>
           </div>
+          {"image" in item && item.image && (
+            <div class="feed-item__thumb">
+              <img src={`https://media.really.lol/${item.image}`} alt="" loading="lazy" />
+            </div>
+          )}
         </a>
       ))}
     </div>

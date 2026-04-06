@@ -14,7 +14,7 @@ interface Highlight {
   slug: string;
   date: string;
   link?: string;
-  excerpt?: string;
+  bodyHtml?: string;
 }
 
 interface BlogrollSite {
@@ -24,12 +24,12 @@ interface BlogrollSite {
   section?: string;
 }
 
-type Tab = "saved" | "highlights" | "blogroll";
+export type LinksTab = "saved" | "highlights" | "blogroll";
 
 interface LinksData {
-  saved: SavedLink[];
-  highlights: Highlight[];
-  blogroll: BlogrollSite[];
+  saved?: SavedLink[];
+  highlights?: Highlight[];
+  blogroll?: BlogrollSite[];
 }
 
 function formatDate(dateStr: string): string {
@@ -94,9 +94,9 @@ function HighlightsList({ items }: { items: Highlight[] }) {
       <div class="links-highlights">
         {visible.map((h) => (
           <div class="links-highlights__item" key={h.slug}>
-            <div class="links-highlights__title">{h.title}</div>
-            {h.excerpt && (
-              <blockquote class="links-highlights__quote">{h.excerpt}</blockquote>
+            <a href={`/highlight/${h.slug}`} class="links-highlights__title">{h.title}</a>
+            {h.bodyHtml && (
+              <div class="links-highlights__body" dangerouslySetInnerHTML={{ __html: h.bodyHtml }} />
             )}
             <div class="links-saved__meta">
               {h.link && <a href={h.link} target="_blank" rel="noopener">{getDomain(h.link)}</a>}
@@ -121,7 +121,6 @@ function HighlightsList({ items }: { items: Highlight[] }) {
 }
 
 function BlogrollList({ items }: { items: BlogrollSite[] }) {
-  // Group by section
   const sections = new Map<string, BlogrollSite[]>();
   for (const site of items) {
     const key = site.section || "";
@@ -150,32 +149,18 @@ function BlogrollList({ items }: { items: BlogrollSite[] }) {
   );
 }
 
-export function LinksPage({ data }: { data: LinksData }) {
-  const [tab, setTab] = useState<Tab>("saved");
-
+export function LinksPage({ activeTab, data }: { activeTab: LinksTab; data: LinksData }) {
   return (
     <div class="links-page">
       <div class="section-tabs">
-        <a
-          href="#"
-          class={tab === "saved" ? "active" : ""}
-          onClick={(e) => { e.preventDefault(); setTab("saved"); }}
-        >Saved</a>
-        <a
-          href="#"
-          class={tab === "highlights" ? "active" : ""}
-          onClick={(e) => { e.preventDefault(); setTab("highlights"); }}
-        >Highlights</a>
-        <a
-          href="#"
-          class={tab === "blogroll" ? "active" : ""}
-          onClick={(e) => { e.preventDefault(); setTab("blogroll"); }}
-        >Blogroll</a>
+        <a href="/links/saved" class={activeTab === "saved" ? "active" : ""}>Saved</a>
+        <a href="/links/highlights" class={activeTab === "highlights" ? "active" : ""}>Highlights</a>
+        <a href="/links/blogroll" class={activeTab === "blogroll" ? "active" : ""}>Blogroll</a>
       </div>
 
-      {tab === "saved" && <SavedList items={data.saved} />}
-      {tab === "highlights" && <HighlightsList items={data.highlights} />}
-      {tab === "blogroll" && <BlogrollList items={data.blogroll} />}
+      {activeTab === "saved" && data.saved && <SavedList items={data.saved} />}
+      {activeTab === "highlights" && data.highlights && <HighlightsList items={data.highlights} />}
+      {activeTab === "blogroll" && data.blogroll && <BlogrollList items={data.blogroll} />}
     </div>
   );
 }

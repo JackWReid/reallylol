@@ -39,6 +39,7 @@ app.get("/", async (c) => {
 
   const kind = c.req.query("kind") as MediaKind | undefined;
   const prefix = c.req.query("prefix");
+  const search = c.req.query("search");
   const page = Math.max(1, parseInt(c.req.query("page") ?? "1", 10));
   const limit = Math.min(200, Math.max(1, parseInt(c.req.query("limit") ?? "50", 10)));
   const offset = (page - 1) * limit;
@@ -49,6 +50,9 @@ app.get("/", async (c) => {
   }
   if (prefix) {
     conditions.push(like(schema.media.r2_key, `${prefix}%`));
+  }
+  if (search) {
+    conditions.push(like(schema.media.r2_key, `%${search}%`));
   }
 
   const where = conditions.length > 0 ? and(...conditions) : undefined;

@@ -36,6 +36,7 @@ const films = signal<Film[]>([]);
 const links = signal<Link[]>([]);
 const loading = signal(false);
 const syncing = signal(false);
+const uploading = signal(false);
 const syncResult = signal("");
 const lastSynced = signal<string | null>(null);
 
@@ -127,6 +128,30 @@ function filmMedialogUrl(f: Film): string {
   const p: Record<string, string> = { type: "post", title: f.name, tags: "medialog", meta };
   if (f.date_updated) p.date = `${f.date_updated}T12:00`;
   return `/content/new?${new URLSearchParams(p)}`;
+}
+
+async function handleLetterboxdUpload(e: Event) {
+  const input = e.target as HTMLInputElement;
+  const file = input.files?.[0];
+  if (!file) return;
+  input.value = "";
+
+  uploading.value = true;
+  syncResult.value = "";
+  try {
+    const form = new FormData();
+    form.append("file", file);
+    const res = await api.upload("/api/sync/films/letterboxd", form) as any;
+    const parts = Object.entries(res.results as Record<string, number>)
+      .map(([k, v]) => `${k}: ${v}`)
+      .join(", ");
+    syncResult.value = `Imported from Letterboxd (${parts})`;
+    loadFilms(filmList.value);
+  } catch (e: unknown) {
+    syncResult.value = `Upload failed: ${e instanceof Error ? e.message : String(e)}`;
+  } finally {
+    uploading.value = false;
+  }
 }
 
 function BooksTable() {
@@ -266,6 +291,18 @@ export function SyncedData(_props: { path?: string }) {
         <div class="page-header-actions">
           {lastSynced.value && (
             <span class="latest-sync">Latest entry: {lastSynced.value}</span>
+          )}
+          {activeTab.value === "films" && (
+            <label class={`btn btn-secondary${uploading.value ? " disabled" : ""}`} style="cursor:pointer">
+              {uploading.value ? "Importing..." : "Upload Letterboxd ZIP"}
+              <input
+                type="file"
+                accept=".zip"
+                style="display:none"
+                disabled={uploading.value}
+                onChange={handleLetterboxdUpload}
+              />
+            </label>
           )}
           {canSync && (
             <button
