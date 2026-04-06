@@ -1,46 +1,12 @@
 ---
-import { getCollection, render } from "astro:content";
-import Base from "../../layouts/Base.astro";
-import { tagToSlug } from "../../lib/tags";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection("post");
   return posts.map((post) => ({
     params: { slug: post.id },
-    props: { post },
   }));
 }
 
-const { post } = Astro.props;
-const { Content } = await render(post);
-
-function formatDate(date: Date): string {
-  return date.toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
-}
-
-const wordCount = (post.body ?? "").split(/\s+/).length;
-const readTime = Math.max(1, Math.round(wordCount / 250));
+return Astro.redirect(`/post/${Astro.params.slug}/`, 301);
 ---
-
-<Base title={post.data.title} section="writing">
-  <main class="writing-single">
-    <div class="writing-single__meta">
-      {formatDate(post.data.date)} · {readTime} min read
-    </div>
-    <h1 class="writing-single__title">{post.data.title}</h1>
-    <div class="writing-single__body">
-      <Content />
-    </div>
-    {post.data.tags && post.data.tags.length > 0 && (
-      <div class="writing-single__tags">
-        {post.data.tags.map((tag: string) => (
-          <a href={`/tags/${tagToSlug(tag)}/`}>#{tag}</a>
-        ))}
-      </div>
-    )}
-  </main>
-</Base>

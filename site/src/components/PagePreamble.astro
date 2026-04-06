@@ -1,0 +1,18 @@
+---
+import { getCollection, render } from "astro:content";
+
+interface Props {
+  url: string;
+}
+
+const { url } = Astro.props;
+const pages = await getCollection("page");
+const page = pages.find((p) => p.data.url === url);
+const { Content } = page?.body ? await render(page) : { Content: null };
+---
+
+{Content && (
+  <div class="page-preamble">
+    <Content />
+  </div>
+)}
