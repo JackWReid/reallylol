@@ -9,7 +9,7 @@ function typeLabel(type: string): string {
 }
 
 function typeUrl(item: FeedItem): string {
-  if (item.type === "post") return `/writing/${item.slug}/`;
+  if (item.type === "post") return `/post/${item.slug}/`;
   if (item.type === "note") return `/notes/${item.slug}/`;
   if (item.type === "photo") return `/photo/${item.slug}/`;
   if (item.type === "highlight") return `/links/`;

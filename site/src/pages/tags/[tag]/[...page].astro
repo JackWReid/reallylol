@@ -60,8 +60,9 @@ function formatDate(date: Date): string {
 }
 
 function itemUrl(type: string, slug: string): string {
-  if (type === "post") return `/writing/${slug}/`;
+  if (type === "post") return `/post/${slug}/`;
   if (type === "photo") return `/photo/${slug}/`;
+  if (type === "highlight") return `/highlight/${slug}/`;
   return "#";
 }
 ---

@@ -13,7 +13,7 @@ export async function GET(context: APIContext) {
     ...posts.map((p) => ({
       title: p.data.title,
       pubDate: p.data.date,
-      link: `/writing/${p.id}/`,
+      link: `/post/${p.id}/`,
       content: p.rendered?.html ?? p.body ?? "",
     })),
     ...notes.map((n) => ({

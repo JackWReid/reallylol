@@ -2,7 +2,7 @@
 const pathname = Astro.url.pathname;
 
 const navItems = [
-  { label: "Writing", href: "/writing/" },
+  { label: "Writing", href: "/blog/" },
   { label: "Notes", href: "/notes/" },
   { label: "Photos", href: "/photos/" },
   { label: "Library", href: "/books/read" },
@@ -12,6 +12,7 @@ const navItems = [
 function isActive(href: string): boolean {
   if (href === "/books/read") return pathname.startsWith("/books/") || pathname.startsWith("/films/");
   if (href === "/links/saved") return pathname.startsWith("/links/");
+  if (href === "/blog/") return pathname.startsWith("/blog/") || pathname.startsWith("/post/");
   return pathname.startsWith(href);
 }
 ---

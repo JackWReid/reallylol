@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { LibraryTimeline } from "../../components/LibraryTimeline";
+import PagePreamble from "../../components/PagePreamble.astro";
 import { getFilms } from "../../lib/cms-data";
 
 const films = await getFilms("towatch");
@@ -14,6 +15,7 @@ const items = (films as Array<{ name: string; year: string | null; date_updated:
 
 <Base title="Library" section="library">
   <main>
+    <PagePreamble url="/films/towatch" />
     <LibraryTimeline activeTab="films-towatch" items={items} />
   </main>
 </Base>
