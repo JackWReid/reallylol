@@ -99,11 +99,13 @@ Key endpoints:
 ```bash
 bun run dev:cms                     # Start CMS on :8788 (wrangler dev, local D1)
 bun run dev:cms:remote              # Start CMS on :8788 (wrangler dev, remote D1)
-bun run dev:site                    # Start Astro on :4321
+bun run dev:site                    # Start Astro on :4321 (requires CMS running first)
 bun run build:ui                    # Build admin UI (Vite -> cms/public/)
-bun run build:site                  # Build static site (Astro)
+bun run build:site                  # Build static site - requires local CMS on :8788
+bun run build:site:prod             # Build static site against https://cms.really.lol
 bun run deploy:cms                  # Build UI + deploy CMS Worker
-bun run deploy:site                 # Build site + deploy to CF Pages
+bun run deploy:site                 # build:site:prod + deploy to CF Pages (no local CMS needed)
+bun run deploy                      # deploy:cms then deploy:site
 bun run db:migrate                  # Apply D1 migrations locally
 bun run db:migrate:prod             # Apply D1 migrations to remote
 bun run test                        # Run tests
@@ -112,7 +114,9 @@ bun run test                        # Run tests
 bun run cli r2 sync                 # Upload local assets to R2
 ```
 
-**Site build requires CMS running.** Start `bun run dev:cms:remote` (for production data) or `bun run dev:cms` (local data) before `bun run dev:site` or `bun run build:site`. Site env vars are in `site/.env` (gitignored).
+**The site always requires the CMS to build.** `build:site` hits `http://localhost:8788` — only use it when `dev:cms` or `dev:cms:remote` is already running. `build:site:prod` and `deploy:site` hit `https://cms.really.lol` directly and need no local CMS. Never run bare `build:site` or `build` to deploy — use `deploy:site` or `deploy`.
+
+Site env vars (`CMS_API_URL`, `CMS_API_KEY`) are in `site/.env` (gitignored). `CMS_API_KEY` must be set there for prod builds — `build:site:prod` sets the URL but still reads the key from `site/.env`.
 
 ## Key Env Vars
 
