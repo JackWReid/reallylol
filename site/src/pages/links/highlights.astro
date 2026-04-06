@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { LinksPage } from "../../components/LinksList";
+
+function inlineMarkdown(text: string): string {
+  return text
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+}
+
+function bodyToHtml(body: string): string {
+  const paragraphs = body.split(/\n\n+/);
+  return paragraphs.map((para) => {
+    const lines = para.trim().split('\n');
+    if (lines.every((l) => l.startsWith('> ') || l === '>')) {
+      const content = lines.map((l) => l.startsWith('> ') ? inlineMarkdown(l.slice(2)) : '').join(' ');
+      return `<blockquote>${content}</blockquote>`;
+    }
+    return `<p>${inlineMarkdown(lines.join(' '))}</p>`;
+  }).join('');
+}
+
+const highlightItems = await getCollection("highlight");
+const highlights = highlightItems
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .map((h) => ({
+    title: h.data.title,
+    slug: h.id,
+    date: h.data.date.toISOString(),
+    link: h.data.link,
+    bodyHtml: h.body ? bodyToHtml(h.body) : undefined,
+  }));
+---
+
+<Base title="Links" section="links">
+  <main>
+    <LinksPage activeTab="highlights" data={{ highlights }} client:load />
+  </main>
+</Base>

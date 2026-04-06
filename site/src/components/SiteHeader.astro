@@ -5,11 +5,13 @@ const navItems = [
   { label: "Writing", href: "/writing/" },
   { label: "Notes", href: "/notes/" },
   { label: "Photos", href: "/photos/" },
-  { label: "Library", href: "/library/" },
-  { label: "Links", href: "/links/" },
+  { label: "Library", href: "/books/read" },
+  { label: "Links", href: "/links/saved" },
 ];
 
 function isActive(href: string): boolean {
+  if (href === "/books/read") return pathname.startsWith("/books/") || pathname.startsWith("/films/");
+  if (href === "/links/saved") return pathname.startsWith("/links/");
   return pathname.startsWith(href);
 }
 ---

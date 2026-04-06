@@ -1,5 +1,3 @@
-import { useState } from "preact/hooks";
-
 interface TimelineItem {
   title: string;
   creator: string;
@@ -44,65 +42,28 @@ function groupByTimeline(items: TimelineItem[]): YearGroup[] {
     }));
 }
 
-type Tab = "books-read" | "books-reading" | "books-toread" | "films-watched" | "films-towatch";
+export type LibraryTab = "books-read" | "books-reading" | "books-toread" | "films-watched" | "films-towatch";
 
-interface LibraryData {
-  booksRead: TimelineItem[];
-  booksReading: TimelineItem[];
-  booksToRead: TimelineItem[];
-  filmsWatched: TimelineItem[];
-  filmsToWatch: TimelineItem[];
-  bookCount: number;
-  authorCount: number;
-  filmCount: number;
+interface LibraryProps {
+  activeTab: LibraryTab;
+  items: TimelineItem[];
 }
 
-export function LibraryTimeline({ data }: { data: LibraryData }) {
-  const [tab, setTab] = useState<Tab>("books-read");
-
-  const tabData: Record<Tab, TimelineItem[]> = {
-    "books-read": data.booksRead,
-    "books-reading": data.booksReading,
-    "books-toread": data.booksToRead,
-    "films-watched": data.filmsWatched,
-    "films-towatch": data.filmsToWatch,
-  };
-
-  const items = tabData[tab];
-  const isBooks = tab.startsWith("books");
-  const isFlat = tab === "books-reading" || tab === "books-toread" || tab === "films-towatch";
+export function LibraryTimeline({ activeTab, items }: LibraryProps) {
+  const isBooks = activeTab.startsWith("books");
+  const isFlat = activeTab === "books-reading" || activeTab === "books-toread" || activeTab === "films-towatch";
   const groups = isFlat ? [] : groupByTimeline(items);
   const flatItems = isFlat ? [...items].sort((a, b) => a.title.localeCompare(b.title)) : [];
 
   return (
     <div class="library">
       <div class="section-tabs">
-        <a
-          href="#"
-          class={tab === "books-read" ? "active" : ""}
-          onClick={(e) => { e.preventDefault(); setTab("books-read"); }}
-        >Read</a>
-        <a
-          href="#"
-          class={tab === "books-reading" ? "active" : ""}
-          onClick={(e) => { e.preventDefault(); setTab("books-reading"); }}
-        >Reading</a>
-        <a
-          href="#"
-          class={tab === "books-toread" ? "active" : ""}
-          onClick={(e) => { e.preventDefault(); setTab("books-toread"); }}
-        >To Read</a>
+        <a href="/books/read" class={activeTab === "books-read" ? "active" : ""}>Read</a>
+        <a href="/books/reading" class={activeTab === "books-reading" ? "active" : ""}>Reading</a>
+        <a href="/books/toread" class={activeTab === "books-toread" ? "active" : ""}>To Read</a>
         <span class="tab-divider" />
-        <a
-          href="#"
-          class={tab === "films-watched" ? "active" : ""}
-          onClick={(e) => { e.preventDefault(); setTab("films-watched"); }}
-        >Watched</a>
-        <a
-          href="#"
-          class={tab === "films-towatch" ? "active" : ""}
-          onClick={(e) => { e.preventDefault(); setTab("films-towatch"); }}
-        >To Watch</a>
+        <a href="/films/watched" class={activeTab === "films-watched" ? "active" : ""}>Watched</a>
+        <a href="/films/towatch" class={activeTab === "films-towatch" ? "active" : ""}>To Watch</a>
       </div>
 
       {isFlat ? (
@@ -141,10 +102,6 @@ export function LibraryTimeline({ data }: { data: LibraryData }) {
           ))}
         </div>
       )}
-
-      <div class="library__stats">
-        {data.bookCount.toLocaleString()} books · {data.authorCount.toLocaleString()} authors · {data.filmCount.toLocaleString()} films
-      </div>
     </div>
   );
 }
