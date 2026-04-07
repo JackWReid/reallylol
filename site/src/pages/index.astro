@@ -1,13 +1,63 @@
 ---
 import Base from "../layouts/Base.astro";
-import { HomeFeed } from "../components/HomeFeed";
-import { getAllContent } from "../lib/cms-data";
+import { getAllFeedItems, typeLabel, typeUrl } from "../lib/feed";
+import { r2Thumb } from "../lib/images";
 
-const items = await getAllContent();
+const PAGE_SIZE = 40;
+const allItems = await getAllFeedItems();
+const items = allItems.slice(0, PAGE_SIZE);
+const hasMore = allItems.length > PAGE_SIZE;
+
+const featured = items[0];
+const rest = items.slice(1);
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+}
 ---
 
 <Base title="really.lol" description="Writing, photos, notes, and things read and watched.">
   <main>
-    <HomeFeed items={items} client:load />
+    <div class="home-feed">
+      {featured && (
+        <a href={typeUrl(featured)} class="feed-featured">
+          <div class="feed-featured__text">
+            <span class="feed-meta">
+              {typeLabel(featured.type)} · {formatDate(featured.date)}
+            </span>
+            <h2 class="feed-featured__title">{featured.title}</h2>
+            {featured.excerpt && (
+              <p class="feed-featured__excerpt">{featured.excerpt}</p>
+            )}
+          </div>
+        </a>
+      )}
+      <div class="feed-list">
+        {rest.map((item) => (
+          <a href={typeUrl(item)} class="feed-item">
+            <div class="feed-item__text">
+              <span class="feed-item__title">{item.title}</span>
+              <span class="feed-meta">
+                {typeLabel(item.type)} · {formatDate(item.date)}
+              </span>
+            </div>
+            {item.type === "photo" && item.image && (
+              <div class="feed-item__thumb">
+                <img src={r2Thumb(item.image)} alt="" loading="lazy" />
+              </div>
+            )}
+          </a>
+        ))}
+      </div>
+      {hasMore && (
+        <div class="pagination">
+          <a href="/page/2/" class="pagination__link pagination__link--next">Older</a>
+        </div>
+      )}
+    </div>
   </main>
 </Base>

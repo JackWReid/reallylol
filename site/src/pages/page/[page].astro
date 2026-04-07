@@ -1,0 +1,65 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import Pagination from "../../components/Pagination.astro";
+import { getAllFeedItems, typeLabel, typeUrl } from "../../lib/feed";
+import { r2Thumb } from "../../lib/images";
+
+const PAGE_SIZE = 40;
+
+export const getStaticPaths = (async () => {
+  const allItems = await getAllFeedItems();
+  const totalPages = Math.ceil(allItems.length / PAGE_SIZE);
+  // Generate pages 2, 3, 4, ... (page 1 is index.astro)
+  return Array.from({ length: totalPages - 1 }, (_, i) => ({
+    params: { page: String(i + 2) },
+    props: {
+      items: allItems.slice((i + 1) * PAGE_SIZE, (i + 2) * PAGE_SIZE),
+      currentPage: i + 2,
+      lastPage: totalPages,
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { items, currentPage, lastPage } = Astro.props;
+const prevUrl = currentPage === 2 ? "/" : `/page/${currentPage - 1}/`;
+const nextUrl = currentPage < lastPage ? `/page/${currentPage + 1}/` : undefined;
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+}
+---
+
+<Base title={`really.lol - page ${currentPage}`}>
+  <main>
+    <div class="home-feed">
+      <div class="feed-list">
+        {items.map((item) => (
+          <a href={typeUrl(item)} class="feed-item">
+            <div class="feed-item__text">
+              <span class="feed-item__title">{item.title}</span>
+              <span class="feed-meta">
+                {typeLabel(item.type)} · {formatDate(item.date)}
+              </span>
+            </div>
+            {item.type === "photo" && item.image && (
+              <div class="feed-item__thumb">
+                <img src={r2Thumb(item.image)} alt="" loading="lazy" />
+              </div>
+            )}
+          </a>
+        ))}
+      </div>
+      <Pagination
+        prevUrl={prevUrl}
+        nextUrl={nextUrl}
+        currentPage={currentPage}
+        lastPage={lastPage}
+      />
+    </div>
+  </main>
+</Base>
