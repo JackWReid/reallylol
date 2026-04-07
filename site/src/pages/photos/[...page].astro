@@ -1,0 +1,54 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Pagination from "../../components/Pagination.astro";
+import { r2Thumb } from "../../lib/images";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const photos = await getCollection("photo");
+  const sorted = photos.sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  );
+  return paginate(sorted, { pageSize: 40 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+
+function formatDate(date: Date): string {
+  return new Date(date).toLocaleDateString("en-GB", {
+    month: "short",
+    year: "numeric",
+  });
+}
+---
+
+<Base title="Photos" section="photos">
+  <main>
+    <div class="photo-gallery">
+      <div class="photo-grid">
+        {page.data.map((photo) => (
+          <a href={`/photo/${photo.id}/`} class="photo-grid__item">
+            <img
+              src={r2Thumb(photo.data.image)}
+              alt={photo.data.title}
+              loading="lazy"
+            />
+            <div class="photo-grid__overlay">
+              <span class="photo-grid__title">{photo.data.title}</span>
+              <span class="photo-grid__meta">
+                {photo.data.location && `${photo.data.location} · `}{formatDate(photo.data.date)}
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+    <Pagination
+      prevUrl={page.url.prev}
+      nextUrl={page.url.next}
+      currentPage={page.currentPage}
+      lastPage={page.lastPage}
+    />
+  </main>
+</Base>

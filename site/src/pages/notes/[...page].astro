@@ -1,0 +1,55 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Pagination from "../../components/Pagination.astro";
+import { Image } from "astro:assets";
+import falconImg from "../../images/audubon-falcon.jpg";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const notes = await getCollection("note");
+  const sorted = notes.sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  );
+  return paginate(sorted, { pageSize: 40 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+}
+---
+
+<Base title="Notes" section="notes">
+  <main class="notes-list">
+    {page.currentPage === 1 && (
+      <div class="notes-hero">
+        <figure class="notes-bird">
+          <Image src={falconImg} alt="Two gyr falcons squabbling over prey" width={800} height={472} loading="eager" />
+          <figcaption>J. J. Audubon, <em>Iceland or Gyr Falcon</em>, 1827</figcaption>
+        </figure>
+        <h1 class="notes-hero__title">Notes</h1>
+      </div>
+    )}
+    {page.currentPage > 1 && <h1>Notes</h1>}
+    {page.data.map((n) => (
+      <article class="notes-item">
+        <a href={`/note/${n.id}/`} class="notes-item__link">
+          <p class="notes-item__text">{n.data.title}</p>
+          <time class="notes-item__date">{formatDate(n.data.date)}</time>
+        </a>
+      </article>
+    ))}
+    <Pagination
+      prevUrl={page.url.prev}
+      nextUrl={page.url.next}
+      currentPage={page.currentPage}
+      lastPage={page.lastPage}
+    />
+  </main>
+</Base>

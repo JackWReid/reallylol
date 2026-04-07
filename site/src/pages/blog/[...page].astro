@@ -1,13 +1,20 @@
 ---
+import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import Pagination from "../../components/Pagination.astro";
 import { generateSummary } from "../../lib/summary";
 import { tagToSlug } from "../../lib/tags";
 
-const posts = await getCollection("post");
-const sorted = posts.sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime()
-);
+export const getStaticPaths = (async ({ paginate }) => {
+  const posts = await getCollection("blog");
+  const sorted = posts.sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  );
+  return paginate(sorted, { pageSize: 40 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
 
 function formatDate(date: Date): string {
   return date.toLocaleDateString("en-GB", {
@@ -18,9 +25,9 @@ function formatDate(date: Date): string {
 }
 ---
 
-<Base title="Writing" section="writing">
+<Base title="Blog" section="writing">
   <main class="writing-list">
-    {sorted.map((post) => (
+    {page.data.map((post) => (
       <article class="writing-item">
         <div class="writing-item__meta">
           <span>{formatDate(post.data.date)}</span>
@@ -39,5 +46,11 @@ function formatDate(date: Date): string {
         </p>
       </article>
     ))}
+    <Pagination
+      prevUrl={page.url.prev}
+      nextUrl={page.url.next}
+      currentPage={page.currentPage}
+      lastPage={page.lastPage}
+    />
   </main>
 </Base>
