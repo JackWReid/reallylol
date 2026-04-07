@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 const MEDIA_BASE = "https://media.really.lol";
 
 export async function GET(context: APIContext) {
-  const posts = await getCollection("post");
+  const posts = await getCollection("blog");
   const notes = await getCollection("note");
   const photos = await getCollection("photo");
 
@@ -19,7 +19,7 @@ export async function GET(context: APIContext) {
     ...notes.map((n) => ({
       title: n.data.title,
       pubDate: n.data.date,
-      link: `/notes/${n.id}/`,
+      link: `/note/${n.id}/`,
       content: n.rendered?.html ?? n.body ?? "",
     })),
     ...photos.map((p) => ({

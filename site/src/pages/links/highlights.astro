@@ -1,41 +1,47 @@
 ---
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import { LinksPage } from "../../components/LinksList";
 
-function inlineMarkdown(text: string): string {
-  return text
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
-    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+const highlights = await getCollection("highlight");
+const sorted = highlights.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
 }
 
-function bodyToHtml(body: string): string {
-  const paragraphs = body.split(/\n\n+/);
-  return paragraphs.map((para) => {
-    const lines = para.trim().split('\n');
-    if (lines.every((l) => l.startsWith('> ') || l === '>')) {
-      const content = lines.map((l) => l.startsWith('> ') ? inlineMarkdown(l.slice(2)) : '').join(' ');
-      return `<blockquote>${content}</blockquote>`;
-    }
-    return `<p>${inlineMarkdown(lines.join(' '))}</p>`;
-  }).join('');
+function getDomain(url: string): string {
+  try { return new URL(url).hostname.replace("www.", ""); }
+  catch { return ""; }
 }
-
-const highlightItems = await getCollection("highlight");
-const highlights = highlightItems
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .map((h) => ({
-    title: h.data.title,
-    slug: h.id,
-    date: h.data.date.toISOString(),
-    link: h.data.link,
-    bodyHtml: h.body ? bodyToHtml(h.body) : undefined,
-  }));
 ---
 
 <Base title="Links" section="links">
   <main>
-    <LinksPage activeTab="highlights" data={{ highlights }} client:load />
+    <div class="links-page">
+      <div class="section-tabs">
+        <a href="/links/saved">Saved</a>
+        <a href="/links/highlights" class="active">Highlights</a>
+        <a href="/links/blogroll">Blogroll</a>
+      </div>
+      <div class="links-highlights">
+        {sorted.map((h) => (
+          <div class="links-highlights__item">
+            <a href={`/highlight/${h.id}/`} class="links-highlights__title">{h.data.title}</a>
+            <div class="links-saved__meta">
+              {h.data.link && (
+                <a href={h.data.link} target="_blank" rel="noopener">{getDomain(h.data.link)}</a>
+              )}
+              <span class="links-saved__date">{formatDate(h.data.date)}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   </main>
 </Base>

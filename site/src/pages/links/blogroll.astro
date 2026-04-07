@@ -1,11 +1,5 @@
 ---
-import { getCollection, render } from "astro:content";
 import Base from "../../layouts/Base.astro";
-
-const blogrollPage = await getCollection("page").then(
-  (pages) => pages.find((p) => p.id === "blogroll")
-);
-const { Content } = blogrollPage ? await render(blogrollPage) : { Content: null };
 ---
 
 <Base title="Links" section="links">
@@ -16,11 +10,9 @@ const { Content } = blogrollPage ? await render(blogrollPage) : { Content: null 
         <a href="/links/highlights">Highlights</a>
         <a href="/links/blogroll" class="active">Blogroll</a>
       </div>
-      {Content && (
-        <div class="links-blogroll">
-          <Content />
-        </div>
-      )}
+      <div class="links-blogroll">
+        <p>See the <a href="/blogroll">full blogroll page</a>.</p>
+      </div>
     </div>
   </main>
 </Base>
