@@ -1,13 +1,17 @@
 ---
-import { getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import { r2Hero } from "../../lib/images";
 
-export const prerender = false;
+export async function getStaticPaths() {
+  const photos = await getCollection("photo");
+  return photos.map((photo) => ({
+    params: { slug: photo.id },
+    props: { photo },
+  }));
+}
 
-const { slug } = Astro.params;
-const photo = await getEntry("photo", slug!);
-if (!photo) return Astro.redirect("/404");
+const { photo } = Astro.props;
 
 const heroUrl = r2Hero(photo.data.image);
 const dateFormatted = photo.data.date.toLocaleDateString("en-GB", {
@@ -29,7 +33,7 @@ const dateFormatted = photo.data.date.toLocaleDateString("en-GB", {
         </span>
         {photo.data.tags && photo.data.tags.length > 0 && (
           <span class="photo-single__tags">
-            {photo.data.tags.map((tag) => (
+            {photo.data.tags.map((tag: string) => (
               <a href={`/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`}>#{tag.toLowerCase()}</a>
             ))}
           </span>

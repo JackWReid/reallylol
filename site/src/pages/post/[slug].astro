@@ -4,7 +4,7 @@ import Base from "../../layouts/Base.astro";
 import { tagToSlug } from "../../lib/tags";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("post");
+  const posts = await getCollection("blog");
   return posts.map((post) => ({
     params: { slug: post.id },
     props: { post },
