@@ -761,4 +761,31 @@
   .photo-single__tags a:hover {
     color: var(--color-photos-text);
   }
+
+  /* Pagination */
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .pagination__link {
+    font-family: var(--font-label);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .pagination__link--disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .pagination__current {
+    font-family: var(--font-label);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
 }

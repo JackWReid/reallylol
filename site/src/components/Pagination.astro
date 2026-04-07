@@ -1,0 +1,26 @@
+---
+interface Props {
+  prevUrl: string | undefined;
+  nextUrl: string | undefined;
+  currentPage: number;
+  lastPage: number;
+}
+
+const { prevUrl, nextUrl, currentPage, lastPage } = Astro.props;
+---
+
+{lastPage > 1 && (
+  <nav class="pagination" aria-label="Page navigation">
+    {prevUrl ? (
+      <a href={prevUrl} class="pagination__link pagination__link--prev">Newer</a>
+    ) : (
+      <span class="pagination__link pagination__link--prev pagination__link--disabled">Newer</span>
+    )}
+    <span class="pagination__current">Page {currentPage} of {lastPage}</span>
+    {nextUrl ? (
+      <a href={nextUrl} class="pagination__link pagination__link--next">Older</a>
+    ) : (
+      <span class="pagination__link pagination__link--next pagination__link--disabled">Older</span>
+    )}
+  </nav>
+)}
