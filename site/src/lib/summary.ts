@@ -11,7 +11,8 @@ export function generateSummary(body: string, wordLimit = 70): string {
   const text = moreIdx > -1 ? body.slice(0, moreIdx) : body;
 
   const stripped = text
-    .replace(/{{<[\s\S]*?>}}/g, "")          // Hugo shortcodes
+    .replace(/<figure>[\s\S]*?<\/figure>/g, "")  // HTML figures
+    .replace(/<audio[\s\S]*?<\/audio>/g, "")     // HTML audio
     .replace(/!\[[^\]]*\]\([^)]*\)/g, "")    // markdown images
     .replace(/```[\s\S]*?```/g, "")          // fenced code blocks
     .replace(/`[^`]+`/g, "")                 // inline code

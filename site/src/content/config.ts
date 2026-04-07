@@ -1,14 +1,12 @@
 import { defineCollection, z } from "astro:content";
-import { cmsContentLoader } from "../lib/cms-loader";
 
-const post = defineCollection({
-  loader: cmsContentLoader("post"),
+const blog = defineCollection({
+  type: "content",
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
-    slug: z.string().optional(),
     subtitle: z.string().optional(),
-    tags: z.array(z.string()).default(["journal"]),
+    tags: z.array(z.string()).default([]),
     book_author: z.string().optional(),
     movie_released: z.union([z.string(), z.number()]).optional(),
     media_image: z.string().optional(),
@@ -18,7 +16,7 @@ const post = defineCollection({
 });
 
 const note = defineCollection({
-  loader: cmsContentLoader("note"),
+  type: "content",
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
@@ -26,40 +24,25 @@ const note = defineCollection({
 });
 
 const photo = defineCollection({
-  loader: cmsContentLoader("photo"),
+  type: "content",
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
     image: z.string(),
     location: z.string().optional(),
-    tags: z.array(z.string()).optional(),
-    instagram: z.boolean().optional(),
+    tags: z.array(z.string()).default([]),
+    instagram: z.boolean().default(false),
   }),
 });
 
 const highlight = defineCollection({
-  loader: cmsContentLoader("highlight"),
+  type: "content",
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
-    slug: z.string().optional(),
     link: z.string().optional(),
-    tags: z.array(z.string()).optional(),
-    url: z.string().optional(),
+    tags: z.array(z.string()).default([]),
   }),
 });
 
-const page = defineCollection({
-  loader: cmsContentLoader("page"),
-  schema: z.object({
-    title: z.string(),
-    date: z.coerce.date(),
-    layout: z.string().optional(),
-    url: z.string().optional(),
-    section: z.string().optional(),
-    data_source: z.string().optional(),
-    tags: z.array(z.string()).optional(),
-  }),
-});
-
-export const collections = { post, note, photo, highlight, page };
+export const collections = { blog, note, photo, highlight };
