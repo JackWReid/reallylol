@@ -13,19 +13,19 @@ export async function GET(context: APIContext) {
     ...posts.map((p) => ({
       title: p.data.title,
       pubDate: p.data.date,
-      link: `/post/${p.id}/`,
+      link: `/post/${p.id.replace(/\.md$/, "")}/`,
       content: p.rendered?.html ?? p.body ?? "",
     })),
     ...notes.map((n) => ({
       title: n.data.title,
       pubDate: n.data.date,
-      link: `/note/${n.id}/`,
+      link: `/note/${n.id.replace(/\.md$/, "")}/`,
       content: n.rendered?.html ?? n.body ?? "",
     })),
     ...photos.map((p) => ({
       title: p.data.title,
       pubDate: p.data.date,
-      link: `/photo/${p.id}/`,
+      link: `/photo/${p.id.replace(/\.md$/, "")}/`,
       content: `<img src="${MEDIA_BASE}/${p.data.image}" alt="${p.data.title}"${p.data.location ? ` title="${p.data.location}"` : ""} />`,
     })),
   ].sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime());

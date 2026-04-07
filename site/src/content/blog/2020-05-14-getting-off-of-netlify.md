@@ -6,7 +6,7 @@ tags:
 subtitle: "Self-hosting the website, logs, and analytics"
 ---
 
-I wanted to quickly follow up to [my recent post](/post/how-this-site-works/) about personal infrastructure with some updates I made this week.
+I wanted to quickly follow up to [my recent post](/post/2020-05-08-how-this-site-works/) about personal infrastructure with some updates I made this week.
 
 ## Why the change
 I got a warning last week that I was almost at the limit for my allocation of "build minutes" on Netlify. Upon investigation, I found that my personal website had been building too often and for too long on Netlify, and that soon they would start charging me for the overages. Looking at the logs and running the build locally I saw that the vast majority of the build time was down to preprocessing the many images in the "Photo" part of my site to compress and resize them. So, in the short term those have been removed; I wasn't really presenting them very well anyway.

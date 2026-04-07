@@ -30,7 +30,7 @@ export const getStaticPaths = (async ({ paginate }) => {
         type: "blog",
         title: p.data.title,
         date: p.data.date,
-        slug: p.id,
+        slug: p.id.replace(/\.md$/, ""),
         excerpt: generateSummary(p.body ?? ""),
       });
     }
@@ -43,7 +43,7 @@ export const getStaticPaths = (async ({ paginate }) => {
         type: "photo",
         title: p.data.title,
         date: p.data.date,
-        slug: p.id,
+        slug: p.id.replace(/\.md$/, ""),
         image: p.data.image,
       });
     }
@@ -56,7 +56,7 @@ export const getStaticPaths = (async ({ paginate }) => {
         type: "highlight",
         title: h.data.title,
         date: h.data.date,
-        slug: h.id,
+        slug: h.id.replace(/\.md$/, ""),
       });
     }
   }

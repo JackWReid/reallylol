@@ -37,7 +37,7 @@ function getDomain(url: string): string {
     <h1>Highlights</h1>
     {page.data.map((h) => (
       <article class="links-highlights__item">
-        <a href={`/highlight/${h.id}/`} class="links-highlights__title">{h.data.title}</a>
+        <a href={`/highlight/${h.id.replace(/\.md$/, "")}/`} class="links-highlights__title">{h.data.title}</a>
         <div class="links-saved__meta">
           {h.data.link && (
             <a href={h.data.link} target="_blank" rel="noopener">{getDomain(h.data.link)}</a>

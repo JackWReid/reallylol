@@ -6,7 +6,7 @@ import { r2Hero } from "../../lib/images";
 export async function getStaticPaths() {
   const photos = await getCollection("photo");
   return photos.map((photo) => ({
-    params: { slug: photo.id },
+    params: { slug: photo.id.replace(/\.md$/, "") },
     props: { photo },
   }));
 }

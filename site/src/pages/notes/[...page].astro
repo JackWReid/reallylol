@@ -39,7 +39,7 @@ function formatDate(date: Date): string {
     {page.currentPage > 1 && <h1>Notes</h1>}
     {page.data.map((n) => (
       <article class="notes-item">
-        <a href={`/note/${n.id}/`} class="notes-item__link">
+        <a href={`/note/${n.id.replace(/\.md$/, "")}/`} class="notes-item__link">
           <p class="notes-item__text">{n.data.title}</p>
           <time class="notes-item__date">{formatDate(n.data.date)}</time>
         </a>

@@ -6,7 +6,7 @@ import { tagToSlug } from "../../lib/tags";
 export async function getStaticPaths() {
   const highlights = await getCollection("highlight");
   return highlights.map((h) => ({
-    params: { slug: h.id },
+    params: { slug: h.id.replace(/\.md$/, "") },
     props: { highlight: h },
   }));
 }

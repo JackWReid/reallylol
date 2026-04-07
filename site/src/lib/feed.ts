@@ -11,6 +11,10 @@ export interface FeedItem {
   location?: string;
 }
 
+function stripExt(id: string): string {
+  return id.replace(/\.md$/, "");
+}
+
 function typeLabel(type: string): string {
   if (type === "blog") return "journal";
   return type;
@@ -37,20 +41,20 @@ export async function getAllFeedItems(): Promise<FeedItem[]> {
   const items: FeedItem[] = [
     ...posts.map((p) => ({
       type: "blog" as const,
-      id: p.id,
+      id: stripExt(p.id),
       title: p.data.title,
       date: p.data.date,
       excerpt: generateSummary(p.body ?? ""),
     })),
     ...notes.map((n) => ({
       type: "note" as const,
-      id: n.id,
+      id: stripExt(n.id),
       title: n.data.title,
       date: n.data.date,
     })),
     ...photos.map((p) => ({
       type: "photo" as const,
-      id: p.id,
+      id: stripExt(p.id),
       title: p.data.title,
       date: p.data.date,
       image: p.data.image,
@@ -58,7 +62,7 @@ export async function getAllFeedItems(): Promise<FeedItem[]> {
     })),
     ...highlights.map((h) => ({
       type: "highlight" as const,
-      id: h.id,
+      id: stripExt(h.id),
       title: h.data.title,
       date: h.data.date,
     })),

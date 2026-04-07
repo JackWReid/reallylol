@@ -28,7 +28,7 @@ function formatDate(date: Date): string {
     <div class="photo-gallery">
       <div class="photo-grid">
         {page.data.map((photo) => (
-          <a href={`/photo/${photo.id}/`} class="photo-grid__item">
+          <a href={`/photo/${photo.id.replace(/\.md$/, "")}/`} class="photo-grid__item">
             <img
               src={r2Thumb(photo.data.image)}
               alt={photo.data.title}

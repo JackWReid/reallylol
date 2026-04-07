@@ -39,7 +39,7 @@ function formatDate(date: Date): string {
           ))}
         </div>
         <h2 class="writing-item__title">
-          <a href={`/post/${post.id}/`}>{post.data.title}</a>
+          <a href={`/post/${post.id.replace(/\.md$/, "")}/`}>{post.data.title}</a>
         </h2>
         <p class="writing-item__excerpt">
           {generateSummary(post.body ?? "")}
