@@ -1,20 +1,83 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { LibraryTimeline } from "../../components/LibraryTimeline";
-import PagePreamble from "../../components/PagePreamble.astro";
-import { getBooks } from "../../lib/cms-data";
+import booksData from "../../data/books-read.json";
 
-const books = await getBooks("read");
-const items = (books as Array<{ title: string; author: string; date_updated: string }>).map((b) => ({
-  title: b.title,
-  creator: b.author,
-  date: b.date_updated,
-}));
+interface BookRow {
+  title: string;
+  author: string;
+  date_updated: string;
+}
+
+const books = booksData as BookRow[];
+
+interface MonthGroup {
+  label: string;
+  count: number;
+  items: BookRow[];
+}
+
+interface YearGroup {
+  year: number;
+  months: MonthGroup[];
+}
+
+function groupByTimeline(items: BookRow[]): YearGroup[] {
+  const years = new Map<number, Map<string, BookRow[]>>();
+  for (const item of items) {
+    const d = new Date(item.date_updated);
+    const y = d.getFullYear();
+    const m = d.toLocaleDateString("en-GB", { month: "long" });
+    if (!years.has(y)) years.set(y, new Map());
+    const months = years.get(y)!;
+    if (!months.has(m)) months.set(m, []);
+    months.get(m)!.push(item);
+  }
+  return Array.from(years.entries())
+    .sort(([a], [b]) => b - a)
+    .map(([year, months]) => ({
+      year,
+      months: Array.from(months.entries()).map(([label, items]) => ({
+        label,
+        count: items.length,
+        items,
+      })),
+    }));
+}
+
+const groups = groupByTimeline(books);
 ---
 
 <Base title="Library" section="library">
   <main>
-    <PagePreamble url="/books/read" />
-    <LibraryTimeline activeTab="books-read" items={items} />
+    <div class="library">
+      <div class="section-tabs">
+        <a href="/books/read" class="active">Read</a>
+        <a href="/books/reading">Reading</a>
+        <a href="/books/toread">To Read</a>
+        <span class="tab-divider" />
+        <a href="/films/watched">Watched</a>
+        <a href="/films/towatch">To Watch</a>
+      </div>
+      <div class="timeline">
+        {groups.map((yearGroup) => (
+          <div class="timeline__year">
+            <h2 class="timeline__year-label">{yearGroup.year}</h2>
+            {yearGroup.months.map((month) => (
+              <div class="timeline__month">
+                <h3 class="timeline__month-label">
+                  {month.label} &mdash; {month.count} {month.count === 1 ? "book" : "books"}
+                </h3>
+                {month.items.map((item) => (
+                  <div class="timeline__item">
+                    <span class="timeline__title">{item.title}</span>
+                    <span class="timeline__creator">{item.author}</span>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
   </main>
 </Base>

@@ -1,21 +1,31 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { LibraryTimeline } from "../../components/LibraryTimeline";
-import PagePreamble from "../../components/PagePreamble.astro";
-import { getFilms } from "../../lib/cms-data";
+import filmsData from "../../data/films-towatch.json";
 
-const films = await getFilms("towatch");
-const items = (films as Array<{ name: string; year: string | null; date_updated: string }>).map((f) => ({
-  title: f.name,
-  creator: "",
-  date: f.date_updated,
-  year: f.year ?? undefined,
-}));
+interface FilmRow { name: string; year: string | null; date_updated: string; }
+const films = (filmsData as FilmRow[]).sort((a, b) => a.name.localeCompare(b.name));
 ---
 
 <Base title="Library" section="library">
   <main>
-    <PagePreamble url="/films/towatch" />
-    <LibraryTimeline activeTab="films-towatch" items={items} />
+    <div class="library">
+      <div class="section-tabs">
+        <a href="/books/read">Read</a>
+        <a href="/books/reading">Reading</a>
+        <a href="/books/toread">To Read</a>
+        <span class="tab-divider" />
+        <a href="/films/watched">Watched</a>
+        <a href="/films/towatch" class="active">To Watch</a>
+      </div>
+      <div class="timeline">
+        <p class="timeline__flat-count">{films.length} films</p>
+        {films.map((item) => (
+          <div class="timeline__item">
+            <span class="timeline__title">{item.name}</span>
+            {item.year && <span class="timeline__creator">({item.year})</span>}
+          </div>
+        ))}
+      </div>
+    </div>
   </main>
 </Base>
