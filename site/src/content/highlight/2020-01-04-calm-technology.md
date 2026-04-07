@@ -1,0 +1,13 @@
+---
+title: "Calm Technology"
+date: "2020-01-04"
+link: "https://calmtech.com/"
+url: "/note/calm-technology"
+---
+
+> VII. The right amount of technology is the minimum needed to solve the problem
+>
+> - What is the minimum amount of technology needed to solve the problem?
+> - Slim the feature set down so that the product does what it needs to do and no more.
+
+— [Calm Technology](https://calmtech.com/), Amber Case in _Designing Calm Technology_

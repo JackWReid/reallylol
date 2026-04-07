@@ -1,0 +1,4 @@
+---
+title: "daddy what did you do in the covid war, son i worked on user retention"
+date: "2020-05-12"
+---

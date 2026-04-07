@@ -1,314 +1,209 @@
-/**
- * One-time migration: import existing markdown content files and JSON data into the CMS.
- */
+const CMS_URL = process.env.CMS_API_URL ?? "https://cms.really.lol";
+const CMS_KEY = process.env.CMS_API_KEY ?? "over-the-hill";
+const SITE_CONTENT = "site/src/content";
+const SITE_DATA = "site/src/data";
+const SITE_PAGES = "site/src/pages";
 
-import { readdirSync, readFileSync, existsSync } from "fs";
-import { resolve } from "path";
-import { CmsApi } from "../lib/api";
-import type { ContentType } from "../../../shared/types";
+const R2_BASE = "https://media.really.lol";
 
-const api = new CmsApi();
+async function cmsGet<T>(path: string): Promise<T> {
+  const res = await fetch(`${CMS_URL}${path}`, {
+    headers: { Authorization: `Bearer ${CMS_KEY}` },
+  });
+  if (!res.ok) throw new Error(`CMS ${res.status}: ${path}`);
+  return res.json() as Promise<T>;
+}
 
-// Simplified frontmatter parser that handles arrays
-function parseFrontmatter(text: string): {
-  fields: Record<string, unknown>;
-  body: string;
-} | null {
-  if (!text.startsWith("---")) return null;
-  const endIdx = text.indexOf("---", 3);
-  if (endIdx === -1) return null;
+interface ExportData {
+  content: Array<{
+    type: string;
+    slug: string;
+    title: string;
+    body: string | null;
+    date: string;
+    status: string;
+    meta: Record<string, unknown>;
+    tags: string[];
+  }>;
+  books: Array<{ shelf: string; title: string; author: string; date_updated: string; image_url: string | null; hardcover_url: string | null }>;
+  films: Array<{ list: string; name: string; year: string | null; date_updated: string }>;
+  links: Array<{ title: string; url: string; date: string; excerpt: string | null; cover: string | null; tags: string[] }>;
+  config: Record<string, unknown>;
+}
 
-  const fm = text.slice(3, endIdx);
-  const body = text.slice(endIdx + 3).trim();
-  const fields: Record<string, unknown> = {};
-
-  const lines = fm.split("\n");
-  let i = 0;
-  while (i < lines.length) {
-    const line = lines[i];
-
-    // Key-value pair
-    const match = line.match(/^(\w[\w_]*)\s*:\s*(.*)/);
-    if (match) {
-      const key = match[1];
-      const value = match[2].trim();
-
-      // Check if it's an inline array: [val1, val2]
-      if (value.startsWith("[") && value.endsWith("]")) {
-        const inner = value.slice(1, -1);
-        fields[key] = inner
-          .split(",")
-          .map((s) => s.trim().replace(/^['"]|['"]$/g, ""))
-          .filter(Boolean);
-      } else if (value === "" || value === undefined) {
-        // Might be a YAML list on following lines
-        const items: string[] = [];
-        while (i + 1 < lines.length && lines[i + 1].match(/^\s+-\s+/)) {
-          i++;
-          const item = lines[i].replace(/^\s+-\s+/, "").trim().replace(/^['"]|['"]$/g, "");
-          items.push(item);
-        }
-        if (items.length > 0) {
-          fields[key] = items;
-        } else {
-          fields[key] = "";
-        }
-      } else if (value === "true") {
-        fields[key] = true;
-      } else if (value === "false") {
-        fields[key] = false;
-      } else if (/^\d+(\.\d+)?$/.test(value)) {
-        fields[key] = parseFloat(value);
-      } else {
-        // Strip quotes
-        fields[key] = value.replace(/^['"]|['"]$/g, "");
+function transformShortcodes(body: string): string {
+  // {{< image src="path" alt="text" caption="text" >}} -> markdown/HTML
+  let result = body.replace(
+    /\{\{<\s*image\s+([^>]*?)>\}\}/g,
+    (_match, attrs: string) => {
+      const src = attrs.match(/src="([^"]*?)"/)?.[1] ?? "";
+      const alt = attrs.match(/alt="([^"]*?)"/)?.[1] ?? "";
+      const caption = attrs.match(/caption="([^"]*?)"/)?.[1];
+      const fullSrc = src.startsWith("http") ? src : `${R2_BASE}/${src}`;
+      if (caption) {
+        return `<figure>\n  <img src="${fullSrc}" alt="${alt}">\n  <figcaption>${caption}</figcaption>\n</figure>`;
       }
+      return `![${alt}](${fullSrc})`;
     }
-    i++;
-  }
+  );
 
-  return { fields, body };
+  // {{< audio src="path" caption="text" >}} -> <audio>
+  result = result.replace(
+    /\{\{<\s*audio\s+([^>]*?)>\}\}/g,
+    (_match, attrs: string) => {
+      const src = attrs.match(/src="([^"]*?)"/)?.[1] ?? "";
+      const fullSrc = src.startsWith("http") ? src : `${R2_BASE}/${src}`;
+      return `<audio src="${fullSrc}" controls></audio>`;
+    }
+  );
+
+  // {{< highlight lang >}}...{{< /highlight >}} -> fenced code blocks
+  result = result.replace(
+    /\{\{<\s*highlight\s+(\w+)\s*>\}\}([\s\S]*?)\{\{<\s*\/highlight\s*>\}\}/g,
+    (_match, lang: string, code: string) => `\`\`\`${lang}\n${code.trim()}\n\`\`\``
+  );
+
+  return result;
 }
 
-// Determine slug from filename.
-// Use full stem (including date) to avoid collisions for numeric-only slugs.
-function slugFromFilename(filename: string): string {
-  return filename.replace(/\.md$/, "");
-}
-
-export async function migrateCommand(args: string[]): Promise<void> {
-  const sub = args[0];
-  if (sub !== "import") {
-    console.error("Usage: cms migrate import [--content-dir path] [--data-dir path] [--dry-run]");
-    process.exit(1);
-  }
-
-  const flags = new Map<string, string>();
-  for (let i = 1; i < args.length; i++) {
-    if (args[i].startsWith("--")) {
-      const key = args[i].slice(2);
-      const next = args[i + 1];
-      if (next && !next.startsWith("--")) {
-        flags.set(key, next);
-        i++;
-      } else {
-        flags.set(key, "true");
+function generateFrontmatter(fields: Record<string, unknown>): string {
+  const lines: string[] = ["---"];
+  for (const [key, value] of Object.entries(fields)) {
+    if (value === undefined || value === null || value === "") continue;
+    if (Array.isArray(value)) {
+      if (value.length === 0) continue;
+      lines.push(`${key}:`);
+      for (const item of value) {
+        lines.push(`  - ${JSON.stringify(item)}`);
       }
+    } else {
+      lines.push(`${key}: ${JSON.stringify(value)}`);
     }
   }
-
-  const root = process.cwd();
-  const contentDir = flags.get("content-dir") ?? resolve(root, "src/content");
-  const dataDir = flags.get("data-dir") ?? resolve(root, "src/data");
-  const dryRun = flags.has("dry-run");
-
-  console.error("=== Migrating content ===");
-  await migrateContent(contentDir, dryRun);
-
-  console.error("\n=== Migrating data ===");
-  await migrateData(dataDir, dryRun);
-
-  console.error("\n=== Migrating config ===");
-  await migrateConfig(dataDir, dryRun);
+  lines.push("---");
+  return lines.join("\n");
 }
 
-const CONTENT_TYPES: ContentType[] = ["post", "note", "photo", "highlight", "page"];
-// Meta fields per type (fields that go into the meta JSON, not top-level)
-const META_FIELDS: Record<ContentType, string[]> = {
-  post: ["subtitle", "book_author", "movie_released", "media_image", "rating", "url"],
-  note: [],
-  photo: ["image", "location", "instagram"],
-  highlight: ["link", "url"],
-  page: ["layout", "url"],
-};
+function contentDir(type: string): string {
+  if (type === "post") return `${SITE_CONTENT}/blog`;
+  if (type === "note") return `${SITE_CONTENT}/note`;
+  if (type === "photo") return `${SITE_CONTENT}/photo`;
+  if (type === "highlight") return `${SITE_CONTENT}/highlight`;
+  return `${SITE_CONTENT}/${type}`;
+}
 
-async function migrateContent(contentDir: string, dryRun: boolean): Promise<void> {
-  let total = 0;
-  let errors = 0;
+export async function migrate() {
+  console.log("Fetching all data from CMS...");
+  const data = await cmsGet<ExportData>("/api/export?format=json");
+  console.log(`  ${data.content.length} content items`);
+  console.log(`  ${data.books.length} books, ${data.films.length} films, ${data.links.length} links`);
 
-  for (const type of CONTENT_TYPES) {
-    const dir = resolve(contentDir, type);
-    if (!existsSync(dir)) {
-      console.error(`  Skipping ${type}/ (not found)`);
+  // Create directories
+  const { mkdirSync, writeFileSync } = await import("fs");
+  for (const dir of ["blog", "note", "photo", "highlight"]) {
+    mkdirSync(`${SITE_CONTENT}/${dir}`, { recursive: true });
+  }
+  mkdirSync(SITE_DATA, { recursive: true });
+
+  // Export content
+  const counts: Record<string, number> = {};
+  const pageItems: typeof data.content = [];
+
+  for (const item of data.content) {
+    if (item.status !== "published") continue;
+    if (item.type === "page") {
+      pageItems.push(item);
       continue;
     }
 
-    const files = readdirSync(dir).filter((f) => f.endsWith(".md")).sort();
-    console.error(`  ${type}/: ${files.length} files`);
+    const dir = contentDir(item.type);
+    const datePrefix = item.date.slice(0, 10);
+    const filename = `${datePrefix}-${item.slug}.md`;
 
-    for (const file of files) {
-      const text = readFileSync(resolve(dir, file), "utf-8");
-      const parsed = parseFrontmatter(text);
-      if (!parsed) {
-        console.error(`    SKIP ${file}: no frontmatter`);
-        errors++;
-        continue;
-      }
+    const frontmatter: Record<string, unknown> = {
+      title: item.title,
+      date: item.date.slice(0, 10),
+    };
 
-      const { fields, body } = parsed;
-      const slug = (fields.slug as string) || slugFromFilename(file);
-      const title = String(fields.title ?? slug);
+    if (item.tags.length > 0) frontmatter.tags = item.tags;
 
-      // Extract date
-      let date = fields.date as string | undefined;
-      if (date) {
-        date = String(date);
-      } else {
-        // Try to extract from filename
-        const dateMatch = file.match(/^(\d{4}-\d{2}-\d{2})/);
-        date = dateMatch ? dateMatch[1] : new Date().toISOString();
-      }
-
-      // Extract tags
-      const tags = Array.isArray(fields.tags)
-        ? (fields.tags as string[])
-        : typeof fields.tags === "string" && fields.tags
-          ? [fields.tags]
-          : type === "post"
-            ? ["journal"]
-            : [];
-
-      // Build meta from type-specific fields
-      const metaFields = META_FIELDS[type] ?? [];
-      const meta: Record<string, unknown> = {};
-      for (const key of metaFields) {
-        if (fields[key] !== undefined && fields[key] !== "") {
-          meta[key] = fields[key];
-        }
-      }
-
-      const payload = {
-        type,
-        slug,
-        title,
-        body,
-        date,
-        status: "published" as const,
-        meta,
-        tags,
-      };
-
-      if (dryRun) {
-        console.error(`    DRY-RUN: ${type}/${slug}`);
-      } else {
-        try {
-          await api.post("/api/content", payload);
-          total++;
-          if (total % 50 === 0) console.error(`    ...${total} imported`);
-        } catch (e: unknown) {
-          if (e instanceof Error && e.message.includes("already exists")) {
-            // Update instead
-            try {
-              await api.put(`/api/content/${type}/${slug}`, {
-                title,
-                body,
-                date,
-                status: "published",
-                meta,
-                tags,
-              });
-              total++;
-            } catch (e2) {
-              console.error(`    ERROR ${type}/${slug}: ${e2}`);
-              errors++;
-            }
-          } else {
-            console.error(`    ERROR ${type}/${slug}: ${e}`);
-            errors++;
-          }
-        }
+    // Merge type-specific meta
+    for (const [key, value] of Object.entries(item.meta)) {
+      if (value !== null && value !== undefined && value !== "") {
+        frontmatter[key] = value;
       }
     }
+
+    let body = item.body ?? "";
+    if (body) body = transformShortcodes(body);
+
+    const content = body
+      ? `${generateFrontmatter(frontmatter)}\n\n${body}\n`
+      : `${generateFrontmatter(frontmatter)}\n`;
+
+    writeFileSync(`${dir}/${filename}`, content, "utf-8");
+    counts[item.type] = (counts[item.type] ?? 0) + 1;
   }
 
-  // Also handle links pages (now stored as "page" type) if they exist
-  const linksDir = resolve(contentDir, "links");
-  if (existsSync(linksDir)) {
-    const files = readdirSync(linksDir).filter((f) => f.endsWith(".md"));
-    console.error(`  links/ (as page): ${files.length} files`);
-    for (const file of files) {
-      const text = readFileSync(resolve(linksDir, file), "utf-8");
-      const parsed = parseFrontmatter(text);
-      if (!parsed) continue;
-      const slug = slugFromFilename(file);
-      const payload = {
-        type: "page" as const,
-        slug,
-        title: String(parsed.fields.title ?? slug),
-        body: parsed.body,
-        date: String(parsed.fields.date ?? new Date().toISOString()),
-        status: "published" as const,
-        meta: parsed.fields.url ? { url: parsed.fields.url } : {},
-        tags: [],
-      };
-      if (!dryRun) {
-        try {
-          await api.post("/api/content", payload);
-          total++;
-        } catch {
-          // Ignore duplicates
-        }
-      }
+  // Export pages as standalone .md files
+  for (const page of pageItems) {
+    const url = (page.meta.url as string) ?? page.slug;
+    const cleanPath = url.replace(/^\//, "").replace(/\/$/, "");
+    if (!cleanPath) continue;
+
+    // Only export known standalone pages
+    const standalonePages = ["now", "uses", "blogroll"];
+    const pageName = cleanPath.split("/").pop();
+    if (!pageName || !standalonePages.includes(pageName)) {
+      console.log(`  Skipping page: ${cleanPath} (not standalone)`);
+      continue;
     }
-  }
 
-  console.error(`\nContent migration: ${total} imported, ${errors} errors`);
-}
-
-async function migrateData(dataDir: string, dryRun: boolean): Promise<void> {
-  // Books
-  for (const shelf of ["read", "reading", "toread"]) {
-    const path = resolve(dataDir, `books/${shelf}.json`);
-    if (!existsSync(path)) continue;
-    const items = JSON.parse(readFileSync(path, "utf-8"));
-    console.error(`  books/${shelf}.json: ${items.length} items`);
-    if (!dryRun) {
-      await api.post("/api/sync/books", { shelf, items });
-    }
-  }
-
-  // Films
-  for (const list of ["watched", "towatch"]) {
-    const path = resolve(dataDir, `films/${list}.json`);
-    if (!existsSync(path)) continue;
-    const items = JSON.parse(readFileSync(path, "utf-8"));
-    console.error(`  films/${list}.json: ${items.length} items`);
-    if (!dryRun) {
-      await api.post("/api/sync/films", { list, items });
-    }
-  }
-
-  // Links
-  const linksPath = resolve(dataDir, "links.json");
-  if (existsSync(linksPath)) {
-    const items = JSON.parse(readFileSync(linksPath, "utf-8"));
-    console.error(`  links.json: ${items.length} items`);
-    if (!dryRun) {
-      await api.post("/api/sync/links", { items });
-    }
-  }
-}
-
-async function migrateConfig(dataDir: string, dryRun: boolean): Promise<void> {
-  const configPath = resolve(dataDir, "content_config.json");
-  if (!existsSync(configPath)) {
-    console.error("  No content_config.json found");
-    return;
-  }
-
-  const config = JSON.parse(readFileSync(configPath, "utf-8"));
-
-  if (config.exclude_tags && !dryRun) {
-    await api.put("/api/data/config/exclude_tags", {
-      value: config.exclude_tags,
+    const frontmatter = generateFrontmatter({
+      layout: "../layouts/Plain.astro",
+      title: page.title,
     });
-    console.error(`  exclude_tags: ${config.exclude_tags.length} tags`);
+    const body = page.body ? transformShortcodes(page.body) : "";
+    const content = body
+      ? `${frontmatter}\n\n${body}\n`
+      : `${frontmatter}\n`;
+    writeFileSync(`${SITE_PAGES}/${pageName}.md`, content, "utf-8");
+    console.log(`  Page: ${pageName}.md`);
   }
 
-  if (config.map_tag_names && !dryRun) {
-    await api.put("/api/data/config/map_tag_names", {
-      value: config.map_tag_names,
-    });
-    console.error(`  map_tag_names: ${Object.keys(config.map_tag_names).length} mappings`);
+  // Export library data
+  const shelves = ["read", "reading", "toread"] as const;
+  for (const shelf of shelves) {
+    const books = data.books
+      .filter((b) => b.shelf === shelf)
+      .map(({ title, author, date_updated, image_url, hardcover_url }) => ({
+        title, author, date_updated, image_url, hardcover_url,
+      }));
+    writeFileSync(`${SITE_DATA}/books-${shelf}.json`, JSON.stringify(books, null, 2), "utf-8");
+    console.log(`  books-${shelf}.json: ${books.length} items`);
+  }
+
+  const filmLists = ["watched", "towatch"] as const;
+  for (const list of filmLists) {
+    const films = data.films
+      .filter((f) => f.list === list)
+      .map(({ name, year, date_updated }) => ({ name, year, date_updated }));
+    writeFileSync(`${SITE_DATA}/films-${list}.json`, JSON.stringify(films, null, 2), "utf-8");
+    console.log(`  films-${list}.json: ${films.length} items`);
+  }
+
+  const links = data.links.map(({ title, url, date, excerpt, cover, tags }) => ({
+    title, url, date, excerpt, cover, tags,
+  }));
+  writeFileSync(`${SITE_DATA}/links.json`, JSON.stringify(links, null, 2), "utf-8");
+  console.log(`  links.json: ${links.length} items`);
+
+  // Export config
+  writeFileSync(`${SITE_DATA}/config.json`, JSON.stringify(data.config, null, 2), "utf-8");
+  console.log(`  config.json`);
+
+  console.log("\nContent exported:");
+  for (const [type, count] of Object.entries(counts)) {
+    console.log(`  ${type}: ${count} files`);
   }
 }
