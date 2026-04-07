@@ -2,6 +2,7 @@
   /* Plain pages (now, uses, etc.) */
   .single-main {
     max-width: var(--width-content);
+    margin: 0 auto;
     padding: var(--space-2xl) 0 var(--space-3xl);
   }
 
@@ -211,6 +212,7 @@
   /* Writing list */
   .writing-list {
     max-width: var(--width-content);
+    margin: 0 auto;
     padding: var(--space-2xl) 0;
   }
 
