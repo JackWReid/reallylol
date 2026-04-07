@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import { getPrettyName, tagToSlug } from "../../lib/tags";
 
-const posts = await getCollection("post");
+const posts = await getCollection("blog");
 const photos = await getCollection("photo");
 const highlights = await getCollection("highlight");
 
