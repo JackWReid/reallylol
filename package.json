@@ -3,46 +3,21 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev:cms": "bunx wrangler dev --port 8788",
-    "dev:cms:remote": "bunx wrangler dev --port 8788 --remote",
-    "dev:site": "cd site && bunx astro dev",
-    "build:ui": "cd cms/ui && bunx vite build --outDir ../public",
-    "build:site": "cd site && bunx astro build",
-    "build:site:prod": "cd site && CMS_API_URL=https://cms.really.lol bunx astro build",
-    "build": "bun run build:ui && bun run build:site",
-    "deploy:cms": "bun run build:ui && bunx wrangler deploy",
-    "deploy:site": "bun run build:site:prod && bunx wrangler pages deploy site/dist --project-name reallylol",
-    "deploy": "bun run deploy:cms && bun run deploy:site",
-    "cms": "bun cli/src/index.ts",
-    "db:migrate": "bunx wrangler d1 migrations apply reallylol --local",
-    "db:migrate:prod": "bunx wrangler d1 migrations apply reallylol --remote",
-    "test": "bun test",
-    "test:e2e": "cd site && playwright test",
-    "cli": "bun scripts/cli.ts",
-    "r2:sync": "bun scripts/cli.ts r2 sync",
-    "r2:verify": "bun scripts/cli.ts r2 verify"
+    "dev": "cd site && bunx astro dev",
+    "build": "cd site && bunx astro build",
+    "preview": "cd site && bunx astro preview",
+    "deploy": "bun run build && bunx wrangler pages deploy site/dist --project-name reallylol",
+    "cli": "bun cli/src/index.ts",
+    "test": "bun test"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "12",
-    "@astrojs/preact": "4",
     "@astrojs/rss": "^4.0.0",
     "@astrojs/sitemap": "^3.0.0",
-    "@cloudflare/workers-types": "^4.20260404.1",
-    "@preact/signals": "^2.9.0",
-    "astro": "5",
-    "drizzle-orm": "^0.45.2",
-    "fflate": "^0.8.2",
-    "hono": "^4.12.10",
-    "preact": "^10.29.1",
-    "preact-router": "^4.1.2",
-    "unist-util-visit": "^5.1.0"
+    "astro": "5"
   },
   "devDependencies": {
-    "@aws-sdk/lib-storage": "^3.1024.0",
-    "@playwright/test": "^1.58.2",
-    "@preact/preset-vite": "^2.10.5",
+    "@aws-sdk/client-s3": "^3.1024.0",
     "bun-types": "latest",
-    "typescript": "^5.0.0",
-    "vite": "^8.0.3"
+    "typescript": "^5.0.0"
   }
 }
