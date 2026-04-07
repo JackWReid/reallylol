@@ -5,6 +5,7 @@ tags:
   - "books"
   - "history"
   - "nyc"
+link: "https://www.villagevoice.com/2017/09/20/keepers-of-the-secrets/"
 ---
 
 > But the real gem of the library, in Lannon’s view, is the stuff that you can find only in boxes like the ones now strewn across the table. “You can get a book anywhere,” he said. “An archive exists in one location.” The room we’re standing in is the only place that you can read, say, the week’s worth of journal entries in which New York Times editor Abe Rosenthal contemplates publishing the Pentagon Papers. It’s the only place where you can read the collected papers of Robert Moses, or a letter T.S. Eliot wrote about Ulysses to James Joyce’s Paris publisher, Sylvia Beach.

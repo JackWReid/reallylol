@@ -6,6 +6,7 @@ tags:
   - "justice"
   - "race"
   - "nyc"
+link: "https://gothamist.com/news/robert-caro-wonders-what-new-york-is-going-to-become"
 ---
 
 > I remember his aide, Sid Shapiro, who I spent a lot of time getting to talk to me, he finally talked to me. And he had this quote that I’ve never forgotten. He said Moses didn’t want poor people, particularly poor people of color, to use Jones Beach, so they had legislation passed forbidding the use of buses on parkways.

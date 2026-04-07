@@ -7,6 +7,7 @@ tags:
   - "politics"
   - "history"
   - "usa"
+link: "https://www.nytimes.com/2020/06/26/opinion/confederate-monuments-racism.html"
 ---
 
 > I am a black, Southern woman, and of my immediate white male ancestors, all of them were rapists. My very existence is a relic of slavery and Jim Crow.

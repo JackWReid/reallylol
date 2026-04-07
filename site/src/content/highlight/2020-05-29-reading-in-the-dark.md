@@ -1,6 +1,7 @@
 ---
 title: "Reading in the dark"
 date: "2020-05-29"
+link: "https://www.cassie.codes/posts/reading-in-the-dark/"
 ---
 
 > I'll often be too engrossed to notice the sunlight slowly fading. I'll just stubbornly carry on reading, the book getting gradually closer to my face, squinting to make out the words. At some point my partner walks in, sees me peering at my book in the dark, and flicks on the light.

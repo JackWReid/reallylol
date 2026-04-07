@@ -1,6 +1,7 @@
 ---
 title: "In Praise of the Walking Coffee"
 date: "2020-06-22"
+link: "https://www.grubstreet.com/2020/05/in-praise-of-the-walking-coffee.html"
 ---
 
 > Walking doesn't improve the taste of coffee, but coffee improves the experience of being in the world. It blunts the harsher edges. Without coffee, there is public space and private space. With coffee, the whole city is your living room.

@@ -1,6 +1,7 @@
 ---
 title: "Neofeudalism: The End of Capitalism?"
 date: "2020-05-28"
+link: "https://lareviewofbooks.org/article/neofeudalism-the-end-of-capitalism/"
 ---
 
 > A third feature of neofeudalism is the spatiality associated with feudalism, one of protected, often lively centers surrounded by agricultural and desolate hinterlands. We might also characterize this as a split between town and country, municipal and rural areas, urban communes and the surrounding countryside, or, more abstractly between an inside walled off from an outside, a division between what is secure and what is at risk, who is prosperous and who is desperate. Wood says that medieval cities were essentially oligarchies, "with dominant classes enriched by commerce and financial services for kings, emperors and popes. Collectively, they dominated the surrounding countryside ... extracting wealth from it in one way or another." Outside the cities were the nomads and migrants who, facing unbearable conditions, sought new places to live and work yet all too often came up against the walls.

@@ -4,6 +4,7 @@ date: "2020-09-24"
 tags:
   - "climate"
   - "news"
+link: "https://www.oregonlive.com/pacific-northwest-news/2020/09/the-desperate-fight-to-save-his-family-ends-in-tragedy.html"
 ---
 
 > Wyatt had been found.

@@ -3,6 +3,7 @@ title: "This candle doesn't smell of anything"
 date: "2020-12-03"
 tags:
   - "covid-19"
+link: "https://kottke.org/20/11/speculation-scented-candle-ratings-down-due-to-covid-19-loss-of-smell"
 ---
 
 > After Terri Nelson noticed people complaining online about a lack of scent from newly purchased scented candles, Kate Petrova analyzed Amazon reviews for candles from the past three years and found a drop in ratings for scented candles beginning in January 2020 (compared to a smaller ratings decline for unscented candles).

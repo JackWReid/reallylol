@@ -6,6 +6,7 @@ tags:
   - "justice"
   - "history"
   - "uk"
+link: "https://www.theguardian.com/commentisfree/2020/jun/23/british-business-slave-trade-university-college-london-slave-owners?CMP=share_btn_tw"
 ---
 
 > The history of Greene King gives a glimpse into some of these entanglements. Benjamin Greene started off as an apprentice to the leading brewing firm Whitbread in London, and would go on to inherit estates in the island of St Kitts, becoming one of many absentee slave owners living off their Caribbean property. Once emancipation happened he was one of the 4,000 people in Britain (20% of whom were women) who received compensation. His share was £4,000 – £270,000 in today’s money – for 1,396 enslaved men and women in St Kitts and Montserrat.

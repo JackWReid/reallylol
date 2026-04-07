@@ -7,6 +7,7 @@ tags:
   - "trans"
   - "philosophy"
   - "theory"
+link: "https://www.newstatesman.com/international/2020/09/judith-butler-culture-wars-jk-rowling-and-living-anti-intellectual-times"
 ---
 
 > Q: In Gender Trouble you asked whether, by seeking to represent a particular idea of women, feminists participate in the same dynamics of oppression and heteronormativity that they are trying to shift. In the light of the bitter arguments playing out within feminism now, does the same still apply? 

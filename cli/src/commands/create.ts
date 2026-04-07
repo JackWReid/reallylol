@@ -121,8 +121,12 @@ export async function create(type: string, args: string[], opts: CreateOptions) 
   } else if (type === "highlight") {
     let link = opts.link ?? "";
     if (isInteractive) {
-      link = await ask("Source URL");
+      link = await ask("Source URL (required)");
       body = await ask("Quote (use > prefix)", "");
+    }
+    if (!link) {
+      console.error("Error: highlights require a source URL (--link)");
+      process.exit(1);
     }
     const frontmatter = generateFrontmatter({ title, date, link, tags });
     const dir = `${CONTENT_DIR}/highlight`;

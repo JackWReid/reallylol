@@ -5,6 +5,7 @@ tags:
   - "food"
   - "nature"
   - "history"
+link: "https://www.atlasobscura.com/articles/grapefruit-history-and-drug-interactions"
 ---
 
 > With the exception of those weirdos like the finger lime, all other citrus fruits are derived from natural and, before long, artificial crossbreeding, and then crossbreeding the crossbreeds, and so on, of those three fruits. Mix certain pomelos and certain mandarins and you get a sour orange. Cross that sour orange with a citron and you get a lemon. It’s a little bit like blending and reblending primary colors. Grapefruit is a mix between the pomelo—a base fruit—and a sweet orange, which itself is a hybrid of pomelo and mandarin.

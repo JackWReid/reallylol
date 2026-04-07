@@ -10,6 +10,7 @@ tags:
   - "covid-19"
   - "usa"
   - "america"
+link: "https://www.buzzfeednews.com/article/venessawong/eviction-mental-health-pandemic?bftwnews&utm_term=4ldqpgc#4ldqpgc"
 ---
 
 > Due to the health crisis, support from neighbors in the absence of a family or other social network to fall back on could become rarer, said Nan Roman, president and CEO of the National Alliance to End Homelessness. “Usually when people get evicted, they pull something together. They either stay with family or someone lets them stay for a while, and then they move on to someplace else. Most commonly, even among low-income people, they do eventually get into housing, in normal times,” she said. But for those who aren’t able to figure something out, “it could be the beginning of a downward spiral that ends in homelessness.”

@@ -7,6 +7,7 @@ tags:
   - "capitalism"
   - "indie"
   - "indieweb"
+link: "https://www.rfc-editor.org/rfc/rfc8890.txt"
 ---
 
 > Many who participate in the IETF are most comfortable making what we believe to be purely technical decisions; our process favors technical merit through our well-known mantra of "rough consensus and running code."

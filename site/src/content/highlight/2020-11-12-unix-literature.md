@@ -5,6 +5,7 @@ tags:
   - "tech"
   - "code"
   - "unix"
+link: "http://theody.net/elements.html"
 ---
 
 > But the most recurrent complaint was that it was too text-oriented. People really hated the command line, with all the utilities, obscure flags, and arguments they had to memorize. They hated all the typing. One mislaid character and you had to start over. Interestingly, this complaint came most often from users of the GUI-laden Macintosh or Windows platforms. People who had slaved away on DOS batch scripts or spent their days on character-based terminals of multiuser non-UNIX machines were less likely to express the same grievance.

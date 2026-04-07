@@ -1,6 +1,7 @@
 ---
 title: "The Bosses Are In Their Country Houses"
 date: "2020-06-22"
+link: "https://www.nytimes.com/2020/06/14/business/media/media-executives-hamptons.html"
 ---
 
 > I was Ms. Jamieson’s editor at BuzzFeed News until earlier this year, and I couldn’t help thinking this was about me, since I headed up to Columbia County, N.Y., in early March, and so I called Ms. Jamieson, 34, an Australian native who lives in a studio in Bedford-Stuyvesant, to ask her what she meant.

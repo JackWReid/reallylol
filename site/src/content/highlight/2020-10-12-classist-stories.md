@@ -6,6 +6,7 @@ tags:
   - "literature"
   - "class"
   - "justice"
+link: "https://mythcreants.com/blog/five-signs-your-story-is-classist/"
 ---
 
 > We’ve all seen sporadically employed heroes go home to expensive digs. Jessica Jones lives in Manhattan and, like any noir PI, struggles to get paid. Yet somehow she has an apartment that would cost several thousand a month all to herself. Angel does his unpaid rescue work in Los Angeles and gets an entire hotel for his operation. In the recent Picard show, Raffi complains about being poor but lives in an appealing future rustic home in a scenic park.

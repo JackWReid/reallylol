@@ -1,6 +1,7 @@
 ---
 title: "On Skye, Nursing Home Deaths Expose a Covid-19 Scandal"
 date: "2020-05-27"
+link: "https://www.nytimes.com/2020/05/25/world/europe/coronavirus-uk-nursing-homes.html"
 ---
 
 > But management told workers to wear masks only around suspected coronavirus patients  an approach that Ms. Harris, in her complaint, compared to closing the gate after the horse has bolted. The company told her that aides who wanted masks were provided with them starting April 9. Not until April 18, a week before the outbreak, were masks required.

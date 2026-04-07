@@ -5,6 +5,7 @@ tags:
   - "politics"
   - "social media"
   - "facebook"
+link: "https://www.buzzfeednews.com/article/craigsilverman/facebook-ignore-political-manipulation-whistleblower-memo"
 ---
 
 > Zhang discovered inauthentic activity — a Facebook term for engagement from bot accounts and coordinated manual accounts— in Bolivia and Ecuador but chose “not to prioritize it,” due to her workload. The amount of power she had as a mid-level employee to make decisions about a country’s political outcomes took a toll on her health.

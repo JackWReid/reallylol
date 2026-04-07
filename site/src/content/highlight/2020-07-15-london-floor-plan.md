@@ -7,6 +7,7 @@ tags:
   - "cities"
   - "history"
   - "architecture"
+link: "https://www.bloomberg.com/news/articles/2020-01-10/the-story-behind-london-s-iconic-home-design"
 ---
 
 > For a city that’s long been the repository of vast commercial, imperial, and industrial wealth, this might seem a very modest template. However, it is one that can be easily scaled up, points out Edward Denison, associate professor at the Bartlett School of Architecture and author of The Life of the British Home: An Architectural History.

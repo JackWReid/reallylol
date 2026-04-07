@@ -1,6 +1,7 @@
 ---
 title: "How South Asian corner shop culture helped the UK survive Covid-19"
 date: "2020-08-11"
+link: "https://gal-dem.com/how-south-asian-corner-shop-culture-helped-the-uk-survive-covid-19"
 ---
 
 > Sultan, Priyesh and Asiyah have symbiotic relationships with their local communities, but their accounts of running a corner shop are still prefaced by the institutional racism that runs through Britain's history. In the 1970s and 1980s, South Asian factory workers in the UK began to lose their jobs after the decline of traditional labour-intensive industries. 

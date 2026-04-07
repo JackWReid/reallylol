@@ -1,6 +1,7 @@
 ---
 title: "How Phoebe Bridgers Made 'Punisher'"
 date: "2020-05-28"
+link: "https://www.rollingstone.com/music/music-features/phoebe-bridgers-punisher-interview-1002273/"
 ---
 
 > I love them. True dudes.

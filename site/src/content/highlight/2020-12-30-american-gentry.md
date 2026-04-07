@@ -6,6 +6,7 @@ tags:
   - "usa"
   - "capitalism"
   - "class"
+link: "https://patrickwyman.substack.com/p/american-gentry"
 ---
 
 > But very few of my classmates really belonged to the area’s elite. It wasn’t a city of international oligarchs, but one dominated by its wealthy, largely agricultural property-owning class. They mostly owned, and still own, fruit companies: apples, cherries, peaches, and now hops and wine-grapes. The other large-scale industries in the region, particularly commercial construction, revolve at a fundamental level around agriculture: They pave the roads on which fruits and vegetables are transported to transshipment points, build the warehouses where the produce is stored, and so on.

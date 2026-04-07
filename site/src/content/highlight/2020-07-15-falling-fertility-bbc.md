@@ -3,6 +3,7 @@ title: "Falling Fertility Rates"
 date: "2020-07-15"
 tags:
   - "tag"
+link: "https://www.bbc.co.uk/news/health-53409521"
 ---
 
 > Falling fertility rates mean nearly every country could have shrinking populations by the end of the century.
