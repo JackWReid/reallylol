@@ -1,4 +1,10 @@
 ---
+interface Props {
+  currentPage?: number;
+  lastPage?: number;
+}
+
+const { currentPage, lastPage } = Astro.props;
 const pathname = Astro.url.pathname;
 
 const navItems = [
@@ -15,9 +21,16 @@ function isActive(href: string): boolean {
   if (href === "/blog/") return pathname.startsWith("/blog/") || pathname.startsWith("/post/");
   return pathname.startsWith(href);
 }
+
+const showPageIndicator = currentPage && lastPage && lastPage > 1;
 ---
 <header class="site-header">
-  <a href="/" class="site-header__logo">really.lol</a>
+  <div class="site-header__left">
+    <a href="/" class="site-header__logo">really.lol</a>
+    {showPageIndicator && (
+      <span class="site-header__page">p. {currentPage}/{lastPage}</span>
+    )}
+  </div>
   <nav class="site-header__nav" aria-label="Main navigation">
     {navItems.map((item) => (
       <a

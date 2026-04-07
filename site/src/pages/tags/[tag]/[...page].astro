@@ -90,7 +90,7 @@ function itemUrl(type: string, slug: string): string {
 }
 ---
 
-<Base title={`#${getPrettyName(tag)}`}>
+<Base title={`#${getPrettyName(tag)}`} currentPage={page.currentPage} lastPage={page.lastPage}>
   <main class="tag-archive">
     <h1>#{getPrettyName(tag)}</h1>
     <p class="tag-archive__count">{page.total} items</p>

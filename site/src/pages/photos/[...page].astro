@@ -10,7 +10,7 @@ export const getStaticPaths = (async ({ paginate }) => {
   const sorted = photos.sort(
     (a, b) => b.data.date.getTime() - a.data.date.getTime()
   );
-  return paginate(sorted, { pageSize: 40 });
+  return paginate(sorted, { pageSize: 39 });
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
@@ -23,7 +23,7 @@ function formatDate(date: Date): string {
 }
 ---
 
-<Base title="Photos" section="photos">
+<Base title="Photos" section="photos" currentPage={page.currentPage} lastPage={page.lastPage}>
   <main>
     <div class="photo-gallery">
       <div class="photo-grid">

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import { tagToSlug } from "../../lib/tags";
 
 const highlights = await getCollection("highlight");
 const sorted = highlights.sort(
@@ -38,6 +39,9 @@ function getDomain(url: string): string {
                 <a href={h.data.link} target="_blank" rel="noopener">{getDomain(h.data.link)}</a>
               )}
               <span class="links-saved__date">{formatDate(h.data.date)}</span>
+              {h.data.tags && h.data.tags.map((tag: string) => (
+                <a href={`/tags/${tagToSlug(tag)}/`}>#{tag}</a>
+              ))}
             </div>
           </div>
         ))}

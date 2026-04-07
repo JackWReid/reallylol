@@ -25,7 +25,7 @@ function formatDate(date: Date): string {
 }
 ---
 
-<Base title="Notes" section="notes">
+<Base title="Notes" section="notes" currentPage={page.currentPage} lastPage={page.lastPage}>
   <main class="notes-list">
     {page.currentPage === 1 && (
       <div class="notes-hero">

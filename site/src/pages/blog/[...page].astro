@@ -25,7 +25,7 @@ function formatDate(date: Date): string {
 }
 ---
 
-<Base title="Blog" section="writing">
+<Base title="Blog" section="writing" currentPage={page.currentPage} lastPage={page.lastPage}>
   <main class="writing-list">
     {page.data.map((post) => (
       <article class="writing-item">

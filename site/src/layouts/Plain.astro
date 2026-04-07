@@ -2,11 +2,18 @@
 import Base from "./Base.astro";
 
 interface Props {
-  title: string;
+  title?: string;
   description?: string;
+  frontmatter?: {
+    title?: string;
+    description?: string;
+  };
 }
 
-const { title, description } = Astro.props;
+// When used as a layout for .md files, Astro passes frontmatter as a nested prop.
+// When used directly as an Astro component, props are passed at the top level.
+const title = Astro.props.frontmatter?.title ?? Astro.props.title ?? "";
+const description = Astro.props.frontmatter?.description ?? Astro.props.description;
 ---
 <Base title={title} description={description}>
   <main class="single-main">

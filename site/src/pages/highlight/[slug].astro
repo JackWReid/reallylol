@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import { tagToSlug } from "../../lib/tags";
 
 export async function getStaticPaths() {
   const highlights = await getCollection("highlight");
@@ -36,5 +37,12 @@ function formatDate(date: Date): string {
       )}
       <time class="highlight-single__date">{formatDate(highlight.data.date)}</time>
     </div>
+    {highlight.data.tags && highlight.data.tags.length > 0 && (
+      <div class="writing-single__tags">
+        {highlight.data.tags.map((tag: string) => (
+          <a href={`/tags/${tagToSlug(tag)}/`}>#{tag}</a>
+        ))}
+      </div>
+    )}
   </main>
 </Base>
