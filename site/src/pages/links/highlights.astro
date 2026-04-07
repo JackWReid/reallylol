@@ -30,18 +30,18 @@ function getDomain(url: string): string {
         <a href="/links/highlights" class="active">Highlights</a>
         <a href="/links/blogroll">Blogroll</a>
       </div>
-      <div class="links-highlights">
+      <div class="links-saved">
         {sorted.map((h) => (
-          <div class="links-highlights__item">
-            <a href={`/highlight/${h.id.replace(/\.md$/, "")}/`} class="links-highlights__title">{h.data.title}</a>
+          <div class="links-saved__item">
+            <div class="links-saved__header">
+              <a href={`/highlight/${h.id.replace(/\.md$/, "")}/`} class="links-saved__title">{h.data.title}</a>
+              {h.data.link && <span class="links-saved__domain">{getDomain(h.data.link)}</span>}
+            </div>
             <div class="links-saved__meta">
-              {h.data.link && (
-                <a href={h.data.link} target="_blank" rel="noopener">{getDomain(h.data.link)}</a>
-              )}
-              <span class="links-saved__date">{formatDate(h.data.date)}</span>
               {h.data.tags && h.data.tags.map((tag: string) => (
                 <a href={`/tags/${tagToSlug(tag)}/`}>#{tag}</a>
               ))}
+              <span class="links-saved__date">{formatDate(h.data.date)}</span>
             </div>
           </div>
         ))}
