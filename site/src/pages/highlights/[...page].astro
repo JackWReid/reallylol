@@ -14,6 +14,7 @@ export const getStaticPaths = (async ({ paginate }) => {
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
+const preamble = "These are interesting excerpts I've clipped from articles online. I also have a <a href=\"/links/saved\">directory of links</a> (not necessarily articles) that are worth returning to.";
 
 function formatDate(date: Date): string {
   return date.toLocaleDateString("en-GB", {
@@ -35,6 +36,9 @@ function getDomain(url: string): string {
 <Base title="Highlights" section="links" currentPage={page.currentPage} lastPage={page.lastPage}>
   <main class="highlights-list">
     <h1>Highlights</h1>
+    {page.currentPage === 1 && (
+      <p class="page-preamble" set:html={preamble} />
+    )}
     {page.data.map((h) => (
       <article class="links-highlights__item">
         <a href={`/highlight/${h.id.replace(/\.md$/, "")}/`} class="links-highlights__title">{h.data.title}</a>
