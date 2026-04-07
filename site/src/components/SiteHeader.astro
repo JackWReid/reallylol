@@ -22,7 +22,7 @@ function isActive(href: string): boolean {
   return pathname.startsWith(href);
 }
 
-const showPageIndicator = currentPage && lastPage && lastPage > 1;
+const showPageIndicator = currentPage && currentPage > 1 && lastPage && lastPage > 1;
 ---
 <header class="site-header">
   <div class="site-header__left">
