@@ -14,8 +14,13 @@ describe("generateSummary", () => {
     expect(result.split(" ").length).toBe(70); // 70 words, last ends with "…"
   });
 
-  test("strips Hugo shortcodes", () => {
-    const body = 'Text before. {{< image src="foo.jpg" >}} Text after.';
+  test("strips HTML figures", () => {
+    const body = 'Text before. <figure><img src="foo.jpg"><figcaption>Cap</figcaption></figure> Text after.';
+    expect(generateSummary(body)).toBe("Text before.  Text after.");
+  });
+
+  test("strips HTML audio", () => {
+    const body = 'Text before. <audio src="foo.m4a" controls></audio> Text after.';
     expect(generateSummary(body)).toBe("Text before.  Text after.");
   });
 
