@@ -1,131 +1,114 @@
 # really.lol
 
-Personal blog at https://really.lol. Astro site on Cloudflare Pages with a custom CMS on Cloudflare Workers. British English (`en-gb`).
+Personal blog at https://really.lol. Pure static Astro site on Cloudflare Pages with a Bun CLI for content management. British English (`en-gb`).
 
 ## Architecture
 
-Three sub-projects in one repo:
+```
+site/       # Astro static site - deployed on CF Pages
+cli/        # CLI tool (Bun) - content creation, media management, library sync
+```
 
-```
-cms/        # CMS Worker (Hono + D1 + R2) - serves API + admin UI at cms.really.lol
-site/       # Astro site - fetches from CMS at build time, deployed on CF Pages
-cli/        # CMS CLI tool (Bun) - content management, data sync, migration, export
-shared/     # Shared TypeScript types
-scripts/    # Legacy CLI (pre-CMS) - R2 sync only
-```
+No CMS, no database, no Workers adapter. Content lives in markdown files (Astro content collections) and JSON fixtures committed to the repo.
 
 ## Stack
 
-- **Astro 5** with Cloudflare adapter - static site with hybrid SSR (in `site/`)
-- **Preact** - Astro Islands for client-side pagination (books, films, links pages)
-- **Hono** - CMS API framework on Cloudflare Workers (in `cms/`)
-- **D1** (SQLite) - content database
-- **R2** - media storage at `media.really.lol`
-- **Bun** - JS runtime for CLI, scripts, and tests
-- **Drizzle ORM** - database schema and queries
-- **Preact + CodeMirror 6** - admin UI (in `cms/ui/`)
+- **Astro 5** - static output, deployed to Cloudflare Pages
+- **Bun** - JS runtime for CLI and scripts
+- **R2** - media storage at `media.really.lol` (existing bucket, unchanged)
+- **@aws-sdk/client-s3** - R2 access from CLI
 
-## Site Build
+## Content
 
-Content is fetched from the CMS API at build time via custom Astro content loaders (`site/src/lib/cms-loader.ts`). Markdown bodies are rendered through Astro's pipeline (including remark-hugo-shortcodes). No local content files - the CMS is the single source of truth.
+All content is markdown in Astro content collections under `site/src/content/`:
 
-**Hybrid SSR:** Most pages are statically prerendered. Photo detail pages (`/photo/[slug]`) use `prerender = false` and are server-rendered on-demand via CF Workers to avoid building ~2600 static pages. The content store is bundled into the worker, so there is no runtime CMS dependency.
+| Collection | Directory | Frontmatter | Notes |
+|-----------|-----------|-------------|-------|
+| **blog** | `content/blog/` | title, date, tags, subtitle, book_author, movie_released, media_image, rating, url | Blog posts, media reviews (medialog tag), link roundups |
+| **note** | `content/note/` | title, date | Microblog entries |
+| **photo** | `content/photo/` | title, date, image, location, tags, instagram | Image path like `img/photo/2024-01-01-slug.jpg` |
+| **highlight** | `content/highlight/` | title, date, link, tags | Blockquote excerpts from articles/books |
 
-**Data pages** (books, films, links) use Preact Islands (`client:load`) for client-side pagination (24 items per page).
+Filenames follow `YYYY-MM-DD-slug.md`. Tags are arrays in frontmatter.
 
-## Content Types
+## Data Fixtures
 
-All content is stored in D1, managed via the CMS API or CLI.
+Library data lives as committed JSON in `site/src/data/`:
 
-| Type | Meta fields | Notes |
-|------|-------------|-------|
-| **post** | subtitle, book_author, movie_released, media_image, rating, url | Multipurpose: journal, media reviews (tags: medialog), link roundups |
-| **note** | (none) | Microblog entries |
-| **photo** | image (R2 key), location, instagram | Image path like `img/photo/2024-01-01-slug.jpg` |
-| **highlight** | link | Blockquote excerpts from articles/books |
-| **page** | layout, url | Static pages: /now, /uses, /links/blogroll, /links/saved |
+- `books-read.json`, `books-reading.json`, `books-toread.json`
+- `films-watched.json`, `films-towatch.json`
+- `links.json`
+- `config.json` (tag mappings, excluded tags)
 
-Tags are stored as a many-to-many relation, not in the meta JSON.
+## CLI
 
-## CMS CLI
-
-Entry: `bun run cms <command>` or `bun cli/src/index.ts <command>`
-
-All commands output JSON by default. Use `--format table` for human-readable output.
+Entry: `bun run cli` or `bun cli/src/index.ts`
 
 ```bash
-# Content CRUD
-cms content list [--type post] [--status published] [--limit 20]
-cms content get <type> <slug>
-cms content create <type> --title "..." [--body "..." | --file path.md] [--tags a,b] [--meta '{}']
-cms content edit <type> <slug> [--title "..." --body "..." --tags a,b --status published]
-cms content delete <type> <slug>
-
-# Data sync (pipe from external CLIs)
-cover books --shelf read --json | cms sync books --shelf read
-curtain diary --json | cms sync films --list watched
-cms sync links                      # Pulls from Raindrop API directly
+# Content creation
+cli create post --title "..." [--body "..." --tags a,b --subtitle "..."]
+cli create photo <image-file> [--title "..." --location "..." --tags a,b]
+cli create note --title "..."
+cli create highlight --title "..." --link "..." [--body "> quote" --tags a,b]
 
 # Media management
-cms media upload <path> [--prefix img/photo]
-cms media list [--kind image] [--prefix img/photo]
-cms media verify                    # Check all content media refs exist in R2
+cli media upload <file> [--prefix img/post/slug]
+cli media verify              # Check all content media refs exist in R2
+cli media orphans             # List R2 objects not referenced by content
 
-# Export (no-lock-in guarantee)
-cms export [--format markdown|json] [--output ./backup]
-
-# One-time migration
-cms migrate import [--content-dir path] [--data-dir path]
+# Library sync (pipe from external CLIs)
+cover books --shelf read --json | cli library sync books --shelf read
+curtain diary --json | cli library sync films --list watched
+cli library sync links        # Pulls from Raindrop API directly
 ```
-
-## CMS API
-
-Base URL: `http://localhost:8788` (dev) or `https://cms.really.lol` (prod)
-
-Auth: `Authorization: Bearer <API_KEY>` on all `/api/*` endpoints.
-
-Key endpoints:
-- `GET/POST /api/content` - list/create content
-- `GET/PUT/DELETE /api/content/:type/:slug` - single content item
-- `GET /api/tags` - all tags with counts
-- `POST /api/media/upload` - upload to R2
-- `POST /api/sync/{books,films,links}` - bulk data sync
-- `GET /api/data/{books,films,links,random-photos,config}` - read-only data for site builds
-- `POST /api/build/trigger` - trigger CF Pages rebuild
-- `GET /api/export` - full content export
 
 ## Dev Commands
 
 ```bash
-bun run dev:cms                     # Start CMS on :8788 (wrangler dev, local D1)
-bun run dev:cms:remote              # Start CMS on :8788 (wrangler dev, remote D1)
-bun run dev:site                    # Start Astro on :4321 (requires CMS running first)
-bun run build:ui                    # Build admin UI (Vite -> cms/public/)
-bun run build:site                  # Build static site - requires local CMS on :8788
-bun run build:site:prod             # Build static site against https://cms.really.lol
-bun run deploy:cms                  # Build UI + deploy CMS Worker
-bun run deploy:site                 # build:site:prod + deploy to CF Pages (no local CMS needed)
-bun run deploy                      # deploy:cms then deploy:site
-bun run db:migrate                  # Apply D1 migrations locally
-bun run db:migrate:prod             # Apply D1 migrations to remote
-bun run test                        # Run tests
-
-# Legacy scripts (R2 sync only)
-bun run cli r2 sync                 # Upload local assets to R2
+bun run dev                   # Start Astro dev server on :4321
+bun run build                 # Build static site
+bun run preview               # Preview built site
+bun run deploy                # Build + deploy to CF Pages
+bun run test                  # Run tests
 ```
 
-**The site always requires the CMS to build.** `build:site` hits `http://localhost:8788` — only use it when `dev:cms` or `dev:cms:remote` is already running. `build:site:prod` and `deploy:site` hit `https://cms.really.lol` directly and need no local CMS. Never run bare `build:site` or `build` to deploy — use `deploy:site` or `deploy`.
+## Pagination
 
-Site env vars (`CMS_API_URL`, `CMS_API_KEY`) are in `site/.env` (gitignored). `CMS_API_KEY` must be set there for prod builds — `build:site:prod` sets the URL but still reads the key from `site/.env`.
+List pages use Astro's `paginate()` with 40 items per page. Homepage uses a custom `/page/N/` scheme (page 1 is `index.astro`, pages 2+ are `page/[page].astro`).
 
-## Key Env Vars
+## Key Files
 
-- `CMS_API_URL` - CMS base URL (default: http://localhost:8788), set in `site/.env` for builds
-- `CMS_API_KEY` - API bearer token (default: dev-test-key), set in `site/.env` for builds
-- `API_KEY` - Worker secret for CMS auth
-- `CF_PAGES_DEPLOY_HOOK` - Worker secret for build triggering
-- `HARDCOVER_API_KEY` - Worker secret for server-side book sync
-- `RAINDROP_ACCESS_TOKEN` - Worker secret for server-side link sync
+- Content config: `site/src/content/config.ts`
+- Feed logic: `site/src/lib/feed.ts`
+- Tag utilities: `site/src/lib/tags.ts`
+- Image helpers: `site/src/lib/images.ts`
+- Summary generator: `site/src/lib/summary.ts`
+- Pagination component: `site/src/components/Pagination.astro`
+- Styles: `site/src/styles/`
+
+## Common Workflows
+
+**Create a blog post:**
+```bash
+cli create post --title "My Post" --tags journal
+# Then edit the markdown file in site/src/content/blog/
+```
+
+**Sync all media catalogues:**
+```bash
+cover books --shelf read --json --per-page 2000 | cli library sync books --shelf read
+cover books --shelf reading --json | cli library sync books --shelf reading
+cover books --shelf toread --json --per-page 2000 | cli library sync books --shelf toread
+curtain diary --json --per-page 2000 | cli library sync films --list watched
+curtain watchlist --json --per-page 2000 | cli library sync films --list towatch
+cli library sync links
+```
+
+**Deploy:**
+```bash
+bun run deploy
+# Or just git push — CF Pages builds automatically
+```
 
 ## External Tools
 
@@ -133,38 +116,8 @@ Site env vars (`CMS_API_URL`, `CMS_API_KEY`) are in `site/.env` (gitignored). `C
 - **curtain** CLI - Letterboxd film tracker (`curtain diary --json`)
 - Raindrop.io API - saved links (token in `creds/raindrop-token`)
 
-## Common Workflows
+## Key Env Vars
 
-**Create a blog post:**
-```bash
-cms content create post --title "My Post" --tags journal --status draft
-# Edit in admin UI at http://localhost:8788, or:
-cms content edit post my-post --body "..." --status published
-```
-
-**Sync all media catalogs:**
-```bash
-cover books --shelf read --json --per-page 2000 | cms sync books --shelf read
-cover books --shelf reading --json | cms sync books --shelf reading
-cover books --shelf toread --json --per-page 2000 | cms sync books --shelf toread
-curtain diary --json --per-page 2000 | cms sync films --list watched
-curtain watchlist --json --per-page 2000 | cms sync films --list towatch
-cms sync links
-```
-
-**Publish and rebuild:**
-```bash
-cms content edit post my-post --status published
-curl -X POST -H "Authorization: Bearer $CMS_API_KEY" http://localhost:8788/api/build/trigger
-```
-
-## Key Files
-
-- Content loaders: `site/src/lib/cms-loader.ts`, `site/src/lib/cms-data.ts`
-- Astro content config: `site/src/content/config.ts`
-- Paginated list islands: `site/src/components/PaginatedList.tsx`
-- DB schema: `cms/src/db/schema.ts`
-- DB migrations: `cms/src/db/migrations/`
-- CMS routes: `cms/src/routes/`
-- Admin UI: `cms/ui/src/`
-- CMS plan: `.claude/plans/rosy-bouncing-wolf.md`
+- `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` - R2 credentials for CLI media commands
+- `R2_BUCKET` - R2 bucket name (default: `media-really-lol`)
+- `RAINDROP_ACCESS_TOKEN` - Raindrop API token for link sync
