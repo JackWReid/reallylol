@@ -1,6 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
-import { getAllFeedItems, typeLabel, typeUrl } from "../lib/feed";
+import { getAllFeedItems, typeUrl } from "../lib/feed";
 import { r2Thumb } from "../lib/images";
 
 const PAGE_SIZE = 40;
@@ -27,7 +27,7 @@ function formatDate(date: Date): string {
         <a href={typeUrl(featured)} class="feed-featured">
           <div class="feed-featured__text">
             <span class="feed-meta">
-              {typeLabel(featured.type)} · {formatDate(featured.date)}
+              {featured.type} · {formatDate(featured.date)}
             </span>
             <h2 class="feed-featured__title">{featured.title}</h2>
             {featured.excerpt && (
@@ -42,7 +42,7 @@ function formatDate(date: Date): string {
             <div class="feed-item__text">
               <span class="feed-item__title">{item.title}</span>
               <span class="feed-meta">
-                {typeLabel(item.type)} · {formatDate(item.date)}
+                {item.type} · {formatDate(item.date)}
               </span>
             </div>
             {item.type === "photo" && item.image && (

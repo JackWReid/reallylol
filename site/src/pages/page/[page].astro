@@ -2,7 +2,7 @@
 import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
 import Pagination from "../../components/Pagination.astro";
-import { getAllFeedItems, typeLabel, typeUrl } from "../../lib/feed";
+import { getAllFeedItems, typeUrl } from "../../lib/feed";
 import { r2Thumb } from "../../lib/images";
 
 export const getStaticPaths = (async () => {
@@ -42,7 +42,7 @@ function formatDate(date: Date): string {
             <div class="feed-item__text">
               <span class="feed-item__title">{item.title}</span>
               <span class="feed-meta">
-                {typeLabel(item.type)} · {formatDate(item.date)}
+                {item.type} · {formatDate(item.date)}
               </span>
             </div>
             {item.type === "photo" && item.image && (

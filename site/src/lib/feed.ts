@@ -15,11 +15,6 @@ function stripExt(id: string): string {
   return id.replace(/\.md$/, "");
 }
 
-function typeLabel(type: string): string {
-  if (type === "blog") return "journal";
-  return type;
-}
-
 function typeUrl(item: FeedItem): string {
   if (item.type === "blog") return `/post/${item.id}/`;
   if (item.type === "note") return `/note/${item.id}/`;
@@ -28,7 +23,7 @@ function typeUrl(item: FeedItem): string {
   return "/";
 }
 
-export { typeLabel, typeUrl };
+export { typeUrl };
 
 export async function getAllFeedItems(): Promise<FeedItem[]> {
   const [posts, notes, photos, highlights] = await Promise.all([
