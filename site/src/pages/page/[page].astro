@@ -5,9 +5,8 @@ import Pagination from "../../components/Pagination.astro";
 import { getAllFeedItems, typeLabel, typeUrl } from "../../lib/feed";
 import { r2Thumb } from "../../lib/images";
 
-const PAGE_SIZE = 40;
-
 export const getStaticPaths = (async () => {
+  const PAGE_SIZE = 40;
   const allItems = await getAllFeedItems();
   const totalPages = Math.ceil(allItems.length / PAGE_SIZE);
   // Generate pages 2, 3, 4, ... (page 1 is index.astro)
