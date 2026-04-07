@@ -57,6 +57,14 @@ if (cmd === "create") {
     }
   }
 
+} else if (cmd === "check") {
+  if (sub === "links") {
+    const { checkLinks } = await import("./commands/check");
+    await checkLinks();
+  } else {
+    console.log("Usage: cli check <links>");
+  }
+
 } else {
   console.log(`really.lol CLI
 
@@ -64,6 +72,7 @@ Usage:
   cli create <post|photo|note|highlight> [options]
   cli media <upload|verify|orphans>
   cli library sync <books|films|links>
+  cli check links
 
 Create options:
   --title, --tags, --date, --body, --slug
@@ -77,5 +86,8 @@ Media:
 Library sync:
   cover books --shelf read --json | cli library sync books --shelf read
   curtain diary --json | cli library sync films --list watched
-  cli library sync links`);
+  cli library sync links
+
+Check:
+  cli check links               # Find broken internal links in built site`);
 }
