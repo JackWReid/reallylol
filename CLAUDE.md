@@ -56,6 +56,9 @@ cli media upload <file> [--prefix img/post/slug]
 cli media verify              # Check all content media refs exist in R2
 cli media orphans             # List R2 objects not referenced by content
 
+# Checks
+cli check links               # Find broken internal links in built site
+
 # Library sync (pipe from external CLIs)
 cover books --shelf read --json | cli library sync books --shelf read
 curtain diary --json | cli library sync films --list watched

@@ -1,29 +1,16 @@
 # Worktrees
 .worktrees/
 
-# Astro / Wrangler
+# Astro / Build
 dist/
 .astro/
 .wrangler/
-**/.wrangler/
-cms/public/
-
-# Local media (content photos for dev; production images are on R2)
-assets/
-public/img/photo
-
-# Playwright
-test-results/
-playwright-report/
-blob-report/
-**/tests/screenshots/
-.playwright-cli/
-.playwright/
 
 # Dependencies
 node_modules/
-vendor/
-creds/*
+
+# Credentials
+creds/
 
 # Editor files
 .vscode/
@@ -32,35 +19,17 @@ creds/*
 *.swo
 *~
 .vim/
-.sublime-*
-*.code-workspace
 
 # OS files
 .DS_Store
-.DS_Store?
 ._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-.directory
-Desktop.ini
 
 # Temporary files
 tmp/
-*.tmp
-*.temp
 *.log
 *.cache
-*.pid
-*.lock
 !bun.lock
-
-# Python
-__pycache__/
-
-# htmltest
-.htmltest/
 
 # Environment files
 .env
@@ -68,27 +37,5 @@ __pycache__/
 .env.*.local
 .dev.vars
 
-# Backup files
-*.bak
-*.backup
-*~
-.tag_backups/
-
-# Content-specific
-src/content/.obsidian/
-
-# Build and deployment
-build/
-deploy/
-
-# Archives
-*.zip
-*.tar.gz
-*.rar
-
 # Superpowers
 .superpowers/
-
-# Local configuration
-config.local.*
-params.local.*

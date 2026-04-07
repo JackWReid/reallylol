@@ -7,8 +7,8 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "types": ["bun-types", "@cloudflare/workers-types"]
+    "types": ["bun-types"]
   },
-  "include": ["cms/**/*.ts", "cli/**/*.ts", "shared/**/*.ts", "scripts/**/*.ts"],
-  "exclude": ["node_modules", "site", "dist"]
+  "include": ["cli/**/*.ts"],
+  "exclude": ["node_modules", "site"]
 }
