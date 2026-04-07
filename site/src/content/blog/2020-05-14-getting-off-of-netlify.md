@@ -3,6 +3,8 @@ title: "Getting off of Netlify"
 date: "2020-05-14"
 tags:
   - "journal"
+  - "tech"
+  - "web"
 subtitle: "Self-hosting the website, logs, and analytics"
 ---
 

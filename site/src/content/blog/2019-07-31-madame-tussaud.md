@@ -4,6 +4,7 @@ date: "2019-07-31"
 tags:
   - "book"
   - "history"
+  - "london"
 url: "/note/2019-07-31-madame-tussaud"
 ---
 

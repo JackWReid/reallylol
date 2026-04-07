@@ -4,6 +4,7 @@ date: "2019-08-05"
 tags:
   - "link"
   - "language"
+  - "france"
 url: "/note/2019-08-05-academie-francaise"
 ---
 

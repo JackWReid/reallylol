@@ -3,14 +3,9 @@ title: "Confessions Of A News Addict"
 date: "2016-08-22"
 tags:
   - "journal"
+  - "media"
 subtitle: "A Thank You"
 ---
-
-Hello. My name is Jack…
-
-[Group: Hello, Jack]
-
-…and I’m a news addict.
 
 In the earliest seconds of my waking day, as my brain begins to comprehend the external world and puts away the psychedelic nonsense of my dreams, I reach for the news. Around 9.30 every morning, or earlier if I’m awoken by whatever song I’ve decided to try and numb the pain of a 9am seminar with, I unplug my phone and open up the news.
 

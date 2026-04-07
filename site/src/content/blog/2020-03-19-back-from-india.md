@@ -5,6 +5,7 @@ tags:
   - "journal"
   - "covid-19"
   - "india"
+  - "travel"
 ---
 
 <audio src="https://media.really.lol//audio/journal/bangalore-traffic.m4a" controls></audio>

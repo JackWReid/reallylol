@@ -3,6 +3,8 @@ title: "Wild horses"
 date: "2020-05-16"
 tags:
   - "journal"
+  - "uk"
+  - "covid-19"
 ---
 
 <audio src="https://media.really.lol//audio/journal/cliff-birds.m4a" controls></audio>

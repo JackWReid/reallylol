@@ -3,6 +3,8 @@ title: "That Accessibility Thing"
 date: "2016-08-22"
 tags:
   - "journal"
+  - "web"
+  - "tech"
 subtitle: "About when the web accessibility issue clicked for me"
 ---
 
