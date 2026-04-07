@@ -1,0 +1,42 @@
+---
+import Base from "./Base.astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  title?: string;
+  description?: string;
+  frontmatter?: {
+    title?: string;
+    description?: string;
+    hero_image?: string;
+    hero_alt?: string;
+    hero_caption?: string;
+  };
+}
+
+const fm = Astro.props.frontmatter ?? Astro.props;
+const title = fm.title ?? "";
+const description = fm.description;
+const heroFile = fm.hero_image;
+const heroAlt = fm.hero_alt ?? "";
+const heroCaption = fm.hero_caption ?? "";
+
+const images = import.meta.glob<{ default: ImageMetadata }>("/src/images/*", { eager: true });
+const heroImage = heroFile ? images[`/src/images/${heroFile}`]?.default : undefined;
+---
+<Base title={title} description={description}>
+  <main class="single-main">
+    {heroImage ? (
+      <div class="single-hero">
+        <figure class="single-hero__figure">
+          <Image src={heroImage} alt={heroAlt} width={480} loading="eager" />
+          {heroCaption && <figcaption set:html={heroCaption} />}
+        </figure>
+        <h1 class="single-hero__title">{title}</h1>
+      </div>
+    ) : (
+      <h1>{title}</h1>
+    )}
+    <slot />
+  </main>
+</Base>

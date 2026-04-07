@@ -6,7 +6,7 @@ import Pagination from "../../components/Pagination.astro";
 import { generateSummary } from "../../lib/summary";
 import { tagToSlug } from "../../lib/tags";
 import { Image } from "astro:assets";
-import heroImg from "../../images/robida-author.webp";
+import heroImg from "../../images/champignons-suspects.jpeg";
 
 export const getStaticPaths = (async ({ paginate }) => {
   const posts = await getCollection("blog");
@@ -32,8 +32,8 @@ function formatDate(date: Date): string {
     {page.currentPage === 1 && (
       <div class="writing-hero">
         <figure class="writing-hero__figure">
-          <Image src={heroImg} alt="An author making cylinders of his own works" width={800} height={560} loading="eager" />
-          <figcaption>A. Robida, <em>The Author Making Cylinders of his Own Works</em>, 1894</figcaption>
+          <Image src={heroImg} alt="An illustration of suspicious mushrooms" width={800} height={560} loading="eager" />
+          <figcaption>A. Cornillon, <em>Champignons Suspects</em>, 1827</figcaption>
         </figure>
         <h1 class="writing-hero__title">Blog</h1>
       </div>

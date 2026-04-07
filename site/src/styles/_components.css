@@ -26,6 +26,42 @@
     text-underline-offset: 3px;
   }
 
+  .single-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--space-2xl);
+  }
+
+  .single-hero__figure {
+    text-align: center;
+  }
+
+  .single-hero__figure img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+
+  .single-hero__figure figcaption {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--color-accent);
+    margin-top: var(--space-sm);
+  }
+
+  .single-hero__title {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    font-weight: 300;
+    font-style: italic;
+    font-variation-settings: var(--fraunces-wonk);
+    margin-top: var(--space-lg);
+    letter-spacing: -0.02em;
+  }
+
   /* Feed meta (shared) */
   .feed-meta {
     font-family: var(--font-mono);
