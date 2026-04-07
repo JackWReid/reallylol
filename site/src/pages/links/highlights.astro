@@ -30,8 +30,10 @@ function getDomain(url: string): string {
         <a href="/links/highlights" class="active">Highlights</a>
         <a href="/links/blogroll">Blogroll</a>
       </div>
-      <div class="links-saved">
+      <div class="links-blogroll">
         <p>These are interesting excerpts I've clipped from articles online. I also have a <a href="/links/saved">directory of links</a> (not necessarily articles) that are worth returning to.</p>
+      </div>
+      <div class="links-saved">
         {sorted.map((h) => (
           <div class="links-saved__item">
             <div class="links-saved__header">
