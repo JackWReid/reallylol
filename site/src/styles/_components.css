@@ -602,6 +602,16 @@
     opacity: 0.5;
   }
 
+  /* Links preamble (shared across links sub-pages) */
+  .links-preamble {
+    margin-top: var(--space-xl);
+  }
+
+  .links-preamble p {
+    margin: 0 0 var(--space-md);
+    color: var(--color-accent);
+  }
+
   /* Blogroll */
   .links-blogroll {
     margin-top: var(--space-xl);
