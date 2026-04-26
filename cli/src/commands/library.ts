@@ -2,19 +2,31 @@ import { writeFileSync, readFileSync } from "fs";
 
 const DATA_DIR = "site/src/data";
 
-interface BookInput { title: string; author: string; date_finished?: string; date_updated?: string; image?: string; url?: string; }
-interface FilmInput { name: string; year?: string | number; date?: string; date_updated?: string; }
+interface BookInput {
+  book: { title: string; slug: string; authors: string[]; imageUrl: string | null };
+  finishedAt: string | null;
+  dateAdded: string | null;
+  dateUpdated: string | null;
+}
+interface FilmInput {
+  film: { title: string; year: number | null; slug: string };
+  watchedDate?: string | null;
+  addedDate?: string | null;
+  dateAdded?: string | null;
+  dateUpdated?: string | null;
+}
 
 export async function syncBooks(shelf: string) {
   const input = await readStdin();
   const rawItems = JSON.parse(input) as BookInput[];
 
+  const today = new Date().toISOString().slice(0, 10);
   const books = rawItems.map((b) => ({
-    title: b.title,
-    author: b.author,
-    date_updated: b.date_finished ?? b.date_updated ?? new Date().toISOString().slice(0, 10),
-    image_url: b.image ?? null,
-    hardcover_url: b.url ?? null,
+    title: b.book.title,
+    author: b.book.authors.join(", "),
+    date_updated: b.finishedAt ?? b.dateUpdated ?? b.dateAdded ?? today,
+    image_url: b.book.imageUrl ?? null,
+    hardcover_url: `https://hardcover.app/books/${b.book.slug}`,
   }));
 
   const outPath = `${DATA_DIR}/books-${shelf}.json`;
@@ -26,10 +38,11 @@ export async function syncFilms(list: string) {
   const input = await readStdin();
   const rawItems = JSON.parse(input) as FilmInput[];
 
+  const today = new Date().toISOString().slice(0, 10);
   const films = rawItems.map((f) => ({
-    name: f.name,
-    year: f.year ? String(f.year) : null,
-    date_updated: f.date ?? f.date_updated ?? new Date().toISOString().slice(0, 10),
+    name: f.film.title,
+    year: f.film.year != null ? String(f.film.year) : null,
+    date_updated: f.watchedDate ?? f.addedDate ?? f.dateAdded ?? f.dateUpdated ?? today,
   }));
 
   const outPath = `${DATA_DIR}/films-${list}.json`;
