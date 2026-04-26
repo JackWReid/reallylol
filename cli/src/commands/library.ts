@@ -1,4 +1,6 @@
-import { writeFileSync, readFileSync } from "fs";
+import { writeFileSync, readFileSync, statSync } from "fs";
+import { join } from "path";
+import { spawnSync } from "child_process";
 
 const DATA_DIR = "site/src/data";
 
@@ -34,20 +36,96 @@ export async function syncBooks(shelf: string) {
   console.log(`Wrote ${books.length} books to ${outPath}`);
 }
 
-export async function syncFilms(list: string) {
-  const input = await readStdin();
-  const rawItems = JSON.parse(input) as FilmInput[];
+interface FilmOutput { name: string; year: string | null; date_updated: string }
 
-  const today = new Date().toISOString().slice(0, 10);
-  const films = rawItems.map((f) => ({
-    name: f.film.title,
-    year: f.film.year != null ? String(f.film.year) : null,
-    date_updated: f.watchedDate ?? f.addedDate ?? f.dateAdded ?? f.dateUpdated ?? today,
-  }));
+export async function syncFilms(list: string, fromPath?: string) {
+  const films = fromPath
+    ? filmsFromExport(fromPath, list)
+    : filmsFromCurtainJson(await readStdin());
 
   const outPath = `${DATA_DIR}/films-${list}.json`;
   writeFileSync(outPath, JSON.stringify(films, null, 2), "utf-8");
   console.log(`Wrote ${films.length} films to ${outPath}`);
+}
+
+function filmsFromCurtainJson(input: string): FilmOutput[] {
+  const raw = JSON.parse(input) as FilmInput[];
+  const today = new Date().toISOString().slice(0, 10);
+  return raw.map((f) => ({
+    name: f.film.title,
+    year: f.film.year != null ? String(f.film.year) : null,
+    date_updated: f.watchedDate ?? f.addedDate ?? f.dateAdded ?? f.dateUpdated ?? today,
+  }));
+}
+
+function filmsFromExport(path: string, list: string): FilmOutput[] {
+  const entry = list === "towatch" ? "watchlist.csv" : "diary.csv";
+  const csv = readCsvFromExport(path, entry);
+  return parseLetterboxdCsv(csv);
+}
+
+function readCsvFromExport(path: string, entry: string): string {
+  const stat = statSync(path);
+  if (stat.isDirectory()) {
+    return readFileSync(join(path, entry), "utf-8");
+  }
+  if (path.endsWith(".csv")) {
+    return readFileSync(path, "utf-8");
+  }
+  if (path.endsWith(".zip")) {
+    const result = spawnSync("unzip", ["-p", path, entry], { encoding: "utf-8" });
+    if (result.status !== 0) {
+      throw new Error(`Failed to extract ${entry} from ${path}: ${result.stderr}`);
+    }
+    return result.stdout;
+  }
+  throw new Error(`Unsupported export path: ${path} (expected .zip, .csv, or directory)`);
+}
+
+function parseLetterboxdCsv(csv: string): FilmOutput[] {
+  const rows = parseCsv(csv);
+  if (rows.length === 0) return [];
+  const headers = rows[0];
+  const dateIdx = headers.indexOf("Date");
+  const nameIdx = headers.indexOf("Name");
+  const yearIdx = headers.indexOf("Year");
+  if (nameIdx === -1 || dateIdx === -1) {
+    throw new Error(`CSV missing required headers; got: ${headers.join(", ")}`);
+  }
+  return rows.slice(1)
+    .filter((r) => r[nameIdx])
+    .map((r) => ({
+      name: r[nameIdx],
+      year: r[yearIdx] || null,
+      date_updated: r[dateIdx],
+    }));
+}
+
+function parseCsv(text: string): string[][] {
+  const rows: string[][] = [];
+  let row: string[] = [];
+  let field = "";
+  let inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"') {
+        if (text[i + 1] === '"') { field += '"'; i++; }
+        else { inQuotes = false; }
+      } else { field += c; }
+    } else if (c === '"') {
+      inQuotes = true;
+    } else if (c === ",") {
+      row.push(field); field = "";
+    } else if (c === "\n") {
+      row.push(field); field = "";
+      rows.push(row); row = [];
+    } else if (c !== "\r") {
+      field += c;
+    }
+  }
+  if (field.length > 0 || row.length > 0) { row.push(field); rows.push(row); }
+  return rows;
 }
 
 export async function syncLinks() {

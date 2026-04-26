@@ -48,7 +48,7 @@ if (cmd === "create") {
       await syncBooks(opts.shelf ?? "read");
     } else if (source === "films") {
       const { syncFilms } = await import("./commands/library");
-      await syncFilms(opts.list ?? "watched");
+      await syncFilms(opts.list ?? "watched", opts.from);
     } else if (source === "links") {
       const { syncLinks } = await import("./commands/library");
       await syncLinks();
@@ -85,7 +85,8 @@ Media:
 
 Library sync:
   cover books --shelf read --json | cli library sync books --shelf read
-  curtain diary --json | cli library sync films --list watched
+  curtain diary <user> --json | cli library sync films --list watched
+  cli library sync films --list watched --from path/to/letterboxd-export.zip
   cli library sync links
 
 Check:
