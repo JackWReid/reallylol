@@ -655,6 +655,11 @@
     "date_updated": "2020-09-21"
   },
   {
+    "name": "Knives Out",
+    "year": "2019",
+    "date_updated": "2020-09-27"
+  },
+  {
     "name": "Four Weddings and a Funeral",
     "year": "1994",
     "date_updated": "2020-09-29"
@@ -705,7 +710,7 @@
     "date_updated": "2020-10-25"
   },
   {
-    "name": "Borat Subsequent Moviefilm",
+    "name": "Borat Subsequent Moviefilm: Delivery of Prodigious Bribe to American Regime for Make Benefit Once Glorious Nation of Kazakhstan",
     "year": "2020",
     "date_updated": "2020-10-26"
   },
@@ -797,6 +802,11 @@
   {
     "name": "High Society",
     "year": "1956",
+    "date_updated": "2020-11-22"
+  },
+  {
+    "name": "Klaus",
+    "year": "2019",
     "date_updated": "2020-11-22"
   },
   {
@@ -920,6 +930,16 @@
     "date_updated": "2021-01-23"
   },
   {
+    "name": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": "2001",
+    "date_updated": "2021-01-30"
+  },
+  {
+    "name": "The Lord of the Rings: The Two Towers",
+    "year": "2002",
+    "date_updated": "2021-01-30"
+  },
+  {
     "name": "Black Bear",
     "year": "2020",
     "date_updated": "2021-01-30"
@@ -967,6 +987,11 @@
   {
     "name": "Tag",
     "year": "2018",
+    "date_updated": "2021-02-20"
+  },
+  {
+    "name": "Parasite",
+    "year": "2019",
     "date_updated": "2021-02-20"
   },
   {
@@ -1200,6 +1225,11 @@
     "date_updated": "2021-04-29"
   },
   {
+    "name": "Only the Animals",
+    "year": "2019",
+    "date_updated": "2021-04-30"
+  },
+  {
     "name": "Tom Clancy's Without Remorse",
     "year": "2021",
     "date_updated": "2021-05-04"
@@ -1227,6 +1257,11 @@
   {
     "name": "Castle in the Sky",
     "year": "1986",
+    "date_updated": "2021-05-12"
+  },
+  {
+    "name": "Victoria",
+    "year": "2015",
     "date_updated": "2021-05-12"
   },
   {
@@ -1545,9 +1580,19 @@
     "date_updated": "2021-10-09"
   },
   {
+    "name": "The Wind Rises",
+    "year": "2013",
+    "date_updated": "2021-10-10"
+  },
+  {
     "name": "Limbo",
     "year": "2020",
     "date_updated": "2021-10-11"
+  },
+  {
+    "name": "Joker",
+    "year": "2019",
+    "date_updated": "2021-10-19"
   },
   {
     "name": "Free Guy",
@@ -1565,6 +1610,11 @@
     "date_updated": "2021-10-25"
   },
   {
+    "name": "Official Secrets",
+    "year": "2019",
+    "date_updated": "2021-10-25"
+  },
+  {
     "name": "The Last Black Man in San Francisco",
     "year": "2019",
     "date_updated": "2021-10-27"
@@ -1578,6 +1628,11 @@
     "name": "My Best Friend's Wedding",
     "year": "1997",
     "date_updated": "2021-10-28"
+  },
+  {
+    "name": "Argo",
+    "year": "2012",
+    "date_updated": "2021-11-08"
   },
   {
     "name": "Safe House",
@@ -1750,6 +1805,11 @@
     "date_updated": "2022-01-09"
   },
   {
+    "name": "Dune",
+    "year": "2021",
+    "date_updated": "2022-01-09"
+  },
+  {
     "name": "Come from Away",
     "year": "2021",
     "date_updated": "2022-01-10"
@@ -1905,6 +1965,11 @@
     "date_updated": "2022-05-19"
   },
   {
+    "name": "Everything Everywhere All at Once",
+    "year": "2022",
+    "date_updated": "2022-05-19"
+  },
+  {
     "name": "The Courier",
     "year": "2020",
     "date_updated": "2022-05-19"
@@ -1980,6 +2045,11 @@
     "date_updated": "2022-08-07"
   },
   {
+    "name": "Dunkirk",
+    "year": "2017",
+    "date_updated": "2022-08-07"
+  },
+  {
     "name": "The Good Shepherd",
     "year": "2006",
     "date_updated": "2022-08-08"
@@ -2050,6 +2120,11 @@
     "date_updated": "2022-09-14"
   },
   {
+    "name": "RRR",
+    "year": "2022",
+    "date_updated": "2022-09-15"
+  },
+  {
     "name": "Thor: Love and Thunder",
     "year": "2022",
     "date_updated": "2022-09-20"
@@ -2110,6 +2185,11 @@
     "date_updated": "2022-10-13"
   },
   {
+    "name": "The Souvenir",
+    "year": "2019",
+    "date_updated": "2022-10-15"
+  },
+  {
     "name": "The Worst Person in the World",
     "year": "2021",
     "date_updated": "2022-10-15"
@@ -2138,6 +2218,11 @@
     "name": "Kicking and Screaming",
     "year": "1995",
     "date_updated": "2022-10-23"
+  },
+  {
+    "name": "Tripping with Nils Frahm",
+    "year": "2020",
+    "date_updated": "2022-10-24"
   },
   {
     "name": "Not Okay",
@@ -2260,9 +2345,19 @@
     "date_updated": "2022-11-09"
   },
   {
+    "name": "The Lord of the Rings: The Two Towers",
+    "year": "2002",
+    "date_updated": "2022-11-10"
+  },
+  {
     "name": "The Banshees of Inisherin",
     "year": "2022",
     "date_updated": "2023-01-12"
+  },
+  {
+    "name": "The Lord of the Rings: The Return of the King",
+    "year": "2003",
+    "date_updated": "2022-11-21"
   },
   {
     "name": "Aftersun",
@@ -2272,6 +2367,11 @@
   {
     "name": "A Knight's Tale",
     "year": "2001",
+    "date_updated": "2022-12-12"
+  },
+  {
+    "name": "Ocean's Eight",
+    "year": "2018",
     "date_updated": "2022-12-12"
   },
   {
@@ -2398,6 +2498,21 @@
     "name": "Women Talking",
     "year": "2022",
     "date_updated": "2023-02-17"
+  },
+  {
+    "name": "Aftersun",
+    "year": "2022",
+    "date_updated": "2023-02-21"
+  },
+  {
+    "name": "Decision to Leave",
+    "year": "2022",
+    "date_updated": "2023-02-28"
+  },
+  {
+    "name": "TÁR",
+    "year": "2022",
+    "date_updated": "2023-03-06"
   },
   {
     "name": "Tetris",
@@ -2755,6 +2870,11 @@
     "date_updated": "2023-10-02"
   },
   {
+    "name": "Princess Mononoke",
+    "year": "1997",
+    "date_updated": "2023-10-02"
+  },
+  {
     "name": "For Your Eyes Only",
     "year": "1981",
     "date_updated": "2023-10-02"
@@ -2787,6 +2907,11 @@
   {
     "name": "Flight",
     "year": "2012",
+    "date_updated": "2023-10-16"
+  },
+  {
+    "name": "Emma.",
+    "year": "2020",
     "date_updated": "2023-10-16"
   },
   {
@@ -2880,6 +3005,11 @@
     "date_updated": "2023-12-12"
   },
   {
+    "name": "Klaus",
+    "year": "2019",
+    "date_updated": "2023-12-15"
+  },
+  {
     "name": "Godzilla Minus One",
     "year": "2023",
     "date_updated": "2023-12-17"
@@ -2965,6 +3095,11 @@
     "date_updated": "2024-01-29"
   },
   {
+    "name": "Tinker Tailor Soldier Spy",
+    "year": "2011",
+    "date_updated": "2024-02-02"
+  },
+  {
     "name": "Dream Scenario",
     "year": "2023",
     "date_updated": "2024-02-05"
@@ -2972,6 +3107,11 @@
   {
     "name": "NYAD",
     "year": "2023",
+    "date_updated": "2024-02-05"
+  },
+  {
+    "name": "Triangle of Sadness",
+    "year": "2022",
     "date_updated": "2024-02-05"
   },
   {
@@ -3070,6 +3210,11 @@
     "date_updated": "2024-04-15"
   },
   {
+    "name": "The Emperor's New Groove",
+    "year": "2000",
+    "date_updated": "2024-04-15"
+  },
+  {
     "name": "La Chimera",
     "year": "2023",
     "date_updated": "2024-04-15"
@@ -3083,6 +3228,11 @@
     "name": "Sanctuary",
     "year": "2022",
     "date_updated": "2024-04-19"
+  },
+  {
+    "name": "The Big Short",
+    "year": "2015",
+    "date_updated": "2024-04-22"
   },
   {
     "name": "Hardcore",
@@ -3205,6 +3355,11 @@
     "date_updated": "2024-07-10"
   },
   {
+    "name": "Challengers",
+    "year": "2024",
+    "date_updated": "2024-07-29"
+  },
+  {
     "name": "My Own Private Idaho",
     "year": "1991",
     "date_updated": "2024-08-01"
@@ -3275,6 +3430,11 @@
     "date_updated": "2024-09-09"
   },
   {
+    "name": "Mistress America",
+    "year": "2015",
+    "date_updated": "2024-09-09"
+  },
+  {
     "name": "Emma",
     "year": "1996",
     "date_updated": "2024-09-11"
@@ -3315,6 +3475,11 @@
     "date_updated": "2024-10-17"
   },
   {
+    "name": "13 Hours: The Secret Soldiers of Benghazi",
+    "year": "2016",
+    "date_updated": "2024-10-17"
+  },
+  {
     "name": "The Wild Robot",
     "year": "2024",
     "date_updated": "2024-10-19"
@@ -3333,6 +3498,11 @@
     "name": "Joy Ride",
     "year": "2023",
     "date_updated": "2024-10-21"
+  },
+  {
+    "name": "Asteroid City",
+    "year": "2023",
+    "date_updated": "2024-11-10"
   },
   {
     "name": "In the Land of Saints and Sinners",
@@ -3425,6 +3595,11 @@
     "date_updated": "2024-12-25"
   },
   {
+    "name": "Klaus",
+    "year": "2019",
+    "date_updated": "2024-12-25"
+  },
+  {
     "name": "The Family Stone",
     "year": "2005",
     "date_updated": "2024-12-25"
@@ -3490,6 +3665,11 @@
     "date_updated": "2025-01-15"
   },
   {
+    "name": "Anora",
+    "year": "2024",
+    "date_updated": "2025-01-15"
+  },
+  {
     "name": "A Real Pain",
     "year": "2024",
     "date_updated": "2025-01-17"
@@ -3548,6 +3728,11 @@
     "name": "Talk to Me",
     "year": "2022",
     "date_updated": "2025-02-18"
+  },
+  {
+    "name": "Civil War",
+    "year": "2024",
+    "date_updated": "2025-02-19"
   },
   {
     "name": "The Gorge",
@@ -3658,6 +3843,11 @@
     "name": "Notes on a Scandal",
     "year": "2006",
     "date_updated": "2025-05-25"
+  },
+  {
+    "name": "Mission: Impossible – Dead Reckoning",
+    "year": "2023",
+    "date_updated": "2025-05-28"
   },
   {
     "name": "Final Destination Bloodlines",
@@ -3775,6 +3965,11 @@
     "date_updated": "2025-09-09"
   },
   {
+    "name": "Starship Troopers",
+    "year": "1997",
+    "date_updated": "2025-09-12"
+  },
+  {
     "name": "Honey Don't!",
     "year": "2025",
     "date_updated": "2025-09-23"
@@ -3793,6 +3988,16 @@
     "name": "Sorry, Baby",
     "year": "2025",
     "date_updated": "2025-10-05"
+  },
+  {
+    "name": "Page Eight",
+    "year": "2011",
+    "date_updated": "2025-10-06"
+  },
+  {
+    "name": "Turks & Caicos",
+    "year": "2014",
+    "date_updated": "2025-10-06"
   },
   {
     "name": "Sound of Falling",
@@ -3895,9 +4100,29 @@
     "date_updated": "2025-11-24"
   },
   {
+    "name": "The Holiday",
+    "year": "2006",
+    "date_updated": "2025-12-22"
+  },
+  {
+    "name": "A Real Pain",
+    "year": "2024",
+    "date_updated": "2025-12-22"
+  },
+  {
     "name": "Souleymane's Story",
     "year": "2024",
     "date_updated": "2025-12-24"
+  },
+  {
+    "name": "Notting Hill",
+    "year": "1999",
+    "date_updated": "2025-12-24"
+  },
+  {
+    "name": "Four Weddings and a Funeral",
+    "year": "1994",
+    "date_updated": "2025-12-29"
   },
   {
     "name": "Memories of Murder",
@@ -3985,6 +4210,11 @@
     "date_updated": "2026-01-26"
   },
   {
+    "name": "Master and Commander: The Far Side of the World",
+    "year": "2003",
+    "date_updated": "2026-01-31"
+  },
+  {
     "name": "The Prince of Egypt",
     "year": "1998",
     "date_updated": "2026-01-31"
@@ -4012,6 +4242,11 @@
   {
     "name": "The Country Girl",
     "year": "1954",
+    "date_updated": "2026-02-15"
+  },
+  {
+    "name": "The Wind Rises",
+    "year": "2013",
     "date_updated": "2026-02-15"
   },
   {
@@ -4083,5 +4318,15 @@
     "name": "The Bonfire of the Vanities",
     "year": "1990",
     "date_updated": "2026-04-05"
+  },
+  {
+    "name": "First Cow",
+    "year": "2019",
+    "date_updated": "2026-04-09"
+  },
+  {
+    "name": "Roofman",
+    "year": "2025",
+    "date_updated": "2026-04-17"
   }
 ]
