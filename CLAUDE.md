@@ -59,9 +59,9 @@ cli media orphans             # List R2 objects not referenced by content
 # Checks
 cli check links               # Find broken internal links in built site
 
-# Library sync (pipe from external CLIs)
+# Library sync
 cover books --shelf read --json | cli library sync books --shelf read
-curtain diary --json | cli library sync films --list watched
+cli library sync films --list watched --from path/to/letterboxd-export.zip
 cli library sync links        # Pulls from Raindrop API directly
 ```
 
@@ -99,13 +99,21 @@ cli create post --title "My Post" --tags journal
 
 **Sync all media catalogues:**
 ```bash
+# Books — piped from cover CLI
 cover books --shelf read --json --per-page 2000 | cli library sync books --shelf read
 cover books --shelf reading --json | cli library sync books --shelf reading
 cover books --shelf toread --json --per-page 2000 | cli library sync books --shelf toread
-curtain diary --json --per-page 2000 | cli library sync films --list watched
-curtain watchlist --json --per-page 2000 | cli library sync films --list towatch
+
+# Films — from a Letterboxd export ZIP
+# Download from https://letterboxd.com/settings/data, then:
+cli library sync films --list watched --from ~/Downloads/letterboxd-export.zip
+cli library sync films --list towatch --from ~/Downloads/letterboxd-export.zip
+
+# Links — pulls #toblog tagged Raindrops directly
 cli library sync links
 ```
+
+`--from` accepts a Letterboxd export `.zip`, an extracted directory, or a single CSV (`diary.csv` for `--list watched`, `watchlist.csv` for `--list towatch`).
 
 **Deploy:**
 ```bash
@@ -116,7 +124,7 @@ bun run deploy
 ## External Tools
 
 - **cover** CLI - Hardcover.app book tracker (`cover books --shelf read --json`)
-- **curtain** CLI - Letterboxd film tracker (`curtain diary --json`)
+- **Letterboxd export ZIP** - download from https://letterboxd.com/settings/data
 - Raindrop.io API - saved links (token in `creds/raindrop-token`)
 
 ## Key Env Vars
