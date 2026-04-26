@@ -10,14 +10,6 @@ interface BookInput {
   dateAdded: string | null;
   dateUpdated: string | null;
 }
-interface FilmInput {
-  film: { title: string; year: number | null; slug: string };
-  watchedDate?: string | null;
-  addedDate?: string | null;
-  dateAdded?: string | null;
-  dateUpdated?: string | null;
-}
-
 export async function syncBooks(shelf: string) {
   const input = await readStdin();
   const rawItems = JSON.parse(input) as BookInput[];
@@ -38,30 +30,14 @@ export async function syncBooks(shelf: string) {
 
 interface FilmOutput { name: string; year: string | null; date_updated: string }
 
-export async function syncFilms(list: string, fromPath?: string) {
-  const films = fromPath
-    ? filmsFromExport(fromPath, list)
-    : filmsFromCurtainJson(await readStdin());
+export async function syncFilms(list: string, fromPath: string) {
+  const entry = list === "towatch" ? "watchlist.csv" : "diary.csv";
+  const csv = readCsvFromExport(fromPath, entry);
+  const films = parseLetterboxdCsv(csv);
 
   const outPath = `${DATA_DIR}/films-${list}.json`;
   writeFileSync(outPath, JSON.stringify(films, null, 2), "utf-8");
   console.log(`Wrote ${films.length} films to ${outPath}`);
-}
-
-function filmsFromCurtainJson(input: string): FilmOutput[] {
-  const raw = JSON.parse(input) as FilmInput[];
-  const today = new Date().toISOString().slice(0, 10);
-  return raw.map((f) => ({
-    name: f.film.title,
-    year: f.film.year != null ? String(f.film.year) : null,
-    date_updated: f.watchedDate ?? f.addedDate ?? f.dateAdded ?? f.dateUpdated ?? today,
-  }));
-}
-
-function filmsFromExport(path: string, list: string): FilmOutput[] {
-  const entry = list === "towatch" ? "watchlist.csv" : "diary.csv";
-  const csv = readCsvFromExport(path, entry);
-  return parseLetterboxdCsv(csv);
 }
 
 function readCsvFromExport(path: string, entry: string): string {
