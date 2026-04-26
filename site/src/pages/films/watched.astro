@@ -9,23 +9,26 @@ interface MonthGroup { label: string; count: number; items: FilmRow[]; }
 interface YearGroup { year: number; months: MonthGroup[]; }
 
 function groupByTimeline(items: FilmRow[]): YearGroup[] {
-  const years = new Map<number, Map<string, FilmRow[]>>();
+  const years = new Map<number, Map<number, { label: string; items: FilmRow[] }>>();
   for (const item of items) {
     const d = new Date(item.date_updated);
     const y = d.getFullYear();
-    const m = d.toLocaleDateString("en-GB", { month: "long" });
+    const mn = d.getMonth();
+    const label = d.toLocaleDateString("en-GB", { month: "long" });
     if (!years.has(y)) years.set(y, new Map());
     const months = years.get(y)!;
-    if (!months.has(m)) months.set(m, []);
-    months.get(m)!.push(item);
+    if (!months.has(mn)) months.set(mn, { label, items: [] });
+    months.get(mn)!.items.push(item);
   }
   return Array.from(years.entries())
     .sort(([a], [b]) => b - a)
     .map(([year, months]) => ({
       year,
-      months: Array.from(months.entries()).map(([label, items]) => ({
-        label, count: items.length, items,
-      })),
+      months: Array.from(months.entries())
+        .sort(([a], [b]) => b - a)
+        .map(([, { label, items }]) => ({
+          label, count: items.length, items,
+        })),
     }));
 }
 

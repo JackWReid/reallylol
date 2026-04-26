@@ -3,7 +3,36 @@ import Base from "../../layouts/Base.astro";
 import filmsData from "../../data/films-towatch.json";
 
 interface FilmRow { name: string; year: string | null; date_updated: string; }
-const films = (filmsData as FilmRow[]).sort((a, b) => a.name.localeCompare(b.name));
+const films = filmsData as FilmRow[];
+
+interface MonthGroup { label: string; count: number; items: FilmRow[]; }
+interface YearGroup { year: number; months: MonthGroup[]; }
+
+function groupByTimeline(items: FilmRow[]): YearGroup[] {
+  const years = new Map<number, Map<number, { label: string; items: FilmRow[] }>>();
+  for (const item of items) {
+    const d = new Date(item.date_updated);
+    const y = d.getFullYear();
+    const mn = d.getMonth();
+    const label = d.toLocaleDateString("en-GB", { month: "long" });
+    if (!years.has(y)) years.set(y, new Map());
+    const months = years.get(y)!;
+    if (!months.has(mn)) months.set(mn, { label, items: [] });
+    months.get(mn)!.items.push(item);
+  }
+  return Array.from(years.entries())
+    .sort(([a], [b]) => b - a)
+    .map(([year, months]) => ({
+      year,
+      months: Array.from(months.entries())
+        .sort(([a], [b]) => b - a)
+        .map(([, { label, items }]) => ({
+          label, count: items.length, items,
+        })),
+    }));
+}
+
+const groups = groupByTimeline(films);
 ---
 
 <Base title="Library" section="library">
@@ -18,11 +47,22 @@ const films = (filmsData as FilmRow[]).sort((a, b) => a.name.localeCompare(b.nam
         <a href="/films/towatch" class="active">To Watch</a>
       </div>
       <div class="timeline">
-        <p class="timeline__flat-count">{films.length} films</p>
-        {films.map((item) => (
-          <div class="timeline__item">
-            <span class="timeline__title">{item.name}</span>
-            {item.year && <span class="timeline__creator">({item.year})</span>}
+        {groups.map((yearGroup) => (
+          <div class="timeline__year">
+            <h2 class="timeline__year-label">{yearGroup.year}</h2>
+            {yearGroup.months.map((month) => (
+              <div class="timeline__month">
+                <h3 class="timeline__month-label">
+                  {month.label} &mdash; {month.count} {month.count === 1 ? "film" : "films"}
+                </h3>
+                {month.items.map((item) => (
+                  <div class="timeline__item">
+                    <span class="timeline__title">{item.name}</span>
+                    {item.year && <span class="timeline__creator">({item.year})</span>}
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         ))}
       </div>
