@@ -42,6 +42,20 @@ interface CreateOptions {
 
 export async function create(type: string, args: string[], opts: CreateOptions) {
   const isInteractive = !opts.title;
+  const validTypes = ["post", "photo", "note", "highlight"];
+
+  if (!validTypes.includes(type)) {
+    if (isInteractive) {
+      type = await ask(`Type (${validTypes.join("|")})`);
+      if (!validTypes.includes(type)) {
+        console.error(`Unknown type: ${type}. Use: post, photo, note, highlight`);
+        process.exit(1);
+      }
+    } else {
+      console.error(`Unknown type: ${type}. Use: post, photo, note, highlight`);
+      process.exit(1);
+    }
+  }
 
   let title = opts.title ?? "";
   let date = opts.date ?? todayStr();
@@ -60,10 +74,14 @@ export async function create(type: string, args: string[], opts: CreateOptions) 
   const filename = `${date}-${slug}.md`;
 
   if (type === "photo") {
-    const imagePath = args[0];
+    let imagePath = args[0];
     if (!imagePath) {
-      console.error("Usage: cli create photo <image-file> [options]");
-      process.exit(1);
+      if (isInteractive) {
+        imagePath = await ask("Image file path");
+      } else {
+        console.error("Usage: cli create photo <image-file> [options]");
+        process.exit(1);
+      }
     }
 
     let location = opts.location ?? "";
@@ -135,9 +153,6 @@ export async function create(type: string, args: string[], opts: CreateOptions) 
     writeFileSync(`${dir}/${filename}`, content, "utf-8");
     console.log(`Created: ${dir}/${filename}`);
 
-  } else {
-    console.error(`Unknown type: ${type}. Use: post, photo, note, highlight`);
-    process.exit(1);
   }
 
   if (isInteractive) close();
