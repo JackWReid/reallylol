@@ -11,9 +11,9 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.0",
-    "@astrojs/sitemap": "^3.0.0",
-    "astro": "5"
+    "@astrojs/rss": "4.0.18",
+    "@astrojs/sitemap": "3.7.2",
+    "astro": "6.1.9"
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.1024.0",
