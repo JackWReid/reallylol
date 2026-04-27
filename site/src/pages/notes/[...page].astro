@@ -30,7 +30,7 @@ function formatDate(date: Date): string {
     {page.currentPage === 1 && (
       <div class="notes-hero">
         <figure class="notes-bird">
-          <Image src={falconImg} alt="Two gyr falcons squabbling over prey" width={800} height={472} loading="eager" />
+          <Image src={falconImg} alt="Two gyr falcons squabbling over prey" widths={[480, 800]} sizes="(min-width: 600px) 480px, 100vw" loading="eager" />
           <figcaption>J. J. Audubon, <em>Iceland or Gyr Falcon</em>, 1827</figcaption>
         </figure>
         <h1 class="notes-hero__title">Notes</h1>
