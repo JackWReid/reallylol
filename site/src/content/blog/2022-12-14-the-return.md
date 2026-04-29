@@ -2,8 +2,8 @@
 title: "The return"
 date: "2022-12-14"
 tags:
-  - "short story"
-  - "written by me"
+  - "short-story"
+  - "written-by-me"
 ---
 
 > Liar. Couldn’t stick with it, it being something you said you would want forever, forever being from the early lusty days until one us died. You (being a liar) gave me three years and gave up when it got complicated, which is to say boring instead of exciting. You proved yourself to be a fair weather lover, which is to say? Coward.

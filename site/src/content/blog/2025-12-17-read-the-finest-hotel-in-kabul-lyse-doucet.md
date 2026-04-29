@@ -2,8 +2,8 @@
 title: "The Finest Hotel in Kabul by Lyse Doucet"
 date: "2025-12-17"
 tags:
-  - "medialog"
-  - "readbook"
+  - "media-log"
+  - "read-book"
   - "afghanistan"
   - "review"
   - "books"

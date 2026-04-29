@@ -2,8 +2,8 @@
 title: "Nothing Is True and Everything Is Possible"
 date: "2025-11-24"
 tags:
-  - "medialog"
-  - "readbook"
+  - "media-log"
+  - "read-book"
   - "russia"
   - "media"
 book_author: "Peter Pomerantsev"

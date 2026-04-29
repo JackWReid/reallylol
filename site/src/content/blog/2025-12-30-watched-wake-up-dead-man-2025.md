@@ -2,8 +2,8 @@
 title: "Wake Up Dead Man (2025)"
 date: "2025-12-30"
 tags:
-  - "medialog"
-  - "watchedmovie"
+  - "media-log"
+  - "watched-movie"
 movie_released: 2025
 rating: 3
 ---

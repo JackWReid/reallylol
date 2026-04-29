@@ -2,8 +2,8 @@
 title: "Four Weddings and a Funeral (1994)"
 date: "2025-12-27"
 tags:
-  - "medialog"
-  - "watchedmovie"
+  - "media-log"
+  - "watched-movie"
 movie_released: 1994
 rating: 3
 ---

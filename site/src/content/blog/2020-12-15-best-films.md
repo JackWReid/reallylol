@@ -3,8 +3,8 @@ title: "My top films of 2020"
 date: "2020-12-15"
 tags:
   - "media"
-  - "best of 2020"
-  - "best of year"
+  - "best-of-2020"
+  - "best-of-year"
   - "film"
 ---
 

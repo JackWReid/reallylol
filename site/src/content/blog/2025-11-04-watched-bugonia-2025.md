@@ -2,8 +2,8 @@
 title: "A bugonia is a flower"
 date: "2025-11-04"
 tags:
-  - "medialog"
-  - "watchedmovie"
+  - "media-log"
+  - "watched-movie"
   - "journal"
   - "film"
 movie_released: 2025

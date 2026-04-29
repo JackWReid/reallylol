@@ -4,7 +4,7 @@ date: "2026-03-23"
 tags:
   - "work"
   - "books"
-  - "medialog"
+  - "media-log"
   - "media"
   - "tv"
 book_author: "Alexander Starritt"

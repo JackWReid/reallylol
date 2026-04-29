@@ -2,8 +2,8 @@
 title: "The Good Apprentice by Iris Murdoch"
 date: "2025-11-15"
 tags:
-  - "medialog"
-  - "readbook"
+  - "media-log"
+  - "read-book"
   - "review"
 book_author: "Iris Murdoch"
 media_image: "https://assets.hardcover.app/external_data/59861180/10d68b613814496bab43108404816e70b2502275.jpeg"

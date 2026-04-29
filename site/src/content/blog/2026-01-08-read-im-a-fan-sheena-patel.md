@@ -2,8 +2,8 @@
 title: "I'm a Fan by Sheena Patel"
 date: "2026-01-08"
 tags:
-  - "medialog"
-  - "readbook"
+  - "media-log"
+  - "read-book"
   - "books"
   - "london"
   - "uk"

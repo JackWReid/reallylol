@@ -2,8 +2,8 @@
 title: "Our place out here"
 date: "2022-12-30"
 tags:
-  - "short story"
-  - "written by me"
+  - "short-story"
+  - "written-by-me"
 ---
 
 How long am I here for? Oh who's to say, boy. We've got a cottage on the island, so I suppose it's really up to me how long I'm here for. Where? It's out on the spur, right out where the lane starts bolting back and forth like a silly little rabbit. Near the end. It takes an age to drive out there and it knackers your suspension and in fact... it's a lot easier if you just walk it, if you don't mind the distance. I still don't really mind it even in my age. That must be why I'm such a sturdy old goat to this day.

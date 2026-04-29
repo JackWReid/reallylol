@@ -2,8 +2,8 @@
 title: "Die My Love (2025)"
 date: "2025-11-22"
 tags:
-  - "medialog"
-  - "watchedmovie"
+  - "media-log"
+  - "watched-movie"
 movie_released: 2025
 rating: 2
 ---

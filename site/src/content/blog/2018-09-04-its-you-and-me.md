@@ -2,7 +2,7 @@
 title: "It’s Just You And Me And Everybody Else"
 date: "2018-09-04"
 tags:
-  - "short story"
+  - "short-story"
 subtitle: "A short story from the perspective of a cockpit voice recorder"
 ---
 

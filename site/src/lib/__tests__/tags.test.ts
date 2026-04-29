@@ -4,8 +4,8 @@ import { getPrettyName, tagToSlug } from "../tags";
 describe("getPrettyName", () => {
   test("returns the configured pretty name for a known tag", () => {
     expect(getPrettyName("read")).toBe("Read");
-    expect(getPrettyName("medialog")).toBe("Media Log");
-    expect(getPrettyName("watchedmovie")).toBe("Watched Movies");
+    expect(getPrettyName("media-log")).toBe("Media Log");
+    expect(getPrettyName("watched-movie")).toBe("Watched Movies");
   });
 
   test("returns the tag itself for unknown tags", () => {

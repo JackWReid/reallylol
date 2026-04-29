@@ -2,8 +2,8 @@
 title: "Eddington (2025)"
 date: "2025-11-23"
 tags:
-  - "medialog"
-  - "watchedmovie"
+  - "media-log"
+  - "watched-movie"
 movie_released: 2025
 rating: 4
 ---

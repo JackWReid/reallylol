@@ -2,8 +2,8 @@
 title: "Hotel Chevalier (2007)"
 date: "2025-08-03"
 tags:
-  - "medialog"
-  - "watchedmovie"
+  - "media-log"
+  - "watched-movie"
   - "paris"
   - "france"
 movie_released: 2007

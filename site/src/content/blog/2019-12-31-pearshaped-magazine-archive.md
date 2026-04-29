@@ -4,7 +4,7 @@ date: "2019-12-31"
 tags:
   - "web"
   - "magazine"
-  - "link"
+  - "links"
 url: "/note/2019-12-31-pearshaped-magazine-archive"
 ---
 
