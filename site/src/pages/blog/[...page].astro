@@ -32,7 +32,7 @@ function formatDate(date: Date): string {
     {page.currentPage === 1 && (
       <div class="writing-hero">
         <figure class="writing-hero__figure">
-          <Image src={heroImg} alt="An illustration of suspicious mushrooms" width={800} height={560} loading="eager" />
+          <Image src={heroImg} alt="An illustration of suspicious mushrooms" widths={[480, 800]} sizes="(min-width: 600px) 800px, 100vw" loading="eager" />
           <figcaption>A. Cornillon, <em>Champignons Suspects</em>, 1827</figcaption>
         </figure>
         <h1 class="writing-hero__title">Blog</h1>
