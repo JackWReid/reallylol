@@ -30,6 +30,7 @@ tmp/
 *.log
 *.cache
 !bun.lock
+photo-tags-state.json
 
 # Environment files
 .env

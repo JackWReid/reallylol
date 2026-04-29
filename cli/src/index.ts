@@ -69,6 +69,31 @@ if (cmd === "create") {
     console.log("Usage: cli check <links>");
   }
 
+} else if (cmd === "tags") {
+  if (sub === "init") {
+    const { tagsInit } = await import("./commands/tags");
+    await tagsInit();
+  } else if (sub === "describe") {
+    const { tagsDescribe } = await import("./commands/tags");
+    await tagsDescribe(parseOpts(rest));
+  } else if (sub === "suggest") {
+    const { tagsSuggest } = await import("./commands/tags");
+    await tagsSuggest(parseOpts(rest));
+  } else if (sub === "review") {
+    const { tagsReview } = await import("./commands/tags");
+    await tagsReview();
+  } else if (sub === "apply") {
+    const { tagsApply } = await import("./commands/tags");
+    await tagsApply(parseOpts(rest));
+  } else {
+    console.log("Usage: cli tags <init|describe|suggest|review|apply>");
+    console.log("  init                               Scan untagged photos, build state file");
+    console.log("  describe [--limit N] [--concurrency N] [--host URL] [--model NAME]");
+    console.log("  suggest  [--limit N] [--host URL] [--model NAME]");
+    console.log("  review                             Open browser UI at http://localhost:4444");
+    console.log("  apply [--dry-run]                  Write approved tags to markdown files");
+  }
+
 } else {
   console.log(`really.lol CLI
 
@@ -77,6 +102,7 @@ Usage:
   cli media <upload|verify|orphans>
   cli library sync <books|films|links>
   cli check links
+  cli tags <init|describe|suggest|review|apply>
 
 Create options:
   --title, --tags, --date, --body, --slug
