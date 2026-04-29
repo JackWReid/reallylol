@@ -5,7 +5,7 @@ tags:
   - "journal"
   - "covid-19"
   - "london"
-  - "fitness"
+  - "sports"
   - "cycling"
   - "uk"
 ---

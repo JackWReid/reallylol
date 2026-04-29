@@ -4,7 +4,7 @@ date: "2020-10-12"
 tags:
   - "journal"
   - "covid-19"
-  - "fitness"
+  - "sports"
 ---
 
 I've been placed into self-isolation, it's been three days now. A friend of mine who I saw last week got a test after some very low level symptoms and he tested positive. He feels horribly guilty for the cluster of people around him who are now in self-isolation, which goes to show how much of this situation has been laid on the consciences of individual people, wrongly.

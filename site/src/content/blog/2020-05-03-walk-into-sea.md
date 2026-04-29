@@ -4,7 +4,7 @@ date: "2020-05-03"
 tags:
   - "journal"
   - "covid-19"
-  - "fitness"
+  - "sports"
   - "london"
   - "uk"
 ---

@@ -3,7 +3,7 @@ title: "Gym and jolof"
 date: "2020-08-23"
 tags:
   - "journal"
-  - "fitness"
+  - "sports"
   - "london"
   - "uk"
 ---
