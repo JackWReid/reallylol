@@ -2,7 +2,7 @@
 title: "The Battle of Helm's Deep, Part I"
 date: "2020-05-01"
 tags:
-  - "films"
+  - "film"
 link: "https%3A%2F%2Facoup.blog%2F2020%2F05%2F01%2Fcollections-the-battle-of-helms-deep-part-i-bargaining-for-goods-at-helms-gate%2F"
 ---
 

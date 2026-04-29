@@ -6,7 +6,7 @@ tags:
   - "history"
   - "books"
   - "conflict"
-  - "middleeast"
+  - "middle-east"
   - "literature"
   - "tech"
   - "money"

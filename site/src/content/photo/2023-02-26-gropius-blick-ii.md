@@ -6,7 +6,7 @@ tags:
   - "cities"
   - "berlin"
   - "germany"
-  - "bw"
+  - "black-and-white"
   - "sky"
   - "architecture"
 image: "img/photo/2023-02-26-gropius-blick-ii.jpg"

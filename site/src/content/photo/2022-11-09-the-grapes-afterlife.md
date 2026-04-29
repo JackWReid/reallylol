@@ -3,7 +3,7 @@ title: "Afterlife"
 date: "2022-11-09"
 tags:
   - "london"
-  - "city"
+  - "cities"
   - "pub"
   - "sarah"
   - "uk"

@@ -4,7 +4,7 @@ date: "2020-11-19"
 tags:
   - "books"
   - "history"
-  - "nyc"
+  - "new-york-city"
 link: "https://www.villagevoice.com/2017/09/20/keepers-of-the-secrets/"
 ---
 

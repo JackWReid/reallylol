@@ -2,7 +2,7 @@
 title: "Is Ronan Farrow Too Good to Be True?"
 date: "2020-05-18"
 tags:
-  - "metoo"
+  - "me-too"
   - "news"
 link: "https%3A%2F%2Fwww.nytimes.com%2F2020%2F05%2F17%2Fbusiness%2Fmedia%2Fronan-farrow.html"
 ---

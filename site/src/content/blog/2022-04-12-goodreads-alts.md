@@ -4,7 +4,7 @@ date: "2022-04-12"
 tags:
   - "books"
   - "web"
-  - "indieweb"
+  - "indie-web"
   - "dev"
 ---
 

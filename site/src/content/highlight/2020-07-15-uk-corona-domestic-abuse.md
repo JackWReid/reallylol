@@ -2,7 +2,7 @@
 title: "UK Domestic abuse victims rising under Coronavirus lockdown"
 date: "2020-07-15"
 tags:
-  - "domesticabuse"
+  - "domestic-abuse"
   - "women"
   - "uk"
   - "covid-19"

@@ -6,7 +6,7 @@ tags:
   - "germany"
   - "japan"
   - "history"
-  - "language"
+  - "languages"
   - "web"
   - "money"
   - "science"

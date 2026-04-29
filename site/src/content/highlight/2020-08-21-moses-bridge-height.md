@@ -5,7 +5,7 @@ tags:
   - "cities"
   - "justice"
   - "race"
-  - "nyc"
+  - "new-york-city"
 link: "https://gothamist.com/news/robert-caro-wonders-what-new-york-is-going-to-become"
 ---
 

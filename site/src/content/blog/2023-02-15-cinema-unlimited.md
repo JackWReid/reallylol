@@ -3,7 +3,6 @@ title: "Cinema unlimited"
 date: "2023-02-15"
 tags:
   - "film"
-  - "movies"
   - "berlin"
   - "money"
 ---

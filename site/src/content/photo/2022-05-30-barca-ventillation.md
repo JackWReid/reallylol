@@ -6,7 +6,7 @@ tags:
   - "spain"
   - "cities"
   - "barcelona"
-  - "interior"
+  - "interiors"
 image: "img/photo/2022-05-30-barca-ventillation.jpg"
 location: "Barcelona, Spain"
 ---

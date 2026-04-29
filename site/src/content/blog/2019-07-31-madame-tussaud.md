@@ -2,7 +2,7 @@
 title: "Madame Tussaud's Tall Tale"
 date: "2019-07-31"
 tags:
-  - "book"
+  - "books"
   - "history"
   - "london"
 url: "/note/2019-07-31-madame-tussaud"

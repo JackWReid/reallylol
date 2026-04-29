@@ -2,7 +2,7 @@
 title: "The ferry"
 date: "2022-04-27"
 tags:
-  - "nyc"
+  - "new-york-city"
   - "usa"
   - "sarah"
   - "faces"

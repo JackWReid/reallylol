@@ -6,7 +6,7 @@ tags:
   - "web"
   - "capitalism"
   - "indie"
-  - "indieweb"
+  - "indie-web"
 link: "https://www.rfc-editor.org/rfc/rfc8890.txt"
 ---
 

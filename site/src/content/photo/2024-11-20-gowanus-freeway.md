@@ -3,7 +3,7 @@ title: "Gowanus freeway"
 date: "2024-11-20"
 tags:
   - "usa"
-  - "nyc"
+  - "new-york-city"
   - "cities"
   - "transport"
   - "urban"

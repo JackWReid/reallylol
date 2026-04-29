@@ -2,7 +2,7 @@
 title: "Son"
 date: "2022-04-12"
 tags:
-  - "nyc"
+  - "new-york-city"
   - "travel"
   - "cities"
   - "usa"

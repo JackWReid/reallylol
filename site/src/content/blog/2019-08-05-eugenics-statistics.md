@@ -3,7 +3,7 @@ title: "Eugenics & Statistics"
 date: "2019-08-05"
 tags:
   - "politics"
-  - "book"
+  - "books"
   - "history"
 url: "/note/eugenics-statistics"
 ---

@@ -2,7 +2,7 @@
 title: "If I could bring one thing back to the internet it would be blogs"
 date: "2020-05-16"
 tags:
-  - "indieweb"
+  - "indie-web"
 link: "http%3A%2F%2Ftttthis.com%2Fedit%2Fblog%2Fif-i-could-bring-one-thing-back-to-the-internet-it-would-be-blogs"
 ---
 

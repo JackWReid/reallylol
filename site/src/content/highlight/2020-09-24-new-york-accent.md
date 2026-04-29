@@ -2,9 +2,9 @@
 title: "The New York Accent"
 date: "2020-09-24"
 tags:
-  - "language"
+  - "languages"
   - "linguistics"
-  - "nyc"
+  - "new-york-city"
 link: "https://literaryreview.co.uk/tawk-of-the-town"
 ---
 

@@ -2,8 +2,7 @@
 title: "Adam Driver On Marriage Story"
 date: "2020-01-01"
 tags:
-  - "films"
-  - "movies"
+  - "film"
   - "love"
 link: "https://www.nytimes.com/2020/01/01/movies/adam-driver-marriage-story.html"
 url: "/note/adam-driver-on-marriage-story"

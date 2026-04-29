@@ -2,8 +2,7 @@
 title: "The Distrust of LBJ-Era Filmmaking"
 date: "2020-05-06"
 tags:
-  - "films"
-  - "movies"
+  - "film"
 link: "https://www.theringer.com/movies/2020/4/22/21230236/cool-hand-luke-dr-strangelove-bonnie-and-clyde-lbj-era-movies"
 ---
 

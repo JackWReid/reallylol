@@ -2,7 +2,7 @@
 title: "Keep Park Clean"
 date: "2021-12-17"
 tags:
-  - "nyc"
+  - "new-york-city"
   - "travel"
   - "cities"
   - "usa"

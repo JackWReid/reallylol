@@ -4,7 +4,7 @@ date: "2020-05-08"
 tags:
   - "dev"
   - "tech"
-  - "indieweb"
+  - "indie-web"
   - "web"
 subtitle: "A quick tour of my personal infrastructure"
 ---

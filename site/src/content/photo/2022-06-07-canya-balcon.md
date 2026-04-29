@@ -5,7 +5,7 @@ tags:
   - "travel"
   - "spain"
   - "mallorca"
-  - "interior"
+  - "interiors"
 image: "img/photo/2022-06-07-canya-balcony.jpg"
 location: "Mallorca, Spain"
 ---

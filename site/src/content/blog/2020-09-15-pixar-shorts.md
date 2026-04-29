@@ -3,7 +3,7 @@ title: "Rewatching Pixar short films"
 date: "2020-09-15"
 tags:
   - "media"
-  - "movies"
+  - "film"
 ---
 
 I rewatched lots of Pixar shorts the other night. So much of Pixar’s storytelling is fixating on parenting, growing up, child development. Also it seems like each Pixar short is some kind of experiment in animation or storytelling.

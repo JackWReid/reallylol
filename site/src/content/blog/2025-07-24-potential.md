@@ -2,7 +2,7 @@
 title: "Potential"
 date: "2025-07-24"
 tags:
-  - "language"
+  - "languages"
   - "journal"
 ---
 

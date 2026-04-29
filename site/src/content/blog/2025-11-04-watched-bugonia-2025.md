@@ -5,7 +5,6 @@ tags:
   - "medialog"
   - "watchedmovie"
   - "journal"
-  - "movies"
   - "film"
 movie_released: 2025
 rating: 3

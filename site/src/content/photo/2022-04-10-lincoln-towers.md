@@ -2,7 +2,7 @@
 title: "Lincoln Towers"
 date: "2022-04-10"
 tags:
-  - "nyc"
+  - "new-york-city"
   - "travel"
   - "cities"
   - "architecture"

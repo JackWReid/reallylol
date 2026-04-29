@@ -3,7 +3,7 @@ title: "James Joyce’s grandson and the death of the stubborn literary executor
 date: "2020-02-10"
 tags:
   - "literature"
-  - "book"
+  - "books"
 link: "https://theoutline.com/post/8603/stephen-joyce-james-joyce-literary-estate"
 url: "/note/2020-02-10-james-joyce-estate"
 ---

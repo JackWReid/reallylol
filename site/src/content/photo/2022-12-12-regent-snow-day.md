@@ -3,7 +3,7 @@ title: "Snow day"
 date: "2022-12-12"
 tags:
   - "london"
-  - "city"
+  - "cities"
   - "snow"
   - "winter"
   - "uk"

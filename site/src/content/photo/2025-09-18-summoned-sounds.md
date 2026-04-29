@@ -5,7 +5,7 @@ tags:
   - "people"
   - "faces"
   - "friends"
-  - "interior"
+  - "interiors"
   - "berlin"
   - "germany"
 image: "img/photo/2025-09-18-summoned-sounds.jpg"

@@ -2,7 +2,7 @@
 title: "Day ride"
 date: "2022-04-08"
 tags:
-  - "nyc"
+  - "new-york-city"
   - "travel"
   - "cities"
   - "usa"

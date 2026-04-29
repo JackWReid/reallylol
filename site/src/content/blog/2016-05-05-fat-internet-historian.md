@@ -4,7 +4,7 @@ date: "2016-05-05"
 tags:
   - "internet"
   - "tech"
-  - "internet culture"
+  - "internet-culture"
 ---
 
 [Rives TED Talk](https://www.youtube.com/watch?v=gu_PQBmk-6c)

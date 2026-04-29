@@ -6,7 +6,6 @@ tags:
   - "best of 2020"
   - "best of year"
   - "film"
-  - "cinema"
 ---
 
 ![A group of schoolgirls laughing together](https://media.really.lol/img/post/2020-12-15-best-films/rocks-netflix.jpg)

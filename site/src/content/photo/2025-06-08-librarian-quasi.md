@@ -3,7 +3,7 @@ title: "Librarian Quasi"
 date: "2025-06-08"
 tags:
   - "france"
-  - "interior"
+  - "interiors"
   - "books"
   - "sarah"
   - "people"

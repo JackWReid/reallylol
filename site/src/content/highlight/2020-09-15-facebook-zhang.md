@@ -3,7 +3,7 @@ title: "The data scientist who didn't have time to stop all the coups"
 date: "2020-09-15"
 tags:
   - "politics"
-  - "social media"
+  - "social-media"
   - "facebook"
 link: "https://www.buzzfeednews.com/article/craigsilverman/facebook-ignore-political-manipulation-whistleblower-memo"
 ---

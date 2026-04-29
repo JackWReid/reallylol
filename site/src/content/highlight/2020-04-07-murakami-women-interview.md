@@ -3,7 +3,7 @@ title: "Haruki Murakami Challenged On Women"
 date: "2020-04-07"
 tags:
   - "literature"
-  - "book"
+  - "books"
 link: "https://lithub.com/a-feminist-critique-of-murakami-novels-with-murakami-himself/"
 url: "/note/2020-04-07-murakami-women-interview"
 ---

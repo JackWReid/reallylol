@@ -3,7 +3,7 @@ title: "V. Krishna and the making of an English-Kannada dictionary"
 date: "2020-09-29"
 tags:
   - "india"
-  - "language"
+  - "languages"
   - "linguistics"
 link: "https://zerodha.tech/blog/alar-the-making-of-an-open-source-dictionary/"
 ---

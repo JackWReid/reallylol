@@ -2,9 +2,7 @@
 title: "Henry & Atlas"
 date: "2022-07-22"
 tags:
-  - "dog"
   - "dogs"
-  - "pet"
   - "pets"
   - "people"
   - "faces"

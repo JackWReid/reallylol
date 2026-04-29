@@ -2,8 +2,8 @@
 title: "The bedsheets may be in use elsewhere?"
 date: "2020-04-26"
 tags:
-  - "book"
-  - "nyc"
+  - "books"
+  - "new-york-city"
   - "race"
 ---
 

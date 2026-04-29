@@ -7,8 +7,8 @@ tags:
   - "history"
   - "geography"
   - "linguistics"
-  - "language"
-  - "indieweb"
+  - "languages"
+  - "indie-web"
 ---
 
 First off, here's a [DJ set I liked][1].

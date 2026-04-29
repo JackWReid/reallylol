@@ -5,7 +5,7 @@ tags:
   - "books"
   - "france"
   - "journal"
-  - "language"
+  - "languages"
   - "travel"
 url: "/anchor-aweigh/"
 ---

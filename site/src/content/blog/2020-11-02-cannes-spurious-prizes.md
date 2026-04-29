@@ -3,7 +3,6 @@ title: "Men in evening wear slapping one another on the back"
 date: "2020-11-02"
 tags:
   - "media"
-  - "cinema"
   - "film"
   - "cannes"
 ---

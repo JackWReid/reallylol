@@ -4,7 +4,7 @@ date: "2021-12-20"
 tags:
   - "covid-19"
   - "france"
-  - "NYC"
+  - "new-york-city"
   - "travel"
   - "usa"
 url: "/you-did-your-best/"

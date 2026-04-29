@@ -5,7 +5,7 @@ tags:
   - "berlin"
   - "germany"
   - "winter"
-  - "interior"
+  - "interiors"
   - "dusk"
   - "snow"
 image: "img/photo/2024-01-16-no-outside.jpg"

@@ -3,7 +3,7 @@ title: "Igbo Orthography and The Ndebe Script"
 date: "2020-07-15"
 tags:
   - "literature"
-  - "language"
+  - "languages"
   - "linguistics"
   - "africa"
   - "design"

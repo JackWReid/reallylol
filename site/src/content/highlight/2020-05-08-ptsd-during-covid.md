@@ -3,7 +3,7 @@ title: "PTSD: Pandemic Superpower"
 date: "2020-05-08"
 tags:
   - "covid-19"
-  - "mental health"
+  - "mental-health"
 link: "https://www.vox.com/the-highlight/2020/4/23/21231596/coronavirus-covid-19-mental-health-ptsd-anxiety-depression"
 ---
 
