@@ -6,5 +6,5 @@ location: "Mexico City, Mexico"
 tags:
   - "mexico"
   - "travel"
-  - "sports"
+  - "fitness"
 ---

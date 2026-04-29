@@ -4,7 +4,7 @@ date: "2022-09-10"
 tags:
   - "wales"
   - "landscape"
-  - "sarah"
+  - "person-sarah"
   - "friends"
   - "countryside"
 image: "img/photo/2022-09-10-snowdon-hop.jpg"

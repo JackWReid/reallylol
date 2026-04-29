@@ -2,7 +2,7 @@
 title: "Swim chain"
 date: "2023-06-18"
 tags:
-  - "sarah"
+  - "person-sarah"
   - "people"
   - "nature"
   - "water"

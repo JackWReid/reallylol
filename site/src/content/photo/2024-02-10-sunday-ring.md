@@ -5,7 +5,7 @@ tags:
   - "berlin"
   - "germany"
   - "home"
-  - "sarah"
+  - "person-sarah"
 image: "img/photo/2024-02-10-sunday-ring.jpg"
 location: "Berlin, Germany"
 ---

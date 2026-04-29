@@ -5,7 +5,7 @@ tags:
   - "books"
   - "web"
   - "indie-web"
-  - "dev"
+  - "code"
 ---
 
 **TL;DR** I'm switching from Goodreads to Oku. [Sign up here][11] (referral code).

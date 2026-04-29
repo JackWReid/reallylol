@@ -5,7 +5,7 @@ tags:
   - "berlin"
   - "germany"
   - "wedding"
-  - "sarah"
+  - "person-sarah"
   - "me"
   - "faces"
 image: "img/photo/2023-10-20-wedding-train.jpg"

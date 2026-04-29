@@ -9,7 +9,6 @@ tags:
   - "justice"
   - "covid-19"
   - "usa"
-  - "america"
 link: "https://www.buzzfeednews.com/article/venessawong/eviction-mental-health-pandemic?bftwnews&utm_term=4ldqpgc#4ldqpgc"
 ---
 

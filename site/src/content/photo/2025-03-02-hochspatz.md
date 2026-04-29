@@ -5,7 +5,7 @@ tags:
   - "landscape"
   - "switzerland"
   - "mountains"
-  - "sarah"
+  - "person-sarah"
 image: "img/photo/2025-03-02-hochspatz.jpg"
 location: "Hasliberg, Switzerland"
 ---

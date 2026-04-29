@@ -1,8 +1,6 @@
 ---
 title: "Falling Fertility Rates"
 date: "2020-07-15"
-tags:
-  - "tag"
 link: "https://www.bbc.co.uk/news/health-53409521"
 ---
 

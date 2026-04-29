@@ -6,7 +6,7 @@ tags:
   - "faces"
   - "beach"
   - "coast"
-  - "matt"
+  - "person-matt"
   - "wales"
 image: "img/photo/2022-07-22-matt-beach.jpg"
 location: "Pembrokeshire, Wales"

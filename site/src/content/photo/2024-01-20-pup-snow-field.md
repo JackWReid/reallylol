@@ -4,7 +4,7 @@ date: "2024-01-20"
 tags:
   - "berlin"
   - "nature"
-  - "sarah"
+  - "person-sarah"
   - "faces"
   - "people"
   - "winter"

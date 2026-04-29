@@ -3,7 +3,7 @@ title: "UK Domestic abuse victims rising under Coronavirus lockdown"
 date: "2020-07-15"
 tags:
   - "domestic-abuse"
-  - "women"
+  - "gender"
   - "uk"
   - "covid-19"
 link: "https://www.nytimes.com/interactive/2020/07/02/world/europe/uk-coronavirus-domestic-abuse.html?searchResultPosition=2"

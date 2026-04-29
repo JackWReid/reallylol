@@ -2,7 +2,7 @@
 title: "Is The Internet A Rhizome?"
 date: "2015-03-02"
 tags:
-  - "technology"
+  - "tech"
   - "litcrit"
   - "academic"
   - "web"

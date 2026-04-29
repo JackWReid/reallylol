@@ -2,8 +2,8 @@
 title: "Names, Legal Names, and Fractally Deferred Responsibility"
 date: "2020-05-14"
 tags:
-  - "dev"
-  - "feminism"
+  - "code"
+  - "gender"
 link: "https%3A%2F%2Fnora.codes%2Fpost%2Fnames-legal-names-and-fractally-deferred-responsibility%2F"
 ---
 

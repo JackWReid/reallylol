@@ -3,7 +3,7 @@ title: "A year in ads"
 date: "2022-03-12"
 tags:
   - "capitalism"
-  - "coding"
+  - "code"
   - "media"
   - "work"
   - "buzzfeed"

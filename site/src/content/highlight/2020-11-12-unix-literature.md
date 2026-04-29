@@ -4,7 +4,6 @@ date: "2020-11-12"
 tags:
   - "tech"
   - "code"
-  - "unix"
 link: "http://theody.net/elements.html"
 ---
 

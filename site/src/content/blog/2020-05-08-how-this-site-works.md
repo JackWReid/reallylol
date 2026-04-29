@@ -2,7 +2,7 @@
 title: "How this site works"
 date: "2020-05-08"
 tags:
-  - "dev"
+  - "code"
   - "tech"
   - "indie-web"
   - "web"

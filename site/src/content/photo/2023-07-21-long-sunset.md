@@ -5,7 +5,7 @@ tags:
   - "scotland"
   - "shetland"
   - "uk"
-  - "sarah"
+  - "person-sarah"
   - "people"
   - "faces"
   - "wedding"

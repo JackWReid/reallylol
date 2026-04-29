@@ -2,7 +2,7 @@
 title: "Places and Non-Places"
 date: "2020-02-12"
 tags:
-  - "urbanism"
+  - "cities"
 link: "https://www.strongtowns.org/journal/2014/10/14/places-and-non-places"
 url: "/note/place-non-place"
 ---

@@ -3,7 +3,6 @@ title: "Ann Syrdal, Who Helped Give Computers a Female Voice"
 date: "2020-08-24"
 tags:
   - "obituary"
-  - "computers"
   - "tech"
   - "gender"
 link: "https://www.nytimes.com/2020/08/20/technology/ann-syrdal-who-helped-give-computers-a-female-voice-dies-at-74.html"

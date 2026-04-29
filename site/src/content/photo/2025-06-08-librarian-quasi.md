@@ -5,7 +5,7 @@ tags:
   - "france"
   - "interiors"
   - "books"
-  - "sarah"
+  - "person-sarah"
   - "people"
 image: "img/photo/2025-06-08-librarian-quasi.jpg"
 location: "St-Loup-des-Vignes, France"

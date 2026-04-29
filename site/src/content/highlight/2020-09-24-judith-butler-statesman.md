@@ -4,9 +4,7 @@ date: "2020-09-24"
 tags:
   - "justice"
   - "gender"
-  - "trans"
   - "philosophy"
-  - "theory"
 link: "https://www.newstatesman.com/international/2020/09/judith-butler-culture-wars-jk-rowling-and-living-anti-intellectual-times"
 ---
 

@@ -3,7 +3,7 @@ title: "Accessible Buzzfeed"
 date: "2020-08-27"
 tags:
   - "web"
-  - "dev"
+  - "code"
   - "work"
   - "buzzfeed"
   - "accessibility"

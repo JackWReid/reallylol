@@ -3,7 +3,7 @@ title: "Above the clouds"
 date: "2023-01-26"
 tags:
   - "people"
-  - "sarah"
+  - "person-sarah"
   - "skiing"
   - "switzerland"
   - "travel"

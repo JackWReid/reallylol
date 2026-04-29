@@ -1,7 +1,7 @@
 {
   "exclude_tags": [
-    "lizzie",
-    "emma"
+    "person-lizzie",
+    "person-emma"
   ],
   "map_tag_names": {
     "watchedmovie": "Watched Movies",
@@ -28,7 +28,16 @@
     "film-photography": "Film Photography",
     "indie-web": "IndieWeb",
     "me-too": "#MeToo",
-    "dev": "Development",
+    "person-sarah": "Sarah",
+    "person-jack": "Jack",
+    "person-matt": "Matt",
+    "person-tom": "Tom",
+    "person-henry": "Henry",
+    "person-martha": "Martha",
+    "person-lukas": "Lukas",
+    "person-lizzie": "Lizzie",
+    "person-emma": "Emma",
+    "code": "Code",
     "uk": "United Kingdom",
     "us": "United States",
     "ai": "AI",

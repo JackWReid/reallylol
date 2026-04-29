@@ -2,7 +2,7 @@
 title: "Down from the hide"
 date: "2023-05-07"
 tags:
-  - "sarah"
+  - "person-sarah"
   - "people"
   - "nature"
   - "germany"

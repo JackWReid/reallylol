@@ -6,7 +6,7 @@ tags:
   - "germany"
   - "wedding"
   - "family"
-  - "sarah"
+  - "person-sarah"
 image: "img/photo/2023-10-20-wedding-dads.jpg"
 location: "Berlin"
 ---

@@ -6,7 +6,7 @@ tags:
   - "pets"
   - "people"
   - "faces"
-  - "henry"
+  - "person-henry"
   - "wales"
   - "coast"
   - "beach"

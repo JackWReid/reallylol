@@ -3,7 +3,7 @@ title: "Mother Earth Mother Board"
 date: "2020-05-21"
 tags:
   - "web"
-  - "engineering"
+  - "tech"
 link: "https%3A%2F%2Fwww.wired.com%2F1996%2F12%2Fffglass%2F"
 ---
 

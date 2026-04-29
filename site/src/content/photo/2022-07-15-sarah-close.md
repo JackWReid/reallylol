@@ -4,7 +4,7 @@ date: "2022-07-15"
 tags:
   - "people"
   - "faces"
-  - "sarah"
+  - "person-sarah"
 image: "img/photo/2022-07-15-sarah-close.jpg"
 location: "Bristol, UK"
 ---

@@ -6,7 +6,7 @@ tags:
   - "switzerland"
   - "skiing"
   - "mountains"
-  - "sarah"
+  - "person-sarah"
   - "faces"
 image: "img/photo/2022-02-26-last-walk-ski.jpg"
 location: "Hasliberg, Switzerland"

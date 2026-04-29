@@ -2,7 +2,7 @@
 title: "Second-guessing the modern web"
 date: "2020-05-11"
 tags:
-  - "dev"
+  - "code"
 link: "https%3A%2F%2Fmacwright.org%2F2020%2F05%2F10%2Fspa-fatigue.html"
 ---
 
