@@ -6,6 +6,7 @@ tags:
   - "london"
   - "architecture"
   - "history"
+  - "uk"
 link: "https://diamondgeezer.blogspot.com/2020/11/tall-buildings-in-city-of-london.html"
 ---
 

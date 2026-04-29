@@ -6,6 +6,7 @@ tags:
   - "berlin"
   - "winter"
   - "street"
+  - "germany"
 image: "img/photo/2024-01-20-make-open-bottle.jpg"
 location: "Berlin, Germany"
 ---

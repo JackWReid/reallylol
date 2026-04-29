@@ -4,6 +4,7 @@ date: "2020-11-28"
 tags:
   - "journal"
   - "london"
+  - "uk"
 ---
 
 I went and saw Jamie in the park. It was freezing cold today but I had panicked and put on a heavy coat. The hills in Dulwich were unrelenting from the beginning and I was dripping in sweat before I reached Clapham. We spoke about things breaking down, about how much we can endure and how many times we can restart things and change our conditions.

@@ -5,6 +5,7 @@ tags:
   - "berlin"
   - "cities"
   - "journal"
+  - "germany"
 ---
 
 The church bells in this place, my god. They toll for 10 solid minutes every week night and for God knows how long on a Sunday morning. For a short time today there was a relentless tolling of the bells and a old timey horn honking at once. Chaos.

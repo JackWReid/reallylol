@@ -6,6 +6,7 @@ tags:
   - "journal"
   - "fitness"
   - "london"
+  - "uk"
 ---
 
 It’s Easter Sunday. We ran 10k, to the river and back; it was sunny and the paths up the banks were quiet. The residential streets were even quieter, though every house was full up with its residents. These’s no simple phrase to describe a street that is quiet in the sense of traffic coming and going, but packed with everybody who lives there being at home at once.

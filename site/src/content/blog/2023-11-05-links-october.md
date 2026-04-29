@@ -6,6 +6,7 @@ tags:
   - "tech"
   - "london"
   - "architecture"
+  - "uk"
 ---
 
 First here's [Sequel][1], which is one of those apps for tracking the stuff you watch and read and listen to, and the stuff you want to watch and read and listen to. I do a lot of that, and this app looks slick, but I probably won't switch to it because it's iOS only. For you, maybe that's perfect.

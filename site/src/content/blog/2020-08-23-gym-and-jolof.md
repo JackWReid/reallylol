@@ -5,6 +5,7 @@ tags:
   - "journal"
   - "fitness"
   - "london"
+  - "uk"
 ---
 
 I woke up early and lay in bed for a while knowing Emma wanted a big lie in to catch up on sleep from a bad week. Eventually I got up and booked a slot at the gym and cycled there. I’ve been running less and going to the gym more, is that a more vain balance of exercise? Jay Rayner was back at the gym, and this time James Nesbitt was there too. I’ve told a couple of people this and I know that there’s nothing to care about but I still feel like I should do something with the information.

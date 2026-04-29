@@ -4,6 +4,7 @@ date: "2020-08-09"
 tags:
   - "scotland"
   - "journal"
+  - "uk"
 ---
 
 It's been a good week. We came back from Scotland and spent a week relaxing at home around my birthday. Then Tom arrived in Heathrow having run the gauntlet of the travel restrictions imposed by the Indian government, UK government, and the various airlines. He's been decompressing here for a week or so, and making us incredible amounts of food and drink in the meantime. It's good to have your habits disrupted.

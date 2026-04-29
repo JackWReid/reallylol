@@ -6,6 +6,7 @@ tags:
   - "people"
   - "nature"
   - "landscape"
+  - "uk"
 image: "img/photo/2022-07-22-ben-cline-hike.jpg"
 location: "Pembrokeshire, Wales"
 ---

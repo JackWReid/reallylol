@@ -10,6 +10,7 @@ tags:
   - "wales"
   - "coast"
   - "beach"
+  - "uk"
 image: "img/photo/2022-07-22-henry-atlas-pem.jpg"
 location: "Pembrokeshire, Wales"
 ---

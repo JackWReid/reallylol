@@ -5,6 +5,7 @@ tags:
   - "medialog"
   - "watchedmovie"
   - "paris"
+  - "france"
 movie_released: 2007
 rating: 3
 ---

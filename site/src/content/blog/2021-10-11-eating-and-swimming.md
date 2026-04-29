@@ -7,6 +7,7 @@ tags:
   - "journal"
   - "london"
   - "swimming"
+  - "uk"
 url: "/journal-monday-11th-october-2022/"
 ---
 

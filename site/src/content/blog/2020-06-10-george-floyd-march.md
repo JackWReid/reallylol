@@ -7,6 +7,7 @@ tags:
   - "race"
   - "usa"
   - "london"
+  - "uk"
 ---
 
 The Black Lives Matter protests have become the story of the day. Hundreds of thousands of people in cities all over the world have been demonstrating for over a week. We joined the end of a march in Brixton first, hearing about it from a friend who saw it pass through Kennington and cycling out to join the fray. It was the first crowd I’d been in in months. It made the fact that people were shouting in one voice even more striking. A man stood over the crowd with a megaphone and thanked them for assembling, spoke about the need for justice for those killed by police in the UK, and asked us to go home peacefully. The core of the group marched up Brixton Road and demonstrated in Windrush Square. We went to another march this Sunday, beginning as a protest at the American Embassy in Vauxhall and eventually marching over Vauxhall Bridge and to Parliament Square. Unlikely figures hung out of the windows of expensive apartment buildings in Pimlico to show support for the passing demonstrators, banging pots and pans. Many more windows were notably absent of support, given then everybody is probably home. In Parliament Square, I looked at the protestors with a colossal statue of Winston Churchill rising above them and wondered how long its presence would be tolerated; later the news reported his plinth had been annotated to include his status as a murderer.

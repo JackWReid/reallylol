@@ -7,6 +7,7 @@ tags:
   - "outdoors"
   - "london"
   - "work"
+  - "uk"
 ---
 
 In this second lockdown it's all suddenly become about long walks and big cooks. Emma's been walking for a dozen miles at a time through a river of wild spaces in South London called the Green Chain Walk. I've been churning through the cookbooks that I've been picking at until now, mostly neglecting. Successes lately have been gyoza, massaman curry, drunken noodles, Tuscan bean soup with homebaked bread.

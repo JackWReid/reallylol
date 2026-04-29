@@ -5,6 +5,7 @@ tags:
   - "reflection"
   - "berlin"
   - "cities"
+  - "germany"
 image: "img/photo/2023-02-26-planter-mirror.jpg"
 location: "Plänterwald, Berlin"
 ---

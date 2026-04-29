@@ -5,6 +5,7 @@ tags:
   - "journal"
   - "london"
   - "covid-19"
+  - "uk"
 ---
 
 I've been meeting my manager in the park every week during lockdown. He lived in a neighbourhood nearby and we both missed seeing people from work face-to-face, so it made sense. Plus the weather's been good for the most part so it's been nice to sit and have our catch up in the sun with either a coffee or a beer. Today I cycled there from the new house; it's about fifteen minutes away.

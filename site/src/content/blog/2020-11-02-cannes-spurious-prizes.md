@@ -5,6 +5,7 @@ tags:
   - "media"
   - "film"
   - "cannes"
+  - "france"
 ---
 
 The [latest issue](https://jomc.substack.com/p/last-vhs-left-movies?token=eyJ1c2VyX2lkIjo1NzAyODQzLCJwb3N0X2lkIjoxNjgxNjQ4OSwiXyI6IkRKcGd6IiwiaWF0IjoxNjA0MzEwNTMwLCJleHAiOjE2MDQzMTQxMzAsImlzcyI6InB1Yi0yMzgyIiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.4zG3wHWBPaaCVmBreX0upZhOK6zIkOfDFJfiVf6kZ2Q) of the _All My Stars_ newsletter got me reading about _Crash_ (1996). It was obviously a very contraversial film, that much I remember. There was some monocle-popping from Francis Ford Coppola on the Cannes jury; he refused to present the award that the film went on to win. What's funny though is that the film won the _Special Jury Prize_, not just the _Jury Prize_. What's the difference? Well I looked it up:

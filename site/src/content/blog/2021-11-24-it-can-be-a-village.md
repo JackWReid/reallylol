@@ -4,6 +4,7 @@ date: "2021-11-24"
 tags:
   - "cycling"
   - "london"
+  - "uk"
 url: "/it-can-be-a-village/"
 ---
 

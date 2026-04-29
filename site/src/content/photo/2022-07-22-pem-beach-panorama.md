@@ -6,6 +6,7 @@ tags:
   - "coast"
   - "beach"
   - "landscape"
+  - "uk"
 image: "img/photo/2022-07-22-pem-beach-panorama.jpg"
 location: "Pembrokeshire, Wales"
 ---

@@ -5,6 +5,7 @@ tags:
   - "film"
   - "berlin"
   - "money"
+  - "germany"
 ---
 
 Moving to a new country with a new currency, one of the things we've been thinking about is, "is it cheaper?" It's a very intangible thing. I'm too stupid to do quick currency conversions in my head, I'm earning a different amount of money (is it more, is it less, yes!), and different kinds of costs work out very differently. Recently we had an incident with an outrageously expensive (or was it?) iceberg lettuce from Lidl, a budget supermarket, 2€! Unlimited metro usage is 29€ a month (until it possibly doubles in a couple of months, or doesn't). We're getting a new apartment that is twice the size of our apartment in London and more than I've ever paid for a place to live, but it's not twice as expensive as that place in London.

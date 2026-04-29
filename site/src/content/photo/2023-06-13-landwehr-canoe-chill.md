@@ -7,6 +7,7 @@ tags:
   - "nature"
   - "person-sarah"
   - "people"
+  - "germany"
 image: "img/photo/2023-06-13-landwehr-canoe-chill.jpg"
 location: "Kreuzberg, Berlin"
 ---

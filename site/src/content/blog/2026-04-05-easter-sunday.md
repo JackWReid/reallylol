@@ -4,6 +4,7 @@ date: "2026-04-05"
 tags:
   - "journal"
   - "berlin"
+  - "germany"
 ---
 
 We got out of our heads. We ran every morning around the canal banks where the tree blossoms have already burst and dropped on the ground to look like cheap confetti. We bought a new video game and took turns smashing things on the screen.

@@ -6,6 +6,7 @@ tags:
   - "covid-19"
   - "fitness"
   - "london"
+  - "uk"
 ---
 
 We slept unhappily and woke up wary aliens to one another. I shuffled downstairs for breakfast and coffee but there wasn't any milk. I'm known to shower first thing every morning, with stubborn regularity, but today I masochistically let the discomfort and sadness of yesterday fester on my skin and in yesterday's clothes, which I slipped back on to lay on the bed. The cat curled up against me as I started reading, creature next to stone golem.

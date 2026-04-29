@@ -5,6 +5,7 @@ tags:
   - "cities"
   - "architecture"
   - "berlin"
+  - "germany"
 image: "img/photo/2023-02-26-gropius-blick.jpg"
 location: "Neukölln, Berlin"
 ---

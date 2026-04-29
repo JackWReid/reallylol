@@ -6,6 +6,7 @@ tags:
   - "scotland"
   - "race"
   - "africa"
+  - "uk"
 link: "https://en.wikipedia.org/wiki/Ellen_More"
 ---
 

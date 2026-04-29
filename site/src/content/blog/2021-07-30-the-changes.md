@@ -7,6 +7,7 @@ tags:
   - "london"
   - "fitness"
   - "cycling"
+  - "uk"
 ---
 
 There's been a gap. There have been some changes.

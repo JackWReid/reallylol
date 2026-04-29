@@ -9,6 +9,7 @@ tags:
   - "people"
   - "winter"
   - "snow"
+  - "germany"
 image: "img/photo/2024-01-20-pup-snow-field.jpg"
 location: "Schlesi Busch, Berlin"
 ---
