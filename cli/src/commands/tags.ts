@@ -101,6 +101,33 @@ export function applyTagsToContent(content: string, tags: string[]): string {
   return `${open}${cleaned.join("\n")}${close}${rest}`;
 }
 
+// --- Progress display ---
+
+function printProgress(
+  state: PhotoState,
+  batchDone: number,
+  batchTotal: number,
+  errors: number,
+  first: boolean,
+) {
+  const values = Object.values(state);
+  const total = values.length;
+  const nDescribed = values.filter((r) =>
+    ["described", "suggested", "reviewed", "applied"].includes(r.status)
+  ).length;
+  const nSuggested = values.filter((r) =>
+    ["suggested", "reviewed", "applied"].includes(r.status)
+  ).length;
+  const pDesc = total ? Math.round((nDescribed / total) * 100) : 0;
+  const pSug = total ? Math.round((nSuggested / total) * 100) : 0;
+
+  const line1 = `[${pDesc}% described, ${pSug}% suggested]`;
+  const line2 = `Batch: ${batchDone}/${batchTotal} (${errors} errors)`;
+
+  if (!first) process.stdout.write("\x1b[2A");
+  process.stdout.write(`\r\x1b[K${line1}\n\r\x1b[K${line2}   `);
+}
+
 // --- Commands ---
 
 export async function tagsInit() {
@@ -164,9 +191,10 @@ export async function tagsDescribe(opts: DescribeOpts) {
     return;
   }
 
-  console.log(`Describing ${pending.length} photos (concurrency: ${concurrency}, model: ${model})...`);
+  console.log(`Describing ${pending.length} photos (concurrency: ${concurrency}, model: ${model})`);
   let done = 0;
   let errors = 0;
+  let first = true;
 
   for (let i = 0; i < pending.length; i += concurrency) {
     const batch = pending.slice(i, i + concurrency);
@@ -187,13 +215,15 @@ export async function tagsDescribe(opts: DescribeOpts) {
         errors++;
         process.stderr.write(`\nError on ${slug}: ${err}\n`);
       }
-      process.stdout.write(`\r${done + errors}/${pending.length} (${errors} errors)   `);
+      printProgress(state, done + errors, pending.length, errors, first);
+      first = false;
     }));
 
     saveState(state);
   }
 
-  console.log(`\nDone: ${done} described, ${errors} errors`);
+  process.stdout.write("\n");
+  console.log(`Done: ${done} described, ${errors} errors`);
 }
 
 interface SuggestOpts {
@@ -217,9 +247,10 @@ export async function tagsSuggest(opts: SuggestOpts) {
     return;
   }
 
-  console.log(`Suggesting tags for ${described.length} photos (model: ${model})...`);
+  console.log(`Suggesting tags for ${described.length} photos (model: ${model})`);
   let done = 0;
   let errors = 0;
+  let first = true;
 
   for (const [slug, record] of described) {
     try {
@@ -230,13 +261,15 @@ export async function tagsSuggest(opts: SuggestOpts) {
       errors++;
       process.stderr.write(`\nError on ${slug}: ${err}\n`);
     }
-    process.stdout.write(`\r${done + errors}/${described.length} (${errors} errors)   `);
+    printProgress(state, done + errors, described.length, errors, first);
+    first = false;
 
     if ((done + errors) % 10 === 0) saveState(state);
   }
 
   saveState(state);
-  console.log(`\nDone: ${done} suggested, ${errors} errors`);
+  process.stdout.write("\n");
+  console.log(`Done: ${done} suggested, ${errors} errors`);
 }
 
 interface ApplyOpts {
