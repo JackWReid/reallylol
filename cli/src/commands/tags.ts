@@ -147,8 +147,8 @@ interface DescribeOpts {
 }
 
 export async function tagsDescribe(opts: DescribeOpts) {
-  const host = opts.host ?? "http://192.165.0.65:30068";
-  const model = opts.model ?? "qwen2.5vl:4b";
+  const host = opts.host ?? "http://192.168.0.65:30068";
+  const model = opts.model ?? "qwen3-vl:4b";
   const limit = opts.limit ? parseInt(opts.limit, 10) : Infinity;
   const concurrency = Math.min(parseInt(opts.concurrency ?? "2", 10), 10);
 
@@ -201,8 +201,8 @@ interface SuggestOpts {
 }
 
 export async function tagsSuggest(opts: SuggestOpts) {
-  const host = opts.host ?? "http://192.165.0.65:30068";
-  const model = opts.model ?? "qwen2.5vl:4b";
+  const host = opts.host ?? "http://192.168.0.65:30068";
+  const model = opts.model ?? "qwen3:0.6b";
   const limit = opts.limit ? parseInt(opts.limit, 10) : Infinity;
 
   const state = loadState();

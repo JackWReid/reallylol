@@ -17,6 +17,7 @@ export async function describeImage(
       messages: [{
         role: "user",
         content: [
+          "/no_think",
           "Describe this photograph in detail. Cover: main subjects, setting and location type",
           "(urban/rural/interior), time of day, weather, mood, colours, whether it appears to be",
           "film or digital photography, black and white or colour, any visible text or signs,",
@@ -41,6 +42,7 @@ export async function suggestTags(
 ): Promise<string[]> {
   const tagList = taxonomy.join(", ");
   const prompt = [
+    `/no_think`,
     `Given this photo description: "${description}"`,
     ``,
     `Select the most relevant tags from this exact list (return ONLY a JSON array of strings, no other text):`,
@@ -76,5 +78,5 @@ export async function suggestTags(
   }
 
   const taxonomySet = new Set(taxonomy);
-  return (parsed as string[]).filter((t) => taxonomySet.has(t));
+  return [...new Set((parsed as string[]).filter((t) => taxonomySet.has(t)))];
 }
