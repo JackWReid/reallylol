@@ -108,7 +108,6 @@ function printProgress(
   batchDone: number,
   batchTotal: number,
   errors: number,
-  first: boolean,
 ) {
   const values = Object.values(state);
   const total = values.length;
@@ -121,11 +120,8 @@ function printProgress(
   const pDesc = total ? Math.round((nDescribed / total) * 100) : 0;
   const pSug = total ? Math.round((nSuggested / total) * 100) : 0;
 
-  const line1 = `[${pDesc}% described, ${pSug}% suggested]`;
-  const line2 = `Batch: ${batchDone}/${batchTotal} (${errors} errors)`;
-
-  if (!first) process.stdout.write("\x1b[2A");
-  process.stdout.write(`\r\x1b[K${line1}\n\r\x1b[K${line2}   `);
+  const line = `[${pDesc}% described, ${pSug}% suggested]  Batch: ${batchDone}/${batchTotal} (${errors} errors)`;
+  process.stdout.write(`\r${line}   `);
 }
 
 // --- Commands ---
@@ -194,7 +190,6 @@ export async function tagsDescribe(opts: DescribeOpts) {
   console.log(`Describing ${pending.length} photos (concurrency: ${concurrency}, model: ${model})`);
   let done = 0;
   let errors = 0;
-  let first = true;
 
   for (let i = 0; i < pending.length; i += concurrency) {
     const batch = pending.slice(i, i + concurrency);
@@ -215,8 +210,7 @@ export async function tagsDescribe(opts: DescribeOpts) {
         errors++;
         process.stderr.write(`\nError on ${slug}: ${err}\n`);
       }
-      printProgress(state, done + errors, pending.length, errors, first);
-      first = false;
+      printProgress(state, done + errors, pending.length, errors);
     }));
 
     saveState(state);
@@ -250,7 +244,6 @@ export async function tagsSuggest(opts: SuggestOpts) {
   console.log(`Suggesting tags for ${described.length} photos (model: ${model})`);
   let done = 0;
   let errors = 0;
-  let first = true;
 
   for (const [slug, record] of described) {
     try {
@@ -261,8 +254,7 @@ export async function tagsSuggest(opts: SuggestOpts) {
       errors++;
       process.stderr.write(`\nError on ${slug}: ${err}\n`);
     }
-    printProgress(state, done + errors, described.length, errors, first);
-    first = false;
+    printProgress(state, done + errors, described.length, errors);
 
     if ((done + errors) % 10 === 0) saveState(state);
   }
