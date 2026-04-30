@@ -11,7 +11,7 @@ interface BookInput {
   dateUpdated: string | null;
 }
 export async function syncBooks(shelf: string) {
-  const input = await readStdin();
+  const input = process.stdin.isTTY ? runCover(shelf) : await readStdin();
   const rawItems = JSON.parse(input) as BookInput[];
 
   const today = new Date().toISOString().slice(0, 10);
@@ -138,6 +138,18 @@ export async function syncLinks() {
   const outPath = `${DATA_DIR}/links.json`;
   writeFileSync(outPath, JSON.stringify(links, null, 2), "utf-8");
   console.log(`Wrote ${links.length} links to ${outPath}`);
+}
+
+function runCover(shelf: string): string {
+  console.log(`Running: cover books --shelf ${shelf} --json --per-page 2000`);
+  const result = spawnSync(
+    "cover",
+    ["books", "--shelf", shelf, "--json", "--per-page", "2000"],
+    { encoding: "utf-8", maxBuffer: 64 * 1024 * 1024 },
+  );
+  if (result.error) throw new Error(`Failed to run cover: ${result.error.message}`);
+  if (result.status !== 0) throw new Error(`cover exited ${result.status}: ${result.stderr}`);
+  return result.stdout;
 }
 
 function readStdin(): Promise<string> {

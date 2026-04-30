@@ -1,5 +1,17 @@
 [
   {
+    "title": "LiveSunset — Watch Live Sunsets From Around the World",
+    "url": "https://www.livesunset.io/",
+    "date": "2026-04-30",
+    "excerpt": "Watch live sunset streams from around the world, 24/7. AI-ranked for the best sky conditions.",
+    "cover": "https://www.livesunset.io/img/cover_photo.jpg",
+    "tags": [
+      "Nature",
+      "toblog",
+      "Geography"
+    ]
+  },
+  {
     "title": "They Built Stepford AI and Called It “Agentic”",
     "url": "https://abiawomosu.substack.com/p/they-built-stepford-ai-and-called",
     "date": "2026-04-27",
@@ -480,8 +492,8 @@
       "Archeology",
       "Architecture",
       "Geography",
-      "south america",
-      "toblog"
+      "toblog",
+      "Latin America"
     ]
   },
   {
