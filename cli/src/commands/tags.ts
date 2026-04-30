@@ -388,6 +388,10 @@ const REVIEW_HTML = `<!DOCTYPE html>
   #photo-panel img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; }
   #tag-panel { width: 360px; flex-shrink: 0; display: flex; flex-direction: column; border-left: 1px solid #333; overflow: hidden; }
   #description { padding: 10px 14px; font-size: 12px; color: #777; background: #222; border-bottom: 1px solid #333; line-height: 1.5; max-height: 90px; overflow-y: auto; flex-shrink: 0; font-style: italic; }
+  #search-wrap { padding: 8px 14px; background: #1e1e1e; border-bottom: 1px solid #333; flex-shrink: 0; }
+  #tag-search { width: 100%; background: #2a2a2a; border: 1px solid #3a3a3a; border-radius: 6px; padding: 5px 10px; font-size: 12px; color: #ccc; font-family: inherit; outline: none; }
+  #tag-search::placeholder { color: #555; }
+  #tag-search:focus { border-color: #555; }
   #tag-list { flex: 1; overflow-y: auto; padding: 12px 14px; display: flex; flex-wrap: wrap; gap: 5px; align-content: flex-start; }
   .tag { padding: 3px 9px; border-radius: 20px; font-size: 12px; cursor: pointer; user-select: none; border: 1px solid #3a3a3a; background: #252525; color: #999; transition: background 0.1s, border-color 0.1s, color 0.1s; }
   .tag:hover { border-color: #555; color: #ccc; }
@@ -413,6 +417,7 @@ const REVIEW_HTML = `<!DOCTYPE html>
   <div id="photo-panel"><img id="photo" src="" alt="" loading="eager"></div>
   <div id="tag-panel">
     <div id="description"></div>
+    <div id="search-wrap"><input id="tag-search" type="text" placeholder="Search tags..." autocomplete="off"></div>
     <div id="tag-list"></div>
     <div id="actions">
       <button id="btn-skip">Skip (S)</button>
@@ -426,6 +431,14 @@ const REVIEW_HTML = `<!DOCTYPE html>
 </div>
 <script>
 let currentSlug = '';
+
+function filterTags(query) {
+  const q = query.toLowerCase().trim();
+  document.querySelectorAll('.tag:not(.separator)').forEach(el => {
+    el.style.display = (!q || el.textContent.includes(q)) ? '' : 'none';
+  });
+  document.querySelectorAll('.tag.separator').forEach(el => { el.style.display = q ? 'none' : ''; });
+}
 
 async function load() {
   const res = await fetch('/api/current');
@@ -445,11 +458,13 @@ async function load() {
   document.getElementById('photo').src = data.imageUrl;
   document.getElementById('description').textContent = data.description;
 
+  const search = document.getElementById('tag-search');
+  search.value = '';
+
   const suggested = new Set(data.suggestedTags);
   const tagList = document.getElementById('tag-list');
   tagList.innerHTML = '';
 
-  // Suggested tags first (pre-selected), separator, then rest
   const rest = data.taxonomy.filter(t => !suggested.has(t));
   for (const tag of data.suggestedTags) {
     const el = document.createElement('span');
@@ -487,12 +502,14 @@ async function skip() {
   load();
 }
 
+document.getElementById('tag-search').addEventListener('input', e => filterTags(e.target.value));
+
 document.getElementById('btn-approve').onclick = approve;
 document.getElementById('btn-skip').onclick = skip;
 
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && !e.ctrlKey && !e.metaKey) { e.preventDefault(); approve(); }
-  if ((e.key === 's' || e.key === 'S') && !e.ctrlKey && !e.metaKey) { e.preventDefault(); skip(); }
+  if ((e.key === 's' || e.key === 'S') && !e.ctrlKey && !e.metaKey && document.activeElement !== document.getElementById('tag-search')) { e.preventDefault(); skip(); }
 });
 
 load();
