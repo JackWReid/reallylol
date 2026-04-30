@@ -1,9 +1,9 @@
 ---
 import Base from "../../layouts/Base.astro";
 import booksData from "../../data/books-reading.json";
+import { sortByRecent, formatSince, hasCover, type BookRow } from "../../lib/reading";
 
-interface BookRow { title: string; author: string; date_updated: string; }
-const books = (booksData as BookRow[]).sort((a, b) => a.title.localeCompare(b.title));
+const books = sortByRecent(booksData as BookRow[]);
 ---
 
 <Base title="Library" section="library">
@@ -17,15 +17,48 @@ const books = (booksData as BookRow[]).sort((a, b) => a.title.localeCompare(b.ti
         <a href="/films/watched">Watched</a>
         <a href="/films/towatch">To Watch</a>
       </div>
-      <div class="timeline">
-        <p class="timeline__flat-count">{books.length} books</p>
-        {books.map((item) => (
-          <div class="timeline__item">
-            <span class="timeline__title">{item.title}</span>
-            <span class="timeline__creator">{item.author}</span>
-          </div>
-        ))}
-      </div>
+
+      {books.length === 0 ? (
+        <p class="reading-shelf__empty">Between books at the moment.</p>
+      ) : (
+        <div class="reading-shelf">
+          {books.map((book) => (
+            <div class="reading-shelf__item">
+              {hasCover(book) ? (
+                book.hardcover_url ? (
+                  <a
+                    class="reading-shelf__cover"
+                    href={book.hardcover_url}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      class="reading-shelf__cover-img"
+                      src={book.image_url}
+                      alt={`${book.title} cover`}
+                      loading="lazy"
+                    />
+                  </a>
+                ) : (
+                  <div class="reading-shelf__cover">
+                    <img
+                      class="reading-shelf__cover-img"
+                      src={book.image_url}
+                      alt={`${book.title} cover`}
+                      loading="lazy"
+                    />
+                  </div>
+                )
+              ) : (
+                <div class="reading-shelf__placeholder">{book.title}</div>
+              )}
+              <div class="reading-shelf__title">{book.title}</div>
+              <div class="reading-shelf__author">{book.author}</div>
+              <div class="reading-shelf__since">{formatSince(book.date_updated)}</div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   </main>
 </Base>
