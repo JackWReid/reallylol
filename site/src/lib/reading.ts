@@ -16,6 +16,7 @@ export function formatSince(dateUpdated: string): string {
   const formatted = d.toLocaleDateString("en-GB", {
     month: "long",
     year: "numeric",
+    timeZone: "UTC",
   });
   return `SINCE ${formatted.toUpperCase()}`;
 }

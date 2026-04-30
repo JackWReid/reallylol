@@ -29,4 +29,8 @@ describe("formatSince", () => {
     expect(formatSince("not-a-date")).toBe("");
     expect(formatSince("")).toBe("");
   });
+
+  test("uses UTC for first-of-month dates regardless of local timezone", () => {
+    expect(formatSince("2026-02-01")).toBe("SINCE FEBRUARY 2026");
+  });
 });
