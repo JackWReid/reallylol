@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import { hasCover } from "../reading";
+import { hasCover, formatSince } from "../reading";
 
 describe("hasCover", () => {
   test("returns true for a non-empty image_url", () => {
@@ -12,5 +12,21 @@ describe("hasCover", () => {
 
   test("returns false when image_url is missing", () => {
     expect(hasCover({ title: "x", author: "y", date_updated: "2026-01-01", hardcover_url: "https://hardcover.app/x" })).toBe(false);
+  });
+});
+
+describe("formatSince", () => {
+  test("formats an ISO date string as SINCE [MONTH] [YEAR]", () => {
+    expect(formatSince("2026-04-30")).toBe("SINCE APRIL 2026");
+  });
+
+  test("uses British English month names (long form)", () => {
+    expect(formatSince("2026-01-15")).toBe("SINCE JANUARY 2026");
+    expect(formatSince("2025-09-01")).toBe("SINCE SEPTEMBER 2025");
+  });
+
+  test("returns an empty string for an invalid date", () => {
+    expect(formatSince("not-a-date")).toBe("");
+    expect(formatSince("")).toBe("");
   });
 });
