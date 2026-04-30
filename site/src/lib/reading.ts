@@ -20,3 +20,7 @@ export function formatSince(dateUpdated: string): string {
   });
   return `SINCE ${formatted.toUpperCase()}`;
 }
+
+export function sortByRecent(books: BookRow[]): BookRow[] {
+  return [...books].sort((a, b) => b.date_updated.localeCompare(a.date_updated));
+}

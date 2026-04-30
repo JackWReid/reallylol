@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import { hasCover, formatSince } from "../reading";
+import { hasCover, formatSince, sortByRecent } from "../reading";
 
 describe("hasCover", () => {
   test("returns true for a non-empty image_url", () => {
@@ -32,5 +32,31 @@ describe("formatSince", () => {
 
   test("uses UTC for first-of-month dates regardless of local timezone", () => {
     expect(formatSince("2026-02-01")).toBe("SINCE FEBRUARY 2026");
+  });
+});
+
+describe("sortByRecent", () => {
+  test("sorts books by date_updated descending", () => {
+    const books = [
+      { title: "Old", author: "a", date_updated: "2025-01-01" },
+      { title: "New", author: "a", date_updated: "2026-04-15" },
+      { title: "Mid", author: "a", date_updated: "2025-09-10" },
+    ];
+    const sorted = sortByRecent(books);
+    expect(sorted.map((b) => b.title)).toEqual(["New", "Mid", "Old"]);
+  });
+
+  test("returns a new array without mutating input", () => {
+    const books = [
+      { title: "A", author: "a", date_updated: "2025-01-01" },
+      { title: "B", author: "a", date_updated: "2026-01-01" },
+    ];
+    const original = [...books];
+    sortByRecent(books);
+    expect(books).toEqual(original);
+  });
+
+  test("returns an empty array unchanged", () => {
+    expect(sortByRecent([])).toEqual([]);
   });
 });
