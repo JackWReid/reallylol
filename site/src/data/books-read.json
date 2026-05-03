@@ -21,18 +21,18 @@
     "hardcover_url": "https://hardcover.app/books/you-are-the-fuhrers-unrequited-love"
   },
   {
-    "title": "Set My Heart on Fire",
-    "author": "Izumi Suzuki, Helen O'Horan",
-    "date_updated": "2026-04-20",
-    "image_url": "https://assets.hardcover.app/edition/31608234/5c4132d20f2bd632b141284b887b103703d7b5e5.jpeg",
-    "hardcover_url": "https://hardcover.app/books/set-my-heart-on-fire"
-  },
-  {
     "title": "Oaxaca Journal",
     "author": "Oliver Sacks",
     "date_updated": "2026-04-19",
     "image_url": "https://assets.hardcover.app/edition/26076195/4d12294e6740256639be89173cc43fb4a6d8eb6e.jpeg",
     "hardcover_url": "https://hardcover.app/books/oaxaca-journal"
+  },
+  {
+    "title": "Set My Heart on Fire",
+    "author": "Izumi Suzuki, Helen O'Horan",
+    "date_updated": "2026-04-20",
+    "image_url": "https://assets.hardcover.app/edition/31608234/5c4132d20f2bd632b141284b887b103703d7b5e5.jpeg",
+    "hardcover_url": "https://hardcover.app/books/set-my-heart-on-fire"
   },
   {
     "title": "Ordinary Notes",
@@ -126,13 +126,6 @@
     "hardcover_url": "https://hardcover.app/books/the-course-of-the-heart"
   },
   {
-    "title": "Her Majesty's Secret Service",
-    "author": "Christopher Andrew",
-    "date_updated": "2026-01-03",
-    "image_url": "https://assets.hardcover.app/external_data/2076430/fe68dc56d756600ded5b564c294b6264ebfbd7d2.jpeg",
-    "hardcover_url": "https://hardcover.app/books/her-majestys-secret-service-1985"
-  },
-  {
     "title": "Stasiland: Stories from Behind the Berlin Wall",
     "author": "Anna Funder",
     "date_updated": "2026-01-05",
@@ -140,11 +133,11 @@
     "hardcover_url": "https://hardcover.app/books/stasiland"
   },
   {
-    "title": "A Sunny Place for Shady People",
-    "author": "Mariana Enríquez, Megan McDowell",
-    "date_updated": "2026-01-08",
-    "image_url": "https://assets.hardcover.app/edition/31224551/4591a5ce-3bc5-45e7-8eba-7d3b92f68c0d.jpg",
-    "hardcover_url": "https://hardcover.app/books/a-sunny-place-for-shady-people"
+    "title": "Her Majesty's Secret Service",
+    "author": "Christopher Andrew",
+    "date_updated": "2026-01-03",
+    "image_url": "https://assets.hardcover.app/external_data/2076430/fe68dc56d756600ded5b564c294b6264ebfbd7d2.jpeg",
+    "hardcover_url": "https://hardcover.app/books/her-majestys-secret-service-1985"
   },
   {
     "title": "An Instance of the Fingerpost",
@@ -152,6 +145,13 @@
     "date_updated": "2026-03-23",
     "image_url": "https://assets.hardcover.app/edition/8146640/c873bbb72f4336f3f0bb6d6708141be4e2afca81.jpeg",
     "hardcover_url": "https://hardcover.app/books/an-instance-of-the-fingerpost"
+  },
+  {
+    "title": "A Sunny Place for Shady People",
+    "author": "Mariana Enríquez, Megan McDowell",
+    "date_updated": "2026-01-08",
+    "image_url": "https://assets.hardcover.app/edition/31224551/4591a5ce-3bc5-45e7-8eba-7d3b92f68c0d.jpg",
+    "hardcover_url": "https://hardcover.app/books/a-sunny-place-for-shady-people"
   },
   {
     "title": "A History of Judaism",
@@ -252,18 +252,18 @@
     "hardcover_url": "https://hardcover.app/books/evil-paradises"
   },
   {
-    "title": "Where Eagles Dare",
-    "author": "Alistair MacLean",
-    "date_updated": "2025-10-08",
-    "image_url": "https://assets.hardcover.app/edition/5257747/6410287-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/where-eagles-dare"
-  },
-  {
     "title": "Rock Crystal",
     "author": "Adalbert Stifter",
     "date_updated": "2025-10-11",
     "image_url": "https://assets.hardcover.app/edition/30512871/content.jpeg",
     "hardcover_url": "https://hardcover.app/books/rock-crystal"
+  },
+  {
+    "title": "Where Eagles Dare",
+    "author": "Alistair MacLean",
+    "date_updated": "2025-10-08",
+    "image_url": "https://assets.hardcover.app/edition/5257747/6410287-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/where-eagles-dare"
   },
   {
     "title": "The Safekeep",
@@ -329,13 +329,6 @@
     "hardcover_url": "https://hardcover.app/books/super-sad-true-love-story"
   },
   {
-    "title": "On Art and Life",
-    "author": "John Ruskin",
-    "date_updated": "2025-07-06",
-    "image_url": "https://assets.hardcover.app/external_data/42462142/6fb8237b687aea5fc19a777acd96ef90f30e7a11.jpeg",
-    "hardcover_url": "https://hardcover.app/books/on-art-and-life"
-  },
-  {
     "title": "Granta 172: Badlands",
     "author": "Thomas Meaney",
     "date_updated": "2025-07-07",
@@ -343,11 +336,11 @@
     "hardcover_url": "https://hardcover.app/books/granta-172"
   },
   {
-    "title": "The Bombshell",
-    "author": "Darrow Farr",
-    "date_updated": "2025-06-17",
-    "image_url": "https://assets.hardcover.app/edition/32713534/21630ecc452c1ba1524e4888514df187680bc138.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-bombshell"
+    "title": "On Art and Life",
+    "author": "John Ruskin",
+    "date_updated": "2025-07-06",
+    "image_url": "https://assets.hardcover.app/external_data/42462142/6fb8237b687aea5fc19a777acd96ef90f30e7a11.jpeg",
+    "hardcover_url": "https://hardcover.app/books/on-art-and-life"
   },
   {
     "title": "Merchants of Culture",
@@ -357,6 +350,13 @@
     "hardcover_url": "https://hardcover.app/books/merchants-of-culture"
   },
   {
+    "title": "The Bombshell",
+    "author": "Darrow Farr",
+    "date_updated": "2025-06-17",
+    "image_url": "https://assets.hardcover.app/edition/32713534/21630ecc452c1ba1524e4888514df187680bc138.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-bombshell"
+  },
+  {
     "title": "Our Game",
     "author": "John le Carré",
     "date_updated": "2025-06-09",
@@ -364,18 +364,18 @@
     "hardcover_url": "https://hardcover.app/books/our-game-1995"
   },
   {
-    "title": "Ethan Frome",
-    "author": "Edith Wharton",
-    "date_updated": "2025-06-04",
-    "image_url": "https://assets.hardcover.app/editions/29856616/3266133272262628.jpg",
-    "hardcover_url": "https://hardcover.app/books/ethan-frome"
-  },
-  {
     "title": "The Jungle",
     "author": "Upton Sinclair, Eric Schlosser, Ronald S. Gottesman",
     "date_updated": "2025-06-04",
     "image_url": "https://assets.hardcover.app/external_data/47667738/b55c64f5d055ec6c5a9825e02c43055729b39893.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-jungle"
+  },
+  {
+    "title": "Ethan Frome",
+    "author": "Edith Wharton",
+    "date_updated": "2025-06-04",
+    "image_url": "https://assets.hardcover.app/editions/29856616/3266133272262628.jpg",
+    "hardcover_url": "https://hardcover.app/books/ethan-frome"
   },
   {
     "title": "The Secret Pilgrim",
@@ -413,6 +413,13 @@
     "hardcover_url": "https://hardcover.app/books/one-day-everyone-will-have-always-been-against-this"
   },
   {
+    "title": "Perfection",
+    "author": "Vincenzo Latronico, Sophie Hughes",
+    "date_updated": "2025-04-21",
+    "image_url": "https://assets.hardcover.app/edition/31980214/ae72f8afcb0315e18c76e790d3b6fe5e2f8f693f.jpeg",
+    "hardcover_url": "https://hardcover.app/books/perfection-2025"
+  },
+  {
     "title": "A Spy Alone",
     "author": "Charles    Beaumont",
     "date_updated": "2025-04-21",
@@ -425,13 +432,6 @@
     "date_updated": "2025-04-21",
     "image_url": "https://assets.hardcover.app/external_data/60174542/5dbd3ce19d72b948752b66627c379183c8eb6437.jpeg",
     "hardcover_url": "https://hardcover.app/books/every-man-for-himself-and-god-against-all"
-  },
-  {
-    "title": "Perfection",
-    "author": "Vincenzo Latronico, Sophie Hughes",
-    "date_updated": "2025-04-21",
-    "image_url": "https://assets.hardcover.app/edition/31980214/ae72f8afcb0315e18c76e790d3b6fe5e2f8f693f.jpeg",
-    "hardcover_url": "https://hardcover.app/books/perfection-2025"
   },
   {
     "title": "Gabriel's Moon",
@@ -609,18 +609,18 @@
     "hardcover_url": "https://hardcover.app/books/granta-168"
   },
   {
-    "title": "The Empusium: A Health Resort Horror Story",
-    "author": "Olga Tokarczuk, Antonia Lloyd-Jones",
-    "date_updated": "2025-12-26",
-    "image_url": "https://assets.hardcover.app/external_data/128157/b9eec0ab3f13b3b184192dae8f26ea3a3274158f.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-empusium"
-  },
-  {
     "title": "Liars",
     "author": "Sarah Manguso",
     "date_updated": "2025-08-09",
     "image_url": "https://assets.hardcover.app/edition/31289686/e52c154805f24e172704ba1f95021e3e64403e96.jpeg",
     "hardcover_url": "https://hardcover.app/books/liars-2024"
+  },
+  {
+    "title": "The Empusium: A Health Resort Horror Story",
+    "author": "Olga Tokarczuk, Antonia Lloyd-Jones",
+    "date_updated": "2025-12-26",
+    "image_url": "https://assets.hardcover.app/external_data/128157/b9eec0ab3f13b3b184192dae8f26ea3a3274158f.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-empusium"
   },
   {
     "title": "Selected Stories Volume Two: 1995-2009: 1995-2009",
@@ -682,7 +682,7 @@
     "title": "The Glutton",
     "author": "A.K. Blakemore",
     "date_updated": "2024-07-06",
-    "image_url": "https://assets.hardcover.app/external_data/59943661/a726760f74293d45551797c8d6d1f87edc4dbbe3.jpeg",
+    "image_url": "https://assets.hardcover.app/external_data/2958911/3aaf2560d9ffaa6afbd576ca0bbeb6d3c93be038.jpeg",
     "hardcover_url": "https://hardcover.app/books/the-glutton"
   },
   {
@@ -1036,18 +1036,18 @@
     "hardcover_url": "https://hardcover.app/books/homage-to-catalonia"
   },
   {
-    "title": "Napoleon The Little",
-    "author": "Victor Hugo",
-    "date_updated": "2023-09-14",
-    "image_url": "https://assets.hardcover.app/external_data/604139/91d8b3ff056f5d3f59d169d84e078bbf268a8586.jpeg",
-    "hardcover_url": "https://hardcover.app/books/napoleon-the-little-1852"
-  },
-  {
     "title": "Dune",
     "author": "Frank Herbert, Brian Herbert",
     "date_updated": "2023-09-14",
     "image_url": "https://assets.hardcover.app/editions/30426415/8362709973192601-9780441013593-us.jpg",
     "hardcover_url": "https://hardcover.app/books/dune"
+  },
+  {
+    "title": "Napoleon The Little",
+    "author": "Victor Hugo",
+    "date_updated": "2023-09-14",
+    "image_url": "https://assets.hardcover.app/external_data/604139/91d8b3ff056f5d3f59d169d84e078bbf268a8586.jpeg",
+    "hardcover_url": "https://hardcover.app/books/napoleon-the-little-1852"
   },
   {
     "title": "A Spy In the House of Love",
@@ -1148,11 +1148,11 @@
     "hardcover_url": "https://hardcover.app/books/tender-is-the-flesh"
   },
   {
-    "title": "Palo Alto: A History of California, Capitalism, and the World",
+    "title": "Riverrun Palo Alto.",
     "author": "Malcolm   Harris",
     "date_updated": "2023-06-19",
-    "image_url": "https://assets.hardcover.app/edition/32068499/f6f29c9a-f525-4fd4-b4a8-0d6d13bff269.jpg",
-    "hardcover_url": "https://hardcover.app/books/palo-alto-a-history-of-california-capitalism-and-the-world-2023"
+    "image_url": "https://assets.hardcover.app/edition/30887127/9c84ac50ec8ac8a2d72f3b10c7b7f3a05c607b35.jpeg",
+    "hardcover_url": "https://hardcover.app/books/riverrun-palo-alto"
   },
   {
     "title": "Some Do Not...",
@@ -1358,11 +1358,11 @@
     "hardcover_url": "https://hardcover.app/books/last-witnesses"
   },
   {
-    "title": "The Naked and the Dead",
-    "author": "Norman Mailer",
+    "title": "The Employees: A workplace novel of the 22nd century",
+    "author": "Olga Ravn",
     "date_updated": "2022-11-15",
-    "image_url": "https://assets.hardcover.app/external_data/43282914/b64c55c714017180d63a8adddb4a62c60ecc3dee.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-naked-and-the-dead"
+    "image_url": "https://assets.hardcover.app/external_data/59514891/c84112ee3cffbbe6887be7d6aabe2d5f5299b109.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-employees"
   },
   {
     "title": "Liberation Day",
@@ -1379,32 +1379,18 @@
     "hardcover_url": "https://hardcover.app/books/rave-1998"
   },
   {
-    "title": "The Employees: A workplace novel of the 22nd century",
-    "author": "Olga Ravn",
+    "title": "The Naked and the Dead",
+    "author": "Norman Mailer",
     "date_updated": "2022-11-15",
-    "image_url": "https://assets.hardcover.app/external_data/59514891/c84112ee3cffbbe6887be7d6aabe2d5f5299b109.jpeg",
-    "hardcover_url": "https://hardcover.app/books/the-employees"
+    "image_url": "https://assets.hardcover.app/external_data/43282914/b64c55c714017180d63a8adddb4a62c60ecc3dee.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-naked-and-the-dead"
   },
   {
-    "title": "The Novelist",
-    "author": "Jordan Castro",
+    "title": "Vox",
+    "author": "Nicholson Baker",
     "date_updated": "2022-11-13",
-    "image_url": "https://assets.hardcover.app/edition/30463905/13237269-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/the-novelist"
-  },
-  {
-    "title": "Somebody with a Little Hammer: Essays",
-    "author": "Mary Gaitskill",
-    "date_updated": "2022-11-13",
-    "image_url": "https://assets.hardcover.app/edition/30473736/31159113._SX98_.jpg",
-    "hardcover_url": "https://hardcover.app/books/somebody-with-a-little-hammer-essays"
-  },
-  {
-    "title": "Notebook Otherlands: A World in the Making",
-    "author": "Thomas Halliday",
-    "date_updated": "2022-11-13",
-    "image_url": null,
-    "hardcover_url": "https://hardcover.app/books/notebook-otherlands"
+    "image_url": "https://assets.hardcover.app/external_data/59471140/61a28ce8aff6742c97f08b883748555b7242cade.jpeg",
+    "hardcover_url": "https://hardcover.app/books/vox-1992"
   },
   {
     "title": "The Shortest History of Germany",
@@ -1414,11 +1400,25 @@
     "hardcover_url": "https://hardcover.app/books/the-shortest-history-of-germany"
   },
   {
-    "title": "Vox",
-    "author": "Nicholson Baker",
+    "title": "The Novelist",
+    "author": "Jordan Castro",
     "date_updated": "2022-11-13",
-    "image_url": "https://assets.hardcover.app/external_data/59471140/61a28ce8aff6742c97f08b883748555b7242cade.jpeg",
-    "hardcover_url": "https://hardcover.app/books/vox-1992"
+    "image_url": "https://assets.hardcover.app/edition/30463905/13237269-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/the-novelist"
+  },
+  {
+    "title": "Notebook Otherlands: A World in the Making",
+    "author": "Thomas Halliday",
+    "date_updated": "2022-11-13",
+    "image_url": null,
+    "hardcover_url": "https://hardcover.app/books/notebook-otherlands"
+  },
+  {
+    "title": "Somebody with a Little Hammer: Essays",
+    "author": "Mary Gaitskill",
+    "date_updated": "2022-11-13",
+    "image_url": "https://assets.hardcover.app/edition/30473736/31159113._SX98_.jpg",
+    "hardcover_url": "https://hardcover.app/books/somebody-with-a-little-hammer-essays"
   },
   {
     "title": "Don't Cry",
@@ -1456,18 +1456,18 @@
     "hardcover_url": "https://hardcover.app/books/short-stories-in-german-for-beginners"
   },
   {
-    "title": "Alone in Berlin",
-    "author": "Michael Hofmann, Hans Falada",
-    "date_updated": "2022-10-18",
-    "image_url": "https://assets.hardcover.app/edition/2430614/8261747-L.jpg",
-    "hardcover_url": "https://hardcover.app/books/alone-in-berlin"
-  },
-  {
     "title": "Nazi Billionaires: The Dark History of Germany's Wealthiest Dynasties",
     "author": "David de Jong",
     "date_updated": "2025-12-14",
     "image_url": "https://assets.hardcover.app/edition/30807095/9bfc48fcc1a14ca0b0ce864c53cd88ebdedcf58b.jpeg",
     "hardcover_url": "https://hardcover.app/books/nazi-billionaires"
+  },
+  {
+    "title": "Alone in Berlin",
+    "author": "Michael Hofmann, Hans Falada",
+    "date_updated": "2022-10-18",
+    "image_url": "https://assets.hardcover.app/edition/2430614/8261747-L.jpg",
+    "hardcover_url": "https://hardcover.app/books/alone-in-berlin"
   },
   {
     "title": "The Leadership Pipeline: How to Build the Leadership Powered Company",
@@ -1519,18 +1519,18 @@
     "hardcover_url": "https://hardcover.app/books/the-heart-of-the-matter-1948"
   },
   {
-    "title": "Slow Days, Fast Company: The World, the Flesh, and L.A.: Tales",
-    "author": "Eve Babitz",
-    "date_updated": "2022-09-05",
-    "image_url": "https://assets.hardcover.app/edition/26354962/2b81622544c200bd281a392d9c0c7236ec2eb4f5.jpeg",
-    "hardcover_url": "https://hardcover.app/books/slow-days-fast-company"
-  },
-  {
     "title": "A severed head.",
     "author": "Iris Murdoch",
     "date_updated": "2022-09-05",
     "image_url": "https://assets.hardcover.app/edition/15490856/2f86c97ddfaf714688d26c44bc18f27dc1080e06.jpeg",
     "hardcover_url": "https://hardcover.app/books/a-severed-head"
+  },
+  {
+    "title": "Slow Days, Fast Company: The World, the Flesh, and L.A.: Tales",
+    "author": "Eve Babitz",
+    "date_updated": "2022-09-05",
+    "image_url": "https://assets.hardcover.app/edition/26354962/2b81622544c200bd281a392d9c0c7236ec2eb4f5.jpeg",
+    "hardcover_url": "https://hardcover.app/books/slow-days-fast-company"
   },
   {
     "title": "Agent Running in the Field",
@@ -1589,18 +1589,18 @@
     "hardcover_url": "https://hardcover.app/books/when-i-was-mortal"
   },
   {
-    "title": "Cosmopolis",
-    "author": "Don DeLillo, Will Patton",
-    "date_updated": "2022-07-10",
-    "image_url": "https://assets.hardcover.app/external_data/60865337/aabccc1a37b296e442e9f3670179b392b3f03acb.jpeg",
-    "hardcover_url": "https://hardcover.app/books/cosmopolis-2003"
-  },
-  {
     "title": "Amsterdam",
     "author": "Ian McEwan",
     "date_updated": "2022-07-10",
     "image_url": "https://assets.hardcover.app/edition/18804500/883d70363654e0d2b54bbd0dbb39e35abe3363d8.jpeg",
     "hardcover_url": "https://hardcover.app/books/amsterdam"
+  },
+  {
+    "title": "Cosmopolis",
+    "author": "Don DeLillo, Will Patton",
+    "date_updated": "2022-07-10",
+    "image_url": "https://assets.hardcover.app/external_data/60865337/aabccc1a37b296e442e9f3670179b392b3f03acb.jpeg",
+    "hardcover_url": "https://hardcover.app/books/cosmopolis-2003"
   },
   {
     "title": "The Quiet American",
@@ -4439,7 +4439,7 @@
   },
   {
     "title": "Hooked: How to Build Habit-Forming Products",
-    "author": "Nir   Eyal",
+    "author": "Nir Eyal",
     "date_updated": "2016-07-21",
     "image_url": "https://assets.hardcover.app/edition/13907755/979848d889581936fc123f9ac8d34431d943d6f2.jpeg",
     "hardcover_url": "https://hardcover.app/books/hooked"
