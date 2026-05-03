@@ -1,7 +1,7 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
-const tagsField = z.preprocess((v) => v ?? [], z.array(z.string()));
+const tagsField = z.preprocess((v) => v ?? [], z.array(z.string()).default([]));
 
 const blog = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
