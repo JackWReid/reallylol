@@ -4,7 +4,8 @@ date: "2026-05-03"
 subtitle: "May Day, The Drama"
 tags:
   - "film"
-  - "medialog"
+  - "media-log"
+  - "media"
   - "berlin"
   - "journal"
 ---
