@@ -12,6 +12,33 @@
     ]
   },
   {
+    "title": "Do I belong in tech anymore?",
+    "url": "https://ky.fyi/posts/ai-burnout",
+    "date": "2026-04-27",
+    "excerpt": "On quitting, the spread of AI, and the loss of an ideal.",
+    "cover": "https://ky.fyi/_astro/broken-phone.C77rr-ie.png",
+    "tags": [
+      "Tech",
+      "mentalhealth",
+      "World of Work",
+      "toblog"
+    ]
+  },
+  {
+    "title": "2006 Oaxaca rebellion - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/2006_Oaxaca_rebellion",
+    "date": "2026-04-27",
+    "excerpt": "political mobilization demanding the resignation of Oaxaca Governor Ulises Ruíz Ortíz",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/9/9a/APPO-barricade.jpg",
+    "tags": [
+      "mexico",
+      "History",
+      "Politics",
+      "Latin America",
+      "toblog"
+    ]
+  },
+  {
     "title": "They Built Stepford AI and Called It “Agentic”",
     "url": "https://abiawomosu.substack.com/p/they-built-stepford-ai-and-called",
     "date": "2026-04-27",
@@ -34,6 +61,24 @@
       "Tech",
       "Tech Ethics",
       "World of Work",
+      "toblog"
+    ]
+  },
+  {
+    "title": "Opinion | A Paris Court Just Rewrote the Rules of Corporate Morality",
+    "url": "https://www.nytimes.com/2026/04/17/opinion/lafarge-corporate-terrorism-syria-france.html?unlocked_article_code=1.clA.cfuW.P1y4G_7u6woO",
+    "date": "2026-04-22",
+    "excerpt": "The profit motive was on trial. The verdict was scathing.",
+    "cover": "https://static01.nyt.com/images/2026/04/20/opinion/17gessen/17gessen-facebookJumbo.jpg?gift=1",
+    "tags": [
+      "paris",
+      "Magazine Story",
+      "Ethics",
+      "law",
+      "Justice",
+      "France",
+      "syria",
+      "Middle East",
       "toblog"
     ]
   },
