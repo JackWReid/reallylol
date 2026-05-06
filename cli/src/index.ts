@@ -114,7 +114,7 @@ Media:
   cli media orphans
 
 Library sync:
-  cover books --shelf read --json | cli library sync books --shelf read
+  cli library sync books --shelf read|reading|toread
   cli library sync films --list watched --from path/to/letterboxd-export.zip
   cli library sync films --list towatch --from path/to/letterboxd-export.zip
   cli library sync links

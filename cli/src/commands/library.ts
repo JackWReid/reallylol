@@ -11,7 +11,7 @@ interface BookInput {
   dateUpdated: string | null;
 }
 export async function syncBooks(shelf: string) {
-  const input = process.stdin.isTTY ? runCover(shelf) : await readStdin();
+  const input = runCover(shelf);
   const rawItems = JSON.parse(input) as BookInput[];
 
   const today = new Date().toISOString().slice(0, 10);
@@ -152,12 +152,3 @@ function runCover(shelf: string): string {
   return result.stdout;
 }
 
-function readStdin(): Promise<string> {
-  return new Promise((resolve, reject) => {
-    let data = "";
-    process.stdin.setEncoding("utf-8");
-    process.stdin.on("data", (chunk) => { data += chunk; });
-    process.stdin.on("end", () => resolve(data));
-    process.stdin.on("error", reject);
-  });
-}

@@ -60,8 +60,8 @@ cli media orphans             # List R2 objects not referenced by content
 cli check links               # Find broken internal links in built site
 
 # Library sync
-cover books --shelf read --json | cli library sync books --shelf read
-cli library sync films --list watched --from path/to/letterboxd-export.zip
+cli library sync books --shelf read|reading|toread   # Pulls from `cover` CLI
+cli library sync films --list watched|towatch --from path/to/letterboxd-export.zip
 cli library sync links        # Pulls from Raindrop API directly
 ```
 
@@ -99,10 +99,10 @@ cli create post --title "My Post" --tags journal
 
 **Sync all media catalogues:**
 ```bash
-# Books — piped from cover CLI
-cover books --shelf read --json --per-page 2000 | cli library sync books --shelf read
-cover books --shelf reading --json | cli library sync books --shelf reading
-cover books --shelf toread --json --per-page 2000 | cli library sync books --shelf toread
+# Books — invokes `cover` directly per shelf
+cli library sync books --shelf read
+cli library sync books --shelf reading
+cli library sync books --shelf toread
 
 # Films — from a Letterboxd export ZIP
 # Download from https://letterboxd.com/settings/data, then:
