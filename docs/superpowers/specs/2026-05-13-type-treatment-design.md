@@ -187,12 +187,36 @@ All dark mode overrides go in a single block at the bottom of `_variables.css`:
 
 ---
 
+## Section Overrides
+
+### Photos — always dark
+
+The photos section (`/photos`, individual photo pages) always renders in the Inky dark theme regardless of the user's system preference. Apply the dark token values unconditionally on `.photos-*` pages by adding a `data-theme="dark"` attribute to `<html>` in the photos layout, and targeting that in CSS alongside the media query:
+
+```css
+@media (prefers-color-scheme: dark),
+[data-theme="dark"] {
+  :root {
+    --color-bg: #1e1d1a;
+    /* ... all dark tokens ... */
+  }
+}
+```
+
+In the photos Astro layout, set the attribute server-side:
+
+```astro
+<html lang="en-gb" data-theme="dark">
+```
+
+---
+
 ## What Doesn't Change
 
 - Type scale (`--text-xs` through `--text-5xl`) — values unchanged
 - Spacing tokens
 - Layout widths
-- Section-specific backgrounds (Notes dark green, Photos near-black) — to be addressed separately once the base system is in
+- Notes section dark green background — to be addressed separately
 
 ---
 
