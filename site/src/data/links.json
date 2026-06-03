@@ -1,5 +1,63 @@
 [
   {
+    "title": "The Render Ghosts — R / D",
+    "url": "https://www.readingdesign.org/render-ghosts",
+    "date": "2026-06-02",
+    "excerpt": "The Render Ghosts are the people who live inside our imaginations, in the liminal space between the present and the future, the real and the virtual, the physical and the digital. A world of architecture, urbanism and the city before it is completed - which is also never. They inhabit a space which exists only in the virtual spaces of 3D computer rendering software, projected onto billboards, left to rot and torn down when the actual future arrives; never quite as glossy or as perfect as our renderings of it would like it to be, or have prepared us for.",
+    "cover": "https://images.squarespace-cdn.com/content/v1/546c4e6be4b03de55205641b/1531837124571-I9ITQKLT4IZGHOJU2WNP/James+Bridle_Render+Ghosts_1.jpg?format=1500w",
+    "tags": [
+      "Design",
+      "Art",
+      "privacy",
+      "Gender",
+      "toblog"
+    ]
+  },
+  {
+    "title": "Why Paper Jams Persist",
+    "url": "https://www.newyorker.com/magazine/2018/02/12/why-paper-jams-persist",
+    "date": "2026-05-10",
+    "excerpt": "A trivial problem reveals the limits of technology.",
+    "cover": "https://media.newyorker.com/photos/5a70b7cfabe3b2768ac285cf/16:9/w_1280,c_limit/180212_r31462.gif?mbid=social_retweet",
+    "tags": [
+      "Engineering",
+      "World of Work",
+      "Science",
+      "Magazine Story",
+      "toblog"
+    ]
+  },
+  {
+    "title": "The End Of Elsewhere: The Endangered Species of the Global Citizen",
+    "url": "https://open.substack.com/pub/fugitivemargins/p/the-end-of-elsewhere?r=1yh96&utm_medium=ios",
+    "date": "2026-05-08",
+    "excerpt": "From Rousseau to Bourdain, the West spent 300 years searching for meaning by leaving. That search is ending.",
+    "cover": "https://substackcdn.com/image/fetch/$s_!9qHt!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0adfb9e-6530-4720-8f0a-def0659285cb_1125x756.jpeg",
+    "tags": [
+      "Essay",
+      "Philosophy",
+      "Culture",
+      "travel",
+      "toblog"
+    ]
+  },
+  {
+    "title": "How Socialist were the National Socialists?",
+    "url": "https://www.unpopularfront.news/p/how-socialist-were-the-national-socialists-608",
+    "date": "2026-05-07",
+    "excerpt": "The Nazi Economy",
+    "cover": "https://substackcdn.com/image/fetch/$s_!X6h8!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F73c67be2-014a-42a2-b87a-c78d43aca1f2_593x446.jpeg",
+    "tags": [
+      "Capitalism",
+      "Money",
+      "Fascism",
+      "Germany",
+      "History",
+      "Economics",
+      "toblog"
+    ]
+  },
+  {
     "title": "LiveSunset — Watch Live Sunsets From Around the World",
     "url": "https://www.livesunset.io/",
     "date": "2026-04-30",
@@ -106,6 +164,22 @@
       "Publishing Industry",
       "Writing",
       "Money",
+      "toblog"
+    ]
+  },
+  {
+    "title": "Wit, unker, git: The lost medieval pronouns of English intimacy",
+    "url": "https://www.bbc.com/future/article/20260408-the-extinct-english-words-for-just-the-two-of-us",
+    "date": "2026-04-09",
+    "excerpt": "Tales of love and adventure from 1,000 years ago reveal a dazzling range of now-extinct English pronouns. They capture something unique about how people once thought about \"two-ness\".",
+    "cover": "https://ychef.files.bbci.co.uk/1280x720/p0nc7ttl.jpg",
+    "tags": [
+      "History",
+      "Language",
+      "Literature",
+      "Linguistics",
+      "Etymology",
+      "UK",
       "toblog"
     ]
   },
