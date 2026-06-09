@@ -1,9 +1,16 @@
 [
   {
-    "title": "Young Mungo",
-    "author": "Douglas Stuart, Chris Reilly",
-    "date_updated": "2026-05-07",
-    "image_url": "https://assets.hardcover.app/external_data/60999528/64740e074bdc8c158cea91fcaddf989def01e618.jpeg",
-    "hardcover_url": "https://hardcover.app/books/young-mungo"
+    "title": "Supergirl: Woman of Tomorrow",
+    "author": "Bilquis Evely, Mat Lopes, Tom King",
+    "date_updated": "2026-06-06",
+    "image_url": "https://assets.hardcover.app/external_data/61132094/7507a0ead4ada22d3d932b59eb2b9a11200dbba9.jpeg",
+    "hardcover_url": "https://hardcover.app/books/supergirl"
+  },
+  {
+    "title": "The Tailor of Panama",
+    "author": "John le Carré",
+    "date_updated": "2026-06-04",
+    "image_url": "https://assets.hardcover.app/edition/30630362/f907b873387d817e808e0e85d849a888cb0c2a37.jpeg",
+    "hardcover_url": "https://hardcover.app/books/the-tailor-of-panama"
   }
 ]
