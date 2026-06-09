@@ -330,7 +330,7 @@ Insert this CSS just before the closing `}` of `@layer components`:
   }
 
   .reading-shelf__since {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     text-transform: uppercase;
     letter-spacing: 1.5px;

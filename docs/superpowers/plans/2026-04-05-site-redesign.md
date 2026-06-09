@@ -110,7 +110,7 @@ Replace the entire contents of `site/src/styles/_variables.css`:
   /* Typography */
   --font-display: 'Fraunces', Georgia, serif;
   --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
+  --font-body: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
 
   /* Type scale */
   --text-xs: 0.625rem;    /* 10px - dates, tags */
@@ -248,7 +248,7 @@ Replace the contents of `site/src/styles/_base.css`:
   }
 
   figcaption {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     margin-top: var(--space-sm);
@@ -261,7 +261,7 @@ Replace the contents of `site/src/styles/_base.css`:
 
   th {
     text-align: left;
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -274,7 +274,7 @@ Replace the contents of `site/src/styles/_base.css`:
   }
 
   code {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: 0.9em;
   }
 
@@ -463,7 +463,7 @@ Replace the entire contents of `site/src/styles/_layout.css`:
   }
 
   .site-footer__meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
   }
 
@@ -745,7 +745,7 @@ Replace the entire contents of `site/src/styles/_components.css`:
 @layer components {
   /* Feed meta (shared) */
   .feed-meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
   }
@@ -1019,7 +1019,7 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
   }
 
   .writing-item__meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     display: flex;
@@ -1061,7 +1061,7 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
   }
 
   .writing-single__meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
   }
@@ -1095,7 +1095,7 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
     margin-top: var(--space-xl);
     padding-top: var(--space-md);
     border-top: 1px solid var(--color-border);
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     display: flex;
@@ -1243,7 +1243,7 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
   }
 
   .notes-item__date {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-notes-accent);
     display: block;
@@ -1266,7 +1266,7 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
   }
 
   .note-single__date {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-notes-accent);
     display: block;
@@ -1456,7 +1456,7 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
   }
 
   .photo-grid__meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: #aaa;
   }
@@ -1731,7 +1731,7 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
   }
 
   .timeline__month-label {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -1762,7 +1762,7 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
   }
 
   .library__stats {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     text-align: center;
@@ -2044,7 +2044,7 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
   }
 
   .links-saved__domain {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     flex-shrink: 0;
@@ -2052,7 +2052,7 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
   }
 
   .links-saved__meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     display: flex;
@@ -2495,12 +2495,12 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
   }
 
   .tags-grid__name {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-sm);
   }
 
   .tags-grid__count {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
   }
@@ -2516,7 +2516,7 @@ Append to `site/src/styles/_components.css`, inside the `@layer components` bloc
   }
 
   .tag-archive__count {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     margin-bottom: var(--space-xl);

@@ -35,7 +35,7 @@ Title: `font-family: var(--font-display)`, italic, `font-variation-settings: var
 
 Author: `font-family: var(--font-body)`, `font-size: var(--text-sm)` (11px), `color: var(--color-accent)`, `margin-top: 3px`.
 
-Since-line: `font-family: var(--font-mono)`, `font-size: var(--text-xs)` (10px), `text-transform: uppercase`, `letter-spacing: 1.5px`, `color: var(--color-accent)`, `margin-top: 8px`. Format: `SINCE APRIL 2026`.
+Since-line: `font-family: var(--font-body)`, `font-size: var(--text-xs)` (10px), `text-transform: uppercase`, `letter-spacing: 1.5px`, `color: var(--color-accent)`, `margin-top: 8px`. Format: `SINCE APRIL 2026`.
 
 ### Mobile (≤600px)
 

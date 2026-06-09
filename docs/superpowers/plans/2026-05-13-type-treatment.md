@@ -92,7 +92,7 @@ git commit -m "feat: swap Google Fonts to Syne + Newsreader + Courier Prime"
   /* ── Typography ── */
   --font-display: 'Syne', system-ui, sans-serif;
   --font-body:    'Newsreader', Georgia, serif;
-  --font-mono:    'Courier Prime', 'Courier New', monospace;
+  --font-body:    'Courier Prime', 'Courier New', monospace;
 
   /* Type scale */
   --text-xs:   0.625rem;
@@ -249,7 +249,7 @@ git commit -m "feat: new colour tokens, font stacks, dark mode block"
   }
 
   figcaption {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     margin-top: var(--space-sm);
@@ -262,7 +262,7 @@ git commit -m "feat: new colour tokens, font stacks, dark mode block"
 
   th {
     text-align: left;
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -275,7 +275,7 @@ git commit -m "feat: new colour tokens, font stacks, dark mode block"
   }
 
   code {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: 0.9em;
   }
 

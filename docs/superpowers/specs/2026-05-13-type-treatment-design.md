@@ -153,12 +153,12 @@ In-prose links use `--color-alt` for the underline decoration. Dark mode uses `d
 
 ## CSS Variable Renames
 
-The existing `--font-display`, `--font-body`, `--font-mono` variable names stay. Values change:
+The existing `--font-display`, `--font-body`, `--font-body` variable names stay. Values change:
 
 ```css
 --font-display: 'Syne', system-ui, sans-serif;
 --font-body:    'Newsreader', Georgia, serif;
---font-mono:    'Courier Prime', 'Courier New', monospace;
+--font-body:    'Courier Prime', 'Courier New', monospace;
 ```
 
 Remove `--fraunces-wonk` and all `font-variation-settings: var(--fraunces-wonk)` references — Syne has no equivalent axis.
