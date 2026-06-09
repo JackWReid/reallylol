@@ -44,8 +44,8 @@ if (cmd === "create") {
     const source = rest[0];
     const opts = parseOpts(rest.slice(1));
     if (source === "books") {
-      const { syncBooks } = await import("./commands/library");
-      await syncBooks(opts.shelf ?? "read");
+      const { syncBooks, shelvesToSync } = await import("./commands/library");
+      for (const shelf of shelvesToSync(opts.shelf)) await syncBooks(shelf);
     } else if (source === "films") {
       if (!opts.from) {
         console.error("cli library sync films requires --from <letterboxd-export.zip|csv|dir>");

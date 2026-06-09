@@ -10,6 +10,12 @@ interface BookInput {
   dateAdded: string | null;
   dateUpdated: string | null;
 }
+const ALL_SHELVES = ["read", "reading", "toread"];
+
+export function shelvesToSync(shelf: string | undefined): string[] {
+  return shelf ? [shelf] : ALL_SHELVES;
+}
+
 export async function syncBooks(shelf: string) {
   const input = runCover(shelf);
   const rawItems = JSON.parse(input) as BookInput[];
