@@ -19,7 +19,8 @@
   --color-photos-accent: #777;
 
   /* Typography */
-  --font-display: "Fraunces", Georgia, serif;
+  --font-display: "Playwrite GB J", cursive, Georgia, serif;
+  --font-title: Georgia, serif;
   --font-body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Type scale */

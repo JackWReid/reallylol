@@ -11,7 +11,7 @@ import heroImg from "../../images/champignons-suspects.jpeg";
 export const getStaticPaths = (async ({ paginate }) => {
   const posts = await getCollection("blog");
   const sorted = posts.sort(
-    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+    (a, b) => b.data.date.getTime() - a.data.date.getTime(),
   );
   return paginate(sorted, { pageSize: 40 });
 }) satisfies GetStaticPaths;
@@ -27,37 +27,56 @@ function formatDate(date: Date): string {
 }
 ---
 
-<Base title="Blog" section="writing" currentPage={page.currentPage} lastPage={page.lastPage}>
+<Base
+  title="Blog"
+  section="writing"
+  currentPage={page.currentPage}
+  lastPage={page.lastPage}
+>
   <main class="writing-list">
-    {page.currentPage === 1 && (
-      <div class="writing-hero">
-        <figure class="writing-hero__figure">
-          <Image src={heroImg} alt="An illustration of suspicious mushrooms" widths={[480, 800]} sizes="(min-width: 600px) 800px, 100vw" loading="eager" />
-          <figcaption>A. Cornillon, <em>Champignons Suspects</em>, 1827</figcaption>
-        </figure>
-        <h1 class="writing-hero__title">Blog</h1>
-      </div>
-    )}
-    {page.currentPage > 1 && <h1>Blog</h1>}
-    {page.data.map((post) => (
-      <article class="writing-item">
-        <div class="writing-item__meta">
-          <span>{formatDate(post.data.date)}</span>
-          {post.data.tags?.map((tag: string) => (
-            <>
-              <span class="writing-item__dot">·</span>
-              <a href={`/tags/${tagToSlug(tag)}/`}>#{tag}</a>
-            </>
-          ))}
+    {
+      page.currentPage === 1 && (
+        <div class="writing-hero">
+          <figure class="writing-hero__figure">
+            <Image
+              src={heroImg}
+              alt="An illustration of suspicious mushrooms"
+              widths={[480, 800]}
+              sizes="(min-width: 600px) 800px, 100vw"
+              loading="eager"
+            />
+            <figcaption>
+              A. Cornillon, <em>Champignons Suspects</em>, 1827
+            </figcaption>
+          </figure>
+          <h1 class="writing-hero__title">Blog</h1>
         </div>
-        <h2 class="writing-item__title">
-          <a href={`/post/${post.id.replace(/\.md$/, "")}/`}>{post.data.title}</a>
-        </h2>
-        <p class="writing-item__excerpt">
-          {generateSummary(post.body ?? "")}
-        </p>
-      </article>
-    ))}
+      )
+    }
+    {page.currentPage > 1 && <h1>Blog</h1>}
+    {
+      page.data.map((post) => (
+        <article class="writing-item">
+          <h2 class="writing-item__title">
+            <a href={`/post/${post.id.replace(/\.md$/, "")}/`}>
+              {post.data.title}
+            </a>
+          </h2>
+          <div class="writing-item__meta">
+            <span>{formatDate(post.data.date)}</span>
+            {post.data.tags?.map((tag: string) => (
+              <>
+                <span class="writing-item__dot">·</span>
+                <a href={`/tags/${tagToSlug(tag)}/`}>#{tag}</a>
+              </>
+            ))}
+          </div>
+          <p class="writing-item__excerpt">
+            {generateSummary(post.body ?? "")}
+          </p>
+        </article>
+      ))
+    }
     <Pagination
       prevUrl={page.url.prev}
       nextUrl={page.url.next}

@@ -28,19 +28,21 @@ const readTime = Math.max(1, Math.round(wordCount / 250));
 
 <Base title={post.data.title} section="writing">
   <main class="writing-single">
+    <h1 class="writing-single__title">{post.data.title}</h1>
     <div class="writing-single__meta">
       {formatDate(post.data.date)} · {readTime} min read
     </div>
-    <h1 class="writing-single__title">{post.data.title}</h1>
     <div class="writing-single__body">
       <Content />
     </div>
-    {post.data.tags && post.data.tags.length > 0 && (
-      <div class="writing-single__tags">
-        {post.data.tags.map((tag: string) => (
-          <a href={`/tags/${tagToSlug(tag)}/`}>#{tag}</a>
-        ))}
-      </div>
-    )}
+    {
+      post.data.tags && post.data.tags.length > 0 && (
+        <div class="writing-single__tags">
+          {post.data.tags.map((tag: string) => (
+            <a href={`/tags/${tagToSlug(tag)}/`}>#{tag}</a>
+          ))}
+        </div>
+      )
+    }
   </main>
 </Base>
