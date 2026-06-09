@@ -47,7 +47,7 @@
   }
 
   .single-hero__figure figcaption {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     margin-top: var(--space-sm);
@@ -65,7 +65,7 @@
 
   /* Feed meta (shared) */
   .feed-meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
   }
@@ -236,7 +236,7 @@
   }
 
   .writing-hero__figure figcaption {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     margin-top: var(--space-sm);
@@ -263,7 +263,7 @@
   }
 
   .writing-item__meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     display: flex;
@@ -305,7 +305,7 @@
   }
 
   .writing-single__meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
   }
@@ -339,7 +339,7 @@
     margin-top: var(--space-xl);
     padding-top: var(--space-md);
     border-top: 1px solid var(--color-border);
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     display: flex;
@@ -377,7 +377,7 @@
   }
 
   .notes-bird figcaption {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-notes-accent);
     margin-top: var(--space-sm);
@@ -418,7 +418,7 @@
   }
 
   .notes-item__date {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-notes-accent);
     display: block;
@@ -441,7 +441,7 @@
   }
 
   .note-single__date {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-notes-accent);
     display: block;
@@ -503,7 +503,7 @@
   }
 
   .photo-grid__meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: #aaa;
   }
@@ -548,7 +548,7 @@
   }
 
   .timeline__month-label {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -579,7 +579,7 @@
   }
 
   .timeline__flat-count {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -589,7 +589,7 @@
   }
 
   .library__stats {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     text-align: center;
@@ -619,7 +619,7 @@
   }
 
   .links-saved__domain {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     flex-shrink: 0;
@@ -627,7 +627,7 @@
   }
 
   .links-saved__meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     display: flex;
@@ -688,7 +688,7 @@
 
   .highlight-single__meta {
     margin-top: var(--space-lg);
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     display: flex;
@@ -720,7 +720,7 @@
 
   .links-blogroll__section,
   .links-blogroll h3 {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -786,12 +786,12 @@
   }
 
   .tags-grid__name {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-sm);
   }
 
   .tags-grid__count {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
   }
@@ -807,7 +807,7 @@
   }
 
   .tag-archive__count {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     margin-bottom: var(--space-xl);
@@ -838,7 +838,7 @@
     flex-wrap: wrap;
     align-items: baseline;
     gap: var(--space-sm) var(--space-lg);
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-photos-accent);
   }
@@ -966,7 +966,7 @@
   }
 
   .reading-shelf__since {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     text-transform: uppercase;
     letter-spacing: 1.5px;

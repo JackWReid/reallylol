@@ -19,21 +19,20 @@
   --color-photos-accent: #777;
 
   /* Typography */
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Type scale */
-  --text-xs: 0.625rem;    /* 10px - dates, tags */
-  --text-sm: 0.6875rem;   /* 11px - meta labels, nav */
-  --text-base: 0.875rem;  /* 14px - body, UI */
-  --text-md: 0.9375rem;   /* 15px - reading body */
-  --text-lg: 1rem;        /* 16px - list titles */
-  --text-xl: 1.125rem;    /* 18px - feed titles */
-  --text-2xl: 1.375rem;   /* 22px - note text */
-  --text-3xl: 1.625rem;   /* 26px - writing headlines */
-  --text-4xl: 1.875rem;   /* 30px - featured headline */
-  --text-5xl: 3rem;       /* 48px - year markers */
+  --text-xs: 0.625rem; /* 10px - dates, tags */
+  --text-sm: 0.6875rem; /* 11px - meta labels, nav */
+  --text-base: 0.875rem; /* 14px - body, UI */
+  --text-md: 0.9375rem; /* 15px - reading body */
+  --text-lg: 1rem; /* 16px - list titles */
+  --text-xl: 1.125rem; /* 18px - feed titles */
+  --text-2xl: 1.375rem; /* 22px - note text */
+  --text-3xl: 1.625rem; /* 26px - writing headlines */
+  --text-4xl: 1.875rem; /* 30px - featured headline */
+  --text-5xl: 3rem; /* 48px - year markers */
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -50,7 +49,7 @@
   --width-notes: 600px;
 
   /* Fraunces variation settings */
-  --fraunces-wonk: 'WONK' 1;
+  --fraunces-wonk: "WONK" 0;
 
   font-family: var(--font-body);
   background: var(--color-bg);

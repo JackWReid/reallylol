@@ -25,7 +25,7 @@
   }
 
   .site-header__page {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     color: var(--color-accent);
     opacity: 0.6;
@@ -73,7 +73,7 @@
   }
 
   .site-footer__meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     text-align: right;
   }
@@ -100,7 +100,7 @@
   }
 
   .site-footer__meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
     font-size: var(--text-xs);
   }
 
