@@ -1,5 +1,75 @@
 [
   {
+    "title": "Words Words Words",
+    "url": "https://aeon.co/essays/literature-fans-should-welcome-ai-as-a-fellow-wordsmith",
+    "date": "2026-06-25",
+    "excerpt": "Strong resistance to AI among writers is understandable. But it obscures what we share with the machines: language itself",
+    "cover": "https://images.aeonmedia.co/images/d1fc119d-c759-4308-a214-118ac23b1a43/essay-final-gettyimages-1146426665.jpg?width=1200&quality=75&format=jpg",
+    "tags": [
+      "AI",
+      "Literature",
+      "Writing",
+      "Linguistics",
+      "theory",
+      "toblog"
+    ]
+  },
+  {
+    "title": "Library of Congress Images",
+    "url": "https://www.loc.gov/free-to-use/",
+    "date": "2026-06-24",
+    "excerpt": "Images from the US Library of Congress that are free to use.",
+    "cover": null,
+    "tags": [
+      "public domain",
+      "Images",
+      "USA",
+      "toblog"
+    ]
+  },
+  {
+    "title": "Loreline - Tools for writing interactive fiction",
+    "url": "https://loreline.app/en/",
+    "date": "2026-06-18",
+    "excerpt": "Tools for writing interactive fiction, video game dialogues and branching narratives",
+    "cover": "https://loreline.app/static/img/og-banner.png",
+    "tags": [
+      "Game Development",
+      "Tools",
+      "Writing",
+      "Tech",
+      "toblog"
+    ]
+  },
+  {
+    "title": "Matthew Butterick | Extinction-level capitalism",
+    "url": "https://matthewbutterick.com/extinction-level-capitalism.html",
+    "date": "2026-06-14",
+    "excerpt": "A citizen’s thoughts on AI risk",
+    "cover": "https://matthewbutterick.com/img/og-image.jpg?1781379445",
+    "tags": [
+      "Capitalism",
+      "Economics",
+      "Politics",
+      "AI",
+      "Money",
+      "toblog"
+    ]
+  },
+  {
+    "title": "The year is 2063 and you were never interesting.",
+    "url": "https://open.substack.com/pub/lizleatrice/p/the-year-is-2063-and-you-were-never?r=1yh96&utm_medium=ios",
+    "date": "2026-06-13",
+    "excerpt": "You’re never going to be someone’s eccentric grandmother because you spent your best years consuming the lives of strangers.",
+    "cover": "https://substackcdn.com/image/fetch/$s_!TSMS!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Flizleatrice.substack.com%2Ftwitter%2Fsubscribe-card.jpg%3Fv%3D1784766164%26version%3D9",
+    "tags": [
+      "Blog",
+      "Internet Culture",
+      "Essay",
+      "toblog"
+    ]
+  },
+  {
     "title": "Pokémon Emerald in WASM",
     "url": "https://pokeemerald.com/",
     "date": "2026-06-07",
