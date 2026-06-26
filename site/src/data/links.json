@@ -1,5 +1,16 @@
 [
   {
+    "title": "Computers !",
+    "url": "https://computers.tugdual.fr/",
+    "date": "2026-06-26",
+    "excerpt": "A catalog of non-electronic computers",
+    "cover": "https://rdl.ink/render/https%3A%2F%2Fcomputers.tugdual.fr%2F",
+    "tags": [
+      "Computers",
+      "toblog"
+    ]
+  },
+  {
     "title": "Words Words Words",
     "url": "https://aeon.co/essays/literature-fans-should-welcome-ai-as-a-fellow-wordsmith",
     "date": "2026-06-25",
